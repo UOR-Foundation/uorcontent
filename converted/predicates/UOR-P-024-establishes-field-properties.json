@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-field-properties",
+  "name": "establishes field properties",
+  "propertyID": "uor:predicate",
+  "value": "establishes field properties",
+  "subjectOf": {
+    "@id": "urn:uor:concept:universal-number-field-operations"
+  },
+  "targetCollection": [
+    "urn:uor:concept:operational-lifting",
+    "urn:uor:concept:algebraic-completeness"
+  ],
+  "valueName": "field property relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "establishes field properties"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

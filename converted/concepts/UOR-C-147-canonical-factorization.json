@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:canonical-factorization",
+  "name": "Canonical Factorization",
+  "description": "The standard form for expressing any non-zero non-unit element in a Unique Factorization Domain as a product of a unit and prime powers, with distinct primes and finite exponents.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-147",
+  "text": "Canonical factorization establishes a standardized representation for elements in a Unique Factorization Domain, ensuring that each element has a well-defined, consistent prime decomposition. This standardization is essential for creating a reliable coordinate system based on prime components.\n\nFor any non-zero non-unit element x in a Unique Factorization Domain D, the canonical prime factorization is given by the formula x = u · p₁^e₁ · p₂^e₂ · ... · pₙ^eₙ. In this expression, u represents a unit in D—an element that has a multiplicative inverse. The presence of this unit factor acknowledges that elements that differ only by multiplication by a unit are essentially equivalent in terms of their structural properties.\n\nEach pᵢ in the factorization is a distinct prime in D. Primes are irreducible elements that cannot be further decomposed into simpler factors. The distinctness of the primes in the canonical form ensures that each prime appears exactly once, with its multiplicity captured by its exponent rather than by repeated factors.\n\nThe exponent eᵢ represents the valuation of prime pᵢ—the highest power of that prime that divides the element x. These exponents are the core of the coordinate representation, capturing the contribution of each prime to the overall structure of the element.\n\nA critical property of canonical factorization is that the product is finite, meaning only finitely many primes have non-zero exponents. This finiteness is important for practical representation and computation, ensuring that elements can be represented by coordinate vectors with a finite number of non-zero entries.\n\nThe canonical factorization provides a unique representation of each element (up to reordering of factors and choice of unit), creating a one-to-one correspondence between elements and their prime decompositions. This uniqueness is the foundation of the coordinate system used throughout the UOR framework.",
+  "mathExpression": [
+    "x = u \\cdot p_1^{e_1} \\cdot p_2^{e_2} \\cdot \\ldots \\cdot p_n^{e_n}",
+    "\\text{where:}",
+    "u \\text{ is a unit in } D",
+    "p_i \\text{ are distinct primes in } D",
+    "e_i \\text{ are exponents (valuations) of primes } p_i",
+    "\\text{the product is finite (only finitely many primes have non-zero exponents)}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Formula Foundation",
+      "@id": "urn:uor:concept:prime-formula-foundation"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Valuation",
+      "@id": "urn:uor:concept:prime-valuation"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

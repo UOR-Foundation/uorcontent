@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:coordinate-properties",
+  "name": "Coordinate Properties",
+  "description": "The remarkable properties of prime-coordinate representation including injectivity, linearization, dimension reduction, and base independence that make it powerful for object analysis.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-143",
+  "text": "The prime-coordinate representation possesses several remarkable properties that make it exceptionally powerful for analyzing and manipulating objects across various domains. These properties establish prime coordinates as more than just another representation system—they reveal it as a fundamental bridge between multiplicative and additive structures.\n\nInjectivity ensures that distinct objects map to distinct coordinate vectors. This means that the prime-coordinate map φ is one-to-one: if φ(x) = φ(y), then x = y (modulo units). This property guarantees that no information about an object's structure is lost in the coordinate representation. The uniqueness of prime factorization directly implies this injectivity, making the coordinate representation a faithful image of the original object.\n\nLinearization refers to the transformation of multiplication into vector addition in coordinate space. This property is expressed mathematically as φ(x·y) = φ(x) + φ(y). This homomorphic property converts the multiplicative structure of the original domain into the additive structure of a vector space. This linearization simplifies many complex operations and relationships, making them more accessible to analysis and computation. For example, divisibility relationships, which are multiplicative in nature, become simple vector inequalities in coordinate space.\n\nDimension reduction allows infinite objects to be represented by finite vectors. In many domains, the set of objects is infinite, but the set of relevant primes for a particular analysis may be finite. This means that objects with potentially complex structure can be represented by coordinate vectors with a manageable number of dimensions. This reduction enables computational approaches that would be intractable in the original domain.\n\nBase independence ensures that the representation is intrinsic, not tied to particular numeral systems. Unlike decimal, binary, or other base-dependent representations, prime coordinates capture the inherent structural properties of objects regardless of how they might be written or displayed. This intrinsic quality makes prime coordinates a natural language for expressing the fundamental structure of objects across diverse domains.",
+  "mathExpression": [
+    "\\text{Injectivity: } \\phi(x) = \\phi(y) \\implies x = y \\text{ (modulo units)}",
+    "\\text{Linearization: } \\phi(x \\cdot y) = \\phi(x) + \\phi(y)",
+    "\\text{Dimension Reduction: } |\\phi(x)| < \\infty \\text{ for relevant primes}",
+    "\\text{Base Independence: } \\phi \\text{ is independent of numeral representation}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Coordinate Map",
+      "@id": "urn:uor:concept:prime-coordinate-map"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Coordinate Geometry",
+      "@id": "urn:uor:concept:coordinate-geometry"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

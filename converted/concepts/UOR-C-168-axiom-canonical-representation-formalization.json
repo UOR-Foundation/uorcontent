@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-canonical-representation-formalization",
+  "name": "Axiom Canonical Representation Formalization",
+  "description": "The mathematical formalization of the Canonical Representation Axiom, expressing the properties of injectivity, base invariance, frame invariance, and minimal coherence.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-168",
+  "text": "The Canonical Representation Axiom can be formalized with precise mathematical definitions to capture its key properties:\n\nFor any object X in the universe 𝒰, the prime coordinate map φ: 𝒰 → ℤ^(P) satisfies the following properties:\n\n1. Injectivity: The mapping preserves distinctness, formally expressed as:\n   If φ(X) = φ(Y), then X = Y\n   This ensures that different objects always map to different coordinate vectors, making the representation unique for each object.\n\n2. Base Invariance: Unlike positional numeral systems (decimal, binary, etc.), prime coordinates do not depend on an arbitrary choice of base. Formally, for any base transformation function B:\n   φ(X) = φ(B(X))\n   where B(X) represents X expressed in a different base. This property ensures that the representation captures intrinsic structure rather than artifacts of a particular notation system.\n\n3. Frame Invariance: For any valid change of observer reference frame F, the prime coordinate representation remains unchanged:\n   φ(X) = φ(F(X))\n   where F(X) represents X as observed from a different reference frame. This establishes prime coordinates as an absolute description that all observers can agree upon, regardless of perspective.\n\n4. Minimal Coherence: For any alternative representation function R that maps objects to some coordinate space, the coherence norm of the prime representation is always minimal:\n   ‖φ(X)‖ ≤ ‖R(X)‖\n   where ‖·‖ denotes the coherence norm, a measure of representational complexity. This property establishes that prime coordinates provide the simplest possible description of an object's structure.\n\nThese four properties collectively define what it means for prime coordinates to be the canonical representation. The injectivity and information completeness ensure that the representation is faithful and lossless. The base and frame invariance properties establish its absolute, observer-independent nature. The minimal coherence property demonstrates its optimal efficiency as a description of structure.\n\nThis formalization provides a precise mathematical framework for understanding why prime coordinates are not merely one possible representation among many, but the canonical representation that most directly captures the intrinsic structure of objects.",
+  "mathExpression": [
+    "\\phi(X) = \\phi(Y) \\Rightarrow X = Y \\quad \\text{(Injectivity)}",
+    "\\phi(X) = \\phi(B(X)) \\quad \\text{(Base Invariance for any base transformation B)}",
+    "\\phi(X) = \\phi(F(X)) \\quad \\text{(Frame Invariance for any observer frame F)}",
+    "\\|\\phi(X)\\| \\leq \\|R(X)\\| \\quad \\text{(Minimal Coherence for any representation R)}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Coherence Norm",
+      "@id": "urn:uor:concept:coherence-norm-definition"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Frame Transformation",
+      "@id": "urn:uor:concept:frame-transformation"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

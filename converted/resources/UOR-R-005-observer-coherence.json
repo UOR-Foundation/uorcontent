@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:observer-coherence",
+  "name": "Observer Reference Frames",
+  "description": "An explanation of how the UOR framework incorporates observer perspectives through the principle of trilateral coherence.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Observer Coherence",
+    "description": "The principle ensuring that object descriptions remain consistent across different reference frames in the UOR framework."
+  },
+  "text": "The UOR framework incorporates observer perspectives through the principle of trilateral coherence, ensuring that object descriptions remain consistent across different reference frames.\n\nEvery coherent description of an object must incorporate and harmonize three aspects:\n\n1. Intrinsic Structure: The object's canonical prime decomposition\n2. Dynamical Rules: The composition laws governing object interactions\n3. Observer Frame: The perspective from which the object is described\n\nThese three elements form an indivisible triad - changing any one necessitates adjustments in the others to maintain a coherent description.\n\nThe mathematical formalism for observer perspectives employs a frame bundle:\n\n- Each point in the bundle corresponds to a specific (object, observer) pair\n- The projection map extracts the intrinsic object structure independent of observer\n- Frame transformations allow translation between different observer perspectives\n- A global section of this bundle defines a consistent choice of observer for all objects\n\nTransformations between observer frames must preserve certain invariants:\n\n- The intrinsic prime decomposition remains unchanged\n- The coherence metric might transform, but preserves minimality properties\n- Composition laws maintain their algebraic structure across frames\n- Physical quantities transform according to appropriate representation rules\n\nCertain properties remain invariant across all valid observer frames:\n\n- The cardinality of the prime decomposition (number of distinct prime factors)\n- The essential factorization pattern (which primes appear, if not their exact representation)\n- The algebraic relationships between composed objects\n- The topological features of the prime-coordinate space\n\nThrough observer coherence, UOR provides a framework for understanding how intrinsic mathematical structure relates to the perspectives from which it is observed and described.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Universal Object Reference",
+    "@id": "urn:uor:topic:universal-object-reference"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["observer coherence", "trilateral coherence", "reference frames", "frame transformations", "observer-invariant properties"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:observer-coherence",
+      "urn:uor:concept:trilateral-coherence",
+      "urn:uor:concept:frame-transformations",
+      "urn:uor:concept:observer-invariant-properties"
+    ]
+  }
+}

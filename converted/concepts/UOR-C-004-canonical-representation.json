@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:canonical-representation",
+  "name": "Canonical Representation",
+  "description": "The unique, basis-independent representation of an object using prime coordinates that reveals its inherent structure and is invariant across observer frames.",
+  "termCode": "UOR-C-004",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "relatedConcepts": [
+    "urn:uor:concept:prime-decomposition",
+    "urn:uor:concept:coherence-norm",
+    "urn:uor:concept:observer-reference-frames"
+  ],
+  "sourceText": "A fundamental principle of UOR is that every object has a unique, canonical representation that is independent of basis, numeral system, or observer frame. Unlike conventional number representations (binary, decimal, etc.), the prime-coordinate representation is intrinsic to the object itself. The canonical representation satisfies several crucial properties: uniqueness, completeness, and invariance. Among all possible representations of an object, the canonical prime-coordinate form minimizes the coherence norm, provides the most efficient encoding, and contains no redundant information. While observer reference frames may interpret the representation differently, the underlying prime structure remains objective.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

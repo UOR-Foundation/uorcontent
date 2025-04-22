@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines:033:127",
+  "name": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Distributed Compute Architecture",
+    "@id": "urn:uor:concept:distributed-compute-architecture",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "defines the structural components of the distributed computation system",
+  "description": "The Distributed Compute resource defines the architectural components including task decomposition, resource discovery, transformation coordination, coherence verification, incentives, and result aggregation",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Distributed Compute",
+        "@id": "urn:uor:resource:distributed-compute"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:distributed-compute-architecture"
+  ],
+  "valueName": "defines the structural components of the distributed computation system"
+}

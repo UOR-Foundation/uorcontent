@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes:040:157",
+  "name": "establishes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Intrinsic Primes Connections",
+    "@id": "urn:uor:concept:axiom-intrinsic-primes-connections",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "establishes the foundational role of the Intrinsic Primes Axiom for subsequent axioms",
+  "description": "The Intrinsic Primes Axiom resource establishes how it serves as the foundation for the Unique Factorization axiom and the Prime-Coordinate Homomorphism, forming the cornerstone of the entire UOR framework",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Intrinsic Primes Axiom",
+        "@id": "urn:uor:resource:axiom-intrinsic-primes"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:axiom-intrinsic-primes-connections"
+  ],
+  "valueName": "establishes the foundational role of the Intrinsic Primes Axiom for subsequent axioms"
+}

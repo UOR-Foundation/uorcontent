@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:factorization-theorem",
+  "name": "Factorization Theorem",
+  "description": "The fundamental theorem that states every non-zero non-unit element in a unique factorization domain can be expressed as a product of irreducible elements (primes) in an essentially unique way.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-138",
+  "text": "The Fundamental Theorem of Unique Factorization establishes the core principle that in a Unique Factorization Domain (UFD), every non-zero non-unit element can be expressed as a product of irreducible elements (primes) in an essentially unique way. This theorem extends the well-known Fundamental Theorem of Arithmetic from integers to more general algebraic domains.\n\nFormally, the theorem states that for any non-zero non-unit element x in a UFD, there exists a representation x = u · p₁ · p₂ · ... · pₙ, where u is a unit (invertible element), each pᵢ is an irreducible element (prime), and this representation is unique up to reordering of the factors and multiplication by units. This means that while the specific arrangement of prime factors or the presence of unit multipliers may vary, the fundamental prime structure remains invariant.\n\nThis theorem establishes the existence of prime factorizations for all elements in the domain. It guarantees that any element, no matter how complex, can be broken down into its constituent prime components. This decomposition provides a standard form for representing elements, enabling systematic analysis and comparison based on their prime structure.\n\nThe factorization theorem serves as the mathematical foundation for the entire UOR framework. By ensuring that objects have well-defined prime decompositions, it enables the creation of a consistent coordinate system based on prime factors. This, in turn, allows for the development of mathematical operations, metrics, and transformations that preserve the essential properties of objects across different representations and domains.",
+  "mathExpression": [
+    "\\forall x \\in D, x \\neq 0, x \\text{ not a unit} \\implies x = u \\cdot p_1 \\cdot p_2 \\cdot \\ldots \\cdot p_n",
+    "\\text{where } u \\text{ is a unit, each } p_i \\text{ is prime, and the factorization is unique up to reordering and units}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Intrinsic Prime Definition",
+      "@id": "urn:uor:concept:intrinsic-prime-definition"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Uniqueness Guarantee",
+      "@id": "urn:uor:concept:uniqueness-guarantee"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

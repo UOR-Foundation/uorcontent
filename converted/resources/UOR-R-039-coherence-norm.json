@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:coherence-norm",
+  "name": "Coherence Norm & Metric",
+  "description": "A fundamental measure of representational complexity in prime-coordinate space, defined as the Euclidean norm of an object's exponent vector and establishing a rigorous metric structure.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Coherence Norm",
+    "description": "A mathematical function that assigns to each object a non-negative real value based on its prime factorization, measuring its representational complexity and enabling quantitative comparison between objects."
+  },
+  "text": "The coherence norm provides a fundamental measure of representational complexity in prime-coordinate space.\n\nFor an object x with prime-coordinate representation φ(x), the coherence norm is defined as the Euclidean norm of the exponent vector. This norm has several key properties: Non-negativity, where the norm is always positive for non-unit elements; Triangle Inequality, where the norm of a product is bounded by the sum of norms; and Invariance, where the norm is invariant under canonical transformations.\n\nThe Minimality Theorem establishes that among all possible factorizations of an object, the prime factorization minimizes the coherence norm. This can be proven through the Cauchy-Schwarz inequality and establishes prime representation as the most efficient encoding.\n\nThe coherence norm induces a metric on the space of objects, defined as the norm of the quotient. This metric satisfies: Identity, where d(x,y) = 0 if and only if x = y; Symmetry, where d(x,y) = d(y,x); and Triangle Inequality, where d(x,z) ≤ d(x,y) + d(y,z).\n\nPrime-coordinate space inherits a full Euclidean structure through the inner product of exponent vectors. This allows for notions of angles, projections, and orthogonality between object representations.\n\nThe coherence norm and metric enable: Measuring information content of mathematical objects; Quantifying similarity between structures; Defining notions of complexity and simplicity; and Establishing optimization criteria for representations.\n\nThrough the coherence norm, UOR provides a rigorous foundation for comparing and analyzing mathematical objects based on their intrinsic prime structure.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Prime Foundations",
+    "@id": "urn:uor:topic:prime-foundations"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["coherence norm", "prime-coordinate space", "metric space", "euclidean structure", "minimality theorem", "representational complexity"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:coherence-norm-definition",
+      "urn:uor:concept:norm-minimality",
+      "urn:uor:concept:coherence-metric",
+      "urn:uor:concept:norm-applications"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes:048:188",
+  "name": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Polynomial Extension",
+    "@id": "urn:uor:concept:polynomial-extension"
+  },
+  "value": "describes how the UOR framework extends to polynomial rings",
+  "description": "The Beyond Integers resource describes how for polynomials k[x], irreducible polynomials serve as primes and exponents represent factor multiplicity, extending the concept of prime factorization to polynomial expressions",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Beyond Integers",
+      "@id": "urn:uor:resource:beyond-integers"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

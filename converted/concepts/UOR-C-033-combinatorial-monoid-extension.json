@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:combinatorial-monoid-extension",
+  "name": "Combinatorial Monoid Extension",
+  "description": "The extension of UOR principles to combinatorial monoids and incidence algebras, where connected components serve as prime elements.",
+  "termCode": "UOR-C-033",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{For incidence algebras over a poset } P,",
+    "\\text{connected components } C_i \\text{ decompose uniquely}",
+    "\\phi_{Inc(P)}(f) = (v_{C_1}(f), v_{C_2}(f), \\ldots, v_{C_n}(f))",
+    "\\text{where } v_{C_i}(f) \\text{ captures the count of component } C_i \\text{ in } f"
+  ],
+  "image": [],
+  "sameAs": ["https://en.wikipedia.org/wiki/Incidence_algebra"],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:general-uor-existence",
+    "urn:uor:concept:prime-decomposition"
+  ],
+  "properties": {
+    "components": "Connected components, incidence algebras, component counting"
+  },
+  "examples": [
+    "Decomposition in incidence algebras",
+    "Component counting in combinatorial structures"
+  ],
+  "sourceText": "Key examples include:\n\n- Combinatorial Monoids: In incidence algebras, connected components decompose uniquely, with φ capturing component counts."
+}

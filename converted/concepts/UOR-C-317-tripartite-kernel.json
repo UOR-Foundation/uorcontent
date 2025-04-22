@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:tripartite-kernel",
+  "name": "Tripartite Kernel",
+  "description": "Tripartite Kernel is a concept in the Universal Object Reference framework.",
+  "termCode": "UOR-C-317",
+  "dateCreated": "2025-04-22T20:01:32.370Z",
+  "dateModified": "2025-04-22T20:01:32.370Z"
+}

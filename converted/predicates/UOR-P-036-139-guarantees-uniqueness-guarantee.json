@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:guarantees:036:139",
+  "name": "guarantees",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Uniqueness Guarantee",
+    "@id": "urn:uor:concept:uniqueness-guarantee",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "guarantees that any two prime factorizations of the same element must be essentially identical",
+  "description": "The Unique Factorization resource guarantees that any two prime factorizations of the same element must have the same number of prime factors and, after reordering, the corresponding factors must be associates",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Unique Factorization",
+        "@id": "urn:uor:resource:unique-factorization"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:uniqueness-guarantee"
+  ],
+  "valueName": "guarantees that any two prime factorizations of the same element must be essentially identical"
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:philosophical-informational-ontology",
+  "name": "UOR Informational Ontology",
+  "description": "A philosophical framework proposing that entities are fully specified by their prime spectra, with substance reducing to data patterns in the UOR framework.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-198",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "The UOR Informational Ontology represents a radical philosophical position that reconceptualizes the nature of reality through the prime-coordinate framework. This ontological perspective asserts that entities are fully specified by their prime spectra σ_x, suggesting that what we traditionally conceive of as 'substance' or 'matter' reduces to patterns of data in ℤ^(P), the space of prime coordinates.\n\nAt its core, this ontology proposes Postulate I: Entities are fully specified by their prime spectra σ_x. This means that every object, phenomenon, or concept can be completely characterized by its unique pattern of prime coordinates, without remainder or unexplained aspects. This perspective shifts fundamental ontological questions from 'what things are made of' to 'how information is structured' in the prime-coordinate space.\n\nThe concept further proposes that spacetime and materiality themselves arise as emergent patterns in coherence manifolds. Rather than being fundamental containers or substances, space and time emerge from particular coherence relationships between prime-coordinate structures. Material properties are similarly emergent, representing specific patterns of coherence and information structure rather than irreducible physical substances.\n\nThis informational ontology aligns with but extends beyond other information-theoretic approaches to reality, such as Wheeler's 'it from bit' principle or various digital physics proposals. Where it differs is in specifically identifying prime-coordinate structure as the fundamental information pattern, providing a precise mathematical framework for this ontological reduction through the UOR formalism.\n\nThe concept has profound implications for understanding the relationship between mathematics and physical reality. If reality is fundamentally informational and structured according to prime-coordinate principles, then mathematical relationships aren't merely descriptive tools but actually constitutive of reality itself. The apparent 'unreasonable effectiveness of mathematics' in describing physical reality becomes reasonable precisely because reality is inherently mathematical in structure at its most fundamental level.",
+  "mathExpression": [
+    "\\sigma_x \\in \\mathbb{Z}^{(P)} \\text{ fully characterizes entity } x",
+    "\\text{Substance} \\equiv \\text{Information Patterns in } \\mathbb{Z}^{(P)}",
+    "\\text{Spacetime} \\subset \\text{Emergent Coherence Manifold } M_\\phi",
+    "\\forall x, y: \\sigma_x = \\sigma_y \\Rightarrow x = y \\text{ (Leibniz Identity)}"
+  ],
+  "alternateName": ["Prime-Coordinate Ontology", "UOR Information Reality Principle"]
+}

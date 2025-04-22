@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:states:044:170",
+  "name": "states",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Coherence Norm Statement",
+    "@id": "urn:uor:concept:axiom-coherence-norm-statement"
+  },
+  "value": "states the formal definition of the Coherence Norm Axiom as a Euclidean norm on prime coordinates",
+  "description": "The Coherence Norm Axiom resource states that the prime coordinate space ℤ^(P) is equipped with the Euclidean norm ‖φ(X)‖ = √(∑_p φ(X)(p)²), which measures the simplicity of an object's prime exponent vector and provides a rigorous metric for representational complexity",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Coherence Norm Axiom",
+      "@id": "urn:uor:resource:axiom-coherence-norm"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

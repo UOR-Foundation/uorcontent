@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:uniqueness-guarantee",
+  "name": "Uniqueness Guarantee",
+  "description": "The mathematical guarantee that any two prime factorizations of the same element must have the same number of prime factors and, after reordering, the corresponding prime factors must be associates.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-139",
+  "text": "The uniqueness guarantee is a critical component of the Unique Factorization Theorem, establishing that prime decompositions are not merely possible but essentially unique. This property ensures that an object's prime structure is an inherent characteristic rather than an artifact of a particular factorization approach.\n\nMathematically, the uniqueness clause states that if an element x has two prime factorizations: x = u · p₁ · p₂ · ... · pₙ = v · q₁ · q₂ · ... · qₘ, where u and v are units and the pᵢ and qⱼ are primes, then two conditions must hold. First, n = m, meaning both factorizations must have exactly the same number of prime factors. Second, after appropriate reordering, pᵢ and qᵢ must be associates for each i, meaning they differ at most by multiplication by a unit.\n\nThis uniqueness property is what gives prime factorization its power as a canonical representation system. Without uniqueness, the same object could have multiple, fundamentally different prime representations, leading to ambiguity and inconsistency in analysis. The guarantee of uniqueness ensures that when we decompose an object into its prime components, we are revealing an intrinsic structural property of the object itself.\n\nThe uniqueness guarantee has profound implications for the UOR framework. It establishes that prime coordinates provide a well-defined mapping from objects to their coordinate representations, with each object corresponding to exactly one point in prime-coordinate space. This one-to-one correspondence ensures that operations and analyses in the prime-coordinate space accurately reflect the properties of the original objects, without distortion or ambiguity.",
+  "mathExpression": [
+    "\\text{If } x = u \\cdot p_1 \\cdot p_2 \\cdot \\ldots \\cdot p_n = v \\cdot q_1 \\cdot q_2 \\cdot \\ldots \\cdot q_m \\text{ where:}",
+    "u, v \\text{ are units}",
+    "p_i, q_j \\text{ are primes}",
+    "\\text{Then:}",
+    "1. n = m \\text{ (same number of prime factors)}",
+    "2. \\exists \\sigma \\in S_n \\text{ such that } p_i \\text{ and } q_{\\sigma(i)} \\text{ are associates for all } i"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Factorization Theorem",
+      "@id": "urn:uor:concept:factorization-theorem"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime UOR Role",
+      "@id": "urn:uor:concept:prime-uor-role"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

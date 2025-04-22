@@ -1,0 +1,51 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:topic:prime-foundations",
+  "name": "Prime Foundations",
+  "description": "The core mathematical principles upon which the Universal Object Reference framework is built, establishing how objects can be uniquely represented through their prime components.",
+  "keywords": ["prime foundations", "intrinsic primes", "unique factorization", "prime coordinates", "prime formula", "coherence norm"],
+  "text": "The Prime Foundations establish the core mathematical principles upon which the Universal Object Reference framework is built. At the heart of UOR lie several foundational concepts that ensure objects can be uniquely represented and analyzed: Intrinsic Primes as irreducible building blocks that serve as the basis for all compositions; Unique Factorization ensuring every object admits one and only one prime decomposition; Prime Coordinates mapping objects to their spectrum of prime components; Prime Formula providing rigorous definition of prime valuations in arbitrary domains; and Coherence Norm as a measure of representational simplicity in prime-coordinate space.\n\nThese principles extend the Fundamental Theorem of Arithmetic to arbitrary compositional systems, providing a universal language for describing objects across domains. By establishing a coherent prime-coordinate representation, UOR creates a framework where structure, dynamics, and observer perspectives can be unified. The mathematical power of these foundations lies in their ability to transform multiplicative relationships into additive vector spaces, revealing the hidden geometry of prime decompositions.",
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "learningResourceType": "Topic",
+  "hasPart": [
+    {
+      "@type": "CreativeWork",
+      "name": "Intrinsic Primes",
+      "@id": "urn:uor:resource:intrinsic-primes"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Unique Factorization",
+      "@id": "urn:uor:resource:unique-factorization"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Prime Coordinates",
+      "@id": "urn:uor:resource:prime-coordinates"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Prime Formula",
+      "@id": "urn:uor:resource:prime-formula"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Coherence Norm & Metric",
+      "@id": "urn:uor:resource:coherence-norm"
+    }
+  ],
+  "potentialAction": {
+    "@type": "Action",
+    "name": "explore",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "/foundations/{subtopic}"
+    }
+  }
+}

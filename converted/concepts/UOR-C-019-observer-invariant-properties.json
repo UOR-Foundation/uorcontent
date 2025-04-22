@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:observer-invariant-properties",
+  "name": "Observer-Invariant Properties",
+  "description": "Properties of objects in the UOR framework that remain unchanged regardless of the observer reference frame from which they are described.",
+  "termCode": "UOR-C-019",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "relatedConcepts": [
+    "urn:uor:concept:observer-coherence",
+    "urn:uor:concept:frame-objectivity",
+    "urn:uor:concept:prime-decomposition"
+  ],
+  "sourceText": "Certain properties remain invariant across all valid observer frames: The cardinality of the prime decomposition (number of distinct prime factors), the essential factorization pattern (which primes appear, if not their exact representation), the algebraic relationships between composed objects, and the topological features of the prime-coordinate space.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

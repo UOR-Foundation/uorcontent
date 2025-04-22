@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:implements:034:132",
+  "name": "implements",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Network Layer Implementations",
+    "@id": "urn:uor:concept:network-layer-implementations",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "implements practical protocol designs across the OSI network layers",
+  "description": "The UOR Network Mapping resource implements practical protocol designs from physical layer signal transmission to application layer interactions, all derived from UOR principles and coherence preservation",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "UOR Network Mapping",
+        "@id": "urn:uor:resource:uor-network-mapping"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:network-layer-implementations"
+  ],
+  "valueName": "implements practical protocol designs across the OSI network layers"
+}

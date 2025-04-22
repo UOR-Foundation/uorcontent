@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:presents-neural-model",
+  "name": "presents neural coherence model",
+  "description": "Relation indicating that a resource presents a model of neural systems as coherence-processing networks",
+  "propertyID": "UOR-P-112",
+  "value": "The resource presents a precise model of neural systems as coherence-processing networks featuring prime-coordinate neural coding (where neurons encode information through distributed prime-coordinate patterns), synaptical factor decomposition (neural networks naturally decomposing complex signals into prime factors), and the emergent coherence theorem (demonstrating that neuronal systems naturally converge toward minimal-coherence representations).",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "name": "relation strength",
+    "value": "strong"
+  },
+  "subject": {
+    "@id": "urn:uor:resource:hidden-symphony"
+  },
+  "object": {
+    "@id": "urn:uor:concept:neural-coherence-architecture"
+  }
+}

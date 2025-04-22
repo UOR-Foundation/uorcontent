@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:provides:036:140",
+  "name": "provides",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Factorization Examples",
+    "@id": "urn:uor:concept:factorization-examples",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "provides concrete examples of unique factorization across different mathematical domains",
+  "description": "The Unique Factorization resource provides concrete examples of unique factorization in integers, polynomials, and Gaussian integers, demonstrating the universal applicability of the principle",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Unique Factorization",
+        "@id": "urn:uor:resource:unique-factorization"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:factorization-examples"
+  ],
+  "valueName": "provides concrete examples of unique factorization across different mathematical domains"
+}

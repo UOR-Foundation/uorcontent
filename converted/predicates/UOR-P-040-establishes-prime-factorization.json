@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-prime-factorization",
+  "name": "Establishes Prime Factorization",
+  "description": "Establishes the theorem and mathematical framework for the unique decomposition of dynamical processes into temporal prime elements.",
+  "propertyID": "UOR-P-040",
+  "value": "theoretical relationship",
+  "subject": "urn:uor:resource:temporal-prime-decomposition",
+  "object": "urn:uor:concept:temporal-prime-factorization",
+  "relationshipStrength": "fundamental",
+  "contextualDescription": "The Temporal Prime Decomposition resource establishes the Temporal Prime Factorization Theorem that extends the fundamental theorem of arithmetic to dynamical systems, enabling the unique factorization of any time-dependent process into temporal prime elements."
+}

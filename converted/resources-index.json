@@ -1,0 +1,612 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "UOR Resources Index",
+  "description": "Index of all UOR resources",
+  "numberOfItems": 67,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "urn:uor:resource:overview",
+        "@type": "CreativeWork",
+        "name": "Overview and Motivation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "urn:uor:resource:canonical-representation",
+        "@type": "CreativeWork",
+        "name": "Canonical Representation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "urn:uor:resource:spectral-interpretation",
+        "@type": "CreativeWork",
+        "name": "Spectral Interpretation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": "urn:uor:resource:fiber-bundle",
+        "@type": "CreativeWork",
+        "name": "Fiber Bundle Structure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@id": "urn:uor:resource:observer-coherence",
+        "@type": "CreativeWork",
+        "name": "Observer Reference Frames"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@id": "urn:uor:resource:geometry-prime-spaces",
+        "@type": "CreativeWork",
+        "name": "Geometry of Prime Spaces"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@id": "urn:uor:resource:algebraic-topological-enhancements",
+        "@type": "CreativeWork",
+        "name": "Algebraic & Topological Enhancements"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@id": "urn:uor:resource:category-theoretic-perspective",
+        "@type": "CreativeWork",
+        "name": "Category-Theoretic Perspective"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@id": "urn:uor:resource:generalization",
+        "@type": "CreativeWork",
+        "name": "UOR Generalization"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@id": "urn:uor:resource:universal-numbers-foundation",
+        "@type": "CreativeWork",
+        "name": "Foundations of Universal Numbers"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@id": "urn:uor:resource:computability-aspects",
+        "@type": "CreativeWork",
+        "name": "Computability Aspects of Universal Numbers"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@id": "urn:uor:resource:algebraic-structure",
+        "@type": "CreativeWork",
+        "name": "Algebraic Structure of Universal Numbers"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@id": "urn:uor:resource:topological-properties",
+        "@type": "CreativeWork",
+        "name": "Topological Properties of Universal Numbers"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@id": "urn:uor:resource:universal-analysis",
+        "@type": "CreativeWork",
+        "name": "Universal Analysis"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@id": "urn:uor:resource:applications-domains",
+        "@type": "CreativeWork",
+        "name": "Applications and Domains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "item": {
+        "@id": "urn:uor:resource:computational-algorithms",
+        "@type": "CreativeWork",
+        "name": "Computational Algorithms for Universal Numbers"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "item": {
+        "@id": "urn:uor:resource:uor-integration",
+        "@type": "CreativeWork",
+        "name": "Universal Coordinates: UOR Integration"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "item": {
+        "@id": "urn:uor:resource:time-operator-formalism",
+        "@type": "CreativeWork",
+        "name": "Time Operator Formalism"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "item": {
+        "@id": "urn:uor:resource:temporal-prime-decomposition",
+        "@type": "CreativeWork",
+        "name": "Temporal Prime Decomposition"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "item": {
+        "@id": "urn:uor:resource:coherence-preserving-dynamics",
+        "@type": "CreativeWork",
+        "name": "Coherence-Preserving Dynamics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "item": {
+        "@id": "urn:uor:resource:temporal-observer-frames",
+        "@type": "CreativeWork",
+        "name": "Temporal Observer Frames"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "item": {
+        "@id": "urn:uor:resource:non-local-temporal-correlations",
+        "@type": "CreativeWork",
+        "name": "Non-Local Temporal Correlations"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "item": {
+        "@id": "urn:uor:resource:emergent-temporal-order",
+        "@type": "CreativeWork",
+        "name": "Emergent Temporal Order"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "item": {
+        "@id": "urn:uor:resource:universal-transforms",
+        "@type": "CreativeWork",
+        "name": "Universal Transforms"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "item": {
+        "@id": "urn:uor:resource:block-conversion",
+        "@type": "CreativeWork",
+        "name": "Block Conversion"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "item": {
+        "@id": "urn:uor:resource:signal-compression",
+        "@type": "CreativeWork",
+        "name": "Signal Compression"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "item": {
+        "@id": "urn:uor:resource:information-preservation",
+        "@type": "CreativeWork",
+        "name": "Information Preservation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "item": {
+        "@id": "urn:uor:resource:pivot-fields",
+        "@type": "CreativeWork",
+        "name": "Pivot Fields"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "item": {
+        "@id": "urn:uor:resource:digital-twin-framework",
+        "@type": "CreativeWork",
+        "name": "Digital Twin Framework"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "item": {
+        "@id": "urn:uor:resource:tripartite-kernel",
+        "@type": "CreativeWork",
+        "name": "Tripartite Kernel"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "item": {
+        "@id": "urn:uor:resource:universal-identity",
+        "@type": "CreativeWork",
+        "name": "Universal Identity"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "item": {
+        "@id": "urn:uor:resource:media-type-definition",
+        "@type": "CreativeWork",
+        "name": "Media Type Definition"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "item": {
+        "@id": "urn:uor:resource:distributed-compute",
+        "@type": "CreativeWork",
+        "name": "Distributed Compute"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "item": {
+        "@id": "urn:uor:resource:uor-network-mapping",
+        "@type": "CreativeWork",
+        "name": "UOR Network Mapping"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "item": {
+        "@id": "urn:uor:resource:intrinsic-primes",
+        "@type": "CreativeWork",
+        "name": "Intrinsic Primes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "item": {
+        "@id": "urn:uor:resource:unique-factorization",
+        "@type": "CreativeWork",
+        "name": "Unique Factorization"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "item": {
+        "@id": "urn:uor:resource:prime-coordinates",
+        "@type": "CreativeWork",
+        "name": "Prime Coordinates"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "item": {
+        "@id": "urn:uor:resource:prime-formula",
+        "@type": "CreativeWork",
+        "name": "Prime Formula"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "item": {
+        "@id": "urn:uor:resource:coherence-norm",
+        "@type": "CreativeWork",
+        "name": "Coherence Norm & Metric"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "item": {
+        "@id": "urn:uor:resource:axiom-intrinsic-primes",
+        "@type": "CreativeWork",
+        "name": "Intrinsic Primes Axiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "item": {
+        "@id": "urn:uor:resource:axiom-unique-factorization",
+        "@type": "CreativeWork",
+        "name": "Unique Factorization Axiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "item": {
+        "@id": "urn:uor:resource:axiom-prime-coordinate-homomorphism",
+        "@type": "CreativeWork",
+        "name": "Prime-Coordinate Homomorphism Axiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "item": {
+        "@id": "urn:uor:resource:axiom-canonical-representation",
+        "@type": "CreativeWork",
+        "name": "Canonical Representation Axiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "item": {
+        "@id": "urn:uor:resource:axiom-coherence-norm",
+        "@type": "CreativeWork",
+        "name": "Coherence Norm Axiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "item": {
+        "@id": "urn:uor:resource:axiom-coherence-inner-product",
+        "@type": "CreativeWork",
+        "name": "Coherence Inner Product Axiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "item": {
+        "@id": "urn:uor:resource:axiom-trilateral-coherence",
+        "@type": "CreativeWork",
+        "name": "Trilateral Coherence Axiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "item": {
+        "@id": "urn:uor:resource:axiom-universal-mapping-property",
+        "@type": "CreativeWork",
+        "name": "Universal Mapping Property Axiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "item": {
+        "@id": "urn:uor:resource:beyond-integers",
+        "@type": "CreativeWork",
+        "name": "Beyond Integers"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "item": {
+        "@id": "urn:uor:resource:recent-extensions",
+        "@type": "CreativeWork",
+        "name": "Recent Extensions"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "item": {
+        "@id": "urn:uor:resource:physics-interpretation",
+        "@type": "CreativeWork",
+        "name": "Physics Interpretation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "item": {
+        "@id": "urn:uor:resource:philosophical-implications",
+        "@type": "CreativeWork",
+        "name": "Philosophical Implications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "item": {
+        "@id": "urn:uor:resource:formal-supplement",
+        "@type": "CreativeWork",
+        "name": "Formal Supplement"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "item": {
+        "@id": "urn:uor:resource:formal-generalization",
+        "@type": "CreativeWork",
+        "name": "Formal Generalization"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 54,
+      "item": {
+        "@id": "urn:uor:resource:ensuring-unique-factorization",
+        "@type": "CreativeWork",
+        "name": "Ensuring Unique Factorization"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 55,
+      "item": {
+        "@id": "urn:uor:resource:hidden-symphony",
+        "@type": "CreativeWork",
+        "name": "Hidden Symphony"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 56,
+      "item": {
+        "@id": "urn:uor:resource:practical-transcendence",
+        "@type": "CreativeWork",
+        "name": "Practical Transcendence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
+      "item": {
+        "@id": "urn:uor:resource:ultimate-implication",
+        "@type": "CreativeWork",
+        "name": "The Ultimate Implication"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 58,
+      "item": {
+        "@id": "urn:uor:resource:incompleteness-theorem",
+        "@type": "CreativeWork",
+        "name": "Gödel's Incompleteness Theorem"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 59,
+      "item": {
+        "@id": "urn:uor:resource:meaning-overview",
+        "@type": "CreativeWork",
+        "name": "Meaning in the UOR Framework"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 60,
+      "item": {
+        "@id": "urn:uor:resource:practical-implementation-guide",
+        "@type": "CreativeWork",
+        "name": "Practical Implementation Guide"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 61,
+      "item": {
+        "@id": "urn:uor:resource:cross-domain-translation-guide",
+        "@type": "CreativeWork",
+        "name": "Cross-Domain Translation Guide"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 62,
+      "item": {
+        "@id": "urn:uor:resource:learning-pathway-guide",
+        "@type": "CreativeWork",
+        "name": "Learning Pathway Guide"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 63,
+      "item": {
+        "@id": "urn:uor:resource:advanced-uor-extensions",
+        "@type": "CreativeWork",
+        "name": "Advanced UOR Framework Extensions"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 64,
+      "item": {
+        "@id": "urn:uor:topic:universal-object-reference",
+        "@type": "CreativeWork",
+        "name": "Universal Object Reference"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 65,
+      "item": {
+        "@id": "urn:uor:topic:meaning",
+        "@type": "CreativeWork",
+        "name": "Meaning"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 66,
+      "item": {
+        "@id": "urn:uor:topic:learning-implementation",
+        "@type": "CreativeWork",
+        "name": "Learning and Implementation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 67,
+      "item": {
+        "@id": "urn:uor:topic:advanced-extensions",
+        "@type": "CreativeWork",
+        "name": "Advanced Extensions"
+      }
+    }
+  ]
+}

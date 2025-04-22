@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:explains:037:145",
+  "name": "explains",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Coordinate Significance",
+    "@id": "urn:uor:concept:coordinate-significance",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "explains the profound importance of transforming multiplicative structures into additive vector spaces",
+  "description": "The Prime Coordinates resource explains how the transformation from multiplicative to additive structures makes complex patterns of factorization visually and algebraically accessible",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Prime Coordinates",
+        "@id": "urn:uor:resource:prime-coordinates"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:coordinate-significance"
+  ],
+  "valueName": "explains the profound importance of transforming multiplicative structures into additive vector spaces"
+}

@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-canonical-representation-statement",
+  "name": "Axiom Canonical Representation Statement",
+  "description": "The formal statement of the Canonical Representation Axiom: The image φ(X) is a unique, lossless encoding that does not depend on numeral base or observer frame and achieves the minimal coherence norm among all representations.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-166",
+  "text": "The Canonical Representation Axiom is formally stated as: \"The image φ(X) is a unique, lossless encoding that does not depend on numeral base or observer frame and achieves the minimal coherence norm among all representations.\"\n\nThis foundational axiom establishes the prime coordinate representation as the canonical form for representing any object in the universe. It asserts that the mapping φ, which transforms objects into their prime coordinate vectors, provides a representation with several crucial properties:\n\n1. Uniqueness: Each object maps to a distinct prime coordinate vector, ensuring a one-to-one correspondence between objects and their representations.\n\n2. Losslessness: The prime coordinate representation preserves all structural information about the object, allowing for perfect reconstruction of the original object from its coordinates.\n\n3. Base Independence: Unlike conventional number systems that depend on arbitrary choices of base (decimal, binary, etc.), the prime coordinate representation is intrinsic to the object and does not depend on such arbitrary choices.\n\n4. Frame Invariance: The representation remains constant regardless of the observer's perspective or reference frame, providing an absolute description of the object's structure.\n\n5. Minimal Complexity: Among all possible representations, the prime coordinate representation achieves the lowest possible coherence norm, making it objectively the simplest description of the object.\n\nAs the fourth of the eight core UOR axioms, the Canonical Representation Axiom builds on the preceding axioms (Intrinsic Primes, Unique Factorization, and Prime-Coordinate Homomorphism) to establish not just that objects can be mapped to prime coordinates, but that this mapping provides the most fundamental and natural description possible.",
+  "mathExpression": [
+    "\\phi(X) \\text{ is unique, lossless, base-independent, and frame-invariant}",
+    "\\forall R \\text{ (alternative representation)}, \\|\\phi(X)\\| \\leq \\|R(X)\\|"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Canonical Form",
+      "@id": "urn:uor:concept:canonical-form"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Lossless Encoding",
+      "@id": "urn:uor:concept:lossless-encoding"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

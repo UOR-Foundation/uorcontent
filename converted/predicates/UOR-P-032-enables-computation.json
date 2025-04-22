@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:enables-computation",
+  "name": "enables computation",
+  "propertyID": "uor:predicate",
+  "value": "enables computation",
+  "subjectOf": {
+    "@id": "urn:uor:concept:representation-algorithms"
+  },
+  "targetCollection": [
+    "urn:uor:concept:arithmetic-algorithms",
+    "urn:uor:concept:advanced-computational-procedures",
+    "urn:uor:concept:verification-algorithms"
+  ],
+  "valueName": "computational enablement relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "enables computation"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

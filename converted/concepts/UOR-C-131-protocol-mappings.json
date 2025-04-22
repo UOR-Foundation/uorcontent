@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:protocol-mappings",
+  "name": "Protocol Mappings",
+  "description": "The explicit mathematical mappings from UOR concepts to networking implementations, including network addresses, routing metrics, network verification, and protocol transformations.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-131",
+  "text": "The Internet Substrate Protocols define precise mathematical mappings from UOR concepts to networking implementations, creating a formal bridge between theory and practice.\n\nPrime Coordinates to Network Addresses mapping establishes how abstract prime coordinate representations are translated into concrete network addressing schemes. This is formalized as Addr(φ(E)) = ψ(SigBits(φ(E))), where Addr is the network addressing function, ψ is a structure-preserving projection, and SigBits extracts significant bits from the prime coordinate representation. For IPv6 compatibility, this is expressed as IPv6(φ(E)) = [Top64(φ(E)) : Bottom64(φ(E))], where Top64 and Bottom64 extract the most and least significant 64 bits from a condensed representation of the prime coordinates. This mapping ensures that network addresses reflect the underlying mathematical structure of the entities they represent.\n\nCoherence Norm to Routing Metrics mapping defines how the abstract concept of coherence norm is translated into concrete routing metrics used by network protocols. This is formalized as RouteMetric(path) = ∑_i ||φ(N_i) - φ(N_{i+1})||_c, where RouteMetric is the path cost function used in routing algorithms, N_i represents network nodes along the path, and ||·||_c is the coherence norm. This mapping creates routing algorithms that naturally optimize for coherence preservation, ensuring that information traverses the network with minimal distortion.\n\nTrilateral Coherence to Network Verification mapping establishes how the abstract concept of trilateral coherence is used to verify network relationships. This is formalized as Verify(N₁, N₂, N₃) = (det⟨φ(N₁), φ(N₂), φ(N₃)⟩ > τ_v), where Verify is the verification function, det⟨·, ·, ·⟩ is the determinant of the matrix formed by the three prime coordinate vectors, and τ_v is the verification threshold. This mapping enables triangulation-based verification of network relationships, providing a powerful mechanism for validating network integrity.\n\nUniversal Mapping Property to Protocol Transformations mapping defines how the abstract concept of universal mapping property enables coherent transformation between different protocol domains. This is formalized as Transform(P₁, P₂, I) = M_{P₁→P₂}(φ(I)), where Transform converts information between protocols, M_{P₁→P₂} is the mapping function from protocol P₁ to protocol P₂, and φ(I) is the prime coordinate representation of information I. This mapping ensures that information can be coherently transformed between different protocol domains while preserving its essential mathematical properties.",
+  "mathExpression": [
+    "Addr(\\phi(E)) = \\psi(SigBits(\\phi(E)))",
+    "IPv6(\\phi(E)) = [Top64(\\phi(E)) : Bottom64(\\phi(E))]",
+    "RouteMetric(path) = \\sum_i ||\\phi(N_i) - \\phi(N_{i+1})||_c",
+    "Verify(N_1, N_2, N_3) = (det\\langle\\phi(N_1), \\phi(N_2), \\phi(N_3)\\rangle > \\tau_v)",
+    "Transform(P_1, P_2, I) = M_{P_1\\rightarrow P_2}(\\phi(I))"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Network Mapping Principles",
+      "@id": "urn:uor:concept:network-mapping-principles"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Trilateral Coherence",
+      "@id": "urn:uor:concept:trilateral-coherence"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Universal Identity",
+      "@id": "urn:uor:concept:identity-foundation"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

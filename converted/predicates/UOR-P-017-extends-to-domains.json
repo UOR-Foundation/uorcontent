@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:extends-to-domains",
+  "name": "extends to domains",
+  "propertyID": "uor:predicate",
+  "value": "extends to domains",
+  "subjectOf": {
+    "@id": "urn:uor:resource:generalization"
+  },
+  "targetCollection": [
+    "urn:uor:concept:general-uor-existence",
+    "urn:uor:concept:polynomial-ring-extension",
+    "urn:uor:concept:combinatorial-monoid-extension"
+  ],
+  "valueName": "extension relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "extends to domains"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

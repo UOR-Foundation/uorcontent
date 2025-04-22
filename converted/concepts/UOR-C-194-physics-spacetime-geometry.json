@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:physics-spacetime-geometry",
+  "name": "UOR Spacetime Geometry",
+  "description": "A framework for understanding spacetime geometry through the UOR prime-coordinate representation, providing analogues to general relativity concepts.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-194",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "The UOR framework reconceptualizes spacetime geometry through the lens of prime-coordinate representation. This concept establishes mathematical equivalents to key general relativity structures by mapping them onto the prime-coordinate space with the coherence metric.\n\nThe concept defines a coherence curvature tensor on the observer bundle, which measures the noncommutativity of covariant derivatives in prime space. This tensor provides a direct analogue to the Riemann curvature tensor in general relativity, capturing the geometric distortion of prime-coordinate space.\n\nAn Einstein field equations analogue is formulated where mass distributions induce nonzero curvature in prime space. The equation R_φ(p,q) - (1/2)R_φ g_φ(p,q) = κ · T_φ(p,q) relates the prime-coordinate Ricci tensor, coherence metric, and prime-energy-momentum tensor, establishing how matter causes curvature in the UOR framework.\n\nThe concept also includes a geodesic equation for prime space, describing minimal paths as d²φ^α/dλ² + Γ^α_βγ (dφ^β/dλ)(dφ^γ/dλ) = 0, where Γ^α_βγ are derived from the coherence metric. These geodesics represent the natural trajectories of objects through prime-coordinate space.\n\nGravitational waves appear as perturbations in the coherence field, propagating according to wave equations analogous to those in general relativity. These coherence oscillations travel through prime space and carry information about dynamic changes in the coherence metric.",
+  "mathExpression": [
+    "R(X,Y)Z = \\nabla_X\\nabla_Y Z - \\nabla_Y\\nabla_X Z - \\nabla_{[X,Y]} Z",
+    "R_\\phi(p,q) - (1/2)R_\\phi g_\\phi(p,q) = \\kappa \\cdot T_\\phi(p,q)",
+    "d^2\\phi^\\alpha/d\\lambda^2 + \\Gamma^\\alpha_{\\beta\\gamma} (d\\phi^\\beta/d\\lambda)(d\\phi^\\gamma/d\\lambda) = 0",
+    "\\Box h_{\\mu\\nu} = -16\\pi G/c^4 T_{\\mu\\nu}"
+  ],
+  "alternateName": ["Prime-Coordinate Spacetime", "UOR Gravitational Theory"]
+}

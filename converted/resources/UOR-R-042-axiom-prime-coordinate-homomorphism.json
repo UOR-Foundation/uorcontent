@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:axiom-prime-coordinate-homomorphism",
+  "name": "Prime-Coordinate Homomorphism Axiom",
+  "description": "The third core UOR axiom stating that there exists an injective homomorphism mapping each object to its exponent vector over primes, transforming multiplicative composition into additive vector operations.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Prime-Coordinate Homomorphism Axiom",
+    "description": "The formal axiom establishing the coordinate mapping that transforms object composition into vector addition, providing a bridge between structural and coordinate representations."
+  },
+  "text": "There exists an injective homomorphism φ: 𝒰 → ℤ^(P) mapping each object to its exponent vector over primes, satisfying φ(X∘Y)=φ(X)+φ(Y).\n\nThe Prime-Coordinate Homomorphism establishes a profound connection between objects and their structural coordinates. It transforms the multiplicative world of object composition into an additive vector space, where each prime dimension contributes independently to an object's structure.\n\nThis mapping φ assigns to each object a unique signature: a vector of exponents showing how many times each prime appears in the object's factorization. The power of this homomorphism is that it linearizes composition - combining objects through multiplication corresponds to simply adding their prime coordinate vectors.\n\nKey insights include: Linearization of Structure, where this axiom converts multiplicative relationships into additive ones, enabling powerful linear algebraic and geometric techniques; Coordinate Isomorphism, which provides a one-to-one correspondence between objects and their prime coordinates, preserving all structural information; and Algebraic Foundation, which transforms the study of arbitrary domains into the well-understood mathematics of lattices and vector spaces.\n\nGiven a universe of objects 𝒰 with composition operation ∘, and a set of primes P, the prime coordinate map φ is defined as: φ(X)(p) = the exponent of prime p in X's factorization. This satisfies the homomorphism property: φ(X∘Y) = φ(X) + φ(Y), transforming composition into vector addition in ℤ^(P), the space of integer vectors indexed by primes.\n\nThis axiom builds on the Unique Factorization axiom, which ensures that φ is well-defined. It establishes the foundation for the Coherence Norm and Inner Product, which endow the coordinate space with geometric structure. The Canonical Representation axiom further ensures that this mapping provides the most intrinsic description of any object.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Eight Core UOR Axioms",
+    "@id": "urn:uor:topic:core-axioms"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["prime-coordinate homomorphism", "injective homomorphism", "linearization", "coordinate isomorphism", "algebraic foundation", "vector space"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:axiom-prime-coordinate-homomorphism-statement",
+      "urn:uor:concept:axiom-prime-coordinate-homomorphism-insights",
+      "urn:uor:concept:axiom-prime-coordinate-homomorphism-formalization",
+      "urn:uor:concept:axiom-prime-coordinate-homomorphism-connections"
+    ]
+  }
+}

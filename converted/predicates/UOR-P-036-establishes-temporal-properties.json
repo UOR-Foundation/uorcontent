@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-temporal-properties",
+  "name": "Establishes Temporal Properties",
+  "description": "Establishes the algebraic properties that govern how the time operator functions within the Universal Object Reference framework.",
+  "propertyID": "UOR-P-036",
+  "value": "property relationship",
+  "subject": "urn:uor:resource:time-operator-formalism",
+  "object": "urn:uor:concept:temporal-algebraic-properties",
+  "relationshipStrength": "fundamental",
+  "contextualDescription": "The Time Operator Formalism establishes the essential algebraic properties of the time operator, including composition, identity, inverses, and commutation relations, which ensure consistent temporal evolution while preserving coherence structures."
+}

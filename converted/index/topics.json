@@ -1,0 +1,95 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "numberOfItems": 8,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "urn:uor:topic:universal-object-reference",
+        "@type": "CreativeWork",
+        "name": "Universal Object Reference",
+        "description": "Foundations of the Prime Framework and Universal Object Reference.",
+        "url": "/topics/universal-object-reference"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "urn:uor:topic:universal-coordinates",
+        "@type": "CreativeWork",
+        "name": "Universal Coordinates",
+        "description": "The mathematical foundations and applications of universal coordinates, an extension of the UOR framework to numerical domains.",
+        "url": "/universal-coordinates/{subtopic}"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "urn:uor:topic:temporal-coherence",
+        "@type": "CreativeWork",
+        "name": "Temporal Coherence",
+        "description": "The study of how time and temporal evolution integrate within the Universal Object Reference framework, examining time as an operator on prime coordinate space.",
+        "url": "/temporal-coherence/{subtopic}"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": "urn:uor:topic:signal-processing",
+        "@type": "CreativeWork",
+        "name": "Signal Processing",
+        "description": "The application of Universal Object Reference principles to signal processing, enabling transformations, compression, and preservation of information across different representational domains.",
+        "url": "/signal-processing/{subtopic}"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@id": "urn:uor:topic:internet-substrate",
+        "@type": "CreativeWork",
+        "name": "Internet Substrate",
+        "description": "The application of Universal Object Reference principles to formalize the internet as a coherent topological space capable of functioning as a comprehensive digital twin of reality.",
+        "url": "/internet-substrate/{subtopic}"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@id": "urn:uor:topic:prime-foundations",
+        "@type": "CreativeWork",
+        "name": "Prime Foundations",
+        "description": "The core mathematical principles upon which the Universal Object Reference framework is built, establishing how objects can be uniquely represented through their prime components.",
+        "url": "/foundations/{subtopic}"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@id": "urn:uor:topic:core-axioms",
+        "@type": "CreativeWork",
+        "name": "Eight Core UOR Axioms",
+        "description": "The eight core axioms that codify the essential properties ensuring that any Unique Factorization Domain supports a fully coherent, observer-aware, prime-coordinate representation.",
+        "url": "/core-axioms/{subtopic}"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@id": "urn:uor:topic:extensions",
+        "@type": "CreativeWork",
+        "name": "Extensions & Applications",
+        "description": "Extensions of the UOR framework beyond its core axioms, demonstrating its applicability across diverse domains including number theory, physics, philosophy, and computer science.",
+        "url": "/extensions/{subtopic}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-unique-factorization-formalization",
+  "name": "Axiom Unique Factorization Formalization",
+  "description": "The mathematical formalization of the Unique Factorization Axiom, expressing how non-zero non-unit elements can be uniquely represented as products of primes.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-160",
+  "text": "In a unique factorization domain (UFD) D, the Unique Factorization Axiom can be formally expressed through precise mathematical notation and conditions.\n\nThe axiom states that every non-zero non-unit element x ∈ D can be expressed as:\n\nx = p₁ × p₂ × ... × pₙ\n\nwhere each pᵢ is a prime element in D. Furthermore, this representation is unique up to reordering and multiplication by units.\n\nTo formalize this more precisely:\n\n1. Existence: For any non-zero non-unit x ∈ D, there exist primes p₁, p₂, ..., pₙ ∈ D such that x = p₁ × p₂ × ... × pₙ.\n\n2. Uniqueness: If x = p₁ × p₂ × ... × pₙ = q₁ × q₂ × ... × qₘ where the pᵢ and qⱼ are primes, then n = m and there exists a permutation σ of {1, 2, ..., n} such that pᵢ and qσ(i) are associates (differ by a unit) for each i.\n\nThis formalization captures both the existence and uniqueness aspects of the axiom. The existence part ensures that every non-trivial element can be decomposed into primes, while the uniqueness part ensures that this decomposition is essentially unique.\n\nIn the context of abstract algebra, a UFD is specifically defined as an integral domain in which every non-zero non-unit element can be written as a product of irreducible elements in an essentially unique way. The UOR framework extends this mathematical concept to arbitrary domains with a composition operation, maintaining the core properties of existence and uniqueness in prime decomposition.\n\nThe mathematical rigor of this formalization provides a solid foundation for the subsequent axioms and ensures that the prime coordinate representation developed in the UOR framework has well-defined mathematical properties.",
+  "mathExpression": [
+    "x = p_1 \\times p_2 \\times \\ldots \\times p_n",
+    "\\text{If } x = p_1 \\times p_2 \\times \\ldots \\times p_n = q_1 \\times q_2 \\times \\ldots \\times q_m \\text{ then } n = m \\text{ and } \\exists \\sigma : \\{1,2,\\ldots,n\\} \\to \\{1,2,\\ldots,n\\} \\text{ s.t. } p_i \\sim q_{\\sigma(i)}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Unique Factorization Domain",
+      "@id": "urn:uor:concept:unique-factorization-domain"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Associate Elements",
+      "@id": "urn:uor:concept:associate-elements"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

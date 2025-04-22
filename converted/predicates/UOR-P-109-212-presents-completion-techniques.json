@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:presents-completion-techniques",
+  "name": "presents completion techniques",
+  "description": "Relation indicating that a resource presents completion techniques for regularizing factorization behavior",
+  "propertyID": "UOR-P-109",
+  "value": "The resource presents sophisticated completion techniques for regularizing factorization behavior, including valuation theory with discrete valuations, associated graded structures, valuation rings, formal completion methods, Henselization, p-adic completions, and formal power series methods like Weierstrass preparation and the Newton polygon method.",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "name": "relation strength",
+    "value": "strong"
+  },
+  "subject": {
+    "@id": "urn:uor:resource:ensuring-unique-factorization"
+  },
+  "object": {
+    "@id": "urn:uor:concept:completion-techniques"
+  }
+}

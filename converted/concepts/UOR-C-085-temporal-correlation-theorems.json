@@ -1,0 +1,54 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:temporal-correlation-theorems",
+  "name": "Temporal Correlation Theorems",
+  "description": "Fundamental mathematical theorems that establish the properties, constraints, and conservation laws governing non-local temporal correlations.",
+  "termCode": "UOR-C-085",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Several fundamental theorems establish the properties of non-local temporal correlations:}",
+    "\\text{Theorem 1 (Temporal Correlation Bound): For any two events separated by time}",
+    "\\text{interval } \\Delta t\\text{, the maximum possible correlation achievable through local}",
+    "\\text{causal mechanisms is bounded by a function that decreases with } \\Delta t\\text{.}",
+    "C_{max}^{local}(\\Delta t) \\leq f(\\Delta t) \\text{ where } \\frac{df}{d\\Delta t} < 0",
+    "\\text{Theorem 2 (Temporal Entanglement Conservation): Under coherence-preserving}",
+    "\\text{dynamics, the total temporal entanglement within a closed system remains constant.}",
+    "\\frac{d}{dt}\\int_\\Omega E_T(\\phi(x,t), \\phi(y,t)) dx dy = 0 \\text{ for closed domain } \\Omega",
+    "\\text{Theorem 3 (Reference Frame Invariance): While the appearance of causality may}",
+    "\\text{change between temporal reference frames, the measure of temporal entanglement}",
+    "\\text{remains invariant under coherence-preserving temporal frame transformations.}",
+    "E_T^{(F_1)}(E_1, E_2) = E_T^{(F_2)}(E_1, E_2) \\text{ for all coherence-preserving } F_1 \\to F_2",
+    "\\text{Theorem 4 (Information Transfer Limit): Non-local temporal correlations cannot}",
+    "\\text{be used to transfer arbitrary information from future to past at a rate exceeding}",
+    "\\text{the entropy production rate of the system.}",
+    "I_{future \\to past} \\leq \\dot{S}_{system}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:temporal-correlation-function",
+    "urn:uor:concept:temporal-correlation-types",
+    "urn:uor:concept:temporal-correlation-structures"
+  ],
+  "properties": {
+    "components": "Correlation bound theorem, entanglement conservation theorem, reference frame invariance theorem, information transfer limit theorem"
+  },
+  "examples": [
+    "Establishing the baseline for detecting genuinely non-local temporal correlations",
+    "Tracking conservation of temporal entanglement in closed quantum systems",
+    "Verifying that temporal entanglement measures remain consistent across observer perspectives",
+    "Determining fundamental limits on apparent retrocausal signaling capabilities"
+  ],
+  "theorems": [
+    "Theorem 1 (Temporal Correlation Bound): For any two events separated by time interval Δt, the maximum possible correlation achievable through local causal mechanisms is bounded by a function that decreases with Δt.",
+    "Theorem 2 (Temporal Entanglement Conservation): Under coherence-preserving dynamics, the total temporal entanglement within a closed system remains constant.",
+    "Theorem 3 (Reference Frame Invariance): While the appearance of causality may change between temporal reference frames, the measure of temporal entanglement remains invariant under coherence-preserving temporal frame transformations.",
+    "Theorem 4 (Information Transfer Limit): Non-local temporal correlations cannot be used to transfer arbitrary information from future to past at a rate exceeding the entropy production rate of the system."
+  ],
+  "sourceText": "Several fundamental theorems establish the properties of non-local temporal correlations:\n\nTemporal Correlation Bound Theorem (Theorem 1): For any two events separated by time interval Δt, the maximum possible correlation achievable through local causal mechanisms is bounded by a function that decreases with Δt.\n\nThis theorem establishes the baseline against which non-local correlations are measured.\n\nTemporal Entanglement Conservation Theorem (Theorem 2): Under coherence-preserving dynamics, the total temporal entanglement within a closed system remains constant.\n\nThis theorem identifies conservation laws for temporal entanglement, analogous to conservation laws in physics.\n\nReference Frame Invariance Theorem (Theorem 3): While the appearance of causality may change between temporal reference frames, the measure of temporal entanglement remains invariant under coherence-preserving temporal frame transformations.\n\nThis theorem ensures that the fundamental non-local properties of temporal correlations are observer-independent, even when their causal interpretation may vary.\n\nInformation Transfer Limit Theorem (Theorem 4): Non-local temporal correlations cannot be used to transfer arbitrary information from future to past at a rate exceeding the entropy production rate of the system.\n\nThis theorem places limits on apparent retrocausality, connecting it to thermodynamic principles."
+}

@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-universal-mapping-property-statement",
+  "name": "Axiom Universal Mapping Property Statement",
+  "description": "The formal statement of the Universal Mapping Property Axiom: Let (𝒰,⊗) be the multiplicative monoid of nonzero objects in a Unique Factorization Domain, and let φ: 𝒰 → ℤ^P be the prime-coordinate homomorphism. For any abelian group (G,+) and monoid homomorphism ψ: 𝒰 → G such that ψ(u) = 0 for all units u, there exists a unique group homomorphism h: ℤ^P → G satisfying ψ = h ∘ φ.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-182",
+  "text": "The Universal Mapping Property Axiom is formally stated as: \"Let (𝒰,⊗) be the multiplicative monoid of nonzero objects in a Unique Factorization Domain, and let φ: 𝒰 → ℤ^P be the prime-coordinate homomorphism. For any abelian group (G,+) and monoid homomorphism ψ: 𝒰 → G such that ψ(u) = 0 for all units u, there exists a unique group homomorphism h: ℤ^P → G satisfying ψ = h ∘ φ.\"\n\nThis statement establishes a profound universal property that elevates the prime-coordinate homomorphism from being merely one possible mapping to being the canonical bridge between multiplicative and additive structures. It asserts that any structure-preserving map from the universe of objects to an additive domain must factor through the prime-coordinate representation.\n\nThe statement contains several critical components:\n\n1. The Domain: (𝒰,⊗) represents the multiplicative monoid of non-zero objects in a Unique Factorization Domain—the universe of objects with their composition operation.\n\n2. The Prime-Coordinate Map: φ: 𝒰 → ℤ^P is the homomorphism established in previous axioms that maps each object to its vector of prime exponents.\n\n3. The Target: Any abelian group (G,+) represents a possible additive domain to which objects might be mapped.\n\n4. The Alternative Map: ψ: 𝒰 → G is any monoid homomorphism that preserves the multiplication-to-addition structure and maps units to the identity element.\n\n5. The Universal Factorization: The axiom states that such a map ψ must factor uniquely through φ via some homomorphism h: ℤ^P → G, meaning ψ = h ∘ φ.\n\nThis property can be visually represented as a commutative diagram:\n\n```\n𝒰 --φ--> ℤ^P\n \\       /\n  ψ     h\n   \\   /\n    v v\n     G\n```\n\nAs the eighth and final of the core UOR axioms, the Universal Mapping Property provides the capstone theoretical justification for the entire framework, showing that prime coordinates are not just one possible representation system but the universal one from which all others must derive.",
+  "mathExpression": [
+    "\\text{Let } (\\mathcal{U}, \\otimes) \\text{ be a UFD monoid and } \\phi: \\mathcal{U} \\to \\mathbb{Z}^P \\text{ the prime-coordinate map}",
+    "\\forall (G,+) \\text{ abelian group}, \\forall \\psi: \\mathcal{U} \\to G \\text{ s.t. } \\psi(u) = 0 \\text{ for units } u",
+    "\\exists! h: \\mathbb{Z}^P \\to G \\text{ s.t. } \\psi = h \\circ \\phi"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Commutative Diagram",
+      "@id": "urn:uor:concept:commutative-diagram"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Universal Property",
+      "@id": "urn:uor:concept:universal-property"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

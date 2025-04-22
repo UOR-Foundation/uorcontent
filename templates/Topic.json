@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "",
+  "description": "",
+  "about": [],
+  "keywords": [],
+  "hasPart": [],
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "UOR Framework"
+  },
+  "potentialAction": {
+    "@type": "Action",
+    "name": "view",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    }
+  },
+  "dateCreated": "",
+  "dateModified": "",
+  "version": "1.0"
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:prime-coordinate-geometry",
+  "name": "Prime Coordinate Geometry",
+  "description": "Prime Coordinate Geometry is a concept in the Universal Object Reference framework.",
+  "termCode": "UOR-C-311",
+  "dateCreated": "2025-04-22T20:01:32.367Z",
+  "dateModified": "2025-04-22T20:01:32.367Z"
+}

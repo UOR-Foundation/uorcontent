@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes:046:180",
+  "name": "formalizes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Trilateral Coherence Formalization",
+    "@id": "urn:uor:concept:axiom-trilateral-coherence-formalization"
+  },
+  "value": "formalizes the mathematical expression of the Trilateral Coherence Axiom",
+  "description": "The Trilateral Coherence Axiom resource formalizes the representation of an observed object as a tuple (X, D, r) where X is the object with its intrinsic structure, D is the set of applicable dynamics, and r is the observer frame, with the constraint that the prime structure remains invariant across frame transformations",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Trilateral Coherence Axiom",
+      "@id": "urn:uor:resource:axiom-trilateral-coherence"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

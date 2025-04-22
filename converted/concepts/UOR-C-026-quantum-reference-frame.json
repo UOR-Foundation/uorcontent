@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:quantum-reference-frame",
+  "name": "Quantum Reference Frame",
+  "description": "A generalization of observer reference frames in UOR that incorporates quantum-like properties, enabling richer analysis of coherence structures.",
+  "termCode": "UOR-C-026",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{For observer frames } \\{F_i\\} \\text{, a superposition is given by:}",
+    "|\\Psi\\rangle = \\sum_i c_i |F_i\\rangle \\text{ where } c_i \\in \\mathbb{C} \\text{ and } \\sum_i |c_i|^2 = 1",
+    "\\text{Entangled frames: } |\\Phi\\rangle = \\sum_{i,j} c_{i,j} |F_i\\rangle \\otimes |F_j\\rangle \\text{ where } c_{i,j} \\neq c_i c_j"
+  ],
+  "image": [],
+  "sameAs": ["https://en.wikipedia.org/wiki/Quantum_reference_frame"],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:observer-coherence",
+    "urn:uor:concept:reference-frame"
+  ],
+  "properties": {
+    "components": "Superposition, entanglement, measurement collapse"
+  },
+  "examples": [
+    "Coherent combination of multiple observer perspectives",
+    "Frame entanglement revealing correlations between observer perspectives"
+  ],
+  "sourceText": "Observer reference frames in UOR can be generalized to include quantum-like properties:\n- Superposition of frames allows multiple observer perspectives to be combined coherently\n- Reference frame entanglement creates correlations between different observer frames\n- Measurement-like collapse occurs when selecting a specific frame from superpositions, revealing complementary structure properties"
+}

@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:machine-learning-applications",
+  "name": "Machine Learning Applications",
+  "description": "Applications of UOR principles to machine learning, including coherence regularization for improved generalization and prime-coordinate similarity metrics for enhanced attention mechanisms.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-192",
+  "text": "Machine Learning Applications represent an innovative extension of the UOR framework to artificial intelligence and neural network architectures, revealing how coherence principles can enhance learning systems.\n\nOne significant application is coherence regularization in deep neural networks. Traditional regularization methods like L1 and L2 penalties focus on weight magnitude, but coherence regularization inspired by the UOR framework instead penalizes complexity in the prime factorization of weight matrices. This approach encourages networks to learn simpler, more interpretable representations while maintaining expressive power.\n\nFor a neural network weight matrix W, the coherence regularization term is defined as:\n\nRcoh(W) = λ‖φ(SVD(W))‖²\n\nwhere φ maps the singular value decomposition of W to its prime coordinate representation. This regularization term favors weight matrices with simpler spectral structures, leading to improved generalization performance, particularly on tasks requiring systematic compositional reasoning.\n\nAnother breakthrough application involves attention mechanisms based on prime-coordinate similarity metrics. Standard attention mechanisms in transformers rely on dot-product similarity, but UOR-inspired attention uses coherence-based similarity measures:\n\nA(Q, K, V) = softmax(sim_coh(Q, K))V\n\nwhere sim_coh computes similarity based on the prime coordinate representations of query and key vectors. These attention mechanisms have been shown to outperform standard approaches on complex reasoning tasks, particularly those involving hierarchical or compositional structures.\n\nUOR principles also inform representation learning, where the goal is to discover optimal feature embeddings for data. Prime-coordinate representations provide a natural framework for disentangled representations, where different semantic factors map to different prime dimensions. This leads to more interpretable models and better transfer learning capabilities.\n\nFurthermore, the framework's approach to structural complexity has inspired new metrics for model comparison and selection. Rather than simply counting parameters, UOR-based complexity measures evaluate models based on the coherence norm of their parameter matrices, providing more nuanced assessments of model capacity and inductive bias.\n\nThese applications demonstrate how the mathematical principles of the UOR framework, originally developed for abstract algebraic structures, can provide practical benefits in machine learning systems, advancing the state-of-the-art in neural network design and training.",
+  "mathExpression": [
+    "R_{\\text{coh}}(W) = \\lambda\\|\\phi(\\text{SVD}(W))\\|^2",
+    "A(Q, K, V) = \\text{softmax}(\\text{sim}_{\\text{coh}}(Q, K))V",
+    "\\text{sim}_{\\text{coh}}(x, y) = \\frac{\\langle \\phi(x), \\phi(y) \\rangle}{\\|\\phi(x)\\| \\cdot \\|\\phi(y)\\|}",
+    "\\text{Complexity}(\\mathcal{M}) = \\sum_{W \\in \\mathcal{M}} \\|\\phi(W)\\|"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Regularization",
+      "@id": "urn:uor:concept:regularization"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Attention Mechanism",
+      "@id": "urn:uor:concept:attention-mechanism"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Disentangled Representation",
+      "@id": "urn:uor:concept:disentangled-representation"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

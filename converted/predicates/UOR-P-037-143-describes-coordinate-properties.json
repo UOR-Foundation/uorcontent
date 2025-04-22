@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes:037:143",
+  "name": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Coordinate Properties",
+    "@id": "urn:uor:concept:coordinate-properties",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "describes the remarkable properties that make prime-coordinate representation powerful for object analysis",
+  "description": "The Prime Coordinates resource describes properties including injectivity, linearization, dimension reduction, and base independence that make prime coordinates a powerful system for representing and analyzing objects",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Prime Coordinates",
+        "@id": "urn:uor:resource:prime-coordinates"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:coordinate-properties"
+  ],
+  "valueName": "describes the remarkable properties that make prime-coordinate representation powerful for object analysis"
+}

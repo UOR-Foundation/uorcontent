@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:temporal-eigenstructures",
+  "name": "Temporal Eigenstructures",
+  "description": "The fundamental modes of temporal evolution represented by eigenvalues and eigenfunctions of the time operator in the Universal Object Reference framework.",
+  "termCode": "UOR-C-068",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{For the time operator } T_{\\Delta t} \\text{, an eigenfunction } \\phi_\\lambda \\text{ satisfies:}",
+    "T_{\\Delta t}[\\phi_\\lambda] = e^{\\lambda \\Delta t} \\phi_\\lambda",
+    "\\text{where } \\lambda \\text{ is the corresponding eigenvalue.}",
+    "\\text{The eigenvalues represent the following temporal modes:}",
+    "\\lambda = 0: \\text{ Steady states (time-invariant)}",
+    "\\lambda < 0: \\text{ Decay modes (exponential decay)}",
+    "\\lambda > 0: \\text{ Growth modes (exponential growth)}",
+    "\\lambda = i\\omega: \\text{ Oscillatory modes (periodic behavior)}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:time-operator-definition",
+    "urn:uor:concept:temporal-algebraic-properties",
+    "urn:uor:concept:observer-dependent-time"
+  ],
+  "properties": {
+    "components": "Eigenvalues, eigenfunctions, steady states, decay modes, growth modes, oscillatory modes, multi-temporal scales"
+  },
+  "examples": [
+    "Quantum systems with energy eigenstates that evolve through oscillatory modes",
+    "Complex systems exhibiting multiple simultaneous temporal modes through eigenfunction decomposition"
+  ],
+  "theorems": [
+    "The time operator admits eigenstructures that represent fundamental modes of temporal evolution: steady states, decay modes, growth modes, and oscillatory modes."
+  ],
+  "sourceText": "The time operator admits eigenstructures that represent fundamental modes of temporal evolution, including steady states, decay modes, growth modes, and oscillatory modes. The formalism can be extended to systems with multiple time scales through a generalized time operator.\n\nFor the time operator T_Δt, an eigenfunction φ_λ satisfies: T_Δt[φ_λ] = e^(λΔt)φ_λ, where λ is the corresponding eigenvalue.\n\nThese eigenvalues represent the following temporal modes:\n- λ = 0: Steady states (time-invariant)\n- λ < 0: Decay modes (exponential decay)\n- λ > 0: Growth modes (exponential growth)\n- λ = iω: Oscillatory modes (periodic behavior)\n\nComplex systems typically involve multiple simultaneous temporal modes, which can be decomposed into these fundamental eigenstructures."
+}

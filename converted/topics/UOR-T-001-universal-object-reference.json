@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:topic:universal-object-reference",
+  "name": "Universal Object Reference",
+  "description": "Foundations of the Prime Framework and Universal Object Reference.",
+  "about": ["prime numbers", "factorization", "universal objects", "canonical representation"],
+  "keywords": ["UOR", "prime framework", "prime decomposition", "observer invariance"],
+  "hasPart": [
+    "urn:uor:resource:overview",
+    "urn:uor:concept:uor-framework"
+  ],
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "UOR Framework"
+  },
+  "potentialAction": {
+    "@type": "Action",
+    "name": "view",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "/topics/universal-object-reference",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    }
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

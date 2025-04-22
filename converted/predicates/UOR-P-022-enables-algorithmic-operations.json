@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:enables-algorithmic-operations",
+  "name": "enables algorithmic operations",
+  "propertyID": "uor:predicate",
+  "value": "enables algorithmic operations",
+  "subjectOf": {
+    "@id": "urn:uor:concept:coordinate-computability"
+  },
+  "targetCollection": [
+    "urn:uor:concept:universal-number-algorithms",
+    "urn:uor:concept:computational-complexity-classes"
+  ],
+  "valueName": "algorithmic enablement relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "enables algorithmic operations"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

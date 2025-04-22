@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:prime-coordinate-map",
+  "name": "Prime Coordinate Map",
+  "description": "The mathematical function that assigns to each object its vector of prime exponents, creating a homomorphism from the multiplicative structure of objects to the additive structure of vector space.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-142",
+  "text": "The prime-coordinate map is a fundamental mathematical function that provides the bridge between objects in a factorization domain and their representation as coordinate vectors. This mapping, denoted as φ, is at the heart of the UOR framework's ability to represent complex objects in a structured coordinate system.\n\nFor any object x in a domain with unique factorization, the prime-coordinate map φ assigns to x its vector of prime exponents. If x has the prime factorization x = p₁^e₁ · p₂^e₂ · ... · pₙ^eₙ (where each pᵢ is a prime and eᵢ is its exponent), then φ(x) is the vector (e₁, e₂, ..., eₙ). In more general terms, φ(x) maps each prime p to its exponent in the factorization of x.\n\nThe result of this mapping is a vector in what is called the exponent space. For objects with finite prime factorizations, this space is typically Z^P, where Z is the set of integers and P is the set of relevant primes. Each dimension of this space corresponds to a specific prime, and the coordinate along that dimension represents the exponent of that prime in the object's factorization.\n\nA crucial property of the prime-coordinate map is that it is a homomorphism, specifically φ(x·y) = φ(x) + φ(y). This means that multiplication of objects corresponds to addition of their coordinate vectors. This homomorphic property is what enables the transformation from a multiplicative structure to an additive one, greatly simplifying many mathematical operations and analyses.\n\nThe prime-coordinate map is built upon the foundation of unique factorization. Because each object has a unique prime factorization (up to reordering and units), the mapping to coordinate vectors is well-defined and consistent. This ensures that the coordinate representation captures the intrinsic structure of objects rather than artifacts of a particular representation method.",
+  "mathExpression": [
+    "\\phi: D \\rightarrow \\mathbb{Z}^P",
+    "x = p_1^{e_1} \\cdot p_2^{e_2} \\cdot \\ldots \\cdot p_n^{e_n} \\implies \\phi(x) = (e_1, e_2, \\ldots, e_n)",
+    "\\phi(x \\cdot y) = \\phi(x) + \\phi(y)"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Unique Factorization",
+      "@id": "urn:uor:concept:factorization-theorem"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Coordinate Properties",
+      "@id": "urn:uor:concept:coordinate-properties"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

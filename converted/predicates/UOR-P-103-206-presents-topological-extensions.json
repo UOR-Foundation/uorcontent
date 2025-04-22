@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:presents-topological-extensions",
+  "name": "presents topological extensions",
+  "description": "Relation indicating that a resource presents topological extensions of the UOR framework to continuous domains",
+  "propertyID": "UOR-P-103",
+  "value": "The resource presents topological extensions of the UOR framework to continuous domains, including spectral spaces, sheaf cohomology, persistent homology, topos-theoretic interpretations, and non-Archimedean topology, enabling the framework to apply to geometric, analytical, and topological structures.",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "name": "relation strength",
+    "value": "strong"
+  },
+  "subject": {
+    "@id": "urn:uor:resource:formal-generalization"
+  },
+  "object": {
+    "@id": "urn:uor:concept:formal-topological-extensions"
+  }
+}

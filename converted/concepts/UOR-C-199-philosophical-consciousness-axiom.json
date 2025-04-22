@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:philosophical-consciousness-axiom",
+  "name": "UOR Consciousness Axiom",
+  "description": "A philosophical principle asserting that subjective experience is structurally embedded in the UOR framework, corresponding to the selection of a global section in the observer bundle.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-199",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "The UOR Consciousness Axiom represents a fundamental principle connecting subjective experience to the mathematical structure of the Universal Object Reference framework. This axiom proposes that consciousness is not an epiphenomenon or an unexplainable addition to physical reality, but rather a structural necessity within the UOR formalism.\n\nThe axiom states that every coherent description requires a frame in R, meaning that observation and description inherently require an observer reference frame. This embeds the subjective perspective directly into the mathematical structure of reality. Unlike traditional approaches that treat consciousness as something separate from or additional to physical descriptions, the UOR framework incorporates the observer as a mathematical necessity.\n\nMore specifically, consciousness is proposed to correspond to the selection of a global section in the observer bundle. In fiber bundle mathematics, a global section represents a consistent choice of point in each fiber across the entire base space. Applied to consciousness, this suggests that a conscious perspective represents a consistent 'slice' through the space of possible observations or descriptions. This global section enforces the trilateral coherence principle, ensuring that observers, observations, and observed systems maintain mathematical consistency.\n\nThis approach resonates with but extends beyond various philosophical traditions: it shares with phenomenology the emphasis on first-person experience, with neutral monism the refusal to privilege either mental or physical aspects of reality, and with certain interpretations of quantum mechanics the recognition of observation as fundamental to reality descriptions. However, it is distinctive in proposing a precise mathematical formalism (the observer bundle and its global sections) for understanding consciousness.\n\nThe consciousness axiom has significant implications for traditional mind-body problems in philosophy. It suggests that the apparent 'hard problem of consciousness' may be resolved not by reducing consciousness to physical processes or elevating it to a separate substance, but by recognizing it as a structural feature of coherent information systems operating across multiple reference frames.\n\nThis view suggests that consciousness scales with the complexity of reference frame selection and maintenance. Simple systems with minimal reference frame flexibility would exhibit minimal consciousness, while systems capable of maintaining complex, adaptable reference frames with high degrees of internal coherence would exhibit richer forms of consciousness.",
+  "mathExpression": [
+    "\\forall \\text{ coherent description } D, \\exists \\text{ frame } F_R \\text{ in observer space } R",
+    "\\text{Consciousness} \\cong \\text{Global Section } \\gamma: B \\to E \\text{ in observer bundle } \\pi: E \\to B",
+    "\\gamma \\text{ enforces trilateral coherence: } \\triangleright(O_1, O_2, S) = 0",
+    "\\text{Consciousness degree} \\propto \\text{Complexity of frame selection } \\| \\gamma \\|_{\\text{coh}}"
+  ],
+  "alternateName": ["Observer Bundle Consciousness Theory", "UOR Subjective Experience Principle"]
+}

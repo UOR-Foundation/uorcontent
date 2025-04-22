@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:coherence-norm-definition",
+  "name": "Coherence Norm Definition",
+  "description": "The formal mathematical definition of the coherence norm as the Euclidean norm of an object's prime-coordinate vector, along with its fundamental properties.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-150",
+  "text": "The coherence norm is formally defined as a function that maps objects from a Unique Factorization Domain to non-negative real numbers, based on their prime factorization structure. This definition builds upon the well-established concept of the Euclidean norm in vector spaces, applying it to the prime-coordinate representation of objects.\n\nFor any object x in a Unique Factorization Domain with prime-coordinate representation φ(x) = (e₁, e₂, ..., eₙ), where each eᵢ is the exponent of prime pᵢ in the factorization of x, the coherence norm ||x||_c is defined as the Euclidean (L²) norm of this exponent vector:\n\n||x||_c = ||φ(x)||₂ = √(e₁² + e₂² + ... + eₙ²)\n\nThis definition is mathematically precise and builds upon well-established foundations in linear algebra and functional analysis. The use of the Euclidean norm is deliberate and grounded in mathematical tradition, providing a natural measure that respects the geometric interpretation of prime coordinates as points in a multidimensional space.\n\nThe coherence norm satisfies several key properties that align with those expected of a proper norm in mathematical analysis. The non-negativity property ensures that the norm is always positive for non-unit elements and zero only for units, consistent with the notion that units have trivial factorization. The triangle inequality property states that the norm of a product is bounded by the sum of the norms of the factors: ||x·y||_c ≤ ||x||_c + ||y||_c. This property is derived directly from the Cauchy-Schwarz inequality and is consistent with the standard properties of norms in functional analysis. The invariance property ensures that the norm is invariant under canonical transformations that preserve the underlying prime structure of objects.\n\nThese properties ensure that the coherence norm behaves in a manner consistent with established mathematical principles and intuitions about measurement. The coherence norm extends these principles to the domain of prime factorization, providing a novel but mathematically sound way to quantify the structural complexity of objects based on their intrinsic prime components.",
+  "mathExpression": [
+    "\\|x\\|_c = \\|\\phi(x)\\|_2 = \\sqrt{e_1^2 + e_2^2 + \\ldots + e_n^2}",
+    "\\text{Non-negativity: } \\|x\\|_c \\geq 0 \\text{ and } \\|x\\|_c = 0 \\iff x \\text{ is a unit}",
+    "\\text{Triangle Inequality: } \\|x \\cdot y\\|_c \\leq \\|x\\|_c + \\|y\\|_c",
+    "\\text{Invariance: } \\|u \\cdot x\\|_c = \\|x\\|_c \\text{ for any unit } u"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Coordinate Map",
+      "@id": "urn:uor:concept:prime-coordinate-map"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Norm Minimality",
+      "@id": "urn:uor:concept:norm-minimality"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

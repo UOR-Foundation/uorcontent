@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:pivot-field-properties",
+  "name": "Pivot Field Properties",
+  "description": "The mathematical properties and characteristics that define the behavior and capabilities of pivot fields in enabling cross-domain transformations.",
+  "termCode": "UOR-C-108",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Pivot fields exhibit several fundamental properties:}",
+    "\\text{1. Coherence Preservation: Preserves coherence relationships}",
+    "\\forall x_1, x_2 \\in U_1: d_{C_1}(x_1, x_2) \\approx d_{C_2}(T(x_1), T(x_2))",
+    "\\text{   where } T \\text{ is guided by the pivot field } P\\text{.}",
+    "\\text{2. Structural Invariance: Maintains invariant structure}",
+    "\\exists I: \\forall x \\in U_1: I(x) = I(T(x))",
+    "\\text{   where } I \\text{ extracts invariant properties.}",
+    "\\text{3. Functoriality: Respects compositional structure}",
+    "P_{1,3} = P_{2,3} \\circ P_{1,2}",
+    "T_{1,3} = T_{2,3} \\circ T_{1,2}",
+    "\\text{   for appropriate compositions of pivot fields and transformations.}",
+    "\\text{4. Bidirectionality: Supports bidirectional transformations}",
+    "P(x, y) = P(y, x)",
+    "T_{2,1} \\circ T_{1,2} \\approx id_{U_1}",
+    "T_{1,2} \\circ T_{2,1} \\approx id_{U_2}",
+    "\\text{   where } id \\text{ is the identity transformation.}",
+    "\\text{5. Optimality: Achieves optimal coherence preservation}",
+    "T = \\arg\\min_{T'} \\int_{U_1} d_C(\\phi_1(x), \\phi_2(T'(x))) \\, dx",
+    "\\text{   minimizing total coherence distortion.}",
+    "\\text{6. Domain Independence: Functions across diverse domains}",
+    "P: U_1 \\times U_2 \\to C \\text{ defined } \\forall U_1, U_2 \\in \\mathcal{U}",
+    "\\text{   where } \\mathcal{U} \\text{ is the universe of representational spaces.}",
+    "\\text{7. Scale Invariance: Maintains properties across scales}",
+    "P(S_\\alpha(x), S_\\beta(y)) = P(x, y)",
+    "\\text{   for scaling operators } S_\\alpha, S_\\beta \\text{ with appropriate parameters.}",
+    "\\text{8. Information Conservation: Conserves essential information}",
+    "I(x) = I(T(x))",
+    "\\text{   where } I \\text{ is an appropriate information content measure.}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:pivot-field-definition",
+    "urn:uor:concept:information-invariants",
+    "urn:uor:concept:coherence-norm"
+  ],
+  "properties": {
+    "components": "Coherence preservation, structural invariance, functoriality, bidirectionality, optimality, domain independence, scale invariance, information conservation"
+  },
+  "examples": [
+    "A pivot field between time and frequency domains exhibiting perfect bidirectionality, allowing lossless transformation in both directions",
+    "A scale-invariant pivot field that maintains coherence relationships between microscopic quantum systems and macroscopic classical systems",
+    "A pivot field connecting numerical and visual representations that preserves all essential structural relationships despite the radical difference in domains"
+  ],
+  "theorems": [
+    "For any pair of universal number spaces, there exists an optimal pivot field that maximizes coherence preservation across all possible transformations between them."
+  ],
+  "sourceText": "By leveraging these pivot fields, transformations can maintain essential information structure even when moving between dramatically different representational domains.\n\nKey Insights:\n- **Cross-Domain Bridging:** Pivot fields bridge different representational domains through their prime coordinate structure.\n- **Coherence Preservation:** The mapping preserves coherence relationships across transformations.\n- **Invariant Structure:** Certain structural invariants are maintained regardless of the specific representation."
+}

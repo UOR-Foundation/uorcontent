@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:analyzes-social-systems",
+  "name": "analyzes complex social and economic systems",
+  "description": "Relation indicating that a resource analyzes complex social and economic systems through prime-coordinate representation and coherence principles",
+  "propertyID": "UOR-P-118",
+  "value": "The resource demonstrates how social and economic systems naturally organize according to coherence principles, including network community detection (social communities emerging through prime-coordinate clustering), market equilibrium theory (economic equilibria representing coherence minima in transaction space), organizational information flow (optimal structures minimizing information coherence cost), and consensus formation dynamics (group decision-making processes following coherence minimization pathways).",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "name": "relation strength",
+    "value": "strong"
+  },
+  "subject": {
+    "@id": "urn:uor:resource:practical-transcendence"
+  },
+  "object": {
+    "@id": "urn:uor:concept:complex-social-economic-systems"
+  }
+}

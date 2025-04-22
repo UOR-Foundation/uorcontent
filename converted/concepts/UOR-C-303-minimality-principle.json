@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:minimality-principle",
+  "name": "Minimality Principle",
+  "description": "Minimality Principle is a concept in the Universal Object Reference framework.",
+  "termCode": "UOR-C-303",
+  "dateCreated": "2025-04-22T20:01:32.364Z",
+  "dateModified": "2025-04-22T20:01:32.364Z"
+}

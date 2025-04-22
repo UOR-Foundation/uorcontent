@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:formal-ufd-axiom",
+  "name": "UOR Unique Factorization Domain Axiom",
+  "description": "The formal axiomatization of unique factorization in the UOR framework, requiring that every non-unit object admits a unique finite decomposition into irreducible objects.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-202",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "The UOR Unique Factorization Domain (UFD) Axiom provides the formal foundation upon which the entire UOR framework rests. This axiom extends the classical notion of unique factorization from number theory to arbitrary categories with finite products, creating a powerful generalization with far-reaching implications.\n\nFormally, the axiom states that given a category 𝒰 with finite products and a distinguished set of irreducible objects P (the 'primes'), two key conditions must be satisfied: First, every non-unit object X in the category must admit a finite decomposition into a product of primes (X ≅ p₁∘…∘pₖ with pᵢ∈P). Second, this decomposition must be unique up to permutation - if another decomposition X ≅ q₁∘…∘qₘ exists, then m=k and there is a permutation σ such that qᵢ≅p₍σ(i)₎.\n\nThis axiomatic approach provides several advantages over traditional treatments of unique factorization. By formulating the concept categorically, it becomes applicable to diverse mathematical structures beyond just numbers or polynomials, including modules, representations, sheaves, and more exotic mathematical objects. The category-theoretic framing also clarifies the essential abstract properties that make unique factorization work, separating them from incidental features of specific domains.\n\nThe axiom serves as the theoretical basis for the UOR prime coordinate map φ, which assigns to each object its 'spectrum' or unique prime factorization pattern. This map φ enjoys universal properties and forms the bridge between abstract mathematical structures and their concrete coordinate representations.\n\nIn cases where traditional unique factorization fails (such as in certain number rings), the UOR framework shows how to refine the notion of 'prime' (e.g., to prime ideals) in a way that restores unique factorization. This demonstrates the robustness of the UFD axiom as a foundational principle, recoverable even in domains previously considered to lack unique factorization.",
+  "mathExpression": [
+    "\\text{Axiom (UFD): Let } \\mathcal{U} \\text{ be a category with finite products and a set of irreducibles } P.",
+    "1. \\forall X \\in \\mathcal{U}, X \\not\\cong 1 \\Rightarrow X \\cong p_1 \\circ \\ldots \\circ p_k \\text{ with } p_i \\in P",
+    "2. \\text{If } X \\cong q_1 \\circ \\ldots \\circ q_m \\text{ is another decomposition, then } m=k \\text{ and } \\exists \\sigma \\text{ s.t. } q_i \\cong p_{\\sigma(i)}",
+    "\\phi: \\mathcal{U} \\to \\mathbb{Z}^{(P)} \\text{ maps } X \\mapsto \\text{(exponents of primes in factorization of X)}"
+  ],
+  "alternateName": ["Categorical UFD Axiom", "UOR Factorization Principle"]
+}

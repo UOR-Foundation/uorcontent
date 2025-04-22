@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-universal-identity",
+  "name": "Defines Universal Identity",
+  "description": "Establishes the formal definition and mathematical foundation of Universal Identity in the UOR framework.",
+  "value": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Identity Foundation",
+    "description": "The formal definition and mathematical foundation of Universal Identity as a system grounded in the prime coordinate structures of universal numbers."
+  },
+  "propertyID": "UOR-P-087",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Universal Identity",
+    "@id": "urn:uor:resource:universal-identity"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Identity Foundation",
+    "@id": "urn:uor:concept:identity-foundation"
+  },
+  "relationshipStrength": 1,
+  "properties": {
+    "relationshipType": "definition",
+    "context": "internet substrate"
+  }
+}

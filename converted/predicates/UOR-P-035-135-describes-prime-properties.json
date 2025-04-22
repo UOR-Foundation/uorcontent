@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes:035:135",
+  "name": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Prime Properties",
+    "@id": "urn:uor:concept:prime-properties",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "describes the key properties that enable intrinsic primes to function as a coordinate basis",
+  "description": "The Intrinsic Primes resource describes the key properties of domain independence, uniqueness, and completeness that make intrinsic primes suitable for serving as a coordinate basis across diverse mathematical structures",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Intrinsic Primes",
+        "@id": "urn:uor:resource:intrinsic-primes"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:prime-properties"
+  ],
+  "valueName": "describes the key properties that enable intrinsic primes to function as a coordinate basis"
+}

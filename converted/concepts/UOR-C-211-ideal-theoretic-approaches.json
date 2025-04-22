@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:ideal-theoretic-approaches",
+  "name": "UOR Ideal-Theoretic Approaches",
+  "description": "Mathematical techniques using ideal theory and localization to recover unique factorization in domains where elements themselves do not factor uniquely.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-211",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "UOR Ideal-Theoretic Approaches represent a powerful collection of techniques that recover unique factorization by shifting focus from individual elements to ideals and localized structures. These approaches are fundamental for extending the UOR framework to domains where direct element-wise unique factorization fails, allowing prime-coordinate principles to apply in these more general settings.\n\nLocalization provides a formal mechanism to focus on the behavior of a ring at specific prime ideals or multiplicative sets. For a multiplicatively closed set S ⊂ R (with 0 ∉ S), the localization is defined as S⁻¹R = {r/s | r ∈ R, s ∈ S}/∼, where r₁/s₁ ∼ r₂/s₂ if ∃t ∈ S : t(r₁s₂ - r₂s₁) = 0. This construction creates a new ring where elements of S become invertible, effectively magnifying the algebraic properties near a specific prime or within a chosen subset of the ring. Localization often simplifies factorization behavior by isolating it to specific primes, allowing for a divide-and-conquer approach to factorization problems.\n\nIdeal factorization transforms the problem from elements to ideals, which often behave better regarding unique factorization. The key insight is that while elements may not factor uniquely, ideals often do. In a Dedekind domain, any nonzero ideal I factors uniquely as I = P₁^{e₁} · P₂^{e₂} · ... · P_n^{e_n}, where each P_i is a prime ideal. This ideal factorization provides a structural replacement for element factorization, preserving the essential properties needed for the UOR framework. For instance, multiplication of ideals mirrors multiplication of elements, and the exponents in ideal factorization serve as prime coordinates in the UOR sense.\n\nThe theory of fractional ideals extends these principles to the field of fractions. A fractional ideal in a domain R with field of fractions K is a subset J = {x ∈ K | ∃d ∈ R : dx ⊂ R}. The set of fractional ideals forms a group under multiplication, providing an algebraic structure where the factorization properties can be studied and utilized. This group structure is essential for defining and working with the class group, which measures factorization defects.\n\nThe class group structure, defined as Cl(R) = J(R)/P(R) (the group of fractional ideals modulo principal ideals), provides a precise measure of how far a domain is from having unique factorization. The group operation [I] · [J] = [IJ] captures how ideal classes combine under multiplication. In ℤ[√-5], the earlier factorization problem is resolved by recognizing that (2)(3) = (6) = (1 + √-5)(1 - √-5), but (2), (3), (1 + √-5), and (1 - √-5) are not principal ideals. Their classes in the class group explain the factorization discrepancy at the element level.\n\nThe local-global principle connects localized behavior to global factorization properties. A domain R is a UFD if and only if R_P is a UFD for all prime ideals P and Cl(R) = 0. This principle allows factorization problems to be studied locally at each prime, where behavior is often simpler, and then integrated into a global understanding. This approach is particularly powerful when combined with valuation theory or completion techniques, providing a multi-faceted strategy for recovering unique factorization.",
+  "mathExpression": [
+    "S^{-1}R = \\{r/s \\mid r \\in R, s \\in S\\}/\\sim",
+    "I = P_1^{e_1} \\cdot P_2^{e_2} \\cdot ... \\cdot P_n^{e_n}",
+    "J = \\{x \\in K \\mid \\exists d \\in R : dx \\subset R\\}",
+    "Cl(R) = J(R)/P(R)",
+    "[I] \\cdot [J] = [IJ]",
+    "R \\text{ is a UFD } \\iff R_P \\text{ is a UFD for all prime ideals } P \\text{ and } Cl(R) = 0"
+  ],
+  "alternateName": ["Ideal Factorization Methods", "Localization Techniques"]
+}

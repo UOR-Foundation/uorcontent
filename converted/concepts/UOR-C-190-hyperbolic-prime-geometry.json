@@ -1,0 +1,43 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:hyperbolic-prime-geometry",
+  "name": "Hyperbolic Prime Geometry",
+  "description": "The extension of the prime coordinate space to include a natural hyperbolic metric, revealing connections to modular forms and automorphic representations.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-190",
+  "text": "Hyperbolic Prime Geometry is a recent extension of the UOR framework that explores the natural hyperbolic structure that emerges when the prime coordinate space is extended to include infinite-dimensional vectors.\n\nIn this approach, the prime coordinate space ℤ^P is equipped with a hyperbolic metric that respects the multiplicative structure of the underlying objects. This hyperbolic structure arises naturally from the logarithmic relationship between multiplication in the original domain and addition in the coordinate space.\n\nThe hyperbolic distance between two prime coordinate vectors v and w can be defined as:\n\nd_H(v, w) = arccosh(1 + ‖v - w‖²/2)\n\nwhere ‖·‖ is the standard coherence norm. This metric creates a hyperbolic geometry in which prime basis vectors form the vertices of an infinite-dimensional simplex.\n\nThis geometric perspective reveals deep connections to number theory, particularly to modular forms and the spectral theory of automorphic representations. The action of SL₂(ℤ) on the upper half-plane can be related to transformations in the hyperbolic prime space, providing a new geometric interpretation of classical results in analytic number theory.\n\nOne particularly striking result is that the hyperbolic prime geometry naturally accommodates Riemann's hypothesis through a spectral interpretation: the zeros of the Riemann zeta function correspond to eigenvalues of a certain hyperbolic Laplacian operating on the prime coordinate space.\n\nFurthermore, the continuous symmetries of this hyperbolic space provide new insights into the distribution of primes and the structure of multiplicative functions. The geodesics in the hyperbolic prime geometry trace paths that correspond to multiplicative patterns in the original number system.\n\nThis extension has applications in areas requiring infinite-dimensional analysis, such as analytic number theory, spectral theory, and certain areas of mathematical physics where hyperbolic geometry plays a central role.",
+  "mathExpression": [
+    "d_H(v, w) = \\text{arccosh}(1 + \\|v - w\\|^2/2)",
+    "\\Delta_H f = \\sum_{p \\in P} \\frac{\\partial^2 f}{\\partial x_p^2} - \\sum_{p,q \\in P} \\frac{\\partial f}{\\partial x_p}\\frac{\\partial f}{\\partial x_q}",
+    "\\text{Spec}(\\Delta_H) \\sim \\{\\rho : \\zeta(1/2 + i\\rho) = 0\\}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Hyperbolic Geometry",
+      "@id": "urn:uor:concept:hyperbolic-geometry"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Modular Forms",
+      "@id": "urn:uor:concept:modular-forms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Riemann Hypothesis",
+      "@id": "urn:uor:concept:riemann-hypothesis"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

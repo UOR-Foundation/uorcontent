@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:polynomial-extension",
+  "name": "Polynomial Extension",
+  "description": "The extension of the UOR framework to polynomial rings, where irreducible polynomials serve as primes and exponents represent factor multiplicity in the prime coordinate representation.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-188",
+  "text": "The Polynomial Extension generalizes the UOR framework to polynomial rings k[x], where k is a field, creating a parallel between number theory and polynomial algebra through the lens of factorization.\n\nIn polynomial rings, irreducible polynomials—those that cannot be factored into polynomials of lower degree—serve as the \"primes\" of the domain. Just as integers can be uniquely factored into primes, polynomials over a field can be uniquely factored into irreducible polynomials, making k[x] a Unique Factorization Domain (UFD).\n\nThe prime-coordinate map φ for polynomials assigns to each polynomial its vector of exponents corresponding to each irreducible factor. For a polynomial p(x) with factorization:\n\np(x) = a · q₁(x)^e₁ · q₂(x)^e₂ · ... · qₙ(x)^eₙ\n\nwhere a is a constant from the field k and each qᵢ(x) is an irreducible polynomial, the prime coordinate representation is:\n\nφ(p(x)) = [(q₁, e₁), (q₂, e₂), ..., (qₙ, eₙ)]\n\nThis mapping maintains the homomorphism property central to UOR:\n\nφ(p(x) · r(x)) = φ(p(x)) + φ(r(x))\n\nThe polynomial extension reveals deep connections between number theory and polynomial algebra. For example, the degree of a polynomial corresponds to the weight of its prime coordinate vector (sum of exponents multiplied by degrees of irreducible factors). The coherence norm in this context provides a measure of polynomial complexity that accounts for both the number of distinct irreducible factors and their multiplicities.\n\nThis extension is particularly significant in algebraic geometry, where polynomials define algebraic varieties, and in coding theory, where irreducible polynomials are used to construct finite fields and error-correcting codes.\n\nThe extension even accommodates rational functions (quotients of polynomials) through negative exponents, similar to the rational extension for numbers. For a rational function p(x)/q(x), the prime coordinate representation is:\n\nφ(p(x)/q(x)) = φ(p(x)) - φ(q(x))\n\nThis unified approach demonstrates how the UOR framework captures fundamental algebraic structures across diverse mathematical domains.",
+  "mathExpression": [
+    "p(x) = a \\cdot q_1(x)^{e_1} \\cdot q_2(x)^{e_2} \\cdot \\ldots \\cdot q_n(x)^{e_n}",
+    "\\phi(p(x)) = [(q_1, e_1), (q_2, e_2), \\ldots, (q_n, e_n)]",
+    "\\phi(p(x) \\cdot r(x)) = \\phi(p(x)) + \\phi(r(x))",
+    "\\phi(p(x)/q(x)) = \\phi(p(x)) - \\phi(q(x))"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Irreducible Polynomial",
+      "@id": "urn:uor:concept:irreducible-polynomial"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Polynomial Ring",
+      "@id": "urn:uor:concept:polynomial-ring"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

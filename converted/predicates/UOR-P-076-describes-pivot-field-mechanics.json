@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-pivot-field-mechanics",
+  "name": "Describes Pivot Field Mechanics",
+  "description": "Explains the operational processes and computational mechanisms used in pivot fields.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Pivot Field Mechanics",
+    "description": "The operational processes and computational mechanisms used to establish and leverage pivot fields for cross-domain transformations."
+  },
+  "propertyID": "UOR-P-076",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Pivot Fields",
+    "@id": "urn:uor:resource:pivot-fields"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Pivot Field Mechanics",
+    "@id": "urn:uor:concept:pivot-field-mechanics"
+  },
+  "relationshipStrength": 0.9,
+  "properties": {
+    "relationshipType": "process",
+    "context": "signal processing"
+  }
+}

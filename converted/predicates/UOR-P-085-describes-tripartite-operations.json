@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-tripartite-operations",
+  "name": "Describes Tripartite Operations",
+  "description": "Details the fundamental operations and implementation architecture of the Tripartite Kernel.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Tripartite Operations",
+    "description": "The fundamental operations and implementation architecture of the Tripartite Kernel that enable coherent transformations between transport, storage, and runtime domains."
+  },
+  "propertyID": "UOR-P-085",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Tripartite Kernel",
+    "@id": "urn:uor:resource:tripartite-kernel"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Tripartite Operations",
+    "@id": "urn:uor:concept:tripartite-operations"
+  },
+  "relationshipStrength": 0.85,
+  "properties": {
+    "relationshipType": "operational",
+    "context": "internet substrate"
+  }
+}

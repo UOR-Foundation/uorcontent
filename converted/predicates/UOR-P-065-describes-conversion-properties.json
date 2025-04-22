@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-conversion-properties",
+  "name": "Describes Conversion Properties",
+  "description": "Explains the mathematical properties and characteristics that define block conversion operations.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Conversion Properties",
+    "description": "The fundamental mathematical properties that characterize block conversion operations and distinguish them from traditional conversion approaches."
+  },
+  "propertyID": "UOR-P-065",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Block Conversion",
+    "@id": "urn:uor:resource:block-conversion"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Conversion Properties",
+    "@id": "urn:uor:concept:conversion-properties"
+  },
+  "relationshipStrength": 0.85,
+  "properties": {
+    "relationshipType": "characterization",
+    "context": "signal processing"
+  }
+}

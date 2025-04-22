@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:coherence-norm",
+  "name": "Coherence Norm",
+  "description": "A measure of representational efficiency in UOR that quantifies the simplicity and optimality of a given prime-coordinate encoding.",
+  "termCode": "UOR-C-005",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "relatedConcepts": [
+    "urn:uor:concept:canonical-representation",
+    "urn:uor:concept:prime-decomposition",
+    "urn:uor:concept:minimality-principle"
+  ],
+  "sourceText": "Among all possible representations of an object, the canonical prime-coordinate form minimizes the coherence norm. This provides the most efficient encoding (minimum description length) and contains no redundant information.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

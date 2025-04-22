@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:coherence-measurement",
+  "name": "Coherence Measurement",
+  "description": "How universal numbers enable precise quantification of information coherence through measures of signal complexity, structural similarity, information preservation, and observer independence.",
+  "termCode": "UOR-C-065",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Theorem 5 (Coherence Measurement): The prime-coordinate representation of}",
+    "\\text{universal numbers induces well-defined measures of:}",
+    "\\text{1. Signal Complexity: The minimum description length required in the}",
+    "\\text{prime-coordinate representation}",
+    "\\text{2. Structural Similarity: The coordinate-space distance between different signals}",
+    "\\text{3. Information Preservation: The degree to which transformations preserve}",
+    "\\text{essential structure}",
+    "\\text{4. Observer Independence: The invariance of information content across}",
+    "\\text{different observer frames}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:signal-domain-bridge",
+    "urn:uor:concept:uor-realization"
+  ],
+  "properties": {
+    "components": "Signal complexity measurement, structural similarity metrics, information preservation quantification, observer independence validation"
+  },
+  "examples": [
+    "Measuring signal complexity through coordinate sparsity in prime-coordinate representation",
+    "Quantifying information loss in transformations through coordinate-space metrics"
+  ],
+  "theorems": [
+    "Theorem 5 (Coherence Measurement): The prime-coordinate representation of universal numbers induces well-defined measures of signal complexity, structural similarity, information preservation, and observer independence."
+  ],
+  "sourceText": "Universal numbers enable precise quantification of information coherence:\n\nTheorem 5 (Coherence Measurement): The prime-coordinate representation of universal numbers induces well-defined measures of:\n\n1. Signal Complexity: The minimum description length required in the prime-coordinate representation\n2. Structural Similarity: The coordinate-space distance between different signals\n3. Information Preservation: The degree to which transformations preserve essential structure\n4. Observer Independence: The invariance of information content across different observer frames\n\nThese measures provide rigorous metrics for the information coherence principles of UOR."
+}

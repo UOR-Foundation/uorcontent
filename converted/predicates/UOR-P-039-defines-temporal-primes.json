@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-temporal-primes",
+  "name": "Defines Temporal Primes",
+  "description": "Establishes the formal definition and properties of temporal prime elements in dynamical systems.",
+  "propertyID": "UOR-P-039",
+  "value": "definition relationship",
+  "subject": "urn:uor:resource:temporal-prime-decomposition",
+  "object": "urn:uor:concept:temporal-prime-element",
+  "relationshipStrength": "definitive",
+  "contextualDescription": "The Temporal Prime Decomposition resource defines temporal prime elements as irreducible dynamical patterns that serve as the fundamental building blocks for time-dependent processes."
+}

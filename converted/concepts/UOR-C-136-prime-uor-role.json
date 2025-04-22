@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:prime-uor-role",
+  "name": "Prime UOR Role",
+  "description": "The essential functions of intrinsic primes within the Universal Object Reference framework as coordinate axes, information atoms, and spectral components.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-136",
+  "text": "Within the Universal Object Reference framework, intrinsic primes fulfill several crucial roles that establish the mathematical foundation for the entire system. These roles define how primes function as the building blocks for all object representations and analyses.\n\nAs coordinate axes, each prime defines an independent dimension in object space. This geometric interpretation transforms the multiplicative structure of prime factorization into an additive vector space, where objects can be located based on their prime components. The exponents of primes in an object's factorization become coordinates along these prime axes, creating a spatial representation of object structure. This coordinate system enables geometric intuitions and techniques to be applied to object relationships, making complex structural patterns more apparent and analyzable.\n\nAs information atoms, primes represent the smallest units of structural information. Just as physical matter is composed of atomic elements, the informational content of objects can be decomposed into prime components that cannot be reduced further. Each prime captures a fundamental and indivisible aspect of an object's structure, and the combination of these atomic units forms the complete informational content of the object. This atomic perspective allows for information-theoretic analyses of object structure and relationships.\n\nAs spectral components, primes function as fundamental frequencies in an object's composition. This interpretation views objects as complex waves that can be decomposed into simpler prime frequencies, similar to Fourier analysis in signal processing. Each prime represents a pure frequency component, and the object's complete structure emerges from the superposition of these fundamental frequencies. This spectral view enables powerful analytical techniques from signal processing to be applied to object analysis and transformation.\n\nThese three roles—coordinate axes, information atoms, and spectral components—provide complementary perspectives on how primes function within the UOR framework. Together, they ensure that every object has a canonical decomposition into its most basic constituents, enabling unambiguous reference and comparison across observer frames.",
+  "mathExpression": [],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Properties",
+      "@id": "urn:uor:concept:prime-properties"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Coordinates",
+      "@id": "urn:uor:concept:prime-coordinate-representation"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Spectral Interpretation",
+      "@id": "urn:uor:concept:spectral-transform"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

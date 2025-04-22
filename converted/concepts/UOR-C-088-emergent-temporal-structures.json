@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:emergent-temporal-structures",
+  "name": "Emergent Temporal Structures",
+  "description": "Classes of organized temporal patterns that spontaneously emerge from interactions among simpler components in complex systems.",
+  "termCode": "UOR-C-088",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Emergent temporal order manifests through several classes of structures:}",
+    "\\text{1. Temporal Crystals - Patterns with discrete time-translation symmetry:}",
+    "\\phi(t + nT) = \\phi(t) \\text{ for integer } n",
+    "\\text{Where } T \\text{ is the fundamental period.}",
+    "\\text{2. Temporal Hierarchies - Nested temporal structures with cross-level influences:}",
+    "\\phi_{\\text{level } n}(t) = f(\\phi_{\\text{level } n-1}(t), \\phi_{\\text{level } n+1}(t))",
+    "\\text{3. Temporal Networks - Interconnected events forming directed graph structures:}",
+    "G_T = (V, E, T) \\text{ where } E \\subseteq V \\times V \\times T",
+    "\\text{4. Temporal Avalanches - Cascades of events following power-law statistics:}",
+    "P(s) \\sim s^{-\\alpha} \\text{ and } P(d) \\sim d^{-\\beta}",
+    "\\text{Where } P(s) \\text{ is the probability of avalanche size } s\\text{, } P(d) \\text{ is the}",
+    "\\text{probability of duration } d\\text{, and } \\alpha, \\beta \\text{ are critical exponents.}",
+    "\\text{5. Temporal Coherence Domains - Regions with high temporal coherence:}",
+    "D_T(c) = \\{(\\vec{x}, t) | C_T(\\vec{x}, t) > c\\}",
+    "\\text{Where } C_T(\\vec{x}, t) \\text{ is the local temporal coherence at position } \\vec{x}",
+    "\\text{and time } t\\text{, and } c \\text{ is a coherence threshold.}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:temporal-order-parameter",
+    "urn:uor:concept:temporal-emergence-mechanisms",
+    "urn:uor:concept:temporal-emergence-theorems"
+  ],
+  "properties": {
+    "components": "Temporal crystals, temporal hierarchies, temporal networks, temporal avalanches, temporal coherence domains"
+  },
+  "examples": [
+    "Circadian rhythms as temporal crystals with 24-hour periodicity",
+    "Brain rhythms organized in nested hierarchies from fast gamma to slow delta waves",
+    "Social interaction networks with temporal dependencies between events",
+    "Neural avalanches with power-law size and duration distributions",
+    "Synchronized regions of brain activity forming temporal coherence domains"
+  ],
+  "theorems": [
+    "Emergent temporal order manifests through distinct classes of temporal structures with characteristic mathematical properties."
+  ],
+  "sourceText": "Emergent temporal order manifests through several classes of temporal structures:\n\nTemporal Crystals: Patterns with discrete time-translation symmetry:\n\nφ(t + nT) = φ(t) for integer n\n\nWhere T is the fundamental period.\n\nThese structures exhibit periodic behavior despite potentially non-periodic driving forces.\n\nTemporal Hierarchies: Nested temporal structures where patterns at one level influence patterns at adjacent levels:\n\nφ_level n(t) = f(φ_level n-1(t), φ_level n+1(t))\n\nThese structures create multi-scale temporal organizations with rich internal constraints.\n\nTemporal Networks: Interconnected events or processes whose relationships form directed graph structures through time:\n\nG_T = (V, E, T) where E ⊆ V × V × T\n\nThese structures create temporal dependency patterns that constrain system evolution.\n\nTemporal Avalanches: Cascades of events triggered by small initial perturbations, often following power-law statistics:\n\nP(s) ~ s^(-α) and P(d) ~ d^(-β)\n\nWhere P(s) is the probability of an avalanche of size s, P(d) is the probability of duration d, and α, β are critical exponents.\n\nThese structures reflect critical dynamics in temporal pattern formation.\n\nTemporal Coherence Domains: Regions of space-time where components maintain high temporal coherence:\n\nD_T(c) = {(x⃗, t) | C_T(x⃗, t) > c}\n\nWhere C_T(x⃗, t) is the local temporal coherence at position x⃗ and time t, and c is a coherence threshold.\n\nThese structures create boundaries between regions with different temporal behaviors."
+}

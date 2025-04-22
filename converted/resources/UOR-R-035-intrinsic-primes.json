@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:intrinsic-primes",
+  "name": "Intrinsic Primes",
+  "description": "The fundamental building blocks of the UOR framework, serving as the irreducible elements from which all objects are composed and forming the basis for unique object representation.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Intrinsic Primes",
+    "description": "Irreducible elements in a domain that satisfy conditions of non-divisibility, non-unit status, and the prime property, serving as fundamental building blocks in object composition."
+  },
+  "text": "Intrinsic primes form the fundamental building blocks of the UOR framework, serving as the irreducible elements from which all objects are composed.\n\nAn element p in a domain D is called an intrinsic prime if it satisfies these conditions: Irreducibility, where p cannot be expressed as a product of two non-unit elements in D; Non-unit status, where p is not a unit (invertible element) in D; and the Prime property, where if p divides a product ab, then p divides either a or b.\n\nIntrinsic primes possess several critical features that make them suitable as a coordinate basis: Domain independence, as the concept generalizes across number systems, polynomials, and abstract domains; Uniqueness, where each prime represents a distinct, indivisible aspect of object structure; and Completeness, as the set of all primes is sufficient to express any object through composition.\n\nWithin the Universal Object Reference framework, intrinsic primes serve as: Coordinate axes, where each prime defines an independent dimension in object space; Information atoms, representing the smallest units of structural information; and Spectral components, functioning as fundamental frequencies in an object's composition.\n\nThis prime foundation ensures that every object has a canonical decomposition into its most basic constituents, enabling unambiguous reference and comparison across observer frames.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Prime Foundations",
+    "@id": "urn:uor:topic:prime-foundations"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["intrinsic primes", "irreducibility", "prime property", "coordinate basis", "information atoms", "spectral components"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:intrinsic-prime-definition",
+      "urn:uor:concept:prime-properties",
+      "urn:uor:concept:prime-uor-role",
+      "urn:uor:concept:prime-applications"
+    ]
+  }
+}

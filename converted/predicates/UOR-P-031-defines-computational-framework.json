@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-computational-framework",
+  "name": "defines computational framework",
+  "propertyID": "uor:predicate",
+  "value": "defines computational framework",
+  "subjectOf": {
+    "@id": "urn:uor:resource:computational-algorithms"
+  },
+  "targetCollection": [
+    "urn:uor:concept:representation-algorithms",
+    "urn:uor:concept:arithmetic-algorithms",
+    "urn:uor:concept:advanced-computational-procedures",
+    "urn:uor:concept:verification-algorithms"
+  ],
+  "valueName": "computational framework relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "defines computational framework"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

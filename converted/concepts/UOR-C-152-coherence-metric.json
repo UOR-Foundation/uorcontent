@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:coherence-metric-induced",
+  "name": "Coherence Metric",
+  "description": "The metric induced by the coherence norm on the space of objects, defined as the norm of the quotient, which satisfies the standard axioms of a metric space and establishes a Euclidean structure.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-152",
+  "text": "The coherence norm naturally induces a metric on the space of objects, transforming it into a proper metric space that adheres to the rigorous mathematical definition established in topology and analysis. This metric provides a way to quantify distances between objects based on their prime structure, enabling precise mathematical analysis of their relationships.\n\nFormally, for any two objects x and y, the coherence metric d_c(x,y) is defined as the coherence norm of their quotient: d_c(x,y) = ||x/y||_c. In terms of prime coordinates, this equals the Euclidean distance between their coordinate vectors: d_c(x,y) = ||φ(x) - φ(y)||₂. This definition establishes a direct connection between the coherence metric and standard distance measures in Euclidean spaces.\n\nThis metric satisfies all the fundamental axioms required for a proper metric in mathematics: The identity property ensures that d_c(x,y) = 0 if and only if x = y (modulo units), establishing that the distance between objects is zero precisely when they are essentially the same object. The symmetry property guarantees that d_c(x,y) = d_c(y,x), ensuring that the distance from x to y is the same as the distance from y to x. The triangle inequality property states that d_c(x,z) ≤ d_c(x,y) + d_c(y,z), which ensures that the direct distance between two objects is never greater than the sum of distances through an intermediate object.\n\nBeyond these basic metric properties, the prime-coordinate space inherits a full Euclidean structure through the inner product of exponent vectors. For objects x and y with prime-coordinate representations φ(x) and φ(y), the inner product ⟨x,y⟩_c is defined as the standard dot product of their exponent vectors: ⟨x,y⟩_c = φ(x)·φ(y). This inner product structure enables the definition of concepts like angles between objects, projections of one object onto another, and orthogonality relationships.\n\nThe angle between objects x and y can be calculated as cos⁻¹(⟨x,y⟩_c/(||x||_c·||y||_c)), providing a measure of their directional similarity. Objects with parallel prime structures (differing only in exponent magnitudes) have an angle of 0, while objects with orthogonal prime structures (having no common prime factors) have an angle of π/2. This geometric interpretation aligns with established mathematical conventions and extends them to the domain of factorization structure.",
+  "mathExpression": [
+    "d_c(x,y) = \\|x/y\\|_c = \\|\\phi(x) - \\phi(y)\\|_2",
+    "\\text{Identity: } d_c(x,y) = 0 \\iff x = y \\text{ (modulo units)}",
+    "\\text{Symmetry: } d_c(x,y) = d_c(y,x)",
+    "\\text{Triangle Inequality: } d_c(x,z) \\leq d_c(x,y) + d_c(y,z)",
+    "\\langle x,y \\rangle_c = \\phi(x) \\cdot \\phi(y) = \\sum_i e_i(x) \\cdot e_i(y)",
+    "\\cos\\theta_{xy} = \\frac{\\langle x,y \\rangle_c}{\\|x\\|_c \\cdot \\|y\\|_c}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Coherence Norm Definition",
+      "@id": "urn:uor:concept:coherence-norm-definition"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Norm Applications",
+      "@id": "urn:uor:concept:norm-applications"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Coordinate Geometry",
+      "@id": "urn:uor:concept:coordinate-geometry"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

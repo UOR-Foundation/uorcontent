@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes:043:168",
+  "name": "formalizes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Canonical Representation Formalization",
+    "@id": "urn:uor:concept:axiom-canonical-representation-formalization"
+  },
+  "value": "formalizes the mathematical expression of the Canonical Representation Axiom",
+  "description": "The Canonical Representation Axiom resource formalizes the properties of injectivity, base invariance, frame invariance, and minimal coherence that define prime coordinates as the canonical representation system with precise mathematical notation",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Canonical Representation Axiom",
+      "@id": "urn:uor:resource:axiom-canonical-representation"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-coherence-conditions",
+  "name": "Defines Coherence Conditions",
+  "description": "Establishes the mathematical criteria that define when temporal evolution maintains or enhances coherence.",
+  "propertyID": "UOR-P-043",
+  "value": "definition relationship",
+  "subject": "urn:uor:resource:coherence-preserving-dynamics",
+  "object": "urn:uor:concept:coherence-preservation-condition",
+  "relationshipStrength": "definitive",
+  "contextualDescription": "The Coherence-Preserving Dynamics resource defines the formal mathematical conditions under which temporal evolution maintains or enhances the structural coherence of objects in prime coordinate space."
+}

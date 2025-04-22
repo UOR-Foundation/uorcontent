@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:generalization",
+  "name": "UOR Generalization",
+  "description": "The generalization of the Universal Object Reference framework to various mathematical domains beyond integer factorization.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "UOR Generalization",
+    "description": "The extension of UOR principles to broader mathematical contexts, including polynomial rings, combinatorial monoids, and localized domains."
+  },
+  "text": "The UOR framework can be generalized to various mathematical domains beyond integer factorization.\n\nTheorem (General UOR Existence): Let D be any UFD (or GCD domain satisfying factorization axioms). Then the prime-coordinate functor φ: D^× → ℤ^P is well-defined, exact, and admits an extension to polynomial rings D[x], localizations D_S, and formal power series D[[x]], preserving unique factorization in each case.\n\nConcretely, UOR applies whenever a domain admits a notion of irreducible generators P and a UFD-like factorization property. Key examples include:\n\n- Polynomial Rings D[x]: Irreducible monic polynomials in D[x] serve as primes; φ encodes factor degrees and coefficients via multi-index valuations.\n\n- Combinatorial Monoids: In incidence algebras, connected components decompose uniquely, with φ capturing component counts.\n\n- Localization & Sheaf Domains: Local UFDs obtained via inverting primes (e.g. local rings at maximal ideals) carry local φ maps, gluing into sheaves over Spec(D).\n\nIn each context, φ remains injective, multiplicative-additive, and coherence‑minimizing, yielding a universal coordinate atlas. This universality hints at a grander vision: UOR as a spectrum-level invariant extending beyond first-order domains into derived categories, spectral stacks, and even the realm of homotopy types, where \"primes\" become indecomposable objects and φ a homotopical coordinate functor.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Universal Object Reference",
+    "@id": "urn:uor:topic:universal-object-reference"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["generalization", "polynomial rings", "combinatorial monoids", "localization", "universal coordinate atlas"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:general-uor-existence",
+      "urn:uor:concept:polynomial-ring-extension",
+      "urn:uor:concept:combinatorial-monoid-extension"
+    ]
+  }
+}

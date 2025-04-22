@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes:040:156",
+  "name": "formalizes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Intrinsic Primes Formalization",
+    "@id": "urn:uor:concept:axiom-intrinsic-primes-formalization",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "formalizes the mathematical definition of prime elements in the context of a monoid",
+  "description": "The Intrinsic Primes Axiom resource formalizes the mathematical conditions for an element to be prime: it is not the identity element, and if it factors, one of the factors must be the identity",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Intrinsic Primes Axiom",
+        "@id": "urn:uor:resource:axiom-intrinsic-primes"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:axiom-intrinsic-primes-formalization"
+  ],
+  "valueName": "formalizes the mathematical definition of prime elements in the context of a monoid"
+}

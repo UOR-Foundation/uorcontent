@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-applications",
+  "name": "describes applications",
+  "propertyID": "uor:predicate",
+  "value": "describes applications",
+  "subjectOf": {
+    "@id": "urn:uor:resource:applications-domains"
+  },
+  "targetCollection": [
+    "urn:uor:concept:cryptographic-applications",
+    "urn:uor:concept:computational-number-theory",
+    "urn:uor:concept:quantum-computing-applications",
+    "urn:uor:concept:scientific-computing-applications"
+  ],
+  "valueName": "application description relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "describes applications"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

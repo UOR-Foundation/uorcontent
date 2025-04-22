@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-signal-compression",
+  "name": "Defines Signal Compression",
+  "description": "Establishes the formal definition and conceptual foundation of signal compression in the UOR framework.",
+  "value": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Compression Definition",
+    "description": "The formal definition and conceptual foundation of signal compression within the UOR framework, based on prime coordinate optimization and structure preservation."
+  },
+  "propertyID": "UOR-P-067",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Signal Compression",
+    "@id": "urn:uor:resource:signal-compression"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Compression Definition",
+    "@id": "urn:uor:concept:compression-definition"
+  },
+  "relationshipStrength": 1,
+  "properties": {
+    "relationshipType": "definition",
+    "context": "signal processing"
+  }
+}

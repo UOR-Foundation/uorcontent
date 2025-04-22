@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-frame-theorems",
+  "name": "Establishes Frame Theorems",
+  "description": "Establishes fundamental mathematical theorems that govern the properties and relationships of temporal reference frames.",
+  "propertyID": "UOR-P-050",
+  "value": "theoretical relationship",
+  "subject": "urn:uor:resource:temporal-observer-frames",
+  "object": "urn:uor:concept:temporal-frame-theorems",
+  "relationshipStrength": "axiomatic",
+  "contextualDescription": "The Temporal Observer Frames resource establishes four key theorems: the Temporal Frame Existence Theorem guaranteeing optimal frames for any process, the Frame Compatibility Theorem ensuring reconcilable perspectives, the Temporal Invariant Theorem identifying observer-independent quantities, and the Frame Bundle Curvature Theorem relating bundle geometry to observer-dependence."
+}

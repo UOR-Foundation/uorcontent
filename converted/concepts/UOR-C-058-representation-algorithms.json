@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:representation-algorithms",
+  "name": "Representation Algorithms",
+  "description": "Algorithms for encoding mathematical objects in the universal number representation, including methods for integers, rational numbers, real numbers, and p-adic numbers.",
+  "termCode": "UOR-C-058",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Universal Number Encoding Algorithm:}",
+    "\\text{Function Encode\\_Universal\\_Number}(x, \\text{precision}):",
+    "1. \\text{Determine the number type of } x \\text{ (integer, rational, real, complex, p-adic)}",
+    "2. \\text{Based on type:}",
+    "   a. \\text{If integer: Compute prime factorization}",
+    "   b. \\text{If rational: Factorize numerator and denominator, subtract coordinates}",
+    "   c. \\text{If real/complex: Use continued fraction approximation}",
+    "   d. \\text{If p-adic: Convert using p-adic to universal algorithm}",
+    "3. \\text{Generate the universal representation components}",
+    "4. \\text{Verify consistency across representations}",
+    "5. \\text{Return universal number representation}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-number",
+    "urn:uor:concept:universal-prime-representation"
+  ],
+  "properties": {
+    "components": "Number type detection, prime factorization, continued fraction approximation, p-adic conversion"
+  },
+  "examples": [
+    "Encoding integers through prime factorization",
+    "Representing real numbers through continued fraction approximation"
+  ],
+  "sourceText": "Core Representation Algorithms\n\nUniversal Number Encoding\nAlgorithm 1: Encode_Universal_Number\nInput: A mathematical object expressed in standard form (integer, rational, real, complex, or p-adic)  \nOutput: The universal number representation including prime coordinates\n\n```\nFunction Encode_Universal_Number(x, precision):\n  1. Determine the number type of x (integer, rational, real, complex, p-adic)\n  2. Based on type:\n     a. If integer: Compute prime factorization using Algorithm 2\n     b. If rational: Factorize numerator and denominator, subtract coordinates\n     c. If real/complex: Use Algorithm 3 for approximation via continued fraction\n     d. If p-adic: Use Algorithm 4 for p-adic to universal conversion\n  3. Generate the universal representation:\n     a. Complex value component\n     b. p-adic components for relevant primes\n     c. Prime-coordinate vector\n  4. Verify consistency across representations\n  5. Return universal number representation\n```\n\nThis algorithm translates conventional representations into the universal framework, ensuring consistent encoding across different number domains.\n\nPrime Factorization for Integers\nAlgorithm 2: Compute_Prime_Coordinates_Integer\nInput: An integer n  \nOutput: The prime-coordinate representation φ(n)\n\n```\nFunction Compute_Prime_Coordinates_Integer(n):\n  1. Initialize empty coordinate vector φ(n)\n  2. If n = 0, return special encoding for zero\n  3. If n < 0, record sign and set n = |n|\n  4. For each prime p in ascending order:\n     a. Set exponent e_p = 0\n     b. While p divides n:\n        i. Increment e_p\n        ii. Set n = n/p\n     c. If e_p > 0, record (p, e_p) in φ(n)\n  5. If n > 1, n is prime; record (n, 1) in φ(n)\n  6. Return φ(n)\n```"
+}

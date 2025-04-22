@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:universal-valuations",
+  "name": "Universal Valuations",
+  "description": "The coherent system of valuations on universal numbers derived from their prime-coordinate structure, including prime-indexed valuations and the Archimedean meta-valuation.",
+  "termCode": "UOR-C-045",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{For each prime } p, \\text{ there exists a valuation } v_p \\text{ on } \\mathbb{U} \\text{ defined by:}",
+    "v_p(\\alpha) = \\text{Re}(e_p)",
+    "\\text{where } e_p \\text{ is the p-th coordinate in the prime-coordinate representation of } \\alpha.",
+    "\\text{The complex embedding induces an Archimedean valuation:}",
+    "v_\\infty(\\alpha) = \\log|z|",
+    "\\text{where } z \\text{ is the complex value of } \\alpha.",
+    "\\text{Theorem 4 (Universal Product Formula): For any non-zero universal number } \\alpha \\in \\mathbb{U}^*:",
+    "v_\\infty(\\alpha) + \\sum_{p \\text{ prime}} v_p(\\alpha) \\cdot \\log(p) = 0"
+  ],
+  "image": [],
+  "sameAs": ["https://en.wikipedia.org/wiki/Valuation_(mathematics)"],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-number",
+    "urn:uor:concept:universal-prime-representation"
+  ],
+  "properties": {
+    "components": "Prime-indexed valuations, Archimedean meta-valuation, product formula"
+  },
+  "examples": [
+    "Computing p-adic valuations directly from prime coordinates",
+    "Verifying the universal product formula for algebraic numbers"
+  ],
+  "theorems": [
+    "Theorem 4 (Universal Product Formula): For any non-zero universal number α ∈ 𝕌*, the sum of its valuations weighted by logarithms of primes equals zero."
+  ],
+  "sourceText": "Universal numbers support a coherent system of valuations derived from their prime-coordinate structure:\n\nPrime-Indexed Valuations\nFor each prime `p`, there exists a valuation `v_p` on `𝕌` defined by:\n`v_p(α) = Re(e_p)`\nwhere `e_p` is the p-th coordinate in the prime-coordinate representation of α.\n\nArchimedean Meta-Valuation\nThe complex embedding induces an Archimedean valuation:\n`v_∞(α) = log|z|`\nwhere `z` is the complex value of α.\n\nProduct Formula\nThese valuations satisfy a generalized product formula that extends the classical formula of algebraic number theory:\n\nTheorem 4 (Universal Product Formula): For any non-zero universal number `α ∈ 𝕌*`:\n`v_∞(α) + ∑_{p prime} v_p(α)·log(p) = 0`\n\nThis formula establishes a fundamental conservation principle across all valuations, unifying the perspectives of complex and p-adic analysis."
+}

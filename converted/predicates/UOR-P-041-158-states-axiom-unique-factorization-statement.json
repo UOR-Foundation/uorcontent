@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:states:041:158",
+  "name": "states",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Unique Factorization Statement",
+    "@id": "urn:uor:concept:axiom-unique-factorization-statement"
+  },
+  "value": "states the formal definition of the Unique Factorization Axiom as the uniqueness of prime factorization",
+  "description": "The Unique Factorization Axiom resource states that every non-unit object admits a finite product decomposition into primes, and this decomposition is unique up to reordering of factors, establishing the foundation for canonical representation",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Unique Factorization Axiom",
+      "@id": "urn:uor:resource:axiom-unique-factorization"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

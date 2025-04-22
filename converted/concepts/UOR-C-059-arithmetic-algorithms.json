@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:arithmetic-algorithms",
+  "name": "Arithmetic Algorithms",
+  "description": "Algorithms for performing basic arithmetic operations (addition, multiplication, division, exponentiation) on universal numbers through their prime-coordinate representations.",
+  "termCode": "UOR-C-059",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Addition Algorithm:}",
+    "\\phi(\\alpha+\\beta) = \\log(\\exp(\\phi(\\alpha)) + \\exp(\\phi(\\beta)))",
+    "\\text{Multiplication Algorithm:}",
+    "\\phi(\\alpha\\cdot\\beta) = \\phi(\\alpha) + \\phi(\\beta)",
+    "\\text{Division Algorithm:}",
+    "\\phi(\\alpha/\\beta) = \\phi(\\alpha) - \\phi(\\beta) \\text{ for } \\beta \\neq 0",
+    "\\text{Exponentiation Algorithm:}",
+    "\\phi(\\alpha^r) = r \\cdot \\phi(\\alpha)"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-number-field-operations",
+    "urn:uor:concept:representation-algorithms"
+  ],
+  "properties": {
+    "components": "Addition through logarithmic-exponential bridge, multiplication through coordinate addition, division through coordinate subtraction, exponentiation through scalar multiplication"
+  },
+  "examples": [
+    "Multiplying universal numbers through coordinate addition",
+    "Computing powers of universal numbers through scalar multiplication"
+  ],
+  "sourceText": "Basic Arithmetic Operations\n\nAddition\nAlgorithm 5: Universal_Addition\nInput: Universal numbers α, β; precision parameter ε  \nOutput: The sum α + β to precision ε\n\n```\nFunction Universal_Addition(α, β, ε):\n  1. Retrieve prime-coordinate representations φ(α), φ(β)\n  2. Compute componentwise logarithmic sum:\n     φ(α+β) = log(exp(φ(α)) + exp(φ(β)))\n     with precision controlled by ε\n  3. Verify consistency of result with complex and p-adic components\n  4. Adjust precision as needed to ensure ε-accuracy\n  5. Return universal representation of α + β\n```\n\nAddition requires the logarithmic-exponential bridge to translate between additive and multiplicative structures.\n\nMultiplication\nAlgorithm 6: Universal_Multiplication\nInput: Universal numbers α, β; precision parameter ε  \nOutput: The product α · β to precision ε\n\n```\nFunction Universal_Multiplication(α, β, ε):\n  1. Retrieve prime-coordinate representations φ(α), φ(β)\n  2. Compute coordinate vector sum: φ(α·β) = φ(α) + φ(β)\n  3. Update complex component: z_αβ = z_α · z_β\n  4. Update p-adic components through multiplication\n  5. Verify consistency across representations\n  6. Return universal representation of α · β\n```\n\nMultiplication is directly implemented through coordinate addition, demonstrating the homomorphism property."
+}

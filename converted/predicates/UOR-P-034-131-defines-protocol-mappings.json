@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines:034:131",
+  "name": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Protocol Mappings",
+    "@id": "urn:uor:concept:protocol-mappings",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "defines the explicit mathematical mappings from UOR concepts to networking implementations",
+  "description": "The UOR Network Mapping resource defines precise mathematical mappings including network addresses, routing metrics, network verification, and protocol transformations that create a formal bridge between theory and practice",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "UOR Network Mapping",
+        "@id": "urn:uor:resource:uor-network-mapping"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:protocol-mappings"
+  ],
+  "valueName": "defines the explicit mathematical mappings from UOR concepts to networking implementations"
+}

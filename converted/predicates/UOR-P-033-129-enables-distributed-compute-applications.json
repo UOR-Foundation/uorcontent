@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:enables:033:129",
+  "name": "enables",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Distributed Compute Applications",
+    "@id": "urn:uor:concept:distributed-compute-applications",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "enables practical capabilities through the distributed computation system",
+  "description": "The Distributed Compute resource enables practical capabilities including large-scale block conversion, adaptive media processing, coherent data aggregation, global computation fabric, content-adaptive resources, and transformation markets",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Distributed Compute",
+        "@id": "urn:uor:resource:distributed-compute"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:distributed-compute-applications"
+  ],
+  "valueName": "enables practical capabilities through the distributed computation system"
+}

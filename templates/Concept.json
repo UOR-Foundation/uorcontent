@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "",
+  "description": "",
+  "termCode": "",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [],
+  "properties": {},
+  "examples": [],
+  "theorems": [],
+  "corollaries": [],
+  "lemmas": [],
+  "axioms": [],
+  "proofs": [],
+  "sourceText": ""
+}

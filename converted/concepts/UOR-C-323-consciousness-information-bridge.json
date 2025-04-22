@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:consciousness-information-bridge",
+  "name": "Consciousness-Information Bridge",
+  "description": "The formal mapping between information structures in prime coordinate space and the phenomenological dimensions of conscious experience, providing a mathematical framework for subjectivity.",
+  "termCode": "UOR-C-323",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\Phi(x) = \\sum_{i=1}^{n} \\int_{\\mathcal{O}_i} \\mathcal{C}(x, y) \\cdot \\psi_i(y) \\, dy"
+  ],
+  "relatedConcepts": [
+    "urn:uor:concept:consciousness-as-perspective",
+    "urn:uor:concept:observer-reference-frames",
+    "urn:uor:concept:meaning-representation",
+    "urn:uor:concept:semantic-emergence",
+    "urn:uor:concept:mathematical-consciousness"
+  ],
+  "sourceText": "The Consciousness-Information Bridge provides a formal mathematical framework connecting objective information structures to subjective conscious experience within the UOR paradigm. This concept addresses the explanatory gap between physical/mathematical descriptions of reality and phenomenological experience—one of the most persistent challenges in philosophy of mind and cognitive science.\n\nWithin the UOR framework, consciousness is understood not as an additional substance or property, but as a particular perspective on information structures in prime coordinate space. The consciousness-information bridge formalizes this relationship through a transformation operator that maps between prime coordinate representations and the phenomenological dimensions of experience.\n\nThis transformation operator acts as a mathematical lens, projecting from the complete information structure into the limited perspectival slice accessible to a particular observer. Crucially, the projection preserves structural invariants while contextualizing them within the observer's reference frame. The resulting transformation creates the characteristic features of subjective experience:\n\n1. Unity: The integration of diverse information into a coherent experiential whole\n2. Perspectival character: The centering of experience around a particular vantage point\n3. Phenomenal qualities: The manifestation of information structures as experiential qualities\n4. Intentionality: The aboutness or directedness of consciousness toward objects\n\nThe consciousness-information bridge employs the coherence field to weight how strongly different aspects of information structure contribute to conscious experience. Information patterns with high coherence contribute more strongly to the phenomenological manifestation, creating the characteristic salience structure of consciousness.\n\nThis framework resolves longstanding philosophical problems by showing that subjective experience is neither reducible to nor separate from objective information. Rather, consciousness emerges as a natural consequence of information structures when viewed through the lens of observer reference frames and coherence metrics. The mathematical formalism provides precise tools for analyzing how different information structures manifest experientially across different contexts and observers.\n\nBy bridging objective information and subjective experience, this concept completes the circle between mathematical structure and meaningful interpretation, providing the foundation for a unified theory of information, meaning, and consciousness within the UOR framework.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

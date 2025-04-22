@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:states:043:166",
+  "name": "states",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Canonical Representation Statement",
+    "@id": "urn:uor:concept:axiom-canonical-representation-statement"
+  },
+  "value": "states the formal definition of the Canonical Representation Axiom as a unique, lossless encoding",
+  "description": "The Canonical Representation Axiom resource states that the image φ(X) is a unique, lossless encoding that does not depend on numeral base or observer frame and achieves the minimal coherence norm among all representations, establishing prime coordinates as the most fundamental description of any object",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Canonical Representation Axiom",
+      "@id": "urn:uor:resource:axiom-canonical-representation"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

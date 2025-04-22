@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-intrinsic-primes-connections",
+  "name": "Axiom Intrinsic Primes Connections",
+  "description": "The connections between the Intrinsic Primes Axiom and other core axioms in the UOR framework, particularly its foundational role for Unique Factorization and Prime-Coordinate Homomorphism.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-157",
+  "text": "The Intrinsic Primes Axiom serves as the cornerstone of the UOR framework, establishing fundamental connections with other core axioms and creating the foundation upon which the entire theoretical structure is built.\n\nPrimarily, the Intrinsic Primes Axiom serves as the essential foundation for the Unique Factorization Axiom. While the Intrinsic Primes Axiom establishes the existence of irreducible elements, the Unique Factorization Axiom builds on this by asserting that every non-unit object can be expressed as a product of these prime elements in a way that is unique up to reordering. Without the concept of intrinsic primes as established by the first axiom, the very notion of factorization would be meaningless, as there would be no fundamental elements into which objects could be decomposed.\n\nTogether, these two axioms establish the basis for the Prime-Coordinate Homomorphism, which is the third core axiom. This homomorphism maps objects to their unique prime signature, creating a coordinate system based on the prime decomposition of objects. The map transforms an object into a vector whose components are the exponents of the prime factors in the object's unique factorization. This mapping would be impossible without both the existence of intrinsic primes and the guarantee of unique factorization into these primes.\n\nBeyond these direct connections, the Intrinsic Primes Axiom has implications for all remaining axioms in the UOR framework. The Canonical Representation Axiom relies on the prime coordinates established through the first three axioms. The Coherence Norm and Coherence Inner Product axioms define metric and geometric structures on the prime coordinate space. The Trilateral Coherence and Universal Mapping Property axioms establish broader principles about the relationship between structure, dynamics, and observer perspective, all built upon the foundation of prime decomposition.\n\nThese connections illustrate how the Intrinsic Primes Axiom is not merely the first in an arbitrary sequence of axioms, but a fundamental principle that permeates the entire framework. It establishes the atomic building blocks from which all other mathematical structures in the framework are constructed, making it truly foundational to the UOR approach.",
+  "mathExpression": [],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Axiom Intrinsic Primes Formalization",
+      "@id": "urn:uor:concept:axiom-intrinsic-primes-formalization"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Unique Factorization",
+      "@id": "urn:uor:concept:factorization-theorem"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Coordinate Map",
+      "@id": "urn:uor:concept:prime-coordinate-map"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

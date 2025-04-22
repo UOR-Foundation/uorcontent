@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes:039:151",
+  "name": "establishes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Norm Minimality",
+    "@id": "urn:uor:concept:norm-minimality",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "establishes that prime factorization uniquely minimizes the coherence norm",
+  "description": "The Coherence Norm resource establishes the Minimality Theorem proving that among all possible factorizations of an object, the prime factorization achieves the minimal coherence norm, based on the Cauchy-Schwarz inequality",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Coherence Norm & Metric",
+        "@id": "urn:uor:resource:coherence-norm"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:norm-minimality"
+  ],
+  "valueName": "establishes that prime factorization uniquely minimizes the coherence norm"
+}

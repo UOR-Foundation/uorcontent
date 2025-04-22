@@ -1,0 +1,18 @@
+{
+  "name": "uor-content-utils",
+  "version": "1.0.0",
+  "description": "Utilities for managing UOR Framework content",
+  "main": "index.js",
+  "scripts": {
+    "validate": "node validate.js",
+    "validate:all": "node validate.js -d ../converted -r --summary",
+    "generate-index": "node generate-index.js",
+    "convert": "node convert.js"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "chalk": "^4.1.2",
+    "commander": "^10.0.0"
+  }
+}

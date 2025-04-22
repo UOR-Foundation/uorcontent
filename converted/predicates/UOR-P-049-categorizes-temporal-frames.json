@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:categorizes-temporal-frames",
+  "name": "Categorizes Temporal Frames",
+  "description": "Classifies temporal reference frames based on their defining characteristics and mathematical properties.",
+  "propertyID": "UOR-P-049",
+  "value": "classification relationship",
+  "subject": "urn:uor:resource:temporal-observer-frames",
+  "object": "urn:uor:concept:temporal-frame-categories",
+  "relationshipStrength": "organizational",
+  "contextualDescription": "The Temporal Observer Frames resource categorizes temporal reference frames into several types including scale frames (differing in timescale), flow frames (differing in time flow characteristics), relativistic frames (related by Lorentz transformations), and topological frames (differing in temporal topology), and describes how they form a mathematical frame bundle with a groupoid structure."
+}

@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-compression-mechanics",
+  "name": "Describes Compression Mechanics",
+  "description": "Explains the detailed mechanics and operational procedures of signal compression processes.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Compression Mechanics",
+    "description": "The step-by-step processes and computational mechanisms used to perform signal compression in the UOR framework."
+  },
+  "propertyID": "UOR-P-068",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Signal Compression",
+    "@id": "urn:uor:resource:signal-compression"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Compression Mechanics",
+    "@id": "urn:uor:concept:compression-mechanics"
+  },
+  "relationshipStrength": 0.9,
+  "properties": {
+    "relationshipType": "process",
+    "context": "signal processing"
+  }
+}

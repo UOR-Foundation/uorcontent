@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:universal-representation-theorem",
+  "name": "Universal Representation Theorem",
+  "description": "A fundamental theorem establishing that every universal number admits a canonical representation as a triple consisting of its complex value, p-adic expansions, and prime coordinate vector.",
+  "termCode": "UOR-C-037",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Theorem 1 (Universal Representation):}",
+    "\\text{Every universal number } \\eta \\in \\mathbb{U} \\text{ admits a canonical representation as a triple:}",
+    "\\eta = (z, (a_p)_{p \\in \\mathbb{P}}, \\phi(\\eta))",
+    "\\text{where:}",
+    "z \\in \\mathbb{C} \\text{ is its complex value}",
+    "a_p \\in \\mathbb{Z}_p \\text{ is its p-adic expansion for each prime } p",
+    "\\phi(\\eta) \\text{ is its prime coordinate vector}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-number",
+    "urn:uor:concept:universal-coordinate-transformation"
+  ],
+  "properties": {
+    "components": "Triple representation, consistency conditions, uniqueness"
+  },
+  "examples": [
+    "Representing integers with their complex value, p-adic expansions, and prime coordinate vector",
+    "Representing rational numbers via the triple representation"
+  ],
+  "theorems": [
+    "Universal Representation: Every universal number η ∈ 𝕌 admits a canonical representation as a triple: η = (z, (aₚ)ₚ∈ℙ, φ(η))"
+  ],
+  "sourceText": "Theorem 1 (Universal Representation): Every universal number η ∈ 𝕌 admits a canonical representation as a triple:\n\nη = (z, (aₚ)ₚ∈ℙ, φ(η))\n\nwhere:\n- z ∈ ℂ is its complex value\n- aₚ ∈ ℤₚ is its p-adic expansion for each prime p\n- φ(η) is its prime coordinate vector\n\nThese representations satisfy rigorous compatibility conditions ensuring consistency across all embedded domains.\n\nUniversal numbers exhibit crucial meta-theoretical properties that establish their coherence within the UOR framework:\n\n1. Category-Theoretic Universality: 𝕌 represents the universal completion of ℚ with respect to all possible completions, making it the terminal object in an appropriate category of number systems.\n\n2. Model-Theoretic Completeness: The theory of universal numbers is model-complete when formalized in an appropriate multi-sorted logic accommodating both Archimedean and non-Archimedean aspects.\n\n3. Information-Theoretic Optimality: The universal coordinate representation achieves minimal descriptive complexity for representing numbers across multiple domains.\n\n4. Intrinsic Coordinate Invariance: The coordinate representation is invariant under automorphisms of the number system, reflecting intrinsic structural properties rather than arbitrary conventions."
+}

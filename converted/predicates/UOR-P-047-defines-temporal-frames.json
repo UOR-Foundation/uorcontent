@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-temporal-frames",
+  "name": "Defines Temporal Frames",
+  "description": "Establishes the formal definition and structure of temporal reference frames for different observers.",
+  "propertyID": "UOR-P-047",
+  "value": "definition relationship",
+  "subject": "urn:uor:resource:temporal-observer-frames",
+  "object": "urn:uor:concept:temporal-reference-frame",
+  "relationshipStrength": "definitive",
+  "contextualDescription": "The Temporal Observer Frames resource defines temporal reference frames as mathematical structures characterized by a triplet consisting of a time coordinate function, temporal metric, and flow vector field, which completely specify an observer's perspective on time."
+}

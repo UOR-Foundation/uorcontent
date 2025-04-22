@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-coherence-norm-statement",
+  "name": "Axiom Coherence Norm Statement",
+  "description": "The formal statement of the Coherence Norm Axiom: Equip ℤ^(P) with the norm ‖φ(X)‖ = √(∑_p φ(X)(p)²), measuring simplicity of the prime exponent vector.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-170",
+  "text": "The Coherence Norm Axiom is formally stated as: \"Equip ℤ^(P) with the norm ‖φ(X)‖ = √(∑_p φ(X)(p)²), measuring simplicity of the prime exponent vector.\"\n\nThis axiom introduces a metric structure to the prime coordinate space, allowing for precise measurements of representational complexity. The norm defined here is essentially a Euclidean norm (or L² norm) on the vector space of prime exponents. For any object X, its coherence norm is computed by taking the square root of the sum of squares of all prime exponents in its factorization.\n\nThe statement has several important components:\n\n1. ℤ^(P) refers to the space of integer vectors indexed by the set of primes P. This is the target space of the prime coordinate mapping φ established in previous axioms.\n\n2. The norm ‖φ(X)‖ assigns a non-negative real number to each prime coordinate vector, quantifying its complexity or size.\n\n3. The specific form √(∑_p φ(X)(p)²) defines how this norm is calculated—by summing the squares of all prime exponents and then taking the square root. This follows the standard definition of a Euclidean norm.\n\n4. The statement emphasizes that this norm measures \"simplicity\" of the prime exponent vector, establishing a direct connection between the mathematical measurement and the intuitive concept of representational simplicity.\n\nAs the fifth of the eight core UOR axioms, the Coherence Norm builds upon the foundation established by the previous axioms, particularly the Prime-Coordinate Homomorphism and Canonical Representation. While those axioms established the mapping to prime coordinates and asserted its canonical nature, the Coherence Norm provides the specific mathematical tool needed to quantify what makes this representation minimal or optimal.",
+  "mathExpression": [
+    "\\|\\phi(X)\\| = \\sqrt{\\sum_{p \\in P} \\phi(X)(p)^2}",
+    "\\|\\cdot\\|: \\mathbb{Z}^P \\to \\mathbb{R}, \\text{ a Euclidean norm on the prime coordinate space}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Euclidean Norm",
+      "@id": "urn:uor:concept:euclidean-norm"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Representational Complexity",
+      "@id": "urn:uor:concept:representational-complexity"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

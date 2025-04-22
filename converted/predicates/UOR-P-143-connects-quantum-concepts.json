@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:connects-quantum-concepts",
+  "name": "connects",
+  "propertyID": "uor:predicate",
+  "value": "related quantum concepts",
+  "subjectOf": {
+    "@id": "urn:uor:concept:quantum-prime-superposition"
+  },
+  "targetCollection": [
+    "urn:uor:concept:quantum-entanglement-primes",
+    "urn:uor:concept:quantum-reference-frame",
+    "urn:uor:concept:quantum-information-uor"
+  ],
+  "valueName": "The quantum prime superposition concept connects to related quantum concepts",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "connects"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 0.9
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

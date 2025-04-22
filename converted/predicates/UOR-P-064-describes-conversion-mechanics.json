@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-conversion-mechanics",
+  "name": "Describes Conversion Mechanics",
+  "description": "Explains the detailed mechanics and operational procedures of block conversion processes.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Conversion Mechanics",
+    "description": "The step-by-step procedures and computational mechanisms used to perform block conversion operations across different bit-width representations."
+  },
+  "propertyID": "UOR-P-064",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Block Conversion",
+    "@id": "urn:uor:resource:block-conversion"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Conversion Mechanics",
+    "@id": "urn:uor:concept:conversion-mechanics"
+  },
+  "relationshipStrength": 0.9,
+  "properties": {
+    "relationshipType": "process",
+    "context": "signal processing"
+  }
+}

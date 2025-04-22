@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-digital-twin-architecture",
+  "name": "Describes Digital Twin Architecture",
+  "description": "Details the layered architectural framework that implements the Digital Twin concept across the internet.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Digital Twin Architecture",
+    "description": "The layered architectural framework that implements the Digital Twin concept across the internet, enabling coherent mappings between physical and digital realities."
+  },
+  "propertyID": "UOR-P-081",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Digital Twin Framework",
+    "@id": "urn:uor:resource:digital-twin-framework"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Digital Twin Architecture",
+    "@id": "urn:uor:concept:digital-twin-architecture"
+  },
+  "relationshipStrength": 0.85,
+  "properties": {
+    "relationshipType": "architecture",
+    "context": "internet substrate"
+  }
+}

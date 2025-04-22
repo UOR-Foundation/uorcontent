@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:explains:043:167",
+  "name": "explains",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Canonical Representation Insights",
+    "@id": "urn:uor:concept:axiom-canonical-representation-insights"
+  },
+  "value": "explains the key insights derived from the Canonical Representation Axiom",
+  "description": "The Canonical Representation Axiom resource explains the profound insights of base independence, frame invariance, minimal complexity, and information completeness that emerge from the prime coordinate representation system",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Canonical Representation Axiom",
+      "@id": "urn:uor:resource:axiom-canonical-representation"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

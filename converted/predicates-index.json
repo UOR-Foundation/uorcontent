@@ -1,0 +1,1962 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "UOR Predicates Index",
+  "description": "Index of all UOR predicates",
+  "numberOfItems": 217,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "urn:uor:predicate:overview-introduces-uor",
+        "@type": "PropertyValue",
+        "name": "introduces"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "urn:uor:predicate:overview-explains-prime-decomposition",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "urn:uor:predicate:canonical-representation-defines-concept",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": "urn:uor:predicate:canonical-representation-references-coherence",
+        "@type": "PropertyValue",
+        "name": "references"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@id": "urn:uor:predicate:spectral-interpretation-defines-concept",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@id": "urn:uor:predicate:spectral-interpretation-explains-transform",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@id": "urn:uor:predicate:fiber-bundle-defines-concept",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@id": "urn:uor:predicate:fiber-bundle-describes-hierarchy",
+        "@type": "PropertyValue",
+        "name": "describes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@id": "urn:uor:predicate:observer-coherence-defines-concept",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@id": "urn:uor:predicate:trilateral-coherence-fundamental-principle",
+        "@type": "PropertyValue",
+        "name": "fundamentalPrinciple"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@id": "urn:uor:predicate:geometry-defines-concept",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@id": "urn:uor:predicate:prime-space-contains-structures",
+        "@type": "PropertyValue",
+        "name": "contains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@id": "urn:uor:predicate:enhances-uor-framework",
+        "@type": "PropertyValue",
+        "name": "enhances UOR framework"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@id": "urn:uor:predicate:provides-mathematical-tools",
+        "@type": "PropertyValue",
+        "name": "provides mathematical tools"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@id": "urn:uor:predicate:describes-category-theory",
+        "@type": "PropertyValue",
+        "name": "describes category-theoretic foundation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes-uor-structure",
+        "@type": "PropertyValue",
+        "name": "formalizes UOR structure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "item": {
+        "@id": "urn:uor:predicate:extends-to-domains",
+        "@type": "PropertyValue",
+        "name": "extends to domains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "item": {
+        "@id": "urn:uor:predicate:generalizes-framework",
+        "@type": "PropertyValue",
+        "name": "generalizes framework"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "item": {
+        "@id": "urn:uor:predicate:defines-universal-numbers",
+        "@type": "PropertyValue",
+        "name": "defines universal numbers"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "item": {
+        "@id": "urn:uor:predicate:extends-number-systems",
+        "@type": "PropertyValue",
+        "name": "extends number systems"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-computability",
+        "@type": "PropertyValue",
+        "name": "establishes computability"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "item": {
+        "@id": "urn:uor:predicate:enables-algorithmic-operations",
+        "@type": "PropertyValue",
+        "name": "enables algorithmic operations"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "item": {
+        "@id": "urn:uor:predicate:defines-algebraic-structure",
+        "@type": "PropertyValue",
+        "name": "defines algebraic structure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-field-properties",
+        "@type": "PropertyValue",
+        "name": "establishes field properties"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "item": {
+        "@id": "urn:uor:predicate:defines-topological-structure",
+        "@type": "PropertyValue",
+        "name": "defines topological structure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-topological-properties",
+        "@type": "PropertyValue",
+        "name": "establishes topological properties"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "item": {
+        "@id": "urn:uor:predicate:defines-analytical-framework",
+        "@type": "PropertyValue",
+        "name": "defines analytical framework"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "item": {
+        "@id": "urn:uor:predicate:unifies-analytical-traditions",
+        "@type": "PropertyValue",
+        "name": "unifies analytical traditions"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "item": {
+        "@id": "urn:uor:predicate:describes-applications",
+        "@type": "PropertyValue",
+        "name": "describes applications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "item": {
+        "@id": "urn:uor:predicate:implements-practical-benefits",
+        "@type": "PropertyValue",
+        "name": "implements practical benefits"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "item": {
+        "@id": "urn:uor:predicate:defines-computational-framework",
+        "@type": "PropertyValue",
+        "name": "defines computational framework"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "item": {
+        "@id": "urn:uor:predicate:defines:032:122",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "item": {
+        "@id": "urn:uor:predicate:defines:032:123",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "item": {
+        "@id": "urn:uor:predicate:classifies:032:124",
+        "@type": "PropertyValue",
+        "name": "classifies"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "item": {
+        "@id": "urn:uor:predicate:enables:032:125",
+        "@type": "PropertyValue",
+        "name": "enables"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "item": {
+        "@id": "urn:uor:predicate:enables-computation",
+        "@type": "PropertyValue",
+        "name": "enables computation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes:033:126",
+        "@type": "PropertyValue",
+        "name": "formalizes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "item": {
+        "@id": "urn:uor:predicate:defines:033:127",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "item": {
+        "@id": "urn:uor:predicate:describes:033:128",
+        "@type": "PropertyValue",
+        "name": "describes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "item": {
+        "@id": "urn:uor:predicate:enables:033:129",
+        "@type": "PropertyValue",
+        "name": "enables"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "item": {
+        "@id": "urn:uor:predicate:integrates-with-uor",
+        "@type": "PropertyValue",
+        "name": "integrates with UOR"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:034:130",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "item": {
+        "@id": "urn:uor:predicate:defines:034:131",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "item": {
+        "@id": "urn:uor:predicate:implements:034:132",
+        "@type": "PropertyValue",
+        "name": "implements"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "item": {
+        "@id": "urn:uor:predicate:demonstrates:034:133",
+        "@type": "PropertyValue",
+        "name": "demonstrates"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "item": {
+        "@id": "urn:uor:predicate:realizes-uor-principles",
+        "@type": "PropertyValue",
+        "name": "realizes UOR principles"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "item": {
+        "@id": "urn:uor:predicate:defines:035:134",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "item": {
+        "@id": "urn:uor:predicate:describes:035:135",
+        "@type": "PropertyValue",
+        "name": "describes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:035:136",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "item": {
+        "@id": "urn:uor:predicate:enables:035:137",
+        "@type": "PropertyValue",
+        "name": "enables"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "item": {
+        "@id": "urn:uor:predicate:defines-time-operator",
+        "@type": "PropertyValue",
+        "name": "Defines Time Operator"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:036:138",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "item": {
+        "@id": "urn:uor:predicate:guarantees:036:139",
+        "@type": "PropertyValue",
+        "name": "guarantees"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 54,
+      "item": {
+        "@id": "urn:uor:predicate:provides:036:140",
+        "@type": "PropertyValue",
+        "name": "provides"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 55,
+      "item": {
+        "@id": "urn:uor:predicate:explains:036:141",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 56,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-temporal-properties",
+        "@type": "PropertyValue",
+        "name": "Establishes Temporal Properties"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
+      "item": {
+        "@id": "urn:uor:predicate:defines:037:142",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 58,
+      "item": {
+        "@id": "urn:uor:predicate:describes:037:143",
+        "@type": "PropertyValue",
+        "name": "describes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 59,
+      "item": {
+        "@id": "urn:uor:predicate:presents:037:144",
+        "@type": "PropertyValue",
+        "name": "presents"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 60,
+      "item": {
+        "@id": "urn:uor:predicate:explains:037:145",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 61,
+      "item": {
+        "@id": "urn:uor:predicate:describes-temporal-modes",
+        "@type": "PropertyValue",
+        "name": "Describes Temporal Modes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 62,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:038:146",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 63,
+      "item": {
+        "@id": "urn:uor:predicate:defines:038:147",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 64,
+      "item": {
+        "@id": "urn:uor:predicate:introduces:038:148",
+        "@type": "PropertyValue",
+        "name": "introduces"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 65,
+      "item": {
+        "@id": "urn:uor:predicate:describes:038:149",
+        "@type": "PropertyValue",
+        "name": "describes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 66,
+      "item": {
+        "@id": "urn:uor:predicate:explains-observer-time",
+        "@type": "PropertyValue",
+        "name": "Explains Observer-Dependent Time"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 67,
+      "item": {
+        "@id": "urn:uor:predicate:defines:039:150",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 68,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:039:151",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 69,
+      "item": {
+        "@id": "urn:uor:predicate:induces:039:152",
+        "@type": "PropertyValue",
+        "name": "induces"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 70,
+      "item": {
+        "@id": "urn:uor:predicate:enables:039:153",
+        "@type": "PropertyValue",
+        "name": "enables"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 71,
+      "item": {
+        "@id": "urn:uor:predicate:defines-temporal-primes",
+        "@type": "PropertyValue",
+        "name": "Defines Temporal Primes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 72,
+      "item": {
+        "@id": "urn:uor:predicate:states:040:154",
+        "@type": "PropertyValue",
+        "name": "states"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 73,
+      "item": {
+        "@id": "urn:uor:predicate:explains:040:155",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 74,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes:040:156",
+        "@type": "PropertyValue",
+        "name": "formalizes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 75,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:040:157",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 76,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-prime-factorization",
+        "@type": "PropertyValue",
+        "name": "Establishes Prime Factorization"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 77,
+      "item": {
+        "@id": "urn:uor:predicate:states:041:158",
+        "@type": "PropertyValue",
+        "name": "states"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 78,
+      "item": {
+        "@id": "urn:uor:predicate:explains:041:159",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 79,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes:041:160",
+        "@type": "PropertyValue",
+        "name": "formalizes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 80,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:041:161",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 81,
+      "item": {
+        "@id": "urn:uor:predicate:categorizes-temporal-primes",
+        "@type": "PropertyValue",
+        "name": "Categorizes Temporal Primes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 82,
+      "item": {
+        "@id": "urn:uor:predicate:states:042:162",
+        "@type": "PropertyValue",
+        "name": "states"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 83,
+      "item": {
+        "@id": "urn:uor:predicate:explains:042:163",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 84,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes:042:164",
+        "@type": "PropertyValue",
+        "name": "formalizes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 85,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:042:165",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 86,
+      "item": {
+        "@id": "urn:uor:predicate:describes-decomposition-methods",
+        "@type": "PropertyValue",
+        "name": "Describes Decomposition Methods"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 87,
+      "item": {
+        "@id": "urn:uor:predicate:states:043:166",
+        "@type": "PropertyValue",
+        "name": "states"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 88,
+      "item": {
+        "@id": "urn:uor:predicate:explains:043:167",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 89,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes:043:168",
+        "@type": "PropertyValue",
+        "name": "formalizes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 90,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:043:169",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 91,
+      "item": {
+        "@id": "urn:uor:predicate:defines-coherence-conditions",
+        "@type": "PropertyValue",
+        "name": "Defines Coherence Conditions"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 92,
+      "item": {
+        "@id": "urn:uor:predicate:states:044:170",
+        "@type": "PropertyValue",
+        "name": "states"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 93,
+      "item": {
+        "@id": "urn:uor:predicate:explains:044:171",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 94,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes:044:172",
+        "@type": "PropertyValue",
+        "name": "formalizes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 95,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:044:173",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 96,
+      "item": {
+        "@id": "urn:uor:predicate:classifies-coherence-systems",
+        "@type": "PropertyValue",
+        "name": "Classifies Coherence Systems"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 97,
+      "item": {
+        "@id": "urn:uor:predicate:states:045:174",
+        "@type": "PropertyValue",
+        "name": "states"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 98,
+      "item": {
+        "@id": "urn:uor:predicate:explains:045:175",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 99,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes:045:176",
+        "@type": "PropertyValue",
+        "name": "formalizes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 100,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:045:177",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 101,
+      "item": {
+        "@id": "urn:uor:predicate:characterizes-coherence-measures",
+        "@type": "PropertyValue",
+        "name": "Characterizes Coherence Measures"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 102,
+      "item": {
+        "@id": "urn:uor:predicate:states:046:178",
+        "@type": "PropertyValue",
+        "name": "states"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 103,
+      "item": {
+        "@id": "urn:uor:predicate:explains:046:179",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 104,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes:046:180",
+        "@type": "PropertyValue",
+        "name": "formalizes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 105,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:046:181",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 106,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-coherence-theorems",
+        "@type": "PropertyValue",
+        "name": "Establishes Coherence Theorems"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 107,
+      "item": {
+        "@id": "urn:uor:predicate:states:047:182",
+        "@type": "PropertyValue",
+        "name": "states"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 108,
+      "item": {
+        "@id": "urn:uor:predicate:explains:047:183",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 109,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes:047:184",
+        "@type": "PropertyValue",
+        "name": "formalizes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 110,
+      "item": {
+        "@id": "urn:uor:predicate:establishes:047:185",
+        "@type": "PropertyValue",
+        "name": "establishes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 111,
+      "item": {
+        "@id": "urn:uor:predicate:defines-temporal-frames",
+        "@type": "PropertyValue",
+        "name": "Defines Temporal Frames"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 112,
+      "item": {
+        "@id": "urn:uor:predicate:states:048:186",
+        "@type": "PropertyValue",
+        "name": "states"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 113,
+      "item": {
+        "@id": "urn:uor:predicate:explains:048:187",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 114,
+      "item": {
+        "@id": "urn:uor:predicate:describes:048:188",
+        "@type": "PropertyValue",
+        "name": "describes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 115,
+      "item": {
+        "@id": "urn:uor:predicate:illustrates:048:189",
+        "@type": "PropertyValue",
+        "name": "illustrates"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 116,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-frame-transformations",
+        "@type": "PropertyValue",
+        "name": "Establishes Frame Transformations"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 117,
+      "item": {
+        "@id": "urn:uor:predicate:introduces:049:190",
+        "@type": "PropertyValue",
+        "name": "introduces"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 118,
+      "item": {
+        "@id": "urn:uor:predicate:describes:049:191",
+        "@type": "PropertyValue",
+        "name": "describes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 119,
+      "item": {
+        "@id": "urn:uor:predicate:presents:049:192",
+        "@type": "PropertyValue",
+        "name": "presents"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 120,
+      "item": {
+        "@id": "urn:uor:predicate:outlines:049:193",
+        "@type": "PropertyValue",
+        "name": "outlines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 121,
+      "item": {
+        "@id": "urn:uor:predicate:categorizes-temporal-frames",
+        "@type": "PropertyValue",
+        "name": "Categorizes Temporal Frames"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 122,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-frame-theorems",
+        "@type": "PropertyValue",
+        "name": "Establishes Frame Theorems"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 123,
+      "item": {
+        "@id": "urn:uor:predicate:defines-temporal-correlations",
+        "@type": "PropertyValue",
+        "name": "Defines Temporal Correlations"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 124,
+      "item": {
+        "@id": "urn:uor:predicate:categorizes-correlation-types",
+        "@type": "PropertyValue",
+        "name": "Categorizes Correlation Types"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 125,
+      "item": {
+        "@id": "urn:uor:predicate:describes-correlation-structures",
+        "@type": "PropertyValue",
+        "name": "Describes Correlation Structures"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 126,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-correlation-theorems",
+        "@type": "PropertyValue",
+        "name": "Establishes Correlation Theorems"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 127,
+      "item": {
+        "@id": "urn:uor:predicate:defines-temporal-order-measures",
+        "@type": "PropertyValue",
+        "name": "Defines Temporal Order Measures"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 128,
+      "item": {
+        "@id": "urn:uor:predicate:describes-emergence-mechanisms",
+        "@type": "PropertyValue",
+        "name": "Describes Emergence Mechanisms"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 129,
+      "item": {
+        "@id": "urn:uor:predicate:categorizes-temporal-structures",
+        "@type": "PropertyValue",
+        "name": "Categorizes Temporal Structures"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 130,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-emergence-theorems",
+        "@type": "PropertyValue",
+        "name": "Establishes Emergence Theorems"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 131,
+      "item": {
+        "@id": "urn:uor:predicate:defines-universal-transforms",
+        "@type": "PropertyValue",
+        "name": "Defines Universal Transforms"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 132,
+      "item": {
+        "@id": "urn:uor:predicate:describes-transform-properties",
+        "@type": "PropertyValue",
+        "name": "Describes Transform Properties"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 133,
+      "item": {
+        "@id": "urn:uor:predicate:explains-transform-mechanics",
+        "@type": "PropertyValue",
+        "name": "Explains Transform Mechanics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 134,
+      "item": {
+        "@id": "urn:uor:predicate:describes-transform-applications",
+        "@type": "PropertyValue",
+        "name": "Describes Transform Applications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 135,
+      "item": {
+        "@id": "urn:uor:predicate:defines-block-conversion",
+        "@type": "PropertyValue",
+        "name": "Defines Block Conversion"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 136,
+      "item": {
+        "@id": "urn:uor:predicate:describes-conversion-mechanics",
+        "@type": "PropertyValue",
+        "name": "Describes Conversion Mechanics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 137,
+      "item": {
+        "@id": "urn:uor:predicate:describes-conversion-properties",
+        "@type": "PropertyValue",
+        "name": "Describes Conversion Properties"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 138,
+      "item": {
+        "@id": "urn:uor:predicate:describes-conversion-applications",
+        "@type": "PropertyValue",
+        "name": "Describes Conversion Applications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 139,
+      "item": {
+        "@id": "urn:uor:predicate:defines-signal-compression",
+        "@type": "PropertyValue",
+        "name": "Defines Signal Compression"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 140,
+      "item": {
+        "@id": "urn:uor:predicate:describes-compression-mechanics",
+        "@type": "PropertyValue",
+        "name": "Describes Compression Mechanics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 141,
+      "item": {
+        "@id": "urn:uor:predicate:describes-compression-metrics",
+        "@type": "PropertyValue",
+        "name": "Describes Compression Metrics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 142,
+      "item": {
+        "@id": "urn:uor:predicate:describes-compression-applications",
+        "@type": "PropertyValue",
+        "name": "Describes Compression Applications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 143,
+      "item": {
+        "@id": "urn:uor:predicate:defines-information-preservation",
+        "@type": "PropertyValue",
+        "name": "Defines Information Preservation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 144,
+      "item": {
+        "@id": "urn:uor:predicate:describes-information-invariants",
+        "@type": "PropertyValue",
+        "name": "Describes Information Invariants"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 145,
+      "item": {
+        "@id": "urn:uor:predicate:describes-preservation-mechanisms",
+        "@type": "PropertyValue",
+        "name": "Describes Preservation Mechanisms"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 146,
+      "item": {
+        "@id": "urn:uor:predicate:describes-preservation-applications",
+        "@type": "PropertyValue",
+        "name": "Describes Preservation Applications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 147,
+      "item": {
+        "@id": "urn:uor:predicate:defines-pivot-fields",
+        "@type": "PropertyValue",
+        "name": "Defines Pivot Fields"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 148,
+      "item": {
+        "@id": "urn:uor:predicate:describes-pivot-field-mechanics",
+        "@type": "PropertyValue",
+        "name": "Describes Pivot Field Mechanics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 149,
+      "item": {
+        "@id": "urn:uor:predicate:describes-pivot-field-properties",
+        "@type": "PropertyValue",
+        "name": "Describes Pivot Field Properties"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 150,
+      "item": {
+        "@id": "urn:uor:predicate:describes-pivot-field-applications",
+        "@type": "PropertyValue",
+        "name": "Describes Pivot Field Applications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 151,
+      "item": {
+        "@id": "urn:uor:predicate:defines-digital-twin-framework",
+        "@type": "PropertyValue",
+        "name": "Defines Digital Twin Framework"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 152,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes-digital-twin-mathematics",
+        "@type": "PropertyValue",
+        "name": "Formalizes Digital Twin Mathematics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 153,
+      "item": {
+        "@id": "urn:uor:predicate:describes-digital-twin-architecture",
+        "@type": "PropertyValue",
+        "name": "Describes Digital Twin Architecture"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 154,
+      "item": {
+        "@id": "urn:uor:predicate:describes-digital-twin-applications",
+        "@type": "PropertyValue",
+        "name": "Describes Digital Twin Applications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 155,
+      "item": {
+        "@id": "urn:uor:predicate:defines-tripartite-kernel",
+        "@type": "PropertyValue",
+        "name": "Defines Tripartite Kernel"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 156,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes-tripartite-mathematics",
+        "@type": "PropertyValue",
+        "name": "Formalizes Tripartite Mathematics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 157,
+      "item": {
+        "@id": "urn:uor:predicate:describes-tripartite-operations",
+        "@type": "PropertyValue",
+        "name": "Describes Tripartite Operations"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 158,
+      "item": {
+        "@id": "urn:uor:predicate:describes-tripartite-applications",
+        "@type": "PropertyValue",
+        "name": "Describes Tripartite Applications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 159,
+      "item": {
+        "@id": "urn:uor:predicate:defines-universal-identity",
+        "@type": "PropertyValue",
+        "name": "Defines Universal Identity"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 160,
+      "item": {
+        "@id": "urn:uor:predicate:describes-identity-protocols",
+        "@type": "PropertyValue",
+        "name": "Describes Identity Protocols"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 161,
+      "item": {
+        "@id": "urn:uor:predicate:describes-identity-operations",
+        "@type": "PropertyValue",
+        "name": "Describes Identity Operations"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 162,
+      "item": {
+        "@id": "urn:uor:predicate:describes-identity-applications",
+        "@type": "PropertyValue",
+        "name": "Describes Identity Applications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 163,
+      "item": {
+        "@id": "urn:uor:predicate:describes-spacetime-geometry",
+        "@type": "PropertyValue",
+        "name": "describes spacetime geometry"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 164,
+      "item": {
+        "@id": "urn:uor:predicate:explains-mass-energy",
+        "@type": "PropertyValue",
+        "name": "explains mass-energy relations"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 165,
+      "item": {
+        "@id": "urn:uor:predicate:interprets-quantum-mechanics",
+        "@type": "PropertyValue",
+        "name": "interprets quantum mechanics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 166,
+      "item": {
+        "@id": "urn:uor:predicate:unifies-fundamental-forces",
+        "@type": "PropertyValue",
+        "name": "unifies fundamental forces"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 167,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-informational-ontology",
+        "@type": "PropertyValue",
+        "name": "establishes informational ontology"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 168,
+      "item": {
+        "@id": "urn:uor:predicate:formulates-consciousness-axiom",
+        "@type": "PropertyValue",
+        "name": "formulates consciousness axiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 169,
+      "item": {
+        "@id": "urn:uor:predicate:develops-mathematical-epistemology",
+        "@type": "PropertyValue",
+        "name": "develops mathematical epistemology"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 170,
+      "item": {
+        "@id": "urn:uor:predicate:proposes-pan-coherentism",
+        "@type": "PropertyValue",
+        "name": "proposes pan-coherentism"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 171,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes-ufd-axiom",
+        "@type": "PropertyValue",
+        "name": "formalizes UFD axiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 172,
+      "item": {
+        "@id": "urn:uor:predicate:provides-category-model",
+        "@type": "PropertyValue",
+        "name": "provides category-theoretic model"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 173,
+      "item": {
+        "@id": "urn:uor:predicate:develops-sheaf-perspective",
+        "@type": "PropertyValue",
+        "name": "develops sheaf perspective"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 174,
+      "item": {
+        "@id": "urn:uor:predicate:extends-to-mathematical-domains",
+        "@type": "PropertyValue",
+        "name": "extends to mathematical domains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 175,
+      "item": {
+        "@id": "urn:uor:predicate:presents-topological-extensions",
+        "@type": "PropertyValue",
+        "name": "presents topological extensions"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 176,
+      "item": {
+        "@id": "urn:uor:predicate:describes-algebraic-generalizations",
+        "@type": "PropertyValue",
+        "name": "describes algebraic generalizations"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 177,
+      "item": {
+        "@id": "urn:uor:predicate:develops-categorical-framework",
+        "@type": "PropertyValue",
+        "name": "develops category-theoretic framework"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 178,
+      "item": {
+        "@id": "urn:uor:predicate:extends-to-geometric-structures",
+        "@type": "PropertyValue",
+        "name": "extends to geometric structures"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 179,
+      "item": {
+        "@id": "urn:uor:predicate:explains-factorization-challenges",
+        "@type": "PropertyValue",
+        "name": "explains unique factorization challenges"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 180,
+      "item": {
+        "@id": "urn:uor:predicate:describes-ideal-approaches",
+        "@type": "PropertyValue",
+        "name": "describes ideal-theoretic approaches"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 181,
+      "item": {
+        "@id": "urn:uor:predicate:presents-completion-techniques",
+        "@type": "PropertyValue",
+        "name": "presents completion techniques"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 182,
+      "item": {
+        "@id": "urn:uor:predicate:outlines-geometric-methods",
+        "@type": "PropertyValue",
+        "name": "outlines geometric and algorithmic methods"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 183,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-coherence-field",
+        "@type": "PropertyValue",
+        "name": "establishes unified coherence field"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 184,
+      "item": {
+        "@id": "urn:uor:predicate:presents-neural-model",
+        "@type": "PropertyValue",
+        "name": "presents neural coherence model"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 185,
+      "item": {
+        "@id": "urn:uor:predicate:formulates-mathematical-consciousness",
+        "@type": "PropertyValue",
+        "name": "formulates mathematical consciousness"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 186,
+      "item": {
+        "@id": "urn:uor:predicate:demonstrates-coherence-minimization",
+        "@type": "PropertyValue",
+        "name": "demonstrates coherence minimization"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 187,
+      "item": {
+        "@id": "urn:uor:predicate:develops-learning-architecture",
+        "@type": "PropertyValue",
+        "name": "develops learning systems architecture"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 188,
+      "item": {
+        "@id": "urn:uor:predicate:formulates-quantum-systems",
+        "@type": "PropertyValue",
+        "name": "formulates quantum coherence systems"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 189,
+      "item": {
+        "@id": "urn:uor:predicate:models-biological-systems",
+        "@type": "PropertyValue",
+        "name": "models biological and medical systems"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 190,
+      "item": {
+        "@id": "urn:uor:predicate:analyzes-social-systems",
+        "@type": "PropertyValue",
+        "name": "analyzes complex social and economic systems"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 191,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-information-ontology",
+        "@type": "PropertyValue",
+        "name": "establishes information ontology"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 192,
+      "item": {
+        "@id": "urn:uor:predicate:reframes-consciousness-theory",
+        "@type": "PropertyValue",
+        "name": "reframes consciousness theory"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 193,
+      "item": {
+        "@id": "urn:uor:predicate:unifies-mathematics-reality",
+        "@type": "PropertyValue",
+        "name": "unifies mathematics and reality"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 194,
+      "item": {
+        "@id": "urn:uor:predicate:grounds-value-coherence",
+        "@type": "PropertyValue",
+        "name": "grounds value in coherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 195,
+      "item": {
+        "@id": "urn:uor:predicate:formalizes-arithmetization",
+        "@type": "PropertyValue",
+        "name": "formalizes arithmetization via prime encoding"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 196,
+      "item": {
+        "@id": "urn:uor:predicate:demonstrates-self-reference",
+        "@type": "PropertyValue",
+        "name": "demonstrates self-reference via diagonal lemma"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 197,
+      "item": {
+        "@id": "urn:uor:predicate:establishes-incompleteness",
+        "@type": "PropertyValue",
+        "name": "establishes first incompleteness theorem"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 198,
+      "item": {
+        "@id": "urn:uor:predicate:develops-uor-interpretation",
+        "@type": "PropertyValue",
+        "name": "develops UOR interpretation of incompleteness"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 199,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-introduces-meaning-representation",
+        "@type": "PropertyValue",
+        "name": "introduces"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 200,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-explains-semantic-prime-decomposition",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 201,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-defines-meaning-coherence-field",
+        "@type": "PropertyValue",
+        "name": "defines"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 202,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-describes-observer-dependent-meaning",
+        "@type": "PropertyValue",
+        "name": "describes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 203,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-topic-contains-meaning-overview",
+        "@type": "PropertyValue",
+        "name": "contains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 204,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-topic-contains-semantic-emergence",
+        "@type": "PropertyValue",
+        "name": "contains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 205,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-topic-contains-consciousness-bridge",
+        "@type": "PropertyValue",
+        "name": "contains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 206,
+      "item": {
+        "@id": "urn:uor:predicate:overview-references-practical-guide",
+        "@type": "PropertyValue",
+        "name": "references"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 207,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-explains-semantic-emergence",
+        "@type": "PropertyValue",
+        "name": "explains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 208,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-references-consciousness-bridge",
+        "@type": "PropertyValue",
+        "name": "references"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 209,
+      "item": {
+        "@id": "urn:uor:predicate:learning-topic-contains-implementation-guide",
+        "@type": "PropertyValue",
+        "name": "contains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 210,
+      "item": {
+        "@id": "urn:uor:predicate:learning-topic-contains-translation-guide",
+        "@type": "PropertyValue",
+        "name": "contains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 211,
+      "item": {
+        "@id": "urn:uor:predicate:learning-topic-contains-pathway-guide",
+        "@type": "PropertyValue",
+        "name": "contains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 212,
+      "item": {
+        "@id": "urn:uor:predicate:advanced-topic-contains-resource",
+        "@type": "PropertyValue",
+        "name": "contains"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 213,
+      "item": {
+        "@id": "urn:uor:predicate:advanced-resource-introduces-concepts",
+        "@type": "PropertyValue",
+        "name": "introduces"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 214,
+      "item": {
+        "@id": "urn:uor:predicate:connects-spatiotemporal-concepts",
+        "@type": "PropertyValue",
+        "name": "connects"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 215,
+      "item": {
+        "@id": "urn:uor:predicate:connects-quantum-concepts",
+        "@type": "PropertyValue",
+        "name": "connects"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 216,
+      "item": {
+        "@id": "urn:uor:predicate:connects-computational-concepts",
+        "@type": "PropertyValue",
+        "name": "connects"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 217,
+      "item": {
+        "@id": "urn:uor:predicate:connects-to-extensions-topic",
+        "@type": "PropertyValue",
+        "name": "extends"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:universal-number",
+  "name": "Universal Number",
+  "description": "An extension of traditional number systems that unifies real, complex, and p-adic numbers within a computable framework consistent with UOR axioms.",
+  "termCode": "UOR-C-034",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\mathbb{U} = \\{\\eta \\mid \\eta \\text{ admits a unique prime-coordinate representation } \\phi(\\eta) = (e_1, e_2, e_3, \\ldots)",
+    "\\text{that is computably approximable in all relevant metrics}\\}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:prime-coordinate-functor",
+    "urn:uor:concept:universal-prime-representation"
+  ],
+  "properties": {
+    "components": "Complex prime exponents, multi-metric completeness, computable representation"
+  },
+  "examples": [
+    "Natural numbers embedding via their prime factorizations",
+    "Rational numbers with negative prime exponents"
+  ],
+  "axioms": [
+    "Universal Prime Coordinate Representation: Every universal number η ∈ 𝕌 admits a unique representation as an infinite tuple of prime exponents",
+    "Coordinate Homomorphism Extension: The prime-coordinate homomorphism extends naturally to universal numbers",
+    "Completeness Under Multiple Topologies: The field 𝕌 is simultaneously complete under both Archimedean and non-Archimedean metrics",
+    "Computational Realizability: Every universal number admits an effective algorithm for approximation to arbitrary precision",
+    "Canonical Embedding Principle: For each traditional number system, there exists a canonical embedding into 𝕌"
+  ],
+  "sourceText": "Universal numbers represent a fundamental extension beyond traditional number systems, unifying the properties of real, complex, and p-adic numbers within a computable framework while maintaining complete consistency with the UOR prime-coordinate axioms.\n\nWith these axioms established, we formally define the field of universal numbers:\n\n𝕌 = {η | η admits a unique prime-coordinate representation φ(η) = (e₁, e₂, e₃, ...) that is computably approximable in all relevant metrics}\n\nThis definition extends traditional numbers by allowing:\n\n1. Complex prime exponents: Unlike integers where prime exponents must be natural numbers, universal numbers permit complex-valued exponents that maintain algebraic consistency\n2. Multi-metric completeness: Unlike traditional number systems that privilege either the Archimedean or non-Archimedean metric, universal numbers maintain completeness under both\n3. Computable representation: All universal numbers have explicit algorithmic representations"
+}

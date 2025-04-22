@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:axiom-unique-factorization",
+  "name": "Unique Factorization Axiom",
+  "description": "The second core UOR axiom stating that every non-unit object admits a finite product decomposition into primes, and this decomposition is unique up to reordering of factors.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Unique Factorization Axiom",
+    "description": "The formal axiom establishing that all non-unit elements in a domain can be uniquely decomposed into prime factors, extending the Fundamental Theorem of Arithmetic to arbitrary domains."
+  },
+  "text": "Every non‑unit object admits a finite product decomposition into primes, and this decomposition is unique up to reordering of factors.\n\nThe Unique Factorization axiom ensures that any object in the universe can be decomposed into a unique combination of intrinsic primes. This profound property establishes that every object has a singular, canonical representation in terms of its most fundamental components.\n\nThis axiom is the universal extension of the Fundamental Theorem of Arithmetic, which states that every positive integer greater than 1 can be expressed as a unique product of prime numbers (up to their order). The UOR framework extends this principle to arbitrary domains, creating a universal language for describing structure.\n\nKey insights include: Structural Fingerprint, where unique factorization provides each object with a distinctive \"fingerprint\" - its prime signature - that uniquely identifies it; Canonical Representation, where UFD guarantees the existence of a single, objective way to decompose any object, eliminating ambiguity in structural analysis; and Isomorphism Foundation, where this axiom enables the faithful mapping between objects and their coordinate representations, preserving all structural information.\n\nIn a unique factorization domain (UFD) D, every non-zero non-unit element x ∈ D can be expressed as: x = p₁ × p₂ × ... × pₙ where each pᵢ is a prime in D. Furthermore, this representation is unique up to reordering and multiplication by units.\n\nThis axiom builds directly on the Intrinsic Primes axiom and serves as the foundation for the Prime-Coordinate Homomorphism. Unique factorization is what allows the homomorphism to be well-defined and injective, enabling the consistent mapping of objects to their prime coordinate vectors.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Eight Core UOR Axioms",
+    "@id": "urn:uor:topic:core-axioms"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["unique factorization", "prime factorization", "structural fingerprint", "canonical representation", "isomorphism foundation", "UFD"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:axiom-unique-factorization-statement",
+      "urn:uor:concept:axiom-unique-factorization-insights",
+      "urn:uor:concept:axiom-unique-factorization-formalization",
+      "urn:uor:concept:axiom-unique-factorization-connections"
+    ]
+  }
+}

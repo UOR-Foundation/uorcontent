@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:explains:048:187",
+  "name": "explains",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Rational Extension",
+    "@id": "urn:uor:concept:rational-extension"
+  },
+  "value": "explains how the UOR framework extends to rational numbers",
+  "description": "The Beyond Integers resource explains that in the domain of rational numbers (ℚ), negative exponents encode denominators, with examples like φ(1/3) = -φ(3) and φ(3/4) = [(2,-2),(3,1)], demonstrating how fractions can be represented in prime coordinate form",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Beyond Integers",
+      "@id": "urn:uor:resource:beyond-integers"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

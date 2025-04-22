@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:spectral-interpretation",
+  "name": "Spectral Interpretation",
+  "description": "A perspective that reframes prime factorization as a frequency domain analysis, viewing mathematical objects through their prime frequency components.",
+  "termCode": "UOR-C-008",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "φ: (ℕ₊, ×) → (⨁_p ℕ, +)"
+  ],
+  "relatedConcepts": [
+    "urn:uor:concept:prime-decomposition",
+    "urn:uor:concept:spectral-transform",
+    "urn:uor:concept:spectral-energy"
+  ],
+  "sourceText": "The spectral interpretation of UOR reframes prime factorization as a frequency domain analysis, providing a powerful analogy to signal processing and harmonic analysis. This perspective reveals deep structural patterns by viewing objects through the lens of their prime frequency components. The spectral interpretation begins with a formal analogy between prime decomposition and frequency analysis, including an isomorphism between multiplicative and additive structures, a spectral transform that converts between them, and a spectral basis where each prime represents a fundamental frequency mode.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

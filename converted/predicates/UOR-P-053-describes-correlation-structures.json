@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-correlation-structures",
+  "name": "Describes Correlation Structures",
+  "description": "Describes the mathematical structures in prime coordinate space that support and enable non-local temporal correlations.",
+  "propertyID": "UOR-P-053",
+  "value": "descriptive relationship",
+  "subject": "urn:uor:resource:non-local-temporal-correlations",
+  "object": "urn:uor:concept:temporal-correlation-structures",
+  "relationshipStrength": "expository",
+  "contextualDescription": "The Non-Local Temporal Correlations resource describes the mathematical structures that enable non-local temporal effects, including prime coordinate temporal bundling that represents temporally separated events as unified patterns, temporal coherence manifolds forming higher-dimensional structures where events across time create coherent patterns, temporal loop structures forming closed loops through time, and mechanisms like temporal prime resonance, constraint satisfaction, and higher-dimensional projection."
+}

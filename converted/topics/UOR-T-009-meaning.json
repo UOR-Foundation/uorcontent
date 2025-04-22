@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:topic:meaning",
+  "name": "Meaning",
+  "description": "Exploration of meaning through the lens of the UOR Framework, examining how meaning emerges from structural relationships within prime decomposition representations.",
+  "about": ["meaning", "semantics", "coherence", "observer reference frames", "representation"],
+  "keywords": ["UOR", "meaning", "prime decomposition", "observer invariance", "coherence", "semantics", "representation theory"],
+  "hasPart": [
+    "urn:uor:resource:meaning-overview",
+    "urn:uor:concept:meaning-representation",
+    "urn:uor:concept:semantic-prime-decomposition",
+    "urn:uor:concept:meaning-coherence-field",
+    "urn:uor:concept:observer-dependent-meaning"
+  ],
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "UOR Framework"
+  },
+  "potentialAction": {
+    "@type": "Action",
+    "name": "view",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "/topics/meaning",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    }
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

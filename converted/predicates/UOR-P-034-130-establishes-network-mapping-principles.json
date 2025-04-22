@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes:034:130",
+  "name": "establishes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Network Mapping Principles",
+    "@id": "urn:uor:concept:network-mapping-principles",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "establishes the core principles that govern the translation from UOR theory to networking practice",
+  "description": "The UOR Network Mapping resource establishes the fundamental principles of preservation of prime structure, coherence maintenance, and structural homomorphism that enable the rigorous mapping between theoretical concepts and practical implementations",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "UOR Network Mapping",
+        "@id": "urn:uor:resource:uor-network-mapping"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:network-mapping-principles"
+  ],
+  "valueName": "establishes the core principles that govern the translation from UOR theory to networking practice"
+}

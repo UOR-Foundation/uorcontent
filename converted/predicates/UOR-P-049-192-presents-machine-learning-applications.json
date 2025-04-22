@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:presents:049:192",
+  "name": "presents",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Machine Learning Applications",
+    "@id": "urn:uor:concept:machine-learning-applications"
+  },
+  "value": "presents applications of UOR principles to machine learning architectures",
+  "description": "The Recent Extensions resource presents how deep neural networks trained with coherence regularization show improved generalization, and how attention mechanisms based on prime-coordinate similarity metrics outperform standard dot-product attention on complex reasoning tasks",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Recent Extensions",
+      "@id": "urn:uor:resource:recent-extensions"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

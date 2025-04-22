@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:topic:temporal-coherence",
+  "name": "Temporal Coherence",
+  "description": "The study of how time and temporal evolution integrate within the Universal Object Reference framework, examining time as an operator on prime coordinate space.",
+  "keywords": ["temporal coherence", "time operator", "temporal evolution", "coherence-preserving dynamics", "temporal prime decomposition"],
+  "text": "Temporal Coherence examines how time and temporal evolution integrate within the Universal Object Reference (UOR) framework. Instead of treating time as an external parameter, this approach recognizes time as an intrinsic element of the prime coordinate representation itself, enabling a unified mathematical treatment of objects and their temporal evolution. The Time Operator Formalism establishes time as an operator acting on the prime coordinate space, allowing for the rigorous mathematical treatment of temporal phenomena while preserving essential coherence structures. This topic explores temporal prime decomposition, coherence-preserving dynamics, temporal observer frames, non-local temporal correlations, and emergent temporal order.",
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "learningResourceType": "Topic",
+  "hasPart": [
+    {
+      "@type": "CreativeWork",
+      "name": "Time Operator Formalism",
+      "@id": "urn:uor:resource:time-operator-formalism"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Temporal Prime Decomposition",
+      "@id": "urn:uor:resource:temporal-prime-decomposition"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Coherence-Preserving Dynamics",
+      "@id": "urn:uor:resource:coherence-preserving-dynamics"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Temporal Observer Frames",
+      "@id": "urn:uor:resource:temporal-observer-frames"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Non-Local Temporal Correlations",
+      "@id": "urn:uor:resource:non-local-temporal-correlations"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Emergent Temporal Order",
+      "@id": "urn:uor:resource:emergent-temporal-order"
+    }
+  ],
+  "potentialAction": {
+    "@type": "Action",
+    "name": "explore",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "/temporal-coherence/{subtopic}"
+    }
+  }
+}

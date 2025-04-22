@@ -1,0 +1,43 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:coordinate-geometry",
+  "name": "Coordinate Geometry",
+  "description": "The geometric interpretation of prime coordinates where each prime corresponds to an orthogonal dimension, objects become points in a discrete lattice, and algebraic relationships manifest as geometric patterns.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-144",
+  "text": "Viewing prime coordinates through a geometric lens reveals deep structural patterns that might otherwise remain hidden in algebraic notation. This geometric interpretation transforms abstract relationships into spatial ones, making them more intuitive and visually accessible.\n\nIn this geometric framework, each prime corresponds to an orthogonal dimension in a coordinate space. This means that primes define the basis vectors of this space, with each prime representing an independent direction. The orthogonality of these dimensions reflects the fundamental independence of prime factors—no prime can be expressed as a product of other primes. This orthogonal structure provides a clean separation of the different prime components of an object.\n\nObjects, represented by their prime factorizations, become points in a discrete lattice within this space. The coordinates of each point are the exponents of the corresponding primes in the object's factorization. For example, if x = 2³ · 3² · 5, then in the prime coordinate space with dimensions corresponding to 2, 3, and 5, the object x would be represented by the point (3, 2, 1). This lattice structure captures the discreteness inherent in prime factorization while embedding it in a continuous geometric space.\n\nDivisibility relations, which are fundamental to understanding structural relationships between objects, become geometric containment in this space. If x divides y, then every coordinate of φ(x) is less than or equal to the corresponding coordinate of φ(y). This transforms the abstract notion of divisibility into a concrete spatial relationship, where one point lies in the positive orthant relative to another point. This geometric interpretation makes complex divisibility relationships more immediately apparent.\n\nPrime powers trace rays along coordinate axes, creating a fundamental structural pattern in the space. As the exponent of a single prime increases, the corresponding objects lie along a straight line in the coordinate space. These rays represent the purest form of prime structure—objects that are powers of a single prime. More complex objects combine these fundamental structures through their position in the lattice.",
+  "mathExpression": [
+    "x = 2^3 \\cdot 3^2 \\cdot 5^1 \\implies \\phi(x) = (3, 2, 1)",
+    "x | y \\iff \\phi(x) \\leq \\phi(y) \\text{ (coordinate-wise)}",
+    "\\phi(p^k) = (0, \\ldots, k, \\ldots, 0) \\text{ (k in p's position)}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Coordinate Properties",
+      "@id": "urn:uor:concept:coordinate-properties"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Coordinate Significance",
+      "@id": "urn:uor:concept:coordinate-significance"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Space Geometry",
+      "@id": "urn:uor:concept:prime-space-geometry"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

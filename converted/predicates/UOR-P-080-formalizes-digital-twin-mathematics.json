@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes-digital-twin-mathematics",
+  "name": "Formalizes Digital Twin Mathematics",
+  "description": "Establishes the mathematical formalization and equations that govern the Digital Twin Framework.",
+  "value": "formalizes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Digital Twin Mathematics",
+    "description": "The mathematical formalization of the Digital Twin Framework, including homeomorphisms, coherence metrics, and dynamic systems equations that govern the relationship between physical and digital realities."
+  },
+  "propertyID": "UOR-P-080",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Digital Twin Framework",
+    "@id": "urn:uor:resource:digital-twin-framework"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Digital Twin Mathematics",
+    "@id": "urn:uor:concept:digital-twin-mathematics"
+  },
+  "relationshipStrength": 0.9,
+  "properties": {
+    "relationshipType": "formalization",
+    "context": "internet substrate"
+  }
+}

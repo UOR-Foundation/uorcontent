@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:explains:040:155",
+  "name": "explains",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Intrinsic Primes Insights",
+    "@id": "urn:uor:concept:axiom-intrinsic-primes-insights",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "explains the key insights derived from the Intrinsic Primes Axiom",
+  "description": "The Intrinsic Primes Axiom resource explains the insights of domain universality, foundational necessity, and information basis that emerge from the existence of irreducible elements across domains",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Intrinsic Primes Axiom",
+        "@id": "urn:uor:resource:axiom-intrinsic-primes"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:axiom-intrinsic-primes-insights"
+  ],
+  "valueName": "explains the key insights derived from the Intrinsic Primes Axiom"
+}

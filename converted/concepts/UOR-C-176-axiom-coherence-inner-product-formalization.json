@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-coherence-inner-product-formalization",
+  "name": "Axiom Coherence Inner Product Formalization",
+  "description": "The mathematical formalization of the Coherence Inner Product Axiom, defining the inner product on the prime coordinate space and its properties as a Euclidean inner product.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-176",
+  "text": "The Coherence Inner Product Axiom can be formalized with precise mathematical notation to capture its essential definition and properties.\n\nOn the prime coordinate space ℤ^(P), which consists of integer vectors indexed by the set of primes P, we define the inner product as a function ⟨·,·⟩: ℤ^(P) × ℤ^(P) → ℝ that maps each pair of coordinate vectors to a real number:\n\n⟨v,w⟩ = ∑_p v(p)·w(p)\n\nwhere v(p) and w(p) denote the components of vectors v and w corresponding to prime p. This is the standard dot product applied to the prime coordinate vectors.\n\nFor objects X and Y with prime factorizations yielding prime coordinates φ(X) and φ(Y), their inner product is expressed as:\n\n⟨φ(X),φ(Y)⟩ = ∑_p φ(X)(p)·φ(Y)(p)\n\nThis inner product satisfies all the axioms required of a Euclidean inner product:\n\n1. Symmetry: ⟨v,w⟩ = ⟨w,v⟩ for all v, w ∈ ℤ^(P)\n\n2. Linearity in the first argument: ⟨αv + βu, w⟩ = α⟨v,w⟩ + β⟨u,w⟩ for all scalars α, β and vectors u, v, w ∈ ℤ^(P)\n\n3. Positive-definiteness: ⟨v,v⟩ ≥ 0 for all v ∈ ℤ^(P), with ⟨v,v⟩ = 0 if and only if v = 0\n\nFurthermore, the prime basis elements form an orthonormal system, meaning:\n\n⟨eᵢ,eⱼ⟩ = δᵢⱼ\n\nwhere eᵢ and eⱼ are basis vectors corresponding to primes pᵢ and pⱼ, and δᵢⱼ is the Kronecker delta (equal to 1 if i = j and 0 otherwise). This formalizes the orthogonality of primes as structural dimensions.\n\nThe inner product induces the coherence norm through the relationship:\n\n‖v‖ = √⟨v,v⟩\n\nIt also enables the definition of other geometric concepts:\n\n- The angle θ between objects X and Y can be computed as:\n  cos(θ) = ⟨φ(X),φ(Y)⟩ / (‖φ(X)‖·‖φ(Y)‖)\n\n- The projection of object X onto object Y is given by:\n  proj_Y(X) = ⟨φ(X),φ(Y)⟩/‖φ(Y)‖² · φ(Y)\n\nThese formal definitions create a complete Euclidean geometry on the prime coordinate space, enabling rich geometric analysis of structural relationships between objects.",
+  "mathExpression": [
+    "\\langle v,w \\rangle = \\sum_{p \\in P} v(p) \\cdot w(p)",
+    "\\langle \\phi(X), \\phi(Y) \\rangle = \\sum_{p \\in P} \\phi(X)(p) \\cdot \\phi(Y)(p)",
+    "\\langle v,w \\rangle = \\langle w,v \\rangle \\quad \\text{(Symmetry)}",
+    "\\langle \\alpha v + \\beta u, w \\rangle = \\alpha \\langle v,w \\rangle + \\beta \\langle u,w \\rangle \\quad \\text{(Linearity)}",
+    "\\langle v,v \\rangle \\geq 0, \\text{ with } \\langle v,v \\rangle = 0 \\iff v = 0 \\quad \\text{(Positive-definiteness)}",
+    "\\langle e_i, e_j \\rangle = \\delta_{ij} \\quad \\text{(Orthonormality of prime basis)}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Dot Product",
+      "@id": "urn:uor:concept:dot-product"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Hilbert Space",
+      "@id": "urn:uor:concept:hilbert-space"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

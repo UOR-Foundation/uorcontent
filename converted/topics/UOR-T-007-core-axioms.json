@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:topic:core-axioms",
+  "name": "Eight Core UOR Axioms",
+  "description": "The eight core axioms that codify the essential properties ensuring that any Unique Factorization Domain supports a fully coherent, observer-aware, prime-coordinate representation.",
+  "keywords": ["core axioms", "intrinsic primes", "unique factorization", "prime-coordinate homomorphism", "canonical representation", "coherence norm", "coherence inner product", "trilateral coherence", "universal mapping property"],
+  "text": "The Eight Core UOR Axioms codify the essential properties ensuring that any Unique Factorization Domain (UFD) supports a fully coherent, observer‐aware, prime‐coordinate representation. These axioms act as the logical scaffolding underpinning the entire Prime Framework.\n\nThe eight core axioms are: Intrinsic Primes, where a set of atomic elements exists such that no element factors further under composition; Unique Factorization, where every non-unit object admits a finite prime decomposition that is unique up to reordering; Prime-Coordinate Homomorphism, where an injective map φ transforms objects into vectors of prime exponents, converting multiplication to addition; Canonical Representation, where the prime coordinates φ(X) provide a unique, base-independent, frame-invariant encoding that minimizes complexity; Coherence Norm, where a metric on coordinate space proves that prime factorization achieves minimal representational complexity; Coherence Inner Product, where the prime coordinate space forms a Euclidean geometry with orthonormal prime axes; Trilateral Coherence, where every valid description integrates structure (primes), dynamics (transformations), and observer perspective; and Universal Mapping Property, where the prime coordinate map is the canonical bridge between multiplicative structures and additive ones.\n\nThese axioms establish a universal coordinate system for arbitrary objects based on their intrinsic structure. By ensuring that objects can be uniquely decomposed and encoded, the framework enables a coherent reference system that remains invariant across observer frames while capturing all essential structural information.\n\nThe power of this axiomatic foundation lies in its ability to unify diverse mathematical domains under a single coherent framework, providing a common language for representing and analyzing structure across disciplines.",
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "learningResourceType": "Topic",
+  "hasPart": [
+    {
+      "@type": "CreativeWork",
+      "name": "Intrinsic Primes Axiom",
+      "@id": "urn:uor:resource:axiom-intrinsic-primes"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Unique Factorization Axiom",
+      "@id": "urn:uor:resource:axiom-unique-factorization"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Prime-Coordinate Homomorphism Axiom",
+      "@id": "urn:uor:resource:axiom-prime-coordinate-homomorphism"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Canonical Representation Axiom",
+      "@id": "urn:uor:resource:axiom-canonical-representation"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Coherence Norm Axiom",
+      "@id": "urn:uor:resource:axiom-coherence-norm"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Coherence Inner Product Axiom",
+      "@id": "urn:uor:resource:axiom-coherence-inner-product"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Trilateral Coherence Axiom",
+      "@id": "urn:uor:resource:axiom-trilateral-coherence"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Universal Mapping Property Axiom",
+      "@id": "urn:uor:resource:axiom-universal-mapping-property"
+    }
+  ],
+  "potentialAction": {
+    "@type": "Action",
+    "name": "explore",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "/core-axioms/{subtopic}"
+    }
+  }
+}

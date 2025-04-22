@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:meaning-overview-references-consciousness-bridge",
+  "name": "references",
+  "propertyID": "uor:predicate",
+  "value": "consciousness-information bridge",
+  "subjectOf": {
+    "@id": "urn:uor:resource:meaning-overview"
+  },
+  "targetCollection": ["urn:uor:concept:consciousness-information-bridge"],
+  "valueName": "The meaning overview references the consciousness-information bridge",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "references"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 0.9
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

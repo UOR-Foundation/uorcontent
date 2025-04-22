@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:geometry-prime-spaces",
+  "name": "Geometry of Prime Spaces",
+  "description": "An explanation of how the prime-coordinate representation induces a rich geometric structure that reveals deep patterns in object composition and relationships.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Geometry of Prime Spaces",
+    "description": "The geometric structures and properties that emerge from prime-coordinate representations, providing tools for analyzing patterns and relationships."
+  },
+  "text": "The prime-coordinate representation induces a rich geometric structure that reveals deep patterns in object composition and relationships.\n\nThe prime-coordinate space inherits a natural Euclidean structure from the coherence norm and inner product:\n\n- The coherence norm ||φ(x)|| measures the intrinsic complexity of an object\n- The inner product ⟨φ(x),φ(y)⟩ quantifies the degree of prime-factor similarity\n- Angles between coordinate vectors represent compositional relationships\n- Orthogonal objects have no common prime factors\n\nObjects with integer exponents form a discrete lattice in prime-coordinate space:\n\n- Each lattice point represents a unique factorization\n- Lines through the origin correspond to powers of the same object\n- Convex regions define families of objects with bounded prime exponents\n- Walking along lattice paths corresponds to sequential multiplication by primes\n\nThe prime-coordinate representation can be viewed as a spectral decomposition:\n\n- Each prime contributes a 'frequency' component to the object\n- The exponent vector forms the object's spectrum across prime frequencies\n- Composition combines spectra through vector addition\n- Decomposition separates an object into its spectral components\n\nThe coherence metric defines notions of distance and proximity between objects:\n\n- d(x,y) = ||φ(x) - φ(y)|| measures compositional distance\n- Neighborhoods contain objects with similar prime factorization\n- Geodesics represent minimal paths between objects in prime-coordinate space\n- Curvature appears when considering non-Euclidean coherence measures\n\nThese geometric structures provide powerful tools for analyzing patterns, relationships, and transformations across mathematical domains.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Universal Object Reference",
+    "@id": "urn:uor:topic:universal-object-reference"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["geometry of prime spaces", "euclidean structure", "lattice geometry", "spectral interpretation", "metric geometry"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:prime-space-geometry",
+      "urn:uor:concept:euclidean-structure",
+      "urn:uor:concept:lattice-geometry",
+      "urn:uor:concept:coherence-metric"
+    ]
+  }
+}

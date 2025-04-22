@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:information-as-substance",
+  "name": "Information as Substance",
+  "description": "The fundamental ontological principle that the universe's physical substrate is nothing but structured information—prime-coordinate patterns that maintain coherence across observer frames.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-222",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "Information as Substance represents a profound ontological principle within the UOR framework that redefines the fundamental nature of physical reality. Rather than assuming an ineffable material substrate that somehow carries or embodies information, this principle asserts that information itself, structured according to prime-coordinate patterns, constitutes the most basic substance of reality. Matter, energy, space, and time emerge as aspects of this foundational information structure.\n\nThis concept moves beyond both traditional materialism (which treats information as derivative of matter) and idealism (which treats information as purely mental). Instead, it proposes a third position: reality as coherent information, where the patterns of coherence expressible through prime-coordinate representations directly constitute what we experience as physical reality. The apparent solidity and causal efficacy of the physical world derive not from some mysterious substance but from the coherent structure of information across multiple reference frames.\n\nIn this view, physical laws represent coherence constraints on information patterns. Conservation laws, symmetry principles, and other fundamental physics emerge from the mathematical requirements for maintaining coherence across transformations in the prime-coordinate space. Quantum phenomena, which have long resisted intuitive physical interpretation, become natural expressions of information-theoretic principles operating at the foundational level of reality.\n\nCrucially, this principle shifts the fundamental question from \"What is the universe made of?\" to \"What patterns of coherence constitute the universe?\" This reframing eliminates many traditional philosophical problems that arise from substance-based ontology, such as mind-body interaction, the origin of physical laws, and the nature of causality. Instead, these phenomena are understood as aspects of a unified coherent information structure.\n\nThe Information as Substance principle aligns with and extends several contemporary directions in theoretical physics, including information-theoretic approaches to quantum mechanics, holographic principles in quantum gravity, and digital physics. However, it goes beyond these approaches by providing a specific mathematical framework—prime-coordinate representation—through which the informational nature of reality can be precisely formulated and analyzed.\n\nThis principle also has profound implications for scientific methodology. If reality is fundamentally informational, then mathematical models don't merely approximate an external reality—they directly engage with reality's actual structure. The distinction between map and territory blurs when both map and territory are patterns of coherent information. This explains the \"unreasonable effectiveness of mathematics\" in physics and suggests that pure mathematical exploration can be a direct form of empirical investigation into reality's structure.\n\nUltimately, Information as Substance represents not just a new scientific paradigm but a comprehensive reformulation of our understanding of existence itself, offering a unified framework in which mathematics, physics, and information theory converge on a common understanding of reality's fundamental nature.",
+  "mathExpression": [
+    "\\text{Reality}_R = \\{\\phi(x) : x \\in \\text{Universe}\\}",
+    "\\text{Physical Laws } L : \\nabla \\times \\phi(L(x)) = \\nabla \\times \\phi(x)",
+    "\\text{Emergence: } E(\\phi) = \\{\\psi : \\exists f \\text{ such that } \\psi = f(\\phi) \\text{ and } \\|\\phi\\| > \\|\\psi\\|\\}",
+    "\\text{Information-Energy Equivalence: } E = k_I \\cdot I",
+    "\\text{Coherence Constraint: } \\forall F \\in \\mathcal{F}, \\|\\phi_F(x)\\| = \\|\\phi(x)\\|"
+  ],
+  "alternateName": ["Informational Ontology", "Prime-Coordinate Realism", "Coherence Materialism"]
+}

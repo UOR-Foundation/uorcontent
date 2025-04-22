@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:states:040:154",
+  "name": "states",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Intrinsic Primes Statement",
+    "@id": "urn:uor:concept:axiom-intrinsic-primes-statement",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "states the formal definition of the Intrinsic Primes Axiom as the existence of irreducible elements",
+  "description": "The Intrinsic Primes Axiom resource states that a set P of atomic elements exists such that no element in P factors further under composition in the domain, establishing the foundational building blocks for the UOR framework",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Intrinsic Primes Axiom",
+        "@id": "urn:uor:resource:axiom-intrinsic-primes"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:axiom-intrinsic-primes-statement"
+  ],
+  "valueName": "states the formal definition of the Intrinsic Primes Axiom as the existence of irreducible elements"
+}

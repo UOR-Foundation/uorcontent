@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:canonical-representation",
+  "name": "Canonical Representation",
+  "description": "An explanation of how UOR provides a unique, basis-independent, canonical representation for any object.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Canonical Representation",
+    "description": "A unique representation of an object that is independent of basis, numeral system, or observer frame."
+  },
+  "text": "A fundamental principle of UOR is that every object has a unique, canonical representation that is independent of basis, numeral system, or observer frame.\n\nUnlike conventional number representations (binary, decimal, etc.), the prime-coordinate representation is intrinsic to the object itself:\n\n- Not tied to any particular numeral base\n- Independent of arbitrary encoding choices\n- Reveals the object's inherent structure rather than human-imposed format\n\nThe canonical representation satisfies several crucial properties:\n\n- Uniqueness: Each object maps to exactly one prime-coordinate representation\n- Completeness: All properties of the object can be recovered from its representation\n- Invariance: The representation remains unchanged under permissible transformations\n\nAmong all possible representations of an object, the canonical prime-coordinate form:\n\n- Minimizes the coherence norm\n- Provides the most efficient encoding (minimum description length)\n- Contains no redundant information\n\nWhile observer reference frames may interpret the representation differently, the underlying prime structure remains objective:\n\n- Different frames observe the same intrinsic prime decomposition\n- Frame transformations preserve the canonical structure\n- All valid observers agree on the factorization, even with different perspectives\n\nThis canonical representation forms the foundation for UOR's ability to provide unambiguous reference across disparate domains and observer perspectives.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Universal Object Reference",
+    "@id": "urn:uor:topic:universal-object-reference"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["canonical representation", "basis independence", "uniqueness", "minimality", "frame objectivity"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:canonical-representation",
+      "urn:uor:concept:coherence-norm",
+      "urn:uor:concept:observer-reference-frames"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-emergence-mechanisms",
+  "name": "Describes Emergence Mechanisms",
+  "description": "Describes the fundamental processes through which coherent temporal patterns spontaneously arise from interactions among simpler elements.",
+  "propertyID": "UOR-P-056",
+  "value": "descriptive relationship",
+  "subject": "urn:uor:resource:emergent-temporal-order",
+  "object": "urn:uor:concept:temporal-emergence-mechanisms",
+  "relationshipStrength": "expository",
+  "contextualDescription": "The Emergent Temporal Order resource describes several key mechanisms driving temporal pattern formation, including temporal synchronization aligning phases across components, temporal symmetry breaking creating differentiated structures, cross-scale temporal coupling generating nested hierarchies, temporal attractor formation creating stable patterns, and temporal symmetry amplification selectively enhancing specific patterns through resonance."
+}

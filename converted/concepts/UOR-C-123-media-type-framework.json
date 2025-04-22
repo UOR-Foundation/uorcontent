@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:media-type-framework",
+  "name": "Media Type Framework",
+  "description": "The structural components that form the media type definition system, including attribute specification, coherence requirements, optimization parameters, transformation rules, and resource requirements.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-123",
+  "text": "The Media Type Definition framework consists of several interconnected components that together enable the comprehensive specification of media handling requirements across the tripartite kernel.\n\nThe framework includes Attribute Specification with a formal language for describing media attributes across the tripartite kernel; Coherence Requirements with specification of minimum coherence thresholds for transformations; Optimization Parameters with definitions of what constitutes optimality for specific media types; Transformation Rules with specifications for how content can be transformed between representations; and Resource Requirements with explicit declaration of resources needed for processing.\n\nThis approach contrasts sharply with traditional internet protocols. In conventional systems, protocols like HTTP, TCP, and various media formats impose fixed structures and behaviors that all content must conform to. The Internet Substrate's approach inverts this relationship, allowing the intrinsic properties of the content to drive the protocol behavior rather than vice versa.\n\nMedia type definitions in this framework are not merely descriptive but operationally prescriptive, specifying exact parameters like packet digest size, conversion ratios, frame arrangements, and processing requirements. These specifications are expressed in prime coordinate form, allowing them to interface coherently with the tripartite kernel.",
+  "mathExpression": [],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Media Type Foundation",
+      "@id": "urn:uor:concept:media-type-foundation"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Tripartite Operations",
+      "@id": "urn:uor:concept:tripartite-operations"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

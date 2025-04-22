@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes:041:160",
+  "name": "formalizes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Unique Factorization Formalization",
+    "@id": "urn:uor:concept:axiom-unique-factorization-formalization"
+  },
+  "value": "formalizes the mathematical expression of the Unique Factorization Axiom",
+  "description": "The Unique Factorization Axiom resource formalizes how in a unique factorization domain (UFD) D, every non-zero non-unit element x can be expressed as a product of primes in a way that is unique up to reordering and multiplication by units",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Unique Factorization Axiom",
+      "@id": "urn:uor:resource:axiom-unique-factorization"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

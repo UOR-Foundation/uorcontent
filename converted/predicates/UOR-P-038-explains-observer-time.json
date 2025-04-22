@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:explains-observer-time",
+  "name": "Explains Observer-Dependent Time",
+  "description": "Explains how time is experienced differently by different observers while maintaining coherence across reference frames.",
+  "propertyID": "UOR-P-038",
+  "value": "explanatory relationship",
+  "subject": "urn:uor:resource:time-operator-formalism",
+  "object": "urn:uor:concept:observer-dependent-time",
+  "relationshipStrength": "clarifying",
+  "contextualDescription": "The Time Operator Formalism explains how different observers experience different realizations of the time operator, connecting temporal evolution to observer reference frames and ensuring coherence across different perspectives."
+}

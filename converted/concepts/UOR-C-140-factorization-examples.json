@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:factorization-examples",
+  "name": "Factorization Examples",
+  "description": "Concrete examples of unique factorization across different mathematical domains, including integers, polynomials, and Gaussian integers, demonstrating the universal applicability of the principle.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-140",
+  "text": "The principle of unique factorization manifests across diverse mathematical domains, with each domain providing concrete examples that illustrate how the abstract concept applies to specific types of mathematical objects. These examples demonstrate the universality of the principle and its applicability beyond just ordinary integers.\n\nIn the domain of integers, the classic example is the factorization of natural numbers into prime factors. For instance, the number 60 can be uniquely factorized as 2² · 3 · 5. This factorization captures the complete prime structure of 60, and any other valid factorization would be equivalent to this one after accounting for the ordering of factors. The Fundamental Theorem of Arithmetic, which established this property for integers, was historically the first formulation of unique factorization and serves as the template for its generalization to other domains.\n\nIn the domain of polynomials with coefficients from a field (such as real or complex numbers), unique factorization applies to polynomial expressions. For example, the polynomial p(x) = x³ - x² - 2x can be uniquely factorized as x(x-2)(x+1). Similarly, the polynomial q(x) = x² - 2x + 1 factors uniquely as (x-1)². This property of polynomials is crucial in algebraic geometry, where the zeros of polynomials define geometric objects, and their factorization reveals the structure of these objects.\n\nIn the domain of Gaussian integers (complex numbers of the form a+bi where a and b are integers), unique factorization applies using Gaussian primes as the irreducible elements. For example, the number 5 factorizes as (1+2i)(1-2i) in this domain. This example is particularly interesting because it shows how an ordinary prime number in the standard integers might not remain prime when the domain is extended. The unique factorization of Gaussian integers has applications in number theory and cryptography.\n\nThese examples illustrate how the principle of unique factorization transcends specific mathematical domains, providing a universal framework for understanding the structure of mathematical objects in terms of their irreducible components. This universality is a key feature that makes the principle suitable as a foundation for the UOR framework, which aims to provide a domain-independent approach to object representation and analysis.",
+  "mathExpression": [
+    "60 = 2^2 \\cdot 3 \\cdot 5",
+    "p(x) = x^3 - x^2 - 2x = x(x-2)(x+1)",
+    "q(x) = x^2 - 2x + 1 = (x-1)^2",
+    "5 = (1+2i)(1-2i) \\text{ (in Gaussian integers)}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Factorization Theorem",
+      "@id": "urn:uor:concept:factorization-theorem"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Factorization Significance",
+      "@id": "urn:uor:concept:factorization-significance"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

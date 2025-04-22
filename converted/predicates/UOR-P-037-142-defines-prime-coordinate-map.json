@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines:037:142",
+  "name": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Prime Coordinate Map",
+    "@id": "urn:uor:concept:prime-coordinate-map",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "defines the mathematical function that assigns to each object its vector of prime exponents",
+  "description": "The Prime Coordinates resource defines the prime-coordinate map φ as a homomorphism that transforms objects into vectors in an exponent space, where each prime corresponds to a dimension",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Prime Coordinates",
+        "@id": "urn:uor:resource:prime-coordinates"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:prime-coordinate-map"
+  ],
+  "valueName": "defines the mathematical function that assigns to each object its vector of prime exponents"
+}

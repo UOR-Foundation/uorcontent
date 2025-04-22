@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:universal-integration",
+  "name": "Universal Integration",
+  "description": "A unified approach to integration in the universal number domain that simultaneously represents complex contour integrals and collections of p-adic integrals.",
+  "termCode": "UOR-C-051",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Definition 2 (Universal Integral): For a function } f: \\mathbb{U} \\to \\mathbb{U}",
+    "\\text{and a path } \\gamma, \\text{ the universal line integral is defined as:}",
+    "\\int_{\\gamma} f(\\eta) d\\eta",
+    "\\text{which simultaneously represents a complex contour integral and a collection of p-adic integrals.}",
+    "\\text{Theorem 3 (Fundamental Theorem of Universal Calculus): If } f: \\mathbb{U} \\to \\mathbb{U}",
+    "\\text{is a universally differentiable function and } \\gamma \\text{ is a path from } a \\text{ to } b, \\text{ then:}",
+    "\\int_{\\gamma} f'(\\eta) d\\eta = f(b) - f(a)"
+  ],
+  "image": [],
+  "sameAs": ["https://en.wikipedia.org/wiki/Integral"],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-derivative",
+    "urn:uor:concept:universal-analytic-functions"
+  ],
+  "properties": {
+    "components": "Line integrals, fundamental theorem, path independence"
+  },
+  "examples": [
+    "Computing the universal integral of polynomial functions",
+    "Evaluating contour integrals in the universal domain"
+  ],
+  "theorems": [
+    "Theorem 3 (Fundamental Theorem of Universal Calculus): If f is universally differentiable and γ is a path from a to b, then the integral of f' along γ equals f(b) - f(a).",
+    "Theorem 10 (Universal Residue Theorem): For a universally meromorphic function and a closed contour, the integral equals 2πi times the sum of residues."
+  ],
+  "sourceText": "Universal integration unifies complex and p-adic integration:\n\nDefinition 2 (Universal Integral): For a function f: 𝕌 → 𝕌 and a path γ, the universal line integral is defined as:\n\n`∫_γ f(η) dη`\n\nwhich simultaneously represents a complex contour integral and a collection of p-adic integrals.\n\nTheorem 3 (Fundamental Theorem of Universal Calculus): If f: 𝕌 → 𝕌 is a universally differentiable function and γ is a path from a to b, then:\n\n`∫_γ f'(η) dη = f(b) - f(a)`\n\nThis theorem generalizes both the Fundamental Theorem of Calculus and its p-adic analogues.\n\nTheorem 10 (Universal Residue Theorem): For a universally meromorphic function f and a closed contour γ encircling isolated singularities:\n\n`Integral_γ f(η) dη = 2πi × Sum of Res(f, α_j)`\n\nwhere the residues have both complex and p-adic interpretations."
+}

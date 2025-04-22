@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:connects-computational-concepts",
+  "name": "connects",
+  "propertyID": "uor:predicate",
+  "value": "related computational concepts",
+  "subjectOf": {
+    "@id": "urn:uor:concept:prime-factorization-complexity"
+  },
+  "targetCollection": [
+    "urn:uor:concept:error-resilient-prime-decomposition",
+    "urn:uor:concept:prime-space-learning-dynamics",
+    "urn:uor:concept:computational-complexity-classes"
+  ],
+  "valueName": "The prime factorization complexity concept connects to related computational concepts",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "connects"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 0.9
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

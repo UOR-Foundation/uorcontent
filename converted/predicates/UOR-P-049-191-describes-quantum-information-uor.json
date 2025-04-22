@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes:049:191",
+  "name": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Quantum Information UOR",
+    "@id": "urn:uor:concept:quantum-information-uor"
+  },
+  "value": "describes the application of UOR principles to quantum information theory",
+  "description": "The Recent Extensions resource describes how prime decompositions provide optimal encoding for quantum information, with coherence measures directly related to von Neumann entropy, and how quantum circuits can be analyzed as coherence-preserving maps between prime spectral representations",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Recent Extensions",
+      "@id": "urn:uor:resource:recent-extensions"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:extension-theorem",
+  "name": "Extension Theorem",
+  "description": "The formal theorem stating that the UOR prime-coordinate map φ extends to any Unique Factorization Domain or Dedekind domain with unique factorization of ideals.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-186",
+  "text": "The Extension Theorem is a fundamental result that demonstrates the broad applicability of the UOR framework beyond the integers. It states that for any Unique Factorization Domain (UFD) or Dedekind domain with unique factorization of ideals, the prime-coordinate map φ extends naturally while preserving its essential properties.\n\nFormally, the theorem establishes that for any algebraic structure D satisfying the unique factorization property (either directly as a UFD or through ideal factorization in Dedekind domains), there exists a well-defined extension of the prime-coordinate map φ_D that maps elements of D to vectors of integer exponents indexed by the \"prime\" elements of that domain.\n\nThe extended map φ_D maintains the crucial homomorphism property: φ_D(a⊗b) = φ_D(a) + φ_D(b), where ⊗ is the composition operation in domain D. This preserves the fundamental relationship between multiplication in the domain and addition in the coordinate space.\n\nMoreover, the extension maintains the injectivity property of the original map—distinct elements map to distinct coordinate vectors—ensuring that no structural information is lost in the extension.\n\nThe theorem's significance lies in its demonstration that the UOR framework is not merely a specialized theory of integers but a universal structural approach applicable across diverse mathematical domains. It provides a uniform language for describing factorization across number systems, polynomials, ideals, and even combinatorial structures.\n\nBy preserving the coherence geometry across these extensions, the theorem ensures that concepts like the coherence norm, inner product, and spectral interpretation remain meaningful in these extended domains, allowing for unified analysis of structural patterns across seemingly disparate mathematical objects.",
+  "mathExpression": [
+    "\\text{Let } D \\text{ be a UFD or Dedekind domain}",
+    "\\exists \\phi_D: D \\to \\mathbb{Z}^{P_D} \\text{ where } P_D \\text{ is the set of primes in } D",
+    "\\forall a,b \\in D: \\phi_D(a \\otimes b) = \\phi_D(a) + \\phi_D(b)",
+    "\\forall a,b \\in D: a \\neq b \\Rightarrow \\phi_D(a) \\neq \\phi_D(b) \\text{ (injectivity)}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Unique Factorization Domain",
+      "@id": "urn:uor:concept:unique-factorization-domain"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Dedekind Domain",
+      "@id": "urn:uor:concept:dedekind-domain"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

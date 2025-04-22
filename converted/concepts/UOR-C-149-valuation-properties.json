@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:valuation-properties",
+  "name": "Valuation Properties",
+  "description": "The essential mathematical properties of the prime valuation function that establish its behavior for operations like multiplication, addition, and its values for special elements like units and primes.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-149",
+  "text": "The prime valuation function possesses several important mathematical properties that define its behavior and establish its utility in the UOR framework. These properties ensure that the valuation function behaves predictably and consistently across different operations and elements.\n\nThe first key property relates to multiplication: v_p(xy) = v_p(x) + v_p(y) for all elements x and y. This property establishes the valuation function as a homomorphism from the multiplicative structure of the domain to the additive structure of integers. When elements are multiplied, their prime valuations add, reflecting the combining of their prime factors. This property is fundamental to the transformation from multiplication in the original domain to addition in the coordinate space.\n\nThe second property concerns addition: v_p(x+y) ≥ min(v_p(x), v_p(y)) with equality when v_p(x) ≠ v_p(y). This property describes how the valuation function behaves with respect to addition, establishing a lower bound on the valuation of a sum based on the valuations of the addends. When the valuations of the addends differ, the valuation of the sum equals the smaller of the two, reflecting that the prime divides the sum exactly as many times as it divides the addend with fewer factors of that prime.\n\nThe third property specifies the valuation of unity: v_p(1) = 0 for all primes p. This reflects that the multiplicative identity 1 is not divisible by any prime, so all prime valuations are zero. This property establishes the coordinate representation of the unit element as the zero vector, providing a natural origin for the coordinate space.\n\nThe fourth property defines the valuation of primes themselves: v_p(p) = 1 for prime p. This property establishes that each prime has a valuation of 1 with respect to itself and 0 with respect to all other primes. This property ensures that primes have the simplest non-trivial coordinate representations, with exactly one non-zero coordinate, making them the basic building blocks of the coordinate system.\n\nThese properties collectively define the behavior of the valuation function across different elements and operations, establishing its mathematical consistency and utility for representing elements in terms of their prime structure.",
+  "mathExpression": [
+    "1. v_p(xy) = v_p(x) + v_p(y) \\text{ for all } x, y",
+    "2. v_p(x+y) \\geq \\min(v_p(x), v_p(y)) \\text{ with equality when } v_p(x) \\neq v_p(y)",
+    "3. v_p(1) = 0 \\text{ for all primes } p",
+    "4. v_p(p) = 1 \\text{ for prime } p"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Valuation",
+      "@id": "urn:uor:concept:prime-valuation"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Coordinate Properties",
+      "@id": "urn:uor:concept:coordinate-properties"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

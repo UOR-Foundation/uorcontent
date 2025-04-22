@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:polynomial-ring-extension",
+  "name": "Polynomial Ring Extension",
+  "description": "The extension of UOR principles to polynomial rings, where irreducible monic polynomials serve as prime elements in the factorization.",
+  "termCode": "UOR-C-032",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{For a polynomial ring } D[x] \\text{ over a UFD } D,",
+    "\\text{the prime elements are irreducible monic polynomials } P_{D[x]}",
+    "\\phi_{D[x]}: D[x]^{\\times} \\to \\mathbb{Z}^{P_{D[x]}}",
+    "\\text{where } \\phi \\text{ encodes factor degrees and coefficients via multi-index valuations}"
+  ],
+  "image": [],
+  "sameAs": ["https://en.wikipedia.org/wiki/Polynomial_ring"],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:general-uor-existence",
+    "urn:uor:concept:prime-decomposition"
+  ],
+  "properties": {
+    "components": "Irreducible polynomials, degree valuations, coefficient encoding"
+  },
+  "examples": [
+    "Factorization of polynomials in Z[x]",
+    "Multi-index valuation for polynomial factorization"
+  ],
+  "sourceText": "Key examples include:\n\n- Polynomial Rings D[x]: Irreducible monic polynomials in D[x] serve as primes; φ encodes factor degrees and coefficients via multi-index valuations."
+}

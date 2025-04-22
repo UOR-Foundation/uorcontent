@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-digital-twin-applications",
+  "name": "Describes Digital Twin Applications",
+  "description": "Details the practical applications and implementation scenarios for the Digital Twin Framework.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Digital Twin Applications",
+    "description": "The practical applications and implementation scenarios for the Digital Twin Framework across different domains and use cases."
+  },
+  "propertyID": "UOR-P-082",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Digital Twin Framework",
+    "@id": "urn:uor:resource:digital-twin-framework"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Digital Twin Applications",
+    "@id": "urn:uor:concept:digital-twin-applications"
+  },
+  "relationshipStrength": 0.8,
+  "properties": {
+    "relationshipType": "application",
+    "context": "internet substrate"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-unique-factorization-connections",
+  "name": "Axiom Unique Factorization Connections",
+  "description": "The connections between the Unique Factorization Axiom and other core axioms, particularly its relationship to Intrinsic Primes and Prime-Coordinate Homomorphism.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-161",
+  "text": "The Unique Factorization Axiom occupies a central position within the eight core UOR axioms, forming crucial connections that strengthen the overall framework.\n\n1. Connection to Intrinsic Primes Axiom: The Unique Factorization Axiom builds directly on the Intrinsic Primes Axiom, forming a natural progression. While the first axiom establishes the existence of irreducible elements, the second axiom ensures that these elements can be used to form unique decompositions. Together, they establish both the existence of fundamental building blocks and the unique way these blocks combine to form complex structures.\n\n2. Foundation for Prime-Coordinate Homomorphism: Unique factorization serves as the foundation for the Prime-Coordinate Homomorphism, the third core axiom. It is what allows the homomorphism to be well-defined and injective. Without unique factorization, multiple different prime decompositions could map to the same coordinate representation, creating ambiguity and inconsistency in the framework.\n\n3. Enabling Canonical Representation: The axiom directly enables the Canonical Representation Axiom by ensuring that each object has a unique prime factorization that can serve as its canonical form. This unique representation becomes the basis for the object's position in the universal coordinate system.\n\n4. Support for Coherence Measures: The uniqueness of factorization is essential for the Coherence Norm and Coherence Inner Product axioms. These metrics on the coordinate space are only meaningful if each object maps to a single, well-defined point in that space.\n\nThe Unique Factorization Axiom thus serves as a bridge between the existence of primes and the construction of a coherent coordinate system. It transforms the concept of irreducible elements from a mere observation into a powerful structural tool that enables consistent analysis and representation.\n\nThis axiom's connections highlight its role as a fundamental principle that extends beyond mathematical technicality to establish the very possibility of consistent structural representation. It ensures that reality has an objective decomposition into fundamental components, providing the basis for a universal language of structure.",
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Axiom Intrinsic Primes",
+      "@id": "urn:uor:concept:axiom-intrinsic-primes-statement"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime-Coordinate Homomorphism",
+      "@id": "urn:uor:concept:prime-coordinate-homomorphism"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Canonical Representation",
+      "@id": "urn:uor:concept:canonical-representation"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

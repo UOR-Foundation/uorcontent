@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:overview",
+  "name": "Overview and Motivation",
+  "description": "An overview of the Universal Object Reference (UOR) framework and its motivation.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Universal Object Reference",
+    "description": "A framework for canonical, observer-invariant representation of objects across diverse domains."
+  },
+  "text": "The Universal Object Reference (UOR) framework addresses a fundamental challenge in mathematics and physics: how to provide a canonical, observer-invariant representation for objects across diverse domains.\n\nTraditional representation systems face several limitations:\n\n- Dependence on arbitrary numerical bases (binary, decimal, etc.)\n- Lack of intrinsic structure-preserving properties\n- Inconsistency across different mathematical domains\n- Observer-dependence leading to ambiguous descriptions\n\nUOR overcomes these limitations by providing a universal coordinate system based on prime decomposition.\n\nThe central insight of UOR is that prime factorization provides a natural, intrinsic coordinate system for objects:\n\n- Every object has a unique factorization into irreducible components\n- This factorization reveals the object's inherent structure\n- The prime-coordinate representation linearizes multiplicative relationships\n- The resulting geometric structure unifies diverse mathematical domains\n\nThe UOR framework offers several significant advantages:\n\n- Universality: Applies across number systems, polynomials, algebraic structures, and beyond\n- Invariance: Provides representation independent of arbitrary encoding choices\n- Coherence: Minimizes representational complexity through optimal prime decomposition\n- Integration: Unifies structure, dynamics, and observer perspectives in a single framework\n\nThe complete UOR framework integrates several components:\n\n1. Foundations in unique factorization domains\n2. The prime-coordinate mapping system\n3. Coherence metrics for measuring representational simplicity\n4. Observer reference frames for perspective-aware description\n5. Geometric and algebraic structures on prime-coordinate spaces\n\nThrough these elements, UOR provides a powerful new lens for understanding mathematical objects and their relationships.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Universal Object Reference",
+    "@id": "urn:uor:topic:universal-object-reference"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["UOR", "representation problem", "prime decomposition", "universality", "invariance", "coherence"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:uor-framework",
+      "urn:uor:concept:prime-decomposition",
+      "urn:uor:concept:observer-invariance"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes-uor-structure",
+  "name": "formalizes UOR structure",
+  "propertyID": "uor:predicate",
+  "value": "formalizes UOR structure",
+  "subjectOf": {
+    "@id": "urn:uor:resource:category-theoretic-perspective"
+  },
+  "targetCollection": [
+    "urn:uor:concept:prime-coordinate-functor",
+    "urn:uor:concept:universal-mapping-property"
+  ],
+  "valueName": "formalization relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "formalizes UOR structure"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

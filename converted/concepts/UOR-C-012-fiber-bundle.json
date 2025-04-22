@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:fiber-bundle",
+  "name": "Fiber Bundle",
+  "description": "A mathematical structure that consists of a total space, base space, projection map, typical fiber, and structure group, used in UOR to model the relationship between objects and their representations.",
+  "termCode": "UOR-C-012",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "(E, B, \\pi, F, G)"
+  ],
+  "relatedConcepts": [
+    "urn:uor:concept:prime-structure-bundle",
+    "urn:uor:concept:observer-frame-bundle",
+    "urn:uor:concept:bundle-connection"
+  ],
+  "sourceText": "A fiber bundle (E, B, π, F, G) consists of a total space E, a base space B, a projection π: E → B mapping each point to its base, a typical fiber F (the space attached to each point in B), a structure group G (transformations of F preserving bundle structure), and local trivializations. The UOR framework achieves its full mathematical power through a hierarchical fiber bundle formulation that rigorously integrates object structure with observer perspectives.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

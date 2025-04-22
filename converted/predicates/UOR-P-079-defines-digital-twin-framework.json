@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-digital-twin-framework",
+  "name": "Defines Digital Twin Framework",
+  "description": "Establishes the formal definition and conceptual foundation of the Digital Twin Framework in the UOR framework.",
+  "value": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Digital Twin Definition",
+    "description": "The formal definition and conceptual foundation of the Digital Twin Framework as a topological formalization of the internet that functions as an analog simulation of reality."
+  },
+  "propertyID": "UOR-P-079",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Digital Twin Framework",
+    "@id": "urn:uor:resource:digital-twin-framework"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Digital Twin Definition",
+    "@id": "urn:uor:concept:digital-twin-definition"
+  },
+  "relationshipStrength": 1,
+  "properties": {
+    "relationshipType": "definition",
+    "context": "internet substrate"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-transform-applications",
+  "name": "Describes Transform Applications",
+  "description": "Describes the practical applications and capabilities enabled by universal transforms across diverse signal processing domains.",
+  "propertyID": "UOR-P-062",
+  "value": "application relationship",
+  "subject": "urn:uor:resource:universal-transforms",
+  "object": "urn:uor:concept:transform-applications",
+  "relationshipStrength": "practical",
+  "contextualDescription": "The Universal Transforms resource describes powerful applications including cross-bit-width conversion between different representation sizes, domain-crossing operations across previously incompatible domains, multi-dimensional mapping preserving structural relationships, invariant feature extraction across representations, cross-domain filtering, modal analysis, and transform optimization, extending beyond traditional Fourier, wavelet, and Z-transform limitations."
+}

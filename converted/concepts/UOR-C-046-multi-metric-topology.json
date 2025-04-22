@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:multi-metric-topology",
+  "name": "Multi-Metric Topology",
+  "description": "The topological structure of universal numbers based on multiple compatible metrics, including the Archimedean metric, p-adic metrics, and the unified universal metric.",
+  "termCode": "UOR-C-046",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{The Archimedean metric: } d_\\infty(\\alpha, \\beta) = |z_\\alpha - z_\\beta|",
+    "\\text{where } z_\\alpha \\text{ and } z_\\beta \\text{ are the complex components}",
+    "\\text{The p-adic metrics: } d_p(\\alpha, \\beta) = |\\alpha - \\beta|_p",
+    "\\text{The universal metric: } d_{\\mathbb{U}}(\\alpha, \\beta) = \\max\\{d_\\infty(\\alpha, \\beta), \\sup_p\\{d_p(\\alpha, \\beta)\\}\\}",
+    "\\text{Theorem 1 (Universal Completeness): The metric space } (\\mathbb{U}, d_{\\mathbb{U}}) \\text{ is complete}"
+  ],
+  "image": [],
+  "sameAs": ["https://en.wikipedia.org/wiki/Metric_space"],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-number",
+    "urn:uor:concept:universal-prime-representation"
+  ],
+  "properties": {
+    "components": "Archimedean metric, p-adic metrics, universal metric, completeness"
+  },
+  "examples": [
+    "Measuring distance between universal numbers using the complex-analytic metric",
+    "Measuring distance between universal numbers using p-adic metrics"
+  ],
+  "theorems": [
+    "Theorem 1 (Universal Completeness): The metric space (𝕌, d_𝕌) is complete, meaning every Cauchy sequence of universal numbers converges to a universal number."
+  ],
+  "sourceText": "Universal numbers support multiple compatible metrics that capture different aspects of number structure:\n\nThe Archimedean Metric\nThe complex-analytic metric on 𝕌 is defined as:\n`d_∞(α, β) = |z_α - z_β|`\nwhere z_α and z_β are the complex components of α and β respectively.\n\nThe p-adic Metrics\nFor each prime p, universal numbers support a p-adic metric:\n`d_p(α, β) = |α - β|_p`\nmeasuring the p-adic distance between universal numbers.\n\nThe Universal Metric\nThese metrics combine into a unified universal metric:\n`d_𝕌(α, β) = max{d_∞(α, β), sup_p{d_p(α, β)}}`\nthat captures all aspects of distance between universal numbers.\n\nTheorem 1 (Universal Completeness): The metric space (𝕌, d_𝕌) is complete, meaning every Cauchy sequence of universal numbers converges to a universal number.\n\nThis completeness guarantees the existence of limits, making the universal number system suitable for analysis across multiple topological contexts."
+}

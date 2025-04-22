@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:topological-field",
+  "name": "Topological Field",
+  "description": "The property of universal numbers forming a topological field with continuous operations with respect to the universal metric and all component metrics.",
+  "termCode": "UOR-C-048",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Theorem 3 (Topological Field): The field operations on } \\mathbb{U} \\text{ are}",
+    "\\text{continuous with respect to the universal metric:}",
+    "\\text{1. Addition: The map } (\\alpha, \\beta) \\mapsto \\alpha + \\beta \\text{ is continuous}",
+    "\\text{2. Multiplication: The map } (\\alpha, \\beta) \\mapsto \\alpha \\cdot \\beta \\text{ is continuous}",
+    "\\text{3. Inversion: The map } \\alpha \\mapsto \\alpha^{-1} \\text{ is continuous on } \\mathbb{U} \\setminus \\{0\\}"
+  ],
+  "image": [],
+  "sameAs": ["https://en.wikipedia.org/wiki/Topological_field"],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:multi-metric-topology",
+    "urn:uor:concept:universal-number-field-operations"
+  ],
+  "properties": {
+    "components": "Continuous addition, continuous multiplication, continuous inversion"
+  },
+  "examples": [
+    "Continuity of addition with respect to both Archimedean and p-adic metrics",
+    "Continuity of multiplication with respect to the universal metric"
+  ],
+  "theorems": [
+    "Theorem 3 (Topological Field): The field operations on 𝕌 are continuous with respect to the universal metric and maintain continuity with respect to each individual metric."
+  ],
+  "sourceText": "Universal numbers form a topological field with strong continuity properties:\n\nTheorem 3 (Topological Field): The field operations on 𝕌 are continuous with respect to the universal metric:\n\n1. Addition: The map (α, β) ↦ α + β is continuous\n2. Multiplication: The map (α, β) ↦ α · β is continuous\n3. Inversion: The map α ↦ α^(-1) is continuous on 𝕌 \\ {0}\n\nMoreover, these operations maintain continuity with respect to each individual metric (Archimedean and p-adic), making 𝕌 simultaneously a complex topological field and a p-adic topological field for all primes p."
+}

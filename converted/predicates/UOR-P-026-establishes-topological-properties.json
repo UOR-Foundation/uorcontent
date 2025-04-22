@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-topological-properties",
+  "name": "establishes topological properties",
+  "propertyID": "uor:predicate",
+  "value": "establishes topological properties",
+  "subjectOf": {
+    "@id": "urn:uor:concept:multi-metric-topology"
+  },
+  "targetCollection": [
+    "urn:uor:concept:coordinate-topology",
+    "urn:uor:concept:topological-field"
+  ],
+  "valueName": "topological property relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "establishes topological properties"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

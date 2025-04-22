@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:lattice-geometry",
+  "name": "Lattice Geometry",
+  "description": "The discrete geometric structure formed by objects with integer exponents in prime-coordinate space, where each lattice point represents a unique factorization.",
+  "termCode": "UOR-C-022",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "relatedConcepts": [
+    "urn:uor:concept:prime-space-geometry",
+    "urn:uor:concept:prime-decomposition",
+    "urn:uor:concept:discrete-geometry"
+  ],
+  "sourceText": "Objects with integer exponents form a discrete lattice in prime-coordinate space. Each lattice point represents a unique factorization. Lines through the origin correspond to powers of the same object. Convex regions define families of objects with bounded prime exponents. Walking along lattice paths corresponds to sequential multiplication by primes.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

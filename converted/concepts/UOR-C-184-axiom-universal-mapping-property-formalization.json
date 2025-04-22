@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-universal-mapping-property-formalization",
+  "name": "Axiom Universal Mapping Property Formalization",
+  "description": "The mathematical formalization of the Universal Mapping Property Axiom, including the Universal Factorization Theorem, its proof, and category-theoretic interpretations.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-184",
+  "text": "The Universal Mapping Property can be formalized with precise mathematical notation as the Universal Factorization Theorem:\n\nLet (𝒰, ⊗, 1) be a monoid with unique factorization and (A, +, 0) be any abelian group. Then any monoid homomorphism ψ: 𝒰 → A with ψ(u) = 0 for all units u factors uniquely through the prime-coordinate map φ: 𝒰 → ℤ^P.\n\nFormal Expression: There exists a unique abelian group homomorphism h: ℤ^P → A such that:\n\nψ = h ∘ φ\n\nmaking the following diagram commute:\n\n```\n𝒰 --φ--> ℤ^P\n \\       /\n  ψ     h\n   \\   /\n    v v\n     A\n```\n\nThe proof of this theorem follows a standard construction:\n\n1. Define h on the standard basis of ℤ^P by setting h(e_p) = ψ(p) for each prime p, where e_p is the unit vector corresponding to prime p.\n\n2. Extend h linearly to the entire space ℤ^P using the fact that it must be a group homomorphism. For any vector v = ∑ a_p·e_p in ℤ^P, define h(v) = ∑ a_p·h(e_p) = ∑ a_p·ψ(p).\n\n3. Verify that h(φ(x)) = ψ(x) for all x ∈ 𝒰:\n   - For a prime p, we have h(φ(p)) = h(e_p) = ψ(p)\n   - For a product x = p₁^(a₁) ⊗ ... ⊗ p_n^(a_n), we have:\n     φ(x) = a₁·e_(p₁) + ... + a_n·e_(p_n)\n     h(φ(x)) = h(a₁·e_(p₁) + ... + a_n·e_(p_n))\n             = a₁·h(e_(p₁)) + ... + a_n·h(e_(p_n))\n             = a₁·ψ(p₁) + ... + a_n·ψ(p_n)\n             = ψ(p₁^(a₁) ⊗ ... ⊗ p_n^(a_n))\n             = ψ(x)\n     where the last equality uses the homomorphism property of ψ.\n\n4. For uniqueness, if h' is another homomorphism with ψ = h' ∘ φ, then for any prime p:\n   h'(e_p) = h'(φ(p)) = ψ(p) = h(e_p)\n   Since h' and h agree on all basis vectors e_p, they must be equal by linearity.\n\nThis property admits several equivalent category-theoretic formulations:\n\n1. Terminal-Object Formulation: Define categories and functors:\n   - Let Hom_Mon(𝒰, A) be the set of monoid homomorphisms from 𝒰 to abelian group A sending units to zero.\n   - Let Hom_Ab(ℤ^P, A) be the set of abelian group homomorphisms from ℤ^P to A.\n   - Define Φ: Hom_Ab(ℤ^P, A) → Hom_Mon(𝒰, A) by Φ(h) = h ∘ φ.\n   \nThe theorem states that Φ is a natural bijection for any abelian group A.\n\n2. Universal Arrow: The prime-coordinate map φ: 𝒰 → ℤ^P is the universal arrow from the object 𝒰 to the forgetful functor from abelian groups to monoids.\n\n3. Adjoint Functor Perspective: The construction of ℤ^P from 𝒰 can be viewed as a left adjoint to the forgetful functor:\n   Hom_Ab(L(𝒰), A) ≅ Hom_Mon(𝒰, U(A))\n   where L(𝒰) = ℤ^P is the \"linearization\" of 𝒰 and U is the forgetful functor.\n\n4. Modal Logic Formulation: Using a necessity operator □ where \"□P\" means \"P is true in all valid representations\":\n   □(∀x,y. ψ(x·y) = ψ(x) + ψ(y)) → (∃!h. ψ = h ∘ φ)\n   \"Necessarily, if ψ preserves multiplication as addition, then ψ factors uniquely through φ.\"\n\nThese equivalent formulations reveal the deep mathematical significance of the Universal Mapping Property as a fundamental principle connecting multiplicative and additive structures.",
+  "mathExpression": [
+    "\\exists! h: \\mathbb{Z}^P \\to A \\text{ such that } \\psi = h \\circ \\phi",
+    "h(e_p) = \\psi(p) \\text{ for each prime } p",
+    "h(\\phi(x)) = \\psi(x) \\text{ for all } x \\in \\mathcal{U}",
+    "\\text{Hom}_{\\text{Ab}}(\\mathbb{Z}^P, A) \\cong \\text{Hom}_{\\text{Mon}}(\\mathcal{U}, A) \\text{ via } h \\mapsto h \\circ \\phi",
+    "\\text{Hom}_{\\text{Ab}}(L(\\mathcal{U}), A) \\cong \\text{Hom}_{\\text{Mon}}(\\mathcal{U}, U(A)) \\text{ where } L(\\mathcal{U}) = \\mathbb{Z}^P"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Universal Factorization Theorem",
+      "@id": "urn:uor:concept:universal-factorization-theorem"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Commutative Diagram",
+      "@id": "urn:uor:concept:commutative-diagram"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

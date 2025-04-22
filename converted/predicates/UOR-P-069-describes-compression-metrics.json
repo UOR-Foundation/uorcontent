@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-compression-metrics",
+  "name": "Describes Compression Metrics",
+  "description": "Explains the quantitative measures and evaluation criteria used to assess the performance and effectiveness of signal compression.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Compression Metrics",
+    "description": "The quantitative measures and evaluation criteria used to assess the performance and effectiveness of signal compression in the UOR framework."
+  },
+  "propertyID": "UOR-P-069",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Signal Compression",
+    "@id": "urn:uor:resource:signal-compression"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Compression Metrics",
+    "@id": "urn:uor:concept:compression-metrics"
+  },
+  "relationshipStrength": 0.85,
+  "properties": {
+    "relationshipType": "characterization",
+    "context": "signal processing"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:temporal-frame-transformation",
+  "name": "Temporal Frame Transformation",
+  "description": "The mathematical mappings that relate different observers' temporal perspectives while preserving essential coherence properties of the underlying reality.",
+  "termCode": "UOR-C-079",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{For two temporal reference frames } F_1 \\text{ and } F_2\\text{, the transformation between them is:}",
+    "t_2 = \\Lambda_{12}(t_1, \\phi)",
+    "\\text{Where } \\Lambda_{12} \\text{ is the temporal transformation function that may depend}",
+    "\\text{on both the time coordinate } t_1 \\text{ and the prime coordinate representation } \\phi\\text{.}",
+    "\\text{The metric transformation follows:}",
+    "g_2 = \\frac{d\\Lambda_{12}}{dt_1} g_1 \\frac{d\\Lambda_{12}}{dt_1}",
+    "\\text{And the flow transformation:}",
+    "V_2 = \\left(\\frac{d\\Lambda_{12}}{dt_1}\\right)^{-1} V_1",
+    "\\text{For a transformation to be coherence-preserving, it must satisfy:}",
+    "C(\\phi_1(t_1), \\phi_2(\\Lambda_{12}(t_1, \\phi))) \\geq C_{min}",
+    "\\text{Special classes of transformations include:}",
+    "\\text{1. Scale: } \\Lambda_{scale}(t) = \\alpha t",
+    "\\text{2. Flow: } \\Lambda_{flow}(t) = \\int_0^t \\beta(\\tau) d\\tau",
+    "\\text{3. Relativistic: } \\Lambda_{rel}(t) = \\gamma(t - vx/c^2)",
+    "\\text{4. Topological: } \\Lambda_{topo}(t) = f(t)",
+    "\\text{5. Compositional: } \\Lambda_{comp}(t) = \\Lambda_1(\\Lambda_2(... \\Lambda_n(t)))"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:temporal-reference-frame",
+    "urn:uor:concept:temporal-frame-categories",
+    "urn:uor:concept:coherence-preservation-condition"
+  ],
+  "properties": {
+    "components": "Transformation function, metric transformation, flow transformation, coherence preservation, special transformation classes"
+  },
+  "examples": [
+    "Lorentz transformations between observers moving at different velocities",
+    "Scale transformations between biological processes at different timescales",
+    "Flow transformations modeling subjective time perception changes during different cognitive states"
+  ],
+  "theorems": [
+    "For a temporal frame transformation to be coherence-preserving, it must maintain sufficient coherence between the prime coordinate representations in different frames."
+  ],
+  "sourceText": "For two temporal reference frames F_1 and F_2, the transformation between them is given by:\n\nt_2 = Λ_12(t_1, φ)\n\nWhere Λ_12 is the temporal transformation function that may depend on both the time coordinate t_1 and the prime coordinate representation φ of the observed system.\n\nThe metric transformation follows:\n\ng_2 = (dΛ_12/dt_1) g_1 (dΛ_12/dt_1)\n\nAnd the flow transformation:\n\nV_2 = (dΛ_12/dt_1)^(-1) V_1\n\nThese transformations ensure consistency between different temporal perspectives.\n\nFor a temporal frame transformation to be coherence-preserving, it must satisfy:\n\nC(φ_1(t_1), φ_2(Λ_12(t_1, φ))) ≥ C_min\n\nWhere φ_1(t_1) is the prime coordinate representation in frame 1 at time t_1, φ_2(t_2) is the representation in frame 2 at time t_2 = Λ_12(t_1, φ), and C_min is the minimum acceptable coherence threshold.\n\nThis condition ensures that the essential structure of reality remains recognizable across different temporal perspectives.\n\nCertain temporal transformations have special significance across domains:\n\n1. Scale Transformations: Λ_scale(t) = α t\n2. Flow Transformations: Λ_flow(t) = ∫_0^t β(τ) dτ\n3. Relativistic Transformations: t_2 = γ(t_1 - vx_1/c²)\n4. Topological Transformations: Λ_topo(t) = f(t)\n5. Compositional Transformations: Λ_comp(t) = Λ_1(Λ_2(... Λ_n(t)))"
+}

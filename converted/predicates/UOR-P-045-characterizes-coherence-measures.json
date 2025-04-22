@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:characterizes-coherence-measures",
+  "name": "Characterizes Coherence Measures",
+  "description": "Describes the different mathematical formulations of coherence that generate distinct classes of coherence-preserving dynamics.",
+  "propertyID": "UOR-P-045",
+  "value": "descriptive relationship",
+  "subject": "urn:uor:resource:coherence-preserving-dynamics",
+  "object": "urn:uor:concept:coherence-measure-types",
+  "relationshipStrength": "expository",
+  "contextualDescription": "The Coherence-Preserving Dynamics resource characterizes different types of coherence measures, including information-theoretic, structural, functional, and relational coherence, each generating distinct classes of coherence-preserving dynamics that maintain different aspects of system identity."
+}

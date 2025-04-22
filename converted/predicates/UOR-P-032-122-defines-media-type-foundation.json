@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines:032:122",
+  "name": "defines",
+  "propertyID": "uor:predicate",
+  "value": "defines the mathematical foundation for media types expressed in universal number representation",
+  "description": "The Media Type Definition resource defines the mathematical foundation that enables media types to express their intrinsic requirements through universal numbers",
+  "subjectOf": {
+    "@id": "urn:uor:resource:media-type-definition"
+  },
+  "targetCollection": ["urn:uor:concept:media-type-foundation"],
+  "valueName": "Defines the mathematical foundation for media types",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "name": "relation strength",
+    "value": "strong"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": true
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes-arithmetization",
+  "name": "formalizes arithmetization via prime encoding",
+  "description": "Relation indicating that a resource formalizes the arithmetization of syntax through prime-coordinate encoding",
+  "propertyID": "UOR-P-123",
+  "value": "The resource formalizes how the arithmetization of syntax provides the foundation for self-reference in formal systems through prime-coordinate encoding—a special case of the UOR map. This includes symbol encoding (assigning unique natural numbers to each symbol), string encoding (defining Gödel numbers using prime factorization), prime-coordinate representation (expressing encodings as vectors in exponent space), and natural extensions to encode formulae and proofs. This encoding satisfies the UOR homomorphism property, transforming concatenation into addition in prime-coordinate space, while maintaining unique decodability through the Fundamental Theorem of Arithmetic.",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "name": "relation strength",
+    "value": "strong"
+  },
+  "subject": {
+    "@id": "urn:uor:resource:incompleteness-theorem"
+  },
+  "object": {
+    "@id": "urn:uor:concept:formal-arithmetization"
+  }
+}

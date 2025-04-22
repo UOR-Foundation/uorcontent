@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:classifies-coherence-systems",
+  "name": "Classifies Coherence Systems",
+  "description": "Categorizes the various types of dynamical systems that naturally preserve or enhance coherence through evolution.",
+  "propertyID": "UOR-P-044",
+  "value": "classification relationship",
+  "subject": "urn:uor:resource:coherence-preserving-dynamics",
+  "object": "urn:uor:concept:coherence-preserving-systems",
+  "relationshipStrength": "organizational",
+  "contextualDescription": "The Coherence-Preserving Dynamics resource classifies several important types of dynamical systems that naturally preserve or enhance coherence, including gradient systems, Hamiltonian systems with coherence constraints, adaptive optimization systems, and stochastic coherence-preserving dynamics."
+}

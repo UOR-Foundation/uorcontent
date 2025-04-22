@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes:042:164",
+  "name": "formalizes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Prime-Coordinate Homomorphism Formalization",
+    "@id": "urn:uor:concept:axiom-prime-coordinate-homomorphism-formalization"
+  },
+  "value": "formalizes the mathematical expression of the Prime-Coordinate Homomorphism Axiom",
+  "description": "The Prime-Coordinate Homomorphism Axiom resource formalizes how the mapping φ: 𝒰 → ℤ^(P) is defined for each object and prime, transforming the multiplicative structure of object composition into the additive structure of vector addition with precise mathematical notation",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Prime-Coordinate Homomorphism Axiom",
+      "@id": "urn:uor:resource:axiom-prime-coordinate-homomorphism"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

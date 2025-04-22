@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-temporal-modes",
+  "name": "Describes Temporal Modes",
+  "description": "Describes the fundamental modes of temporal evolution through the eigenstructures of the time operator.",
+  "propertyID": "UOR-P-037",
+  "value": "descriptive relationship",
+  "subject": "urn:uor:resource:time-operator-formalism",
+  "object": "urn:uor:concept:temporal-eigenstructures",
+  "relationshipStrength": "expository",
+  "contextualDescription": "The Time Operator Formalism describes how temporal evolution manifests through distinct eigenstructures of the time operator, including steady states, decay modes, growth modes, and oscillatory modes, providing a mathematical foundation for understanding different types of temporal behavior."
+}

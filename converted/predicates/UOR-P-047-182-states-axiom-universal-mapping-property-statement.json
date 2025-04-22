@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:states:047:182",
+  "name": "states",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Universal Mapping Property Statement",
+    "@id": "urn:uor:concept:axiom-universal-mapping-property-statement"
+  },
+  "value": "states the formal definition of the Universal Mapping Property Axiom as a universal factorization through the prime-coordinate map",
+  "description": "The Universal Mapping Property Axiom resource states that for any abelian group and monoid homomorphism from a UFD that sends units to zero, there exists a unique group homomorphism that factors through the prime-coordinate map, establishing it as the canonical bridge between multiplicative and additive structures",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Universal Mapping Property Axiom",
+      "@id": "urn:uor:resource:axiom-universal-mapping-property"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

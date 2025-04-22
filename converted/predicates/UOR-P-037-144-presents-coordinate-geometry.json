@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:presents:037:144",
+  "name": "presents",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Coordinate Geometry",
+    "@id": "urn:uor:concept:coordinate-geometry",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "presents the geometric interpretation of prime coordinates as a multidimensional space",
+  "description": "The Prime Coordinates resource presents a geometric interpretation where each prime corresponds to an orthogonal dimension, objects become points in a discrete lattice, and divisibility manifests as geometric containment",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Prime Coordinates",
+        "@id": "urn:uor:resource:prime-coordinates"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:coordinate-geometry"
+  ],
+  "valueName": "presents the geometric interpretation of prime coordinates as a multidimensional space"
+}

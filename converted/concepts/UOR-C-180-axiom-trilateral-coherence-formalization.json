@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-trilateral-coherence-formalization",
+  "name": "Axiom Trilateral Coherence Formalization",
+  "description": "The mathematical formalization of the Trilateral Coherence Axiom, defining the tuple representation of an observed object and the constraints on frame transformations.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-180",
+  "text": "The Trilateral Coherence Axiom can be formalized with precise mathematical notation to capture its essential structure and constraints.\n\nIn the UOR framework, an observed object is represented as a tuple (X, D, r) consisting of three interdependent components:\n\n1. X is the object with its intrinsic prime structure φ(X)\n   - X represents the entity being described\n   - φ(X) is its prime coordinate representation established by previous axioms\n   - This component captures the intrinsic structure of the object\n\n2. D is the set of dynamics or transformations applicable to X\n   - D = {τᵢ | τᵢ : X → X'} represents the collection of valid operations\n   - Each τᵢ maps the object to some transformed state\n   - D is constrained by the structural properties of X\n   - This component captures the possible evolutions or interactions of the object\n\n3. r is an observer frame from the space R of all possible frames\n   - r ∈ R represents a specific perspective or reference system\n   - R forms a manifold of possible observation contexts\n   - This component captures the contextual nature of description\n\nThe formal relationship between these components satisfies several key properties:\n\n- Frame Transformation Constraint: For any frame transformation g: r → r', the intrinsic structure remains invariant:\n  φ(X) = φ(X') where X' is X as described in frame r'\n\n- Dynamics-Structure Compatibility: For any transformation τ ∈ D, the resulting transformed object must be expressible within the prime coordinate system:\n  If X' = τ(X), then φ(X') is well-defined\n\n- Observer-Dynamics Coupling: The set of applicable dynamics D may appear different when viewed from different frames, leading to a frame-dependent representation D_r of the dynamics\n\nThese formalized components create a fiber bundle structure where:\n- The base space consists of objects X with their prime structure φ(X)\n- Each object has attached to it a fiber consisting of all possible observer frames R\n- A group G acts on the fibers, representing transformations between different observer perspectives\n\nThe key mathematical constraint in this formalization is that under all valid transformations of the observer frame, the intrinsic prime structure φ(X) remains invariant, though its representation or interpretation may change. This invariance principle ensures that while descriptions may vary with perspective, they all refer to the same underlying reality.",
+  "mathExpression": [
+    "\\text{Observed Object} \\equiv (X, D, r)",
+    "X \\in \\mathcal{U}, \\; D \\subset \\{\\tau: \\mathcal{U} \\to \\mathcal{U}\\}, \\; r \\in R",
+    "\\text{For frame transformation } g: r \\to r', \\; \\phi(X) = \\phi(X')",
+    "\\text{For } \\tau \\in D, \\; X' = \\tau(X) \\Rightarrow \\phi(X') \\text{ is well-defined}",
+    "D_r \\text{ represents the dynamics } D \\text{ as viewed from frame } r"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Fiber Bundle",
+      "@id": "urn:uor:concept:fiber-bundle"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Frame Transformation",
+      "@id": "urn:uor:concept:frame-transformation"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

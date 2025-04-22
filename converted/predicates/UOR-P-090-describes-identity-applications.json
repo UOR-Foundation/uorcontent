@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-identity-applications",
+  "name": "Describes Identity Applications",
+  "description": "Details the practical applications and implementation scenarios for Universal Identity.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Identity Applications",
+    "description": "The practical applications and implementation scenarios for Universal Identity across different domains, demonstrating its transformative capabilities beyond traditional identity systems."
+  },
+  "propertyID": "UOR-P-090",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Universal Identity",
+    "@id": "urn:uor:resource:universal-identity"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Identity Applications",
+    "@id": "urn:uor:concept:identity-applications"
+  },
+  "relationshipStrength": 0.8,
+  "properties": {
+    "relationshipType": "application",
+    "context": "internet substrate"
+  }
+}

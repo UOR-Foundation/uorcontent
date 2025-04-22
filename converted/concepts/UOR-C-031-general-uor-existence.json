@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:general-uor-existence",
+  "name": "General UOR Existence Theorem",
+  "description": "A fundamental theorem establishing the existence and properties of the prime-coordinate functor in any unique factorization domain or GCD domain.",
+  "termCode": "UOR-C-031",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Let } D \\text{ be any UFD (or GCD domain satisfying factorization axioms).}",
+    "\\text{Then the prime-coordinate functor } \\phi: D^{\\times} \\to \\mathbb{Z}^P \\text{ is well-defined, exact,}",
+    "\\text{and admits an extension to polynomial rings } D[x], \\text{ localizations } D_S,",
+    "\\text{and formal power series } D[[x]], \\text{ preserving unique factorization in each case.}"
+  ],
+  "image": [],
+  "sameAs": ["https://en.wikipedia.org/wiki/Unique_factorization_domain"],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:prime-coordinate-functor",
+    "urn:uor:concept:unique-factorization"
+  ],
+  "properties": {
+    "components": "Well-defined functor, exactness, domain extensions"
+  },
+  "examples": [
+    "The prime-coordinate functor in the integers Z",
+    "Extension to polynomial rings Z[x]"
+  ],
+  "theorems": [
+    "General UOR Existence: The prime-coordinate functor φ: D^× → ℤ^P is well-defined, exact, and admits extensions to related algebraic structures."
+  ],
+  "sourceText": "Theorem (General UOR Existence): Let D be any UFD (or GCD domain satisfying factorization axioms). Then the prime-coordinate functor φ: D^× → ℤ^P is well-defined, exact, and admits an extension to polynomial rings D[x], localizations D_S, and formal power series D[[x]], preserving unique factorization in each case.\n\nConcretely, UOR applies whenever a domain admits a notion of irreducible generators P and a UFD-like factorization property."
+}

@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:universal-number-algorithms",
+  "name": "Universal Number Algorithms",
+  "description": "Effective algorithmic procedures for performing arithmetical and analytical operations on universal numbers through their prime-coordinate representations.",
+  "termCode": "UOR-C-040",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Basic Arithmetic Algorithms:}",
+    "\\text{1. Addition: } \\phi(\\alpha+\\beta) = \\log(\\exp(\\phi(\\alpha)) + \\exp(\\phi(\\beta))) \\text{ coordinate-wise}",
+    "\\text{2. Multiplication: } \\phi(\\alpha\\cdot\\beta) = \\phi(\\alpha) + \\phi(\\beta) \\text{ coordinate-wise}",
+    "\\text{3. Division: } \\phi(\\alpha/\\beta) = \\phi(\\alpha) - \\phi(\\beta) \\text{ coordinate-wise}",
+    "\\text{4. Power: } \\phi(\\alpha^r) = r \\cdot \\phi(\\alpha) \\text{ coordinate-wise}",
+    "\\text{Advanced algorithms include root finding, transcendence testing, and differential equation solving}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:computable-universal-number",
+    "urn:uor:concept:universal-coordinate-transformation"
+  ],
+  "properties": {
+    "components": "Basic arithmetic operations, advanced computational procedures, algorithmic completeness"
+  },
+  "examples": [
+    "Efficient multiplication via coordinate-wise addition",
+    "Root finding algorithms for universal number polynomials"
+  ],
+  "theorems": [
+    "Theorem 2 (Algorithmic Completeness): Operations such as root finding, transcendence testing, differential equation solving, and integral computation are effectively computable on universal numbers.",
+    "Theorem 3 (Effective Zero Testing): There exists an algorithm that determines whether a universal number equals zero.",
+    "Theorem 4 (Equality Decision): The equality relation on computable universal numbers is decidable."
+  ],
+  "sourceText": "Universal numbers support efficient algorithms for fundamental operations:\n\n1. Addition Algorithm:\n   ```\n   Function Add(α, β, precision):\n     1. Compute φ(α) and φ(β) to precision 2n\n     2. Calculate φ(α+β) = log(exp(φ(α)) + exp(φ(β))) coordinate-wise\n     3. Reconstruct the result from the coordinate representation\n   ```\n\n2. Multiplication Algorithm:\n   ```\n   Function Multiply(α, β, precision):\n     1. Compute φ(α) and φ(β) to precision n\n     2. Calculate φ(α·β) = φ(α) + φ(β) coordinate-wise\n     3. Reconstruct the result from the coordinate representation\n   ```\n\n3. Division Algorithm:\n   ```\n   Function Divide(α, β, precision):\n     1. Verify β ≠ 0 (using zero testing algorithm)\n     2. Compute φ(α) and φ(β) to precision n\n     3. Calculate φ(α/β) = φ(α) - φ(β) coordinate-wise\n     4. Reconstruct the result from the coordinate representation\n   ```\n\n4. Power Algorithm:\n   ```\n   Function Power(α, r, precision):\n     1. Compute φ(α) to precision n\n     2. Calculate φ(α^r) = r · φ(α) coordinate-wise\n     3. Reconstruct the result from the coordinate representation\n   ```\n\nTheorem 2 (Algorithmic Completeness): The following operations are effectively computable on universal numbers:\n\n1. Root Finding: Computing roots of polynomials with universal coefficients\n2. Transcendence Testing: Determining whether a given universal number is algebraic or transcendental\n3. Differential Equation Solving: Numerically solving ODEs with universal coefficients and initial conditions\n4. Integral Computation: Computing definite integrals of universal-valued functions"
+}

@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:universal-coordinate-transformation",
+  "name": "Universal Coordinate Transformation",
+  "description": "The core mathematical operation mapping each universal number to its infinite-dimensional complex coordinate vector while preserving algebraic structure.",
+  "termCode": "UOR-C-036",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\Phi: \\mathbb{U} \\to \\mathbb{C}^\\infty",
+    "\\text{Properties:}",
+    "\\text{1. Injectivity: } \\eta_1 \\neq \\eta_2 \\implies \\Phi(\\eta_1) \\neq \\Phi(\\eta_2)",
+    "\\text{2. Structure preservation: } \\Phi(\\eta_1 \\cdot \\eta_2) = \\Phi(\\eta_1) + \\Phi(\\eta_2)",
+    "\\text{3. For complex numbers: } \\phi(z_1 + z_2) = \\log(\\exp(\\phi(z_1)) + \\exp(\\phi(z_2)))"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-number",
+    "urn:uor:concept:universal-prime-representation"
+  ],
+  "properties": {
+    "components": "Injectivity, structure preservation, metric compatibility, algorithmic effectiveness"
+  },
+  "examples": [
+    "Mapping integers to their prime factorization exponent vectors",
+    "Transforming multiplication to coordinate addition"
+  ],
+  "sourceText": "The core mathematical operation underpinning universal numbers is the Universal Coordinate Transformation:\n\nΦ: 𝕌 → ℂ^∞\n\nmapping each universal number to its infinite-dimensional complex coordinate vector. This transformation satisfies:\n\n1. Injectivity: Different universal numbers map to different coordinate vectors\n2. Structure preservation: Multiplication of numbers transforms to vector addition of coordinates\n3. Metric compatibility: The coordinate representation induces consistent metrics across all embedded number systems\n4. Algorithmic effectiveness: The transformation is effectively computable and invertible\n\nThe embedding satisfies:\nφ(z₁ + z₂) = log(exp(φ(z₁)) + exp(φ(z₂)))\nφ(z₁ · z₂) = φ(z₁) + φ(z₂)"
+}

@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines:039:150",
+  "name": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Coherence Norm Definition",
+    "@id": "urn:uor:concept:coherence-norm-definition",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "defines the coherence norm as the Euclidean norm of an object's prime-coordinate vector",
+  "description": "The Coherence Norm resource defines the formal mathematical structure of the coherence norm, establishing it as a well-formed norm that satisfies key properties including non-negativity, triangle inequality, and invariance",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Coherence Norm & Metric",
+        "@id": "urn:uor:resource:coherence-norm"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:coherence-norm-definition"
+  ],
+  "valueName": "defines the coherence norm as the Euclidean norm of an object's prime-coordinate vector"
+}

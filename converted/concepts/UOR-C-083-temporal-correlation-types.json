@@ -1,0 +1,51 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:temporal-correlation-types",
+  "name": "Temporal Correlation Types",
+  "description": "The classification of non-local temporal correlations into distinct categories based on their mathematical properties and the mechanisms through which they manifest.",
+  "termCode": "UOR-C-083",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Non-local temporal correlations can be classified into several types:}",
+    "\\text{1. Quantum Temporal Entanglement - Correlations between events at different times:}",
+    "C_T(E_1, E_2) = \\langle\\psi| \\hat{O}_1(t_1) \\hat{O}_2(t_2) |\\psi\\rangle",
+    "\\text{   Where } \\hat{O}_i(t_i) \\text{ are operators at different times in a quantum system.}",
+    "\\text{2. Anticipatory Systems - Systems correlating with future conditions beyond prediction:}",
+    "C_T(S(t), E(t+\\Delta t)) > C_{max}^{pred}(\\Delta t)",
+    "\\text{   Where } S(t) \\text{ is the system state, } E(t+\\Delta t) \\text{ is the future environment,}",
+    "\\text{   and } C_{max}^{pred}(\\Delta t) \\text{ is the maximum correlation through prediction.}",
+    "\\text{3. Morphic Resonance - Correlations between similar patterns across time:}",
+    "C_T(P_1(t_1), P_2(t_2)) > C_{max}^{conv}(P_1, P_2, \\Delta t)",
+    "\\text{   Where } P_i(t_i) \\text{ are pattern instances at different times, and}",
+    "\\text{   } C_{max}^{conv} \\text{ is the maximum correlation through conventional mechanisms.}",
+    "\\text{4. Retrocausal Appearance - Systems appearing influenced by future states:}",
+    "\\phi(S(t_1)) = g(\\phi(S(t_1)), \\phi(M(t_2)))",
+    "\\text{   Where } S(t_1) \\text{ is a system at time } t_1\\text{, } M(t_2) \\text{ is a measurement}",
+    "\\text{   at later time } t_2\\text{, and } g \\text{ describes the apparent influence.}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:temporal-correlation-function",
+    "urn:uor:concept:temporal-correlation-structures",
+    "urn:uor:concept:temporal-correlation-theorems"
+  ],
+  "properties": {
+    "components": "Quantum temporal entanglement, anticipatory systems, morphic resonance, retrocausal appearance"
+  },
+  "examples": [
+    "Delayed-choice quantum experiments showing entanglement across time",
+    "Biological systems exhibiting predictive adaptations to future environmental changes",
+    "Learning patterns showing acceleration after similar development elsewhere",
+    "Quantum systems where measurement choice seems to affect earlier properties"
+  ],
+  "theorems": [
+    "Non-local temporal correlations can be classified into distinct categories with specific mathematical formulations and observable characteristics."
+  ],
+  "sourceText": "Non-local temporal correlations can be classified into several fundamental types:\n\nQuantum Temporal Entanglement: Correlations similar to spatial quantum entanglement but occurring between events at different times:\n\nC_T(E_1, E_2) = ⟨ψ| Ô_1(t_1) Ô_2(t_2) |ψ⟩\n\nWhere Ô_i(t_i) are operators at different times in a quantum system.\n\nThese correlations are observed in delayed-choice quantum experiments and quantum time entanglement protocols.\n\nAnticipatory Systems: Systems whose current state correlates with future environmental conditions beyond what could be predicted through conventional forecasting:\n\nC_T(S(t), E(t+Δt)) > C_max^pred(Δt)\n\nWhere S(t) is the system state, E(t+Δt) is the future environment, and C_max^pred(Δt) is the maximum correlation achievable through predictive modeling.\n\nThese correlations appear in certain biological systems that seem to anticipate environmental changes before detectable cues are present.\n\nMorphic Resonance: Correlations between similar patterns across time that exceed expectations based on conventional information transfer:\n\nC_T(P_1(t_1), P_2(t_2)) > C_max^conv(P_1, P_2, Δt)\n\nWhere P_i(t_i) are pattern instances at different times, and C_max^conv is the maximum correlation expected through conventional mechanisms.\n\nThese correlations might manifest as accelerated learning or development following similar developments elsewhere.\n\nRetrocausal Appearance: Systems whose behavior appears as if influenced by future states or measurements:\n\nφ(S(t_1)) = g(φ(S(t_1)), φ(M(t_2)))\n\nWhere S(t_1) is a system at time t_1, M(t_2) is a measurement at later time t_2, and g is a function describing the apparent influence.\n\nThese patterns appear in certain quantum systems where the choice of later measurement seems to affect earlier properties."
+}

@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes:033:126",
+  "name": "formalizes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Distributed Compute Mathematics",
+    "@id": "urn:uor:concept:distributed-compute-mathematics",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "formalizes the mathematical principles of distributed computation as coherence-preserving transformations",
+  "description": "The Distributed Compute resource formalizes the mathematical foundation that enables computational tasks to be distributed across network nodes while maintaining global coherence properties",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Distributed Compute",
+        "@id": "urn:uor:resource:distributed-compute"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:distributed-compute-mathematics"
+  ],
+  "valueName": "formalizes the mathematical principles of distributed computation as coherence-preserving transformations"
+}

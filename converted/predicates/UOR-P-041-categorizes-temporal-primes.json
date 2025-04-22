@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:categorizes-temporal-primes",
+  "name": "Categorizes Temporal Primes",
+  "description": "Classifies temporal prime elements into fundamental categories that span the space of possible dynamical behaviors.",
+  "propertyID": "UOR-P-041",
+  "value": "classification relationship",
+  "subject": "urn:uor:resource:temporal-prime-decomposition",
+  "object": "urn:uor:concept:temporal-prime-categories",
+  "relationshipStrength": "organizational",
+  "contextualDescription": "The Temporal Prime Decomposition resource categorizes temporal prime elements into five fundamental types (oscillatory, growth/decay, transition, fluctuation, and attractor primes) that together span the space of possible dynamical behaviors observed in natural and artificial systems."
+}

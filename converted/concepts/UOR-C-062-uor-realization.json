@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:uor-realization",
+  "name": "UOR Realization",
+  "description": "The concrete realization of Universal Object Reference (UOR) prime-coordinate axioms in the universal number system, demonstrating that abstract UOR principles can be implemented in a rigorous mathematical system.",
+  "termCode": "UOR-C-062",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Theorem 1 (UOR Realization): The universal number system } \\mathbb{U}",
+    "\\text{instantiates the UOR prime-coordinate axioms in that:}",
+    "\\text{1. Intrinsic Primes: Prime numbers serve as the atomic, irreducible elements}",
+    "\\text{2. Unique Factorization: Every universal number admits a unique representation}",
+    "\\text{in terms of prime components}",
+    "\\text{3. Prime-Coordinate Homomorphism: The mapping } \\phi: \\mathbb{U} \\to \\mathbb{C}^\\infty",
+    "\\text{transforms multiplication to coordinate addition}",
+    "\\text{4. Canonical Representation: The coordinate representation provides a minimal,}",
+    "\\text{observer-invariant encoding}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-number",
+    "urn:uor:concept:universal-prime-representation"
+  ],
+  "properties": {
+    "components": "Intrinsic primes, unique factorization, prime-coordinate homomorphism, canonical representation, coherence metrics, inner product structure, trilateral coherence"
+  },
+  "examples": [
+    "Integer factorization into primes as a concrete implementation of UOR's decomposition principles",
+    "Coordinate-based representation of complex numbers illustrating observer-invariant encoding"
+  ],
+  "theorems": [
+    "Theorem 1 (UOR Realization): The universal number system 𝕌 instantiates the UOR prime-coordinate axioms through seven key properties: intrinsic primes, unique factorization, prime-coordinate homomorphism, canonical representation, coherence metrics, inner product structure, and trilateral coherence."
+  ],
+  "sourceText": "Universal numbers represent a concrete realization of the prime-coordinate principle central to UOR:\n\nTheorem 1 (UOR Realization): The universal number system 𝕌 instantiates the UOR prime-coordinate axioms in that:\n\n1. Intrinsic Primes: Prime numbers serve as the atomic, irreducible elements of the system\n2. Unique Factorization: Every universal number admits a unique representation in terms of prime components\n3. Prime-Coordinate Homomorphism: The mapping φ: 𝕌 → ℂ^∞ transforms multiplication to coordinate addition\n4. Canonical Representation: The coordinate representation provides a minimal, observer-invariant encoding\n5. Coherence Metrics: The universal metric induces norms that measure representational complexity\n6. Inner Product Structure: The coordinate space supports inner products aligning with coherence principles\n7. Trilateral Coherence: Structure (primes), dynamics (operations), and observer frames (metrics) integrate coherently\n\nThis realization proves that the abstract UOR principles can be concretely implemented in a rigorous mathematical system with powerful computational properties."
+}

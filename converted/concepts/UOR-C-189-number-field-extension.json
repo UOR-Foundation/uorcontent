@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:number-field-extension",
+  "name": "Number Field Extension",
+  "description": "The extension of the UOR framework to algebraic number fields, where prime ideals serve as primes in the factorization and the prime coordinate map represents elements by their ideal factor exponents.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-189",
+  "text": "The Number Field Extension applies the UOR framework to algebraic number fields, providing a powerful generalization of prime factorization to these advanced mathematical structures.\n\nIn the ring of integers O_K of an algebraic number field K, the unique factorization of elements may fail (unlike in Z), but the factorization of ideals into prime ideals always exists and is unique. This key property of Dedekind domains allows the UOR framework to extend naturally to these settings.\n\nThe prime-coordinate map φ in this context maps each element α ∈ O_K to the vector of exponents in its ideal factorization. For a principal ideal (α) with prime ideal factorization:\n\n(α) = P₁^e₁ · P₂^e₂ · ... · Pₙ^eₙ\n\nwhere each Pᵢ is a prime ideal, the prime coordinate representation is:\n\nφ(α) = [(P₁, e₁), (P₂, e₂), ..., (Pₙ, eₙ)]\n\nThis mapping respects the homomorphism property that is central to UOR:\n\nφ(α·β) = φ(α) + φ(β)\n\nensuring that multiplication of elements corresponds to addition of their prime ideal exponent vectors.\n\nThe extension to number fields reveals deep connections to classical number theory. For example, the way rational primes split into prime ideals in number fields corresponds to patterns in the prime coordinate representations. The norm of an element in the number field relates to the determinant of its prime coordinate matrix when considering all conjugates.\n\nThis approach unifies results from algebraic number theory with the UOR framework. For instance, the class number of a number field—which measures how far the ring of integers is from being a UFD—can be interpreted as the dimension of the quotient space between the full prime ideal coordinate space and the subspace reachable by principal ideals.\n\nThe coherence norm in this setting provides a measure of complexity for algebraic integers that accounts for their factorization structure across multiple prime ideals, offering new insights into the intrinsic properties of these numbers.\n\nThis extension is particularly valuable in addressing classical problems in number theory, such as Diophantine equations, by providing a coordinate-based approach to analyzing factorization in extension fields.",
+  "mathExpression": [
+    "(\\alpha) = P_1^{e_1} \\cdot P_2^{e_2} \\cdot \\ldots \\cdot P_n^{e_n}",
+    "\\phi(\\alpha) = [(P_1, e_1), (P_2, e_2), \\ldots, (P_n, e_n)]",
+    "\\phi(\\alpha \\cdot \\beta) = \\phi(\\alpha) + \\phi(\\beta)",
+    "h_K = \\dim(\\mathbb{Z}^{P_K} / \\text{Im}(\\phi)) \\text{ where } h_K \\text{ is the class number}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Algebraic Number Field",
+      "@id": "urn:uor:concept:algebraic-number-field"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Ideal",
+      "@id": "urn:uor:concept:prime-ideal"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Dedekind Domain",
+      "@id": "urn:uor:concept:dedekind-domain"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

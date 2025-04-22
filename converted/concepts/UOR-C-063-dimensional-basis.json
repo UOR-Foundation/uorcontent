@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:dimensional-basis",
+  "name": "Dimensional Basis",
+  "description": "The concept that prime numbers form a complete basis for the universal number space, with each prime constituting an independent dimension in the coordinate space.",
+  "termCode": "UOR-C-063",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Theorem 2 (Dimensional Basis): The set of prime numbers forms a}",
+    "\\text{complete basis for the universal number space such that:}",
+    "\\text{1. Each prime constitutes an independent dimension in the coordinate space}",
+    "\\text{2. The full space of universal numbers is spanned by the prime dimensions}",
+    "\\text{3. Coordinate values quantify extent along each prime dimension}",
+    "\\text{4. Operations in the universal number space have natural coordinate interpretations}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:uor-realization",
+    "urn:uor:concept:universal-prime-representation"
+  ],
+  "properties": {
+    "components": "Independent prime dimensions, spanning capability, coordinate quantification, natural operational interpretations"
+  },
+  "examples": [
+    "Number 12 represented in prime-dimensional space as coordinates (2,1) along dimensions 2 and 3",
+    "Multiplication as coordinate-wise addition in prime-dimensional space"
+  ],
+  "theorems": [
+    "Theorem 2 (Dimensional Basis): The set of prime numbers forms a complete basis for the universal number space, with each prime as an independent dimension and coordinate values quantifying extent along each dimension."
+  ],
+  "sourceText": "Universal numbers embody the dimensional structure envisioned in UOR:\n\nTheorem 2 (Dimensional Basis): The set of prime numbers forms a complete basis for the universal number space such that:\n\n1. Each prime constitutes an independent dimension in the coordinate space\n2. The full space of universal numbers is spanned by the prime dimensions\n3. Coordinate values quantify extent along each prime dimension\n4. Operations in the universal number space have natural coordinate interpretations\n\nThis dimensional interpretation enables powerful geometric intuitions about numerical relationships and operations."
+}

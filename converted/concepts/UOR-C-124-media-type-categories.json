@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:media-type-categories",
+  "name": "Media Type Categories",
+  "description": "The classification of diverse media types according to their definitional requirements, including streaming media, interactive content, data structures, computational media, sensory data, and composite media.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-124",
+  "text": "The framework supports diverse media types, each with their own specific definitional requirements that address their unique characteristics and handling needs.\n\nThese categories include Streaming Media with video and audio streams with real-time delivery requirements; Interactive Content with media requiring bidirectional communication with specific latency constraints; Data Structures with structured data with specific integrity and relationship requirements; Computational Media with code and executable content with specific runtime environments; Sensory Data with input from physical sensors with specific fidelity and timing requirements; and Composite Media with media composed of multiple types with coherence requirements between components.\n\nEach category has distinct requirements that influence how its media types are defined within the framework. For example, streaming media prioritizes continuous delivery with bounded latency, while computational media emphasizes resource allocation and execution environment compatibility.\n\nThe categorization system provides a structure for understanding the diverse requirements of different media types, while the universal mathematical language of the framework ensures that all categories can be represented within the same coherent system.",
+  "mathExpression": [],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Media Type Framework",
+      "@id": "urn:uor:concept:media-type-framework"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Tripartite Applications",
+      "@id": "urn:uor:concept:tripartite-applications"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

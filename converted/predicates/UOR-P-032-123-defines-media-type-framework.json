@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines:032:123",
+  "name": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Media Type Framework",
+    "@id": "urn:uor:concept:media-type-framework",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "defines the structural components that form the media type definition system",
+  "description": "The Media Type Definition resource defines the framework components including attribute specification, coherence requirements, optimization parameters, transformation rules, and resource requirements",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Media Type Definition",
+        "@id": "urn:uor:resource:media-type-definition"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:media-type-framework"
+  ],
+  "valueName": "defines the structural components that form the media type definition system"
+}

@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes:038:149",
+  "name": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Valuation Properties",
+    "@id": "urn:uor:concept:valuation-properties",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "describes the essential mathematical properties of the prime valuation function",
+  "description": "The Prime Formula resource describes how the valuation function behaves for operations like multiplication and addition, and for special elements like units and primes",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Prime Formula",
+        "@id": "urn:uor:resource:prime-formula"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:valuation-properties"
+  ],
+  "valueName": "describes the essential mathematical properties of the prime valuation function"
+}

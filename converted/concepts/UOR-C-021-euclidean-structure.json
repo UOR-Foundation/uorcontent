@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:euclidean-structure",
+  "name": "Euclidean Structure",
+  "description": "The natural geometric structure inherited by prime-coordinate space from the coherence norm and inner product, providing measures of complexity and similarity.",
+  "termCode": "UOR-C-021",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "||φ(x)||",
+    "⟨φ(x),φ(y)⟩"
+  ],
+  "relatedConcepts": [
+    "urn:uor:concept:prime-space-geometry",
+    "urn:uor:concept:coherence-norm",
+    "urn:uor:concept:coherence-inner-product"
+  ],
+  "sourceText": "The prime-coordinate space inherits a natural Euclidean structure from the coherence norm and inner product. The coherence norm ||φ(x)|| measures the intrinsic complexity of an object. The inner product ⟨φ(x),φ(y)⟩ quantifies the degree of prime-factor similarity. Angles between coordinate vectors represent compositional relationships. Orthogonal objects have no common prime factors.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

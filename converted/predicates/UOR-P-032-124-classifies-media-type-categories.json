@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:classifies:032:124",
+  "name": "classifies",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Media Type Categories",
+    "@id": "urn:uor:concept:media-type-categories",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "classifies diverse media types according to their definitional requirements",
+  "description": "The Media Type Definition resource classifies diverse media types including streaming media, interactive content, data structures, computational media, sensory data, and composite media",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Media Type Definition",
+        "@id": "urn:uor:resource:media-type-definition"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:media-type-categories"
+  ],
+  "valueName": "classifies diverse media types according to their definitional requirements"
+}

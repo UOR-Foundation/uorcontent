@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes:045:177",
+  "name": "establishes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Coherence Inner Product Connections",
+    "@id": "urn:uor:concept:axiom-coherence-inner-product-connections"
+  },
+  "value": "establishes the connections between the Coherence Inner Product Axiom and other core axioms",
+  "description": "The Coherence Inner Product Axiom resource establishes how this axiom extends the Coherence Norm, provides the geometric foundation for Canonical Representation, and bridges to Trilateral Coherence by enabling precise descriptions of structural relationships across different observer frames",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Coherence Inner Product Axiom",
+      "@id": "urn:uor:resource:axiom-coherence-inner-product"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

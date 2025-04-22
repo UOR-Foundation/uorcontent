@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-block-conversion",
+  "name": "Defines Block Conversion",
+  "description": "Establishes the formal definition and conceptual foundation of block conversion in the UOR framework.",
+  "value": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Block Conversion Definition",
+    "description": "The fundamental concept of block conversion as a means to transform data between different bit-width representations while preserving essential information."
+  },
+  "propertyID": "UOR-P-063",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Block Conversion",
+    "@id": "urn:uor:resource:block-conversion"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Block Conversion Definition",
+    "@id": "urn:uor:concept:block-conversion-definition"
+  },
+  "relationshipStrength": 1,
+  "properties": {
+    "relationshipType": "definition",
+    "context": "signal processing"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes:042:165",
+  "name": "establishes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Prime-Coordinate Homomorphism Connections",
+    "@id": "urn:uor:concept:axiom-prime-coordinate-homomorphism-connections"
+  },
+  "value": "establishes the connections between the Prime-Coordinate Homomorphism Axiom and other core axioms",
+  "description": "The Prime-Coordinate Homomorphism Axiom resource establishes how this axiom builds on the Unique Factorization axiom and serves as the foundation for the Coherence Norm and Canonical Representation, creating a pivotal bridge between the theoretical foundation and practical application of the UOR framework",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Prime-Coordinate Homomorphism Axiom",
+      "@id": "urn:uor:resource:axiom-prime-coordinate-homomorphism"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

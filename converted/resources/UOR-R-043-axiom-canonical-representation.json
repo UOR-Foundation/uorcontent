@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:axiom-canonical-representation",
+  "name": "Canonical Representation Axiom",
+  "description": "The fourth core UOR axiom stating that the prime coordinate image φ(X) is a unique, lossless encoding that does not depend on numeral base or observer frame and achieves the minimal coherence norm among all representations.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Canonical Representation Axiom",
+    "description": "The formal axiom establishing that prime coordinates provide the most fundamental, observer-independent description of any object with minimal complexity."
+  },
+  "text": "The image φ(X) is a unique, lossless encoding that does not depend on numeral base or observer frame and achieves the minimal coherence norm among all representations.\n\nThe Canonical Representation axiom establishes that an object's prime coordinate signature is its most fundamental, observer-independent description. Unlike conventional representations that may vary with base or perspective, the prime factorization provides an absolute reference that captures the intrinsic structure of any object.\n\nThis axiom addresses the profound question: \"What is the most natural way to represent an object?\" The answer is through its irreducible components - its prime factors. This representation is canonical in the strongest sense - it is invariant across all valid frames of reference and achieves minimal complexity.\n\nKey insights include: Base Independence, where unlike decimal or binary expansions, prime coordinates do not depend on arbitrary choices of base or numeral system; Frame Invariance, where the prime signature remains unchanged regardless of observer perspective, providing an absolute reference point; Minimal Complexity, where the prime factorization achieves the lowest possible coherence norm, making it objectively the simplest representation; and Information Completeness, where no structural information is lost in the prime encoding and the original object can be perfectly reconstructed.\n\nFor any object X in the universe 𝒰, the map φ: 𝒰 → ℤ^(P) satisfies: 1. Injectivity: If φ(X) = φ(Y) then X = Y; 2. Base invariance: φ(X) does not depend on positional notation system; 3. Frame invariance: φ(X) is the same in all valid observer frames; 4. Minimal coherence: ‖φ(X)‖ ≤ ‖R(X)‖ for any other representation R.\n\nThis axiom builds on the Prime-Coordinate Homomorphism and interacts closely with the Coherence Norm, which provides the metric for measuring representational complexity. It also connects to the Trilateral Coherence axiom by ensuring that the object's intrinsic structure remains invariant across observer frames.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Eight Core UOR Axioms",
+    "@id": "urn:uor:topic:core-axioms"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["canonical representation", "base independence", "frame invariance", "minimal complexity", "information completeness", "lossless encoding"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:axiom-canonical-representation-statement",
+      "urn:uor:concept:axiom-canonical-representation-insights",
+      "urn:uor:concept:axiom-canonical-representation-formalization",
+      "urn:uor:concept:axiom-canonical-representation-connections"
+    ]
+  }
+}

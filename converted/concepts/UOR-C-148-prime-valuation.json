@@ -1,0 +1,43 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:prime-valuation",
+  "name": "Prime Valuation",
+  "description": "The mathematical function that returns the highest power of a prime that divides an element, forming the basis for the prime-coordinate mapping in the UOR framework.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-148",
+  "text": "The prime valuation function is a fundamental mathematical tool that quantifies the contribution of each prime to the structure of an element. This function, denoted as v_p(x), returns the highest power of prime p that divides element x, providing a precise measure of how much of that prime is contained in the element's factorization.\n\nIn practical terms, v_p(x) equals the exponent of prime p in the canonical factorization of x. For example, considering the integer 12 with its factorization 2² · 3, the valuation function yields v_2(12) = 2 because 2² divides 12, but 2³ does not. Similarly, v_3(12) = 1 because 3¹ divides 12, but 3² does not. For any prime that does not appear in the factorization, such as 5, the valuation is 0: v_5(12) = 0.\n\nThe prime valuation function serves as the bridge between canonical factorization and coordinate representation. By computing the valuation for each relevant prime, one obtains the coordinates of an element in the prime-based coordinate system. This connection makes the valuation function essential to the entire representational framework.\n\nThe valuation function extends naturally to define the prime-coordinate map φ, which maps each element to its vector of prime exponents: φ(x) = (v_p(x))_p. This mapping is the mathematical basis for the UOR framework's representation system, transforming elements from their original domain into vectors in an exponent space where their prime structure becomes explicit and analyzable.",
+  "mathExpression": [
+    "v_p(x) = \\text{highest power of $p$ that divides $x$}",
+    "v_2(12) = 2 \\text{ because } 2^2 \\text{ divides } 12 \\text{, but } 2^3 \\text{ does not}",
+    "\\phi(x) = (v_p(x))_p"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Canonical Factorization",
+      "@id": "urn:uor:concept:canonical-factorization"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Valuation Properties",
+      "@id": "urn:uor:concept:valuation-properties"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Coordinate Map",
+      "@id": "urn:uor:concept:prime-coordinate-map"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

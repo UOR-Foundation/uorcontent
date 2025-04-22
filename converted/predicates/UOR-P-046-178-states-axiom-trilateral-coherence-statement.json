@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:states:046:178",
+  "name": "states",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Trilateral Coherence Statement",
+    "@id": "urn:uor:concept:axiom-trilateral-coherence-statement"
+  },
+  "value": "states the formal definition of the Trilateral Coherence Axiom as the integration of structure, dynamics, and observer",
+  "description": "The Trilateral Coherence Axiom resource states that every valid description of an object incorporates three coherent aspects: its intrinsic prime-coordinate structure, the dynamics (composition rules), and the observer reference frame, establishing that these three aspects form an inseparable whole",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Trilateral Coherence Axiom",
+      "@id": "urn:uor:resource:axiom-trilateral-coherence"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:connects-spatiotemporal-concepts",
+  "name": "connects",
+  "propertyID": "uor:predicate",
+  "value": "related spatiotemporal concepts",
+  "subjectOf": {
+    "@id": "urn:uor:concept:spatiotemporal-manifold"
+  },
+  "targetCollection": [
+    "urn:uor:concept:spatiotemporal-reference-frame",
+    "urn:uor:concept:lorentz-invariant-prime-decomposition"
+  ],
+  "valueName": "The spatiotemporal manifold concept connects to related spatiotemporal concepts",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "connects"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 0.9
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

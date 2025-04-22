@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:enhances-uor-framework",
+  "name": "enhances UOR framework",
+  "propertyID": "uor:predicate",
+  "value": "enhances UOR framework",
+  "subjectOf": {
+    "@id": "urn:uor:resource:algebraic-topological-enhancements"
+  },
+  "targetCollection": [
+    "urn:uor:concept:clifford-algebra-structure",
+    "urn:uor:concept:sheaf-structure",
+    "urn:uor:concept:quantum-reference-frame"
+  ],
+  "valueName": "enhancement relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "enhances UOR framework"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

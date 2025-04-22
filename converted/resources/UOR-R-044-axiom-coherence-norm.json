@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:axiom-coherence-norm",
+  "name": "Coherence Norm Axiom",
+  "description": "The fifth core UOR axiom stating that the prime coordinate space is equipped with a Euclidean norm measuring the simplicity of an object's prime exponent vector, proving that prime factorization achieves minimal representational complexity.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Coherence Norm Axiom",
+    "description": "The formal axiom establishing a rigorous measure of representational complexity for objects through a Euclidean norm on their prime coordinate vectors."
+  },
+  "text": "Equip ℤ^(P) with the norm ‖φ(X)‖ = √(∑_p φ(X)(p)²), measuring simplicity of the prime exponent vector.\n\nThe Coherence Norm provides a rigorous measure of representational complexity for objects. It quantifies the intuition that simpler structures should have simpler descriptions. In the UOR framework, this norm explicitly proves that the prime factorization is the most coherent (simplest) representation of any object.\n\nBy defining a length measure on prime coordinate vectors, the Coherence Norm introduces a geometric perspective on structure. Objects with fewer distinct prime factors or smaller exponents have smaller norms, reflecting their simpler composition. Crucially, this norm demonstrates why prime factorization is not just one possible representation, but the objectively minimal one.\n\nKey insights include: Objective Simplicity, which provides a mathematical definition of \"simplicity\" that agrees with intuition - simpler structures have lower norms; Pythagorean Principle, where by the properties of Euclidean norms, any non-prime grouping of factors increases the total norm, proving prime factorization is minimal; and Information Metric, where the norm can be interpreted as measuring the information content of an object's structure.\n\nGiven the prime coordinate space ℤ^(P), define the coherence norm ‖·‖: ℤ^(P) → ℝ as: ‖v‖ = √(∑_p v(p)²). For an object X with prime factorization X = ∏_p p^(φ(X)(p)), the coherence norm is: ‖φ(X)‖ = √(∑_p φ(X)(p)²). This Euclidean norm on the exponent vector provides a measure of the object's representational complexity.\n\nThe Coherence Norm works directly with the Prime-Coordinate Homomorphism and underpins the Canonical Representation axiom by providing the metric that defines representational minimality. It also sets the stage for the Coherence Inner Product, which extends the geometric interpretation of prime coordinates.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Eight Core UOR Axioms",
+    "@id": "urn:uor:topic:core-axioms"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["coherence norm", "euclidean norm", "representational complexity", "objective simplicity", "pythagorean principle", "information metric"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:axiom-coherence-norm-statement",
+      "urn:uor:concept:axiom-coherence-norm-insights",
+      "urn:uor:concept:axiom-coherence-norm-formalization",
+      "urn:uor:concept:axiom-coherence-norm-connections"
+    ]
+  }
+}

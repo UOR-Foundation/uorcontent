@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:formal-algebraic-generalizations",
+  "name": "UOR Algebraic Generalizations",
+  "description": "Extensions of the UOR framework to diverse algebraic structures using universal algebra, commutative and non-commutative algebra, lattice theory, and field theory.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-207",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "UOR Algebraic Generalizations extend the framework to diverse algebraic structures, demonstrating how the prime-coordinate concept transcends its origins in elementary number theory to apply across the broader landscape of abstract algebra. These generalizations maintain the core principle of decomposing complex structures into simpler, irreducible components while adapting to the specific properties of each algebraic domain.\n\nThe Universal Algebra Framework provides the most general algebraic extension, applying to any algebraic structure A with operations Ω. It defines the generalized prime-coordinate map as φ_Ω(x) = (φ_ω(x))_{ω ∈ Ω}, where each φ_ω captures the behavior of element x under operation ω. This formulation creates a coherent approach to prime coordinates across diverse algebraic systems, from groups and rings to modules, algebras, and beyond, unifying their treatment within the UOR perspective.\n\nCommutative Algebra applications refine the framework for commutative rings with unique factorization, where the prime-coordinate map takes the form φ_R(x) = ((p_1, a_1), (p_2, a_2), ..., (p_n, a_n)) for an element x = u · p_1^{a_1} · p_2^{a_2} · ... · p_n^{a_n} with u a unit. This directly extends the original integer factorization to polynomial rings, algebraic number fields, and other commutative domains, maintaining the essential connection between multiplication and addition of exponents.\n\nNon-Commutative Structures require special handling due to the order-dependence of operations. Here, the prime-coordinate map is adapted as φ_NC(x) = {(p, a, pos_p) | p^a appears in the normal form of x at position pos_p}, encoding not just the exponents but also the positions of prime factors in a standardized normal form. This extension applies to free groups, skew polynomial rings, and various non-commutative algebras, preserving the factorization principle while accounting for non-commutativity.\n\nLattice Theory provides another algebraic generalization where the prime-coordinate map is defined as φ_L(x) = {(p, r_p(x)) | p ∈ J(L)}, with J(L) being the set of join-irreducible elements and r_p(x) representing the relevance of p to x. This formulation extends UOR to distributive lattices, Boolean algebras, and Heyting algebras, connecting prime coordinates to the fundamental properties of order theory and algebraic logic.\n\nField Theory extensions apply UOR principles to field extensions by tracking minimal polynomials through φ_F(α) = {(p, ord_p(α)) | p irreducible in F[x]}, where ord_p(α) is the order of p in the factorization of the minimal polynomial of α. This approach connects UOR to Galois theory, field extensions, and algebraic number theory, providing insight into the intrinsic structure of algebraic elements through their irreducible polynomial factors.",
+  "mathExpression": [
+    "\\phi_{\\Omega}(x) = (\\phi_{\\omega}(x))_{\\omega \\in \\Omega}",
+    "\\phi_R(x) = ((p_1, a_1), (p_2, a_2), ..., (p_n, a_n)) \\text{ where } x = u \\cdot p_1^{a_1} \\cdot p_2^{a_2} \\cdot ... \\cdot p_n^{a_n}",
+    "\\phi_{NC}(x) = \\{(p, a, pos_p) \\mid p^a \\text{ appears in the normal form of } x \\text{ at position } pos_p\\}",
+    "\\phi_L(x) = \\{(p, r_p(x)) \\mid p \\in J(L)\\}",
+    "\\phi_F(\\alpha) = \\{(p, ord_p(\\alpha)) \\mid p \\text{ irreducible in } F[x]\\}"
+  ],
+  "alternateName": ["Algebraic UOR Framework", "Abstract Algebraic UOR"]
+}

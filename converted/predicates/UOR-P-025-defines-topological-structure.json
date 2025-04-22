@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-topological-structure",
+  "name": "defines topological structure",
+  "propertyID": "uor:predicate",
+  "value": "defines topological structure",
+  "subjectOf": {
+    "@id": "urn:uor:resource:topological-properties"
+  },
+  "targetCollection": [
+    "urn:uor:concept:multi-metric-topology",
+    "urn:uor:concept:coordinate-topology",
+    "urn:uor:concept:topological-field",
+    "urn:uor:concept:topological-coherence-axioms"
+  ],
+  "valueName": "topological definition relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "defines topological structure"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:introduces:049:190",
+  "name": "introduces",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Hyperbolic Prime Geometry",
+    "@id": "urn:uor:concept:hyperbolic-prime-geometry"
+  },
+  "value": "introduces hyperbolic geometry extension in prime coordinate space",
+  "description": "The Recent Extensions resource introduces the concept that the prime coordinate space admits a natural hyperbolic metric when extended to include infinite-dimensional vectors, revealing connections to modular forms and spectral theory of automorphic representations",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Recent Extensions",
+      "@id": "urn:uor:resource:recent-extensions"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

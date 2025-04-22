@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes:044:173",
+  "name": "establishes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Coherence Norm Connections",
+    "@id": "urn:uor:concept:axiom-coherence-norm-connections"
+  },
+  "value": "establishes the connections between the Coherence Norm Axiom and other core axioms",
+  "description": "The Coherence Norm Axiom resource establishes how this axiom works directly with the Prime-Coordinate Homomorphism, underpins the Canonical Representation by providing the metric for representational minimality, and sets the stage for the Coherence Inner Product, serving as a bridging element within the UOR framework",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Coherence Norm Axiom",
+      "@id": "urn:uor:resource:axiom-coherence-norm"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

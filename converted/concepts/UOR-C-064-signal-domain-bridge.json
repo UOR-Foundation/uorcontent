@@ -1,0 +1,43 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:signal-domain-bridge",
+  "name": "Signal Domain Bridge",
+  "description": "How universal numbers enable transformations between signal domains through universal coordinate representation, cross-domain transformation, information preservation, and dimensional transcendence.",
+  "termCode": "UOR-C-064",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Theorem 3 (Signal Domain Bridge): Universal numbers enable transformations}",
+    "\\text{between signal domains through:}",
+    "\\text{1. Universal Coordinate Representation: Signals in any domain can be encoded}",
+    "\\text{in prime-coordinate form}",
+    "\\text{2. Cross-Domain Transformation: The prime-coordinate representation enables coherent}",
+    "\\text{mapping between time, frequency, and other domains}",
+    "\\text{3. Information Preservation: Transformations via prime coordinates preserve the}",
+    "\\text{essential information content of signals}",
+    "\\text{4. Dimensional Transcendence: Signals can be coherently represented across}",
+    "\\text{different dimensionalities while preserving structure}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:dimensional-basis",
+    "urn:uor:concept:coherence-measurement"
+  ],
+  "properties": {
+    "components": "Universal coordinate representation, cross-domain transformation, information preservation, dimensional transcendence"
+  },
+  "examples": [
+    "Transforming time-domain signals to frequency domain through prime-coordinate representation",
+    "Converting between different dimensionality representations while preserving information content"
+  ],
+  "theorems": [
+    "Theorem 3 (Signal Domain Bridge): Universal numbers enable transformations between signal domains through universal coordinate representation, cross-domain transformation, information preservation, and dimensional transcendence.",
+    "Theorem 4 (Effective Block Conversion): Universal numbers enable block conversion through coordinate analysis, structure-preserving transformation, domain synthesis, and complexity control."
+  ],
+  "sourceText": "Universal numbers establish a rigorous foundation for the signal processing principles of UOR:\n\nTheorem 3 (Signal Domain Bridge): Universal numbers enable transformations between signal domains through:\n\n1. Universal Coordinate Representation: Signals in any domain can be encoded in prime-coordinate form\n2. Cross-Domain Transformation: The prime-coordinate representation enables coherent mapping between time, frequency, and other domains\n3. Information Preservation: Transformations via prime coordinates preserve the essential information content of signals\n4. Dimensional Transcendence: Signals can be coherently represented across different dimensionalities while preserving structure\n\nThis theorem establishes universal numbers as the mathematical foundation for the Universal Transforms developed in the signal processing section.\n\nUniversal numbers provide the computational mechanism for Block Conversion:\n\nTheorem 4 (Effective Block Conversion): Given signals in domains D₁ and D₂, universal numbers enable block conversion through:\n\n1. Coordinate Analysis: Decomposition of input signal into prime-coordinate representation\n2. Structure-Preserving Transformation: Mapping between coordinate representations that maintains essential structure\n3. Domain Synthesis: Reconstruction of output signal in the target domain\n4. Complexity Control: Management of computational complexity through coordinate-based approximation\n\nThis implementation provides concrete algorithms for the theoretical transformations described in the signal processing section."
+}

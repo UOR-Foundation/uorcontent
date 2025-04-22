@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:explains:041:159",
+  "name": "explains",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Unique Factorization Insights",
+    "@id": "urn:uor:concept:axiom-unique-factorization-insights"
+  },
+  "value": "explains the key insights derived from the Unique Factorization Axiom",
+  "description": "The Unique Factorization Axiom resource explains the profound insights of structural fingerprinting, canonical representation, and isomorphism foundation that emerge from the uniqueness of prime factorization",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Unique Factorization Axiom",
+      "@id": "urn:uor:resource:axiom-unique-factorization"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

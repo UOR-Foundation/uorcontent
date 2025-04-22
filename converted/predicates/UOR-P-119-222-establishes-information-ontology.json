@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-information-ontology",
+  "name": "establishes information ontology",
+  "description": "Relation indicating that a resource establishes an ontological principle that the universe's physical substrate is fundamentally structured information",
+  "propertyID": "UOR-P-119",
+  "value": "The resource establishes the fundamental ontological principle that the universe's physical substrate is nothing but structured information—prime-coordinate patterns that maintain coherence across observer frames. Matter, energy, space, and time emerge as aspects of this information structure. This reframes physical reality not as substance but as pattern, where the fundamental 'stuff' of the universe is informational coherence expressed through prime-coordinate structures.",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "name": "relation strength",
+    "value": "strong"
+  },
+  "subject": {
+    "@id": "urn:uor:resource:ultimate-implication"
+  },
+  "object": {
+    "@id": "urn:uor:concept:information-as-substance"
+  }
+}

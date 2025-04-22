@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-computability",
+  "name": "establishes computability",
+  "propertyID": "uor:predicate",
+  "value": "establishes computability",
+  "subjectOf": {
+    "@id": "urn:uor:resource:computability-aspects"
+  },
+  "targetCollection": [
+    "urn:uor:concept:computable-universal-number",
+    "urn:uor:concept:coordinate-computability",
+    "urn:uor:concept:universal-number-algorithms",
+    "urn:uor:concept:computational-complexity-classes"
+  ],
+  "valueName": "computational foundation relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "establishes computability"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

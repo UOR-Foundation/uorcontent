@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:norm-minimality",
+  "name": "Norm Minimality",
+  "description": "The theorem establishing that among all possible factorizations of an object, the prime factorization uniquely minimizes the coherence norm, proven through the Cauchy-Schwarz inequality.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-151",
+  "text": "The Minimality Theorem is a central result in the UOR framework that establishes the optimality of prime factorization from the perspective of the coherence norm. This theorem provides a rigorous mathematical justification for why prime factorization is the most natural and efficient way to represent objects in terms of their fundamental components.\n\nFormally, the theorem states that among all possible factorizations of an object x into irreducible or composite factors, the canonical prime factorization uniquely minimizes the coherence norm. This means that if we consider any alternative way of factoring x, the resulting coherence norm would be strictly greater than that of the prime factorization.\n\nThe proof of this theorem relies on the Cauchy-Schwarz inequality, a fundamental result in linear algebra and analysis. When a composite factor is split into its constituent primes, the resulting increase in the number of factors is offset by a decrease in the overall norm, in accordance with the inequality. This mathematical relationship ensures that the minimal norm is achieved precisely when all factors are primes.\n\nThe minimality property has a profound interpretation: it establishes prime factorization as the most efficient encoding of an object's structure. Efficiency here is measured in terms of the coherence norm, which can be understood as a form of representational complexity. Any departure from the prime factorization—for instance, by grouping primes into composite factors—would result in a representation with higher complexity according to this measure.\n\nThis theorem connects the UOR framework to information theory and computational complexity, suggesting that prime factorization captures the essential structure of objects in the most economical way. The fact that this result emerges from standard mathematical principles like the Cauchy-Schwarz inequality demonstrates the natural alignment of the UOR approach with established mathematical theory, rather than contradicting it.",
+  "mathExpression": [
+    "\\text{For any factorization } x = f_1 \\cdot f_2 \\cdot \\ldots \\cdot f_m \\text{ where each } f_i \\text{ may be composite:}",
+    "\\|x\\|_c \\leq \\sum_{i=1}^{m} \\|f_i\\|_c",
+    "\\text{with equality if and only if each } f_i \\text{ is a prime or unit}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Coherence Norm Definition",
+      "@id": "urn:uor:concept:coherence-norm-definition"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Canonical Factorization",
+      "@id": "urn:uor:concept:canonical-factorization"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:prime-formula-foundation",
+  "name": "Prime Formula Foundation",
+  "description": "The fundamental mathematical basis for the prime formula, establishing its role in defining prime decomposition and valuation processes in unique factorization domains.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-146",
+  "text": "The Prime Formula provides the foundational mathematical framework that rigorously defines how objects in a domain can be represented in terms of their prime components. This formulation serves as the bridge between the abstract concept of unique factorization and the concrete systems of representation that form the basis of the UOR framework.\n\nAt its core, the Prime Formula establishes a precise mathematical language for describing the decomposition of elements into their prime constituents. It formalizes the process by which any non-zero, non-unit element in a Unique Factorization Domain can be expressed as a product of prime powers, and it defines the mapping between these factorizations and coordinate representations.\n\nThis mathematical foundation extends beyond simple integer factorization to encompass a wide range of algebraic structures that exhibit unique factorization properties. By establishing general formulas that apply across diverse domains—from number systems to polynomials to more abstract algebraic structures—the Prime Formula creates a universal language for decomposition and representation.\n\nThe Prime Formula serves as the rigorous underpinning for the entire UOR framework, providing the precise definitions and properties that ensure the mathematical consistency and validity of the framework's approach. It connects the intuitive concept of breaking objects into prime components with formal mathematical structures like valuation functions and coordinate mappings, establishing the theoretical foundation upon which more complex aspects of the framework are built.",
+  "mathExpression": [],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Canonical Factorization",
+      "@id": "urn:uor:concept:canonical-factorization"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Unique Factorization",
+      "@id": "urn:uor:concept:factorization-theorem"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

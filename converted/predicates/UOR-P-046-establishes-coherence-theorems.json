@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-coherence-theorems",
+  "name": "Establishes Coherence Theorems",
+  "description": "Establishes fundamental mathematical theorems that determine the properties, guarantees, and constraints of coherence-preserving dynamical systems.",
+  "propertyID": "UOR-P-046",
+  "value": "theoretical relationship",
+  "subject": "urn:uor:resource:coherence-preserving-dynamics",
+  "object": "urn:uor:concept:coherence-preservation-theorems",
+  "relationshipStrength": "fundamental",
+  "contextualDescription": "The Coherence-Preserving Dynamics resource establishes four key theorems that govern coherence-preserving systems: the Coherence Preservation Theorem, Coherence Convergence Theorem, Coherence Conservation Theorem, and Coherence Fluctuation Theorem, providing a mathematical foundation for analyzing such systems."
+}

@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:media-type-foundation",
+  "name": "Media Type Foundation",
+  "description": "The mathematical foundation that enables media types to express their intrinsic requirements through the universal number representation, creating a coherent framework for specifying optimal handling characteristics.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-122",
+  "text": "The mathematical foundation of Media Type Definition connects directly to the prime coordinate representation of the UOR framework. By expressing media attributes in prime coordinates, the system creates a universal language for describing content characteristics across different domains (transport, storage, runtime).\n\nFor a media type M, its definition in the Internet Substrate Protocols is expressed as: Def(M) = (φ_t(M), φ_s(M), φ_r(M), R_M), where φ_t(M) defines transport attributes in prime coordinates, φ_s(M) defines storage attributes in prime coordinates, φ_r(M) defines runtime attributes in prime coordinates, and R_M specifies the coherence relationships between these domains.\n\nThis mathematical structure enables precise specification of handling requirements that integrates seamlessly with the underlying structures of the Internet Substrate Protocols. The coherence requirements between different representations are expressed as C(T_a(M), T_b(M)) > τ_M, where T_a and T_b represent transformations between different representations, and τ_M is the minimum coherence threshold for media type M.",
+  "mathExpression": [
+    "Def(M) = (\\phi_t(M), \\phi_s(M), \\phi_r(M), R_M)",
+    "\\phi_t(M) = \\{d: digest\\_size, c: conversion\\_ratio, f: frame\\_attributes, ...\\}",
+    "\\phi_t(video\\_hd) = \\{d: 32bit, c: 10:1, f: variable\\_length, ...\\}",
+    "C(T_a(M), T_b(M)) > \\tau_M"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Coordinate Representation",
+      "@id": "urn:uor:concept:prime-coordinate-representation"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Coherence Norm",
+      "@id": "urn:uor:concept:coherence-norm"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Tripartite Definition",
+      "@id": "urn:uor:concept:tripartite-definition"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

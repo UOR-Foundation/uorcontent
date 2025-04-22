@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-decomposition-methods",
+  "name": "Describes Decomposition Methods",
+  "description": "Describes the computational algorithms and mathematical techniques used to calculate temporal prime decomposition.",
+  "propertyID": "UOR-P-042",
+  "value": "methodological relationship",
+  "subject": "urn:uor:resource:temporal-prime-decomposition",
+  "object": "urn:uor:concept:temporal-decomposition-methods",
+  "relationshipStrength": "implementational",
+  "contextualDescription": "The Temporal Prime Decomposition resource describes several computational methods (Temporal Sieve Algorithm, Spectral Decomposition Method, and Dynamical Mode Decomposition) that enable the practical application of temporal prime decomposition to observed dynamical systems."
+}

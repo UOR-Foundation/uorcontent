@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:physics-mass-energy",
+  "name": "UOR Mass-Energy Relations",
+  "description": "The emergence of physical quantities such as mass, energy, and momentum from the structure of the prime-coordinate space in the UOR framework.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-195",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "The UOR Mass-Energy Relations concept provides a rigorous mathematical formalism for understanding how physical quantities like mass, energy, and momentum emerge naturally from the structure of prime-coordinate space.\n\nInertial mass is defined as the resistance to acceleration in coherence space, expressed as m_I(X) = ‖φ(X)‖_g, where ‖·‖_g denotes the norm under the coherence metric g. This formulation captures the intuitive understanding of mass as resistance to change in motion, but reframes it as resistance to change in prime-coordinate representation.\n\nGravitational mass is defined through a coupling term in a coherence gauge potential, expressed as m_G(X) = ∂S/∂φ(X), where S is the action functional governing geodesic motion. This formulation explains how mass creates and responds to curvature in prime-coordinate space.\n\nThe equivalence principle, a cornerstone of general relativity, emerges naturally in the UOR framework as a direct consequence of the fiber bundle structure. The equivalence is expressed mathematically as m_I(X) = m_G(X) = ‖φ(X)‖_g for all objects X, demonstrating that inertial and gravitational mass are identical within the framework.\n\nEnergy-mass relations, including Einstein's famous E = mc², are reinterpreted within the framework as E(X) = c² · ‖φ(X)‖_g², where energy represents the total coherence complexity of an object. This formulation unifies the concepts of mass and energy by showing they are different aspects of the same underlying prime-coordinate structure.\n\nKinetic and potential energy also find natural expressions within the framework. Kinetic energy T(X) = (1/2)‖dφ(X)/dt‖_g² measures the rate of change of prime coordinates, while potential energy V(X,Y) = ∫_φ(X)^φ(Y) F_φ · dφ captures the coherence tension between different configurations in prime space.",
+  "mathExpression": [
+    "m_I(X) = \\|\\phi(X)\\|_g",
+    "m_G(X) = \\partial S/\\partial\\phi(X)",
+    "m_I(X) = m_G(X) = \\|\\phi(X)\\|_g",
+    "E(X) = c^2 \\cdot \\|\\phi(X)\\|_g^2",
+    "T(X) = (1/2)\\|d\\phi(X)/dt\\|_g^2",
+    "V(X,Y) = \\int_{\\phi(X)}^{\\phi(Y)} F_\\phi \\cdot d\\phi"
+  ],
+  "alternateName": ["Prime-Coordinate Energy", "UOR Mass Theory"]
+}

@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:enables:032:125",
+  "name": "enables",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Media Type Applications",
+    "@id": "urn:uor:concept:media-type-applications",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "enables practical capabilities through the media type definition framework",
+  "description": "The Media Type Definition resource enables practical capabilities including content-optimized delivery, format-independent processing, adaptive storage optimization, coherent media transformation, resource prediction, and cross-format interoperability",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Media Type Definition",
+        "@id": "urn:uor:resource:media-type-definition"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:media-type-applications"
+  ],
+  "valueName": "enables practical capabilities through the media type definition framework"
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:explains-transform-mechanics",
+  "name": "Explains Transform Mechanics",
+  "description": "Explains the operational processes and steps involved in applying universal transforms to convert signals between different representational domains.",
+  "propertyID": "UOR-P-061",
+  "value": "explanatory relationship",
+  "subject": "urn:uor:resource:universal-transforms",
+  "object": "urn:uor:concept:transform-mechanics",
+  "relationshipStrength": "procedural",
+  "contextualDescription": "The Universal Transforms resource explains the mechanics of how universal transforms are applied, involving coordinate mapping from source representation to prime coordinates, structure identification of essential patterns, coordinate transformation preserving structural invariants, representation synthesis generating the target representation, and coherence verification ensuring preserved metrics."
+}

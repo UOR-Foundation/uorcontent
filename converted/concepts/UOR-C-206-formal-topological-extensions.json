@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:formal-topological-extensions",
+  "name": "UOR Topological Extensions",
+  "description": "Extensions of the UOR framework to continuous domains using spectral spaces, sheaf cohomology, persistent homology, topos theory, and non-Archimedean topology.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-206",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "UOR Topological Extensions provide a powerful set of mathematical tools for generalizing the prime-coordinate structure from discrete to continuous domains. These extensions allow the UOR framework to apply to geometric, analytical, and topological structures where the discrete notion of prime factorization must be replaced with continuous analogues.\n\nSpectral spaces form a foundational topological extension, where the space of prime ideals Spec(R) in a ring R is equipped with the Zariski topology. This approach generalizes the prime-coordinate map to φ_topo(x) = {p ∈ Spec(R) | x ∈ p}, mapping each element to its support in the prime spectrum. This extension connects UOR directly to algebraic geometry, where the prime spectrum is a central object of study, and provides a bridge between the discrete arithmetic properties of rings and their geometric interpretations.\n\nSheaf cohomology extends UOR by capturing how prime structures integrate across a topological space, formalizing local-to-global principles through the isomorphism H^i(X, φ_∗F) ≅ H^i(Spec(R), F), where φ_∗ is the direct image of the prime-coordinate map. This cohomological perspective allows the tracking of obstructions to extending prime-coordinate data from local to global settings, directly connecting UOR to homological methods in algebraic topology and algebraic geometry.\n\nPersistent homology provides tools for tracking prime structure across multiscale transformations, representing topological features of prime-coordinate data as birth-death pairs PH^i(φ(X)) = {(b_j, d_j)}_{j=1}^{n_i}, where each interval [b_j, d_j] indicates the persistence of a prime-coordinate feature. This approach integrates UOR with topological data analysis, enabling robust analysis of prime-coordinate patterns across scales and in the presence of noise.\n\nTopos-theoretic interpretations situate UOR within the category of sheaves over Spec(R), which forms a topos where Γ(U, φ(X)) = {p ∈ U | v_p(X) ≠ 0} defines the sections of the prime-coordinate sheaf. This perspective connects UOR to the rich logical structures of topoi, where the internal logic provides a nuanced language for reasoning about prime coordinates that can accommodate intuitionistic, higher-order, and geometric logic.\n\nNon-Archimedean topology extends prime valuations to continuous domains through p-adic completions, defined by the p-adic norm |x|_p = p^{-v_p(x)} for each prime. This creates a family of non-Archimedean norms that, collectively, determine elements completely via the adelic principle. These completions permit analytical methods that respect the prime structure, connecting UOR to p-adic analysis, Iwasawa theory, and adelic geometry.",
+  "mathExpression": [
+    "\\phi_{topo}(x) = \\{p \\in \\text{Spec}(R) \\mid x \\in p\\}",
+    "H^i(X, \\phi_*F) \\cong H^i(\\text{Spec}(R), F)",
+    "PH^i(\\phi(X)) = \\{(b_j, d_j)\\}_{j=1}^{n_i}",
+    "\\Gamma(U, \\phi(X)) = \\{p \\in U \\mid v_p(X) \\neq 0\\}",
+    "|x|_p = p^{-v_p(x)}"
+  ],
+  "alternateName": ["Continuous UOR Extensions", "UOR Topological Framework"]
+}

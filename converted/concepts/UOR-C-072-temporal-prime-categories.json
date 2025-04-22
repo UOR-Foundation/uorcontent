@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:temporal-prime-categories",
+  "name": "Temporal Prime Categories",
+  "description": "The fundamental classifications of temporal prime elements that span the space of possible dynamical behaviors in the Universal Object Reference framework.",
+  "termCode": "UOR-C-072",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Temporal primes fall into several fundamental categories:}",
+    "\\text{1. Oscillatory Primes: } p_{osc}(t) = F(t/\\tau_p) \\text{ where } F(t + 1) = F(t)",
+    "\\text{   (fundamentally periodic patterns with complex irreducible waveforms)}",
+    "\\text{2. Growth/Decay Primes: } p_{growth}(t) = G(t/\\tau_p) \\text{ where } \\lim_{t\\to\\infty}G(t) = K",
+    "\\text{   (fundamental patterns of growth and decay beyond simple exponential behavior)}",
+    "\\text{3. Transition Primes: } p_{trans}(t) = T((t-t_0)/\\tau_p) \\text{ where}",
+    "\\text{   } \\lim_{t\\to-\\infty}T(t) = A, \\lim_{t\\to\\infty}T(t) = B",
+    "\\text{   (irreducible patterns of transition between states)}",
+    "\\text{4. Fluctuation Primes: } p_{fluct}(t) = S(t/\\tau_p) \\text{ where}",
+    "\\text{   S has characteristic statistical properties}",
+    "\\text{   (patterns of stochastic variation that can't be reduced to simpler components)}",
+    "\\text{5. Attractor Primes: } p_{attr}(\\vec{x}) = A(\\vec{x}) \\text{ where}",
+    "\\text{   A defines an irreducible attractor structure}",
+    "\\text{   (irreducible attractor structures in phase space)}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:temporal-prime-element",
+    "urn:uor:concept:temporal-prime-factorization",
+    "urn:uor:concept:temporal-decomposition-methods"
+  ],
+  "properties": {
+    "components": "Oscillatory primes, growth/decay primes, transition primes, fluctuation primes, attractor primes"
+  },
+  "examples": [
+    "Biological rhythms as oscillatory primes",
+    "Resource depletion curves as growth/decay primes",
+    "Phase transitions in physical systems as transition primes",
+    "Turbulence patterns as fluctuation primes",
+    "Strange attractors in chaotic systems as attractor primes"
+  ],
+  "theorems": [
+    "Temporal primes can be classified into five fundamental categories that span the space of possible dynamical behaviors: oscillatory, growth/decay, transition, fluctuation, and attractor primes."
+  ],
+  "sourceText": "Temporal primes fall into several fundamental categories that span the space of possible dynamical behaviors:\n\n1. Oscillatory Primes: These primes represent fundamentally periodic patterns with characteristic frequencies. Unlike simple sinusoids, they can have complex waveforms that are irreducible to simpler components.\n   Examples: Limit cycles in dynamical systems, biological rhythms (circadian, ultradian), seasonal and astronomical cycles\n   Formal representation: p_osc(t) = F(t/τ_p) where F(t + 1) = F(t)\n\n2. Growth/Decay Primes: These primes capture fundamental patterns of growth and decay, beyond simple exponential behavior.\n   Examples: Biological growth patterns (logistic, Gompertz), resource depletion curves, learning and forgetting curves\n   Formal representation: p_growth(t) = G(t/τ_p) where lim_(t→∞)G(t) = K\n\n3. Transition Primes: These primes represent irreducible patterns of transition between states, capturing how systems change from one regime to another.\n   Examples: Phase transitions in physical systems, developmental transitions in biological systems, paradigm shifts in social systems\n   Formal representation: p_trans(t) = T((t-t_0)/τ_p) where lim_(t→-∞)T(t) = A, lim_(t→∞)T(t) = B\n\n4. Fluctuation Primes: These primes capture patterns of stochastic variation that can't be reduced to simpler components.\n   Examples: Quantum fluctuations, turbulence patterns, social behavior fluctuations\n   Formal representation: p_fluct(t) = S(t/τ_p) where S has characteristic statistical properties\n\n5. Attractor Primes: These primes represent irreducible attractor structures in phase space.\n   Examples: Strange attractors in chaotic systems, Nash equilibria in game-theoretic systems, homeostatic attractors in biological systems\n   Formal representation: p_attr(x⃗) = A(x⃗) where A defines an irreducible attractor structure"
+}

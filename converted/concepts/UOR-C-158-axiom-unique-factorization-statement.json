@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-unique-factorization-statement",
+  "name": "Axiom Unique Factorization Statement",
+  "description": "The formal statement of the Unique Factorization Axiom: Every non‑unit object admits a finite product decomposition into primes, and this decomposition is unique up to reordering of factors.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-158",
+  "text": "The Unique Factorization Axiom is formally stated as: \"Every non‑unit object admits a finite product decomposition into primes, and this decomposition is unique up to reordering of factors.\"\n\nThis fundamental axiom extends the Fundamental Theorem of Arithmetic to arbitrary domains. It establishes that any non-trivial element can be expressed as a product of prime elements, and that this representation is unique except for the order in which these prime factors appear.\n\nThe uniqueness aspect is crucial—it ensures that for any object, there is exactly one prime factorization (ignoring reordering). This eliminates ambiguity in structural representation and provides a canonical way to describe objects in terms of their fundamental components.\n\nAs the second of the eight core UOR axioms, the Unique Factorization Axiom builds directly on the Intrinsic Primes Axiom. While the first axiom establishes the existence of irreducible elements, this second axiom ensures that these elements can be used to construct a unique representation for any object in the domain.\n\nThis axiom forms the foundation for a universal structural language, where objects across different domains can be described in terms of their prime components. It enables the systematic application of the prime coordinate system by guaranteeing that each object maps to a single, well-defined coordinate representation.",
+  "mathExpression": [
+    "\\forall x \\in D, x \\neq e, x \\text{ is not a unit} \\Rightarrow x = p_1 \\circ p_2 \\circ \\ldots \\circ p_n",
+    "\\text{If } x = p_1 \\circ p_2 \\circ \\ldots \\circ p_n = q_1 \\circ q_2 \\circ \\ldots \\circ q_m \\text{, then } n = m \\text{ and } \\{p_i\\} = \\{q_j\\} \\text{ up to reordering}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Fundamental Theorem of Arithmetic",
+      "@id": "urn:uor:concept:fundamental-theorem-arithmetic"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Axiom Unique Factorization Insights",
+      "@id": "urn:uor:concept:axiom-unique-factorization-insights"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

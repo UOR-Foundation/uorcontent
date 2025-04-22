@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes-tripartite-mathematics",
+  "name": "Formalizes Tripartite Mathematics",
+  "description": "Establishes the mathematical formalization and equations that govern the Tripartite Kernel.",
+  "value": "formalizes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Tripartite Mathematics",
+    "description": "The mathematical formalization of the Tripartite Kernel, including prime coordinate representations, coherence metrics, conservation laws, transformation requirements, and advanced mathematical extensions."
+  },
+  "propertyID": "UOR-P-084",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Tripartite Kernel",
+    "@id": "urn:uor:resource:tripartite-kernel"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Tripartite Mathematics",
+    "@id": "urn:uor:concept:tripartite-mathematics"
+  },
+  "relationshipStrength": 0.9,
+  "properties": {
+    "relationshipType": "formalization",
+    "context": "internet substrate"
+  }
+}

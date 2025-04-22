@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-prime-coordinate-homomorphism-formalization",
+  "name": "Axiom Prime-Coordinate Homomorphism Formalization",
+  "description": "The mathematical formalization of the Prime-Coordinate Homomorphism Axiom, defining the mapping from objects to their prime exponent vectors with precise notation.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-164",
+  "text": "The Prime-Coordinate Homomorphism can be formalized with precise mathematical notation to capture its essential properties.\n\nGiven a universe of objects 𝒰 with composition operation ∘, and a set of primes P, the prime coordinate map φ is a function:\n\nφ: 𝒰 → ℤ^(P)\n\nwhere ℤ^(P) denotes the space of integer vectors indexed by the set of primes P. For each object X in 𝒰 and each prime p in P, the prime coordinate map is defined as:\n\nφ(X)(p) = the exponent of prime p in X's factorization\n\nIn other words, if the prime factorization of X is X = p₁^(e₁) ∘ p₂^(e₂) ∘ ... ∘ pₙ^(eₙ), then φ(X) is the vector (e₁, e₂, ..., eₙ) where each component corresponds to the exponent of a specific prime.\n\nThe homomorphism property states that for any two objects X and Y in 𝒰:\n\nφ(X∘Y) = φ(X) + φ(Y)\n\nThis critical property transforms the multiplicative structure of object composition into the additive structure of vector addition. It means that combining objects through composition corresponds precisely to adding their coordinate vectors component-wise.\n\nThe injectivity property ensures that for any two distinct objects X and Y in 𝒰:\n\nIf X ≠ Y, then φ(X) ≠ φ(Y)\n\nThis guarantees that each object has a unique prime coordinate representation, with no two different objects mapping to the same coordinates.\n\nFor computational purposes, we can also define φ⁻¹, the inverse mapping from coordinates back to objects:\n\nφ⁻¹((e₁, e₂, ..., eₙ)) = p₁^(e₁) ∘ p₂^(e₂) ∘ ... ∘ pₙ^(eₙ)\n\nThis formalization provides a rigorous mathematical foundation for the coordinate representation system, enabling precise analysis and application across diverse domains.",
+  "mathExpression": [
+    "\\phi: \\mathcal{U} \\to \\mathbb{Z}^P",
+    "\\phi(X)(p) = \\text{exponent of prime } p \\text{ in the factorization of } X",
+    "\\phi(X \\circ Y) = \\phi(X) + \\phi(Y)",
+    "X \\neq Y \\Rightarrow \\phi(X) \\neq \\phi(Y)",
+    "\\phi^{-1}((e_1, e_2, \\ldots, e_n)) = p_1^{e_1} \\circ p_2^{e_2} \\circ \\ldots \\circ p_n^{e_n}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Vector Space",
+      "@id": "urn:uor:concept:vector-space"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Injective Function",
+      "@id": "urn:uor:concept:injective-function"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

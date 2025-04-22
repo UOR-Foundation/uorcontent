@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:meaning-overview-describes-observer-dependent-meaning",
+  "name": "describes",
+  "propertyID": "uor:predicate",
+  "value": "observer-dependent meaning",
+  "subjectOf": {
+    "@id": "urn:uor:resource:meaning-overview"
+  },
+  "targetCollection": ["urn:uor:concept:observer-dependent-meaning"],
+  "valueName": "The meaning overview describes observer-dependent meaning",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "describes"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

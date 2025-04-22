@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-coherence-norm-formalization",
+  "name": "Axiom Coherence Norm Formalization",
+  "description": "The mathematical formalization of the Coherence Norm Axiom, defining the Euclidean norm on the prime coordinate space and its properties as a measure of representational complexity.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-172",
+  "text": "The Coherence Norm Axiom can be formalized with precise mathematical notation to capture its essential properties and implications.\n\nGiven the prime coordinate space ℤ^(P), which consists of integer vectors indexed by the set of primes P, we define the coherence norm as a function ‖·‖: ℤ^(P) → ℝ that maps each coordinate vector to a non-negative real number:\n\n‖v‖ = √(∑_p v(p)²)\n\nwhere v(p) denotes the component of vector v corresponding to prime p. This is a standard Euclidean (L²) norm applied to the prime coordinate vectors.\n\nFor an object X with prime factorization X = ∏_p p^(φ(X)(p)), where φ(X)(p) is the exponent of prime p in the factorization, the coherence norm is expressed as:\n\n‖φ(X)‖ = √(∑_p φ(X)(p)²)\n\nThis norm satisfies several important mathematical properties:\n\n1. Non-negativity: ‖v‖ ≥ 0 for all v ∈ ℤ^(P), with ‖v‖ = 0 if and only if v is the zero vector. This corresponds to the identity element in the original domain, which has empty prime factorization.\n\n2. Homogeneity: ‖αv‖ = |α|·‖v‖ for any scalar α. In the context of prime coordinates, this means that if we take an object to the power of n, its coherence norm scales by a factor of |n|.\n\n3. Triangle Inequality: ‖u + v‖ ≤ ‖u‖ + ‖v‖ for all u, v ∈ ℤ^(P). This reflects that combining structures cannot decrease their total complexity.\n\n4. Pythagorean Property: For orthogonal vectors u and v (i.e., vectors with no overlapping non-zero components), ‖u + v‖² = ‖u‖² + ‖v‖². This property is crucial for proving that prime factorization achieves minimal complexity.\n\nThe minimality of prime factorization can be formally proven using this norm. If we represent an object using any non-prime factors, which themselves would be products of primes, the resulting representation would have a coherence norm that is strictly greater than the prime coordinate representation. This follows directly from the Pythagorean property of the Euclidean norm.\n\nThis formal definition of the coherence norm establishes a rigorous mathematical foundation for measuring and comparing the complexity of different objects and their representations within the UOR framework.",
+  "mathExpression": [
+    "\\|v\\| = \\sqrt{\\sum_{p \\in P} v(p)^2}",
+    "\\|\\phi(X)\\| = \\sqrt{\\sum_{p \\in P} \\phi(X)(p)^2}",
+    "\\text{Non-negativity: } \\|v\\| \\geq 0, \\text{ with } \\|v\\| = 0 \\iff v = 0",
+    "\\text{Triangle Inequality: } \\|u + v\\| \\leq \\|u\\| + \\|v\\|",
+    "\\text{Pythagorean Property: } \\|u + v\\|^2 = \\|u\\|^2 + \\|v\\|^2 \\text{ for orthogonal } u, v"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "L2 Norm",
+      "@id": "urn:uor:concept:l2-norm"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Metric Space",
+      "@id": "urn:uor:concept:metric-space"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

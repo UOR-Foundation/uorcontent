@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-category-theory",
+  "name": "describes category-theoretic foundation",
+  "propertyID": "uor:predicate",
+  "value": "describes category-theoretic foundation",
+  "subjectOf": {
+    "@id": "urn:uor:resource:category-theoretic-perspective"
+  },
+  "targetCollection": [
+    "urn:uor:concept:prime-coordinate-functor",
+    "urn:uor:concept:universal-mapping-property",
+    "urn:uor:concept:adjunction-representation",
+    "urn:uor:concept:monoidal-structure"
+  ],
+  "valueName": "foundational relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "describes category-theoretic foundation"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

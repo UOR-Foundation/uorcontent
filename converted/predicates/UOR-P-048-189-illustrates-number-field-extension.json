@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:illustrates:048:189",
+  "name": "illustrates",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Number Field Extension",
+    "@id": "urn:uor:concept:number-field-extension"
+  },
+  "value": "illustrates how the UOR framework extends to algebraic number fields",
+  "description": "The Beyond Integers resource illustrates that in algebraic number fields, specifically in the ring of integers of a number field K, nonzero prime ideals act as primes, and φ maps each element to its ideal factor exponents",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Beyond Integers",
+      "@id": "urn:uor:resource:beyond-integers"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

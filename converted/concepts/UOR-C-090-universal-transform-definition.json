@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:universal-transform-definition",
+  "name": "Universal Transform Definition",
+  "description": "The formal mathematical definition of transformations between different dimensional spaces that preserve information coherence through operations on prime coordinates.",
+  "termCode": "UOR-C-090",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{For a signal } S \\text{ with universal number representation } \\phi(S)\\text{, the universal}",
+    "\\text{transform } T \\text{ between dimensional spaces } D_1 \\text{ and } D_2 \\text{ preserves}",
+    "\\text{the prime coordinate structure:}",
+    "T: \\phi_a(S) \\to \\phi_b(S)",
+    "\\text{Where } \\phi_a \\text{ represents the coordinate mapping in dimension } D_1 \\text{ and}",
+    "\\phi_b \\text{ represents the mapping in dimension } D_2\\text{.}",
+    "\\text{The transform satisfies the coherence preservation property:}",
+    "\\|\\phi_a(S)\\|_e = \\|\\phi_b(S)\\|_e",
+    "\\text{Where } \\|\\cdot\\|_e \\text{ is the essential norm measuring the information content.}",
+    "\\text{For continuous transformations between parameter spaces, we can define:}",
+    "T_\\theta: \\phi(S) \\to \\phi_\\theta(S)",
+    "\\text{Where } \\theta \\text{ represents a continuous parameter controlling the transformation.}",
+    "\\text{This continuous transformation satisfies:}",
+    "\\frac{\\partial}{\\partial\\theta} \\|\\phi_\\theta(S)\\|_e = 0",
+    "\\text{Ensuring that the essential information content remains invariant along}",
+    "\\text{the transformation path.}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:transform-properties",
+    "urn:uor:concept:transform-mechanics",
+    "urn:uor:concept:coherence-norm"
+  ],
+  "properties": {
+    "components": "Dimensional independence, structural preservation, coherence conservation, domain universality, invertibility"
+  },
+  "examples": [
+    "Transforming a signal between time and frequency domains while preserving information coherence",
+    "Converting a high-dimensional dataset to lower dimensions while maintaining essential structure",
+    "Translating between continuous and discrete representations without information loss"
+  ],
+  "theorems": [
+    "Universal transforms preserve the essential norm measuring information content when transforming signals between different dimensional spaces."
+  ],
+  "sourceText": "For a signal `S` with universal number representation `φ(S)`, the universal transform `T` between dimensional spaces `D₁` and `D₂` preserves the prime coordinate structure:\n\n`T: φₐ(S) → φᵦ(S)`\n\nWhere `φₐ` represents the coordinate mapping in dimension `D₁` and `φᵦ` represents the mapping in dimension `D₂`.\n\nThe transform satisfies the coherence preservation property:\n\n`‖φₐ(S)‖ₑ = ‖φᵦ(S)‖ₑ`\n\nWhere `‖·‖ₑ` is the essential norm measuring the information content.\n\nFor continuous transformations between parameter spaces, we can define:\n\n`T_θ: φ(S) → φ_θ(S)`\n\nWhere `θ` represents a continuous parameter controlling the transformation.\n\nThis continuous transformation satisfies:\n\n`∂/∂θ ‖φ_θ(S)‖ₑ = 0`\n\nEnsuring that the essential information content remains invariant along the transformation path."
+}

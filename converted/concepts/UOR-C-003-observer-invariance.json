@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:observer-invariance",
+  "name": "Observer Invariance",
+  "description": "The property of a representation system that ensures descriptions remain consistent regardless of observer perspective or encoding choices.",
+  "termCode": "UOR-C-003",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "relatedConcepts": [
+    "urn:uor:concept:uor-framework",
+    "urn:uor:concept:observer-reference-frames"
+  ],
+  "sourceText": "UOR addresses a fundamental challenge in mathematics and physics: how to provide a canonical, observer-invariant representation for objects across diverse domains. Traditional representation systems face several limitations including observer-dependence leading to ambiguous descriptions. The UOR framework offers invariance as a significant advantage, providing representation independent of arbitrary encoding choices.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

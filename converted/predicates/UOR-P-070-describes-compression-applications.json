@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-compression-applications",
+  "name": "Describes Compression Applications",
+  "description": "Details the practical applications and implementation scenarios for signal compression technology.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Compression Applications",
+    "description": "The practical applications and implementation scenarios for signal compression in the UOR framework across different domains and use cases."
+  },
+  "propertyID": "UOR-P-070",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Signal Compression",
+    "@id": "urn:uor:resource:signal-compression"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Compression Applications",
+    "@id": "urn:uor:concept:compression-applications"
+  },
+  "relationshipStrength": 0.8,
+  "properties": {
+    "relationshipType": "application",
+    "context": "signal processing"
+  }
+}

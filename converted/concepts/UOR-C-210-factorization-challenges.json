@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:factorization-challenges",
+  "name": "UOR Factorization Challenges",
+  "description": "The fundamental obstacles to unique factorization in various mathematical domains and the characterization of these failures through counterexamples and formal measures.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-210",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "UOR Factorization Challenges address the fundamental obstacles that prevent unique factorization in various mathematical domains, which must be overcome to apply the UOR framework consistently. These challenges are both theoretical and practical, manifesting as counterexamples, structural impediments, and measurable deviations from the ideal factorization behavior.\n\nClassical counterexamples provide concrete illustrations of factorization failure. The quintessential example occurs in the ring ℤ[√-5], where the number 6 admits two distinct factorizations: 6 = 2 · 3 = (1 + √-5)(1 - √-5), with all factors (2, 3, 1+√-5, and 1-√-5) being irreducible. This example demonstrates how an algebraic extension can disrupt the unique factorization property even when starting from a domain (ℤ) that possesses it. Similar phenomena occur in various number rings and function fields, creating fundamental obstacles to direct application of prime-coordinate principles.\n\nA precise characterization theorem formalizes when a domain fails to be a Unique Factorization Domain (UFD). Specifically, a domain D fails to be a UFD precisely when there exist non-unit elements x, y, z, w in D such that xy = zw, with gcd(x,z) = gcd(x,w) = gcd(y,z) = gcd(y,w) = 1. This condition captures the essence of factorization ambiguity: when products can be formed in different ways from elements that share no common factors. This characterization provides a diagnostic tool for identifying domains where the UOR framework requires modification.\n\nThe defect measure quantifies the extent to which unique factorization fails in a domain D through its class group Cl(D). The fundamental theorem states that |Cl(D)| = 1 if and only if D is a UFD, meaning the class group is trivial precisely when unique factorization holds. The order of the class group thus serves as a numerical measure of how severely factorization fails. For instance, the class group of ℤ[√-5] has order 2, indicating a minimal but non-trivial factorization defect. This measure guides the complexity of techniques needed to recover unique factorization.\n\nObstruction theory provides deeper insight by identifying the distinction between irreducible elements and prime elements as the general obstruction to unique factorization. In a UFD, an element p is irreducible (cannot be factored further) if and only if it is prime (p|ab ⇒ p|a or p|b). In non-UFDs, these concepts diverge: elements can be irreducible without being prime, allowing for the factorization anomalies observed in counterexamples. This theoretical framework connects factorization challenges to fundamental algebraic structures and prepares the ground for systematic resolution techniques.",
+  "mathExpression": [
+    "6 = 2 \\cdot 3 = (1 + \\sqrt{-5})(1 - \\sqrt{-5}) \\text{ in } \\mathbb{Z}[\\sqrt{-5}]",
+    "\\exists x,y,z,w \\in D : xy = zw, \\gcd(x,z) = \\gcd(x,w) = \\gcd(y,z) = \\gcd(y,w) = 1",
+    "|Cl(D)| = 1 \\iff D \\text{ is a UFD}",
+    "\\text{In a UFD: } p \\text{ is irreducible } \\iff p \\text{ is prime } (p|ab \\Rightarrow p|a \\text{ or } p|b)"
+  ],
+  "alternateName": ["Unique Factorization Obstacles", "UFD Failure Patterns"]
+}

@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:distributed-compute-dynamics",
+  "name": "Distributed Compute Dynamics",
+  "description": "The emergent behaviors of the distributed computation system, including resource gravity, coherence markets, transformation cascades, adaptive specialization, and coherence consensus.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-128",
+  "text": "The distributed compute system exhibits several emergent computational dynamics that arise from the interaction of its components across the network. These dynamics represent complex system behaviors that emerge from simple local rules and interactions.\n\nResource Gravity is the phenomenon where computational resources naturally gather around high-value transformation needs. This creates a dynamic allocation of resources that responds to the importance and complexity of the transformations being performed, similar to how mass creates gravity in physical systems.\n\nCoherence Markets form around the provision of coherence-preserving computational resources, creating economic incentives for maintaining and improving coherence in distributed transformations. These markets value not just raw computational power, but specifically the ability to maintain coherence during transformations.\n\nTransformation Cascades occur when complex transformations trigger chains of distributed computational activities that propagate through the network. A single high-level transformation request can result in a cascade of sub-transformations that are distributed across multiple nodes.\n\nAdaptive Specialization emerges as computational nodes specialize in types of transformations where they excel, creating a diverse ecosystem of transformation capabilities. This specialization allows the system to efficiently handle a wide range of transformation types by matching them with nodes that have developed specific expertise.\n\nCoherence Consensus is the process by which the network converges on transformations that maximize information coherence. Through distributed optimization and verification, the system collectively identifies and performs transformations that best preserve the essential properties of the information being processed.",
+  "mathExpression": [],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Distributed Compute Architecture",
+      "@id": "urn:uor:concept:distributed-compute-architecture"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Coherence Preserving Dynamics",
+      "@id": "urn:uor:concept:coherence-preservation-condition"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Block Conversion",
+      "@id": "urn:uor:concept:block-conversion-definition"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

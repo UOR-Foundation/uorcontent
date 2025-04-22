@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-prime-coordinate-homomorphism-statement",
+  "name": "Axiom Prime-Coordinate Homomorphism Statement",
+  "description": "The formal statement of the Prime-Coordinate Homomorphism Axiom: There exists an injective homomorphism φ: 𝒰 → ℤ^(P) mapping each object to its exponent vector over primes, satisfying φ(X∘Y)=φ(X)+φ(Y).",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-162",
+  "text": "The Prime-Coordinate Homomorphism Axiom is formally stated as: \"There exists an injective homomorphism φ: 𝒰 → ℤ^(P) mapping each object to its exponent vector over primes, satisfying φ(X∘Y)=φ(X)+φ(Y).\"\n\nThis fundamental axiom establishes a structure-preserving map between two different mathematical worlds: the multiplicative domain of objects with their composition operation, and the additive domain of integer vectors with standard addition. The homomorphism φ transforms each object into its prime coordinate representation—a vector where each component represents the exponent (or count) of a specific prime in the object's factorization.\n\nThe statement contains several critical components:\n\n1. Existence: The axiom asserts that such a mapping φ exists, guaranteeing that prime coordinates are a valid representation for any object in the universe.\n\n2. Injectivity: The mapping is one-to-one, meaning different objects map to different coordinate vectors. This ensures that an object's prime coordinates uniquely identify it, with no information loss in the transformation.\n\n3. Homomorphism Property: The condition φ(X∘Y)=φ(X)+φ(Y) specifies that composition of objects corresponds to addition of their coordinate vectors. This powerful property converts multiplicative structure into additive structure, dramatically simplifying many analyses.\n\nAs the third of the eight core UOR axioms, the Prime-Coordinate Homomorphism builds directly on the foundation laid by the Intrinsic Primes and Unique Factorization axioms. While those axioms establish the existence and uniqueness of prime decomposition, this axiom formalizes how that decomposition translates into a coordinate system, creating a bridge between object structure and vector representation.",
+  "mathExpression": [
+    "\\exists \\phi: \\mathcal{U} \\to \\mathbb{Z}^P \\text{ such that } \\phi \\text{ is injective and } \\phi(X \\circ Y) = \\phi(X) + \\phi(Y)",
+    "\\phi(X)(p) = \\text{exponent of prime } p \\text{ in the factorization of } X"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Homomorphism",
+      "@id": "urn:uor:concept:homomorphism"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Coordinates",
+      "@id": "urn:uor:concept:prime-coordinates"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

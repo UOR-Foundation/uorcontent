@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:explains:047:183",
+  "name": "explains",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Universal Mapping Property Insights",
+    "@id": "urn:uor:concept:axiom-universal-mapping-property-insights"
+  },
+  "value": "explains the key insights derived from the Universal Mapping Property Axiom",
+  "description": "The Universal Mapping Property Axiom resource explains the profound insights including category-theoretic interpretations as adjoint functors, algebraic consequences for linearization, applications in number theory generating arithmetic functions, extensions to other mathematical domains, and computational applications for algorithm design",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Universal Mapping Property Axiom",
+      "@id": "urn:uor:resource:axiom-universal-mapping-property"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

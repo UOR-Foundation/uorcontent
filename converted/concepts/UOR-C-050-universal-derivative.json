@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:universal-derivative",
+  "name": "Universal Derivative",
+  "description": "A generalized concept of differentiation that unifies complex and p-adic approaches in the universal number domain, defined as the limit of the difference quotient with respect to the universal metric.",
+  "termCode": "UOR-C-050",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Definition 1 (Universal Derivative): For a function } f: \\mathbb{U} \\to \\mathbb{U},",
+    "\\text{the universal derivative at a point } \\alpha \\in \\mathbb{U} \\text{ is defined as:}",
+    "f'(\\alpha) = \\lim_{h \\to 0} \\frac{f(\\alpha+h) - f(\\alpha)}{h}",
+    "\\text{where the limit is taken with respect to the universal metric.}",
+    "\\text{Theorem 1 (Derivative Characterization): A function } f: \\mathbb{U} \\to \\mathbb{U}",
+    "\\text{is universally differentiable at } \\alpha \\text{ if and only if:}",
+    "\\text{1. It is complex-analytically differentiable with respect to the complex embedding}",
+    "\\text{2. It is p-adically differentiable with respect to every p-adic embedding}",
+    "\\text{3. The derivatives from these different perspectives coincide under the canonical embeddings}"
+  ],
+  "image": [],
+  "sameAs": ["https://en.wikipedia.org/wiki/Derivative"],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-number",
+    "urn:uor:concept:multi-metric-topology"
+  ],
+  "properties": {
+    "components": "Limit definition, characterization theorem, coordinate calculation"
+  },
+  "examples": [
+    "Computing the universal derivative of polynomial functions",
+    "Deriving the universal derivative through prime-coordinate representation"
+  ],
+  "theorems": [
+    "Theorem 1 (Derivative Characterization): A function is universally differentiable if and only if it is differentiable in both complex and all p-adic domains with compatible derivatives.",
+    "Theorem 2 (Prime-Coordinate Differentiation): The universal derivative can be computed through the Jacobian of the coordinate representation."
+  ],
+  "sourceText": "Universal analysis begins with a generalized concept of differentiation that unifies complex and p-adic approaches:\n\nDefinition 1 (Universal Derivative): For a function f: 𝕌 → 𝕌, the universal derivative at a point α ∈ 𝕌 is defined as:\n\n`f'(α) = lim(h→0) [f(α+h) - f(α)]/h`\n\nwhere the limit is taken with respect to the universal metric.\n\nThis definition gives rise to several fundamental theorems:\n\nTheorem 1 (Derivative Characterization): A function f: 𝕌 → 𝕌 is universally differentiable at α if and only if:\n\n1. It is complex-analytically differentiable with respect to the complex embedding\n2. It is p-adically differentiable with respect to every p-adic embedding\n3. The derivatives from these different perspectives coincide under the canonical embeddings\n\nTheorem 2 (Prime-Coordinate Differentiation): If a function f admits a prime-coordinate representation:\n\n`φ(f(η)) = F(φ(η))`\n\nfor some coordinate function F, then the universal derivative can be computed through:\n\n`φ(f'(η)) = JF(φ(η))`\n\nwhere JF is the Jacobian of F in the coordinate space."
+}

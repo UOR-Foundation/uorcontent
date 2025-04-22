@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-intrinsic-primes-formalization",
+  "name": "Axiom Intrinsic Primes Formalization",
+  "description": "The mathematical formalization of the Intrinsic Primes Axiom in the context of a monoid, defining precisely what it means for an element to be prime or irreducible.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-156",
+  "text": "The mathematical formalization of the Intrinsic Primes Axiom provides a precise definition of what constitutes a prime or irreducible element within a mathematical structure. This formalization establishes the axiom on rigorous mathematical foundations, enabling its application across diverse domains.\n\nIn the context of a monoid (M, ◦) with identity element e, an element p ∈ M is defined as prime if it satisfies two key conditions: First, p ≠ e, meaning it is not the identity element of the monoid. This condition ensures that we exclude the identity element, which typically has special properties in factorization. Second, if p = a ◦ b for any elements a, b ∈ M, then either a = e or b = e. This condition captures the essence of irreducibility—the element cannot be expressed as a composition of non-trivial elements within the monoid.\n\nThis formalization in terms of monoids is particularly powerful because monoids are one of the most general algebraic structures that support a composition operation, making the definition applicable across a wide range of mathematical contexts. A monoid requires only an associative binary operation with an identity element, without the need for more restrictive properties like commutativity or the existence of inverses.\n\nIn more specialized contexts, the definition of primality may take different forms. For example, in a commutative ring, we typically define an element p to be prime if p is not zero, not a unit, and whenever p divides a product ab, then p divides either a or b. This definition is equivalent to the one given above in the context of factorization in commutative rings, but it's expressed in terms of the divisibility relation rather than directly in terms of factorization.\n\nThe formalization of the Intrinsic Primes Axiom provides the mathematical precision necessary for developing the subsequent axioms and theorems of the UOR framework. It transforms the intuitive concept of \"irreducible elements\" into a well-defined mathematical object that can be analyzed and applied rigorously across different domains.",
+  "mathExpression": [
+    "\\text{In a monoid } (M, \\circ) \\text{ with identity } e, \\text{ an element } p \\in M \\text{ is prime if:}",
+    "1. p \\neq e \\text{ (not the identity element)}",
+    "2. \\text{If } p = a \\circ b \\text{ then either } a = e \\text{ or } b = e \\text{ (irreducibility)}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Axiom Intrinsic Primes Insights",
+      "@id": "urn:uor:concept:axiom-intrinsic-primes-insights"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Axiom Intrinsic Primes Connections",
+      "@id": "urn:uor:concept:axiom-intrinsic-primes-connections"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

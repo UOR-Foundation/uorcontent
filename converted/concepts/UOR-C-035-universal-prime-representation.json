@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:universal-prime-representation",
+  "name": "Universal Prime Coordinate Representation",
+  "description": "The unique representation of every universal number as an infinite tuple of complex-valued prime exponents, extending traditional prime factorization.",
+  "termCode": "UOR-C-035",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Every universal number } \\eta \\in \\mathbb{U} \\text{ admits a unique representation:}",
+    "\\eta = \\phi(\\eta) = (e_1, e_2, e_3, \\ldots)",
+    "\\text{where } e_i \\in \\mathbb{C} \\text{ represents the \"exponent\" of the i-th prime in the universal factorization of } \\eta",
+    "\\phi(\\eta_1 \\cdot \\eta_2) = \\phi(\\eta_1) + \\phi(\\eta_2)"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-number",
+    "urn:uor:concept:prime-decomposition"
+  ],
+  "properties": {
+    "components": "Complex-valued exponents, homomorphism property, uniqueness"
+  },
+  "examples": [
+    "Integer n = 2^a · 3^b · 5^c · ... in ℤ maps to φ(n) = (a, b, c, ...)",
+    "Rational q = m/n maps to φ(q) = φ(m) - φ(n)"
+  ],
+  "theorems": [
+    "Universal Representation: Every universal number η ∈ 𝕌 admits a canonical representation as a triple: η = (z, (aₚ)ₚ∈ℙ, φ(η))"
+  ],
+  "sourceText": "Axiom 1: Universal Prime Coordinate Representation\nEvery universal number η ∈ 𝕌 admits a unique representation as an infinite tuple of prime exponents:\nη = φ(η) = (e₁, e₂, e₃, ...)\nwhere eᵢ ∈ ℂ represents the \"exponent\" of the i-th prime in the universal factorization of η. For standard integers, these exponents are natural numbers, but in the universal domain, they extend to complex values while maintaining uniqueness.\n\nAxiom 2: Coordinate Homomorphism Extension\nThe prime-coordinate homomorphism extends naturally to universal numbers, preserving the fundamental relationship:\nφ(η₁ · η₂) = φ(η₁) + φ(η₂)\nwhere addition in the right-hand side occurs in the infinite-dimensional complex vector space indexed by primes."
+}

@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines:035:134",
+  "name": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Intrinsic Prime Definition",
+    "@id": "urn:uor:concept:intrinsic-prime-definition",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "defines the formal mathematical conditions that establish what constitutes an intrinsic prime",
+  "description": "The Intrinsic Primes resource defines the formal mathematical conditions of irreducibility, non-unit status, and the prime property that together establish what constitutes an intrinsic prime in any domain",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Intrinsic Primes",
+        "@id": "urn:uor:resource:intrinsic-primes"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:intrinsic-prime-definition"
+  ],
+  "valueName": "defines the formal mathematical conditions that establish what constitutes an intrinsic prime"
+}

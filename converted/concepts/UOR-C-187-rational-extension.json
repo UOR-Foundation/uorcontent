@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:rational-extension",
+  "name": "Rational Extension",
+  "description": "The extension of the UOR framework to rational numbers, using negative exponents to encode denominators in the prime coordinate representation.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-187",
+  "text": "The Rational Extension is a natural generalization of the UOR framework from integers to rational numbers (ℚ), enabling the representation of fractions through prime coordinates with negative exponents.\n\nIn this extension, the prime-coordinate map φ is defined on rational numbers by using negative exponents to represent denominators. The fundamental mapping principle is:\n\nφ(1/n) = -φ(n)\n\nThis elegantly captures the reciprocal relationship between a number and its inverse. For any rational number expressed as an irreducible fraction a/b, the prime coordinate representation becomes:\n\nφ(a/b) = φ(a) + φ(1/b) = φ(a) - φ(b)\n\nFor example, the rational number 3/4, when factored into primes, is 3/2² and thus has the prime coordinate representation:\n\nφ(3/4) = [(2,-2),(3,1)]\n\nwhere -2 is the exponent for prime 2 (appearing in the denominator), and 1 is the exponent for prime 3 (appearing in the numerator).\n\nThis extension maintains the homomorphism property that is central to the UOR framework:\n\nφ(p/q · r/s) = φ(p/q) + φ(r/s)\n\nensuring that multiplication of rational numbers corresponds to addition of their prime coordinate vectors.\n\nThe rational extension is particularly significant as it demonstrates how the UOR framework naturally accommodates fields (like ℚ) rather than being limited to integral domains. It provides a seamless transition from the discrete world of integers to the continuous domain of rational numbers, while preserving the structural clarity of prime decomposition.\n\nFurthermore, the coherence norm extends naturally to this rational setting, with the vector [(2,-2),(3,1)] having the norm √((-2)² + 1²) = √5, providing a measure of complexity for rational numbers that aligns with intuitive notions of simplicity in fractions.",
+  "mathExpression": [
+    "\\phi(1/n) = -\\phi(n)",
+    "\\phi(a/b) = \\phi(a) - \\phi(b)",
+    "\\text{For example: } \\phi(3/4) = \\phi(3) - \\phi(4) = [(3,1)] - [(2,2)] = [(2,-2),(3,1)]",
+    "\\|\\phi(3/4)\\| = \\sqrt{(-2)^2 + 1^2} = \\sqrt{5}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Negative Exponents",
+      "@id": "urn:uor:concept:negative-exponents"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Field Extension",
+      "@id": "urn:uor:concept:field-extension"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

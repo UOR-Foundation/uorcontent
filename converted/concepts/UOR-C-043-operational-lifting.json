@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:operational-lifting",
+  "name": "Operational Lifting",
+  "description": "The principle that all algebraic operations on universal numbers can be derived from corresponding operations on their prime-coordinate representations through the homomorphism φ.",
+  "termCode": "UOR-C-043",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Theorem 1 (Operational Lifting): Any algebraic operation on universal numbers}",
+    "\\text{can be expressed as a corresponding operation on their prime-coordinate}",
+    "\\text{representations through the homomorphism } \\phi."
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:universal-number-field-operations",
+    "urn:uor:concept:universal-coordinate-transformation"
+  ],
+  "properties": {
+    "components": "Homomorphism preservation, coordinate-based operations, algebraic consistency"
+  },
+  "examples": [
+    "Deriving addition of universal numbers from coordinate operations",
+    "Expressing polynomial operations through coordinate transformations"
+  ],
+  "theorems": [
+    "Theorem 1 (Operational Lifting): Any algebraic operation on universal numbers can be expressed as a corresponding operation on their prime-coordinate representations through the homomorphism φ."
+  ],
+  "sourceText": "All algebraic operations on universal numbers derive from the prime-coordinate framework through the principle of \"operational lifting\":\n\nTheorem 1 (Operational Lifting): Any algebraic operation on universal numbers can be expressed as a corresponding operation on their prime-coordinate representations through the homomorphism φ.\n\nProof involves the construction of a consistent algebraic structure that:\n1. Preserves the multiplicative-to-additive mapping that characterizes φ\n2. Extends addition through an appropriate \"logarithmic-exponential bridge\"\n3. Ensures all field axioms are satisfied by the induced operations"
+}

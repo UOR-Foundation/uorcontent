@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:discrete-geometry",
+  "name": "Discrete Geometry",
+  "description": "Discrete Geometry is a concept in the Universal Object Reference framework.",
+  "termCode": "UOR-C-309",
+  "dateCreated": "2025-04-22T20:01:32.366Z",
+  "dateModified": "2025-04-22T20:01:32.366Z"
+}

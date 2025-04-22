@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:categorizes-correlation-types",
+  "name": "Categorizes Correlation Types",
+  "description": "Classifies non-local temporal correlations into distinct categories based on their mathematical properties and manifestation mechanisms.",
+  "propertyID": "UOR-P-052",
+  "value": "classification relationship",
+  "subject": "urn:uor:resource:non-local-temporal-correlations",
+  "object": "urn:uor:concept:temporal-correlation-types",
+  "relationshipStrength": "organizational",
+  "contextualDescription": "The Non-Local Temporal Correlations resource categorizes temporal correlations into specific types including quantum temporal entanglement between quantum events at different times, anticipatory systems correlating with future conditions beyond prediction, morphic resonance between similar patterns across time, and retrocausal appearance where systems seem influenced by future states."
+}

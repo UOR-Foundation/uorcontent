@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-time-operator",
+  "name": "Defines Time Operator",
+  "description": "Establishes the formal definition and properties of the time operator in the Universal Object Reference framework.",
+  "propertyID": "UOR-P-035",
+  "value": "definition relationship",
+  "subject": "urn:uor:resource:time-operator-formalism",
+  "object": "urn:uor:concept:time-operator-definition",
+  "relationshipStrength": "definitive",
+  "contextualDescription": "The Time Operator Formalism resource defines the fundamental concept of the time operator as a mapping on the prime coordinate space, establishing how time acts intrinsically on objects in the UOR framework."
+}

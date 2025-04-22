@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:states:042:162",
+  "name": "states",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Prime-Coordinate Homomorphism Statement",
+    "@id": "urn:uor:concept:axiom-prime-coordinate-homomorphism-statement"
+  },
+  "value": "states the formal definition of the Prime-Coordinate Homomorphism Axiom as an injective structure-preserving mapping",
+  "description": "The Prime-Coordinate Homomorphism Axiom resource states that there exists an injective homomorphism φ: 𝒰 → ℤ^(P) mapping each object to its exponent vector over primes, satisfying φ(X∘Y)=φ(X)+φ(Y), establishing the crucial bridge between object composition and vector addition",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Prime-Coordinate Homomorphism Axiom",
+      "@id": "urn:uor:resource:axiom-prime-coordinate-homomorphism"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

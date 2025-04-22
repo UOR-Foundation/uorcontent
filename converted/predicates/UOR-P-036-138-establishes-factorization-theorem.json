@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes:036:138",
+  "name": "establishes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Factorization Theorem",
+    "@id": "urn:uor:concept:factorization-theorem",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "establishes the fundamental theorem that every non-zero non-unit element can be expressed as a product of primes",
+  "description": "The Unique Factorization resource establishes the fundamental theorem that in a Unique Factorization Domain, every non-zero non-unit element can be expressed as a product of irreducible elements (primes) in an essentially unique way",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Unique Factorization",
+        "@id": "urn:uor:resource:unique-factorization"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:factorization-theorem"
+  ],
+  "valueName": "establishes the fundamental theorem that every non-zero non-unit element can be expressed as a product of primes"
+}

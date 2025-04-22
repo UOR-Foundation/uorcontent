@@ -1,0 +1,43 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:network-mapping-principles",
+  "name": "Network Mapping Principles",
+  "description": "The core principles that govern the translation from UOR theory to networking practice, including preservation of prime structure, coherence maintenance, and structural homomorphism.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-130",
+  "text": "The translation from UOR theory to networking practice follows several key principles that ensure the mathematical integrity of the information is preserved while enabling practical implementation in real-world network protocols.\n\nPreservation of Prime Structure ensures that all protocol translations preserve the prime coordinate structure of the underlying information. This is formalized as Γ(φ(I)) = P(I), where Γ is the protocol mapping function, φ(I) is the prime coordinate representation of information entity I, and P(I) is the protocol representation. This principle ensures that no essential information is lost during translation between theoretical models and practical implementations, maintaining the mathematical structure that gives UOR its power.\n\nCoherence Maintenance guarantees that all protocol operations maintain coherence within specified bounds. This is expressed as C(φ(I), φ(P(I))) > τ_min, where C is the coherence function and τ_min is the minimum acceptable coherence threshold. This principle ensures that protocol operations remain faithful to the mathematical properties of the information they process, preserving the essential relationships and structures during network transmission and processing.\n\nStructural Homomorphism ensures that protocol operations mirror UOR operations through homomorphic mappings. This is formalized as P(op_UOR(I₁, I₂, ..., I_n)) = op_NET(P(I₁), P(I₂), ..., P(I_n)), where op_UOR is a UOR operation and op_NET is the corresponding network protocol operation. This principle creates a consistent relationship between theoretical operations and practical implementations, allowing mathematical properties proven in the theoretical domain to translate directly to operational properties in the networking domain.",
+  "mathExpression": [
+    "\\Gamma(\\phi(I)) = P(I)",
+    "C(\\phi(I), \\phi(P(I))) > \\tau_{min}",
+    "P(op_{UOR}(I_1, I_2, ..., I_n)) = op_{NET}(P(I_1), P(I_2), ..., P(I_n))"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Coordinate Homomorphism",
+      "@id": "urn:uor:concept:prime-coordinate-functor"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Coherence Norm",
+      "@id": "urn:uor:concept:coherence-norm"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Universal Mapping Property",
+      "@id": "urn:uor:concept:universal-mapping-property"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

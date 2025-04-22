@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:outlines:049:193",
+  "name": "outlines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Cryptographic Extensions",
+    "@id": "urn:uor:concept:cryptographic-extensions"
+  },
+  "value": "outlines applications of UOR concepts to cryptography",
+  "description": "The Recent Extensions resource outlines how factorization hardness underpins many cryptographic systems and how UOR's perspective on prime structures has led to novel approaches for post-quantum cryptography based on spectral hardness assumptions",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Recent Extensions",
+      "@id": "urn:uor:resource:recent-extensions"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

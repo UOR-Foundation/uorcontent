@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-algebraic-structure",
+  "name": "defines algebraic structure",
+  "propertyID": "uor:predicate",
+  "value": "defines algebraic structure",
+  "subjectOf": {
+    "@id": "urn:uor:resource:algebraic-structure"
+  },
+  "targetCollection": [
+    "urn:uor:concept:universal-number-field-operations",
+    "urn:uor:concept:operational-lifting",
+    "urn:uor:concept:algebraic-completeness",
+    "urn:uor:concept:universal-valuations"
+  ],
+  "valueName": "structural definition relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "defines algebraic structure"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

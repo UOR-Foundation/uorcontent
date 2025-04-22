@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:philosophical-mathematical-epistemology",
+  "name": "UOR Mathematical Epistemology",
+  "description": "A theory of mathematical knowledge based on the UOR framework, proposing that mathematical discovery is the search for minimal-coherence descriptions.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-200",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "The UOR Mathematical Epistemology represents a novel theory of mathematical knowledge grounded in the prime-coordinate framework. This epistemological perspective reconceptualizes both the nature of mathematical truth and the process of mathematical discovery through the lens of coherence minimization.\n\nAt its core, this theory proposes that mathematical discovery is the search for minimal-coherence descriptions. Rather than viewing mathematics as the discovery of platonic truths or the invention of useful fictions, the UOR framework suggests that mathematical progress represents the identification of increasingly efficient representations in prime-coordinate space. A mathematical description is considered 'better' or 'truer' when it minimizes the coherence norm, representing the computational or cognitive complexity required to express the relevant relationships.\n\nThe concept further explains that theorems arise by revealing prime-coordinate simplicity beneath apparent complexity. Mathematical proofs, in this view, are processes that transform apparently complex relationships into simpler prime-coordinate expressions, demonstrating that complex phenomena can be represented with unexpectedly low coherence norms. This aligns with the common mathematical aesthetic that values elegant, concise proofs that reveal surprising simplicity.\n\nThis approach applies beyond pure mathematics to scientific theorizing more broadly. Scientific theories progress by finding more coherence-efficient descriptions of natural phenomena. Key scientific advances often represent dramatic coherence-norm reductions, such as when Maxwell unified electricity and magnetism or when Darwin explained biological diversity through natural selection. In each case, a complex array of phenomena is reduced to a simpler prime-coordinate representation.\n\nThis epistemological framework also illuminates the learning process itself. Knowledge acquisition, whether in individual learning or collective scientific progress, can be modeled as a minimization of coherence divergence, with proofs and observations converging to primal spectra with maximal parsimony. Both human and artificial cognition can be understood as forms of gradient descent in coherence space, exploring the manifold of possible representations to find those with minimal coherence norms.\n\nThe UOR Mathematical Epistemology aligns with certain aspects of pragmatism in valuing successful, efficient models, and with aspects of realism in suggesting that mathematical progress tracks real patterns in an objective coherence landscape. However, it offers a distinctive framework for understanding mathematical knowledge through the precise language of prime coordinates and coherence minimization.",
+  "mathExpression": [
+    "\\text{Mathematical discovery} \\equiv \\min_{D \\in \\mathcal{D}} \\| D \\|_{\\text{coh}} \\text{ subject to } D \\text{ describing phenomenon } P",
+    "\\text{Theorem} \\equiv \\text{Transformation } T: D_1 \\to D_2 \\text{ where } \\| D_2 \\|_{\\text{coh}} < \\| D_1 \\|_{\\text{coh}}",
+    "\\text{Learning} \\cong \\nabla_D \\| D - D_{\\text{true}} \\|_{\\text{coh}}",
+    "\\text{Scientific progress} \\propto \\text{Coherence reduction rate } \\frac{d}{dt}\\| D_t \\|_{\\text{coh}}"
+  ],
+  "alternateName": ["Coherence Minimization Theory of Mathematics", "UOR Knowledge Acquisition Framework"]
+}

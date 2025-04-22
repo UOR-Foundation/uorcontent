@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes:035:136",
+  "name": "establishes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Prime UOR Role",
+    "@id": "urn:uor:concept:prime-uor-role",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "establishes the essential functions of intrinsic primes within the Universal Object Reference framework",
+  "description": "The Intrinsic Primes resource establishes how primes function as coordinate axes, information atoms, and spectral components within the UOR framework, providing the mathematical foundation for object representation",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Intrinsic Primes",
+        "@id": "urn:uor:resource:intrinsic-primes"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:prime-uor-role"
+  ],
+  "valueName": "establishes the essential functions of intrinsic primes within the Universal Object Reference framework"
+}

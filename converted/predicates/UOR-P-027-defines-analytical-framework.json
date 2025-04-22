@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-analytical-framework",
+  "name": "defines analytical framework",
+  "propertyID": "uor:predicate",
+  "value": "defines analytical framework",
+  "subjectOf": {
+    "@id": "urn:uor:resource:universal-analysis"
+  },
+  "targetCollection": [
+    "urn:uor:concept:universal-derivative",
+    "urn:uor:concept:universal-integration",
+    "urn:uor:concept:universal-analytic-functions",
+    "urn:uor:concept:universal-analysis-axioms"
+  ],
+  "valueName": "analytical framework relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "defines analytical framework"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

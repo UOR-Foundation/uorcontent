@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-trilateral-coherence-statement",
+  "name": "Axiom Trilateral Coherence Statement",
+  "description": "The formal statement of the Trilateral Coherence Axiom: Every valid description of an object incorporates three coherent aspects: its intrinsic prime-coordinate structure, the dynamics (composition rules), and the observer reference frame.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-178",
+  "text": "The Trilateral Coherence Axiom is formally stated as: \"Every valid description of an object incorporates three coherent aspects: its intrinsic prime-coordinate structure, the dynamics (composition rules), and the observer reference frame.\"\n\nThis axiom introduces a revolutionary extension to the UOR framework by elevating the observer from an external consideration to a fundamental component of the system. It establishes that a complete understanding of any object requires the integration of three essential aspects, forming an inseparable trilateral relationship:\n\n1. Intrinsic Prime-Coordinate Structure: The inherent composition of the object in terms of its prime factors, as captured by the prime coordinate mapping φ(X). This represents \"what the object is\" in its most fundamental form.\n\n2. Dynamics (Composition Rules): The set of transformations and operations that can be applied to the object, governing how it can change or interact with other objects. This represents \"how the object behaves\" or \"how it transforms.\"\n\n3. Observer Reference Frame: The specific perspective or context from which the object is being described or measured. This represents \"how the object is perceived\" or \"how it's described in a specific context.\"\n\nThe axiom asserts that these three aspects must be coherently integrated for any valid description. No aspect can be eliminated without losing essential information about the object. This trilateral view stands in contrast to traditional approaches that often treat the observer as separate from the system being observed.\n\nAs the seventh of the eight core UOR axioms, Trilateral Coherence represents a significant philosophical shift. The previous axioms (Intrinsic Primes through Coherence Inner Product) established the mathematical foundation for representing structure through prime coordinates. This axiom extends that foundation to incorporate dynamics and context, creating a comprehensive framework for understanding objects not just in isolation, but as they exist in the real world—subject to change and dependent on perspective.",
+  "mathExpression": [
+    "\\text{Valid Description } \\equiv (X, D, r) \\text{ where:}",
+    "X = \\text{object with prime structure } \\phi(X)",
+    "D = \\text{set of dynamics applicable to } X",
+    "r \\in R = \\text{observer frame from space of all possible frames}"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Observer Reference Frame",
+      "@id": "urn:uor:concept:observer-reference-frame"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "System Dynamics",
+      "@id": "urn:uor:concept:system-dynamics"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

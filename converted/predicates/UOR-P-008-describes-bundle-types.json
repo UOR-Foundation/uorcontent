@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:fiber-bundle-describes-hierarchy",
+  "name": "describes",
+  "propertyID": "uor:predicate",
+  "value": "bundle hierarchy",
+  "subjectOf": {
+    "@id": "urn:uor:resource:fiber-bundle"
+  },
+  "targetCollection": [
+    "urn:uor:concept:prime-structure-bundle",
+    "urn:uor:concept:observer-frame-bundle"
+  ],
+  "valueName": "The fiber bundle resource describes the two-level bundle hierarchy",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "describes"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 0.9
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

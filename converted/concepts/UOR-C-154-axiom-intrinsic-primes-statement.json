@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:axiom-intrinsic-primes-statement",
+  "name": "Axiom Intrinsic Primes Statement",
+  "description": "The formal statement of the Intrinsic Primes Axiom: A set P of atomic elements exists such that no element in P factors further under composition in the domain.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-154",
+  "text": "The Intrinsic Primes Axiom is formally stated as: \"A set P of atomic elements exists such that no element in P factors further under composition in the domain.\"\n\nThis fundamental axiom establishes the existence of irreducible elements within any domain that has a composition operation. These elements, called intrinsic primes, form the foundational building blocks of the domain, from which all other elements can be constructed through composition.\n\nThe axiomatic status of this statement is significant. Rather than attempting to prove the existence of irreducible elements, the UOR framework takes this as a given—an axiom upon which the rest of the framework can be built. This approach is similar to how fundamental mathematical systems like Euclidean geometry or set theory begin with basic axioms that establish the foundation for more complex structures.\n\nThe statement itself is intentionally general, allowing it to apply across diverse domains. It doesn't specify what these atomic elements are, only that they exist and have the property of irreducibility. This generality enables the axiom to serve as a universal principle that applies to domains ranging from integers to polynomials to more abstract mathematical constructs.\n\nAs the first of the eight core UOR axioms, the Intrinsic Primes Axiom sets the stage for the entire framework. It establishes that there is a \"bottom level\" to structure, preventing infinite regression in the decomposition of elements. Without this axiom, the concept of prime factorization would be meaningless, as there would be no fundamental units from which to build representations.",
+  "mathExpression": [
+    "\\exists P \\subset D \\text{ such that } \\forall p \\in P, \\text{ if } p = a \\circ b \\text{ then } a = e \\text{ or } b = e"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Intrinsic Prime Definition",
+      "@id": "urn:uor:concept:intrinsic-prime-definition"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Axiom Intrinsic Primes Insights",
+      "@id": "urn:uor:concept:axiom-intrinsic-primes-insights"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:computational-complexity-classes",
+  "name": "Computational Complexity Classes of Universal Numbers",
+  "description": "The hierarchy of universal numbers based on the computational resources required for their approximation, from polynomial-time to exponential-time and beyond.",
+  "termCode": "UOR-C-041",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Polynomial-Time Computable Universal Numbers:}",
+    "\\mathbb{U}_P = \\{\\eta \\in \\mathbb{U} \\mid \\eta \\text{ is approximable to } n \\text{ bits of precision in time } O(n^c) \\text{ for some } c\\}",
+    "\\text{Exponential-Time Computable Universal Numbers:}",
+    "\\mathbb{U}_{EXP} = \\{\\eta \\in \\mathbb{U} \\mid \\eta \\text{ is approximable to } n \\text{ bits of precision in time } O(2^{n^c}) \\text{ for some } c\\}",
+    "\\text{The set of all computable universal numbers } \\mathbb{U}_c \\text{ is countable and admits an effective enumeration}",
+    "\\mathbb{U}_c = \\{\\eta_0, \\eta_1, \\eta_2, \\ldots\\}"
+  ],
+  "image": [],
+  "sameAs": ["https://en.wikipedia.org/wiki/Computational_complexity_theory"],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:computable-universal-number",
+    "urn:uor:concept:universal-number-algorithms"
+  ],
+  "properties": {
+    "components": "Polynomial-time class, exponential-time class, effective enumeration"
+  },
+  "examples": [
+    "Rational numbers and algebraic numbers of bounded degree in 𝕌_P",
+    "Higher-degree algebraic numbers and certain transcendental numbers in 𝕌_EXP"
+  ],
+  "theorems": [
+    "Theorem 5 (Effective Enumeration): The set of computable universal numbers 𝕌_c is countable and admits an effective enumeration.",
+    "Theorem 6 (Coordinate Compression): The prime-coordinate representation achieves optimal compression in an information-theoretic sense."
+  ],
+  "sourceText": "Universal numbers form a natural computational hierarchy based on resource requirements:\n\nPolynomial-Time Computable Universal Numbers\nThe class 𝕌_P consists of universal numbers computable in polynomial time:\n```\n𝕌_P = {η ∈ 𝕌 | η is approximable to n bits of precision in time O(n^c) for some c}\n```\nThis class includes:\n- All rational numbers\n- Algebraic numbers of bounded degree\n- Specific transcendental constants with rapidly converging series (e, π, etc.)\n- Numbers with regular prime-coordinate patterns\n\nExponential-Time Computable Universal Numbers\nThe class 𝕌_EXP includes numbers requiring exponential computational resources:\n```\n𝕌_EXP = {η ∈ 𝕌 | η is approximable to n bits of precision in time O(2^(n^c)) for some c}\n```\nThis encompasses many higher-degree algebraic numbers and transcendental numbers with more complex coordinate patterns.\n\nTheorem 5 (Effective Enumeration): The set of computable universal numbers 𝕌_c is countable and admits an effective enumeration:\n```\n𝕌_c = {η₀, η₁, η₂, ...}\n```\nwhere each η_i is computable by a Type-2 Turing machine M_i, and the mapping i ↦ M_i is effectively computable."
+}

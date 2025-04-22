@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:minimal-energy-principle",
+  "name": "Minimal Energy Principle",
+  "description": "Minimal Energy Principle is a concept in the Universal Object Reference framework.",
+  "termCode": "UOR-C-305",
+  "dateCreated": "2025-04-22T20:01:32.365Z",
+  "dateModified": "2025-04-22T20:01:32.365Z"
+}

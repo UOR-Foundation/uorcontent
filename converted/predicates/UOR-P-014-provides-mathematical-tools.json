@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:provides-mathematical-tools",
+  "name": "provides mathematical tools",
+  "propertyID": "uor:predicate",
+  "value": "provides mathematical tools",
+  "subjectOf": {
+    "@id": "urn:uor:resource:algebraic-topological-enhancements"
+  },
+  "targetCollection": [
+    "urn:uor:concept:clifford-algebra-structure",
+    "urn:uor:concept:sheaf-structure",
+    "urn:uor:concept:quantum-reference-frame"
+  ],
+  "valueName": "tool provision relationship",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "provides mathematical tools"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

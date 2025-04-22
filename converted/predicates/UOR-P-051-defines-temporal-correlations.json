@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-temporal-correlations",
+  "name": "Defines Temporal Correlations",
+  "description": "Establishes the mathematical definitions and criteria for non-local temporal correlations between events at different times.",
+  "propertyID": "UOR-P-051",
+  "value": "definition relationship",
+  "subject": "urn:uor:resource:non-local-temporal-correlations",
+  "object": "urn:uor:concept:temporal-correlation-function",
+  "relationshipStrength": "definitive",
+  "contextualDescription": "The Non-Local Temporal Correlations resource defines the temporal correlation function, non-locality condition, temporal entanglement measure, and causal influence direction that together provide the mathematical foundation for analyzing relationships between events at different times that exceed conventional causal explanations."
+}

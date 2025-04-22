@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:quantum-information-uor",
+  "name": "Quantum Information UOR",
+  "description": "The application of UOR principles to quantum information theory, where prime decompositions provide optimal encoding for quantum information and coherence measures relate to von Neumann entropy.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-191",
+  "text": "Quantum Information UOR is a cutting-edge extension of the UOR framework to quantum information theory, establishing a profound connection between prime factorization and optimal quantum encoding protocols.\n\nIn this approach, quantum states are viewed through their spectral decomposition, which can be interpreted as a quantum analogue of prime factorization. For a density matrix ρ with spectral decomposition:\n\nρ = Σ λᵢ |ψᵢ⟩⟨ψᵢ|\n\nthe quantum prime coordinate representation maps this to a vector of eigenvalues and corresponding eigenstates, creating a quantum version of the prime coordinate map.\n\nA key insight from this extension is that coherence measures in the UOR framework directly relate to von Neumann entropy in quantum information. The von Neumann entropy S(ρ) = -Tr(ρ log ρ) can be interpreted as a measure of quantum coherence complexity that parallels the classical coherence norm in the UOR framework.\n\nQuantum circuits can be analyzed as coherence-preserving maps between prime spectral representations. Unitary transformations, which preserve quantum information, correspond to rotations in the quantum prime coordinate space that maintain coherence norms. This perspective has led to new quantum algorithms that exploit the structure of prime factorization for efficient quantum computation.\n\nThe connection extends to quantum error correction as well. Error-correcting codes can be designed based on the prime structure of quantum states, with the redundancy necessary for error correction corresponding to specific patterns in the quantum prime coordinates.\n\nQuantum entanglement, a uniquely quantum phenomenon, finds a natural interpretation in this framework as a specific type of correlation in the prime coordinate space that cannot be decomposed into simpler patterns. The degree of entanglement correlates with certain measures of complexity in the prime coordinate representation.\n\nThis extension has practical applications in quantum cryptography, quantum communication protocols, and quantum machine learning, where the UOR perspective provides new insights into the fundamental limits of quantum information processing and novel approaches for quantum algorithm design.",
+  "mathExpression": [
+    "\\rho = \\sum_i \\lambda_i |\\psi_i\\rangle\\langle\\psi_i|",
+    "\\phi_Q(\\rho) = [(\\lambda_1, |\\psi_1\\rangle), (\\lambda_2, |\\psi_2\\rangle), \\ldots]",
+    "S(\\rho) = -\\text{Tr}(\\rho \\log \\rho) = -\\sum_i \\lambda_i \\log \\lambda_i",
+    "\\|\\phi_Q(\\rho)\\|_c \\sim S(\\rho)"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Von Neumann Entropy",
+      "@id": "urn:uor:concept:von-neumann-entropy"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Quantum Entanglement",
+      "@id": "urn:uor:concept:quantum-entanglement"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Quantum Error Correction",
+      "@id": "urn:uor:concept:quantum-error-correction"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:explains:044:171",
+  "name": "explains",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Coherence Norm Insights",
+    "@id": "urn:uor:concept:axiom-coherence-norm-insights"
+  },
+  "value": "explains the key insights derived from the Coherence Norm Axiom",
+  "description": "The Coherence Norm Axiom resource explains the profound insights of objective simplicity, the Pythagorean principle that proves prime factorization is minimal, and the interpretation of the norm as an information metric measuring the content of an object's structure",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Coherence Norm Axiom",
+      "@id": "urn:uor:resource:axiom-coherence-norm"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

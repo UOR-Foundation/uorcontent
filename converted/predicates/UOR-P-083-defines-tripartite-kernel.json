@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-tripartite-kernel",
+  "name": "Defines Tripartite Kernel",
+  "description": "Establishes the formal definition and conceptual foundation of the Tripartite Kernel in the UOR framework.",
+  "value": "defines",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Tripartite Definition",
+    "description": "The formal definition and conceptual foundation of the Tripartite Kernel as a unified model that converges transport, storage, and runtime as the fundamental dimensions of internet operations."
+  },
+  "propertyID": "UOR-P-083",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Tripartite Kernel",
+    "@id": "urn:uor:resource:tripartite-kernel"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Tripartite Definition",
+    "@id": "urn:uor:concept:tripartite-definition"
+  },
+  "relationshipStrength": 1,
+  "properties": {
+    "relationshipType": "definition",
+    "context": "internet substrate"
+  }
+}

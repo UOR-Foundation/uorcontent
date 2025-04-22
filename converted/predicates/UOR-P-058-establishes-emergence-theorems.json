@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-emergence-theorems",
+  "name": "Establishes Emergence Theorems",
+  "description": "Establishes fundamental mathematical theorems governing the emergence, properties, and universal characteristics of temporal order in complex systems.",
+  "propertyID": "UOR-P-058",
+  "value": "theoretical relationship",
+  "subject": "urn:uor:resource:emergent-temporal-order",
+  "object": "urn:uor:concept:temporal-emergence-theorems",
+  "relationshipStrength": "fundamental",
+  "contextualDescription": "The Emergent Temporal Order resource establishes four key theorems: the Temporal Order Emergence Theorem defining conditions for when synchronization occurs based on coupling strength thresholds, the Temporal Hierarchy Formation Theorem explaining how patterns organize into multi-scale structures, the Temporal Universality Theorem identifying scale-free properties near critical points, and the Temporal Resilience Theorem quantifying how emergent order creates stability against perturbations."
+}

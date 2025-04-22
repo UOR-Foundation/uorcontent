@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-frame-transformations",
+  "name": "Establishes Frame Transformations",
+  "description": "Establishes the mathematical mappings that relate different observers' temporal perspectives while preserving essential coherence.",
+  "propertyID": "UOR-P-048",
+  "value": "relational mapping",
+  "subject": "urn:uor:resource:temporal-observer-frames",
+  "object": "urn:uor:concept:temporal-frame-transformation",
+  "relationshipStrength": "fundamental",
+  "contextualDescription": "The Temporal Observer Frames resource establishes transformations between different temporal reference frames, including how time coordinates, metrics, and flow properties transform, along with coherence preservation conditions and special classes of transformations like scale, flow, relativistic, topological, and compositional."
+}

@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:introduces:038:148",
+  "name": "introduces",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Prime Valuation",
+    "@id": "urn:uor:concept:prime-valuation",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "introduces the mathematical function that returns the highest power of a prime dividing an element",
+  "description": "The Prime Formula resource introduces the prime valuation function v_p(x) that quantifies the contribution of each prime to an element's structure, forming the basis for coordinate mapping",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Prime Formula",
+        "@id": "urn:uor:resource:prime-formula"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:prime-valuation"
+  ],
+  "valueName": "introduces the mathematical function that returns the highest power of a prime dividing an element"
+}

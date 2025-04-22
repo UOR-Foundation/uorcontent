@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:coherence-measure-types",
+  "name": "Coherence Measure Types",
+  "description": "Different mathematical formulations of coherence that generate distinct classes of coherence-preserving dynamics based on information, structure, function, and relationships.",
+  "termCode": "UOR-C-076",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "\\text{Different coherence measures generate different classes of coherence-preserving dynamics:}",
+    "\\text{1. Information-Theoretic Coherence:}",
+    "C_I(\\phi(t), \\phi_0) = I(\\phi(t); \\phi_0)",
+    "\\text{   Based on mutual information between past and present states.}",
+    "\\text{2. Structural Coherence:}",
+    "C_S(\\phi(t), \\phi_0) = \\exp\\left(-\\frac{\\|\\phi(t) - \\phi_0\\|^2}{2\\sigma^2}\\right)",
+    "\\text{   Based on structural similarity in prime coordinate space.}",
+    "\\text{3. Functional Coherence:}",
+    "C_F(\\phi(t), \\phi_0) = \\text{corr}(f(\\phi(t)), f(\\phi_0))",
+    "\\text{   Where } f \\text{ maps the prime coordinate representation to a functional output space.}",
+    "\\text{4. Relational Coherence:}",
+    "C_R(\\phi(t), \\phi_0) = \\text{sim}(R(\\phi(t)), R(\\phi_0))",
+    "\\text{   Where } R \\text{ extracts the relational structure between components.}"
+  ],
+  "image": [],
+  "sameAs": [],
+  "url": "",
+  "relatedConcepts": [
+    "urn:uor:concept:coherence-preservation-condition",
+    "urn:uor:concept:coherence-preserving-systems",
+    "urn:uor:concept:coherence-norm"
+  ],
+  "properties": {
+    "components": "Information-theoretic coherence, structural coherence, functional coherence, relational coherence"
+  },
+  "examples": [
+    "Information-theoretic coherence in genetic information preservation during cell division",
+    "Structural coherence in maintaining skeletal structure during growth",
+    "Functional coherence in preserving cognitive abilities despite neural rewiring",
+    "Relational coherence in maintaining social network patterns despite individual changes"
+  ],
+  "theorems": [
+    "Different coherence measures generate different classes of coherence-preserving dynamics, each preserving distinct aspects of system identity."
+  ],
+  "sourceText": "Different coherence measures generate different classes of coherence-preserving dynamics:\n\nInformation-Theoretic Coherence: Based on mutual information between past and present states:\n\nC_I(φ(t), φ_0) = I(φ(t); φ_0)\n\nPreserving this coherence maintains the information content shared between current and reference states.\n\nStructural Coherence: Based on structural similarity in prime coordinate space:\n\nC_S(φ(t), φ_0) = exp(-(‖φ(t) - φ_0‖²)/(2σ²))\n\nPreserving this coherence maintains the geometric structure of the prime coordinate representation.\n\nFunctional Coherence: Based on preservation of functional relationships:\n\nC_F(φ(t), φ_0) = corr(f(φ(t)), f(φ_0))\n\nWhere f maps the prime coordinate representation to some functional output space.\n\nPreserving this coherence maintains the functional behavior of the system, even if its internal structure changes.\n\nRelational Coherence: Based on preservation of relationships between components:\n\nC_R(φ(t), φ_0) = sim(R(φ(t)), R(φ_0))\n\nWhere R extracts the relational structure between components of the system.\n\nPreserving this coherence maintains the pattern of relationships, even as the components themselves may change."
+}

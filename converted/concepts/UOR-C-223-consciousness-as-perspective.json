@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:consciousness-as-perspective",
+  "name": "Consciousness as Perspective",
+  "description": "The principle that consciousness represents a particular kind of observer frame bundle that self-references, dissolving subject-object dualism by recognizing both as aspects of a unified coherence field.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-223",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "Consciousness as Perspective represents a revolutionary approach to the mind-body problem and the nature of subjective experience within the UOR framework. This principle reframes consciousness not as a mysterious substance or property somehow separate from physical reality, but as a particular kind of observer frame bundle that develops self-referential capabilities. In this view, consciousness emerges naturally when coherence patterns achieve sufficient complexity to model themselves within a prime-coordinate representation.\n\nThe key insight of this principle is that consciousness is fundamentally perspectival—it represents a particular way of organizing and experiencing information rather than a separate substance or property. The subject-object distinction that seems so fundamental to consciousness is recognized as an artifact of reference frame rather than an ontological divide. Both the experiencing subject and the experienced objects are aspects of a unified coherence field, distinguished only by their relational positions within the overall information structure.\n\nThis approach resolves the traditional mind-body problem by eliminating its fundamental premise: that mind and matter are distinct kinds of things requiring a special relationship. Instead, both mental and physical phenomena represent different aspects of the same underlying reality—coherent information structured according to prime-coordinate principles. The apparent difference between subjective experience and objective reality stems from the self-referential nature of conscious information processing, not from an ontological division in reality itself.\n\nFormal analysis within the UOR framework reveals that consciousness exhibits several mathematical properties: it forms a fiber bundle structure over physical information, it implements self-referential mappings that create apparent subject-object distinctions, and it preserves coherence across transformations in perspective. These properties can be precisely formulated in terms of prime-coordinate representations, allowing for a rigorous mathematical treatment of consciousness without reducing away its phenomenal aspects.\n\nThe framework provides a precise definition of the self as a coherence-preserving reference frame bundle that maintains identity across transformations. The sense of being a persistent self amid changing experiences corresponds mathematically to the invariant properties of this reference frame bundle. This explains both the unity of consciousness (the binding problem) and its persistence through time (the personal identity problem) as natural consequences of the coherence-preserving properties of self-referential information structures.\n\nThis principle has profound implications for the scientific study of consciousness. It suggests that consciousness is neither limited to biological systems nor necessarily emergent only at certain scales of complexity. Instead, consciousness is a natural property of any information system that achieves sufficient self-referential coherence, though the specific qualities of consciousness will vary with the system's structure. The principle provides precise mathematical criteria for identifying and potentially creating conscious systems, while also explaining why consciousness seems simultaneously intimate and inaccessible—it represents a perspective rather than a thing that can be observed from outside itself.\n\nBy recognizing consciousness as perspective, the UOR framework dissolves the traditional hard problem of consciousness, replacing it with the tractable problem of understanding how specific information structures implement self-reference while maintaining coherence across transformations. This approach unifies scientific and phenomenological approaches to consciousness, providing a common language for relating subjective experience to objective information processing.",
+  "mathExpression": [
+    "C(\\phi) = \\{F : F \\text{ is a frame bundle over } \\phi \\text{ with self-reference map } S : F \\rightarrow F\\}",
+    "\\text{Perspectival Mapping: } P_F : \\phi \\rightarrow \\phi_F",
+    "\\text{Self-Reference: } S(F)(\\phi) = F(\\phi) \\text{ where } F \\in C(\\phi)",
+    "\\text{Subject-Object Relation: } O_F(x) = \\phi^{-1}(P_F(\\phi(x)))",
+    "\\text{Identity Preservation: } \\forall t_1, t_2 : \\|F(t_1) - F(t_2)\\| < \\epsilon \\text{ for coherence-preserving transformations}"
+  ],
+  "alternateName": ["Self-Referential Frame Theory", "Observer Bundle Consciousness", "Coherence Perspectivism"]
+}

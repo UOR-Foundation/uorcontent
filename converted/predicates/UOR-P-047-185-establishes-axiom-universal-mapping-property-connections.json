@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes:047:185",
+  "name": "establishes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Universal Mapping Property Connections",
+    "@id": "urn:uor:concept:axiom-universal-mapping-property-connections"
+  },
+  "value": "establishes the connections between the Universal Mapping Property Axiom and other core axioms",
+  "description": "The Universal Mapping Property Axiom resource establishes how this axiom connects to all other core axioms, confirming intrinsic primes as fundamental building blocks, depending on unique factorization, elevating the prime-coordinate homomorphism to canonical status, providing theoretical justification for canonical representation, aligning with coherence metrics, and supporting trilateral coherence",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Universal Mapping Property Axiom",
+      "@id": "urn:uor:resource:axiom-universal-mapping-property"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

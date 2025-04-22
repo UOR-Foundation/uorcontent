@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:defines-universal-transforms",
+  "name": "Defines Universal Transforms",
+  "description": "Establishes the formal mathematical definition of universal transforms that operate on prime coordinates to preserve information coherence across different dimensional spaces.",
+  "propertyID": "UOR-P-059",
+  "value": "definition relationship",
+  "subject": "urn:uor:resource:universal-transforms",
+  "object": "urn:uor:concept:universal-transform-definition",
+  "relationshipStrength": "definitive",
+  "contextualDescription": "The Universal Transforms resource defines the formal mathematical structure of transformations that operate on prime coordinates rather than raw signal values, enabling dimension-invariant conversions between different representational domains while preserving essential information content and coherence."
+}

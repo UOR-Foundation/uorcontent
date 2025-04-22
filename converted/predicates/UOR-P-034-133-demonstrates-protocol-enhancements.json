@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:demonstrates:034:133",
+  "name": "demonstrates",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Protocol Enhancements",
+    "@id": "urn:uor:concept:protocol-enhancements",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "demonstrates how UOR-based networking protocols enhance conventional approaches",
+  "description": "The UOR Network Mapping resource demonstrates practical improvements with concrete examples and proven theorems showing how UOR principles enhance networking protocols through coherence preservation and prime structure",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "UOR Network Mapping",
+        "@id": "urn:uor:resource:uor-network-mapping"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:protocol-enhancements"
+  ],
+  "valueName": "demonstrates how UOR-based networking protocols enhance conventional approaches"
+}

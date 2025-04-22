@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:prime-properties",
+  "name": "Prime Properties",
+  "description": "The key properties of intrinsic primes that enable them to function as a coordinate basis, including domain independence, uniqueness, and completeness.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-135",
+  "text": "Intrinsic primes possess several critical properties that make them ideal for serving as a coordinate basis in the Universal Object Reference framework. These properties ensure that primes can effectively represent the fundamental structure of objects across diverse domains.\n\nDomain independence is a key property that allows the concept of intrinsic primes to generalize across various mathematical structures, including number systems, polynomials, and abstract domains. This universal applicability means that the same fundamental principles can be applied regardless of the specific domain being considered, enabling a truly universal reference framework. Whether working with integers, rational functions, or more abstract algebraic structures, the concept of intrinsic primes maintains its essential characteristics.\n\nUniqueness ensures that each prime represents a distinct, indivisible aspect of object structure. This property guarantees that there is no redundancy or overlap in the prime basis, with each prime element capturing a unique and irreducible component of an object's composition. This uniqueness is essential for creating a well-defined coordinate system where each dimension corresponds to a truly independent structural aspect.\n\nCompleteness means that the set of all primes is sufficient to express any object through composition. This property ensures that no structural information is lost when representing objects in terms of their prime components. Any element within the domain can be fully characterized by its prime decomposition, making the prime basis comprehensive as a descriptive framework. This completeness is what enables the UOR framework to capture the entire structural essence of objects across domains.",
+  "mathExpression": [],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Intrinsic Prime Definition",
+      "@id": "urn:uor:concept:intrinsic-prime-definition"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime UOR Role",
+      "@id": "urn:uor:concept:prime-uor-role"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

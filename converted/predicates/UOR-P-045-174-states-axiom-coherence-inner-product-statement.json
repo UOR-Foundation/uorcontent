@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:states:045:174",
+  "name": "states",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Coherence Inner Product Statement",
+    "@id": "urn:uor:concept:axiom-coherence-inner-product-statement"
+  },
+  "value": "states the formal definition of the Coherence Inner Product Axiom as a Euclidean inner product on prime coordinates",
+  "description": "The Coherence Inner Product Axiom resource states that the prime coordinate space is equipped with the inner product ⟨v,w⟩ = ∑_p v(p)·w(p), making it a Euclidean vector space with orthonormal prime axes and providing a geometric framework for understanding object structure",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Coherence Inner Product Axiom",
+      "@id": "urn:uor:resource:axiom-coherence-inner-product"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

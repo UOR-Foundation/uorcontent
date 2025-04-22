@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:induces:039:152",
+  "name": "induces",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Coherence Metric",
+    "@id": "urn:uor:concept:coherence-metric",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "induces a metric on the space of objects through the norm of their quotient",
+  "description": "The Coherence Norm resource induces a proper metric space structure that satisfies the standard mathematical axioms of identity, symmetry, and triangle inequality, while also establishing a Euclidean structure with angles and inner products",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Coherence Norm & Metric",
+        "@id": "urn:uor:resource:coherence-norm"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:coherence-metric"
+  ],
+  "valueName": "induces a metric on the space of objects through the norm of their quotient"
+}

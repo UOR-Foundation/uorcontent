@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:prime-space-geometry",
+  "name": "Prime Space Geometry",
+  "description": "The study of geometric structures that emerge from the prime-coordinate representation of objects, revealing patterns in their composition and relationships.",
+  "termCode": "UOR-C-020",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "mathExpression": [
+    "||φ(x)||",
+    "⟨φ(x),φ(y)⟩",
+    "d(x,y) = ||φ(x) - φ(y)||"
+  ],
+  "relatedConcepts": [
+    "urn:uor:concept:prime-decomposition",
+    "urn:uor:concept:euclidean-structure",
+    "urn:uor:concept:coherence-metric"
+  ],
+  "sourceText": "The prime-coordinate representation induces a rich geometric structure that reveals deep patterns in object composition and relationships. These geometric structures provide powerful tools for analyzing patterns, relationships, and transformations across mathematical domains.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}

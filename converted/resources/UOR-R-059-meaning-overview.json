@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:meaning-overview",
+  "name": "Meaning in the UOR Framework",
+  "description": "An overview of how the Universal Object Reference framework approaches the representation and analysis of meaning through prime decomposition and coherence principles.",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Meaning",
+    "description": "The structural pattern of semantic relationships represented through prime decomposition in the UOR framework."
+  },
+  "text": "# Meaning in the UOR Framework\n\nThe Universal Object Reference (UOR) framework offers a unique approach to understanding and representing meaning through its prime decomposition and observer-invariant representation principles. This resource explores how UOR transforms our understanding of semantics and meaning.\n\n## The Meaning Representation Problem\n\nTraditional approaches to meaning face several fundamental challenges:\n\n- Symbol grounding: How arbitrary symbols connect to real-world referents\n- Context-sensitivity: How meaning varies across different contexts and perspectives\n- Compositionality: How complex meanings emerge from simpler components\n- Cross-domain integration: How meanings translate across different knowledge domains\n\nThe UOR framework addresses these challenges through its fundamental principles of prime decomposition, observer reference frames, and coherence norms.\n\n## Prime Decomposition of Meaning\n\nJust as UOR represents mathematical objects through their prime factorization, it represents meaning through semantic prime decomposition. Every meaningful concept, proposition, or narrative can be decomposed into semantic primes—the irreducible units of meaning that serve as the building blocks for all semantic constructions.\n\nThis decomposition reveals the intrinsic structure of meaning that remains invariant across different linguistic or symbolic representations. While the specific semantic primes may vary across domains and contexts, the structural relationships between them capture the essential properties of meaning.\n\nThe prime decomposition of meaning allows us to:\n\n1. Identify the minimal representation of a semantic content\n2. Compare meanings across different symbolic systems\n3. Trace meaning transformations across contexts\n4. Distinguish superficial from structural semantic differences\n\n## Observer Reference Frames in Semantics\n\nMeaning is inherently observer-dependent—it exists relative to interpretive contexts, background knowledge, and perspective. The UOR framework embraces this context-sensitivity through observer reference frames while maintaining invariant structural properties.\n\nEach observer frame constitutes a specific semantic context that determines:\n\n- Which semantic primes are relevant\n- How these primes combine to form complex meanings\n- The relative weights or importance of different meaning components\n- The transformation rules for mapping between different representations\n\nBy formalizing these observer frames, UOR resolves the tension between contextual variation and stable meaning. Different observers can access the same invariant semantic structure through their own reference frames, with precise transformation operators mapping between them.\n\n## The Meaning Coherence Field\n\nUOR extends its coherence norm principle to semantics through the Meaning Coherence Field—a field-theoretic structure on semantic spaces that quantifies how coherently different meanings relate to each other. This field assigns coherence measures to pairs of meanings based on their structural alignment in prime coordinate space.\n\nThe Meaning Coherence Field reveals semantic landscapes with features like:\n\n- Clusters of closely related meanings\n- Paths of meaning evolution across contexts\n- Tensions and contradictions between incompatible meanings\n- Optimal representations that maximize coherence across contexts\n\nThis field structure connects semantic analysis to quantum field theories, information geometry, and category theory, suggesting deep connections between meaning structures and fundamental mathematical and physical patterns.\n\n## Applications and Implications\n\nThe UOR approach to meaning has far-reaching implications across disciplines:\n\n- **Linguistics**: Providing a mathematical foundation for semantic theory that bridges symbolic and embodied approaches\n- **Artificial Intelligence**: Enabling more coherent knowledge representation and semantic reasoning\n- **Philosophy**: Offering new perspectives on classic problems of meaning and reference\n- **Cognitive Science**: Suggesting how meaning structures might be represented in neural systems\n- **Communication Theory**: Formalizing how meaning transforms across different contexts and media\n\nBy grounding meaning in the universal principles of prime decomposition and observer invariance, the UOR framework opens new pathways for understanding how meaning emerges, evolves, and transforms across the full spectrum of human knowledge and experience.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Meaning",
+    "@id": "urn:uor:topic:meaning"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "keywords": ["meaning", "semantics", "prime decomposition", "observer frames", "coherence field", "UOR"],
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "potentialAction": {
+    "@type": "Action",
+    "name": "reference",
+    "object": [
+      "urn:uor:concept:meaning-representation",
+      "urn:uor:concept:semantic-prime-decomposition",
+      "urn:uor:concept:meaning-coherence-field",
+      "urn:uor:concept:observer-dependent-meaning"
+    ]
+  }
+}

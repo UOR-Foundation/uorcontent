@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:enables:039:153",
+  "name": "enables",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Norm Applications",
+    "@id": "urn:uor:concept:norm-applications",
+    "propertyID": "uor:predicateType"
+  },
+  "value": "enables practical applications in measuring information content and comparing structures",
+  "description": "The Coherence Norm resource enables practical applications including measuring information content of mathematical objects, quantifying structural similarity, defining complexity, and establishing optimization criteria for representations",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "subjectOf",
+      "value": {
+        "@type": "CreativeWork",
+        "name": "Coherence Norm & Metric",
+        "@id": "urn:uor:resource:coherence-norm"
+      }
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0",
+  "propertyID": "uor:predicate",
+  "targetCollection": [
+    "urn:uor:concept:norm-applications"
+  ],
+  "valueName": "enables practical applications in measuring information content and comparing structures"
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:establishes-correlation-theorems",
+  "name": "Establishes Correlation Theorems",
+  "description": "Establishes fundamental mathematical theorems that govern the properties, constraints, and conservation laws of non-local temporal correlations.",
+  "propertyID": "UOR-P-054",
+  "value": "theoretical relationship",
+  "subject": "urn:uor:resource:non-local-temporal-correlations",
+  "object": "urn:uor:concept:temporal-correlation-theorems",
+  "relationshipStrength": "fundamental",
+  "contextualDescription": "The Non-Local Temporal Correlations resource establishes four key theorems: the Temporal Correlation Bound Theorem defining baselines for detecting non-local correlations, the Temporal Entanglement Conservation Theorem showing conservation principles for temporal entanglement, the Reference Frame Invariance Theorem ensuring observer-independent entanglement measures despite varying causal interpretations, and the Information Transfer Limit Theorem connecting retrocausality limitations to thermodynamic principles."
+}

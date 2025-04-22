@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:formalizes:044:172",
+  "name": "formalizes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Axiom Coherence Norm Formalization",
+    "@id": "urn:uor:concept:axiom-coherence-norm-formalization"
+  },
+  "value": "formalizes the mathematical expression of the Coherence Norm Axiom",
+  "description": "The Coherence Norm Axiom resource formalizes the definition of the Euclidean norm on the prime coordinate space as ‖v‖ = √(∑_p v(p)²), along with its key properties of non-negativity, homogeneity, triangle inequality, and the Pythagorean property that proves prime factorization achieves minimal complexity",
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "name": "subjectOf",
+    "value": {
+      "@type": "CreativeWork",
+      "name": "Coherence Norm Axiom",
+      "@id": "urn:uor:resource:axiom-coherence-norm"
+    }
+  }],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

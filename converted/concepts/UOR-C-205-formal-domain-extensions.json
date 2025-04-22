@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:formal-domain-extensions",
+  "name": "UOR Mathematical Domain Extensions",
+  "description": "Extensions of the UOR framework to various mathematical domains including Dedekind domains, modules, polynomial rings, algebraic number theory, and group representation theory.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "termCode": "UOR-C-205",
+  "contributor": {
+    "@type": "Organization",
+    "name": "UOR Research Consortium"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "text": "The UOR Mathematical Domain Extensions concept encompasses the application and adaptation of the Universal Object Reference framework to diverse mathematical domains beyond its original scope. These extensions demonstrate the framework's flexibility and power while also enriching the specific mathematical areas to which it is applied.\n\nA central extension addresses Dedekind domains, which lack unique factorization in the traditional sense. In domains such as ℤ[√−5], the UOR framework is extended by refining the notion of primes to prime ideals. By working in the category of fractional ideals, the Unique Factorization Domain (UFD) axiom is restored: every ideal factors uniquely into a product of prime ideals. The UOR coordinate map extends naturally to the ideal class group, encoding the exponents of prime ideals in the factorization. This extension illuminates the deep connection between UOR and classical algebraic number theory.\n\nAnother significant extension involves Primary Decomposition in Modules over Noetherian rings. Here, prime factorization generalizes to the decomposition of submodules into intersections of primary submodules. This yields coordinates in the lattice of primary components, with a coherence metric ranking decompositions by simplicity. This extension connects UOR to commutative algebra and homological methods.\n\nThe concept of Base-Absolute Prime Coordinates extends UOR by focusing on coordinate systems that are canonical and independent of any chosen basis or chart. The UOR prime coordinate map φ is shown to be base-absolute: it does not depend on numeral base, vector space basis, or presentation, making it intrinsic to the object's structure.\n\nPractical case studies demonstrate these extensions in action. In Polynomial Rings, φ maps a polynomial f(x) to the exponent vector of its irreducible factors, enabling efficient computation of greatest common divisors and least common multiples through componentwise minimum and maximum operations. In Algebraic Number Theory, φ applied to ideals tracks ramification exponents in Galois extensions, providing a unified view of decomposition groups and Frobenius actions. In Group Representation Theory, representations decompose into irreducibles with coordinates given by multiplicities, transforming tensor products into vector addition in coordinate space.\n\nThese extensions collectively demonstrate how the UOR perspective brings new insights to classical mathematical domains while also gaining richness from the specific structures it encounters in each domain.",
+  "mathExpression": [
+    "\\text{In Dedekind domains: } \\phi \\text{ extends to the ideal class group}",
+    "\\text{For modules: Submodule } M = Q_1 \\cap Q_2 \\cap \\cdots \\cap Q_n \\text{ (primary decomposition)}",
+    "\\text{Base-absolute coordinates: } \\phi \\text{ is independent of chosen basis}",
+    "\\text{For polynomials: } \\phi(f(x)) = \\text{exponents of irreducible factors}",
+    "\\text{For ideals: } \\phi(I) = \\text{ramification exponents in prime ideal factorization}",
+    "\\text{For representations: } \\phi(V) = \\text{multiplicities in irreducible decomposition}"
+  ],
+  "alternateName": ["UOR Domain Applications", "Mathematical UOR Extensions"]
+}

@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-information-invariants",
+  "name": "Describes Information Invariants",
+  "description": "Details the structural properties and relationships in information that remain unchanged despite transformations.",
+  "value": "describes",
+  "valueReference": {
+    "@type": "DefinedTerm",
+    "name": "Information Invariants",
+    "description": "The structural properties and relationships in information that remain unchanged despite transformations of the representational form."
+  },
+  "propertyID": "UOR-P-072",
+  "subject": {
+    "@type": "CreativeWork",
+    "name": "Information Preservation",
+    "@id": "urn:uor:resource:information-preservation"
+  },
+  "object": {
+    "@type": "DefinedTerm",
+    "name": "Information Invariants",
+    "@id": "urn:uor:concept:information-invariants"
+  },
+  "relationshipStrength": 0.9,
+  "properties": {
+    "relationshipType": "characterization",
+    "context": "signal processing"
+  }
+}

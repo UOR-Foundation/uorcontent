@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:cryptographic-extensions",
+  "name": "Cryptographic Extensions",
+  "description": "Applications of UOR concepts to cryptography, leveraging factorization hardness and developing novel approaches for post-quantum cryptography based on spectral hardness assumptions.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Concepts",
+    "@id": "urn:uor:concept-set:uor"
+  },
+  "termCode": "UOR-C-193",
+  "text": "Cryptographic Extensions represent a practical application domain for the UOR framework, where its formal insights into prime factorization create new foundations for secure communication and computation.\n\nThe fundamental connection between UOR and cryptography lies in factorization hardness, which underpins many cryptographic systems. Traditional public-key cryptosystems like RSA rely directly on the computational difficulty of factoring large composite numbers into primes. The UOR framework provides a deeper theoretical understanding of why this factorization problem is difficult, framing it in terms of recovering prime coordinates from their composite representation.\n\nBeyond providing theoretical foundations for existing systems, UOR's perspective on prime structures has led to novel approaches for post-quantum cryptography. While traditional factorization-based cryptography is vulnerable to quantum algorithms like Shor's algorithm, UOR-inspired cryptosystems based on spectral hardness assumptions offer potential resistance to quantum attacks.\n\nThese new cryptographic primitives leverage the complexity of recovering specific patterns in prime coordinate space, rather than relying solely on integer factorization. For example, the Spectral Lattice Problem defines security based on finding short vectors in lattices derived from prime coordinate transformations:\n\nGiven a basis B of a lattice L and a target vector t, find s such that ‖B·s - t‖ < δ\n\nwhere the basis B is constructed from prime coordinate transformations. This problem appears resistant to known quantum algorithms while maintaining classical hardness.\n\nUOR principles also inform zero-knowledge proof systems, allowing parties to prove statements about prime factorization structures without revealing the factors themselves. These protocols enable secure multiparty computation on sensitive data with factorization-based properties.\n\nAnother innovation is coherence-based hashing, where hash functions are designed to preserve specific coherence properties while creating outputs that are computationally difficult to invert. These hash functions have applications in blockchain technology and secure multiparty computation.\n\nHomomorphic encryption schemes benefit from UOR's homomorphism between multiplicative and additive structures, enabling computations on encrypted data that respect the underlying algebraic operations. This connection has led to more efficient implementations of fully homomorphic encryption for specific classes of functions.\n\nThese cryptographic extensions demonstrate how the abstract mathematical principles of the UOR framework can translate into practical security technologies with potentially significant advantages over existing approaches.",
+  "mathExpression": [
+    "\\text{SLP}(B, t, \\delta): \\text{Find } s \\text{ such that } \\|B \\cdot s - t\\| < \\delta",
+    "\\text{where } B \\text{ encodes a prime coordinate transformation}",
+    "H_{\\text{coh}}(x) = \\text{Truncate}(\\phi(g^{\\phi^{-1}(x)} \\bmod N))",
+    "E_{\\text{hom}}(m_1) \\otimes E_{\\text{hom}}(m_2) = E_{\\text{hom}}(m_1 \\times m_2)"
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Post-Quantum Cryptography",
+      "@id": "urn:uor:concept:post-quantum-cryptography"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Zero-Knowledge Proof",
+      "@id": "urn:uor:concept:zero-knowledge-proof"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Homomorphic Encryption",
+      "@id": "urn:uor:concept:homomorphic-encryption"
+    }
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "version": "1.0"
+}

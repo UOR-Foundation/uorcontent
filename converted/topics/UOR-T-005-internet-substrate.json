@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:topic:internet-substrate",
+  "name": "Internet Substrate",
+  "description": "The application of Universal Object Reference principles to formalize the internet as a coherent topological space capable of functioning as a comprehensive digital twin of reality.",
+  "keywords": ["internet substrate", "digital twin", "tripartite kernel", "universal identity", "media type definition", "distributed compute", "network mapping"],
+  "text": "The Internet Substrate redefines our understanding of the internet from a collection of discrete devices and networks into a continuous topological space with well-defined mathematical properties. By applying UOR principles, this section explores how to model every device, sensor, data stream, and user as elements in this topology, each represented through their prime coordinate structure. This transformation enables a new paradigm for internet protocols and architectures, where the digital realm can function as a true analog simulation of physical reality—a comprehensive digital twin. The Internet Substrate encompasses frameworks for digital twins, a tripartite kernel architecture, universal identity systems, standardized media type definitions, distributed compute mechanisms, and coherent network mappings. Together, these elements create a foundation for a next-generation internet that maintains essential coherence properties across digital and physical domains.",
+  "author": {
+    "@type": "Organization",
+    "name": "UOR Framework"
+  },
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z",
+  "learningResourceType": "Topic",
+  "hasPart": [
+    {
+      "@type": "CreativeWork",
+      "name": "Digital Twin Framework",
+      "@id": "urn:uor:resource:digital-twin-framework"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Tripartite Kernel",
+      "@id": "urn:uor:resource:tripartite-kernel"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Universal Identity",
+      "@id": "urn:uor:resource:universal-identity"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Media Type Definition",
+      "@id": "urn:uor:resource:media-type-definition"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Distributed Compute",
+      "@id": "urn:uor:resource:distributed-compute"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "UOR Network Mapping",
+      "@id": "urn:uor:resource:uor-network-mapping"
+    }
+  ],
+  "potentialAction": {
+    "@type": "Action",
+    "name": "explore",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "/internet-substrate/{subtopic}"
+    }
+  }
+}

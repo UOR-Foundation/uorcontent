@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:describes-transform-properties",
+  "name": "Describes Transform Properties",
+  "description": "Describes the fundamental mathematical properties that characterize universal transforms and distinguish them from traditional transformation methods.",
+  "propertyID": "UOR-P-060",
+  "value": "descriptive relationship",
+  "subject": "urn:uor:resource:universal-transforms",
+  "object": "urn:uor:concept:transform-properties",
+  "relationshipStrength": "expository",
+  "contextualDescription": "The Universal Transforms resource describes the key properties that distinguish universal transforms from traditional methods, including composition closure, group structure under composition, continuity allowing smooth transitions between representations, scale invariance across representation sizes, generalized linearity in prime coordinate space, and information isometry preserving essential relationships."
+}

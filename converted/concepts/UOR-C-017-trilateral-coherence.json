@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:trilateral-coherence",
+  "name": "Trilateral Coherence",
+  "description": "The principle that every coherent description of an object must harmonize three aspects: intrinsic structure, dynamical rules, and observer frame.",
+  "termCode": "UOR-C-017",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "relatedConcepts": [
+    "urn:uor:concept:observer-coherence",
+    "urn:uor:concept:canonical-representation",
+    "urn:uor:concept:observer-reference-frames"
+  ],
+  "sourceText": "Every coherent description of an object must incorporate and harmonize three aspects: Intrinsic Structure (the object's canonical prime decomposition), Dynamical Rules (the composition laws governing object interactions), and Observer Frame (the perspective from which the object is described). These three elements form an indivisible triad - changing any one necessitates adjustments in the others to maintain a coherent description.",
+  "dateCreated": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-22T00:00:00Z"
+}
