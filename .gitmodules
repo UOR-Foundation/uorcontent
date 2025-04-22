@@ -1,0 +1,3 @@
+[submodule "templates/schemaorg"]
+	path = templates/schemaorg
+	url = https://github.com/schemaorg/schemaorg.git
