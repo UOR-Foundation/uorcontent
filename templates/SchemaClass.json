@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Class",
+  "name": "",
+  "description": "",
+  "subClassOf": {
+    "@type": "Class",
+    "@id": ""
+  },
+  "supersededBy": null,
+  "rdfs:comment": "",
+  "rdfs:label": "",
+  "rdfs:subClassOf": "",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "@id": "https://schema.org"
+  },
+  "domainIncludes": []
+}

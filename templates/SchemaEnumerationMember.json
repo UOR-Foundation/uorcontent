@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Enumeration",
+  "name": "",
+  "description": "",
+  "isPartOf": {
+    "@type": "Class",
+    "@id": ""
+  },
+  "rdfs:comment": "",
+  "rdfs:label": ""
+}

@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Class",
+  "name": "DefinedTerm",
+  "description": "A word, name, acronym, phrase, etc. with a formal definition. Often used in the context of category or subject classification, glossaries or dictionaries, product or creative work types, etc.",
+  "subClassOf": {
+    "@type": "Class",
+    "@id": "Intangible"
+  },
+  "rdfs:comment": "A word, name, acronym, phrase, etc. with a formal definition. Often used in the context of category or subject classification, glossaries or dictionaries, product or creative work types, etc.",
+  "rdfs:label": "DefinedTerm",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "@id": "https://schema.org"
+  },
+  "properties": [
+    "inDefinedTermSet",
+    "termCode",
+    "terminologyCode"
+  ]
+}

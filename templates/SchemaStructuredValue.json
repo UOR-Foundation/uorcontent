@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Class",
+  "name": "StructuredValue",
+  "description": "Structured values are used when the value of a property has a more complex structure than simple literal values.",
+  "subClassOf": {
+    "@type": "Class",
+    "@id": "Intangible"
+  },
+  "rdfs:comment": "Structured values are used when the value of a property has a more complex structure than simple literal values.",
+  "rdfs:label": "StructuredValue",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "@id": "https://schema.org"
+  }
+}

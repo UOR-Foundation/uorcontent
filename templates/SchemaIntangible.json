@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Class",
+  "name": "Intangible",
+  "description": "A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc.",
+  "subClassOf": {
+    "@type": "Class",
+    "@id": "Thing"
+  },
+  "rdfs:comment": "A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc.",
+  "rdfs:label": "Intangible",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "@id": "https://schema.org"
+  }
+}

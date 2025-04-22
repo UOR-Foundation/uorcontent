@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Class",
+  "name": "PropertyValue",
+  "description": "A property-value pair, e.g. representing a feature of a product or place.",
+  "subClassOf": {
+    "@type": "Class",
+    "@id": "StructuredValue"
+  },
+  "rdfs:comment": "A property-value pair, e.g. representing a feature of a product or place.",
+  "rdfs:label": "PropertyValue",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "@id": "https://schema.org"
+  },
+  "properties": [
+    "maxValue",
+    "measurementTechnique",
+    "minValue",
+    "propertyID",
+    "unitCode",
+    "unitText",
+    "value",
+    "valueReference"
+  ]
+}

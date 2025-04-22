@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Class",
+  "name": "DefinedTermSet",
+  "description": "A set of defined terms for example a set of categories or a classification scheme, a glossary, dictionary or enumeration.",
+  "subClassOf": {
+    "@type": "Class",
+    "@id": "CreativeWork"
+  },
+  "rdfs:comment": "A set of defined terms for example a set of categories or a classification scheme, a glossary, dictionary or enumeration.",
+  "rdfs:label": "DefinedTermSet",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "@id": "https://schema.org"
+  },
+  "properties": [
+    "hasDefinedTerm"
+  ]
+}
