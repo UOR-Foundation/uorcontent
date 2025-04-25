@@ -3,7 +3,7 @@
   "@type": "ItemList",
   "name": "UOR Predicates Index",
   "description": "Index of all UOR predicates",
-  "numberOfItems": 223,
+  "numberOfItems": 276,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -2009,7 +2009,484 @@
       "item": {
         "@id": "urn:uor:predicate:temporal-musical-structures-implements-temporal-prime-decomposition",
         "@type": "PropertyValue",
-        "name": "implements"
+        "name": "temporal-musical-structures-implements-temporal-prime-decomposition"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 224,
+      "item": {
+        "@id": "urn:uor:predicate:pitch-prime-representation-implements-harmonic-prime-decomposition",
+        "@type": "PropertyValue",
+        "name": "pitch-prime-representation-implements-harmonic-prime-decomposition"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 225,
+      "item": {
+        "@id": "urn:uor:predicate:interval-prime-structure-extends-pitch-prime-representation",
+        "@type": "PropertyValue",
+        "name": "interval-prime-structure-extends-pitch-prime-representation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 226,
+      "item": {
+        "@id": "urn:uor:predicate:harmonic-analysis-guide-implements-harmonic-prime-decomposition",
+        "@type": "PropertyValue",
+        "name": "harmonic-analysis-guide-implements-harmonic-prime-decomposition"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 227,
+      "item": {
+        "@id": "urn:uor:predicate:definesAxiom-axiom-universal-mapping-property-connections-to-universal-coordinates",
+        "@type": "PropertyValue",
+        "name": "definesAxiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 228,
+      "item": {
+        "@id": "urn:uor:predicate:definesAxiom-axiom-universal-mapping-property-formalization-to-universal-coordinates",
+        "@type": "PropertyValue",
+        "name": "definesAxiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 229,
+      "item": {
+        "@id": "urn:uor:predicate:definesAxiom-axiom-universal-mapping-property-insights-to-universal-coordinates",
+        "@type": "PropertyValue",
+        "name": "definesAxiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 230,
+      "item": {
+        "@id": "urn:uor:predicate:definesAxiom-axiom-universal-mapping-property-statement-to-universal-coordinates",
+        "@type": "PropertyValue",
+        "name": "definesAxiom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 231,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-coherence-inner-product-connections-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 232,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-coherence-inner-product-formalization-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 233,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-coherence-inner-product-insights-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 234,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-coherence-inner-product-statement-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 235,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-coherence-norm-connections-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 236,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-coherence-norm-formalization-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 237,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-coherence-norm-insights-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 238,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-coherence-norm-statement-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 239,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-trilateral-coherence-connections-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 240,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-trilateral-coherence-formalization-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 241,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-trilateral-coherence-insights-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 242,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-axiom-trilateral-coherence-statement-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 243,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-coherence-metric-induced-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 244,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-coherence-norm-definition-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 245,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherence-representational-coherence-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 246,
+      "item": {
+        "@id": "urn:uor:predicate:definesCoherenceProduct-coherence-inner-product-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "definesCoherenceProduct"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 247,
+      "item": {
+        "@id": "urn:uor:predicate:definesHyperbolicGeometry-hyperbolic-prime-geometry-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "definesHyperbolicGeometry"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 248,
+      "item": {
+        "@id": "urn:uor:predicate:definesIntrinsicPrimes-intrinsic-prime-definition-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "definesIntrinsicPrimes"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 249,
+      "item": {
+        "@id": "urn:uor:predicate:definesPrimeProperties-prime-properties-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "definesPrimeProperties"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 250,
+      "item": {
+        "@id": "urn:uor:predicate:definesPrimeStructure-prime-coordinate-geometry-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "definesPrimeStructure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 251,
+      "item": {
+        "@id": "urn:uor:predicate:definesPrimeStructure-prime-coordinate-homomorphism-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "definesPrimeStructure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 252,
+      "item": {
+        "@id": "urn:uor:predicate:definesPrimeStructure-prime-coordinate-map-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "definesPrimeStructure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 253,
+      "item": {
+        "@id": "urn:uor:predicate:definesPrimeStructure-prime-coordinate-mapping-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "definesPrimeStructure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 254,
+      "item": {
+        "@id": "urn:uor:predicate:definesPrimeStructure-prime-coordinates-to-universal-coordinates",
+        "@type": "PropertyValue",
+        "name": "definesPrimeStructure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 255,
+      "item": {
+        "@id": "urn:uor:predicate:definesPrimeStructure-prime-formula-foundation-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "definesPrimeStructure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 256,
+      "item": {
+        "@id": "urn:uor:predicate:definesPrimeStructure-transcendence-via-prime-spectra-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "definesPrimeStructure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 257,
+      "item": {
+        "@id": "urn:uor:predicate:definesPrimeValuation-prime-valuation-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "definesPrimeValuation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 258,
+      "item": {
+        "@id": "urn:uor:predicate:definesReferenceFrame-reference-frame-to-universal-object-reference",
+        "@type": "PropertyValue",
+        "name": "definesReferenceFrame"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 259,
+      "item": {
+        "@id": "urn:uor:predicate:demonstratesCoherenceMinimization-coherence-minimization-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "demonstratesCoherenceMinimization"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 260,
+      "item": {
+        "@id": "urn:uor:predicate:establishesAsValue-coherence-as-value-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "establishesAsValue"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 261,
+      "item": {
+        "@id": "urn:uor:predicate:establishesCoherenceField-unified-coherence-field-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "establishesCoherenceField"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 262,
+      "item": {
+        "@id": "urn:uor:predicate:establishesPrimeRole-prime-uor-role-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "establishesPrimeRole"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 263,
+      "item": {
+        "@id": "urn:uor:predicate:extendsTo-cryptographic-extensions-to-extensions",
+        "@type": "PropertyValue",
+        "name": "extendsTo"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 264,
+      "item": {
+        "@id": "urn:uor:predicate:extendsToDomain-formal-domain-extensions-to-extensions",
+        "@type": "PropertyValue",
+        "name": "extendsToDomain"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 265,
+      "item": {
+        "@id": "urn:uor:predicate:extendsToGeometry-formal-geometric-extensions-to-extensions",
+        "@type": "PropertyValue",
+        "name": "extendsToGeometry"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 266,
+      "item": {
+        "@id": "urn:uor:predicate:extendsToTopology-formal-topological-extensions-to-extensions",
+        "@type": "PropertyValue",
+        "name": "extendsToTopology"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 267,
+      "item": {
+        "@id": "urn:uor:predicate:formalizesMathematically-formal-arithmetization-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "formalizesMathematically"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 268,
+      "item": {
+        "@id": "urn:uor:predicate:hasApplication-distributed-compute-applications-to-extensions",
+        "@type": "PropertyValue",
+        "name": "hasApplication"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 269,
+      "item": {
+        "@id": "urn:uor:predicate:hasApplication-machine-learning-applications-to-extensions",
+        "@type": "PropertyValue",
+        "name": "hasApplication"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 270,
+      "item": {
+        "@id": "urn:uor:predicate:hasApplication-media-type-applications-to-extensions",
+        "@type": "PropertyValue",
+        "name": "hasApplication"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 271,
+      "item": {
+        "@id": "urn:uor:predicate:hasApplication-norm-applications-to-extensions",
+        "@type": "PropertyValue",
+        "name": "hasApplication"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 272,
+      "item": {
+        "@id": "urn:uor:predicate:hasPrimeApplications-prime-applications-to-prime-foundations",
+        "@type": "PropertyValue",
+        "name": "hasPrimeApplications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 273,
+      "item": {
+        "@id": "urn:uor:predicate:implementsCoherenceDynamics-coherence-preserving-dynamics-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "implementsCoherenceDynamics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 274,
+      "item": {
+        "@id": "urn:uor:predicate:implementsLearningArchitecture-learning-systems-architecture-to-learning-implementation",
+        "@type": "PropertyValue",
+        "name": "implementsLearningArchitecture"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 275,
+      "item": {
+        "@id": "urn:uor:predicate:implementsNeuralArchitecture-neural-coherence-architecture-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "implementsNeuralArchitecture"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 276,
+      "item": {
+        "@id": "urn:uor:predicate:implementsQuantumSystem-quantum-coherence-systems-to-temporal-coherence",
+        "@type": "PropertyValue",
+        "name": "implementsQuantumSystem"
       }
     }
   ]

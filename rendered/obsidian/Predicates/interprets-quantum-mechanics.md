@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "interprets quantum mechanics"
 ---
 
 # interprets quantum mechanics
 
-Relation indicating that a resource interprets quantum phenomena within the UOR framework
+## Description
+
+Relation indicating that a resource interprets quantum phenomena within the [[uor-c-001|UOR framework]]
 
 ## Predicate: interprets quantum mechanics
 
@@ -18,3 +21,4 @@ Relation indicating that a resource interprets quantum phenomena within the UOR 
 ## Metadata
 
 - **ID:** urn:uor:predicate:interprets-quantum-mechanics
+- **Semantic Type:** interprets quantum mechanics

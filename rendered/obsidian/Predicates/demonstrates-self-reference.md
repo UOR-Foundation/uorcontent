@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "demonstrates self-reference via diagonal lemma"
 ---
 
 # demonstrates self-reference via diagonal lemma
 
-Relation indicating that a resource demonstrates how self-reference emerges naturally from prime encoding structure through the diagonal lemma
+## Description
+
+Relation indicating that a resource demonstrates how self-reference emerges naturally from prime encoding structure through the [[uor-c-227|diagonal lemma]]
 
 ## Predicate: demonstrates self-reference via diagonal lemma
 
@@ -18,3 +21,4 @@ Relation indicating that a resource demonstrates how self-reference emerges natu
 ## Metadata
 
 - **ID:** urn:uor:predicate:demonstrates-self-reference
+- **Semantic Type:** demonstrates self-reference via diagonal lemma

@@ -9,7 +9,9 @@ code: "UOR-C-136"
 
 # Prime UOR Role
 
-The essential functions of intrinsic primes within the Universal Object Reference framework as coordinate axes, information atoms, and spectral components.
+## Description
+
+The essential functions of [[uor-c-307|intrinsic primes]] within the Universal Object Reference framework as coordinate axes, information atoms, and spectral components.
 
 ## Metadata
 

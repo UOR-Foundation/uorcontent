@@ -4,11 +4,14 @@ title: "Describes Decomposition Methods"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Decomposition Methods"
 ---
 
 # Describes Decomposition Methods
 
-Describes the computational algorithms and mathematical techniques used to calculate temporal prime decomposition.
+## Description
+
+Describes the computational algorithms and mathematical techniques used to calculate temporal [[uor-c-002|prime decomposition]].
 
 ## Predicate: Describes Decomposition Methods
 
@@ -17,3 +20,4 @@ Describes the computational algorithms and mathematical techniques used to calcu
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-decomposition-methods
+- **Semantic Type:** Describes Decomposition Methods

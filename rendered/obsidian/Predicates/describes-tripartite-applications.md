@@ -4,11 +4,14 @@ title: "Describes Tripartite Applications"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Tripartite Applications"
 ---
 
 # Describes Tripartite Applications
 
-Details the practical applications and implementation scenarios for the Tripartite Kernel.
+## Description
+
+Details the practical applications and implementation scenarios for the [[uor-c-317|Tripartite Kernel]].
 
 ## Predicate: Describes Tripartite Applications
 
@@ -17,3 +20,4 @@ Details the practical applications and implementation scenarios for the Triparti
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-tripartite-applications
+- **Semantic Type:** Describes Tripartite Applications

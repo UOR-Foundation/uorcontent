@@ -10,24 +10,31 @@ targets:
   - "urn:uor:concept:quantum-reference-frame"
   - "urn:uor:concept:quantum-information-uor"
 predicateType: "connects"
+semanticType: "connects"
 ---
 
 # connects
+
+## Description
+
+No description available.
 
 ## Predicate: connects
 
 **Value:** related quantum concepts
 
-**Description:** The quantum prime superposition concept connects to related quantum concepts
+**Description:** The [[uor-c-327|quantum prime superposition]] concept connects to related quantum concepts
 
-**Subject:** [[uor-c-327|quantum-prime-superposition]]
+**Subject:** [[uor-c-327|Quantum Prime Superposition]]
 
 **Targets:**
 
-- [[uor-c-328|quantum-entanglement-primes]]
-- [[uor-c-026|quantum-reference-frame]]
-- [[uor-c-191|quantum-information-uor]]
+- [[uor-c-328|Quantum Entanglement Primes]]
+- [[uor-c-026|Quantum Reference Frame]]
+- [[uor-c-191|Quantum Information UOR]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:connects-quantum-concepts
+- **Semantic Type:** connects
+- **Created:** 2025-04-22T00:00:00Z

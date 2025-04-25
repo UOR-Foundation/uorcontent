@@ -9,7 +9,9 @@ code: "UOR-C-311"
 
 # Prime Coordinate Geometry
 
-Prime Coordinate Geometry is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-311|Prime [[uor-c-144|Coordinate Geometry]]]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

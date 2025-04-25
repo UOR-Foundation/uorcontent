@@ -9,7 +9,9 @@ code: "UOR-C-312"
 
 # Prime Coordinate Mapping
 
-Prime Coordinate Mapping is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-312|Prime Coordinate Mapping]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

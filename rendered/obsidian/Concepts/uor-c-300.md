@@ -9,7 +9,9 @@ code: "UOR-C-300"
 
 # Representational Coherence
 
-Representational Coherence is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-300|Representational Coherence]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

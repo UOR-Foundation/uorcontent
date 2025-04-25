@@ -4,11 +4,14 @@ title: "Defines Universal Transforms"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Defines Universal Transforms"
 ---
 
 # Defines Universal Transforms
 
-Establishes the formal mathematical definition of universal transforms that operate on prime coordinates to preserve information coherence across different dimensional spaces.
+## Description
+
+Establishes the formal mathematical definition of universal transforms that operate on [[uor-c-302|prime coordinates]] to preserve information coherence across different dimensional spaces.
 
 ## Predicate: Defines Universal Transforms
 
@@ -17,3 +20,4 @@ Establishes the formal mathematical definition of universal transforms that oper
 ## Metadata
 
 - **ID:** urn:uor:predicate:defines-universal-transforms
+- **Semantic Type:** Defines Universal Transforms

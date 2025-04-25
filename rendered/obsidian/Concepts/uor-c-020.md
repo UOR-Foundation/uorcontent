@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Prime Space Geometry
 
+## Description
+
 The study of geometric structures that emerge from the prime-coordinate representation of objects, revealing patterns in their composition and relationships.
 
 ## Definition
@@ -21,23 +23,23 @@ The prime-coordinate representation induces a rich geometric structure that reve
 
 ## Mathematical Formulation
 
-$$
+$
 ||φ(x)||
-$$
+$
 
-$$
+$
 ⟨φ(x),φ(y)⟩
-$$
+$
 
-$$
+$
 d(x,y) = ||φ(x) - φ(y)||
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-002|prime-decomposition]]
-- [[uor-c-021|euclidean-structure]]
-- [[uor-c-152|coherence-metric]]
+- [[uor-c-002|Prime Decomposition]]
+- [[uor-c-021|Euclidean Structure]]
+- [[uor-c-023|Coherence Metric]]
 
 ## Metadata
 

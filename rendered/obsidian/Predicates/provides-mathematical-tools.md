@@ -10,9 +10,14 @@ targets:
   - "urn:uor:concept:sheaf-structure"
   - "urn:uor:concept:quantum-reference-frame"
 predicateType: "provides mathematical tools"
+semanticType: "provides mathematical tools"
 ---
 
 # provides mathematical tools
+
+## Description
+
+No description available.
 
 ## Predicate: provides mathematical tools
 
@@ -20,14 +25,16 @@ predicateType: "provides mathematical tools"
 
 **Description:** tool provision relationship
 
-**Subject:** [[algebraic-topological-enhancements]]
+**Subject:** [[algebraic-topological-enhancements|Algebraic & Topological Enhancements]]
 
 **Targets:**
 
-- [[uor-c-024|clifford-algebra-structure]]
-- [[uor-c-025|sheaf-structure]]
-- [[uor-c-026|quantum-reference-frame]]
+- [[uor-c-024|Clifford Algebra Structure]]
+- [[uor-c-025|Sheaf Structure]]
+- [[uor-c-026|Quantum Reference Frame]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:provides-mathematical-tools
+- **Semantic Type:** provides mathematical tools
+- **Created:** 2025-04-22T00:00:00Z

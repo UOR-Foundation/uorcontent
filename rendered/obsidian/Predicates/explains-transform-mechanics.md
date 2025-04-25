@@ -4,9 +4,12 @@ title: "Explains Transform Mechanics"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Explains Transform Mechanics"
 ---
 
 # Explains Transform Mechanics
+
+## Description
 
 Explains the operational processes and steps involved in applying universal transforms to convert signals between different representational domains.
 
@@ -17,3 +20,4 @@ Explains the operational processes and steps involved in applying universal tran
 ## Metadata
 
 - **ID:** urn:uor:predicate:explains-transform-mechanics
+- **Semantic Type:** Explains Transform Mechanics

@@ -4,9 +4,12 @@ title: "Defines Temporal Primes"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Defines Temporal Primes"
 ---
 
 # Defines Temporal Primes
+
+## Description
 
 Establishes the formal definition and properties of temporal prime elements in dynamical systems.
 
@@ -17,3 +20,4 @@ Establishes the formal definition and properties of temporal prime elements in d
 ## Metadata
 
 - **ID:** urn:uor:predicate:defines-temporal-primes
+- **Semantic Type:** Defines Temporal Primes

@@ -9,7 +9,9 @@ code: "UOR-C-317"
 
 # Tripartite Kernel
 
-Tripartite Kernel is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-317|Tripartite Kernel]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

@@ -10,9 +10,14 @@ targets:
   - "urn:uor:concept:polynomial-ring-extension"
   - "urn:uor:concept:combinatorial-monoid-extension"
 predicateType: "extends to domains"
+semanticType: "extends to domains"
 ---
 
 # extends to domains
+
+## Description
+
+No description available.
 
 ## Predicate: extends to domains
 
@@ -20,14 +25,16 @@ predicateType: "extends to domains"
 
 **Description:** extension relationship
 
-**Subject:** [[generalization]]
+**Subject:** [[generalization|UOR Generalization]]
 
 **Targets:**
 
-- [[uor-c-031|general-uor-existence]]
-- [[uor-c-032|polynomial-ring-extension]]
-- [[uor-c-033|combinatorial-monoid-extension]]
+- [[uor-c-031|General UOR Existence Theorem]]
+- [[uor-c-032|Polynomial Ring Extension]]
+- [[uor-c-033|Combinatorial Monoid Extension]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:extends-to-domains
+- **Semantic Type:** extends to domains
+- **Created:** 2025-04-22T00:00:00Z

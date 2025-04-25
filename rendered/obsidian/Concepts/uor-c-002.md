@@ -13,17 +13,19 @@ relatedConcepts:
 
 # Prime Decomposition
 
+## Description
+
 The factorization of an object into its irreducible components, providing a natural coordinate system that reveals inherent structure.
 
 ## Definition
 
-The central insight of UOR is that prime factorization provides a natural, intrinsic coordinate system for objects: Every object has a unique factorization into irreducible components. This factorization reveals the object's inherent structure. The prime-coordinate representation linearizes multiplicative relationships. The resulting geometric structure unifies diverse mathematical domains.
+The central insight of UOR is that prime factorization provides a natural, intrinsic coordinate system for objects: Every object has a [[uor-c-301|unique factorization]] into irreducible components. This factorization reveals the object's inherent structure. The prime-coordinate representation linearizes multiplicative relationships. The resulting geometric structure unifies diverse mathematical domains.
 
 ## Related Concepts
 
-- [[uor-c-001|uor-framework]]
-- [[uor-c-301|unique-factorization]]
-- [[uor-c-302|prime-coordinates]]
+- [[uor-c-001|UOR Framework]]
+- [[uor-c-301|Unique Factorization]]
+- [[uor-c-302|Prime Coordinates]]
 
 ## Metadata
 

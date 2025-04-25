@@ -14,11 +14,13 @@ partOf: "urn:uor:topic:universal-object-reference"
 
 # UOR Generalization
 
+## Description
+
 The generalization of the Universal Object Reference framework to various mathematical domains beyond integer factorization.
 
-The UOR framework can be generalized to various mathematical domains beyond integer factorization.
+The [[uor-c-001|UOR framework]] can be generalized to various mathematical domains beyond integer factorization.
 
-Theorem (General UOR Existence): Let D be any UFD (or GCD domain satisfying factorization axioms). Then the prime-coordinate functor φ: D^× → ℤ^P is well-defined, exact, and admits an extension to polynomial rings D[x], localizations D_S, and formal power series D[[x]], preserving unique factorization in each case.
+Theorem ([[uor-c-031|General UOR Existence]]): Let D be any UFD (or GCD domain satisfying factorization axioms). Then the prime-coordinate functor φ: D^× → ℤ^P is well-defined, exact, and admits an extension to polynomial rings D[x], localizations D_S, and formal power series D[[x]], preserving [[uor-c-301|unique factorization]] in each case.
 
 Concretely, UOR applies whenever a domain admits a notion of irreducible generators P and a UFD-like factorization property. Key examples include:
 
@@ -32,9 +34,9 @@ In each context, φ remains injective, multiplicative-additive, and coherence‑
 
 ## References
 
-- [[uor-c-031|general-uor-existence]]
-- [[uor-c-032|polynomial-ring-extension]]
-- [[uor-c-033|combinatorial-monoid-extension]]
+- [[uor-c-031|General UOR Existence Theorem]]
+- [[uor-c-032|Polynomial Ring Extension]]
+- [[uor-c-033|Combinatorial Monoid Extension]]
 
 ## Metadata
 

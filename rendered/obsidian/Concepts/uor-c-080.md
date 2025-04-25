@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Temporal Frame Categories
 
+## Description
+
 The classification of temporal reference frames based on their defining characteristics, including scale, flow, relativistic effects, and topological properties.
 
 ## Definition
@@ -65,79 +67,79 @@ This mathematical structure provides powerful tools for analyzing consistency an
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Temporal reference frames can be categorized based on their specific properties:}
-$$
+$
 
-$$
+$
 \text{1. Scale Frames - Frames that differ in their characteristic timescale:}
-$$
+$
 
-$$
+$
 t_2 = \alpha t_1
-$$
+$
 
-$$
+$
 \text{   Where } \alpha \text{ is a scale factor.}
-$$
+$
 
-$$
+$
 \text{2. Flow Frames - Frames that differ in their time flow characteristics:}
-$$
+$
 
-$$
+$
 t_2 = \int^{t_1} \beta(\tau) d\tau
-$$
+$
 
-$$
+$
 \text{   Where } \beta(\tau) \text{ is a variable flow rate function.}
-$$
+$
 
-$$
+$
 \text{3. Relativistic Frames - Frames related by Lorentz transformations:}
-$$
+$
 
-$$
+$
 t_2 = \gamma(t_1 - vx_1/c^2)
-$$
+$
 
-$$
+$
 \text{   Where } \gamma = 1/\sqrt{1-v^2/c^2} \text{ is the Lorentz factor.}
-$$
+$
 
-$$
+$
 \text{4. Topological Frames - Frames that differ in their temporal topology:}
-$$
+$
 
-$$
+$
 t_2 = f(t_1)
-$$
+$
 
-$$
+$
 \text{   Where } f \text{ may not be a simple monotonic function.}
-$$
+$
 
-$$
+$
 \text{The space of all possible temporal reference frames forms a frame bundle:}
-$$
+$
 
-$$
+$
 B_T = \{F_T^{(\alpha)} | \alpha \in A\}
-$$
+$
 
-$$
+$
 \text{The coherence-preserving transformations form a groupoid structure:}
-$$
+$
 
-$$
+$
 G_T = \{\Lambda_{\alpha\beta} | \alpha, \beta \in A, C(\phi_\alpha, \phi_\beta \circ \Lambda_{\alpha\beta}) \geq C_{min}\}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-078|temporal-reference-frame]]
-- [[uor-c-079|temporal-frame-transformation]]
-- [[uor-c-081|temporal-frame-theorems]]
+- [[uor-c-078|Temporal Reference Frame]]
+- [[uor-c-079|Temporal Frame Transformation]]
+- [[uor-c-081|Temporal Frame Theorems]]
 
 ## Metadata
 

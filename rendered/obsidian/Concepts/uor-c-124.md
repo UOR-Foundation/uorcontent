@@ -9,6 +9,8 @@ code: "UOR-C-124"
 
 # Media Type Categories
 
+## Description
+
 The classification of diverse media types according to their definitional requirements, including streaming media, interactive content, data structures, computational media, sensory data, and composite media.
 
 ## Metadata

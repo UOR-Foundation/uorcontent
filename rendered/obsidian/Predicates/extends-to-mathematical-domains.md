@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "extends to mathematical domains"
 ---
 
 # extends to mathematical domains
 
-Relation indicating that a resource extends the UOR framework to various mathematical domains
+## Description
+
+Relation indicating that a resource extends the [[uor-c-001|UOR framework]] to various mathematical domains
 
 ## Predicate: extends to mathematical domains
 
@@ -18,3 +21,4 @@ Relation indicating that a resource extends the UOR framework to various mathema
 ## Metadata
 
 - **ID:** urn:uor:predicate:extends-to-mathematical-domains
+- **Semantic Type:** extends to mathematical domains

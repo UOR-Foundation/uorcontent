@@ -16,19 +16,21 @@ relatedConcepts:
 
 # Prime Space Learning Dynamics
 
-The evolutionary processes by which UOR systems adapt their prime decomposition structures through experience, optimizing representations to improve coherence, predictive power, and computational efficiency.
+## Description
+
+The evolutionary processes by which UOR systems adapt their [[uor-c-002|prime decomposition]] structures through experience, optimizing representations to improve coherence, predictive power, and computational efficiency.
 
 ## Definition
 
-Prime Space Learning Dynamics characterizes how UOR systems adaptively evolve their prime decomposition structures through experience, optimizing representations to improve coherence, predictive power, and computational efficiency. While traditional UOR concepts focus on static factorization properties, this concept addresses the dynamic processes through which systems discover and refine their prime decomposition strategies over time.
+[[uor-c-331|Prime Space Learning Dynamics]] characterizes how UOR systems adaptively evolve their [[uor-c-002|prime decomposition]] structures through experience, optimizing representations to improve coherence, predictive power, and computational efficiency. While traditional UOR concepts focus on static factorization properties, this concept addresses the dynamic processes through which systems discover and refine their [[uor-c-002|prime decomposition]] strategies over time.
 
-Learning within the UOR framework involves modifying several aspects of the prime space representation: discovering appropriate prime elements, optimizing their weights or exponents, identifying meaningful correlations between primes, and adapting the observer frame to better capture relevant patterns. These processes operate across multiple timescales and involve distinct learning mechanisms that together enable UOR systems to improve their representational capabilities through experience.
+Learning within the [[uor-c-001|UOR framework]] involves modifying several aspects of the prime space representation: discovering appropriate prime elements, optimizing their weights or exponents, identifying meaningful correlations between primes, and adapting the observer frame to better capture relevant patterns. These processes operate across multiple timescales and involve distinct learning mechanisms that together enable UOR systems to improve their representational capabilities through experience.
 
 **Learning Objectives in Prime Space**
 
 Learning dynamics in UOR systems are guided by several complementary objectives that balance different representational priorities:
 
-1. **Coherence Minimization**: Learning to represent objects with decompositions that minimize representational complexity while preserving essential structure, implementing the coherence norm principle through dynamic adaptation.
+1. **[[uor-c-217|Coherence Minimization]]**: Learning to represent objects with decompositions that minimize representational complexity while preserving essential structure, implementing the [[uor-c-005|coherence norm]] principle through dynamic adaptation.
 
 2. **Prediction Optimization**: Evolving prime decompositions to maximize their predictive power for future states or unobserved properties, enabling accurate inference and anticipation.
 
@@ -74,7 +76,7 @@ These weight optimization processes enable UOR systems to refine their represent
 
 **Observer Frame Adaptation**
 
-A crucial aspect of UOR learning involves adapting the observer reference frame to better align with significant patterns in the domain:
+A crucial aspect of UOR learning involves adapting the observer [[uor-c-313|reference frame]] to better align with significant patterns in the domain:
 
 1. **Attention-Driven Frame Shifting**: Dynamically adjusting the observer frame to focus on more relevant or informative aspects of the representation, similar to attention mechanisms in neural systems.
 
@@ -90,11 +92,11 @@ These processes allow UOR systems to continually refine not just what they repre
 
 **Learning Architectures for UOR Systems**
 
-Implementing prime space learning dynamics requires appropriate computational architectures:
+Implementing [[uor-c-331|prime space learning dynamics]] requires appropriate computational architectures:
 
 1. **Dual-Space Learning Networks**: Neural architectures that operate in both original feature space and prime coordinate space, learning mappings between them while optimizing prime decompositions.
 
-2. **Hierarchical Prime Decomposition Networks**: Multi-level architectures that learn prime decompositions at different levels of abstraction, with higher levels capturing more general patterns and lower levels representing specific details.
+2. **Hierarchical [[uor-c-002|Prime Decomposition]] Networks**: Multi-level architectures that learn prime decompositions at different levels of abstraction, with higher levels capturing more general patterns and lower levels representing specific details.
 
 3. **Adversarial Prime Discovery**: Using competition between decomposition and reconstruction networks to discover effective prime elements, similar to generative adversarial network principles.
 
@@ -106,13 +108,13 @@ These architectural approaches provide concrete implementation strategies for th
 
 **Meta-Learning in Prime Space**
 
-At the highest level, UOR systems can engage in meta-learning about their own prime decomposition strategies:
+At the highest level, UOR systems can engage in meta-learning about their own [[uor-c-002|prime decomposition]] strategies:
 
-1. **Prime Strategy Transfer**: Learning how to rapidly adapt prime decomposition approaches across domains, transferring representational knowledge between related contexts.
+1. **Prime Strategy Transfer**: Learning how to rapidly adapt [[uor-c-002|prime decomposition]] approaches across domains, transferring representational knowledge between related contexts.
 
 2. **Decomposition Strategy Selection**: Learning when to employ different prime factorization strategies based on domain characteristics, balancing computational efficiency with representational power.
 
-3. **Optimal Learning Rate Scheduling**: Discovering effective schedules for adjusting learning rates across different aspects of the prime decomposition, balancing stability with adaptability.
+3. **Optimal Learning Rate Scheduling**: Discovering effective schedules for adjusting learning rates across different aspects of the [[uor-c-002|prime decomposition]], balancing stability with adaptability.
 
 4. **Curriculum Learning for Primes**: Developing optimal sequences for introducing different types of prime elements during learning, building from simple to complex representations.
 
@@ -122,26 +124,26 @@ These meta-learning capabilities enable UOR systems to improve not just their sp
 
 ## Mathematical Formulation
 
-$$
+$
 \frac{d\mathcal{P}}{dt} = -\eta \nabla_{\mathcal{P}} \mathcal{L}(\mathcal{P}, \mathcal{D}) + \lambda \nabla_{\mathcal{P}} \mathcal{C}(\mathcal{P})
-$$
+$
 
-$$
+$
 \mathcal{P}_{t+1} = \mathcal{P}_t \circ \exp(\alpha_t \cdot \Delta\mathcal{P}_t)
-$$
+$
 
-$$
+$
 \mathcal{I}(\mathcal{P}; \mathcal{D}) = \sum_{p \in \mathcal{P}} I(p; \mathcal{D})
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-217|coherence-minimization]]
-- [[uor-c-215|neural-coherence-architecture]]
-- [[uor-c-218|learning-systems-architecture]]
-- [[uor-c-002|prime-decomposition]]
-- [[uor-c-320|meaning-coherence-field]]
-- [[uor-c-312|prime-coordinate-mapping]]
+- [[uor-c-217|UOR Coherence Minimization]]
+- [[uor-c-215|UOR Neural Coherence Architecture]]
+- [[uor-c-218|UOR Learning Systems and Cognitive Architecture]]
+- [[uor-c-002|Prime Decomposition]]
+- [[uor-c-320|Meaning Coherence Field]]
+- [[uor-c-312|Prime Coordinate Mapping]]
 
 ## Metadata
 

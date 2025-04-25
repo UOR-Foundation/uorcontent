@@ -9,6 +9,8 @@ code: "UOR-C-128"
 
 # Distributed Compute Dynamics
 
+## Description
+
 The emergent behaviors of the distributed computation system, including resource gravity, coherence markets, transformation cascades, adaptive specialization, and coherence consensus.
 
 ## Metadata

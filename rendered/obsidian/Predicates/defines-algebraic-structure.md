@@ -11,9 +11,14 @@ targets:
   - "urn:uor:concept:algebraic-completeness"
   - "urn:uor:concept:universal-valuations"
 predicateType: "defines algebraic structure"
+semanticType: "defines algebraic structure"
 ---
 
 # defines algebraic structure
+
+## Description
+
+No description available.
 
 ## Predicate: defines algebraic structure
 
@@ -21,15 +26,17 @@ predicateType: "defines algebraic structure"
 
 **Description:** structural definition relationship
 
-**Subject:** [[algebraic-structure]]
+**Subject:** [[algebraic-structure|Algebraic Structure of Universal Numbers]]
 
 **Targets:**
 
-- [[uor-c-042|universal-number-field-operations]]
-- [[uor-c-043|operational-lifting]]
-- [[uor-c-044|algebraic-completeness]]
-- [[uor-c-045|universal-valuations]]
+- [[uor-c-042|Universal Number Field Operations]]
+- [[uor-c-043|Operational Lifting]]
+- [[uor-c-044|Algebraic Completeness]]
+- [[uor-c-045|Universal Valuations]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:defines-algebraic-structure
+- **Semantic Type:** defines algebraic structure
+- **Created:** 2025-04-22T00:00:00Z

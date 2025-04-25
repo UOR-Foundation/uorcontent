@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "presents topological extensions"
 ---
 
 # presents topological extensions
 
-Relation indicating that a resource presents topological extensions of the UOR framework to continuous domains
+## Description
+
+Relation indicating that a resource presents topological extensions of the [[uor-c-001|UOR framework]] to continuous domains
 
 ## Predicate: presents topological extensions
 
@@ -18,3 +21,4 @@ Relation indicating that a resource presents topological extensions of the UOR f
 ## Metadata
 
 - **ID:** urn:uor:predicate:presents-topological-extensions
+- **Semantic Type:** presents topological extensions

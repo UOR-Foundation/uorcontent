@@ -12,11 +12,13 @@ relatedConcepts:
 
 # Universal Analytic Functions
 
-Functions in the universal number domain that can be represented locally by power series converging in both Archimedean and all non-Archimedean metrics.
+## Description
+
+Functions in the [[uor-c-034|universal number]] domain that can be represented locally by power series converging in both Archimedean and all non-Archimedean metrics.
 
 ## Definition
 
-Universal analytic functions extend complex and p-adic analytic functions:
+[[uor-c-052|Universal analytic functions]] extend complex and p-adic analytic functions:
 
 Definition 3 (Universal Analyticity): A function f: 𝕌 → 𝕌 is universally analytic if it can be represented locally by a power series:
 
@@ -48,46 +50,46 @@ Theorem 6 (Universal Radius of Convergence): For a power series centered at α �
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Definition 3 (Universal Analyticity): A function } f: \mathbb{U} \to \mathbb{U}
-$$
+$
 
-$$
+$
 \text{is universally analytic if it can be represented locally by a power series:}
-$$
+$
 
-$$
+$
 f(\eta) = \sum_{n=0}^{\infty} a_n (\eta - \alpha)^n
-$$
+$
 
-$$
+$
 \text{that converges in both the Archimedean and all non-Archimedean metrics.}
-$$
+$
 
-$$
+$
 \text{Theorem 4 (Characterization of Universal Analytics): A function is universally}
-$$
+$
 
-$$
+$
 \text{analytic if and only if:}
-$$
+$
 
-$$
+$
 \text{1. It is complex analytic with respect to the complex embedding}
-$$
+$
 
-$$
+$
 \text{2. It is p-adically analytic with respect to every p-adic embedding}
-$$
+$
 
-$$
+$
 \text{3. The coefficients of the power series representations in different domains are compatible}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-050|universal-derivative]]
-- [[uor-c-051|universal-integration]]
+- [[uor-c-050|Universal Derivative]]
+- [[uor-c-051|Universal Integration]]
 
 ## Metadata
 

@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Temporal Correlation Structures
 
+## Description
+
 Mathematical structures in prime coordinate space that provide the foundation for understanding and analyzing non-local temporal correlations.
 
 ## Definition
@@ -69,87 +71,87 @@ This mechanism explains apparent non-local correlations as artifacts of projecti
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Several mathematical structures support non-local temporal correlations:}
-$$
+$
 
-$$
+$
 \text{1. Prime Coordinate Temporal Bundling - Representing temporally separated events}
-$$
+$
 
-$$
+$
 \text{as bundled patterns in prime coordinate space:}
-$$
+$
 
-$$
+$
 \Phi_B(E_1, E_2) = h(\phi(E_1), \phi(E_2))
-$$
+$
 
-$$
+$
 \text{   Where } h \text{ is a bundling function creating a composite representation.}
-$$
+$
 
-$$
+$
 \text{2. Temporal Coherence Manifolds - Higher-dimensional structures where}
-$$
+$
 
-$$
+$
 \text{temporally separated events form coherent patterns:}
-$$
+$
 
-$$
+$
 M_T = \{(\phi(E), t) | C_T(\phi(E), \Phi_0) \geq C_{min}\}
-$$
+$
 
-$$
+$
 \text{   Where } \Phi_0 \text{ is a reference pattern and } C_{min} \text{ is a minimum}
-$$
+$
 
-$$
+$
 \text{   coherence threshold.}
-$$
+$
 
-$$
+$
 \text{3. Temporal Loop Structures - Configurations forming closed loops through time:}
-$$
+$
 
-$$
+$
 L_T = \{\phi(E(t)) | t \in [t_0, t_1], \phi(E(t_0)) = \phi(E(t_1))\}
-$$
+$
 
-$$
+$
 \text{Several mechanisms generate non-local temporal correlations:}
-$$
+$
 
-$$
+$
 \text{1. Temporal Prime Resonance - Resonance between temporal patterns across times:}
-$$
+$
 
-$$
+$
 R_T(\phi_1(t_1), \phi_2(t_2)) = \int \phi_1(\omega) \phi_2^*(\omega) d\omega
-$$
+$
 
-$$
+$
 \text{2. Temporal Constraint Satisfaction - Systems satisfying multi-time constraints:}
-$$
+$
 
-$$
+$
 \min_{\phi(t)} \int_{t_0}^{t_1} L(\phi(t), \dot{\phi}(t), t) dt + C(\phi(t_0), \phi(t_1))
-$$
+$
 
-$$
+$
 \text{3. Higher-Dimensional Projection - Projections from higher-dimensional spacetime:}
-$$
+$
 
-$$
+$
 \phi(t) = P_t[\Phi(\tau)]
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-082|temporal-correlation-function]]
-- [[uor-c-083|temporal-correlation-types]]
-- [[uor-c-085|temporal-correlation-theorems]]
+- [[uor-c-082|Temporal Correlation Function]]
+- [[uor-c-083|Temporal Correlation Types]]
+- [[uor-c-085|Temporal Correlation Theorems]]
 
 ## Metadata
 

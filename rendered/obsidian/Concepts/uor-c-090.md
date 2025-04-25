@@ -13,11 +13,13 @@ relatedConcepts:
 
 # Universal Transform Definition
 
-The formal mathematical definition of transformations between different dimensional spaces that preserve information coherence through operations on prime coordinates.
+## Description
+
+The formal mathematical definition of transformations between different dimensional spaces that preserve information coherence through operations on [[uor-c-302|prime coordinates]].
 
 ## Definition
 
-For a signal `S` with universal number representation `φ(S)`, the universal transform `T` between dimensional spaces `D₁` and `D₂` preserves the prime coordinate structure:
+For a signal `S` with [[uor-c-034|universal number]] representation `φ(S)`, the universal transform `T` between dimensional spaces `D₁` and `D₂` preserves the prime coordinate structure:
 
 `T: φₐ(S) → φᵦ(S)`
 
@@ -43,75 +45,75 @@ Ensuring that the essential information content remains invariant along the tran
 
 ## Mathematical Formulation
 
-$$
+$
 \text{For a signal } S \text{ with universal number representation } \phi(S)\text{, the universal}
-$$
+$
 
-$$
+$
 \text{transform } T \text{ between dimensional spaces } D_1 \text{ and } D_2 \text{ preserves}
-$$
+$
 
-$$
+$
 \text{the prime coordinate structure:}
-$$
+$
 
-$$
+$
 T: \phi_a(S) \to \phi_b(S)
-$$
+$
 
-$$
+$
 \text{Where } \phi_a \text{ represents the coordinate mapping in dimension } D_1 \text{ and}
-$$
+$
 
-$$
+$
 \phi_b \text{ represents the mapping in dimension } D_2\text{.}
-$$
+$
 
-$$
+$
 \text{The transform satisfies the coherence preservation property:}
-$$
+$
 
-$$
+$
 \|\phi_a(S)\|_e = \|\phi_b(S)\|_e
-$$
+$
 
-$$
+$
 \text{Where } \|\cdot\|_e \text{ is the essential norm measuring the information content.}
-$$
+$
 
-$$
+$
 \text{For continuous transformations between parameter spaces, we can define:}
-$$
+$
 
-$$
+$
 T_\theta: \phi(S) \to \phi_\theta(S)
-$$
+$
 
-$$
+$
 \text{Where } \theta \text{ represents a continuous parameter controlling the transformation.}
-$$
+$
 
-$$
+$
 \text{This continuous transformation satisfies:}
-$$
+$
 
-$$
+$
 \frac{\partial}{\partial\theta} \|\phi_\theta(S)\|_e = 0
-$$
+$
 
-$$
+$
 \text{Ensuring that the essential information content remains invariant along}
-$$
+$
 
-$$
+$
 \text{the transformation path.}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-091|transform-properties]]
-- [[uor-c-092|transform-mechanics]]
-- [[uor-c-005|coherence-norm]]
+- [[uor-c-091|Transform Properties]]
+- [[uor-c-092|Transform Mechanics]]
+- [[uor-c-005|Coherence Norm]]
 
 ## Metadata
 

@@ -9,7 +9,9 @@ code: "UOR-C-181"
 
 # Axiom Trilateral Coherence Connections
 
-The connections between the Trilateral Coherence Axiom and other core axioms, particularly its integration with Canonical Representation and extension of the framework to include dynamics and context.
+## Description
+
+The connections between the [[uor-c-017|Trilateral Coherence]] Axiom and other core axioms, particularly its integration with [[uor-c-004|Canonical Representation]] and extension of the framework to include dynamics and context.
 
 ## Metadata
 

@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "formalizes UFD axiom"
 ---
 
 # formalizes UFD axiom
 
-Relation indicating that a resource formally defines and explains the Unique Factorization Domain axiom in the UOR framework
+## Description
+
+Relation indicating that a resource formally defines and explains the [[uor-c-301|Unique Factorization]] Domain axiom in the [[uor-c-001|UOR framework]]
 
 ## Predicate: formalizes UFD axiom
 
@@ -18,3 +21,4 @@ Relation indicating that a resource formally defines and explains the Unique Fac
 ## Metadata
 
 - **ID:** urn:uor:predicate:formalizes-ufd-axiom
+- **Semantic Type:** formalizes UFD axiom

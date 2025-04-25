@@ -9,7 +9,9 @@ code: "UOR-C-179"
 
 # Axiom Trilateral Coherence Insights
 
-Key insights from the Trilateral Coherence Axiom including complete description, frame invariance, and fiber bundle structure.
+## Description
+
+Key insights from the [[uor-c-017|Trilateral Coherence]] Axiom including complete description, frame invariance, and [[uor-c-012|fiber bundle]] structure.
 
 ## Metadata
 

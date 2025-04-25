@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Transform Applications
 
+## Description
+
 Practical applications and capabilities enabled by universal transforms across diverse signal processing domains, extending beyond traditional transformation methods.
 
 ## Definition
@@ -45,127 +47,127 @@ Universal transforms extend traditional transformations in several fundamental w
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Universal transforms enable several powerful capabilities:}
-$$
+$
 
-$$
+$
 \text{1. Cross-Bit-Width Conversion: Lossless conversion between different}
-$$
+$
 
-$$
+$
 \text{   bit-width representations while preserving essential information.}
-$$
+$
 
-$$
+$
 T: S_{b_1} \to S_{b_2} \text{ where } b_1 \text{ and } b_2 \text{ are different bit widths}
-$$
+$
 
-$$
+$
 \text{   such that } \|\phi(S_{b_1})\|_e = \|\phi(S_{b_2})\|_e
-$$
+$
 
-$$
+$
 \text{2. Domain-Crossing Operations: Unified operations across previously}
-$$
+$
 
-$$
+$
 \text{   incompatible signal domains.}
-$$
+$
 
-$$
+$
 O_{D_2}(T_{D_1 \to D_2}(S_{D_1})) \text{ where } O_{D_2} \text{ is an operation in domain } D_2
-$$
+$
 
-$$
+$
 \text{3. Multi-Dimensional Mapping: Coherent mapping between spaces of}
-$$
+$
 
-$$
+$
 \text{   different dimensionality while preserving structural relationships.}
-$$
+$
 
-$$
+$
 T: S_{\mathbb{R}^n} \to S_{\mathbb{R}^m} \text{ where } n \neq m
-$$
+$
 
-$$
+$
 \text{   such that } C(S_{\mathbb{R}^n}, S_{\mathbb{R}^m}) \geq C_{min}
-$$
+$
 
-$$
+$
 \text{4. Invariant Feature Extraction: Identification of invariant features}
-$$
+$
 
-$$
+$
 \text{   that persist across different representational forms.}
-$$
+$
 
-$$
+$
 \mathcal{F}_{inv} = \{f | f(S) = f(T(S)) \text{ for all compatible transforms } T\}
-$$
+$
 
-$$
+$
 \text{Universal transforms extend traditional transformations:}
-$$
+$
 
-$$
+$
 \text{1. Beyond Fourier: Enable mappings between arbitrary domains, including}
-$$
+$
 
-$$
+$
 \text{   those with no traditional transformation path.}
-$$
+$
 
-$$
+$
 T: D_1 \to D_2 \text{ for any domains } D_1, D_2
-$$
+$
 
-$$
+$
 \text{2. Beyond Wavelets: Offer adaptable resolution across arbitrary}
-$$
+$
 
-$$
+$
 \text{   representational systems.}
-$$
+$
 
-$$
+$
 T_{\text{resolution}}(\phi(S), r) \text{ for any resolution parameter } r
-$$
+$
 
-$$
+$
 \text{3. Beyond Z-Transform: Provide generalized mappings between any}
-$$
+$
 
-$$
+$
 \text{   continuous and discrete representations.}
-$$
+$
 
-$$
+$
 T: S_{cont} \to S_{disc} \text{ for any continuous/discrete domain pair}
-$$
+$
 
-$$
+$
 \text{4. Beyond Dimensionality Reduction: Reduce dimensionality while}
-$$
+$
 
-$$
+$
 \text{   preserving essential structure.}
-$$
+$
 
-$$
+$
 T: \mathbb{R}^n \to \mathbb{R}^m \text{ with } m < n
-$$
+$
 
-$$
+$
 \text{   such that } \|\phi(S_{\mathbb{R}^n})\|_e = \|\phi(S_{\mathbb{R}^m})\|_e
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-090|universal-transform-definition]]
-- [[uor-c-091|transform-properties]]
-- [[uor-c-092|transform-mechanics]]
+- [[uor-c-090|Universal Transform Definition]]
+- [[uor-c-091|Transform Properties]]
+- [[uor-c-092|Transform Mechanics]]
 
 ## Metadata
 

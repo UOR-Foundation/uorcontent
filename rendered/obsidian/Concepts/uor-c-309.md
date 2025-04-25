@@ -9,7 +9,9 @@ code: "UOR-C-309"
 
 # Discrete Geometry
 
-Discrete Geometry is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-309|Discrete Geometry]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

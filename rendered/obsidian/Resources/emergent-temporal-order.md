@@ -16,6 +16,8 @@ partOf: "urn:uor:topic:temporal-coherence"
 
 # Emergent Temporal Order
 
+## Description
+
 A mathematical framework for understanding how coherent temporal structures spontaneously arise from collections of simpler elements interacting across multiple timescales, forming patterns, rhythms, and hierarchies within complex systems.
 
 Emergent Temporal Order examines how coherent temporal structures spontaneously arise from collections of simpler elements interacting across multiple timescales, establishing a mathematical framework for understanding the emergence of temporal patterns, rhythms, and hierarchies within complex systems.
@@ -40,14 +42,14 @@ Applications span diverse domains: Chronobiology modeling how cellular oscillato
 
 Philosophically, emergent temporal order suggests time itself may be an emergent property rather than fundamental; emergent structures can exert downward causal influence challenging simple bottom-up causality; coherence properties may be irreducible to component properties suggesting temporal holism; the framework quantifies temporal complexity potentially bridging physical and experienced time; and emergent structures enhancing system viability may appear purposeful without explicit goals.
 
-Emergent Temporal Order connects to UOR principles through pattern emergence in prime coordinates, coherence as an organizing principle, multi-scale integration, and observer-relative yet invariant patterns. It synthesizes earlier concepts by understanding emergent patterns as collective eigenmodes of the time operator, manifestations of specific temporal prime patterns, coherence-preserving dynamics at system level, patterns maintaining properties across reference frames, and structures leveraging non-local temporal correlations.
+Emergent Temporal Order connects to UOR principles through pattern emergence in [[uor-c-302|prime coordinates]], coherence as an organizing principle, multi-scale integration, and observer-relative yet invariant patterns. It synthesizes earlier concepts by understanding emergent patterns as collective eigenmodes of the time operator, manifestations of specific temporal prime patterns, coherence-preserving dynamics at system level, patterns maintaining properties across reference frames, and structures leveraging non-local temporal correlations.
 
 ## References
 
-- [[uor-c-086|temporal-order-parameter]]
-- [[uor-c-087|temporal-emergence-mechanisms]]
-- [[uor-c-088|emergent-temporal-structures]]
-- [[uor-c-089|temporal-emergence-theorems]]
+- [[uor-c-086|Temporal Order Parameter]]
+- [[uor-c-087|Temporal Emergence Mechanisms]]
+- [[uor-c-088|Emergent Temporal Structures]]
+- [[uor-c-089|Temporal Emergence Theorems]]
 
 ## Metadata
 

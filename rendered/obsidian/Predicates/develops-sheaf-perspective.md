@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "develops sheaf perspective"
 ---
 
 # develops sheaf perspective
 
-Relation indicating that a resource develops a sheaf and stack theoretic perspective on the UOR framework
+## Description
+
+Relation indicating that a resource develops a sheaf and stack theoretic perspective on the [[uor-c-001|UOR framework]]
 
 ## Predicate: develops sheaf perspective
 
@@ -18,3 +21,4 @@ Relation indicating that a resource develops a sheaf and stack theoretic perspec
 ## Metadata
 
 - **ID:** urn:uor:predicate:develops-sheaf-perspective
+- **Semantic Type:** develops sheaf perspective

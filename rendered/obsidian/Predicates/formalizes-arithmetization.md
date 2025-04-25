@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "formalizes arithmetization via prime encoding"
 ---
 
 # formalizes arithmetization via prime encoding
+
+## Description
 
 Relation indicating that a resource formalizes the arithmetization of syntax through prime-coordinate encoding
 
@@ -18,3 +21,4 @@ Relation indicating that a resource formalizes the arithmetization of syntax thr
 ## Metadata
 
 - **ID:** urn:uor:predicate:formalizes-arithmetization
+- **Semantic Type:** formalizes arithmetization via prime encoding

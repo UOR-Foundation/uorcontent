@@ -11,9 +11,14 @@ targets:
   - "urn:uor:concept:adjunction-representation"
   - "urn:uor:concept:monoidal-structure"
 predicateType: "describes category-theoretic foundation"
+semanticType: "describes category-theoretic foundation"
 ---
 
 # describes category-theoretic foundation
+
+## Description
+
+No description available.
 
 ## Predicate: describes category-theoretic foundation
 
@@ -21,15 +26,17 @@ predicateType: "describes category-theoretic foundation"
 
 **Description:** foundational relationship
 
-**Subject:** [[category-theoretic-perspective]]
+**Subject:** [[category-theoretic-perspective|Category-Theoretic Perspective]]
 
 **Targets:**
 
-- [[uor-c-027|prime-coordinate-functor]]
-- [[uor-c-028|universal-mapping-property]]
-- [[uor-c-029|adjunction-representation]]
-- [[uor-c-030|monoidal-structure]]
+- [[uor-c-027|Prime Coordinate Functor]]
+- [[uor-c-028|Universal Mapping Property]]
+- [[uor-c-029|Adjunction and Representation Theory]]
+- [[uor-c-030|Monoidal Structures and Coherence]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-category-theory
+- **Semantic Type:** describes category-theoretic foundation
+- **Created:** 2025-04-22T00:00:00Z

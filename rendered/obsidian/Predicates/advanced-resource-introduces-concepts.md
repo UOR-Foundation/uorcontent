@@ -16,9 +16,14 @@ targets:
   - "urn:uor:concept:prime-space-learning-dynamics"
   - "urn:uor:concept:theoretical-framework-mapping"
 predicateType: "introduces"
+semanticType: "introduces"
 ---
 
 # introduces
+
+## Description
+
+No description available.
 
 ## Predicate: introduces
 
@@ -26,20 +31,22 @@ predicateType: "introduces"
 
 **Description:** The advanced UOR extensions resource introduces all advanced extension concepts
 
-**Subject:** [[advanced-uor-extensions]]
+**Subject:** [[advanced-uor-extensions|Advanced UOR Framework Extensions]]
 
 **Targets:**
 
-- [[uor-c-324|spatiotemporal-manifold]]
-- [[uor-c-325|spatiotemporal-reference-frame]]
-- [[uor-c-326|lorentz-invariant-prime-decomposition]]
-- [[uor-c-327|quantum-prime-superposition]]
-- [[uor-c-328|quantum-entanglement-primes]]
-- [[uor-c-329|prime-factorization-complexity]]
-- [[uor-c-330|error-resilient-prime-decomposition]]
-- [[uor-c-331|prime-space-learning-dynamics]]
-- [[uor-c-332|theoretical-framework-mapping]]
+- [[uor-c-324|Spatiotemporal Manifold]]
+- [[uor-c-325|Spatiotemporal Reference Frame]]
+- [[uor-c-326|Lorentz-Invariant Prime Decomposition]]
+- [[uor-c-327|Quantum Prime Superposition]]
+- [[uor-c-328|Quantum Entanglement Primes]]
+- [[uor-c-329|Prime Factorization Complexity]]
+- [[uor-c-330|Error-Resilient Prime Decomposition]]
+- [[uor-c-331|Prime Space Learning Dynamics]]
+- [[uor-c-332|Theoretical Framework Mapping]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:advanced-resource-introduces-concepts
+- **Semantic Type:** introduces
+- **Created:** 2025-04-22T00:00:00Z

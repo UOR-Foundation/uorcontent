@@ -12,7 +12,9 @@ relatedConcepts:
 
 # Verification Algorithms
 
-Algorithms for verifying the correctness and consistency of universal number computations, including zero testing, equality testing, and precision management.
+## Description
+
+Algorithms for verifying the correctness and consistency of [[uor-c-034|universal number]] computations, including zero testing, equality testing, and precision management.
 
 ## Definition
 
@@ -20,7 +22,7 @@ Verification and Consistency Algorithms
 
 Zero Testing
 Algorithm 12: Universal_Zero_Test
-Input: Universal number η, precision parameter ε  
+Input: [[uor-c-034|Universal number]] η, precision parameter ε  
 Output: Boolean indicating whether η = 0
 
 ```
@@ -68,42 +70,42 @@ This algorithm ensures computational results meet precision requirements across 
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Zero Testing Algorithm:}
-$$
+$
 
-$$
+$
 \text{For a universal number } \eta \text{ and precision } \varepsilon \text{, test:}
-$$
+$
 
-$$
+$
 |z_{\eta}| > \varepsilon \text{ (complex component)}
-$$
+$
 
-$$
+$
 |\eta|_p > \varepsilon \text{ for any prime } p \text{ (p-adic components)}
-$$
+$
 
-$$
+$
 \text{If any test fails, } \eta \neq 0
-$$
+$
 
-$$
+$
 \text{Equality Testing Algorithm:}
-$$
+$
 
-$$
+$
 \text{To test if } \alpha = \beta \text{, compute } \delta = \alpha - \beta
-$$
+$
 
-$$
+$
 \text{Then apply zero testing to } \delta
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-059|arithmetic-algorithms]]
-- [[uor-c-060|advanced-computational-procedures]]
+- [[uor-c-059|Arithmetic Algorithms]]
+- [[uor-c-060|Advanced Computational Procedures]]
 
 ## Metadata
 

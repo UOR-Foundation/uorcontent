@@ -4,9 +4,12 @@ title: "Defines Time Operator"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Defines Time Operator"
 ---
 
 # Defines Time Operator
+
+## Description
 
 Establishes the formal definition and properties of the time operator in the Universal Object Reference framework.
 
@@ -17,3 +20,4 @@ Establishes the formal definition and properties of the time operator in the Uni
 ## Metadata
 
 - **ID:** urn:uor:predicate:defines-time-operator
+- **Semantic Type:** Defines Time Operator

@@ -4,9 +4,12 @@ title: "Describes Temporal Modes"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Temporal Modes"
 ---
 
 # Describes Temporal Modes
+
+## Description
 
 Describes the fundamental modes of temporal evolution through the eigenstructures of the time operator.
 
@@ -17,3 +20,4 @@ Describes the fundamental modes of temporal evolution through the eigenstructure
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-temporal-modes
+- **Semantic Type:** Describes Temporal Modes

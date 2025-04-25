@@ -4,9 +4,12 @@ title: "Characterizes Coherence Measures"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Characterizes Coherence Measures"
 ---
 
 # Characterizes Coherence Measures
+
+## Description
 
 Describes the different mathematical formulations of coherence that generate distinct classes of coherence-preserving dynamics.
 
@@ -17,3 +20,4 @@ Describes the different mathematical formulations of coherence that generate dis
 ## Metadata
 
 - **ID:** urn:uor:predicate:characterizes-coherence-measures
+- **Semantic Type:** Characterizes Coherence Measures

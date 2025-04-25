@@ -9,7 +9,9 @@ code: "UOR-C-307"
 
 # Intrinsic Primes
 
-Intrinsic Primes is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-307|Intrinsic Primes]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

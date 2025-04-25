@@ -9,7 +9,9 @@ code: "UOR-C-310"
 
 # Metric Geometry
 
-Metric Geometry is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-310|Metric Geometry]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

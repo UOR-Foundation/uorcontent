@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "formulates consciousness axiom"
 ---
 
 # formulates consciousness axiom
 
-Relation indicating that a resource formulates a consciousness axiom within the UOR framework
+## Description
+
+Relation indicating that a resource formulates a consciousness axiom within the [[uor-c-001|UOR framework]]
 
 ## Predicate: formulates consciousness axiom
 
@@ -18,3 +21,4 @@ Relation indicating that a resource formulates a consciousness axiom within the 
 ## Metadata
 
 - **ID:** urn:uor:predicate:formulates-consciousness-axiom
+- **Semantic Type:** formulates consciousness axiom

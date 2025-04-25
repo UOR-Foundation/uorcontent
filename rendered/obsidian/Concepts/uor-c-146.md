@@ -9,7 +9,9 @@ code: "UOR-C-146"
 
 # Prime Formula Foundation
 
-The fundamental mathematical basis for the prime formula, establishing its role in defining prime decomposition and valuation processes in unique factorization domains.
+## Description
+
+The fundamental mathematical basis for the prime formula, establishing its role in defining [[uor-c-002|prime decomposition]] and valuation processes in [[uor-c-301|unique factorization]] domains.
 
 ## Metadata
 

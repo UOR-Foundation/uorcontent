@@ -4,9 +4,12 @@ title: "Describes Identity Operations"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Identity Operations"
 ---
 
 # Describes Identity Operations
+
+## Description
 
 Details the fundamental operations and architecture of the Universal Identity system.
 
@@ -17,3 +20,4 @@ Details the fundamental operations and architecture of the Universal Identity sy
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-identity-operations
+- **Semantic Type:** Describes Identity Operations

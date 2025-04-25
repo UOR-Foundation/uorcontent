@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "grounds value in coherence"
 ---
 
 # grounds value in coherence
+
+## Description
 
 Relation indicating that a resource grounds ethical and aesthetic values in coherence principles
 
@@ -18,3 +21,4 @@ Relation indicating that a resource grounds ethical and aesthetic values in cohe
 ## Metadata
 
 - **ID:** urn:uor:predicate:grounds-value-coherence
+- **Semantic Type:** grounds value in coherence

@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "outlines geometric and algorithmic methods"
 ---
 
 # outlines geometric and algorithmic methods
 
-Relation indicating that a resource outlines geometric, non-commutative, and algorithmic approaches to ensure unique factorization
+## Description
+
+Relation indicating that a resource outlines geometric, non-commutative, and algorithmic approaches to ensure [[uor-c-301|unique factorization]]
 
 ## Predicate: outlines geometric and algorithmic methods
 
@@ -18,3 +21,4 @@ Relation indicating that a resource outlines geometric, non-commutative, and alg
 ## Metadata
 
 - **ID:** urn:uor:predicate:outlines-geometric-methods
+- **Semantic Type:** outlines geometric and algorithmic methods

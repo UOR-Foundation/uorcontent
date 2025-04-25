@@ -4,9 +4,12 @@ title: "Describes Pivot Field Mechanics"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Pivot Field Mechanics"
 ---
 
 # Describes Pivot Field Mechanics
+
+## Description
 
 Explains the operational processes and computational mechanisms used in pivot fields.
 
@@ -17,3 +20,4 @@ Explains the operational processes and computational mechanisms used in pivot fi
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-pivot-field-mechanics
+- **Semantic Type:** Describes Pivot Field Mechanics

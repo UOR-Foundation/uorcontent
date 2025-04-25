@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "models biological and medical systems"
 ---
 
 # models biological and medical systems
+
+## Description
 
 Relation indicating that a resource models biological and medical systems through prime-coordinate principles
 
@@ -18,3 +21,4 @@ Relation indicating that a resource models biological and medical systems throug
 ## Metadata
 
 - **ID:** urn:uor:predicate:models-biological-systems
+- **Semantic Type:** models biological and medical systems

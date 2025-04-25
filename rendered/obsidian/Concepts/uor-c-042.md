@@ -12,11 +12,13 @@ relatedConcepts:
 
 # Universal Number Field Operations
 
+## Description
+
 The fundamental field operations on universal numbers defined in terms of their prime-coordinate representations, forming a complete field structure.
 
 ## Definition
 
-Universal numbers form a field with precisely defined operations that extend the fundamental operations on prime-coordinates:
+Universal numbers form a field with precisely defined operations that extend the fundamental operations on [[uor-c-302|prime-coordinates]]:
 
 For universal numbers `α, β ∈ 𝕌` with prime-coordinate representations `φ(α) = (a₁, a₂, ...)` and `φ(β) = (b₁, b₂, ...)`:
 
@@ -36,34 +38,34 @@ These operations satisfy the field axioms and maintain consistency with both com
 
 ## Mathematical Formulation
 
-$$
+$
 \text{For universal numbers } \alpha, \beta \in \mathbb{U} \text{ with prime-coordinate representations}
-$$
+$
 
-$$
+$
 \phi(\alpha) = (a_1, a_2, \ldots) \text{ and } \phi(\beta) = (b_1, b_2, \ldots):
-$$
+$
 
-$$
+$
 \text{1. Addition: } \phi(\alpha + \beta) = \log(\exp(\phi(\alpha)) + \exp(\phi(\beta)))
-$$
+$
 
-$$
+$
 \text{2. Multiplication: } \phi(\alpha \cdot \beta) = \phi(\alpha) + \phi(\beta)
-$$
+$
 
-$$
+$
 \text{3. Additive Inverse: } \phi(-\alpha) = \log(\exp(0) - \exp(\phi(\alpha)))
-$$
+$
 
-$$
+$
 \text{4. Multiplicative Inverse: } \phi(\alpha^{-1}) = -\phi(\alpha)
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-034|universal-number]]
-- [[uor-c-035|universal-prime-representation]]
+- [[uor-c-034|Universal Number]]
+- [[uor-c-035|Universal Prime Coordinate Representation]]
 
 ## Metadata
 

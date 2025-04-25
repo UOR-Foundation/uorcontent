@@ -16,19 +16,21 @@ partOf: "urn:uor:topic:internet-substrate"
 
 # Universal Identity
 
+## Description
+
 A mathematical framework for identity based on universal numbers that enables coherent identification across representational domains through prime coordinate structures.
 
 Identity is a fundamental concept in any computational system, traditionally implemented through various mechanisms like usernames, public keys, UUIDs, or biometric data. The Internet Substrate Protocols reimagine identity at a more fundamental level, grounding it in the mathematical properties of universal numbers.
 
 By representing identity through prime coordinate structures, the system achieves a form of identity that is simultaneously unique, verifiable, transformable, and coherence-preserving. This approach transcends traditional identity mechanisms by providing a mathematical foundation that connects identity directly to the fundamental structure of the information space.
 
-Universal Identity operates as a natural extension of the UOR framework, where the prime factorization of identity representations provides intrinsic properties that enable sophisticated identity operations while maintaining essential coherence.
+Universal Identity operates as a natural extension of the [[uor-c-001|UOR framework]], where the prime factorization of identity representations provides intrinsic properties that enable sophisticated [[uor-c-120|identity operations]] while maintaining essential coherence.
 
 Universal Identity is characterized by several key insights: Mathematical Foundation where identity emerges from the intrinsic mathematical properties of universal numbers rather than arbitrary assignments or conventions; Cross-Domain Coherence where identity representations maintain coherence when transformed across different domains or representational systems; Intrinsic Verifiability where the prime structure of identity representations enables intrinsic verification without requiring external authorities; Scale Invariance where identity mechanisms operate consistently across different scales, from individual devices to global systems; and Self-Reference where identities can reference themselves and their own properties through their prime coordinate structure.
 
-For any entity E in the system, its identity representation is defined as: ID(E) = ∏_p p^(φ(E)(p)), where φ(E) maps the entity to its prime coordinate representation. The verification of identity involves coherence evaluation: Verify(ID₁, ID₂) = (d_C(ID₁, ID₂) < ε), where d_C is a coherence-preserving distance metric and ε is a threshold value. For transformations between identity domains, we require: T(ID) = ID' such that C(ID, ID') > τ, where C is a coherence metric and τ is a minimum coherence threshold. The system also defines identity composition operations: ID_A ⊗ ID_B = ∏_p p^(f(φ(ID_A)(p), φ(ID_B)(p))), where f is a composition function that preserves essential properties.
+For any entity E in the system, its identity representation is defined as: ID(E) = ∏_p p^(φ(E)(p)), where φ(E) maps the entity to its prime coordinate representation. The verification of identity involves coherence evaluation: Verify(ID₁, ID₂) = (d_C(ID₁, ID₂) < ε), where d_C is a coherence-preserving distance metric and ε is a threshold value. For transformations between identity domains, we require: T(ID) = ID' such that C(ID, ID') > τ, where C is a [[uor-c-152|coherence metric]] and τ is a minimum coherence threshold. The system also defines identity composition operations: ID_A ⊗ ID_B = ∏_p p^(f(φ(ID_A)(p), φ(ID_B)(p))), where f is a composition function that preserves essential properties.
 
-The universal identity framework bridges UOR principles and practical networking protocols through explicit mathematical mappings. The Internet Substrate protocols implement a precise mapping from UOR prime coordinates to practical addressing schemes: A(φ(E)) = Ψ(φ(E)₁, φ(E)₂, ..., φ(E)_n), where A is the address mapping function, φ(E) is the prime coordinate representation of entity E, and Ψ is the projection function that maps infinite-dimensional prime coordinates to finite address spaces. For IPv6 compatibility, we define: IPv6(φ(E)) = Hash₁₂₈(π(φ(E))), where Hash₁₂₈ is a 128-bit hash function and π(φ(E)) is a projection of the prime coordinates that preserves essential identity properties. For human-readable identifiers: Name(φ(E)) = WordMap(TopK(φ(E))), where TopK extracts the K most significant prime coordinates and WordMap maps these coordinates to pronounceable word sequences.
+The universal identity framework bridges UOR principles and practical networking protocols through explicit mathematical mappings. The Internet Substrate protocols implement a precise mapping from UOR [[uor-c-302|prime coordinates]] to practical addressing schemes: A(φ(E)) = Ψ(φ(E)₁, φ(E)₂, ..., φ(E)_n), where A is the address mapping function, φ(E) is the prime coordinate representation of entity E, and Ψ is the projection function that maps infinite-dimensional [[uor-c-302|prime coordinates]] to finite address spaces. For IPv6 compatibility, we define: IPv6(φ(E)) = Hash₁₂₈(π(φ(E))), where Hash₁₂₈ is a 128-bit hash function and π(φ(E)) is a projection of the [[uor-c-302|prime coordinates]] that preserves essential identity properties. For human-readable identifiers: Name(φ(E)) = WordMap(TopK(φ(E))), where TopK extracts the K most significant [[uor-c-302|prime coordinates]] and WordMap maps these coordinates to pronounceable word sequences.
 
 The practical implementation of identity verification follows a coherence-based protocol: First, Challenge Generation where C = Random(Seed, φ(E)), where Random generates a challenge based on the claimed identity; Second, Response Computation where R = Sign(C, φ(E)), where Sign produces a prime-structure signature of the challenge; and Third, Verification where Verify(C, R, φ(E)) = (d_C(Compute(C, R), Expected(C, φ(E))) < ε), where verification succeeds if the coherence distance is below threshold. This protocol guarantees: Zero-Knowledge Property with verification without revealing identity secrets; Quantum Resistance with security against quantum computational attacks; and Cross-Domain Validity with consistent verification across all network domains.
 
@@ -46,14 +48,14 @@ Universal Identity enables several transformative capabilities: Self-Sovereign I
 
 Universal Identity transcends traditional identity systems in several key ways: Beyond Public Key Infrastructure where, while PKI relies on computational hardness assumptions, Universal Identity is grounded in intrinsic mathematical properties; Beyond Biometrics where, rather than physical characteristics, identity emerges from intrinsic information structure; Beyond Federated Identity where it eliminates the need for federation by providing inherently consistent identity across domains; and Beyond Blockchain Identity where it provides mathematical guarantees of identity properties without requiring consensus mechanisms.
 
-Universal Identity builds directly on the Digital Twin Framework and Tripartite Kernel, while providing the foundation for Media Type Definition and access control throughout the Internet Substrate Protocols. It represents the practical application of UOR's mathematical principles to one of the internet's most fundamental challenges—establishing trustworthy identity.
+Universal Identity builds directly on the Digital Twin Framework and [[uor-c-317|Tripartite Kernel]], while providing the foundation for Media Type Definition and access control throughout the Internet Substrate Protocols. It represents the practical application of UOR's mathematical principles to one of the internet's most fundamental challenges—establishing trustworthy identity.
 
 ## References
 
-- [[uor-c-118|identity-foundation]]
-- [[uor-c-119|identity-protocols]]
-- [[uor-c-120|identity-operations]]
-- [[uor-c-121|identity-applications]]
+- [[uor-c-118|Identity Foundation]]
+- [[uor-c-119|Identity Protocols]]
+- [[uor-c-120|Identity Operations]]
+- [[uor-c-121|Identity Applications]]
 
 ## Metadata
 

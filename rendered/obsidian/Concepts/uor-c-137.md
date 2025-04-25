@@ -9,7 +9,9 @@ code: "UOR-C-137"
 
 # Prime Applications
 
-The practical applications of intrinsic primes in enabling canonical decomposition, unambiguous reference, and cross-domain comparison of objects.
+## Description
+
+The practical applications of [[uor-c-307|intrinsic primes]] in enabling canonical decomposition, unambiguous reference, and cross-domain comparison of objects.
 
 ## Metadata
 

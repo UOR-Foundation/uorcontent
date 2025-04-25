@@ -9,7 +9,9 @@ code: "UOR-C-314"
 
 # Coherence Preserving Dynamics
 
-Coherence Preserving Dynamics is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-314|Coherence Preserving Dynamics]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

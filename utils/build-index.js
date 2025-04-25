@@ -83,7 +83,11 @@ async function buildIndex(contentDir, outputPath) {
             } else if (json['@type'] === 'PropertyValue') {
               predicateItems.push(indexItem);
             } else if (json['@type'] === 'CreativeWork') {
-              if (json.learningResourceType === 'Topic') {
+              // Identify topics more comprehensively
+              if (json.learningResourceType === 'Topic' || 
+                  entryPath.includes('/topics/') ||
+                  entry.name.startsWith('UOR-T-') ||
+                  (json.hasPart && !json.isPartOf)) {
                 topicItems.push(indexItem);
               } else {
                 resourceItems.push(indexItem);

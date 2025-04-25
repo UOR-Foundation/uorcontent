@@ -4,9 +4,12 @@ title: "Describes Identity Applications"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Identity Applications"
 ---
 
 # Describes Identity Applications
+
+## Description
 
 Details the practical applications and implementation scenarios for Universal Identity.
 
@@ -17,3 +20,4 @@ Details the practical applications and implementation scenarios for Universal Id
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-identity-applications
+- **Semantic Type:** Describes Identity Applications

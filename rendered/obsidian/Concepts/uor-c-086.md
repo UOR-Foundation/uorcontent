@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Temporal Order Parameter
 
+## Description
+
 Mathematical measures and dynamical equations that quantify and describe the emergence of temporal order in systems through coherence-driven interactions.
 
 ## Definition
@@ -51,75 +53,75 @@ This function reveals how temporal coherence varies across different timescales 
 
 ## Mathematical Formulation
 
-$$
+$
 \text{The degree of temporal order in a system is quantified by the order parameter:}
-$$
+$
 
-$$
+$
 \Psi_T(S) = \left|\frac{1}{N} \sum_{i=1}^N e^{i\theta_i(t)}\right|
-$$
+$
 
-$$
+$
 \text{Where } \theta_i(t) \text{ represents the temporal phase of component } i \text{ at time } t\text{.}
-$$
+$
 
-$$
+$
 \text{This parameter equals 0 for completely disordered temporal behavior}
-$$
+$
 
-$$
+$
 \text{and 1 for perfectly synchronized temporal patterns.}
-$$
+$
 
-$$
+$
 \text{The evolution of system components under coherence-driven temporal dynamics is:}
-$$
+$
 
-$$
+$
 \frac{d\phi_i(t)}{dt} = \omega_i + K \sum_{j=1}^N J_{ij} \sin(\phi_j(t) - \phi_i(t))
-$$
+$
 
-$$
+$
 \text{Where } \omega_i \text{ is the natural frequency of component } i\text{,}
-$$
+$
 
-$$
+$
 K \text{ is the coupling strength, and } J_{ij} \text{ is the interaction matrix.}
-$$
+$
 
-$$
+$
 \text{Temporal order emerges spontaneously when the coupling strength exceeds a threshold:}
-$$
+$
 
-$$
+$
 K > K_c = \frac{2}{\pi g(\bar{\omega}) \lambda_{max}(J)}
-$$
+$
 
-$$
+$
 \text{Where } g(\bar{\omega}) \text{ is the distribution of natural frequencies around the mean,}
-$$
+$
 
-$$
+$
 \text{and } \lambda_{max}(J) \text{ is the largest eigenvalue of the interaction matrix.}
-$$
+$
 
-$$
+$
 \text{The hierarchical organization of temporal patterns is described by:}
-$$
+$
 
-$$
+$
 S(\tau) = \langle C(\phi(t), \phi(t+\tau)) \rangle_t
-$$
+$
 
-$$
+$
 \text{Where } C \text{ is the coherence function and } \langle \cdot \rangle_t \text{ is averaging over time.}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-087|temporal-emergence-mechanisms]]
-- [[uor-c-088|emergent-temporal-structures]]
-- [[uor-c-074|coherence-preservation-condition]]
+- [[uor-c-087|Temporal Emergence Mechanisms]]
+- [[uor-c-088|Emergent Temporal Structures]]
+- [[uor-c-074|Coherence Preservation Condition]]
 
 ## Metadata
 

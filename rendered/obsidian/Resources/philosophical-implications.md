@@ -16,7 +16,9 @@ tags:
 
 # Philosophical Implications
 
-An exploration of the philosophical implications of the UOR framework, proposing a coherentist metaphysics where existence and meaning emerge from prime-coordinate structures and their coherence relations.
+## Description
+
+An exploration of the philosophical implications of the [[uor-c-001|UOR framework]], proposing a coherentist metaphysics where existence and meaning emerge from prime-coordinate structures and their coherence relations.
 
 UOR suggests a coherentist metaphysics: the universe is an information‐theoretic tapestry of irreducible spectra, where existence and meaning emerge from prime-coordinate structures and their coherence relations.
 

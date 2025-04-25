@@ -9,7 +9,9 @@ code: "UOR-C-171"
 
 # Axiom Coherence Norm Insights
 
-Key insights from the Coherence Norm Axiom including objective simplicity, the Pythagorean principle, and interpretation as an information metric.
+## Description
+
+Key insights from the [[uor-c-005|Coherence Norm]] Axiom including objective simplicity, the Pythagorean principle, and interpretation as an information metric.
 
 ## Metadata
 

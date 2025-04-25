@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "describes algebraic generalizations"
 ---
 
 # describes algebraic generalizations
 
-Relation indicating that a resource describes algebraic generalizations of the UOR framework to diverse algebraic structures
+## Description
+
+Relation indicating that a resource describes algebraic generalizations of the [[uor-c-001|UOR framework]] to diverse algebraic structures
 
 ## Predicate: describes algebraic generalizations
 
@@ -18,3 +21,4 @@ Relation indicating that a resource describes algebraic generalizations of the U
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-algebraic-generalizations
+- **Semantic Type:** describes algebraic generalizations

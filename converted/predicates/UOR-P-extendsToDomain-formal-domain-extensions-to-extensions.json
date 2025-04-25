@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:extendsToDomain-formal-domain-extensions-to-extensions",
+  "name": "extendsToDomain",
+  "propertyID": "uor:predicate",
+  "value": "related concept",
+  "subjectOf": {
+    "@id": "urn:uor:concept:formal-domain-extensions"
+  },
+  "targetCollection": [
+    "urn:uor:topic:extensions"
+  ],
+  "valueName": "extendsToDomain relationship from formal-domain-extensions to extensions",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "extendsToDomain"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 0.8
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:semanticRelationship",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-25T07:08:46.216Z",
+  "dateModified": "2025-04-25T07:08:46.216Z"
+}

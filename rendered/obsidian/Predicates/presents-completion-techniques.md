@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "presents completion techniques"
 ---
 
 # presents completion techniques
 
-Relation indicating that a resource presents completion techniques for regularizing factorization behavior
+## Description
+
+Relation indicating that a resource presents [[uor-c-212|completion techniques]] for regularizing factorization behavior
 
 ## Predicate: presents completion techniques
 
@@ -18,3 +21,4 @@ Relation indicating that a resource presents completion techniques for regulariz
 ## Metadata
 
 - **ID:** urn:uor:predicate:presents-completion-techniques
+- **Semantic Type:** presents completion techniques

@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Temporal Emergence Mechanisms
 
+## Description
+
 Fundamental processes through which coherent temporal patterns spontaneously arise from interactions among simpler elements in complex systems.
 
 ## Definition
@@ -57,91 +59,91 @@ This mechanism enhances specific temporal structures while dampening others.
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Several fundamental mechanisms drive the emergence of temporal order:}
-$$
+$
 
-$$
+$
 \text{1. Temporal Synchronization - The alignment of temporal phases through}
-$$
+$
 
-$$
+$
 \text{coherence-enhancing interactions:}
-$$
+$
 
-$$
+$
 \theta_i(t) \to \theta_j(t) \text{ as } t \to \infty
-$$
+$
 
-$$
+$
 \text{2. Temporal Symmetry Breaking - The spontaneous breaking of temporal}
-$$
+$
 
-$$
+$
 \text{homogeneity to create differentiated temporal structures:}
-$$
+$
 
-$$
+$
 S(t + \Delta t) \neq S(t) \text{ for some } \Delta t
-$$
+$
 
-$$
+$
 \text{Where } S(t) \text{ represents the system state at time } t\text{.}
-$$
+$
 
-$$
+$
 \text{3. Cross-Scale Temporal Coupling - Interactions between patterns at}
-$$
+$
 
-$$
+$
 \text{different timescales generating nested temporal hierarchies:}
-$$
+$
 
-$$
+$
 \phi_{slow}(t) \text{ modulates } \phi_{fast}(t)
-$$
+$
 
-$$
+$
 \text{4. Temporal Attractor Formation - The emergence of stable temporal patterns}
-$$
+$
 
-$$
+$
 \text{that draw nearby temporal trajectories toward them:}
-$$
+$
 
-$$
+$
 d(\phi(t), A_T) \to 0 \text{ as } t \to \infty
-$$
+$
 
-$$
+$
 \text{Where } d \text{ is a distance measure and } A_T \text{ is a temporal attractor pattern.}
-$$
+$
 
-$$
+$
 \text{5. Temporal Symmetry Amplification - The selective amplification of specific}
-$$
+$
 
-$$
+$
 \text{temporal patterns through resonance effects:}
-$$
+$
 
-$$
+$
 A(\omega_r) > A(\omega) \text{ for } \omega \neq \omega_r
-$$
+$
 
-$$
+$
 \text{Where } A(\omega) \text{ is the amplitude of temporal pattern with frequency } \omega\text{,}
-$$
+$
 
-$$
+$
 \text{and } \omega_r \text{ is a resonant frequency.}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-086|temporal-order-parameter]]
-- [[uor-c-088|emergent-temporal-structures]]
-- [[uor-c-089|temporal-emergence-theorems]]
+- [[uor-c-086|Temporal Order Parameter]]
+- [[uor-c-088|Emergent Temporal Structures]]
+- [[uor-c-089|Temporal Emergence Theorems]]
 
 ## Metadata
 

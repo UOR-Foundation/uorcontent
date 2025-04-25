@@ -4,9 +4,12 @@ title: "Establishes Frame Theorems"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Establishes Frame Theorems"
 ---
 
 # Establishes Frame Theorems
+
+## Description
 
 Establishes fundamental mathematical theorems that govern the properties and relationships of temporal reference frames.
 
@@ -17,3 +20,4 @@ Establishes fundamental mathematical theorems that govern the properties and rel
 ## Metadata
 
 - **ID:** urn:uor:predicate:establishes-frame-theorems
+- **Semantic Type:** Establishes Frame Theorems

@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Temporal Prime Categories
 
+## Description
+
 The fundamental classifications of temporal prime elements that span the space of possible dynamical behaviors in the Universal Object Reference framework.
 
 ## Definition
@@ -41,67 +43,67 @@ Temporal primes fall into several fundamental categories that span the space of 
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Temporal primes fall into several fundamental categories:}
-$$
+$
 
-$$
+$
 \text{1. Oscillatory Primes: } p_{osc}(t) = F(t/\tau_p) \text{ where } F(t + 1) = F(t)
-$$
+$
 
-$$
+$
 \text{   (fundamentally periodic patterns with complex irreducible waveforms)}
-$$
+$
 
-$$
+$
 \text{2. Growth/Decay Primes: } p_{growth}(t) = G(t/\tau_p) \text{ where } \lim_{t\to\infty}G(t) = K
-$$
+$
 
-$$
+$
 \text{   (fundamental patterns of growth and decay beyond simple exponential behavior)}
-$$
+$
 
-$$
+$
 \text{3. Transition Primes: } p_{trans}(t) = T((t-t_0)/\tau_p) \text{ where}
-$$
+$
 
-$$
+$
 \text{   } \lim_{t\to-\infty}T(t) = A, \lim_{t\to\infty}T(t) = B
-$$
+$
 
-$$
+$
 \text{   (irreducible patterns of transition between states)}
-$$
+$
 
-$$
+$
 \text{4. Fluctuation Primes: } p_{fluct}(t) = S(t/\tau_p) \text{ where}
-$$
+$
 
-$$
+$
 \text{   S has characteristic statistical properties}
-$$
+$
 
-$$
+$
 \text{   (patterns of stochastic variation that can't be reduced to simpler components)}
-$$
+$
 
-$$
+$
 \text{5. Attractor Primes: } p_{attr}(\vec{x}) = A(\vec{x}) \text{ where}
-$$
+$
 
-$$
+$
 \text{   A defines an irreducible attractor structure}
-$$
+$
 
-$$
+$
 \text{   (irreducible attractor structures in phase space)}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-070|temporal-prime-element]]
-- [[uor-c-071|temporal-prime-factorization]]
-- [[uor-c-073|temporal-decomposition-methods]]
+- [[uor-c-070|Temporal Prime Element]]
+- [[uor-c-071|Temporal Prime Factorization]]
+- [[uor-c-073|Temporal Decomposition Methods]]
 
 ## Metadata
 

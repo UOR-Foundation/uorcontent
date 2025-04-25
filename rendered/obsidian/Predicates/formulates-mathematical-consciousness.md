@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "formulates mathematical consciousness"
 ---
 
 # formulates mathematical consciousness
+
+## Description
 
 Relation indicating that a resource formulates consciousness as a mathematical necessity rather than a philosophical addendum
 
@@ -18,3 +21,4 @@ Relation indicating that a resource formulates consciousness as a mathematical n
 ## Metadata
 
 - **ID:** urn:uor:predicate:formulates-mathematical-consciousness
+- **Semantic Type:** formulates mathematical consciousness

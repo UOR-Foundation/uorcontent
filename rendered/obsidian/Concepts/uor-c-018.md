@@ -13,17 +13,19 @@ relatedConcepts:
 
 # Frame Transformations
 
-Mathematical operations that translate between different observer perspectives while preserving essential invariants in the UOR framework.
+## Description
+
+Mathematical operations that translate between different observer perspectives while preserving essential invariants in the [[uor-c-001|UOR framework]].
 
 ## Definition
 
-Transformations between observer frames must preserve certain invariants: The intrinsic prime decomposition remains unchanged, the coherence metric might transform but preserves minimality properties, composition laws maintain their algebraic structure across frames, and physical quantities transform according to appropriate representation rules.
+Transformations between observer frames must preserve certain invariants: The intrinsic [[uor-c-002|prime decomposition]] remains unchanged, the [[uor-c-152|coherence metric]] might transform but preserves minimality properties, composition laws maintain their algebraic structure across frames, and physical quantities transform according to appropriate representation rules.
 
 ## Related Concepts
 
-- [[uor-c-006|observer-reference-frames]]
-- [[uor-c-016|observer-coherence]]
-- [[uor-c-014|observer-frame-bundle]]
+- [[uor-c-006|Observer Reference Frames]]
+- [[uor-c-016|Observer Coherence]]
+- [[uor-c-014|Observer Frame Bundle]]
 
 ## Metadata
 

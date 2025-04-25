@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Coherence Measure Types
 
+## Description
+
 Different mathematical formulations of coherence that generate distinct classes of coherence-preserving dynamics based on information, structure, function, and relationships.
 
 ## Definition
@@ -49,63 +51,63 @@ Preserving this coherence maintains the pattern of relationships, even as the co
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Different coherence measures generate different classes of coherence-preserving dynamics:}
-$$
+$
 
-$$
+$
 \text{1. Information-Theoretic Coherence:}
-$$
+$
 
-$$
+$
 C_I(\phi(t), \phi_0) = I(\phi(t); \phi_0)
-$$
+$
 
-$$
+$
 \text{   Based on mutual information between past and present states.}
-$$
+$
 
-$$
+$
 \text{2. Structural Coherence:}
-$$
+$
 
-$$
+$
 C_S(\phi(t), \phi_0) = \exp\left(-\frac{\|\phi(t) - \phi_0\|^2}{2\sigma^2}\right)
-$$
+$
 
-$$
+$
 \text{   Based on structural similarity in prime coordinate space.}
-$$
+$
 
-$$
+$
 \text{3. Functional Coherence:}
-$$
+$
 
-$$
+$
 C_F(\phi(t), \phi_0) = \text{corr}(f(\phi(t)), f(\phi_0))
-$$
+$
 
-$$
+$
 \text{   Where } f \text{ maps the prime coordinate representation to a functional output space.}
-$$
+$
 
-$$
+$
 \text{4. Relational Coherence:}
-$$
+$
 
-$$
+$
 C_R(\phi(t), \phi_0) = \text{sim}(R(\phi(t)), R(\phi_0))
-$$
+$
 
-$$
+$
 \text{   Where } R \text{ extracts the relational structure between components.}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-074|coherence-preservation-condition]]
-- [[uor-c-075|coherence-preserving-systems]]
-- [[uor-c-005|coherence-norm]]
+- [[uor-c-074|Coherence Preservation Condition]]
+- [[uor-c-075|Coherence-Preserving Systems]]
+- [[uor-c-005|Coherence Norm]]
 
 ## Metadata
 

@@ -9,7 +9,9 @@ code: "UOR-C-153"
 
 # Norm Applications
 
-The practical applications of the coherence norm and metric, including measuring information content, quantifying structural similarity, defining complexity, and establishing optimization criteria.
+## Description
+
+The practical applications of the [[uor-c-005|coherence norm]] and metric, including measuring information content, quantifying structural similarity, defining complexity, and establishing optimization criteria.
 
 ## Metadata
 

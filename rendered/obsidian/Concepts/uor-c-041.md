@@ -12,6 +12,8 @@ relatedConcepts:
 
 # Computational Complexity Classes of Universal Numbers
 
+## Description
+
 The hierarchy of universal numbers based on the computational resources required for their approximation, from polynomial-time to exponential-time and beyond.
 
 ## Definition
@@ -44,34 +46,34 @@ where each η_i is computable by a Type-2 Turing machine M_i, and the mapping i 
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Polynomial-Time Computable Universal Numbers:}
-$$
+$
 
-$$
+$
 \mathbb{U}_P = \{\eta \in \mathbb{U} \mid \eta \text{ is approximable to } n \text{ bits of precision in time } O(n^c) \text{ for some } c\}
-$$
+$
 
-$$
+$
 \text{Exponential-Time Computable Universal Numbers:}
-$$
+$
 
-$$
+$
 \mathbb{U}_{EXP} = \{\eta \in \mathbb{U} \mid \eta \text{ is approximable to } n \text{ bits of precision in time } O(2^{n^c}) \text{ for some } c\}
-$$
+$
 
-$$
+$
 \text{The set of all computable universal numbers } \mathbb{U}_c \text{ is countable and admits an effective enumeration}
-$$
+$
 
-$$
+$
 \mathbb{U}_c = \{\eta_0, \eta_1, \eta_2, \ldots\}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-038|computable-universal-number]]
-- [[uor-c-040|universal-number-algorithms]]
+- [[uor-c-038|Computable Universal Number]]
+- [[uor-c-040|Universal Number Algorithms]]
 
 ## Metadata
 

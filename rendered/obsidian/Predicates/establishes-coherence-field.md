@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "establishes unified coherence field"
 ---
 
 # establishes unified coherence field
+
+## Description
 
 Relation indicating that a resource establishes a unified field of coherence that transcends traditional mathematical boundaries
 
@@ -18,3 +21,4 @@ Relation indicating that a resource establishes a unified field of coherence tha
 ## Metadata
 
 - **ID:** urn:uor:predicate:establishes-coherence-field
+- **Semantic Type:** establishes unified coherence field

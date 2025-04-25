@@ -4,9 +4,12 @@ title: "Categorizes Temporal Primes"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Categorizes Temporal Primes"
 ---
 
 # Categorizes Temporal Primes
+
+## Description
 
 Classifies temporal prime elements into fundamental categories that span the space of possible dynamical behaviors.
 
@@ -17,3 +20,4 @@ Classifies temporal prime elements into fundamental categories that span the spa
 ## Metadata
 
 - **ID:** urn:uor:predicate:categorizes-temporal-primes
+- **Semantic Type:** Categorizes Temporal Primes

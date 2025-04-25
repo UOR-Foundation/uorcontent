@@ -9,7 +9,9 @@ code: "UOR-C-155"
 
 # Axiom Intrinsic Primes Insights
 
-The key insights derived from the Intrinsic Primes Axiom, including domain universality, foundational necessity, and the role of primes as the information basis.
+## Description
+
+The key insights derived from the [[uor-c-307|Intrinsic Primes]] Axiom, including domain universality, foundational necessity, and the role of primes as the information basis.
 
 ## Metadata
 

@@ -9,7 +9,9 @@ code: "UOR-C-316"
 
 # Prime Coordinate Homomorphism
 
-Prime Coordinate Homomorphism is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-316|Prime Coordinate Homomorphism]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

@@ -9,7 +9,9 @@ code: "UOR-C-304"
 
 # Spectral Basis
 
-Spectral Basis is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-304|Spectral Basis]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

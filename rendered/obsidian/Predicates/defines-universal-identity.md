@@ -4,11 +4,14 @@ title: "Defines Universal Identity"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Defines Universal Identity"
 ---
 
 # Defines Universal Identity
 
-Establishes the formal definition and mathematical foundation of Universal Identity in the UOR framework.
+## Description
+
+Establishes the formal definition and mathematical foundation of Universal Identity in the [[uor-c-001|UOR framework]].
 
 ## Predicate: Defines Universal Identity
 
@@ -17,3 +20,4 @@ Establishes the formal definition and mathematical foundation of Universal Ident
 ## Metadata
 
 - **ID:** urn:uor:predicate:defines-universal-identity
+- **Semantic Type:** Defines Universal Identity

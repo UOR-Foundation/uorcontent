@@ -9,7 +9,9 @@ code: "UOR-C-161"
 
 # Axiom Unique Factorization Connections
 
-The connections between the Unique Factorization Axiom and other core axioms, particularly its relationship to Intrinsic Primes and Prime-Coordinate Homomorphism.
+## Description
+
+The connections between the [[uor-c-301|Unique Factorization]] Axiom and other core axioms, particularly its relationship to [[uor-c-307|Intrinsic Primes]] and Prime-Coordinate Homomorphism.
 
 ## Metadata
 

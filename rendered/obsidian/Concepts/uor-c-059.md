@@ -12,6 +12,8 @@ relatedConcepts:
 
 # Arithmetic Algorithms
 
+## Description
+
 Algorithms for performing basic arithmetic operations (addition, multiplication, division, exponentiation) on universal numbers through their prime-coordinate representations.
 
 ## Definition
@@ -55,42 +57,42 @@ Multiplication is directly implemented through coordinate addition, demonstratin
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Addition Algorithm:}
-$$
+$
 
-$$
+$
 \phi(\alpha+\beta) = \log(\exp(\phi(\alpha)) + \exp(\phi(\beta)))
-$$
+$
 
-$$
+$
 \text{Multiplication Algorithm:}
-$$
+$
 
-$$
+$
 \phi(\alpha\cdot\beta) = \phi(\alpha) + \phi(\beta)
-$$
+$
 
-$$
+$
 \text{Division Algorithm:}
-$$
+$
 
-$$
+$
 \phi(\alpha/\beta) = \phi(\alpha) - \phi(\beta) \text{ for } \beta \neq 0
-$$
+$
 
-$$
+$
 \text{Exponentiation Algorithm:}
-$$
+$
 
-$$
+$
 \phi(\alpha^r) = r \cdot \phi(\alpha)
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-042|universal-number-field-operations]]
-- [[uor-c-058|representation-algorithms]]
+- [[uor-c-042|Universal Number Field Operations]]
+- [[uor-c-058|Representation Algorithms]]
 
 ## Metadata
 

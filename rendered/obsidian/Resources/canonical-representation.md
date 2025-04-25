@@ -14,9 +14,11 @@ partOf: "urn:uor:topic:universal-object-reference"
 
 # Canonical Representation
 
-An explanation of how UOR provides a unique, basis-independent, canonical representation for any object.
+## Description
 
-A fundamental principle of UOR is that every object has a unique, canonical representation that is independent of basis, numeral system, or observer frame.
+An explanation of how UOR provides a unique, basis-independent, [[uor-c-004|canonical representation]] for any object.
+
+A fundamental principle of UOR is that every object has a unique, [[uor-c-004|canonical representation]] that is independent of basis, numeral system, or observer frame.
 
 Unlike conventional number representations (binary, decimal, etc.), the prime-coordinate representation is intrinsic to the object itself:
 
@@ -24,7 +26,7 @@ Unlike conventional number representations (binary, decimal, etc.), the prime-co
 - Independent of arbitrary encoding choices
 - Reveals the object's inherent structure rather than human-imposed format
 
-The canonical representation satisfies several crucial properties:
+The [[uor-c-004|canonical representation]] satisfies several crucial properties:
 
 - Uniqueness: Each object maps to exactly one prime-coordinate representation
 - Completeness: All properties of the object can be recovered from its representation
@@ -32,23 +34,23 @@ The canonical representation satisfies several crucial properties:
 
 Among all possible representations of an object, the canonical prime-coordinate form:
 
-- Minimizes the coherence norm
+- Minimizes the [[uor-c-005|coherence norm]]
 - Provides the most efficient encoding (minimum description length)
 - Contains no redundant information
 
-While observer reference frames may interpret the representation differently, the underlying prime structure remains objective:
+While [[uor-c-006|observer reference frames]] may interpret the representation differently, the underlying prime structure remains objective:
 
-- Different frames observe the same intrinsic prime decomposition
-- Frame transformations preserve the canonical structure
+- Different frames observe the same intrinsic [[uor-c-002|prime decomposition]]
+- [[uor-c-018|Frame transformations]] preserve the canonical structure
 - All valid observers agree on the factorization, even with different perspectives
 
-This canonical representation forms the foundation for UOR's ability to provide unambiguous reference across disparate domains and observer perspectives.
+This [[uor-c-004|canonical representation]] forms the foundation for UOR's ability to provide unambiguous reference across disparate domains and observer perspectives.
 
 ## References
 
-- [[uor-c-004|canonical-representation]]
-- [[uor-c-005|coherence-norm]]
-- [[uor-c-006|observer-reference-frames]]
+- [[uor-c-004|Canonical Representation]]
+- [[uor-c-005|Coherence Norm]]
+- [[uor-c-006|Observer Reference Frames]]
 
 ## Metadata
 

@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "provides category-theoretic model"
 ---
 
 # provides category-theoretic model
 
-Relation indicating that a resource provides a formal category-theoretic model of the UOR framework
+## Description
+
+Relation indicating that a resource provides a formal category-theoretic model of the [[uor-c-001|UOR framework]]
 
 ## Predicate: provides category-theoretic model
 
@@ -18,3 +21,4 @@ Relation indicating that a resource provides a formal category-theoretic model o
 ## Metadata
 
 - **ID:** urn:uor:predicate:provides-category-model
+- **Semantic Type:** provides category-theoretic model

@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "establishes information ontology"
 ---
 
 # establishes information ontology
+
+## Description
 
 Relation indicating that a resource establishes an ontological principle that the universe's physical substrate is fundamentally structured information
 
@@ -18,3 +21,4 @@ Relation indicating that a resource establishes an ontological principle that th
 ## Metadata
 
 - **ID:** urn:uor:predicate:establishes-information-ontology
+- **Semantic Type:** establishes information ontology

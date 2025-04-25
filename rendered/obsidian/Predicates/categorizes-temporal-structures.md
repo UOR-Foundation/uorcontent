@@ -4,9 +4,12 @@ title: "Categorizes Temporal Structures"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Categorizes Temporal Structures"
 ---
 
 # Categorizes Temporal Structures
+
+## Description
 
 Classifies the various types of organized temporal patterns that spontaneously emerge in complex systems.
 
@@ -17,3 +20,4 @@ Classifies the various types of organized temporal patterns that spontaneously e
 ## Metadata
 
 - **ID:** urn:uor:predicate:categorizes-temporal-structures
+- **Semantic Type:** Categorizes Temporal Structures

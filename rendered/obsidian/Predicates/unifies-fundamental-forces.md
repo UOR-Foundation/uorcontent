@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "unifies fundamental forces"
 ---
 
 # unifies fundamental forces
 
-Relation indicating that a resource describes how the UOR framework potentially unifies fundamental forces, cosmological principles, and quantum gravity
+## Description
+
+Relation indicating that a resource describes how the [[uor-c-001|UOR framework]] potentially unifies fundamental forces, cosmological principles, and quantum gravity
 
 ## Predicate: unifies fundamental forces
 
@@ -18,3 +21,4 @@ Relation indicating that a resource describes how the UOR framework potentially 
 ## Metadata
 
 - **ID:** urn:uor:predicate:unifies-fundamental-forces
+- **Semantic Type:** unifies fundamental forces

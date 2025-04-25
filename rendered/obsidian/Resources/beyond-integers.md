@@ -16,9 +16,11 @@ partOf: "urn:uor:topic:extensions"
 
 # Beyond Integers
 
-Extension of the UOR framework beyond integers to rationals, polynomials, algebraic number fields, and combinatorial domains, demonstrating its universal applicability across mathematical structures.
+## Description
 
-The Extension Theorem states that for any Unique Factorization Domain (UFD) or Dedekind domain with unique factorization of ideals, the prime-coordinate map φ extends naturally to various mathematical domains.
+Extension of the [[uor-c-001|UOR framework]] beyond integers to rationals, polynomials, algebraic number fields, and combinatorial domains, demonstrating its universal applicability across mathematical structures.
+
+The [[uor-c-186|Extension Theorem]] states that for any [[uor-c-301|Unique Factorization]] Domain (UFD) or Dedekind domain with [[uor-c-301|unique factorization]] of ideals, the prime-coordinate map φ extends naturally to various mathematical domains.
 
 In the domain of rational numbers (ℚ), negative exponents encode denominators. For example, φ(1/3) = -φ(3), so φ(3/4) = [(2,-2),(3,1)], representing 3/4 as 3/2² in prime factorization.
 
@@ -28,14 +30,14 @@ In algebraic number fields, specifically in the ring of integers of a number fie
 
 The framework also extends to combinatorial domains, where in set unions, singletons are primes, and in graph unions, connected components are primes.
 
-In each of these diverse domains, φ assigns a finite exponent vector consistent with UOR's axioms. The coherence norm, spectral interpretation, and fiber bundle formalism remain valid across these extensions, showcasing the uniform applicability of UOR across algebraic, combinatorial, and arithmetic landscapes.
+In each of these diverse domains, φ assigns a finite exponent vector consistent with UOR's axioms. The [[uor-c-005|coherence norm]], [[uor-c-008|spectral interpretation]], and [[uor-c-012|fiber bundle]] formalism remain valid across these extensions, showcasing the uniform applicability of UOR across algebraic, combinatorial, and arithmetic landscapes.
 
 ## References
 
-- [[uor-c-186|extension-theorem]]
-- [[uor-c-187|rational-extension]]
-- [[uor-c-188|polynomial-extension]]
-- [[uor-c-189|number-field-extension]]
+- [[uor-c-186|Extension Theorem]]
+- [[uor-c-187|Rational Extension]]
+- [[uor-c-188|Polynomial Extension]]
+- [[uor-c-189|Number Field Extension]]
 
 ## Metadata
 

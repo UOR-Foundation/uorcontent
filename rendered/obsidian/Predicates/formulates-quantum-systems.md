@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "formulates quantum coherence systems"
 ---
 
 # formulates quantum coherence systems
+
+## Description
 
 Relation indicating that a resource formulates a mathematical framework for quantum information processing based on prime-coordinate principles
 
@@ -18,3 +21,4 @@ Relation indicating that a resource formulates a mathematical framework for quan
 ## Metadata
 
 - **ID:** urn:uor:predicate:formulates-quantum-systems
+- **Semantic Type:** formulates quantum coherence systems

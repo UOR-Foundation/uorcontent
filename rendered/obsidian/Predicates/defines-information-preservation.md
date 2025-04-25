@@ -4,11 +4,14 @@ title: "Defines Information Preservation"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Defines Information Preservation"
 ---
 
 # Defines Information Preservation
 
-Establishes the formal definition and conceptual foundation of information preservation in the UOR framework.
+## Description
+
+Establishes the formal definition and conceptual foundation of [[uor-c-315|information preservation]] in the [[uor-c-001|UOR framework]].
 
 ## Predicate: Defines Information Preservation
 
@@ -17,3 +20,4 @@ Establishes the formal definition and conceptual foundation of information prese
 ## Metadata
 
 - **ID:** urn:uor:predicate:defines-information-preservation
+- **Semantic Type:** Defines Information Preservation

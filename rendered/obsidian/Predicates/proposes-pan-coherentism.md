@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "proposes pan-coherentism"
 ---
 
 # proposes pan-coherentism
 
-Relation indicating that a resource proposes a pan-coherentist philosophical worldview based on the UOR framework
+## Description
+
+Relation indicating that a resource proposes a pan-coherentist philosophical worldview based on the [[uor-c-001|UOR framework]]
 
 ## Predicate: proposes pan-coherentism
 
@@ -18,3 +21,4 @@ Relation indicating that a resource proposes a pan-coherentist philosophical wor
 ## Metadata
 
 - **ID:** urn:uor:predicate:proposes-pan-coherentism
+- **Semantic Type:** proposes pan-coherentism

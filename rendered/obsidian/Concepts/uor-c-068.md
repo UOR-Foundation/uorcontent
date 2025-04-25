@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Temporal Eigenstructures
 
+## Description
+
 The fundamental modes of temporal evolution represented by eigenvalues and eigenfunctions of the time operator in the Universal Object Reference framework.
 
 ## Definition
@@ -31,43 +33,43 @@ Complex systems typically involve multiple simultaneous temporal modes, which ca
 
 ## Mathematical Formulation
 
-$$
+$
 \text{For the time operator } T_{\Delta t} \text{, an eigenfunction } \phi_\lambda \text{ satisfies:}
-$$
+$
 
-$$
+$
 T_{\Delta t}[\phi_\lambda] = e^{\lambda \Delta t} \phi_\lambda
-$$
+$
 
-$$
+$
 \text{where } \lambda \text{ is the corresponding eigenvalue.}
-$$
+$
 
-$$
+$
 \text{The eigenvalues represent the following temporal modes:}
-$$
+$
 
-$$
+$
 \lambda = 0: \text{ Steady states (time-invariant)}
-$$
+$
 
-$$
+$
 \lambda < 0: \text{ Decay modes (exponential decay)}
-$$
+$
 
-$$
+$
 \lambda > 0: \text{ Growth modes (exponential growth)}
-$$
+$
 
-$$
+$
 \lambda = i\omega: \text{ Oscillatory modes (periodic behavior)}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-066|time-operator-definition]]
-- [[uor-c-067|temporal-algebraic-properties]]
-- [[uor-c-069|observer-dependent-time]]
+- [[uor-c-066|Time Operator Definition]]
+- [[uor-c-067|Temporal Algebraic Properties]]
+- [[uor-c-069|Observer-Dependent Time]]
 
 ## Metadata
 

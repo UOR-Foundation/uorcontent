@@ -9,7 +9,9 @@ code: "UOR-C-302"
 
 # Prime Coordinates
 
-Prime Coordinates is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-302|Prime Coordinates]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

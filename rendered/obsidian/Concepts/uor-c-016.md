@@ -13,17 +13,19 @@ relatedConcepts:
 
 # Observer Coherence
 
-The principle ensuring that object descriptions in the UOR framework remain consistent across different reference frames while preserving essential invariant properties.
+## Description
+
+The principle ensuring that object descriptions in the [[uor-c-001|UOR framework]] remain consistent across different reference frames while preserving essential invariant properties.
 
 ## Definition
 
-The UOR framework incorporates observer perspectives through the principle of trilateral coherence, ensuring that object descriptions remain consistent across different reference frames. Through observer coherence, UOR provides a framework for understanding how intrinsic mathematical structure relates to the perspectives from which it is observed and described.
+The [[uor-c-001|UOR framework]] incorporates observer perspectives through the principle of [[uor-c-017|trilateral coherence]], ensuring that object descriptions remain consistent across different reference frames. Through [[uor-c-016|observer coherence]], UOR provides a framework for understanding how intrinsic mathematical structure relates to the perspectives from which it is observed and described.
 
 ## Related Concepts
 
-- [[uor-c-017|trilateral-coherence]]
-- [[uor-c-006|observer-reference-frames]]
-- [[uor-c-018|frame-transformations]]
+- [[uor-c-017|Trilateral Coherence]]
+- [[uor-c-006|Observer Reference Frames]]
+- [[uor-c-018|Frame Transformations]]
 
 ## Metadata
 

@@ -14,20 +14,22 @@ partOf: "urn:uor:topic:universal-object-reference"
 
 # Geometry of Prime Spaces
 
+## Description
+
 An explanation of how the prime-coordinate representation induces a rich geometric structure that reveals deep patterns in object composition and relationships.
 
 The prime-coordinate representation induces a rich geometric structure that reveals deep patterns in object composition and relationships.
 
-The prime-coordinate space inherits a natural Euclidean structure from the coherence norm and inner product:
+The prime-coordinate space inherits a natural [[uor-c-021|Euclidean structure]] from the [[uor-c-005|coherence norm]] and inner product:
 
-- The coherence norm ||φ(x)|| measures the intrinsic complexity of an object
+- The [[uor-c-005|coherence norm]] ||φ(x)|| measures the intrinsic complexity of an object
 - The inner product ⟨φ(x),φ(y)⟩ quantifies the degree of prime-factor similarity
 - Angles between coordinate vectors represent compositional relationships
 - Orthogonal objects have no common prime factors
 
 Objects with integer exponents form a discrete lattice in prime-coordinate space:
 
-- Each lattice point represents a unique factorization
+- Each lattice point represents a [[uor-c-301|unique factorization]]
 - Lines through the origin correspond to powers of the same object
 - Convex regions define families of objects with bounded prime exponents
 - Walking along lattice paths corresponds to sequential multiplication by primes
@@ -39,7 +41,7 @@ The prime-coordinate representation can be viewed as a spectral decomposition:
 - Composition combines spectra through vector addition
 - Decomposition separates an object into its spectral components
 
-The coherence metric defines notions of distance and proximity between objects:
+The [[uor-c-152|coherence metric]] defines notions of distance and proximity between objects:
 
 - d(x,y) = ||φ(x) - φ(y)|| measures compositional distance
 - Neighborhoods contain objects with similar prime factorization
@@ -50,10 +52,10 @@ These geometric structures provide powerful tools for analyzing patterns, relati
 
 ## References
 
-- [[uor-c-020|prime-space-geometry]]
-- [[uor-c-021|euclidean-structure]]
-- [[uor-c-022|lattice-geometry]]
-- [[uor-c-152|coherence-metric]]
+- [[uor-c-020|Prime Space Geometry]]
+- [[uor-c-021|Euclidean Structure]]
+- [[uor-c-022|Lattice Geometry]]
+- [[uor-c-023|Coherence Metric]]
 
 ## Metadata
 

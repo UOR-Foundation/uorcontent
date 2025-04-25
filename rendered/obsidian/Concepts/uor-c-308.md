@@ -9,7 +9,9 @@ code: "UOR-C-308"
 
 # Coherence Inner Product
 
-Coherence Inner Product is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-308|Coherence Inner Product]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

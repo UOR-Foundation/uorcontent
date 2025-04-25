@@ -12,6 +12,8 @@ relatedConcepts:
 
 # Scientific Computing Applications
 
+## Description
+
 The applications of universal numbers in scientific computing, including enhanced numerical methods, error-correcting computations, and practical applications in various fields.
 
 ## Definition
@@ -25,12 +27,12 @@ Application: Numerical methods using universal numbers benefit from:
 - Automatic detection of computational inconsistencies
 - Increased numerical stability for certain algorithms
 
-Case Study: Fluid dynamic simulations using universal number representations showed a 25% reduction in numerical artifacts compared to traditional floating-point approaches.
+Case Study: Fluid dynamic simulations using [[uor-c-034|universal number]] representations showed a 25% reduction in numerical artifacts compared to traditional floating-point approaches.
 
 Error-Correcting Computations
 Universal representations provide natural error detection capabilities:
 
-Theorem 2 (Error Detection): Computational inconsistencies between complex and p-adic representations of the same universal number can detect and localize computational errors with high probability.
+Theorem 2 (Error Detection): Computational inconsistencies between complex and p-adic representations of the same [[uor-c-034|universal number]] can detect and localize computational errors with high probability.
 
 This creates a built-in verification system for critical numerical computations.
 
@@ -53,34 +55,34 @@ Machine Learning: Neural networks using universal numbers show increased robustn
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Theorem 2 (Error Detection): Computational inconsistencies between}
-$$
+$
 
-$$
+$
 \text{complex and p-adic representations of the same universal number}
-$$
+$
 
-$$
+$
 \text{can detect and localize computational errors with high probability.}
-$$
+$
 
-$$
+$
 \text{For a computation } \eta = f(\alpha),
-$$
+$
 
-$$
+$
 \text{if } |z_{\eta} - g(z_{\alpha})| > \epsilon \text{ or } |(\eta)_p - g_p((\alpha)_p)|_p > \epsilon_p
-$$
+$
 
-$$
+$
 \text{for any prime } p, \text{ then an error is detected.}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-034|universal-number]]
-- [[uor-c-053|universal-analysis-axioms]]
+- [[uor-c-034|Universal Number]]
+- [[uor-c-053|Universal Analysis Axioms]]
 
 ## Metadata
 

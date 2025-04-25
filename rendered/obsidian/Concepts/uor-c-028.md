@@ -12,6 +12,8 @@ relatedConcepts:
 
 # Universal Mapping Property
 
+## Description
+
 A fundamental property of the prime-coordinate functor that characterizes it uniquely as the universal linearization of multiplicative structures.
 
 ## Definition
@@ -24,26 +26,26 @@ The prime-coordinate functor possesses a universal property that characterizes i
 
 ## Mathematical Formulation
 
-$$
+$
 \text{For any functor } F: Obj \to A \text{ satisfying } F(X \otimes Y) = F(X) \oplus F(Y)
-$$
+$
 
-$$
+$
 \text{there exists a unique natural transformation } \alpha: \phi \to F
-$$
+$
 
-$$
+$
 \text{Formally: } F = H \circ \phi \text{ for some additive functor } H: Mod \to A
-$$
+$
 
-$$
+$
 \text{Universal logarithm property: } log(X \otimes Y) = log(X) + log(Y) \text{ where } log = \phi
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-027|prime-coordinate-functor]]
-- [[uor-c-004|canonical-representation]]
+- [[uor-c-027|Prime Coordinate Functor]]
+- [[uor-c-004|Canonical Representation]]
 
 ## Metadata
 

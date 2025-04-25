@@ -4,9 +4,12 @@ title: "Describes Emergence Mechanisms"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Emergence Mechanisms"
 ---
 
 # Describes Emergence Mechanisms
+
+## Description
 
 Describes the fundamental processes through which coherent temporal patterns spontaneously arise from interactions among simpler elements.
 
@@ -17,3 +20,4 @@ Describes the fundamental processes through which coherent temporal patterns spo
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-emergence-mechanisms
+- **Semantic Type:** Describes Emergence Mechanisms

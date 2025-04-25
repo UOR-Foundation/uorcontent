@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "reframes consciousness theory"
 ---
 
 # reframes consciousness theory
 
-Relation indicating that a resource reframes consciousness as a particular kind of observer frame bundle that self-references
+## Description
+
+Relation indicating that a resource reframes consciousness as a particular kind of [[uor-c-014|observer frame bundle]] that self-references
 
 ## Predicate: reframes consciousness theory
 
@@ -18,3 +21,4 @@ Relation indicating that a resource reframes consciousness as a particular kind 
 ## Metadata
 
 - **ID:** urn:uor:predicate:reframes-consciousness-theory
+- **Semantic Type:** reframes consciousness theory

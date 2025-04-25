@@ -16,11 +16,13 @@ partOf: "urn:uor:topic:internet-substrate"
 
 # Distributed Compute
 
+## Description
+
 A system that leverages distributed computational dynamics to perform block conversions and complex transformations while maintaining coherence guarantees, creating a computational fabric that spans the internet.
 
-Traditional approaches to distributed computing focus on partitioning tasks across multiple nodes, each performing independent computations with subsequent aggregation. The Internet Substrate Protocols introduce a fundamentally different approach based on the mathematical properties of universal numbers and the block conversion capabilities of the UOR framework.
+Traditional approaches to distributed computing focus on partitioning tasks across multiple nodes, each performing independent computations with subsequent aggregation. The Internet Substrate Protocols introduce a fundamentally different approach based on the mathematical properties of universal numbers and the block conversion capabilities of the [[uor-c-001|UOR framework]].
 
-This approach enables a new form of distributed computation where transformations between different representations can be performed across a network of nodes, each contributing to the coherence-preserving conversion process. Large data blocks can be "upconverted" through distributed computational resources, similar to the dynamics seen in blockchain staking and mining systems, but with rigorous mathematical guarantees regarding information preservation.
+This approach enables a new form of distributed computation where transformations between different representations can be performed across a network of nodes, each contributing to the coherence-preserving conversion process. Large data blocks can be "upconverted" through distributed computational resources, similar to the dynamics seen in blockchain staking and mining systems, but with rigorous mathematical guarantees regarding [[uor-c-315|information preservation]].
 
 The distributed compute system operates on the principle that computation itself is a form of transformation in the prime coordinate space, and can therefore be distributed across nodes while maintaining global coherence properties. This creates a computational fabric that spans the internet, dynamically allocating resources to transformation needs based on media type requirements and network conditions.
 
@@ -36,14 +38,14 @@ Distributed Compute enables several transformative capabilities: Large-Scale Blo
 
 Distributed Compute transcends traditional approaches in several key ways: Beyond MapReduce where, while MapReduce focuses on independent tasks with subsequent aggregation, this system maintains coherence throughout the distributed process; Beyond Grid Computing where, rather than general-purpose task distribution, the system specializes in coherence-preserving transformations; Beyond Blockchain Consensus where, instead of consensus on a single state, the system achieves consensus on coherence-preserving transformations; and Beyond Cloud Computing which eliminates rigid boundaries between cloud and edge, creating a unified computational fabric.
 
-Distributed Compute builds directly on the Block Conversion capabilities of UOR and the Media Type Definition framework, while implementing the computational aspects of the Tripartite Kernel. It represents the practical realization of UOR's transformation capabilities at internet scale.
+Distributed Compute builds directly on the Block Conversion capabilities of UOR and the Media Type Definition framework, while implementing the computational aspects of the [[uor-c-317|Tripartite Kernel]]. It represents the practical realization of UOR's transformation capabilities at internet scale.
 
 ## References
 
-- [[uor-c-126|distributed-compute-mathematics]]
-- [[uor-c-127|distributed-compute-architecture]]
-- [[uor-c-128|distributed-compute-dynamics]]
-- [[uor-c-129|distributed-compute-applications]]
+- [[uor-c-126|Distributed Compute Mathematics]]
+- [[uor-c-127|Distributed Compute Architecture]]
+- [[uor-c-128|Distributed Compute Dynamics]]
+- [[uor-c-129|Distributed Compute Applications]]
 
 ## Metadata
 

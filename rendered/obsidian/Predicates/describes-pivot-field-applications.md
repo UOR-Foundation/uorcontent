@@ -4,9 +4,12 @@ title: "Describes Pivot Field Applications"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Pivot Field Applications"
 ---
 
 # Describes Pivot Field Applications
+
+## Description
 
 Details the practical applications and implementation scenarios for pivot field technology.
 
@@ -17,3 +20,4 @@ Details the practical applications and implementation scenarios for pivot field 
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-pivot-field-applications
+- **Semantic Type:** Describes Pivot Field Applications

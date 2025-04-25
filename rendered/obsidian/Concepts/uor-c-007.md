@@ -13,17 +13,19 @@ relatedConcepts:
 
 # Frame Objectivity
 
-The principle that the underlying prime structure of an object remains objective and consistent across different observer reference frames.
+## Description
+
+The principle that the underlying prime structure of an object remains objective and consistent across different [[uor-c-006|observer reference frames]].
 
 ## Definition
 
-While observer reference frames may interpret the representation differently, the underlying prime structure remains objective. Different frames observe the same intrinsic prime decomposition, frame transformations preserve the canonical structure, and all valid observers agree on the factorization, even with different perspectives.
+While [[uor-c-006|observer reference frames]] may interpret the representation differently, the underlying prime structure remains objective. Different frames observe the same intrinsic [[uor-c-002|prime decomposition]], [[uor-c-018|frame transformations]] preserve the canonical structure, and all valid observers agree on the factorization, even with different perspectives.
 
 ## Related Concepts
 
-- [[uor-c-004|canonical-representation]]
-- [[uor-c-006|observer-reference-frames]]
-- [[uor-c-003|observer-invariance]]
+- [[uor-c-004|Canonical Representation]]
+- [[uor-c-006|Observer Reference Frames]]
+- [[uor-c-003|Observer Invariance]]
 
 ## Metadata
 

@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Temporal Frame Transformation
 
+## Description
+
 The mathematical mappings that relate different observers' temporal perspectives while preserving essential coherence properties of the underlying reality.
 
 ## Definition
@@ -33,7 +35,7 @@ V_2 = (dΛ_12/dt_1)^(-1) V_1
 
 These transformations ensure consistency between different temporal perspectives.
 
-For a temporal frame transformation to be coherence-preserving, it must satisfy:
+For a [[uor-c-079|temporal frame transformation]] to be coherence-preserving, it must satisfy:
 
 C(φ_1(t_1), φ_2(Λ_12(t_1, φ))) ≥ C_min
 
@@ -51,75 +53,75 @@ Certain temporal transformations have special significance across domains:
 
 ## Mathematical Formulation
 
-$$
+$
 \text{For two temporal reference frames } F_1 \text{ and } F_2\text{, the transformation between them is:}
-$$
+$
 
-$$
+$
 t_2 = \Lambda_{12}(t_1, \phi)
-$$
+$
 
-$$
+$
 \text{Where } \Lambda_{12} \text{ is the temporal transformation function that may depend}
-$$
+$
 
-$$
+$
 \text{on both the time coordinate } t_1 \text{ and the prime coordinate representation } \phi\text{.}
-$$
+$
 
-$$
+$
 \text{The metric transformation follows:}
-$$
+$
 
-$$
+$
 g_2 = \frac{d\Lambda_{12}}{dt_1} g_1 \frac{d\Lambda_{12}}{dt_1}
-$$
+$
 
-$$
+$
 \text{And the flow transformation:}
-$$
+$
 
-$$
+$
 V_2 = \left(\frac{d\Lambda_{12}}{dt_1}\right)^{-1} V_1
-$$
+$
 
-$$
+$
 \text{For a transformation to be coherence-preserving, it must satisfy:}
-$$
+$
 
-$$
+$
 C(\phi_1(t_1), \phi_2(\Lambda_{12}(t_1, \phi))) \geq C_{min}
-$$
+$
 
-$$
+$
 \text{Special classes of transformations include:}
-$$
+$
 
-$$
+$
 \text{1. Scale: } \Lambda_{scale}(t) = \alpha t
-$$
+$
 
-$$
+$
 \text{2. Flow: } \Lambda_{flow}(t) = \int_0^t \beta(\tau) d\tau
-$$
+$
 
-$$
+$
 \text{3. Relativistic: } \Lambda_{rel}(t) = \gamma(t - vx/c^2)
-$$
+$
 
-$$
+$
 \text{4. Topological: } \Lambda_{topo}(t) = f(t)
-$$
+$
 
-$$
+$
 \text{5. Compositional: } \Lambda_{comp}(t) = \Lambda_1(\Lambda_2(... \Lambda_n(t)))
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-078|temporal-reference-frame]]
-- [[uor-c-080|temporal-frame-categories]]
-- [[uor-c-074|coherence-preservation-condition]]
+- [[uor-c-078|Temporal Reference Frame]]
+- [[uor-c-080|Temporal Frame Categories]]
+- [[uor-c-074|Coherence Preservation Condition]]
 
 ## Metadata
 

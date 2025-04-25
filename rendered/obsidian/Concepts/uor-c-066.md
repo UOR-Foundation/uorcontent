@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Time Operator Definition
 
+## Description
+
 A mathematical operator that acts on the prime coordinate space to describe temporal evolution of objects within the Universal Object Reference framework.
 
 ## Definition
@@ -25,35 +27,35 @@ The time operator T is defined as a mapping on the prime coordinate space: T: Φ
 
 ## Mathematical Formulation
 
-$$
+$
 \text{The time operator T is defined as a mapping on the prime coordinate space:}
-$$
+$
 
-$$
+$
 T: \Phi \to \Phi
-$$
+$
 
-$$
+$
 \text{where } \Phi \text{ is the space of all prime coordinate representations.}
-$$
+$
 
-$$
+$
 \text{For any object O with prime coordinate representation } \phi(O),
-$$
+$
 
-$$
+$
 \text{the time-evolved state after time interval } \Delta t \text{ is given by:}
-$$
+$
 
-$$
+$
 T_{\Delta t}[\phi(O)] = \phi(O(t + \Delta t))
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-067|temporal-algebraic-properties]]
-- [[uor-c-068|temporal-eigenstructures]]
-- [[uor-c-069|observer-dependent-time]]
+- [[uor-c-067|Temporal Algebraic Properties]]
+- [[uor-c-068|Temporal Eigenstructures]]
+- [[uor-c-069|Observer-Dependent Time]]
 
 ## Metadata
 

@@ -12,13 +12,15 @@ relatedConcepts:
 
 # Universal Derivative
 
-A generalized concept of differentiation that unifies complex and p-adic approaches in the universal number domain, defined as the limit of the difference quotient with respect to the universal metric.
+## Description
+
+A generalized concept of differentiation that unifies complex and p-adic approaches in the [[uor-c-034|universal number]] domain, defined as the limit of the difference quotient with respect to the universal metric.
 
 ## Definition
 
 Universal analysis begins with a generalized concept of differentiation that unifies complex and p-adic approaches:
 
-Definition 1 (Universal Derivative): For a function f: 𝕌 → 𝕌, the universal derivative at a point α ∈ 𝕌 is defined as:
+Definition 1 ([[uor-c-050|Universal Derivative]]): For a function f: 𝕌 → 𝕌, the [[uor-c-050|universal derivative]] at a point α ∈ 𝕌 is defined as:
 
 `f'(α) = lim(h→0) [f(α+h) - f(α)]/h`
 
@@ -36,7 +38,7 @@ Theorem 2 (Prime-Coordinate Differentiation): If a function f admits a prime-coo
 
 `φ(f(η)) = F(φ(η))`
 
-for some coordinate function F, then the universal derivative can be computed through:
+for some coordinate function F, then the [[uor-c-050|universal derivative]] can be computed through:
 
 `φ(f'(η)) = JF(φ(η))`
 
@@ -44,46 +46,46 @@ where JF is the Jacobian of F in the coordinate space.
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Definition 1 (Universal Derivative): For a function } f: \mathbb{U} \to \mathbb{U},
-$$
+$
 
-$$
+$
 \text{the universal derivative at a point } \alpha \in \mathbb{U} \text{ is defined as:}
-$$
+$
 
-$$
+$
 f'(\alpha) = \lim_{h \to 0} \frac{f(\alpha+h) - f(\alpha)}{h}
-$$
+$
 
-$$
+$
 \text{where the limit is taken with respect to the universal metric.}
-$$
+$
 
-$$
+$
 \text{Theorem 1 (Derivative Characterization): A function } f: \mathbb{U} \to \mathbb{U}
-$$
+$
 
-$$
+$
 \text{is universally differentiable at } \alpha \text{ if and only if:}
-$$
+$
 
-$$
+$
 \text{1. It is complex-analytically differentiable with respect to the complex embedding}
-$$
+$
 
-$$
+$
 \text{2. It is p-adically differentiable with respect to every p-adic embedding}
-$$
+$
 
-$$
+$
 \text{3. The derivatives from these different perspectives coincide under the canonical embeddings}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-034|universal-number]]
-- [[uor-c-046|multi-metric-topology]]
+- [[uor-c-034|Universal Number]]
+- [[uor-c-046|Multi-Metric Topology]]
 
 ## Metadata
 

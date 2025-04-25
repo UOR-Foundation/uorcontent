@@ -9,7 +9,9 @@ code: "UOR-C-173"
 
 # Axiom Coherence Norm Connections
 
-The connections between the Coherence Norm Axiom and other core axioms, particularly its relationship to Prime-Coordinate Homomorphism, Canonical Representation, and Coherence Inner Product.
+## Description
+
+The connections between the [[uor-c-005|Coherence Norm]] Axiom and other core axioms, particularly its relationship to Prime-Coordinate Homomorphism, [[uor-c-004|Canonical Representation]], and [[uor-c-308|Coherence Inner Product]].
 
 ## Metadata
 

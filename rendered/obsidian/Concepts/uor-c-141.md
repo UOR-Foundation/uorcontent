@@ -9,7 +9,9 @@ code: "UOR-C-141"
 
 # Factorization Significance
 
-The crucial importance of unique factorization for the UOR framework, ensuring objects have exactly one prime-coordinate representation, well-defined mappings, and unambiguous comparison capabilities.
+## Description
+
+The crucial importance of [[uor-c-301|unique factorization]] for the [[uor-c-001|UOR framework]], ensuring objects have exactly one prime-coordinate representation, well-defined mappings, and unambiguous comparison capabilities.
 
 ## Metadata
 

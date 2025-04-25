@@ -12,6 +12,8 @@ relatedConcepts:
 
 # Universal Number
 
+## Description
+
 An extension of traditional number systems that unifies real, complex, and p-adic numbers within a computable framework consistent with UOR axioms.
 
 ## Definition
@@ -30,18 +32,18 @@ This definition extends traditional numbers by allowing:
 
 ## Mathematical Formulation
 
-$$
+$
 \mathbb{U} = \{\eta \mid \eta \text{ admits a unique prime-coordinate representation } \phi(\eta) = (e_1, e_2, e_3, \ldots)
-$$
+$
 
-$$
+$
 \text{that is computably approximable in all relevant metrics}\}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-027|prime-coordinate-functor]]
-- [[uor-c-035|universal-prime-representation]]
+- [[uor-c-027|Prime Coordinate Functor]]
+- [[uor-c-035|Universal Prime Coordinate Representation]]
 
 ## Metadata
 

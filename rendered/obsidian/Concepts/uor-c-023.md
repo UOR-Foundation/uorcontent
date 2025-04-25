@@ -13,23 +13,25 @@ relatedConcepts:
 
 # Coherence Metric
 
+## Description
+
 A geometric measure that defines notions of distance and proximity between objects in prime-coordinate space based on their factorization similarity.
 
 ## Definition
 
-The coherence metric defines notions of distance and proximity between objects. d(x,y) = ||φ(x) - φ(y)|| measures compositional distance. Neighborhoods contain objects with similar prime factorization. Geodesics represent minimal paths between objects in prime-coordinate space. Curvature appears when considering non-Euclidean coherence measures.
+The [[uor-c-152|coherence metric]] defines notions of distance and proximity between objects. d(x,y) = ||φ(x) - φ(y)|| measures compositional distance. Neighborhoods contain objects with similar prime factorization. Geodesics represent minimal paths between objects in prime-coordinate space. Curvature appears when considering non-Euclidean coherence measures.
 
 ## Mathematical Formulation
 
-$$
+$
 d(x,y) = ||φ(x) - φ(y)||
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-020|prime-space-geometry]]
-- [[uor-c-005|coherence-norm]]
-- [[uor-c-310|metric-geometry]]
+- [[uor-c-020|Prime Space Geometry]]
+- [[uor-c-005|Coherence Norm]]
+- [[uor-c-310|Metric Geometry]]
 
 ## Metadata
 

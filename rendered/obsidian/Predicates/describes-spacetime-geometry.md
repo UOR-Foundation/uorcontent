@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "describes spacetime geometry"
 ---
 
 # describes spacetime geometry
 
-Relation indicating that a resource describes the spacetime geometry interpretation of the UOR framework
+## Description
+
+Relation indicating that a resource describes the spacetime geometry interpretation of the [[uor-c-001|UOR framework]]
 
 ## Predicate: describes spacetime geometry
 
@@ -18,3 +21,4 @@ Relation indicating that a resource describes the spacetime geometry interpretat
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-spacetime-geometry
+- **Semantic Type:** describes spacetime geometry

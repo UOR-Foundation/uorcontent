@@ -13,27 +13,29 @@ relatedConcepts:
 
 # Euclidean Structure
 
-The natural geometric structure inherited by prime-coordinate space from the coherence norm and inner product, providing measures of complexity and similarity.
+## Description
+
+The natural geometric structure inherited by prime-coordinate space from the [[uor-c-005|coherence norm]] and inner product, providing measures of complexity and similarity.
 
 ## Definition
 
-The prime-coordinate space inherits a natural Euclidean structure from the coherence norm and inner product. The coherence norm ||φ(x)|| measures the intrinsic complexity of an object. The inner product ⟨φ(x),φ(y)⟩ quantifies the degree of prime-factor similarity. Angles between coordinate vectors represent compositional relationships. Orthogonal objects have no common prime factors.
+The prime-coordinate space inherits a natural [[uor-c-021|Euclidean structure]] from the [[uor-c-005|coherence norm]] and inner product. The [[uor-c-005|coherence norm]] ||φ(x)|| measures the intrinsic complexity of an object. The inner product ⟨φ(x),φ(y)⟩ quantifies the degree of prime-factor similarity. Angles between coordinate vectors represent compositional relationships. Orthogonal objects have no common prime factors.
 
 ## Mathematical Formulation
 
-$$
+$
 ||φ(x)||
-$$
+$
 
-$$
+$
 ⟨φ(x),φ(y)⟩
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-020|prime-space-geometry]]
-- [[uor-c-005|coherence-norm]]
-- [[uor-c-308|coherence-inner-product]]
+- [[uor-c-020|Prime Space Geometry]]
+- [[uor-c-005|Coherence Norm]]
+- [[uor-c-308|Coherence Inner Product]]
 
 ## Metadata
 

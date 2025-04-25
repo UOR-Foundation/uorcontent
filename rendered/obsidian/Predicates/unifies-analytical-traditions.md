@@ -10,9 +10,14 @@ targets:
   - "urn:uor:concept:universal-integration"
   - "urn:uor:concept:universal-analytic-functions"
 predicateType: "unifies analytical traditions"
+semanticType: "unifies analytical traditions"
 ---
 
 # unifies analytical traditions
+
+## Description
+
+No description available.
 
 ## Predicate: unifies analytical traditions
 
@@ -20,14 +25,16 @@ predicateType: "unifies analytical traditions"
 
 **Description:** unification relationship
 
-**Subject:** [[uor-c-053|universal-analysis-axioms]]
+**Subject:** [[uor-c-053|Universal Analysis Axioms]]
 
 **Targets:**
 
-- [[uor-c-050|universal-derivative]]
-- [[uor-c-051|universal-integration]]
-- [[uor-c-052|universal-analytic-functions]]
+- [[uor-c-050|Universal Derivative]]
+- [[uor-c-051|Universal Integration]]
+- [[uor-c-052|Universal Analytic Functions]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:unifies-analytical-traditions
+- **Semantic Type:** unifies analytical traditions
+- **Created:** 2025-04-22T00:00:00Z

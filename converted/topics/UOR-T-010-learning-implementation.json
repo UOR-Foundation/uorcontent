@@ -4,14 +4,34 @@
   "@id": "urn:uor:topic:learning-implementation",
   "name": "Learning and Implementation",
   "description": "Structured approaches to learning and implementing the UOR Framework across different domains and applications.",
-  "about": ["learning pathways", "implementation", "practical applications", "cross-domain translation", "pedagogy"],
-  "keywords": ["learning", "implementation", "practical guide", "education", "application", "interdisciplinary"],
+  "learningResourceType": "Topic",
+  "about": [
+    "learning pathways",
+    "implementation",
+    "practical applications",
+    "cross-domain translation",
+    "pedagogy"
+  ],
+  "keywords": [
+    "learning",
+    "implementation",
+    "practical guide",
+    "education",
+    "application",
+    "interdisciplinary"
+  ],
   "hasPart": [
+    "urn:uor:predicate:develops-learning-architecture",
     "urn:uor:resource:practical-implementation-guide",
     "urn:uor:resource:cross-domain-translation-guide",
     "urn:uor:resource:learning-pathway-guide",
     "urn:uor:concept:semantic-emergence",
-    "urn:uor:concept:consciousness-information-bridge"
+    "urn:uor:concept:consciousness-information-bridge",
+    "urn:uor:predicate:implementsLearningArchitecture-learning-systems-architecture-to-learning-implementation",
+    "urn:uor:predicate:overview-references-practical-guide",
+    "urn:uor:predicate:learning-topic-contains-implementation-guide",
+    "urn:uor:predicate:learning-topic-contains-translation-guide",
+    "urn:uor:predicate:learning-topic-contains-pathway-guide"
   ],
   "isPartOf": {
     "@type": "CreativeWork",
@@ -27,6 +47,6 @@
     }
   },
   "dateCreated": "2025-04-22T00:00:00Z",
-  "dateModified": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-25T13:31:08.051Z",
   "version": "1.0"
 }

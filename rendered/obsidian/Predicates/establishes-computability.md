@@ -11,9 +11,14 @@ targets:
   - "urn:uor:concept:universal-number-algorithms"
   - "urn:uor:concept:computational-complexity-classes"
 predicateType: "establishes computability"
+semanticType: "establishes computability"
 ---
 
 # establishes computability
+
+## Description
+
+No description available.
 
 ## Predicate: establishes computability
 
@@ -21,15 +26,17 @@ predicateType: "establishes computability"
 
 **Description:** computational foundation relationship
 
-**Subject:** [[computability-aspects]]
+**Subject:** [[computability-aspects|Computability Aspects of Universal Numbers]]
 
 **Targets:**
 
-- [[uor-c-038|computable-universal-number]]
-- [[uor-c-039|coordinate-computability]]
-- [[uor-c-040|universal-number-algorithms]]
-- [[uor-c-041|computational-complexity-classes]]
+- [[uor-c-038|Computable Universal Number]]
+- [[uor-c-039|Coordinate Computability]]
+- [[uor-c-040|Universal Number Algorithms]]
+- [[uor-c-041|Computational Complexity Classes of Universal Numbers]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:establishes-computability
+- **Semantic Type:** establishes computability
+- **Created:** 2025-04-22T00:00:00Z

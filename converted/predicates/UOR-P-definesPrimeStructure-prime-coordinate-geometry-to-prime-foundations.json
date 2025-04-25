@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:definesPrimeStructure-prime-coordinate-geometry-to-prime-foundations",
+  "name": "definesPrimeStructure",
+  "propertyID": "uor:predicate",
+  "value": "related concept",
+  "subjectOf": {
+    "@id": "urn:uor:concept:prime-coordinate-geometry"
+  },
+  "targetCollection": [
+    "urn:uor:topic:prime-foundations"
+  ],
+  "valueName": "definesPrimeStructure relationship from prime-coordinate-geometry to prime-foundations",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "definesPrimeStructure"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 0.8
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:semanticRelationship",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-25T07:08:46.229Z",
+  "dateModified": "2025-04-25T07:08:46.229Z"
+}

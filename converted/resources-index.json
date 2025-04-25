@@ -3,7 +3,7 @@
   "@type": "ItemList",
   "name": "UOR Resources Index",
   "description": "Index of all UOR resources",
-  "numberOfItems": 68,
+  "numberOfItems": 65,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -531,6 +531,15 @@
       "@type": "ListItem",
       "position": 59,
       "item": {
+        "@id": "urn:uor:resource:harmonic-analysis-guide",
+        "@type": "CreativeWork",
+        "name": "Harmonic Analysis Guide: Applying UOR Principles to Music"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 60,
+      "item": {
         "@id": "urn:uor:resource:incompleteness-theorem",
         "@type": "CreativeWork",
         "name": "Gödel's Incompleteness Theorem"
@@ -538,7 +547,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 60,
+      "position": 61,
       "item": {
         "@id": "urn:uor:resource:meaning-overview",
         "@type": "CreativeWork",
@@ -547,7 +556,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 61,
+      "position": 62,
       "item": {
         "@id": "urn:uor:resource:practical-implementation-guide",
         "@type": "CreativeWork",
@@ -556,7 +565,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 62,
+      "position": 63,
       "item": {
         "@id": "urn:uor:resource:cross-domain-translation-guide",
         "@type": "CreativeWork",
@@ -565,7 +574,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 63,
+      "position": 64,
       "item": {
         "@id": "urn:uor:resource:learning-pathway-guide",
         "@type": "CreativeWork",
@@ -574,47 +583,11 @@
     },
     {
       "@type": "ListItem",
-      "position": 64,
+      "position": 65,
       "item": {
         "@id": "urn:uor:resource:advanced-uor-extensions",
         "@type": "CreativeWork",
         "name": "Advanced UOR Framework Extensions"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 65,
-      "item": {
-        "@id": "urn:uor:topic:universal-object-reference",
-        "@type": "CreativeWork",
-        "name": "Universal Object Reference"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 66,
-      "item": {
-        "@id": "urn:uor:topic:meaning",
-        "@type": "CreativeWork",
-        "name": "Meaning"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 67,
-      "item": {
-        "@id": "urn:uor:topic:learning-implementation",
-        "@type": "CreativeWork",
-        "name": "Learning and Implementation"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 68,
-      "item": {
-        "@id": "urn:uor:topic:advanced-extensions",
-        "@type": "CreativeWork",
-        "name": "Advanced Extensions"
       }
     }
   ]

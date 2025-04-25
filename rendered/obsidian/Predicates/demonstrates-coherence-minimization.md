@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "demonstrates coherence minimization"
 ---
 
 # demonstrates coherence minimization
 
-Relation indicating that a resource demonstrates coherence minimization as a universal optimization principle
+## Description
+
+Relation indicating that a resource demonstrates [[uor-c-217|coherence minimization]] as a universal optimization principle
 
 ## Predicate: demonstrates coherence minimization
 
@@ -18,3 +21,4 @@ Relation indicating that a resource demonstrates coherence minimization as a uni
 ## Metadata
 
 - **ID:** urn:uor:predicate:demonstrates-coherence-minimization
+- **Semantic Type:** demonstrates coherence minimization

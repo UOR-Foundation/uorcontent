@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "describes ideal-theoretic approaches"
 ---
 
 # describes ideal-theoretic approaches
 
-Relation indicating that a resource describes ideal-theoretic approaches to recover unique factorization
+## Description
+
+Relation indicating that a resource describes ideal-theoretic approaches to recover [[uor-c-301|unique factorization]]
 
 ## Predicate: describes ideal-theoretic approaches
 
@@ -18,3 +21,4 @@ Relation indicating that a resource describes ideal-theoretic approaches to reco
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-ideal-approaches
+- **Semantic Type:** describes ideal-theoretic approaches

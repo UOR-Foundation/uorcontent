@@ -10,9 +10,14 @@ targets:
   - "urn:uor:concept:advanced-computational-procedures"
   - "urn:uor:concept:verification-algorithms"
 predicateType: "enables computation"
+semanticType: "enables computation"
 ---
 
 # enables computation
+
+## Description
+
+No description available.
 
 ## Predicate: enables computation
 
@@ -20,14 +25,16 @@ predicateType: "enables computation"
 
 **Description:** computational enablement relationship
 
-**Subject:** [[uor-c-058|representation-algorithms]]
+**Subject:** [[uor-c-058|Representation Algorithms]]
 
 **Targets:**
 
-- [[uor-c-059|arithmetic-algorithms]]
-- [[uor-c-060|advanced-computational-procedures]]
-- [[uor-c-061|verification-algorithms]]
+- [[uor-c-059|Arithmetic Algorithms]]
+- [[uor-c-060|Advanced Computational Procedures]]
+- [[uor-c-061|Verification Algorithms]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:enables-computation
+- **Semantic Type:** enables computation
+- **Created:** 2025-04-22T00:00:00Z

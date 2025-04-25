@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "develops learning systems architecture"
 ---
 
 # develops learning systems architecture
+
+## Description
 
 Relation indicating that a resource develops a mathematical framework for learning systems and cognitive architecture through prime-coordinate representation
 
@@ -18,3 +21,4 @@ Relation indicating that a resource develops a mathematical framework for learni
 ## Metadata
 
 - **ID:** urn:uor:predicate:develops-learning-architecture
+- **Semantic Type:** develops learning systems architecture

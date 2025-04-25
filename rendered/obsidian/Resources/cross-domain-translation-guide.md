@@ -14,7 +14,9 @@ tags:
 
 # Cross-Domain Translation Guide
 
-A methodological guide for translating problems and concepts between different domains using the UOR framework as an intermediary representation system.
+## Description
+
+A methodological guide for translating problems and concepts between different domains using the [[uor-c-001|UOR framework]] as an intermediary representation system.
 
 # Cross-Domain Translation Guide
 
@@ -29,7 +31,7 @@ Different domains—from physics to biology to economics to art—often develop 
 - Varying levels of formalization and rigor
 - Domain-specific heuristics and methodologies
 
-The UOR framework addresses these barriers by providing a universal intermediate representation based on prime decomposition and observer frames. By translating domain-specific concepts into UOR prime coordinates, and then translating from UOR to a target domain, we can establish rigorous mappings between concepts across disciplines.
+The [[uor-c-001|UOR framework]] addresses these barriers by providing a universal intermediate representation based on [[uor-c-002|prime decomposition]] and observer frames. By translating domain-specific concepts into UOR [[uor-c-302|prime coordinates]], and then translating from UOR to a target domain, we can establish rigorous mappings between concepts across disciplines.
 
 ## Translation Methodology
 
@@ -54,14 +56,14 @@ For each domain involved in the translation:
 
 ### Phase 2: UOR Mapping
 
-For each domain, create a mapping to UOR prime coordinates:
+For each domain, create a mapping to UOR [[uor-c-302|prime coordinates]]:
 
 1. **Establish prime basis correspondence**
    - Map domain primitives to appropriate UOR prime elements
    - Define correspondence rules for compound concepts
    - Create translation tables for common domain patterns
 
-2. **Define observer reference frames**
+2. **Define [[uor-c-006|observer reference frames]]**
    - Create reference frames that capture domain-specific perspectives
    - Define transformations between domain-native representations and UOR coordinates
    - Validate invariance of essential properties under transformations
@@ -76,9 +78,9 @@ For each domain, create a mapping to UOR prime coordinates:
 With UOR mappings established for each domain:
 
 1. **Translate source domain concept to UOR**
-   - Decompose the concept into prime coordinates using source domain mapping
-   - Apply appropriate observer frame transformations
-   - Derive canonical representation in UOR prime space
+   - Decompose the concept into [[uor-c-302|prime coordinates]] using source domain mapping
+   - Apply appropriate observer [[uor-c-018|frame transformations]]
+   - Derive [[uor-c-004|canonical representation]] in UOR prime space
 
 2. **Translate from UOR to target domain**
    - Apply inverse mapping from UOR to target domain primitives
@@ -99,7 +101,7 @@ With UOR mappings established for each domain:
 **Physics formulation**: Energy in an isolated system remains constant over time
 
 **UOR representation**:
-- Prime decomposition: Conservation principle applied to energy quantity
+- [[uor-c-002|Prime decomposition]]: Conservation principle applied to energy quantity
 - Observer frame: System-relative measurement
 - Invariance property: Temporal invariance of scalar quantity
 
@@ -115,7 +117,7 @@ With UOR mappings established for each domain:
 **Biology formulation**: Process by which cells become specialized for different functions while maintaining the same genetic material
 
 **UOR representation**:
-- Prime decomposition: Information-preserving transformation with contextual activation patterns
+- [[uor-c-002|Prime decomposition]]: Information-preserving transformation with contextual activation patterns
 - Observer frame: Functional perspective on genetic information
 - Coherence principle: Minimal activation energy for stability
 
@@ -131,7 +133,7 @@ With UOR mappings established for each domain:
 **Mathematics formulation**: Sets of transformations that leave certain properties invariant
 
 **UOR representation**:
-- Prime decomposition: Basic transformation operators and their combinations
+- [[uor-c-002|Prime decomposition]]: Basic transformation operators and their combinations
 - Observer frame: Invariance-centered perspective
 - Structural properties: Combination rules and closure
 
@@ -160,7 +162,7 @@ With UOR mappings established for each domain:
 
 - Map data types to structural prime patterns
 - Translate algorithms to transformation sequences
-- Express computational complexity in prime decomposition complexity
+- Express computational complexity in [[uor-c-002|prime decomposition]] complexity
 - Map programming paradigms to observer frames
 
 ### Economics ↔ UOR
@@ -224,17 +226,17 @@ To facilitate cross-domain translation:
 
 ## Conclusion
 
-The UOR framework's universal representation system provides a powerful methodology for cross-domain translation. By mapping domain-specific concepts to prime coordinate representations, we can establish rigorous correspondences between seemingly disparate fields. This capability enables truly interdisciplinary work by creating bridges between specialized knowledge domains while preserving the essential structure and meaning of concepts.
+The [[uor-c-001|UOR framework]]'s universal representation system provides a powerful methodology for cross-domain translation. By mapping domain-specific concepts to prime coordinate representations, we can establish rigorous correspondences between seemingly disparate fields. This capability enables truly interdisciplinary work by creating bridges between specialized knowledge domains while preserving the essential structure and meaning of concepts.
 
-Effective cross-domain translation using UOR requires careful analysis of both domains, rigorous mapping to UOR prime coordinates, and validated translation processes. With these methodologies in place, the UOR framework can serve as a universal translator for human knowledge, enabling concepts and insights to flow freely across traditional disciplinary boundaries.
+Effective cross-domain translation using UOR requires careful analysis of both domains, rigorous mapping to UOR [[uor-c-302|prime coordinates]], and validated translation processes. With these methodologies in place, the [[uor-c-001|UOR framework]] can serve as a universal translator for human knowledge, enabling concepts and insights to flow freely across traditional disciplinary boundaries.
 
 ## References
 
-- [[uor-c-001|uor-framework]]
-- [[uor-c-002|prime-decomposition]]
-- [[uor-c-006|observer-reference-frames]]
-- [[uor-c-318|meaning-representation]]
-- [[uor-c-312|prime-coordinate-mapping]]
+- [[uor-c-001|UOR Framework]]
+- [[uor-c-002|Prime Decomposition]]
+- [[uor-c-006|Observer Reference Frames]]
+- [[uor-c-318|Meaning Representation]]
+- [[uor-c-312|Prime Coordinate Mapping]]
 
 ## Metadata
 

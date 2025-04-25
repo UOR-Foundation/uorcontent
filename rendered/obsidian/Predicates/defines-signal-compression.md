@@ -4,11 +4,14 @@ title: "Defines Signal Compression"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Defines Signal Compression"
 ---
 
 # Defines Signal Compression
 
-Establishes the formal definition and conceptual foundation of signal compression in the UOR framework.
+## Description
+
+Establishes the formal definition and conceptual foundation of signal compression in the [[uor-c-001|UOR framework]].
 
 ## Predicate: Defines Signal Compression
 
@@ -17,3 +20,4 @@ Establishes the formal definition and conceptual foundation of signal compressio
 ## Metadata
 
 - **ID:** urn:uor:predicate:defines-signal-compression
+- **Semantic Type:** Defines Signal Compression

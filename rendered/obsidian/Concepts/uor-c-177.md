@@ -9,7 +9,9 @@ code: "UOR-C-177"
 
 # Axiom Coherence Inner Product Connections
 
-The connections between the Coherence Inner Product Axiom and other core axioms, particularly its relationship to the Coherence Norm, Canonical Representation, and Trilateral Coherence.
+## Description
+
+The connections between the [[uor-c-308|Coherence Inner Product]] Axiom and other core axioms, particularly its relationship to the [[uor-c-005|Coherence Norm]], [[uor-c-004|Canonical Representation]], and [[uor-c-017|Trilateral Coherence]].
 
 ## Metadata
 

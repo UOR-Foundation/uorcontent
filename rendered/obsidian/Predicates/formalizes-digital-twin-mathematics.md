@@ -4,9 +4,12 @@ title: "Formalizes Digital Twin Mathematics"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Formalizes Digital Twin Mathematics"
 ---
 
 # Formalizes Digital Twin Mathematics
+
+## Description
 
 Establishes the mathematical formalization and equations that govern the Digital Twin Framework.
 
@@ -17,3 +20,4 @@ Establishes the mathematical formalization and equations that govern the Digital
 ## Metadata
 
 - **ID:** urn:uor:predicate:formalizes-digital-twin-mathematics
+- **Semantic Type:** Formalizes Digital Twin Mathematics

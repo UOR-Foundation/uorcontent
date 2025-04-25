@@ -4,9 +4,12 @@ title: "Describes Correlation Structures"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Correlation Structures"
 ---
 
 # Describes Correlation Structures
+
+## Description
 
 Describes the mathematical structures in prime coordinate space that support and enable non-local temporal correlations.
 
@@ -17,3 +20,4 @@ Describes the mathematical structures in prime coordinate space that support and
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-correlation-structures
+- **Semantic Type:** Describes Correlation Structures

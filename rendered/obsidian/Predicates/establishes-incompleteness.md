@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "establishes first incompleteness theorem"
 ---
 
 # establishes first incompleteness theorem
 
-Relation indicating that a resource establishes Gödel's First Incompleteness Theorem and its formal proof
+## Description
+
+Relation indicating that a resource establishes Gödel's [[uor-c-228|First Incompleteness Theorem]] and its formal proof
 
 ## Predicate: establishes first incompleteness theorem
 
@@ -18,3 +21,4 @@ Relation indicating that a resource establishes Gödel's First Incompleteness Th
 ## Metadata
 
 - **ID:** urn:uor:predicate:establishes-incompleteness
+- **Semantic Type:** establishes first incompleteness theorem

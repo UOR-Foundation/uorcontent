@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "extends to geometric structures"
 ---
 
 # extends to geometric structures
 
-Relation indicating that a resource extends the UOR framework to geometric structures and continuous spaces
+## Description
+
+Relation indicating that a resource extends the [[uor-c-001|UOR framework]] to geometric structures and continuous spaces
 
 ## Predicate: extends to geometric structures
 
@@ -18,3 +21,4 @@ Relation indicating that a resource extends the UOR framework to geometric struc
 ## Metadata
 
 - **ID:** urn:uor:predicate:extends-to-geometric-structures
+- **Semantic Type:** extends to geometric structures

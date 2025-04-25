@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Spectral Filtering
 
+## Description
+
 Techniques for isolating, extracting, or modifying specific components of an object's prime spectrum to enable analysis and transformation.
 
 ## Definition
@@ -21,23 +23,23 @@ The spectral view enables powerful analytical operations analogous to signal pro
 
 ## Mathematical Formulation
 
-$$
+$
 F_S(x) = ∏_{p∈S} p^{φ(x)(p)}
-$$
+$
 
-$$
+$
 LP_N(x) = ∏_{p≤N} p^{φ(x)(p)}
-$$
+$
 
-$$
+$
 BP_{a,b}(x) = ∏_{a≤p≤b} p^{φ(x)(p)}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-008|spectral-interpretation]]
-- [[uor-c-009|spectral-transform]]
-- [[uor-c-306|spectral-approximation]]
+- [[uor-c-008|Spectral Interpretation]]
+- [[uor-c-009|Spectral Transform]]
+- [[uor-c-306|Spectral Approximation]]
 
 ## Metadata
 

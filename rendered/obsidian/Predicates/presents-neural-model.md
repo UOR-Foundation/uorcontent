@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "presents neural coherence model"
 ---
 
 # presents neural coherence model
+
+## Description
 
 Relation indicating that a resource presents a model of neural systems as coherence-processing networks
 
@@ -18,3 +21,4 @@ Relation indicating that a resource presents a model of neural systems as cohere
 ## Metadata
 
 - **ID:** urn:uor:predicate:presents-neural-model
+- **Semantic Type:** presents neural coherence model

@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "establishes informational ontology"
 ---
 
 # establishes informational ontology
 
-Relation indicating that a resource establishes an informational ontology within the UOR framework
+## Description
+
+Relation indicating that a resource establishes an informational ontology within the [[uor-c-001|UOR framework]]
 
 ## Predicate: establishes informational ontology
 
@@ -18,3 +21,4 @@ Relation indicating that a resource establishes an informational ontology within
 ## Metadata
 
 - **ID:** urn:uor:predicate:establishes-informational-ontology
+- **Semantic Type:** establishes informational ontology

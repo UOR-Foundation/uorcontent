@@ -12,6 +12,8 @@ relatedConcepts:
 
 # Prime Coordinate Functor
 
+## Description
+
 A fundamental functor φ between the category of objects and the category of graded modules, transforming multiplicative structures into additive ones.
 
 ## Definition
@@ -24,26 +26,26 @@ The prime-coordinate map can be understood as a fundamental functor between cate
 
 ## Mathematical Formulation
 
-$$
+$
 \phi: Obj \to Mod \text{ is a functor such that:}
-$$
+$
 
-$$
+$
 \phi(X \otimes Y) = \phi(X) \oplus \phi(Y)
-$$
+$
 
-$$
+$
 \phi(1_{Obj}) = 0_{Mod}
-$$
+$
 
-$$
+$
 \text{For inverse operations: } \phi(X^{-1}) = -\phi(X)
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-004|canonical-representation]]
-- [[uor-c-002|prime-decomposition]]
+- [[uor-c-004|Canonical Representation]]
+- [[uor-c-002|Prime Decomposition]]
 
 ## Metadata
 

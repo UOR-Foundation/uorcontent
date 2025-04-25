@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "analyzes complex social and economic systems"
 ---
 
 # analyzes complex social and economic systems
+
+## Description
 
 Relation indicating that a resource analyzes complex social and economic systems through prime-coordinate representation and coherence principles
 
@@ -18,3 +21,4 @@ Relation indicating that a resource analyzes complex social and economic systems
 ## Metadata
 
 - **ID:** urn:uor:predicate:analyzes-social-systems
+- **Semantic Type:** analyzes complex social and economic systems

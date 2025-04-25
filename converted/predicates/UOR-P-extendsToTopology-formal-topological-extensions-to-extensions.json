@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:extendsToTopology-formal-topological-extensions-to-extensions",
+  "name": "extendsToTopology",
+  "propertyID": "uor:predicate",
+  "value": "related concept",
+  "subjectOf": {
+    "@id": "urn:uor:concept:formal-topological-extensions"
+  },
+  "targetCollection": [
+    "urn:uor:topic:extensions"
+  ],
+  "valueName": "extendsToTopology relationship from formal-topological-extensions to extensions",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "extendsToTopology"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 0.8
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:semanticRelationship",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-25T07:08:46.217Z",
+  "dateModified": "2025-04-25T07:08:46.217Z"
+}

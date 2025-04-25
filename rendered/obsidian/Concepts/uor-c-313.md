@@ -9,7 +9,9 @@ code: "UOR-C-313"
 
 # Reference Frame
 
-Reference Frame is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-313|Reference Frame]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

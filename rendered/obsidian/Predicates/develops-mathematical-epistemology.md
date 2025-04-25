@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "develops mathematical epistemology"
 ---
 
 # develops mathematical epistemology
 
-Relation indicating that a resource develops a mathematical epistemology based on the UOR framework
+## Description
+
+Relation indicating that a resource develops a mathematical epistemology based on the [[uor-c-001|UOR framework]]
 
 ## Predicate: develops mathematical epistemology
 
@@ -18,3 +21,4 @@ Relation indicating that a resource develops a mathematical epistemology based o
 ## Metadata
 
 - **ID:** urn:uor:predicate:develops-mathematical-epistemology
+- **Semantic Type:** develops mathematical epistemology

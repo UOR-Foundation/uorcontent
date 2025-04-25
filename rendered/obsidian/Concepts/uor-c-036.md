@@ -12,15 +12,17 @@ relatedConcepts:
 
 # Universal Coordinate Transformation
 
-The core mathematical operation mapping each universal number to its infinite-dimensional complex coordinate vector while preserving algebraic structure.
+## Description
+
+The core mathematical operation mapping each [[uor-c-034|universal number]] to its infinite-dimensional complex coordinate vector while preserving algebraic structure.
 
 ## Definition
 
-The core mathematical operation underpinning universal numbers is the Universal Coordinate Transformation:
+The core mathematical operation underpinning universal numbers is the [[uor-c-036|Universal Coordinate Transformation]]:
 
 Φ: 𝕌 → ℂ^∞
 
-mapping each universal number to its infinite-dimensional complex coordinate vector. This transformation satisfies:
+mapping each [[uor-c-034|universal number]] to its infinite-dimensional complex coordinate vector. This transformation satisfies:
 
 1. Injectivity: Different universal numbers map to different coordinate vectors
 2. Structure preservation: Multiplication of numbers transforms to vector addition of coordinates
@@ -33,30 +35,30 @@ The embedding satisfies:
 
 ## Mathematical Formulation
 
-$$
+$
 \Phi: \mathbb{U} \to \mathbb{C}^\infty
-$$
+$
 
-$$
+$
 \text{Properties:}
-$$
+$
 
-$$
+$
 \text{1. Injectivity: } \eta_1 \neq \eta_2 \implies \Phi(\eta_1) \neq \Phi(\eta_2)
-$$
+$
 
-$$
+$
 \text{2. Structure preservation: } \Phi(\eta_1 \cdot \eta_2) = \Phi(\eta_1) + \Phi(\eta_2)
-$$
+$
 
-$$
+$
 \text{3. For complex numbers: } \phi(z_1 + z_2) = \log(\exp(\phi(z_1)) + \exp(\phi(z_2)))
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-034|universal-number]]
-- [[uor-c-035|universal-prime-representation]]
+- [[uor-c-034|Universal Number]]
+- [[uor-c-035|Universal Prime Coordinate Representation]]
 
 ## Metadata
 

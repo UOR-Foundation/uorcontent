@@ -4,9 +4,12 @@ title: "Describes Conversion Applications"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Conversion Applications"
 ---
 
 # Describes Conversion Applications
+
+## Description
 
 Details the practical applications and implementation scenarios for block conversion technology.
 
@@ -17,3 +20,4 @@ Details the practical applications and implementation scenarios for block conver
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-conversion-applications
+- **Semantic Type:** Describes Conversion Applications

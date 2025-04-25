@@ -9,7 +9,9 @@ code: "UOR-C-315"
 
 # Information Preservation
 
-Information Preservation is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-315|Information Preservation]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

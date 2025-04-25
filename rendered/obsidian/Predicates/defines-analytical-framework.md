@@ -11,9 +11,14 @@ targets:
   - "urn:uor:concept:universal-analytic-functions"
   - "urn:uor:concept:universal-analysis-axioms"
 predicateType: "defines analytical framework"
+semanticType: "defines analytical framework"
 ---
 
 # defines analytical framework
+
+## Description
+
+No description available.
 
 ## Predicate: defines analytical framework
 
@@ -21,15 +26,17 @@ predicateType: "defines analytical framework"
 
 **Description:** analytical framework relationship
 
-**Subject:** [[universal-analysis]]
+**Subject:** [[universal-analysis|Universal Analysis]]
 
 **Targets:**
 
-- [[uor-c-050|universal-derivative]]
-- [[uor-c-051|universal-integration]]
-- [[uor-c-052|universal-analytic-functions]]
-- [[uor-c-053|universal-analysis-axioms]]
+- [[uor-c-050|Universal Derivative]]
+- [[uor-c-051|Universal Integration]]
+- [[uor-c-052|Universal Analytic Functions]]
+- [[uor-c-053|Universal Analysis Axioms]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:defines-analytical-framework
+- **Semantic Type:** defines analytical framework
+- **Created:** 2025-04-22T00:00:00Z

@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "develops UOR interpretation of incompleteness"
 ---
 
 # develops UOR interpretation of incompleteness
+
+## Description
 
 Relation indicating that a resource develops a novel UOR interpretation of Gödelian incompleteness through prime spectra and transcendence
 
@@ -18,3 +21,4 @@ Relation indicating that a resource develops a novel UOR interpretation of Göde
 ## Metadata
 
 - **ID:** urn:uor:predicate:develops-uor-interpretation
+- **Semantic Type:** develops UOR interpretation of incompleteness

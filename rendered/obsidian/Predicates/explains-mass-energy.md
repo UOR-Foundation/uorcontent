@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "explains mass-energy relations"
 ---
 
 # explains mass-energy relations
 
-Relation indicating that a resource explains how mass, energy, and momentum emerge naturally from the structure of the prime-coordinate space in the UOR framework
+## Description
+
+Relation indicating that a resource explains how mass, energy, and momentum emerge naturally from the structure of the prime-coordinate space in the [[uor-c-001|UOR framework]]
 
 ## Predicate: explains mass-energy relations
 
@@ -18,3 +21,4 @@ Relation indicating that a resource explains how mass, energy, and momentum emer
 ## Metadata
 
 - **ID:** urn:uor:predicate:explains-mass-energy
+- **Semantic Type:** explains mass-energy relations

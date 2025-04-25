@@ -12,16 +12,18 @@ relatedConcepts:
 
 # Representation Algorithms
 
-Algorithms for encoding mathematical objects in the universal number representation, including methods for integers, rational numbers, real numbers, and p-adic numbers.
+## Description
+
+Algorithms for encoding mathematical objects in the [[uor-c-034|universal number]] representation, including methods for integers, rational numbers, real numbers, and p-adic numbers.
 
 ## Definition
 
-Core Representation Algorithms
+Core [[uor-c-058|Representation Algorithms]]
 
-Universal Number Encoding
+[[uor-c-034|Universal Number]] Encoding
 Algorithm 1: Encode_Universal_Number
 Input: A mathematical object expressed in standard form (integer, rational, real, complex, or p-adic)  
-Output: The universal number representation including prime coordinates
+Output: The [[uor-c-034|universal number]] representation including [[uor-c-302|prime coordinates]]
 
 ```
 Function Encode_Universal_Number(x, precision):
@@ -36,7 +38,7 @@ Function Encode_Universal_Number(x, precision):
      b. p-adic components for relevant primes
      c. Prime-coordinate vector
   4. Verify consistency across representations
-  5. Return universal number representation
+  5. Return [[uor-c-034|universal number]] representation
 ```
 
 This algorithm translates conventional representations into the universal framework, ensuring consistent encoding across different number domains.
@@ -63,54 +65,54 @@ Function Compute_Prime_Coordinates_Integer(n):
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Universal Number Encoding Algorithm:}
-$$
+$
 
-$$
+$
 \text{Function Encode\_Universal\_Number}(x, \text{precision}):
-$$
+$
 
-$$
+$
 1. \text{Determine the number type of } x \text{ (integer, rational, real, complex, p-adic)}
-$$
+$
 
-$$
+$
 2. \text{Based on type:}
-$$
+$
 
-$$
+$
    a. \text{If integer: Compute prime factorization}
-$$
+$
 
-$$
+$
    b. \text{If rational: Factorize numerator and denominator, subtract coordinates}
-$$
+$
 
-$$
+$
    c. \text{If real/complex: Use continued fraction approximation}
-$$
+$
 
-$$
+$
    d. \text{If p-adic: Convert using p-adic to universal algorithm}
-$$
+$
 
-$$
+$
 3. \text{Generate the universal representation components}
-$$
+$
 
-$$
+$
 4. \text{Verify consistency across representations}
-$$
+$
 
-$$
+$
 5. \text{Return universal number representation}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-034|universal-number]]
-- [[uor-c-035|universal-prime-representation]]
+- [[uor-c-034|Universal Number]]
+- [[uor-c-035|Universal Prime Coordinate Representation]]
 
 ## Metadata
 

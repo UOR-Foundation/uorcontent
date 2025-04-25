@@ -4,9 +4,12 @@ title: "Describes Transform Properties"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Transform Properties"
 ---
 
 # Describes Transform Properties
+
+## Description
 
 Describes the fundamental mathematical properties that characterize universal transforms and distinguish them from traditional transformation methods.
 
@@ -17,3 +20,4 @@ Describes the fundamental mathematical properties that characterize universal tr
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-transform-properties
+- **Semantic Type:** Describes Transform Properties

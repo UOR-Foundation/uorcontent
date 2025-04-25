@@ -13,17 +13,19 @@ relatedConcepts:
 
 # Lattice Geometry
 
-The discrete geometric structure formed by objects with integer exponents in prime-coordinate space, where each lattice point represents a unique factorization.
+## Description
+
+The discrete geometric structure formed by objects with integer exponents in prime-coordinate space, where each lattice point represents a [[uor-c-301|unique factorization]].
 
 ## Definition
 
-Objects with integer exponents form a discrete lattice in prime-coordinate space. Each lattice point represents a unique factorization. Lines through the origin correspond to powers of the same object. Convex regions define families of objects with bounded prime exponents. Walking along lattice paths corresponds to sequential multiplication by primes.
+Objects with integer exponents form a discrete lattice in prime-coordinate space. Each lattice point represents a [[uor-c-301|unique factorization]]. Lines through the origin correspond to powers of the same object. Convex regions define families of objects with bounded prime exponents. Walking along lattice paths corresponds to sequential multiplication by primes.
 
 ## Related Concepts
 
-- [[uor-c-020|prime-space-geometry]]
-- [[uor-c-002|prime-decomposition]]
-- [[uor-c-309|discrete-geometry]]
+- [[uor-c-020|Prime Space Geometry]]
+- [[uor-c-002|Prime Decomposition]]
+- [[uor-c-309|Discrete Geometry]]
 
 ## Metadata
 

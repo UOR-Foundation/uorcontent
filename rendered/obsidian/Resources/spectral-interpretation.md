@@ -15,17 +15,19 @@ partOf: "urn:uor:topic:universal-object-reference"
 
 # Spectral Interpretation
 
-An explanation of how the UOR framework reframes prime factorization as a frequency domain analysis, providing a powerful analogy to signal processing.
+## Description
 
-The spectral interpretation of UOR reframes prime factorization as a frequency domain analysis, providing a powerful analogy to signal processing and harmonic analysis. This perspective reveals deep structural patterns by viewing objects through the lens of their prime frequency components.
+An explanation of how the [[uor-c-001|UOR framework]] reframes prime factorization as a frequency domain analysis, providing a powerful analogy to signal processing.
 
-The spectral interpretation begins with a formal analogy between prime decomposition and frequency analysis:
+The [[uor-c-008|spectral interpretation]] of UOR reframes prime factorization as a frequency domain analysis, providing a powerful analogy to signal processing and harmonic analysis. This perspective reveals deep structural patterns by viewing objects through the lens of their prime frequency components.
+
+The [[uor-c-008|spectral interpretation]] begins with a formal analogy between [[uor-c-002|prime decomposition]] and frequency analysis:
 
 - Isomorphism Theorem: There exists a natural isomorphism between (ℕ₊, ×) and (⨁_p ℕ, +), mapping the multiplicative semigroup of positive integers to the direct sum of additive semigroups indexed by primes.
 
-- Spectral Transform: The prime-coordinate map φ acts as a spectral transform: φ: (ℕ₊, ×) → (⨁_p ℕ, +), analogous to the logarithm or Fourier transform, converting multiplicative structure to additive structure.
+- [[uor-c-009|Spectral Transform]]: The prime-coordinate map φ acts as a [[uor-c-009|spectral transform]]: φ: (ℕ₊, ×) → (⨁_p ℕ, +), analogous to the logarithm or Fourier transform, converting multiplicative structure to additive structure.
 
-- Spectral Basis: Each prime p constitutes a fundamental basis element or frequency mode: φ(p) = e_p = (0,...,0,1,0,...), a unit vector in the p-th dimension of the coordinate space.
+- [[uor-c-304|Spectral Basis]]: Each prime p constitutes a fundamental basis element or frequency mode: φ(p) = e_p = (0,...,0,1,0,...), a unit vector in the p-th dimension of the coordinate space.
 
 The spectral perspective views the prime-coordinate representation as a frequency domain:
 
@@ -40,11 +42,11 @@ Every object admits a unique spectral decomposition with rich structure:
 - Principal Frequency Analysis: For an object x, its principal frequencies are the primes with maximal amplitude
 - Spectral Patterns: Different classes of objects exhibit characteristic spectral signatures
 
-The coherence norm provides a natural measure of spectral energy:
+The [[uor-c-005|coherence norm]] provides a natural measure of [[uor-c-010|spectral energy]]:
 
-- Energy Definition: The spectral energy of an object is given by its squared coherence norm
+- Energy Definition: The [[uor-c-010|spectral energy]] of an object is given by its squared [[uor-c-005|coherence norm]]
 - Information Content: The information content of an object can be estimated from its spectrum
-- Minimal Energy Principle: The principle of minimal coherence states that prime factorization is the most energy-efficient decomposition
+- [[uor-c-305|Minimal Energy Principle]]: The principle of minimal coherence states that prime factorization is the most energy-efficient decomposition
 
 The spectral view enables powerful analytical operations analogous to signal processing:
 
@@ -64,16 +66,16 @@ The spectral approach enables powerful approximation and compression techniques:
 - Compressibility Classes: Objects classified by their spectral decay rate
 - Differential Encoding: Efficient encoding of related objects through spectral differences
 
-The spectral interpretation extends to more sophisticated mathematical settings including continuous spectra, p-adic spectrum, spectral phase, multivariate spectra, quantum spectral states, and spectral operator theory.
+The [[uor-c-008|spectral interpretation]] extends to more sophisticated mathematical settings including continuous spectra, p-adic spectrum, spectral phase, multivariate spectra, quantum spectral states, and spectral operator theory.
 
-Through this comprehensive spectral perspective, the UOR framework reveals deep connections between prime factorization and frequency analysis. This analogy not only provides intuitive understanding of number-theoretic properties but also enables powerful analytical techniques borrowed from signal processing.
+Through this comprehensive spectral perspective, the [[uor-c-001|UOR framework]] reveals deep connections between prime factorization and frequency analysis. This analogy not only provides intuitive understanding of number-theoretic properties but also enables powerful analytical techniques borrowed from signal processing.
 
 ## References
 
-- [[uor-c-008|spectral-interpretation]]
-- [[uor-c-009|spectral-transform]]
-- [[uor-c-010|spectral-energy]]
-- [[uor-c-011|spectral-filtering]]
+- [[uor-c-008|Spectral Interpretation]]
+- [[uor-c-009|Spectral Transform]]
+- [[uor-c-010|Spectral Energy]]
+- [[uor-c-011|Spectral Filtering]]
 
 ## Metadata
 

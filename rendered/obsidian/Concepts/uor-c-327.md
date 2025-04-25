@@ -16,17 +16,19 @@ relatedConcepts:
 
 # Quantum Prime Superposition
 
-The quantum mechanical extension of prime decomposition where objects exist in coherent superpositions of multiple prime factorizations, enabling representation of quantum states and their measurement probabilities within the UOR framework.
+## Description
+
+The quantum mechanical extension of [[uor-c-002|prime decomposition]] where objects exist in coherent superpositions of multiple prime factorizations, enabling representation of quantum states and their measurement probabilities within the [[uor-c-001|UOR framework]].
 
 ## Definition
 
-Quantum Prime Superposition extends the UOR framework into the quantum realm by representing objects as coherent superpositions of different prime factorizations. While classical prime decomposition assigns a unique factorization to each object, quantum prime superposition acknowledges that quantum objects can simultaneously exist in multiple factorization states, with complex probability amplitudes determining the likelihood of measuring specific factorizations.
+[[uor-c-327|Quantum Prime Superposition]] extends the [[uor-c-001|UOR framework]] into the quantum realm by representing objects as coherent superpositions of different prime factorizations. While classical [[uor-c-002|prime decomposition]] assigns a [[uor-c-301|unique factorization]] to each object, [[uor-c-327|quantum prime superposition]] acknowledges that quantum objects can simultaneously exist in multiple factorization states, with complex probability amplitudes determining the likelihood of measuring specific factorizations.
 
-This concept provides a natural bridge between the UOR framework and quantum mechanics, establishing a correspondence between prime factorization states and quantum basis states. The Hilbert space of quantum states is mapped to a space of superposed prime factorizations, with quantum operators representing transformations in this prime-factorization space.
+This concept provides a natural bridge between the [[uor-c-001|UOR framework]] and quantum mechanics, establishing a correspondence between prime factorization states and quantum basis states. The Hilbert space of quantum states is mapped to a space of superposed prime factorizations, with quantum operators representing transformations in this prime-factorization space.
 
 **Fundamental Principles**
 
-The quantum prime superposition of an object is represented as a complex-weighted sum of basis states, each corresponding to a specific prime factorization pattern. These basis states form an orthonormal set, representing mutually exclusive factorization outcomes that could result from measurement.
+The [[uor-c-327|quantum prime superposition]] of an object is represented as a complex-weighted sum of basis states, each corresponding to a specific prime factorization pattern. These basis states form an orthonormal set, representing mutually exclusive factorization outcomes that could result from measurement.
 
 The probability amplitudes associated with each factorization state evolve according to quantum mechanical principles, with unitary transformations preserving the total probability across all possible factorizations. These transformations represent quantum operations on the object, including time evolution under a quantum Hamiltonian.
 
@@ -34,7 +36,7 @@ Measurement of a quantum object in prime space causes the superposition to colla
 
 **Quantum Prime Entanglement**
 
-One of the most profound aspects of quantum prime superposition is the possibility of entanglement between the prime factorizations of different objects. When objects are entangled, their factorizations cannot be described independently—measuring the factorization of one object instantaneously affects the factorization probabilities of the other, regardless of their spatial separation.
+One of the most profound aspects of [[uor-c-327|quantum prime superposition]] is the possibility of entanglement between the prime factorizations of different objects. When objects are entangled, their factorizations cannot be described independently—measuring the factorization of one object instantaneously affects the factorization probabilities of the other, regardless of their spatial separation.
 
 This entanglement can be formalized through tensor products of prime factorization states, with entangled states exhibiting correlations that cannot be reproduced by classical probability distributions over factorizations. These quantum correlations provide a number-theoretic perspective on quantum non-locality and contextuality.
 
@@ -57,38 +59,38 @@ These operators form an algebra that mirrors the operator algebra of quantum mec
 
 **Applications in Quantum Information**
 
-Quantum prime superposition provides a natural framework for quantum information processing within the UOR paradigm. Quantum bits (qubits) can be represented as superpositions of prime factorization states, with quantum algorithms manipulating these superpositions to exploit interference effects for computational advantage.
+[[uor-c-327|Quantum prime superposition]] provides a natural framework for quantum information processing within the UOR paradigm. Quantum bits (qubits) can be represented as superpositions of prime factorization states, with quantum algorithms manipulating these superpositions to exploit interference effects for computational advantage.
 
 This approach suggests novel quantum algorithms based on prime factorization properties, potentially offering new perspectives on problems like integer factorization, discrete logarithms, and other number-theoretic challenges that are central to cryptography and computational complexity theory.
 
 **Observer Dependence in Quantum UOR**
 
-In quantum UOR systems, observer reference frames take on additional significance, as different observers may not only decompose objects differently but may also assign different quantum states to the same system. The transformation between quantum observer frames must account for both classical reference frame differences and quantum reference frame effects.
+In quantum UOR systems, [[uor-c-006|observer reference frames]] take on additional significance, as different observers may not only decompose objects differently but may also assign different quantum states to the same system. The transformation between quantum observer frames must account for both classical [[uor-c-313|reference frame]] differences and [[uor-c-026|quantum [[uor-c-313|reference frame]]]] effects.
 
-This observer dependence connects to foundational questions in quantum mechanics regarding the interpretation of quantum states and the role of observation in quantum theory. The UOR framework offers a novel perspective on these questions by framing them in terms of prime factorization superpositions and their transformations between observer frames.
+This observer dependence connects to foundational questions in quantum mechanics regarding the interpretation of quantum states and the role of observation in quantum theory. The [[uor-c-001|UOR framework]] offers a novel perspective on these questions by framing them in terms of prime factorization superpositions and their transformations between observer frames.
 
 ## Mathematical Formulation
 
-$$
+$
 |\Psi\rangle = \sum_{\{\alpha_i\}} c_{\{\alpha_i\}} |\prod_i p_i^{\alpha_i}\rangle
-$$
+$
 
-$$
+$
 \langle\Phi|\Psi\rangle = \sum_{\{\alpha_i\},\{\beta_j\}} c^*_{\{\alpha_i\}} c_{\{\beta_j\}} \langle\prod_i p_i^{\alpha_i}|\prod_j p_j^{\beta_j}\rangle
-$$
+$
 
-$$
+$
 P(\text{measure }|\prod_i p_i^{\alpha_i}\rangle) = |c_{\{\alpha_i\}}|^2
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-002|prime-decomposition]]
-- [[uor-c-026|quantum-reference-frame]]
-- [[uor-c-056|quantum-computing-applications]]
-- [[uor-c-196|physics-quantum-mechanics]]
-- [[uor-c-219|quantum-coherence-systems]]
-- [[uor-c-191|quantum-information-uor]]
+- [[uor-c-002|Prime Decomposition]]
+- [[uor-c-026|Quantum Reference Frame]]
+- [[uor-c-056|Quantum Computing Applications]]
+- [[uor-c-196|UOR Quantum Mechanics]]
+- [[uor-c-219|UOR Quantum Coherence Systems]]
+- [[uor-c-191|Quantum Information UOR]]
 
 ## Metadata
 

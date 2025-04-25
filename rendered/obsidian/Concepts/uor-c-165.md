@@ -9,7 +9,9 @@ code: "UOR-C-165"
 
 # Axiom Prime-Coordinate Homomorphism Connections
 
-The connections between the Prime-Coordinate Homomorphism Axiom and other core axioms, particularly its foundation in Unique Factorization and support for the Coherence Norm and Canonical Representation.
+## Description
+
+The connections between the Prime-Coordinate Homomorphism Axiom and other core axioms, particularly its foundation in [[uor-c-301|Unique Factorization]] and support for the [[uor-c-005|Coherence Norm]] and [[uor-c-004|Canonical Representation]].
 
 ## Metadata
 

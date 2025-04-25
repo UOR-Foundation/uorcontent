@@ -13,27 +13,29 @@ relatedConcepts:
 
 # Spectral Transform
 
+## Description
+
 A mathematical transformation that maps multiplicative structures to additive structures by converting objects to their prime-coordinate representation.
 
 ## Definition
 
-The prime-coordinate map φ acts as a spectral transform: φ: (ℕ₊, ×) → (⨁_p ℕ, +), analogous to the logarithm or Fourier transform, converting multiplicative structure to additive structure. The Composition Law states that multiplication of objects corresponds to addition of their spectra: φ(xy) = φ(x) + φ(y), analogous to how convolution of signals adds their frequency components.
+The prime-coordinate map φ acts as a [[uor-c-009|spectral transform]]: φ: (ℕ₊, ×) → (⨁_p ℕ, +), analogous to the logarithm or Fourier transform, converting multiplicative structure to additive structure. The Composition Law states that multiplication of objects corresponds to addition of their spectra: φ(xy) = φ(x) + φ(y), analogous to how convolution of signals adds their frequency components.
 
 ## Mathematical Formulation
 
-$$
+$
 φ: (ℕ₊, ×) → (⨁_p ℕ, +)
-$$
+$
 
-$$
+$
 φ(xy) = φ(x) + φ(y)
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-008|spectral-interpretation]]
-- [[uor-c-002|prime-decomposition]]
-- [[uor-c-304|spectral-basis]]
+- [[uor-c-008|Spectral Interpretation]]
+- [[uor-c-002|Prime Decomposition]]
+- [[uor-c-304|Spectral Basis]]
 
 ## Metadata
 

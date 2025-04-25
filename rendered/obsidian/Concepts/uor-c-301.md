@@ -9,7 +9,9 @@ code: "UOR-C-301"
 
 # Unique Factorization
 
-Unique Factorization is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-301|Unique Factorization]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

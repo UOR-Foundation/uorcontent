@@ -4,16 +4,23 @@
   "@id": "urn:uor:topic:universal-coordinates",
   "name": "Universal Coordinates",
   "description": "The mathematical foundations and applications of universal coordinates, an extension of the UOR framework to numerical domains.",
-  "keywords": ["universal numbers", "universal coordinates", "number systems", "prime coordinates", "computational aspects"],
+  "keywords": [
+    "universal numbers",
+    "universal coordinates",
+    "number systems",
+    "prime coordinates",
+    "computational aspects"
+  ],
   "text": "Universal coordinates extends the UOR framework into numerical domains, unifying different number systems through a consistent prime-coordinate representation. This topic explores the mathematical foundations, algebraic structures, topological properties, and computational applications of universal numbers.",
   "author": {
     "@type": "Organization",
     "name": "UOR Framework"
   },
   "dateCreated": "2025-04-22T00:00:00Z",
-  "dateModified": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-25T13:31:08.041Z",
   "learningResourceType": "Topic",
   "hasPart": [
+    "urn:uor:predicate:defines-universal-transforms",
     "urn:uor:resource:universal-numbers-foundation",
     "urn:uor:resource:computability-aspects",
     "urn:uor:resource:algebraic-structure",
@@ -21,7 +28,12 @@
     "urn:uor:resource:universal-analysis",
     "urn:uor:resource:applications-domains",
     "urn:uor:resource:computational-algorithms",
-    "urn:uor:resource:uor-integration"
+    "urn:uor:resource:uor-integration",
+    "urn:uor:predicate:definesAxiom-axiom-universal-mapping-property-connections-to-universal-coordinates",
+    "urn:uor:predicate:definesAxiom-axiom-universal-mapping-property-formalization-to-universal-coordinates",
+    "urn:uor:predicate:definesAxiom-axiom-universal-mapping-property-insights-to-universal-coordinates",
+    "urn:uor:predicate:definesAxiom-axiom-universal-mapping-property-statement-to-universal-coordinates",
+    "urn:uor:predicate:definesPrimeStructure-prime-coordinates-to-universal-coordinates"
   ],
   "potentialAction": {
     "@type": "Action",

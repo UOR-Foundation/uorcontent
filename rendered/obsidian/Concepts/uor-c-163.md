@@ -9,6 +9,8 @@ code: "UOR-C-163"
 
 # Axiom Prime-Coordinate Homomorphism Insights
 
+## Description
+
 Key insights from the Prime-Coordinate Homomorphism Axiom including linearization of structure, coordinate isomorphism, and algebraic foundation.
 
 ## Metadata

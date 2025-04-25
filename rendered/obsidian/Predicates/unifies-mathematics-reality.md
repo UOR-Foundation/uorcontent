@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "unifies mathematics and reality"
 ---
 
 # unifies mathematics and reality
+
+## Description
 
 Relation indicating that a resource unifies mathematics and physical reality by establishing that mathematical structures constitute reality rather than merely describing it
 
@@ -18,3 +21,4 @@ Relation indicating that a resource unifies mathematics and physical reality by 
 ## Metadata
 
 - **ID:** urn:uor:predicate:unifies-mathematics-reality
+- **Semantic Type:** unifies mathematics and reality

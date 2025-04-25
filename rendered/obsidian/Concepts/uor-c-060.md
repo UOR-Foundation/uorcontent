@@ -12,11 +12,13 @@ relatedConcepts:
 
 # Advanced Computational Procedures
 
+## Description
+
 Advanced algorithms for performing operations beyond basic arithmetic on universal numbers, including root finding, differential equation solving, and Fourier transforms.
 
 ## Definition
 
-Advanced Computational Procedures
+[[uor-c-060|Advanced Computational Procedures]]
 
 Root Finding
 Algorithm 9: Universal_Root_Finding
@@ -31,7 +33,7 @@ Function Universal_Root_Finding(P, x₀, ε):
      b. Compute derivatives using universal differentiation
      c. Continue until |P(x_n)| < ε
   3. Verify consistency across complex and p-adic representations
-  4. Return root as universal number
+  4. Return root as [[uor-c-034|universal number]]
 ```
 
 This algorithm enables finding roots of polynomial and analytic functions in the universal domain.
@@ -59,46 +61,46 @@ This algorithm solves differential equations in the universal domain, maintainin
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Root Finding Algorithm:}
-$$
+$
 
-$$
+$
 \text{Newton's method: } x_{n+1} = x_n - \frac{P(x_n)}{P'(x_n)}
-$$
+$
 
-$$
+$
 \text{Continue until } |P(x_n)| < \varepsilon
-$$
+$
 
-$$
+$
 \text{Differential Equation Solving Algorithm (Runge-Kutta):}
-$$
+$
 
-$$
+$
 k_1 = h \cdot f(y_n)
-$$
+$
 
-$$
+$
 k_2 = h \cdot f(y_n + k_1/2)
-$$
+$
 
-$$
+$
 k_3 = h \cdot f(y_n + k_2/2)
-$$
+$
 
-$$
+$
 k_4 = h \cdot f(y_n + k_3)
-$$
+$
 
-$$
+$
 y_{n+1} = y_n + \frac{k_1 + 2k_2 + 2k_3 + k_4}{6}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-059|arithmetic-algorithms]]
-- [[uor-c-052|universal-analytic-functions]]
+- [[uor-c-059|Arithmetic Algorithms]]
+- [[uor-c-052|Universal Analytic Functions]]
 
 ## Metadata
 

@@ -16,9 +16,11 @@ partOf: "urn:uor:topic:universal-object-reference"
 
 # Category-Theoretic Perspective
 
-A formulation of the UOR framework in the language of category theory, revealing deep structural properties of prime-coordinate representation.
+## Description
 
-The UOR framework achieves its greatest generality and mathematical power when formulated in the language of category theory. This perspective reveals the deep structural properties that make prime-coordinate representation a universal feature across mathematical domains.
+A formulation of the [[uor-c-001|UOR framework]] in the language of category theory, revealing deep structural properties of prime-coordinate representation.
+
+The [[uor-c-001|UOR framework]] achieves its greatest generality and mathematical power when formulated in the language of category theory. This perspective reveals the deep structural properties that make prime-coordinate representation a universal feature across mathematical domains.
 
 The prime-coordinate map can be understood as a fundamental functor between categories:
 
@@ -40,7 +42,7 @@ The prime-coordinate functor participates in a fundamental adjunction:
 - Representability: The functor φ is representable in the sense that: φ(X) ≅ Hom_Obj(G, X) where G is the generating object or "universal probe".
 - Yoneda Embedding: The prime-coordinate map can be viewed as a special case of the Yoneda embedding, with: φ(X) = Hom_Obj(P, X) where P is the collection of prime objects acting as "test objects".
 
-The UOR framework is enriched by monoidal category structure:
+The [[uor-c-001|UOR framework]] is enriched by monoidal category structure:
 
 - Monoidal Functor: The prime-coordinate map is a strong monoidal functor between (Obj, ⊗, 1) and (Mod, ⊕, 0).
 - Coherence Conditions: These isomorphisms satisfy the pentagon and triangle coherence conditions.
@@ -49,7 +51,7 @@ The UOR framework is enriched by monoidal category structure:
 In more advanced settings, UOR can be interpreted within topos theory:
 
 - Sheaf of Primes: The assignment p ↦ v_p(X) defines a sheaf over the site of primes.
-- Internal Language: Using the internal language of the topos, we can express statements about prime coordinates.
+- Internal Language: Using the internal language of the topos, we can express statements about [[uor-c-302|prime coordinates]].
 - Classifying Topos: There exists a classifying topos for UOR structures.
 - Geometric Morphisms: Transformations between domains with UOR structures correspond to geometric morphisms between their associated toposes.
 
@@ -59,10 +61,10 @@ Through this comprehensive category-theoretic framework, UOR achieves its most e
 
 ## References
 
-- [[uor-c-027|prime-coordinate-functor]]
-- [[uor-c-028|universal-mapping-property]]
-- [[uor-c-029|adjunction-representation]]
-- [[uor-c-030|monoidal-structure]]
+- [[uor-c-027|Prime Coordinate Functor]]
+- [[uor-c-028|Universal Mapping Property]]
+- [[uor-c-029|Adjunction and Representation Theory]]
+- [[uor-c-030|Monoidal Structures and Coherence]]
 
 ## Metadata
 

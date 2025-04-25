@@ -9,7 +9,9 @@ code: "UOR-C-303"
 
 # Minimality Principle
 
-Minimality Principle is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-303|Minimality Principle]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

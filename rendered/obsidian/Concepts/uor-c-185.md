@@ -9,7 +9,9 @@ code: "UOR-C-185"
 
 # Axiom Universal Mapping Property Connections
 
-The connections between the Universal Mapping Property Axiom and other core axioms, showing how it provides theoretical justification for the entire UOR framework.
+## Description
+
+The connections between the [[uor-c-028|Universal Mapping Property]] Axiom and other core axioms, showing how it provides theoretical justification for the entire [[uor-c-001|UOR framework]].
 
 ## Metadata
 

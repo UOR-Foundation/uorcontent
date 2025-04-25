@@ -9,7 +9,9 @@ code: "UOR-C-306"
 
 # Spectral Approximation
 
-Spectral Approximation is a concept in the Universal Object Reference framework.
+## Description
+
+[[uor-c-306|Spectral Approximation]] is a concept in the Universal Object Reference framework.
 
 ## Metadata
 

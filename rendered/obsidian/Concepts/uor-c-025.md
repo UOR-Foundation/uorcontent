@@ -12,6 +12,8 @@ relatedConcepts:
 
 # Sheaf Structure
 
+## Description
+
 A mathematical construction arising naturally from the prime-coordinate mapping, enabling local-to-global analysis of coherence properties.
 
 ## Definition
@@ -23,22 +25,22 @@ The prime-coordinate mapping naturally gives rise to sheaf structures:
 
 ## Mathematical Formulation
 
-$$
+$
 \text{For an open covering } \{U_i\} \text{ of prime-coordinate space } P:
-$$
+$
 
-$$
+$
 \mathcal{F}(U_i) = \text{algebraic spectrum of elements in } U_i
-$$
+$
 
-$$
+$
 \text{with restriction maps } \rho_{i,j}: \mathcal{F}(U_i) \to \mathcal{F}(U_i \cap U_j)
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-312|prime-coordinate-mapping]]
-- [[uor-c-008|spectral-interpretation]]
+- [[uor-c-312|Prime Coordinate Mapping]]
+- [[uor-c-008|Spectral Interpretation]]
 
 ## Metadata
 

@@ -13,17 +13,19 @@ relatedConcepts:
 
 # Coherence Norm
 
+## Description
+
 A measure of representational efficiency in UOR that quantifies the simplicity and optimality of a given prime-coordinate encoding.
 
 ## Definition
 
-Among all possible representations of an object, the canonical prime-coordinate form minimizes the coherence norm. This provides the most efficient encoding (minimum description length) and contains no redundant information.
+Among all possible representations of an object, the canonical prime-coordinate form minimizes the [[uor-c-005|coherence norm]]. This provides the most efficient encoding (minimum description length) and contains no redundant information.
 
 ## Related Concepts
 
-- [[uor-c-004|canonical-representation]]
-- [[uor-c-002|prime-decomposition]]
-- [[uor-c-303|minimality-principle]]
+- [[uor-c-004|Canonical Representation]]
+- [[uor-c-002|Prime Decomposition]]
+- [[uor-c-303|Minimality Principle]]
 
 ## Metadata
 

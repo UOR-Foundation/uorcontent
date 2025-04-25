@@ -5,11 +5,14 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "explains unique factorization challenges"
 ---
 
 # explains unique factorization challenges
 
-Relation indicating that a resource explains the fundamental challenges to unique factorization in various mathematical domains
+## Description
+
+Relation indicating that a resource explains the fundamental challenges to [[uor-c-301|unique factorization]] in various mathematical domains
 
 ## Predicate: explains unique factorization challenges
 
@@ -18,3 +21,4 @@ Relation indicating that a resource explains the fundamental challenges to uniqu
 ## Metadata
 
 - **ID:** urn:uor:predicate:explains-factorization-challenges
+- **Semantic Type:** explains unique factorization challenges

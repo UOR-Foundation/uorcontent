@@ -74,8 +74,19 @@ async function main() {
     }
     
     // Exit with appropriate code
+    // Check for errors in any result files
     const hasInvalid = results.some(result => !result.valid);
-    process.exit(hasInvalid ? 1 : 0);
+    
+    // Check for warnings in any result files (treat warnings as errors)
+    const hasWarnings = results.some(result => result.warnings && result.warnings.length > 0);
+    
+    // Fail if we have invalid results or warnings
+    if (hasInvalid || hasWarnings) {
+      console.error(chalk.red('\nValidation failed due to errors or warnings'));
+      process.exit(1);
+    } else {
+      process.exit(0);
+    }
   } catch (error) {
     console.error(chalk.red(`Error: ${error.message}`));
     if (options.verbose) {
@@ -89,29 +100,38 @@ async function main() {
 function displayFileResult(result) {
   const { valid, filePath, errors = [], warnings = [], type } = result;
   
-  if (valid) {
+  // Consider file invalid if it has warnings
+  const hasWarnings = warnings && warnings.length > 0;
+  
+  if (valid && !hasWarnings) {
     console.log(chalk.green(`✓ ${filePath}`) + chalk.gray(` [${type}]`));
-    
-    // Display warnings even for valid files if verbose
-    if (options.verbose && warnings && warnings.length > 0) {
-      console.log(chalk.yellow(`  Warnings for ${filePath}:`));
-      for (const warning of warnings) {
-        console.log(
-          chalk.gray('  - ') + 
-          chalk.yellow(warning.message)
-        );
+  } else {
+    // Show errors
+    if (!valid) {
+      console.log(chalk.red(`✗ ${filePath} (ERRORS)`));
+      
+      if (options.verbose && errors) {
+        for (const error of errors) {
+          console.log(
+            chalk.gray('  - ') + 
+            chalk.yellow(error.instancePath || '<root>') + ': ' + 
+            chalk.red(error.message || error)
+          );
+        }
       }
     }
-  } else {
-    console.log(chalk.red(`✗ ${filePath}`));
     
-    if (options.verbose && errors) {
-      for (const error of errors) {
-        console.log(
-          chalk.gray('  - ') + 
-          chalk.yellow(error.instancePath || '<root>') + ': ' + 
-          chalk.red(error.message || error)
-        );
+    // Show warnings as errors
+    if (hasWarnings) {
+      console.log(chalk.red(`✗ ${filePath} (WARNINGS TREATED AS ERRORS)`));
+      
+      if (options.verbose || !valid) {
+        for (const warning of warnings) {
+          console.log(
+            chalk.gray('  - ') + 
+            chalk.red(warning.message)
+          );
+        }
       }
     }
   }
@@ -125,17 +145,21 @@ function displaySummary(results) {
   console.log(`Total files: ${chalk.blue(totalFiles)}`);
   console.log(`Valid: ${chalk.green(validFiles)}`);
   console.log(`Invalid: ${chalk.red(invalidFiles)}`);
-  console.log(`Warnings: ${chalk.yellow(warningCount || 0)}`);
+  console.log(`Warnings: ${chalk.red(warningCount || 0)} (TREATED AS ERRORS)`);
   
-  if (invalidFiles === 0) {
-    if (warningCount === 0) {
-      console.log(chalk.green('\nAll files are valid with no warnings!'));
-    } else {
-      console.log(chalk.green('\nAll files are valid!') + chalk.yellow(` (But there are ${warningCount} warnings)`));
-      console.log(chalk.gray('Run with --verbose to see warnings'));
-    }
+  if (invalidFiles === 0 && warningCount === 0) {
+    console.log(chalk.green('\nAll files are valid with no warnings!'));
   } else {
-    console.log(chalk.yellow(`\n${invalidFiles} file(s) have validation errors.`));
+    if (invalidFiles > 0) {
+      console.log(chalk.red(`\n${invalidFiles} file(s) have validation errors.`));
+    }
+    
+    if (warningCount > 0) {
+      console.log(chalk.red(`\n${warningCount} file(s) have warnings that are being treated as errors.`));
+      console.log(chalk.gray('Run with --verbose to see specific warnings'));
+    }
+    
+    console.log(chalk.red('\nValidation FAILED - fix all errors and warnings before proceeding'));
   }
 }
 

@@ -4,9 +4,12 @@ title: "Describes Digital Twin Applications"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Describes Digital Twin Applications"
 ---
 
 # Describes Digital Twin Applications
+
+## Description
 
 Details the practical applications and implementation scenarios for the Digital Twin Framework.
 
@@ -17,3 +20,4 @@ Details the practical applications and implementation scenarios for the Digital 
 ## Metadata
 
 - **ID:** urn:uor:predicate:describes-digital-twin-applications
+- **Semantic Type:** Describes Digital Twin Applications

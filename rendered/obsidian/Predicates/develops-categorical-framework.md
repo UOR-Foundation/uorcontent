@@ -5,9 +5,12 @@ type: "predicate"
 tags:
   - "predicate"
 predicateType: "strong"
+semanticType: "develops category-theoretic framework"
 ---
 
 # develops category-theoretic framework
+
+## Description
 
 Relation indicating that a resource develops a category-theoretic framework for the UOR principles
 
@@ -18,3 +21,4 @@ Relation indicating that a resource develops a category-theoretic framework for 
 ## Metadata
 
 - **ID:** urn:uor:predicate:develops-categorical-framework
+- **Semantic Type:** develops category-theoretic framework

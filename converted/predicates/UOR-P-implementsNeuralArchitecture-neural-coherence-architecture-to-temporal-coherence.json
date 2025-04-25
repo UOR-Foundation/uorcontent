@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:implementsNeuralArchitecture-neural-coherence-architecture-to-temporal-coherence",
+  "name": "implementsNeuralArchitecture",
+  "propertyID": "uor:predicate",
+  "value": "related concept",
+  "subjectOf": {
+    "@id": "urn:uor:concept:neural-coherence-architecture"
+  },
+  "targetCollection": [
+    "urn:uor:topic:temporal-coherence"
+  ],
+  "valueName": "implementsNeuralArchitecture relationship from neural-coherence-architecture to temporal-coherence",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "implementsNeuralArchitecture"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 0.8
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:semanticRelationship",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-25T07:08:46.221Z",
+  "dateModified": "2025-04-25T07:08:46.221Z"
+}

@@ -9,9 +9,14 @@ targets:
   - "urn:uor:concept:polynomial-ring-extension"
   - "urn:uor:concept:combinatorial-monoid-extension"
 predicateType: "generalizes framework"
+semanticType: "generalizes framework"
 ---
 
 # generalizes framework
+
+## Description
+
+No description available.
 
 ## Predicate: generalizes framework
 
@@ -19,13 +24,15 @@ predicateType: "generalizes framework"
 
 **Description:** generalization relationship
 
-**Subject:** [[uor-c-031|general-uor-existence]]
+**Subject:** [[uor-c-031|General UOR Existence Theorem]]
 
 **Targets:**
 
-- [[uor-c-032|polynomial-ring-extension]]
-- [[uor-c-033|combinatorial-monoid-extension]]
+- [[uor-c-032|Polynomial Ring Extension]]
+- [[uor-c-033|Combinatorial Monoid Extension]]
 
 ## Metadata
 
 - **ID:** urn:uor:predicate:generalizes-framework
+- **Semantic Type:** generalizes framework
+- **Created:** 2025-04-22T00:00:00Z

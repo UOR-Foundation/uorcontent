@@ -13,6 +13,8 @@ relatedConcepts:
 
 # Identity Applications
 
+## Description
+
 The practical applications and implementation scenarios for Universal Identity across different domains, demonstrating its transformative capabilities beyond traditional identity systems.
 
 ## Definition
@@ -45,139 +47,139 @@ Universal Identity transcends traditional identity systems in several key ways:
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Universal Identity enables several transformative capabilities that}
-$$
+$
 
-$$
+$
 \text{transcend traditional identity systems:}
-$$
+$
 
-$$
+$
 \text{1. Self-Sovereign Identity: Identity grounded in mathematical properties}
-$$
+$
 
-$$
+$
 \text{   rather than external authorities:}
-$$
+$
 
-$$
+$
 \forall E: \exists \text{ID}(E) \text{ s.t. } \text{Verify}(\text{ID}(E), E) \text{ without reference to}
-$$
+$
 
-$$
+$
 \text{any external authority } \mathcal{A}
-$$
+$
 
-$$
+$
 \text{2. Cross-Domain Authentication: Seamless authentication across systems:}
-$$
+$
 
-$$
+$
 \forall D_i, D_j \in \mathcal{D}: \text{Auth}_{D_i}(\text{ID}) \Rightarrow \text{Auth}_{D_j}(T_{D_i \to D_j}(\text{ID}))
-$$
+$
 
-$$
+$
 \text{where } \mathcal{D} \text{ is the set of all domains and } T \text{ transforms between them.}
-$$
+$
 
-$$
+$
 \text{3. Selective Disclosure: Verifiable disclosure of specific attributes:}
-$$
+$
 
-$$
+$
 \text{Disclose}(\text{ID}, A) = \pi_A(\text{ID}) \text{ s.t. } \text{Verify}(\pi_A(\text{ID}), A(E))
-$$
+$
 
-$$
+$
 \text{where } A \text{ is an attribute set and } \pi_A \text{ projects only those attributes.}
-$$
+$
 
-$$
+$
 \text{4. Decentralized Trust: Trust emerging from mathematical properties:}
-$$
+$
 
-$$
+$
 \text{Trust}(\text{ID}_A, \text{ID}_B) = C(\text{ID}_A, \text{ID}_B) > \tau_T
-$$
+$
 
-$$
+$
 \text{where } C \text{ is a coherence metric and } \tau_T \text{ is a trust threshold.}
-$$
+$
 
-$$
+$
 \text{5. Identity Preservation: Maintenance of essential properties over time:}
-$$
+$
 
-$$
+$
 \forall t_1, t_2: \text{ID}(E, t_1) \approx \text{ID}(E, t_2) \text{ for essential properties}
-$$
+$
 
-$$
+$
 \text{6. Quantum-Resistant Identity: Resistant to quantum attacks:}
-$$
+$
 
-$$
+$
 \text{Security}(\text{ID}) \text{ independent of computational hardness assumptions}
-$$
+$
 
-$$
+$
 \text{vulnerable to quantum algorithms.}
-$$
+$
 
-$$
+$
 \text{7. Hierarchical Identity: Verifiable identity hierarchies:}
-$$
+$
 
-$$
+$
 \text{For hierarchical relationship } H(\text{ID}_A, \text{ID}_B):\
-$$
+$
 
-$$
+$
 \exists f \text{ s.t. } \phi(\text{ID}_B) = f(\phi(\text{ID}_A)) \text{ and}
-$$
+$
 
-$$
+$
 \text{Verify}(\text{ID}_B, E_B) \Rightarrow \text{RelationVerify}(\text{ID}_A, \text{ID}_B, H)
-$$
+$
 
-$$
+$
 \text{Universal Identity transcends traditional identity systems:}
-$$
+$
 
-$$
+$
 \text{1. Beyond PKI: Grounded in intrinsic mathematical properties rather than}
-$$
+$
 
-$$
+$
 \text{   computational hardness assumptions.}
-$$
+$
 
-$$
+$
 \text{2. Beyond Biometrics: Identity from information structure rather than}
-$$
+$
 
-$$
+$
 \text{   physical characteristics.}
-$$
+$
 
-$$
+$
 \text{3. Beyond Federated Identity: Inherently consistent identity across domains}
-$$
+$
 
-$$
+$
 \text{   without federation mechanisms.}
-$$
+$
 
-$$
+$
 \text{4. Beyond Blockchain Identity: Mathematical guarantees without consensus.}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-118|identity-foundation]]
-- [[uor-c-120|identity-operations]]
-- [[uor-c-113|digital-twin-applications]]
+- [[uor-c-118|Identity Foundation]]
+- [[uor-c-120|Identity Operations]]
+- [[uor-c-113|Digital Twin Applications]]
 
 ## Metadata
 

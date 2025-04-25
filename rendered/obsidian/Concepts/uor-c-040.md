@@ -12,6 +12,8 @@ relatedConcepts:
 
 # Universal Number Algorithms
 
+## Description
+
 Effective algorithmic procedures for performing arithmetical and analytical operations on universal numbers through their prime-coordinate representations.
 
 ## Definition
@@ -54,40 +56,40 @@ Universal numbers support efficient algorithms for fundamental operations:
 Theorem 2 (Algorithmic Completeness): The following operations are effectively computable on universal numbers:
 
 1. Root Finding: Computing roots of polynomials with universal coefficients
-2. Transcendence Testing: Determining whether a given universal number is algebraic or transcendental
+2. Transcendence Testing: Determining whether a given [[uor-c-034|universal number]] is algebraic or transcendental
 3. Differential Equation Solving: Numerically solving ODEs with universal coefficients and initial conditions
 4. Integral Computation: Computing definite integrals of universal-valued functions
 
 ## Mathematical Formulation
 
-$$
+$
 \text{Basic Arithmetic Algorithms:}
-$$
+$
 
-$$
+$
 \text{1. Addition: } \phi(\alpha+\beta) = \log(\exp(\phi(\alpha)) + \exp(\phi(\beta))) \text{ coordinate-wise}
-$$
+$
 
-$$
+$
 \text{2. Multiplication: } \phi(\alpha\cdot\beta) = \phi(\alpha) + \phi(\beta) \text{ coordinate-wise}
-$$
+$
 
-$$
+$
 \text{3. Division: } \phi(\alpha/\beta) = \phi(\alpha) - \phi(\beta) \text{ coordinate-wise}
-$$
+$
 
-$$
+$
 \text{4. Power: } \phi(\alpha^r) = r \cdot \phi(\alpha) \text{ coordinate-wise}
-$$
+$
 
-$$
+$
 \text{Advanced algorithms include root finding, transcendence testing, and differential equation solving}
-$$
+$
 
 ## Related Concepts
 
-- [[uor-c-038|computable-universal-number]]
-- [[uor-c-036|universal-coordinate-transformation]]
+- [[uor-c-038|Computable Universal Number]]
+- [[uor-c-036|Universal Coordinate Transformation]]
 
 ## Metadata
 

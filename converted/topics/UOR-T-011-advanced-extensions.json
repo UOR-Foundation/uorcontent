@@ -4,8 +4,24 @@
   "@id": "urn:uor:topic:advanced-extensions",
   "name": "Advanced Extensions",
   "description": "Advanced theoretical extensions of the UOR Framework addressing spatiotemporal integration, quantum systems, computational implementation challenges, and cross-framework connections.",
-  "about": ["theoretical extensions", "spatiotemporal integration", "quantum UOR", "error resilience", "framework mapping", "learning dynamics"],
-  "keywords": ["advanced theory", "spatiotemporal", "quantum", "complexity", "error handling", "learning", "cross-framework"],
+  "learningResourceType": "Topic",
+  "about": [
+    "theoretical extensions",
+    "spatiotemporal integration",
+    "quantum UOR",
+    "error resilience",
+    "framework mapping",
+    "learning dynamics"
+  ],
+  "keywords": [
+    "advanced theory",
+    "spatiotemporal",
+    "quantum",
+    "complexity",
+    "error handling",
+    "learning",
+    "cross-framework"
+  ],
   "hasPart": [
     "urn:uor:resource:advanced-uor-extensions",
     "urn:uor:concept:spatiotemporal-manifold",
@@ -16,7 +32,12 @@
     "urn:uor:concept:prime-factorization-complexity",
     "urn:uor:concept:error-resilient-prime-decomposition",
     "urn:uor:concept:prime-space-learning-dynamics",
-    "urn:uor:concept:theoretical-framework-mapping"
+    "urn:uor:concept:theoretical-framework-mapping",
+    "urn:uor:predicate:provides-mathematical-tools",
+    "urn:uor:predicate:interprets-quantum-mechanics",
+    "urn:uor:predicate:develops-mathematical-epistemology",
+    "urn:uor:predicate:formulates-quantum-systems",
+    "urn:uor:predicate:connects-quantum-concepts"
   ],
   "isPartOf": {
     "@type": "CreativeWork",
@@ -32,6 +53,6 @@
     }
   },
   "dateCreated": "2025-04-22T00:00:00Z",
-  "dateModified": "2025-04-22T00:00:00Z",
+  "dateModified": "2025-04-25T07:28:11.706Z",
   "version": "1.0"
 }

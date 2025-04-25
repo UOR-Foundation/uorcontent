@@ -4,9 +4,12 @@ title: "Defines Temporal Frames"
 type: "predicate"
 tags:
   - "predicate"
+semanticType: "Defines Temporal Frames"
 ---
 
 # Defines Temporal Frames
+
+## Description
 
 Establishes the formal definition and structure of temporal reference frames for different observers.
 
@@ -17,3 +20,4 @@ Establishes the formal definition and structure of temporal reference frames for
 ## Metadata
 
 - **ID:** urn:uor:predicate:defines-temporal-frames
+- **Semantic Type:** Defines Temporal Frames

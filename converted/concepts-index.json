@@ -3,7 +3,7 @@
   "@type": "ItemList",
   "name": "UOR Concepts Index",
   "description": "Index of all UOR concepts",
-  "numberOfItems": 267,
+  "numberOfItems": 272,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -2406,6 +2406,51 @@
         "@id": "urn:uor:concept:temporal-musical-structures",
         "@type": "DefinedTerm",
         "name": "Temporal Musical Structures"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 268,
+      "item": {
+        "@id": "urn:uor:concept:pitch-prime-representation",
+        "@type": "DefinedTerm",
+        "name": "Pitch Prime Representation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 269,
+      "item": {
+        "@id": "urn:uor:concept:interval-prime-structure",
+        "@type": "DefinedTerm",
+        "name": "Interval Prime Structure"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 270,
+      "item": {
+        "@id": "urn:uor:concept:chord-prime-topology",
+        "@type": "DefinedTerm",
+        "name": "Chord Prime Topology"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 271,
+      "item": {
+        "@id": "urn:uor:concept:scale-prime-architecture",
+        "@type": "DefinedTerm",
+        "name": "Scale Prime Architecture"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 272,
+      "item": {
+        "@id": "urn:uor:concept:harmonic-progression-coherence",
+        "@type": "DefinedTerm",
+        "name": "Harmonic Progression Coherence"
       }
     }
   ]

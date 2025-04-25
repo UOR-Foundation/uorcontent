@@ -9,7 +9,9 @@ code: "UOR-C-135"
 
 # Prime Properties
 
-The key properties of intrinsic primes that enable them to function as a coordinate basis, including domain independence, uniqueness, and completeness.
+## Description
+
+The key properties of [[uor-c-307|intrinsic primes]] that enable them to function as a coordinate basis, including domain independence, uniqueness, and completeness.
 
 ## Metadata
 

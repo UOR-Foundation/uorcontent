@@ -16,17 +16,19 @@ partOf: "urn:uor:topic:universal-coordinates"
 
 # Universal Analysis
 
-An extension of classical calculus and function theory to the universal number domain, providing a unified framework for analytical methods across different number systems.
+## Description
 
-Universal Analysis extends classical calculus and function theory to the universal number domain, providing a unified framework for analytical methods across different number systems while maintaining complete coherence with UOR principles.
+An extension of classical calculus and function theory to the [[uor-c-034|universal number]] domain, providing a unified framework for analytical methods across different number systems.
 
-Universal analysis begins with a generalized concept of differentiation that unifies complex and p-adic approaches. For a function f: 𝕌 → 𝕌, the universal derivative at a point α ∈ 𝕌 is defined as f'(α) = lim(h→0) [f(α+h) - f(α)]/h where the limit is taken with respect to the universal metric.
+Universal Analysis extends classical calculus and function theory to the [[uor-c-034|universal number]] domain, providing a unified framework for analytical methods across different number systems while maintaining complete coherence with UOR principles.
+
+Universal analysis begins with a generalized concept of differentiation that unifies complex and p-adic approaches. For a function f: 𝕌 → 𝕌, the [[uor-c-050|universal derivative]] at a point α ∈ 𝕌 is defined as f'(α) = lim(h→0) [f(α+h) - f(α)]/h where the limit is taken with respect to the universal metric.
 
 A function f: 𝕌 → 𝕌 is universally differentiable at α if and only if it is complex-analytically differentiable with respect to the complex embedding, it is p-adically differentiable with respect to every p-adic embedding, and the derivatives from these different perspectives coincide under the canonical embeddings.
 
-If a function f admits a prime-coordinate representation φ(f(η)) = F(φ(η)) for some coordinate function F, then the universal derivative can be computed through φ(f'(η)) = JF(φ(η)) where JF is the Jacobian of F in the coordinate space.
+If a function f admits a prime-coordinate representation φ(f(η)) = F(φ(η)) for some coordinate function F, then the [[uor-c-050|universal derivative]] can be computed through φ(f'(η)) = JF(φ(η)) where JF is the Jacobian of F in the coordinate space.
 
-Universal integration unifies complex and p-adic integration. For a function f: 𝕌 → 𝕌 and a path γ, the universal line integral is defined as ∫_γ f(η) dη which simultaneously represents a complex contour integral and a collection of p-adic integrals.
+[[uor-c-051|Universal integration]] unifies complex and p-adic integration. For a function f: 𝕌 → 𝕌 and a path γ, the universal line integral is defined as ∫_γ f(η) dη which simultaneously represents a complex contour integral and a collection of p-adic integrals.
 
 If f: 𝕌 → 𝕌 is a universally differentiable function and γ is a path from a to b, then ∫_γ f'(η) dη = f(b) - f(a). This theorem generalizes both the Fundamental Theorem of Calculus and its p-adic analogues.
 
@@ -40,14 +42,14 @@ For a linear differential equation with universal coefficients, there exists a u
 
 Universal analysis establishes profound connections between complex and p-adic analysis through theorems like the Universal Residue Theorem and Complex-p-adic Duality.
 
-The theory of universal analysis satisfies coherence axioms that align with UOR principles, including Analytical Extension, Coordinate Analyticity, Computational Effectiveness, and Observer Invariance.
+The theory of universal analysis satisfies coherence axioms that align with UOR principles, including Analytical Extension, Coordinate Analyticity, Computational Effectiveness, and [[uor-c-003|Observer Invariance]].
 
 ## References
 
-- [[uor-c-050|universal-derivative]]
-- [[uor-c-051|universal-integration]]
-- [[uor-c-052|universal-analytic-functions]]
-- [[uor-c-053|universal-analysis-axioms]]
+- [[uor-c-050|Universal Derivative]]
+- [[uor-c-051|Universal Integration]]
+- [[uor-c-052|Universal Analytic Functions]]
+- [[uor-c-053|Universal Analysis Axioms]]
 
 ## Metadata
 
