@@ -3,7 +3,7 @@
   "@type": "ItemList",
   "name": "UOR Predicates Index",
   "description": "Index of all UOR predicates",
-  "numberOfItems": 217,
+  "numberOfItems": 223,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -1956,6 +1956,60 @@
         "@id": "urn:uor:predicate:connects-to-extensions-topic",
         "@type": "PropertyValue",
         "name": "extends"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 218,
+      "item": {
+        "@id": "urn:uor:predicate:music-overview-introduces-harmonic-prime-decomposition",
+        "@type": "PropertyValue",
+        "name": "introduces"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 219,
+      "item": {
+        "@id": "urn:uor:predicate:harmonic-prime-decomposition-extends-prime-decomposition",
+        "@type": "PropertyValue",
+        "name": "extends"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 220,
+      "item": {
+        "@id": "urn:uor:predicate:musical-coherence-field-parallels-meaning-coherence-field",
+        "@type": "PropertyValue",
+        "name": "parallels"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 221,
+      "item": {
+        "@id": "urn:uor:predicate:musical-observer-frames-implements-observer-reference-frames",
+        "@type": "PropertyValue",
+        "name": "implements"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 222,
+      "item": {
+        "@id": "urn:uor:predicate:spectral-musical-analysis-applies-spectral-interpretation",
+        "@type": "PropertyValue",
+        "name": "applies"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 223,
+      "item": {
+        "@id": "urn:uor:predicate:temporal-musical-structures-implements-temporal-prime-decomposition",
+        "@type": "PropertyValue",
+        "name": "implements"
       }
     }
   ]

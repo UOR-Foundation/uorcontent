@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "numberOfItems": 247,
+  "numberOfItems": 272,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -2718,6 +2718,281 @@
         "name": "Tripartite Kernel",
         "description": "Tripartite Kernel is a concept in the Universal Object Reference framework.",
         "termCode": "UOR-C-317"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 248,
+      "item": {
+        "@id": "urn:uor:concept:meaning-representation",
+        "@type": "DefinedTerm",
+        "name": "Meaning Representation",
+        "description": "The canonical representation of meaning as a structural pattern within the prime coordinate space, allowing for observer-invariant encoding of semantic content.",
+        "termCode": "UOR-C-318"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 249,
+      "item": {
+        "@id": "urn:uor:concept:semantic-prime-decomposition",
+        "@type": "DefinedTerm",
+        "name": "Semantic Prime Decomposition",
+        "description": "The factorization of semantic content into irreducible meaning units (semantic primes) that form the basis for all complex meanings within a given reference frame.",
+        "termCode": "UOR-C-319"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 250,
+      "item": {
+        "@id": "urn:uor:concept:meaning-coherence-field",
+        "@type": "DefinedTerm",
+        "name": "Meaning Coherence Field",
+        "description": "A field-theoretic structure on semantic prime spaces that quantifies the coherence and consistency of meaning representations across contexts and observer frames.",
+        "termCode": "UOR-C-320"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 251,
+      "item": {
+        "@id": "urn:uor:concept:observer-dependent-meaning",
+        "@type": "DefinedTerm",
+        "name": "Observer-Dependent Meaning",
+        "description": "The context-specific interpretation of meaning relative to a particular observer reference frame, while maintaining invariant structural properties across reference frame transformations.",
+        "termCode": "UOR-C-321"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 252,
+      "item": {
+        "@id": "urn:uor:concept:semantic-emergence",
+        "@type": "DefinedTerm",
+        "name": "Semantic Emergence",
+        "description": "The principled emergence of meaning from structural patterns in prime coordinate space, explaining how semantic content arises from mathematical relationships.",
+        "termCode": "UOR-C-322"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 253,
+      "item": {
+        "@id": "urn:uor:concept:consciousness-information-bridge",
+        "@type": "DefinedTerm",
+        "name": "Consciousness-Information Bridge",
+        "description": "The formal mapping between information structures in prime coordinate space and the phenomenological dimensions of conscious experience, providing a mathematical framework for subjectivity.",
+        "termCode": "UOR-C-323"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 254,
+      "item": {
+        "@id": "urn:uor:concept:spatiotemporal-manifold",
+        "@type": "DefinedTerm",
+        "name": "Spatiotemporal Manifold",
+        "description": "A unified geometric structure integrating spatial and temporal dimensions within the prime coordinate space, providing a coherent representation of objects across spatiotemporal reference frames.",
+        "termCode": "UOR-C-324"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 255,
+      "item": {
+        "@id": "urn:uor:concept:spatiotemporal-reference-frame",
+        "@type": "DefinedTerm",
+        "name": "Spatiotemporal Reference Frame",
+        "description": "An integrated observer perspective that unifies spatial and temporal aspects of perception, defining how objects are decomposed and represented across both dimensions within the UOR framework.",
+        "termCode": "UOR-C-325"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 256,
+      "item": {
+        "@id": "urn:uor:concept:lorentz-invariant-prime-decomposition",
+        "@type": "DefinedTerm",
+        "name": "Lorentz-Invariant Prime Decomposition",
+        "description": "A relativistically consistent approach to prime decomposition that preserves the essential structure of objects across reference frames in relative motion, ensuring physical laws maintain their form in all admissible frames.",
+        "termCode": "UOR-C-326"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 257,
+      "item": {
+        "@id": "urn:uor:concept:quantum-prime-superposition",
+        "@type": "DefinedTerm",
+        "name": "Quantum Prime Superposition",
+        "description": "The quantum mechanical extension of prime decomposition where objects exist in coherent superpositions of multiple prime factorizations, enabling representation of quantum states and their measurement probabilities within the UOR framework.",
+        "termCode": "UOR-C-327"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 258,
+      "item": {
+        "@id": "urn:uor:concept:quantum-entanglement-primes",
+        "@type": "DefinedTerm",
+        "name": "Quantum Entanglement Primes",
+        "description": "A specialized class of prime elements in quantum UOR systems that generate non-separable states when used in factorization, representing intrinsic quantum correlations that cannot be decomposed into independent subsystems.",
+        "termCode": "UOR-C-328"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 259,
+      "item": {
+        "@id": "urn:uor:concept:prime-factorization-complexity",
+        "@type": "DefinedTerm",
+        "name": "Prime Factorization Complexity",
+        "description": "The computational complexity analysis of finding prime decompositions in various UOR domains, addressing algorithmic efficiency, hardness guarantees, and practical heuristics for implementations across different complexity classes.",
+        "termCode": "UOR-C-329"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 260,
+      "item": {
+        "@id": "urn:uor:concept:error-resilient-prime-decomposition",
+        "@type": "DefinedTerm",
+        "name": "Error-Resilient Prime Decomposition",
+        "description": "A robust approach to prime decomposition that maintains representational integrity in the presence of noise, computational errors, and approximations, enabling practical UOR implementations in real-world environments.",
+        "termCode": "UOR-C-330"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 261,
+      "item": {
+        "@id": "urn:uor:concept:prime-space-learning-dynamics",
+        "@type": "DefinedTerm",
+        "name": "Prime Space Learning Dynamics",
+        "description": "The evolutionary processes by which UOR systems adapt their prime decomposition structures through experience, optimizing representations to improve coherence, predictive power, and computational efficiency.",
+        "termCode": "UOR-C-331"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 262,
+      "item": {
+        "@id": "urn:uor:concept:theoretical-framework-mapping",
+        "@type": "DefinedTerm",
+        "name": "Theoretical Framework Mapping",
+        "description": "The systematic correspondence between the UOR framework and other major theoretical frameworks in mathematics, physics, and computer science, establishing formal translations that preserve essential structures while revealing new insights through cross-framework analysis.",
+        "termCode": "UOR-C-332"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 263,
+      "item": {
+        "@id": "urn:uor:concept:harmonic-prime-decomposition",
+        "@type": "DefinedTerm",
+        "name": "Harmonic Prime Decomposition",
+        "description": "The factorization of musical structures into irreducible harmonic components that reveal the intrinsic mathematical relationships underpinning musical experience.",
+        "termCode": "UOR-C-333"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 264,
+      "item": {
+        "@id": "urn:uor:concept:musical-coherence-field",
+        "@type": "DefinedTerm",
+        "name": "Musical Coherence Field",
+        "description": "A field-theoretic structure on harmonic prime space that quantifies relationships between musical entities and reveals patterns of tension, resolution, and aesthetic coherence.",
+        "termCode": "UOR-C-334"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 265,
+      "item": {
+        "@id": "urn:uor:concept:musical-observer-frames",
+        "@type": "DefinedTerm",
+        "name": "Musical Observer Frames",
+        "description": "Reference frames that define how musical structures are interpreted by different listeners, accounting for cultural, contextual, and individual variations while preserving invariant harmonic properties.",
+        "termCode": "UOR-C-335"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 266,
+      "item": {
+        "@id": "urn:uor:concept:spectral-musical-analysis",
+        "@type": "DefinedTerm",
+        "name": "Spectral Musical Analysis",
+        "description": "Analysis of musical timbre, texture, and emotional qualities through spectral decomposition in prime harmonic space, revealing connections between mathematical structures and perceptual experiences.",
+        "termCode": "UOR-C-336"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 267,
+      "item": {
+        "@id": "urn:uor:concept:temporal-musical-structures",
+        "@type": "DefinedTerm",
+        "name": "Temporal Musical Structures",
+        "description": "The organization of musical events through time, analyzed via temporal prime decomposition to reveal intrinsic rhythmic patterns, phrase structures, and large-scale musical forms.",
+        "termCode": "UOR-C-337"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 268,
+      "item": {
+        "@id": "urn:uor:concept:pitch-prime-representation",
+        "@type": "DefinedTerm",
+        "name": "Pitch Prime Representation",
+        "description": "A mathematical framework decomposing musical pitch into prime frequency ratios, establishing a canonical coordinate system for tonal relationships independent of cultural tuning systems.",
+        "termCode": "UOR-C-338"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 269,
+      "item": {
+        "@id": "urn:uor:concept:interval-prime-structure",
+        "@type": "DefinedTerm",
+        "name": "Interval Prime Structure",
+        "description": "A mathematical formalization of musical intervals as prime ratio relationships, revealing the intrinsic coherence properties that govern consonance, dissonance, and interval function across different musical contexts.",
+        "termCode": "UOR-C-339"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 270,
+      "item": {
+        "@id": "urn:uor:concept:chord-prime-topology",
+        "@type": "DefinedTerm",
+        "name": "Chord Prime Topology",
+        "description": "A topological analysis of musical chords in prime coordinate space, revealing the intrinsic geometric structures that determine chord stability, function, and perceptual characteristics across musical traditions.",
+        "termCode": "UOR-C-340"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 271,
+      "item": {
+        "@id": "urn:uor:concept:scale-prime-architecture",
+        "@type": "DefinedTerm",
+        "name": "Scale Prime Architecture",
+        "description": "A systematic decomposition of musical scales into prime components, revealing the intrinsic mathematical structure that determines scale function, stability, and perceptual characteristics across diverse musical traditions.",
+        "termCode": "UOR-C-341"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 272,
+      "item": {
+        "@id": "urn:uor:concept:harmonic-progression-coherence",
+        "@type": "DefinedTerm",
+        "name": "Harmonic Progression Coherence",
+        "description": "A mathematical framework quantifying the coherence dynamics in chord progressions through prime decomposition, revealing the universal principles governing harmonic tension, resolution, and directional flow in music across diverse traditions.",
+        "termCode": "UOR-C-342"
       }
     }
   ]

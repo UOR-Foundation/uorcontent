@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "numberOfItems": 58,
+  "numberOfItems": 65,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -616,6 +616,17 @@
       "@type": "ListItem",
       "position": 57,
       "item": {
+        "@id": "urn:uor:resource:music-overview",
+        "@type": "CreativeWork",
+        "name": "Music in the UOR Framework",
+        "description": "A comprehensive exploration of music theory through the lens of Universal Object Reference principles, revealing novel insights into harmonics, composition, and perception.",
+        "about": "Music Theory through UOR"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 58,
+      "item": {
         "@id": "urn:uor:resource:ultimate-implication",
         "@type": "CreativeWork",
         "name": "The Ultimate Implication",
@@ -624,12 +635,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 58,
+      "position": 59,
+      "item": {
+        "@id": "urn:uor:resource:harmonic-analysis-guide",
+        "@type": "CreativeWork",
+        "name": "Harmonic Analysis Guide: Applying UOR Principles to Music",
+        "description": "A comprehensive guide to analyzing musical harmony using the Universal Object Reference framework, with practical techniques for decomposing pitches, intervals, chords, and progressions into their prime components.",
+        "about": "Music Theory through UOR"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 60,
       "item": {
         "@id": "urn:uor:resource:incompleteness-theorem",
         "@type": "CreativeWork",
         "name": "Gödel's Incompleteness Theorem",
         "description": "An exploration of how Gödel's Incompleteness Theorems represent a profound demonstration of the UOR framework's principles in formal logic, reframing the arithmetization of syntax and limitations of axiomatic systems through prime-coordinate representation."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 61,
+      "item": {
+        "@id": "urn:uor:resource:meaning-overview",
+        "@type": "CreativeWork",
+        "name": "Meaning in the UOR Framework",
+        "description": "An overview of how the Universal Object Reference framework approaches the representation and analysis of meaning through prime decomposition and coherence principles.",
+        "about": "Meaning"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 62,
+      "item": {
+        "@id": "urn:uor:resource:practical-implementation-guide",
+        "@type": "CreativeWork",
+        "name": "Practical Implementation Guide",
+        "description": "A comprehensive guide for implementing UOR Framework principles in computational systems, bridging theoretical concepts with practical algorithms and architectures.",
+        "about": "UOR Implementation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 63,
+      "item": {
+        "@id": "urn:uor:resource:cross-domain-translation-guide",
+        "@type": "CreativeWork",
+        "name": "Cross-Domain Translation Guide",
+        "description": "A methodological guide for translating problems and concepts between different domains using the UOR framework as an intermediary representation system.",
+        "about": "Cross-Domain Translation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 64,
+      "item": {
+        "@id": "urn:uor:resource:learning-pathway-guide",
+        "@type": "CreativeWork",
+        "name": "Learning Pathway Guide",
+        "description": "A structured guide to learning pathways through the UOR Framework for learners with different backgrounds, providing customized entry points and progressive learning sequences.",
+        "about": "UOR Learning Pathways"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 65,
+      "item": {
+        "@id": "urn:uor:resource:advanced-uor-extensions",
+        "@type": "CreativeWork",
+        "name": "Advanced UOR Framework Extensions",
+        "description": "A comprehensive examination of advanced extensions to the Universal Object Reference framework, integrating spatiotemporal, quantum, computational, and cross-framework perspectives into a cohesive theoretical system.",
+        "about": "UOR Advanced Extensions"
       }
     }
   ]

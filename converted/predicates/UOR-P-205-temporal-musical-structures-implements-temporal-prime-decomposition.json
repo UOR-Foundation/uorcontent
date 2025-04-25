@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:temporal-musical-structures-implements-temporal-prime-decomposition",
+  "name": "temporal-musical-structures-implements-temporal-prime-decomposition",
+  "description": "The Temporal Musical Structures concept implements the principles of Temporal Prime Decomposition by applying them to musical rhythm, phrase structure, and compositional form across time.",
+  "value": "implements",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "value": "implementation",
+    "name": "Implementation Relationship"
+  },
+  "subjectOf": {
+    "@type": "DefinedTerm",
+    "@id": "urn:uor:concept:temporal-musical-structures",
+    "name": "Temporal Musical Structures"
+  },
+  "targetCollection": [
+    "urn:uor:resource:temporal-prime-decomposition"
+  ],
+  "dateCreated": "2025-04-24T00:00:00Z",
+  "dateModified": "2025-04-25T00:00:00Z"
+}

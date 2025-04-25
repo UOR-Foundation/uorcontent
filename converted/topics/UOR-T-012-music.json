@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:topic:music",
+  "name": "Music",
+  "description": "Exploration of music theory through the UOR Framework, revealing deep connections between harmonic structures, prime decompositions, and observer-invariant properties in musical experience.",
+  "learningResourceType": "Topic",
+  "about": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Harmonic Prime Analysis",
+      "description": "Analysis of musical harmonies through prime decomposition principles"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Musical Observer Frames",
+      "description": "Study of how musical perception varies across different observer reference frames"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Coherence in Musical Structures",
+      "description": "Application of coherence metrics to musical composition and analysis"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Prime Music Theory",
+      "description": "Mathematical formalization of music through prime number relationships and decomposition"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Cross-Cultural Musical Analysis",
+      "description": "Using UOR principles to analyze musical traditions across diverse cultures"
+    }
+  ],
+  "keywords": ["music", "harmony", "prime decomposition", "musical coherence", "spectral analysis", "observer frames", "UOR", "prime music theory", "cross-cultural analysis"],
+  "hasPart": [
+    "urn:uor:resource:music-overview",
+    "urn:uor:concept:harmonic-prime-decomposition",
+    "urn:uor:concept:musical-coherence-field",
+    "urn:uor:concept:musical-observer-frames",
+    "urn:uor:concept:spectral-musical-analysis",
+    "urn:uor:concept:temporal-musical-structures",
+    "urn:uor:concept:pitch-prime-representation",
+    "urn:uor:concept:interval-prime-structure",
+    "urn:uor:concept:chord-prime-topology",
+    "urn:uor:concept:scale-prime-architecture",
+    "urn:uor:concept:harmonic-progression-coherence",
+    "urn:uor:resource:harmonic-analysis-guide"
+  ],
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "UOR Framework"
+  },
+  "potentialAction": {
+    "@type": "Action",
+    "name": "view",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "/topics/music",
+      "actionPlatform": "http://schema.org/DesktopWebPlatform"
+    }
+  },
+  "dateCreated": "2025-04-24T00:00:00Z",
+  "dateModified": "2025-04-25T00:00:00Z",
+  "version": "1.1"
+}

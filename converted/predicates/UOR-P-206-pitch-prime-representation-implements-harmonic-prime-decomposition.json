@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:pitch-prime-representation-implements-harmonic-prime-decomposition",
+  "name": "pitch-prime-representation-implements-harmonic-prime-decomposition",
+  "description": "The Pitch Prime Representation concept implements the principles of Harmonic Prime Decomposition by providing a specific mathematical formalization for decomposing musical pitches into prime frequency ratios.",
+  "value": "implements",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "value": "implementation",
+    "name": "Implementation Relationship"
+  },
+  "subjectOf": {
+    "@type": "DefinedTerm",
+    "@id": "urn:uor:concept:pitch-prime-representation",
+    "name": "Pitch Prime Representation"
+  },
+  "targetCollection": [
+    "urn:uor:concept:harmonic-prime-decomposition"
+  ],
+  "dateCreated": "2025-04-25T00:00:00Z",
+  "dateModified": "2025-04-25T00:00:00Z"
+}

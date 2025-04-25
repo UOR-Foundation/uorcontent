@@ -3,7 +3,7 @@
   "@type": "ItemList",
   "name": "UOR Concepts Index",
   "description": "Index of all UOR concepts",
-  "numberOfItems": 262,
+  "numberOfItems": 267,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -2361,6 +2361,51 @@
         "@id": "urn:uor:concept:theoretical-framework-mapping",
         "@type": "DefinedTerm",
         "name": "Theoretical Framework Mapping"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 263,
+      "item": {
+        "@id": "urn:uor:concept:harmonic-prime-decomposition",
+        "@type": "DefinedTerm",
+        "name": "Harmonic Prime Decomposition"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 264,
+      "item": {
+        "@id": "urn:uor:concept:musical-coherence-field",
+        "@type": "DefinedTerm",
+        "name": "Musical Coherence Field"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 265,
+      "item": {
+        "@id": "urn:uor:concept:musical-observer-frames",
+        "@type": "DefinedTerm",
+        "name": "Musical Observer Frames"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 266,
+      "item": {
+        "@id": "urn:uor:concept:spectral-musical-analysis",
+        "@type": "DefinedTerm",
+        "name": "Spectral Musical Analysis"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 267,
+      "item": {
+        "@id": "urn:uor:concept:temporal-musical-structures",
+        "@type": "DefinedTerm",
+        "name": "Temporal Musical Structures"
       }
     }
   ]

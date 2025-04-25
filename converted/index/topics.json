@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "numberOfItems": 8,
+  "numberOfItems": 12,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -89,6 +89,50 @@
         "name": "Extensions & Applications",
         "description": "Extensions of the UOR framework beyond its core axioms, demonstrating its applicability across diverse domains including number theory, physics, philosophy, and computer science.",
         "url": "/extensions/{subtopic}"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@id": "urn:uor:topic:meaning",
+        "@type": "CreativeWork",
+        "name": "Meaning",
+        "description": "Exploration of meaning through the lens of the UOR Framework, examining how meaning emerges from structural relationships within prime decomposition representations.",
+        "url": "/topics/meaning"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@id": "urn:uor:topic:learning-implementation",
+        "@type": "CreativeWork",
+        "name": "Learning and Implementation",
+        "description": "Structured approaches to learning and implementing the UOR Framework across different domains and applications.",
+        "url": "/topics/learning-implementation"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@id": "urn:uor:topic:advanced-extensions",
+        "@type": "CreativeWork",
+        "name": "Advanced Extensions",
+        "description": "Advanced theoretical extensions of the UOR Framework addressing spatiotemporal integration, quantum systems, computational implementation challenges, and cross-framework connections.",
+        "url": "/topics/advanced-extensions"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@id": "urn:uor:topic:music",
+        "@type": "CreativeWork",
+        "name": "Music",
+        "description": "Exploration of music theory through the UOR Framework, revealing deep connections between harmonic structures, prime decompositions, and observer-invariant properties in musical experience.",
+        "url": "/topics/music"
       }
     }
   ]

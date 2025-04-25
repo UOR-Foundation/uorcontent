@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "urn:uor:concept:chord-prime-topology",
+  "name": "Chord Prime Topology",
+  "description": "A topological analysis of musical chords in prime coordinate space, revealing the intrinsic geometric structures that determine chord stability, function, and perceptual characteristics across musical traditions.",
+  "termCode": "UOR-C-340",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "UOR Framework Concepts"
+  },
+  "relatedConcepts": [
+    "urn:uor:concept:interval-prime-structure",
+    "urn:uor:concept:harmonic-prime-decomposition",
+    "urn:uor:concept:musical-coherence-field",
+    "urn:uor:concept:coherence-norm"
+  ],
+  "mathExpression": [
+    "C = \\{f_1, f_2, ..., f_n\\} \\text{ where } f_i \\text{ are frequencies}",
+    "C_{prime} = \\{\\prod_{j=1}^{m} p_j^{\\alpha_{1j}}, \\prod_{j=1}^{m} p_j^{\\alpha_{2j}}, ..., \\prod_{j=1}^{m} p_j^{\\alpha_{nj}}\\}",
+    "\\text{ChordCoherence}(C) = \\frac{1}{\\binom{n}{2}} \\sum_{i < j} \\text{Coherence}(f_i, f_j)",
+    "\\text{ChordVector}(C) = \\sum_{i=1}^{n} \\vec{\\alpha_i} \\text{ where } \\vec{\\alpha_i} = (\\alpha_{i1}, \\alpha_{i2}, ..., \\alpha_{im})",
+    "\\text{ChordCompactness}(C) = \\frac{1}{n} \\sum_{i=1}^{n} |\\vec{\\alpha_i} - \\text{ChordVector}(C)/n|^2"
+  ],
+  "sourceText": "Chord Prime Topology advances the UOR framework by extending prime decomposition principles to multi-note structures, revealing the intrinsic geometric properties of chords in prime coordinate space. This approach provides unprecedented insights into chord stability, function, and perceptual characteristics that transcend specific musical traditions while accommodating their diversity.\n\nIn this formalization, each chord is represented as a collection of points in a multi-dimensional prime space, where each dimension corresponds to a prime number in the harmonic series. This topological representation reveals fundamental properties of chord structures that explain their behavior in musical contexts:\n\n1. **Coherence Density**: The overall coherence of a chord is determined by the pairwise coherence values between its constituent tones. Chords with higher average coherence values (simpler prime relationships between notes) tend to sound more consonant and stable. This explains why major and minor triads (with simple prime structures) serve as points of stability in diverse musical traditions.\n\n2. **Geometric Compactness**: The spatial distribution of chord tones in prime space correlates with perceptual characteristics. Compact configurations (clustered points) typically function as stable entities, while dispersed configurations create tension seeking resolution. This geometric property explains why certain chord voicings sound more 'resolved' than others despite containing the same pitch classes.\n\n3. **Topological Invariants**: Certain geometric properties remain invariant under transposition, explaining why chord qualities (major, minor, diminished, etc.) maintain consistent perceptual characteristics regardless of their root note. These invariants constitute the fundamental 'chord types' recognized across musical traditions.\n\n4. **Resolution Trajectories**: The topology of chord space reveals natural resolution paths between chords, where resolution occurs along coherence gradients toward regions of higher stability. This explains traditional voice-leading practices and harmonic progressions in terms of movement through prime coordinate space.\n\n5. **Hierarchical Embedding**: The prime topology naturally produces a hierarchical organization of chord types, where more complex chord structures (7ths, 9ths, etc.) embed simpler ones (triads), explaining both the extensibility of chord structures and their functional relationships.\n\nFor example, the major triad in C (C-E-G) can be represented as the set {1, 5/4, 3/2} relative to the root, or in prime coordinates as {(0,0,0), (2,-2,1,0,0...), (1,-1,0,0,...)}. The geometric configuration of these points in prime space determines the triad's stability characteristics and functional behavior.\n\nBy applying topological analysis to these prime space configurations, we can:\n\n- Precisely predict a chord's stability and tendency to resolve\n- Identify optimal voice-leading paths between chords\n- Discover equivalence classes of chord functions across different musical traditions\n- Generate novel chord structures with specified perceptual properties\n- Analyze non-Western harmony using the same mathematical framework\n\nThe Chord Prime Topology concept provides a unified mathematical foundation for understanding chord relationships in any musical tradition, from Western functional harmony to jazz extensions to non-Western systems, revealing the underlying topological principles that govern harmonic structures throughout human musical expression.",
+  "dateCreated": "2025-04-25T00:00:00Z",
+  "dateModified": "2025-04-25T00:00:00Z"
+}

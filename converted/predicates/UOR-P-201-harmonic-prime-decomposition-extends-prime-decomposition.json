@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:harmonic-prime-decomposition-extends-prime-decomposition",
+  "name": "extends",
+  "propertyID": "uor:predicate",
+  "value": "prime decomposition to music",
+  "subjectOf": {
+    "@id": "urn:uor:concept:harmonic-prime-decomposition"
+  },
+  "targetCollection": ["urn:uor:concept:prime-decomposition"],
+  "valueName": "Harmonic prime decomposition extends prime decomposition principles to musical structures",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "extends"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-24T00:00:00Z",
+  "dateModified": "2025-04-24T00:00:00Z"
+}

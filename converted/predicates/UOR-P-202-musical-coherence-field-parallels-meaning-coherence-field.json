@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:musical-coherence-field-parallels-meaning-coherence-field",
+  "name": "parallels",
+  "propertyID": "uor:predicate",
+  "value": "meaning coherence field in musical domain",
+  "subjectOf": {
+    "@id": "urn:uor:concept:musical-coherence-field"
+  },
+  "targetCollection": ["urn:uor:concept:meaning-coherence-field"],
+  "valueName": "The musical coherence field parallels the meaning coherence field in the musical domain",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "parallels"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 0.9
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": false
+    }
+  ],
+  "dateCreated": "2025-04-24T00:00:00Z",
+  "dateModified": "2025-04-24T00:00:00Z"
+}

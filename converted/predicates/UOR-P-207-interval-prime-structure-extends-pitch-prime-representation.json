@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:interval-prime-structure-extends-pitch-prime-representation",
+  "name": "interval-prime-structure-extends-pitch-prime-representation",
+  "description": "The Interval Prime Structure concept extends the Pitch Prime Representation by applying prime decomposition principles to relationships between pitches, establishing a mathematical framework for understanding consonance and dissonance.",
+  "value": "extends",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "value": "extension",
+    "name": "Extension Relationship"
+  },
+  "subjectOf": {
+    "@type": "DefinedTerm",
+    "@id": "urn:uor:concept:interval-prime-structure",
+    "name": "Interval Prime Structure"
+  },
+  "targetCollection": [
+    "urn:uor:concept:pitch-prime-representation"
+  ],
+  "dateCreated": "2025-04-25T00:00:00Z",
+  "dateModified": "2025-04-25T00:00:00Z"
+}

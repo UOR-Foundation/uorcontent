@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "numberOfItems": 198,
+  "numberOfItems": 226,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -2021,6 +2021,442 @@
       "item": {
         "@id": "urn:uor:predicate:develops-uor-interpretation",
         "name": "develops UOR interpretation of incompleteness"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 199,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-introduces-meaning-representation",
+        "name": "introduces",
+        "subjectOf": {
+          "@id": "urn:uor:resource:meaning-overview"
+        },
+        "targetCollection": [
+          "urn:uor:concept:meaning-representation"
+        ],
+        "valueName": "The meaning overview introduces the meaning representation concept"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 200,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-explains-semantic-prime-decomposition",
+        "name": "explains",
+        "subjectOf": {
+          "@id": "urn:uor:resource:meaning-overview"
+        },
+        "targetCollection": [
+          "urn:uor:concept:semantic-prime-decomposition"
+        ],
+        "valueName": "The meaning overview explains semantic prime decomposition"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 201,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-defines-meaning-coherence-field",
+        "name": "defines",
+        "subjectOf": {
+          "@id": "urn:uor:resource:meaning-overview"
+        },
+        "targetCollection": [
+          "urn:uor:concept:meaning-coherence-field"
+        ],
+        "valueName": "The meaning overview defines the meaning coherence field concept"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 202,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-describes-observer-dependent-meaning",
+        "name": "describes",
+        "subjectOf": {
+          "@id": "urn:uor:resource:meaning-overview"
+        },
+        "targetCollection": [
+          "urn:uor:concept:observer-dependent-meaning"
+        ],
+        "valueName": "The meaning overview describes observer-dependent meaning"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 203,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-topic-contains-meaning-overview",
+        "name": "contains",
+        "subjectOf": {
+          "@id": "urn:uor:topic:meaning"
+        },
+        "targetCollection": [
+          "urn:uor:resource:meaning-overview"
+        ],
+        "valueName": "The meaning topic contains the meaning overview resource"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 204,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-topic-contains-semantic-emergence",
+        "name": "contains",
+        "subjectOf": {
+          "@id": "urn:uor:topic:meaning"
+        },
+        "targetCollection": [
+          "urn:uor:concept:semantic-emergence"
+        ],
+        "valueName": "The meaning topic contains the semantic emergence concept"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 205,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-topic-contains-consciousness-bridge",
+        "name": "contains",
+        "subjectOf": {
+          "@id": "urn:uor:topic:meaning"
+        },
+        "targetCollection": [
+          "urn:uor:concept:consciousness-information-bridge"
+        ],
+        "valueName": "The meaning topic contains the consciousness-information bridge concept"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 206,
+      "item": {
+        "@id": "urn:uor:predicate:overview-references-practical-guide",
+        "name": "references",
+        "subjectOf": {
+          "@id": "urn:uor:resource:overview"
+        },
+        "targetCollection": [
+          "urn:uor:resource:practical-implementation-guide"
+        ],
+        "valueName": "The overview references the practical implementation guide"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 207,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-explains-semantic-emergence",
+        "name": "explains",
+        "subjectOf": {
+          "@id": "urn:uor:resource:meaning-overview"
+        },
+        "targetCollection": [
+          "urn:uor:concept:semantic-emergence"
+        ],
+        "valueName": "The meaning overview explains semantic emergence"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 208,
+      "item": {
+        "@id": "urn:uor:predicate:meaning-overview-references-consciousness-bridge",
+        "name": "references",
+        "subjectOf": {
+          "@id": "urn:uor:resource:meaning-overview"
+        },
+        "targetCollection": [
+          "urn:uor:concept:consciousness-information-bridge"
+        ],
+        "valueName": "The meaning overview references the consciousness-information bridge"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 209,
+      "item": {
+        "@id": "urn:uor:predicate:learning-topic-contains-implementation-guide",
+        "name": "contains",
+        "subjectOf": {
+          "@id": "urn:uor:topic:learning-implementation"
+        },
+        "targetCollection": [
+          "urn:uor:resource:practical-implementation-guide"
+        ],
+        "valueName": "The learning and implementation topic contains the practical implementation guide"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 210,
+      "item": {
+        "@id": "urn:uor:predicate:learning-topic-contains-translation-guide",
+        "name": "contains",
+        "subjectOf": {
+          "@id": "urn:uor:topic:learning-implementation"
+        },
+        "targetCollection": [
+          "urn:uor:resource:cross-domain-translation-guide"
+        ],
+        "valueName": "The learning and implementation topic contains the cross-domain translation guide"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 211,
+      "item": {
+        "@id": "urn:uor:predicate:learning-topic-contains-pathway-guide",
+        "name": "contains",
+        "subjectOf": {
+          "@id": "urn:uor:topic:learning-implementation"
+        },
+        "targetCollection": [
+          "urn:uor:resource:learning-pathway-guide"
+        ],
+        "valueName": "The learning and implementation topic contains the learning pathway guide"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 212,
+      "item": {
+        "@id": "urn:uor:predicate:advanced-topic-contains-resource",
+        "name": "contains",
+        "subjectOf": {
+          "@id": "urn:uor:topic:advanced-extensions"
+        },
+        "targetCollection": [
+          "urn:uor:resource:advanced-uor-extensions"
+        ],
+        "valueName": "The advanced extensions topic contains the advanced UOR extensions resource"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 213,
+      "item": {
+        "@id": "urn:uor:predicate:advanced-resource-introduces-concepts",
+        "name": "introduces",
+        "subjectOf": {
+          "@id": "urn:uor:resource:advanced-uor-extensions"
+        },
+        "targetCollection": [
+          "urn:uor:concept:spatiotemporal-manifold",
+          "urn:uor:concept:spatiotemporal-reference-frame",
+          "urn:uor:concept:lorentz-invariant-prime-decomposition",
+          "urn:uor:concept:quantum-prime-superposition",
+          "urn:uor:concept:quantum-entanglement-primes",
+          "urn:uor:concept:prime-factorization-complexity",
+          "urn:uor:concept:error-resilient-prime-decomposition",
+          "urn:uor:concept:prime-space-learning-dynamics",
+          "urn:uor:concept:theoretical-framework-mapping"
+        ],
+        "valueName": "The advanced UOR extensions resource introduces all advanced extension concepts"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 214,
+      "item": {
+        "@id": "urn:uor:predicate:connects-spatiotemporal-concepts",
+        "name": "connects",
+        "subjectOf": {
+          "@id": "urn:uor:concept:spatiotemporal-manifold"
+        },
+        "targetCollection": [
+          "urn:uor:concept:spatiotemporal-reference-frame",
+          "urn:uor:concept:lorentz-invariant-prime-decomposition"
+        ],
+        "valueName": "The spatiotemporal manifold concept connects to related spatiotemporal concepts"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 215,
+      "item": {
+        "@id": "urn:uor:predicate:connects-quantum-concepts",
+        "name": "connects",
+        "subjectOf": {
+          "@id": "urn:uor:concept:quantum-prime-superposition"
+        },
+        "targetCollection": [
+          "urn:uor:concept:quantum-entanglement-primes",
+          "urn:uor:concept:quantum-reference-frame",
+          "urn:uor:concept:quantum-information-uor"
+        ],
+        "valueName": "The quantum prime superposition concept connects to related quantum concepts"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 216,
+      "item": {
+        "@id": "urn:uor:predicate:connects-computational-concepts",
+        "name": "connects",
+        "subjectOf": {
+          "@id": "urn:uor:concept:prime-factorization-complexity"
+        },
+        "targetCollection": [
+          "urn:uor:concept:error-resilient-prime-decomposition",
+          "urn:uor:concept:prime-space-learning-dynamics",
+          "urn:uor:concept:computational-complexity-classes"
+        ],
+        "valueName": "The prime factorization complexity concept connects to related computational concepts"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 217,
+      "item": {
+        "@id": "urn:uor:predicate:connects-to-extensions-topic",
+        "name": "extends",
+        "subjectOf": {
+          "@id": "urn:uor:topic:extensions"
+        },
+        "targetCollection": [
+          "urn:uor:topic:advanced-extensions"
+        ],
+        "valueName": "The extensions topic connects to the advanced extensions topic"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 218,
+      "item": {
+        "@id": "urn:uor:predicate:music-overview-introduces-harmonic-prime-decomposition",
+        "name": "introduces",
+        "subjectOf": {
+          "@id": "urn:uor:resource:music-overview"
+        },
+        "targetCollection": [
+          "urn:uor:concept:harmonic-prime-decomposition"
+        ],
+        "valueName": "The music overview introduces the harmonic prime decomposition concept"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 219,
+      "item": {
+        "@id": "urn:uor:predicate:harmonic-prime-decomposition-extends-prime-decomposition",
+        "name": "extends",
+        "subjectOf": {
+          "@id": "urn:uor:concept:harmonic-prime-decomposition"
+        },
+        "targetCollection": [
+          "urn:uor:concept:prime-decomposition"
+        ],
+        "valueName": "Harmonic prime decomposition extends prime decomposition principles to musical structures"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 220,
+      "item": {
+        "@id": "urn:uor:predicate:musical-coherence-field-parallels-meaning-coherence-field",
+        "name": "parallels",
+        "subjectOf": {
+          "@id": "urn:uor:concept:musical-coherence-field"
+        },
+        "targetCollection": [
+          "urn:uor:concept:meaning-coherence-field"
+        ],
+        "valueName": "The musical coherence field parallels the meaning coherence field in the musical domain"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 221,
+      "item": {
+        "@id": "urn:uor:predicate:musical-observer-frames-implements-observer-reference-frames",
+        "name": "implements",
+        "subjectOf": {
+          "@id": "urn:uor:concept:musical-observer-frames"
+        },
+        "targetCollection": [
+          "urn:uor:concept:observer-reference-frames"
+        ],
+        "valueName": "Musical observer frames implements observer reference frames in the musical domain"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 222,
+      "item": {
+        "@id": "urn:uor:predicate:spectral-musical-analysis-applies-spectral-interpretation",
+        "name": "applies",
+        "subjectOf": {
+          "@id": "urn:uor:concept:spectral-musical-analysis"
+        },
+        "targetCollection": [
+          "urn:uor:concept:spectral-interpretation"
+        ],
+        "valueName": "Spectral musical analysis applies spectral interpretation principles to musical structures"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 223,
+      "item": {
+        "@id": "urn:uor:predicate:temporal-musical-structures-implements-temporal-prime-decomposition",
+        "name": "implements",
+        "subjectOf": {
+          "@id": "urn:uor:concept:temporal-musical-structures"
+        },
+        "targetCollection": [
+          "urn:uor:concept:temporal-prime-decomposition"
+        ],
+        "valueName": "Temporal musical structures implements temporal prime decomposition in the musical domain"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 224,
+      "item": {
+        "@id": "urn:uor:predicate:pitch-prime-representation-implements-harmonic-prime-decomposition",
+        "name": "pitch-prime-representation-implements-harmonic-prime-decomposition",
+        "subjectOf": {
+          "@type": "DefinedTerm",
+          "@id": "urn:uor:concept:pitch-prime-representation",
+          "name": "Pitch Prime Representation"
+        },
+        "targetCollection": [
+          "urn:uor:concept:harmonic-prime-decomposition"
+        ]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 225,
+      "item": {
+        "@id": "urn:uor:predicate:interval-prime-structure-extends-pitch-prime-representation",
+        "name": "interval-prime-structure-extends-pitch-prime-representation",
+        "subjectOf": {
+          "@type": "DefinedTerm",
+          "@id": "urn:uor:concept:interval-prime-structure",
+          "name": "Interval Prime Structure"
+        },
+        "targetCollection": [
+          "urn:uor:concept:pitch-prime-representation"
+        ]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 226,
+      "item": {
+        "@id": "urn:uor:predicate:harmonic-analysis-guide-implements-harmonic-prime-decomposition",
+        "name": "harmonic-analysis-guide-implements-harmonic-prime-decomposition",
+        "subjectOf": {
+          "@type": "CreativeWork",
+          "@id": "urn:uor:resource:harmonic-analysis-guide",
+          "name": "Harmonic Analysis Guide: Applying UOR Principles to Music"
+        },
+        "targetCollection": [
+          "urn:uor:concept:harmonic-prime-decomposition"
+        ]
       }
     }
   ]

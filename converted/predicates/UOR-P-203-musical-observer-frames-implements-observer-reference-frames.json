@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "uor": "https://uorframework.org/"
+  },
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:musical-observer-frames-implements-observer-reference-frames",
+  "name": "implements",
+  "propertyID": "uor:predicate",
+  "value": "observer reference frames in music",
+  "subjectOf": {
+    "@id": "urn:uor:concept:musical-observer-frames"
+  },
+  "targetCollection": ["urn:uor:concept:observer-reference-frames"],
+  "valueName": "Musical observer frames implements observer reference frames in the musical domain",
+  "valueReference": {
+    "@type": "PropertyValue",
+    "propertyID": "uor:predicateType",
+    "value": "implements"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:weight",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:confidence",
+      "value": 1.0
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "uor:transitivity",
+      "value": true
+    }
+  ],
+  "dateCreated": "2025-04-24T00:00:00Z",
+  "dateModified": "2025-04-24T00:00:00Z"
+}

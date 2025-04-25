@@ -3,7 +3,7 @@
   "@type": "ItemList",
   "name": "UOR Topics Index",
   "description": "Index of all UOR topics",
-  "numberOfItems": 7,
+  "numberOfItems": 8,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -66,6 +66,15 @@
         "@id": "urn:uor:topic:extensions",
         "@type": "CreativeWork",
         "name": "Extensions & Applications"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@id": "urn:uor:topic:music",
+        "@type": "CreativeWork",
+        "name": "Music"
       }
     }
   ]
