@@ -1,0 +1,1600 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "UOR Framework API",
+    "description": "API for accessing the Universal Object Reference (UOR) Framework content, including concepts, resources, topics, and their relationships via predicates.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "UOR Framework"
+    },
+    "x-repository": "https://github.com/afflom/uorcontent",
+    "x-content-url": "https://raw.githubusercontent.com/afflom/uorcontent/refs/heads/main/converted/index.json"
+  },
+  "servers": [
+    {
+      "url": "https://api.uorframework.org/v1",
+      "description": "UOR Framework API (Production)"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/afflom/uorcontent/main/converted",
+      "description": "GitHub Raw Content (Read-only)"
+    }
+  ],
+  "tags": [
+    {
+      "name": "concepts",
+      "description": "Discrete mathematical concepts, theorems, and principles using schema.org's DefinedTerm type"
+    },
+    {
+      "name": "resources",
+      "description": "Information resources and creative works using schema.org's CreativeWork type"
+    },
+    {
+      "name": "topics",
+      "description": "Broader subject areas containing multiple concepts using schema.org's CreativeWork type"
+    },
+    {
+      "name": "predicates",
+      "description": "Relationships between concepts, topics, and resources using schema.org's PropertyValue type"
+    },
+    {
+      "name": "search",
+      "description": "Search functionality across all content types"
+    },
+    {
+      "name": "pathways",
+      "description": "Learning pathways and content sequences based on predicate relationships"
+    }
+  ],
+  "paths": {
+    "/content": {
+      "get": {
+        "tags": ["search"],
+        "summary": "Get all content items",
+        "description": "Returns a paginated list of all content items in the UOR Framework",
+        "operationId": "getAllContent",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number for pagination",
+            "schema": {
+              "type": "integer",
+              "default": 1,
+              "minimum": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of items per page",
+            "schema": {
+              "type": "integer",
+              "default": 20,
+              "minimum": 1,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Filter by content type",
+            "schema": {
+              "type": "string",
+              "enum": ["concept", "resource", "topic", "predicate"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A paginated list of content items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemList"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/content/{id}": {
+      "get": {
+        "tags": ["search"],
+        "summary": "Get content by ID",
+        "description": "Returns a single content item identified by its URN ID",
+        "operationId": "getContentById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Content ID (e.g., 'urn:uor:concept:prime-decomposition')",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested content item",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/Concept"
+                    },
+                    {
+                      "$ref": "#/components/schemas/Resource"
+                    },
+                    {
+                      "$ref": "#/components/schemas/Topic"
+                    },
+                    {
+                      "$ref": "#/components/schemas/Predicate"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Content item not found"
+          }
+        }
+      }
+    },
+    "/concepts": {
+      "get": {
+        "tags": ["concepts"],
+        "summary": "Get a list of all concepts",
+        "description": "Returns a paginated list of all concepts in the UOR Framework",
+        "operationId": "getConcepts",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number for pagination",
+            "schema": {
+              "type": "integer",
+              "default": 1,
+              "minimum": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of items per page",
+            "schema": {
+              "type": "integer",
+              "default": 20,
+              "minimum": 1,
+              "maximum": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A paginated list of concepts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConceptList"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/concepts/{id}": {
+      "get": {
+        "tags": ["concepts"],
+        "summary": "Get a specific concept by ID",
+        "description": "Returns a single concept identified by its ID",
+        "operationId": "getConceptById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Concept ID (e.g., 'prime-decomposition')",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested concept",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Concept"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Concept not found"
+          }
+        }
+      }
+    },
+    "/concepts/{id}/related": {
+      "get": {
+        "tags": ["concepts"],
+        "summary": "Get related concepts",
+        "description": "Returns concepts related to the specified concept based on predicates",
+        "operationId": "getRelatedConcepts",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Concept ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "predicateType",
+            "in": "query",
+            "description": "Filter by predicate type (e.g., 'extends', 'appliesTo')",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Related concepts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConceptList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Concept not found"
+          }
+        }
+      }
+    },
+    "/resources": {
+      "get": {
+        "tags": ["resources"],
+        "summary": "Get a list of all resources",
+        "description": "Returns a paginated list of all information resources in the UOR Framework",
+        "operationId": "getResources",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number for pagination",
+            "schema": {
+              "type": "integer",
+              "default": 1,
+              "minimum": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of items per page",
+            "schema": {
+              "type": "integer",
+              "default": 20,
+              "minimum": 1,
+              "maximum": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A paginated list of resources",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResourceList"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/resources/{id}": {
+      "get": {
+        "tags": ["resources"],
+        "summary": "Get a specific resource by ID",
+        "description": "Returns a single information resource identified by its ID",
+        "operationId": "getResourceById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Resource ID (e.g., 'overview')",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested resource",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Resource"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resource not found"
+          }
+        }
+      }
+    },
+    "/resources/{id}/related": {
+      "get": {
+        "tags": ["resources"],
+        "summary": "Get related resources",
+        "description": "Returns resources related to the specified resource based on predicates",
+        "operationId": "getRelatedResources",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Resource ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "predicateType",
+            "in": "query",
+            "description": "Filter by predicate type",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Related resources",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResourceList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resource not found"
+          }
+        }
+      }
+    },
+    "/topics": {
+      "get": {
+        "tags": ["topics"],
+        "summary": "Get a list of all topics",
+        "description": "Returns a paginated list of all topics in the UOR Framework",
+        "operationId": "getTopics",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number for pagination",
+            "schema": {
+              "type": "integer",
+              "default": 1,
+              "minimum": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of items per page",
+            "schema": {
+              "type": "integer",
+              "default": 20,
+              "minimum": 1,
+              "maximum": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A paginated list of topics",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TopicList"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/topics/{id}": {
+      "get": {
+        "tags": ["topics"],
+        "summary": "Get a specific topic by ID",
+        "description": "Returns a single topic identified by its ID",
+        "operationId": "getTopicById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Topic ID (e.g., 'universal-coordinates')",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested topic",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Topic"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Topic not found"
+          }
+        }
+      }
+    },
+    "/topics/{id}/contents": {
+      "get": {
+        "tags": ["topics"],
+        "summary": "Get topic contents",
+        "description": "Returns all content items that belong to the specified topic",
+        "operationId": "getTopicContents",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Topic ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Filter contents by type",
+            "schema": {
+              "type": "string",
+              "enum": ["concept", "resource"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Topic contents",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Topic not found"
+          }
+        }
+      }
+    },
+    "/predicates": {
+      "get": {
+        "tags": ["predicates"],
+        "summary": "Get a list of all predicates",
+        "description": "Returns a paginated list of all fact predicates in the UOR Framework",
+        "operationId": "getPredicates",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number for pagination",
+            "schema": {
+              "type": "integer",
+              "default": 1,
+              "minimum": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of items per page",
+            "schema": {
+              "type": "integer",
+              "default": 20,
+              "minimum": 1,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "Filter by predicate name (e.g., 'extends', 'defines', 'explains')",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A paginated list of predicates",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PredicateList"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/predicates/{id}": {
+      "get": {
+        "tags": ["predicates"],
+        "summary": "Get a specific predicate by ID",
+        "description": "Returns a single predicate identified by its ID",
+        "operationId": "getPredicateById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Predicate ID (e.g., 'canonical-representation-defines-concept')",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested predicate",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Predicate"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Predicate not found"
+          }
+        }
+      }
+    },
+    "/search": {
+      "get": {
+        "tags": ["search"],
+        "summary": "Search across all content types",
+        "description": "Search for content by keyword across all content types",
+        "operationId": "searchContent",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "description": "Search query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Filter by content type",
+            "schema": {
+              "type": "string",
+              "enum": ["concept", "resource", "topic", "predicate"]
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number for pagination",
+            "schema": {
+              "type": "integer",
+              "default": 1,
+              "minimum": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of items per page",
+            "schema": {
+              "type": "integer",
+              "default": 20,
+              "minimum": 1,
+              "maximum": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Search results",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResults"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pathways": {
+      "get": {
+        "tags": ["pathways"],
+        "summary": "Get learning pathways",
+        "description": "Returns available learning pathways based on predicate relationships",
+        "operationId": "getLearningPathways",
+        "parameters": [
+          {
+            "name": "startingPoint",
+            "in": "query",
+            "description": "Starting concept or resource ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "description": "Topic ID to filter pathways",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Learning pathways",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Pathway"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pathways/{id}": {
+      "get": {
+        "tags": ["pathways"],
+        "summary": "Get a specific pathway",
+        "description": "Returns a specific learning pathway with its sequence of content items",
+        "operationId": "getPathwayById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Pathway ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "expand",
+            "in": "query",
+            "description": "Whether to expand content items in the pathway",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested pathway",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pathway"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Pathway not found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ItemList": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "example": "https://schema.org"
+          },
+          "@type": {
+            "type": "string",
+            "example": "ItemList"
+          },
+          "name": {
+            "type": "string",
+            "example": "UOR Content Index"
+          },
+          "description": {
+            "type": "string",
+            "example": "Index of all UOR content items"
+          },
+          "numberOfItems": {
+            "type": "integer",
+            "example": 625
+          },
+          "itemListElement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ListItem"
+            }
+          }
+        }
+      },
+      "ListItem": {
+        "type": "object",
+        "properties": {
+          "@type": {
+            "type": "string",
+            "example": "ListItem"
+          },
+          "position": {
+            "type": "integer",
+            "example": 1
+          },
+          "item": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ConceptReference"
+              },
+              {
+                "$ref": "#/components/schemas/ResourceReference"
+              },
+              {
+                "$ref": "#/components/schemas/TopicReference"
+              },
+              {
+                "$ref": "#/components/schemas/PredicateReference"
+              }
+            ]
+          }
+        }
+      },
+      "ConceptReference": {
+        "type": "object",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "example": "urn:uor:concept:prime-decomposition"
+          },
+          "@type": {
+            "type": "string",
+            "example": "DefinedTerm"
+          },
+          "name": {
+            "type": "string",
+            "example": "Prime Decomposition"
+          }
+        }
+      },
+      "ResourceReference": {
+        "type": "object",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "example": "urn:uor:resource:overview"
+          },
+          "@type": {
+            "type": "string",
+            "example": "CreativeWork"
+          },
+          "name": {
+            "type": "string",
+            "example": "Overview and Motivation"
+          }
+        }
+      },
+      "TopicReference": {
+        "type": "object",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "example": "urn:uor:topic:universal-coordinates"
+          },
+          "@type": {
+            "type": "string",
+            "example": "CreativeWork"
+          },
+          "name": {
+            "type": "string",
+            "example": "Universal Coordinates"
+          }
+        }
+      },
+      "PredicateReference": {
+        "type": "object",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "example": "urn:uor:predicate:canonical-representation-defines-concept"
+          },
+          "@type": {
+            "type": "string",
+            "example": "PropertyValue"
+          },
+          "name": {
+            "type": "string",
+            "example": "defines"
+          }
+        }
+      },
+      "ConceptList": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "example": "https://schema.org"
+          },
+          "@type": {
+            "type": "string",
+            "example": "ItemList"
+          },
+          "name": {
+            "type": "string",
+            "example": "UOR Concepts Index"
+          },
+          "description": {
+            "type": "string",
+            "example": "Index of all UOR concepts"
+          },
+          "numberOfItems": {
+            "type": "integer",
+            "example": 272
+          },
+          "itemListElement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ConceptListItem"
+            }
+          }
+        }
+      },
+      "ConceptListItem": {
+        "type": "object",
+        "properties": {
+          "@type": {
+            "type": "string",
+            "example": "ListItem"
+          },
+          "position": {
+            "type": "integer",
+            "example": 1
+          },
+          "item": {
+            "$ref": "#/components/schemas/ConceptReference"
+          }
+        }
+      },
+      "Concept": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "example": "https://schema.org"
+          },
+          "@type": {
+            "type": "string",
+            "example": "DefinedTerm"
+          },
+          "name": {
+            "type": "string",
+            "example": "Prime Decomposition"
+          },
+          "description": {
+            "type": "string",
+            "example": "A mathematical concept that describes the unique factorization of elements into prime components"
+          },
+          "termCode": {
+            "type": "string",
+            "example": "uor-c-002"
+          },
+          "inDefinedTermSet": {
+            "type": "object",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "example": "DefinedTermSet"
+              },
+              "name": {
+                "type": "string",
+                "example": "UOR Framework Concepts"
+              }
+            }
+          },
+          "mathExpression": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": "P(U) = \\{p_1^{e_1}, p_2^{e_2}, \\ldots, p_n^{e_n}\\}"
+            }
+          },
+          "image": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sameAs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "url": {
+            "type": "string"
+          },
+          "relatedConcepts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "@id": {
+                  "type": "string",
+                  "example": "urn:uor:concept:canonical-representation"
+                }
+              }
+            }
+          },
+          "properties": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "theorems": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "corollaries": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "lemmas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "axioms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "proofs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sourceText": {
+            "type": "string"
+          }
+        }
+      },
+      "ResourceList": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "example": "https://schema.org"
+          },
+          "@type": {
+            "type": "string",
+            "example": "ItemList"
+          },
+          "name": {
+            "type": "string",
+            "example": "UOR Resources Index"
+          },
+          "description": {
+            "type": "string",
+            "example": "Index of all UOR resources"
+          },
+          "numberOfItems": {
+            "type": "integer",
+            "example": 65
+          },
+          "itemListElement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ResourceListItem"
+            }
+          }
+        }
+      },
+      "ResourceListItem": {
+        "type": "object",
+        "properties": {
+          "@type": {
+            "type": "string",
+            "example": "ListItem"
+          },
+          "position": {
+            "type": "integer",
+            "example": 1
+          },
+          "item": {
+            "$ref": "#/components/schemas/ResourceReference"
+          }
+        }
+      },
+      "Resource": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "example": "https://schema.org"
+          },
+          "@type": {
+            "type": "string",
+            "example": "CreativeWork"
+          },
+          "name": {
+            "type": "string",
+            "example": "Overview and Motivation"
+          },
+          "description": {
+            "type": "string",
+            "example": "An overview of the UOR Framework and its motivations"
+          },
+          "about": {
+            "type": "object",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "example": "DefinedTerm"
+              },
+              "name": {
+                "type": "string",
+                "example": "UOR Framework"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          },
+          "mathExpression": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "text": {
+            "type": "string"
+          },
+          "isPartOf": {
+            "type": "object",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "example": "CreativeWork"
+              },
+              "name": {
+                "type": "string",
+                "example": "Universal Object Reference"
+              }
+            }
+          },
+          "hasPart": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "@id": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "author": {
+            "type": "object",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "example": "Organization"
+              },
+              "name": {
+                "type": "string",
+                "example": "UOR Framework"
+              }
+            }
+          },
+          "citation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dateCreated": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModified": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "version": {
+            "type": "string",
+            "example": "1.0"
+          },
+          "potentialAction": {
+            "type": "object",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "example": "Action"
+              },
+              "name": {
+                "type": "string",
+                "example": "reference"
+              },
+              "object": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "@id": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TopicList": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "example": "https://schema.org"
+          },
+          "@type": {
+            "type": "string",
+            "example": "ItemList"
+          },
+          "name": {
+            "type": "string",
+            "example": "UOR Topics Index"
+          },
+          "description": {
+            "type": "string",
+            "example": "Index of all UOR topics"
+          },
+          "numberOfItems": {
+            "type": "integer",
+            "example": 12
+          },
+          "itemListElement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TopicListItem"
+            }
+          }
+        }
+      },
+      "TopicListItem": {
+        "type": "object",
+        "properties": {
+          "@type": {
+            "type": "string",
+            "example": "ListItem"
+          },
+          "position": {
+            "type": "integer",
+            "example": 1
+          },
+          "item": {
+            "$ref": "#/components/schemas/TopicReference"
+          }
+        }
+      },
+      "Topic": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "example": "https://schema.org"
+          },
+          "@type": {
+            "type": "string",
+            "example": "CreativeWork"
+          },
+          "name": {
+            "type": "string",
+            "example": "Universal Coordinates"
+          },
+          "description": {
+            "type": "string",
+            "example": "A system of universal coordinates for reference frame objectivity"
+          },
+          "about": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "@id": {
+                  "type": "string",
+                  "example": "urn:uor:concept:universal-coordinates"
+                }
+              }
+            }
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "example": "coordinates"
+            }
+          },
+          "hasPart": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "@id": {
+                  "type": "string",
+                  "example": "urn:uor:resource:prime-coordinates"
+                }
+              }
+            }
+          },
+          "isPartOf": {
+            "type": "object",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "example": "CreativeWork"
+              },
+              "name": {
+                "type": "string",
+                "example": "UOR Framework"
+              }
+            }
+          },
+          "potentialAction": {
+            "type": "object",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "example": "Action"
+              },
+              "name": {
+                "type": "string",
+                "example": "view"
+              },
+              "target": {
+                "type": "object",
+                "properties": {
+                  "@type": {
+                    "type": "string",
+                    "example": "EntryPoint"
+                  },
+                  "urlTemplate": {
+                    "type": "string",
+                    "example": "/topics/universal-coordinates"
+                  },
+                  "actionPlatform": {
+                    "type": "string",
+                    "example": "http://schema.org/DesktopWebPlatform"
+                  }
+                }
+              }
+            }
+          },
+          "dateCreated": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModified": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "version": {
+            "type": "string",
+            "example": "1.0"
+          }
+        }
+      },
+      "PredicateList": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "example": "https://schema.org"
+          },
+          "@type": {
+            "type": "string",
+            "example": "ItemList"
+          },
+          "name": {
+            "type": "string",
+            "example": "UOR Predicates Index"
+          },
+          "description": {
+            "type": "string",
+            "example": "Index of all UOR predicates"
+          },
+          "numberOfItems": {
+            "type": "integer",
+            "example": 276
+          },
+          "itemListElement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PredicateListItem"
+            }
+          }
+        }
+      },
+      "PredicateListItem": {
+        "type": "object",
+        "properties": {
+          "@type": {
+            "type": "string",
+            "example": "ListItem"
+          },
+          "position": {
+            "type": "integer",
+            "example": 1
+          },
+          "item": {
+            "$ref": "#/components/schemas/PredicateReference"
+          }
+        }
+      },
+      "Predicate": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "object",
+            "properties": {
+              "@vocab": {
+                "type": "string",
+                "example": "https://schema.org/"
+              },
+              "uor": {
+                "type": "string",
+                "example": "https://uorframework.org/"
+              }
+            }
+          },
+          "@type": {
+            "type": "string",
+            "example": "PropertyValue"
+          },
+          "name": {
+            "type": "string",
+            "example": "defines"
+          },
+          "propertyID": {
+            "type": "string",
+            "example": "uor:predicate"
+          },
+          "value": {
+            "type": "string",
+            "example": "concept"
+          },
+          "subjectOf": {
+            "type": "object",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "example": "urn:uor:resource:canonical-representation"
+              }
+            }
+          },
+          "targetCollection": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "@id": {
+                  "type": "string",
+                  "example": "urn:uor:concept:canonical-representation"
+                }
+              }
+            }
+          },
+          "valueName": {
+            "type": "string",
+            "example": "defines concept"
+          },
+          "valueReference": {
+            "type": "object",
+            "properties": {
+              "@type": {
+                "type": "string",
+                "example": "PropertyValue"
+              },
+              "propertyID": {
+                "type": "string",
+                "example": "uor:predicateType"
+              },
+              "value": {
+                "type": "string",
+                "example": "definition"
+              }
+            }
+          },
+          "additionalProperty": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "@type": {
+                  "type": "string",
+                  "example": "PropertyValue"
+                },
+                "propertyID": {
+                  "type": "string",
+                  "example": "uor:weight"
+                },
+                "value": {
+                  "type": "number",
+                  "example": 1.0
+                }
+              }
+            }
+          },
+          "dateCreated": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModified": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "SearchResults": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "example": "https://schema.org"
+          },
+          "@type": {
+            "type": "string",
+            "example": "SearchResultsPage"
+          },
+          "name": {
+            "type": "string",
+            "example": "Search Results"
+          },
+          "query": {
+            "type": "string",
+            "example": "prime decomposition"
+          },
+          "numberOfItems": {
+            "type": "integer",
+            "example": 25
+          },
+          "itemListElement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ListItem"
+            }
+          }
+        }
+      },
+      "Pathway": {
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "example": "https://schema.org"
+          },
+          "@type": {
+            "type": "string",
+            "example": "LearningResource"
+          },
+          "name": {
+            "type": "string",
+            "example": "Prime Decomposition Pathway"
+          },
+          "description": {
+            "type": "string",
+            "example": "A learning pathway for understanding Prime Decomposition"
+          },
+          "mainEntityOfPage": {
+            "type": "object",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "example": "urn:uor:topic:prime-foundations"
+              }
+            }
+          },
+          "learningResourceType": {
+            "type": "string",
+            "example": "Pathway"
+          },
+          "hasPart": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "@id": {
+                  "type": "string",
+                  "example": "urn:uor:concept:prime-decomposition"
+                },
+                "position": {
+                  "type": "integer",
+                  "example": 1
+                }
+              }
+            }
+          },
+          "educationalLevel": {
+            "type": "string",
+            "example": "beginner"
+          }
+        }
+      }
+    }
+  }
+}
