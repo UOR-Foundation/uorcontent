@@ -7,6 +7,7 @@
 
 import { ConceptManager } from '../../managers/concept-manager';
 import { SchemaValidator } from '../../utils/schema-validation';
+import { Concept, PartialConcept } from '../../models/types';
 
 /**
  * Register concept endpoints with the MCP server
@@ -24,9 +25,9 @@ export function registerConceptEndpoints(
    * Create a new concept
    */
   server.addMethod('concept.create', async (params: unknown) => {
-    const { concept } = params as { concept: Record<string, unknown> };
+    const { concept } = params as { concept: unknown };
     
-    const validationResult = validator.validateConcept(concept as any);
+    const validationResult = validator.validateConcept(concept as Concept);
     if (!validationResult.valid) {
       return {
         error: {
@@ -38,7 +39,7 @@ export function registerConceptEndpoints(
     }
     
     try {
-      const createdConcept = await conceptManager.create(concept as any);
+      const createdConcept = await conceptManager.create(concept as Concept);
       return { result: createdConcept };
     } catch (error) {
       return {
@@ -94,7 +95,7 @@ export function registerConceptEndpoints(
    * Update a concept
    */
   server.addMethod('concept.update', async (params: unknown) => {
-    const { id, updates, version } = params as { id: string; updates: Record<string, unknown>; version?: string };
+    const { id, updates, version } = params as { id: string; updates: unknown; version?: string };
     
     if (!id) {
       return {
@@ -126,7 +127,7 @@ export function registerConceptEndpoints(
     }
     
     try {
-      const updatedConcept = await conceptManager.update(id, updates as any, version);
+      const updatedConcept = await conceptManager.update(id, updates as PartialConcept, version);
       
       if (!updatedConcept) {
         return {
@@ -234,7 +235,7 @@ export function registerConceptEndpoints(
     }
     
     for (let i = 0; i < concepts.length; i++) {
-      const validationResult = validator.validateConcept(concepts[i] as any);
+      const validationResult = validator.validateConcept(concepts[i] as Concept);
       if (!validationResult.valid) {
         return {
           error: {
@@ -247,7 +248,7 @@ export function registerConceptEndpoints(
     }
     
     try {
-      const createdConcepts = await conceptManager.batchCreate(concepts as any);
+      const createdConcepts = await conceptManager.batchCreate(concepts as Concept[]);
       return { result: createdConcepts };
     } catch (error) {
       return {

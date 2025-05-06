@@ -6,7 +6,6 @@
  */
 
 import { IndexManager } from '../../index-management/index-manager';
-import { SchemaValidator } from '../../utils/schema-validation';
 import { UORContentItem } from '../../models/types';
 
 /**
@@ -18,8 +17,7 @@ import { UORContentItem } from '../../models/types';
  */
 export function registerIndexEndpoints(
   server: {addMethod: (name: string, handler: (params: unknown) => Promise<unknown>) => void},
-  indexManager: IndexManager,
-  _validator: SchemaValidator
+  indexManager: IndexManager
 ): void {
   /**
    * Generate index for content type

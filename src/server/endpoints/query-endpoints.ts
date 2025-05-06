@@ -7,7 +7,6 @@
 
 import { QueryService } from '../../query/query-service';
 import { UORContentItem } from '../../models/types';
-import { SchemaValidator } from '../../utils/schema-validation';
 
 /**
  * Register query endpoints with the MCP server
@@ -18,8 +17,7 @@ import { SchemaValidator } from '../../utils/schema-validation';
  */
 export function registerQueryEndpoints(
   server: {addMethod: (name: string, handler: (params: unknown) => Promise<unknown>) => void},
-  queryService: QueryService<UORContentItem>,
-  _validator: SchemaValidator
+  queryService: QueryService<UORContentItem>
 ): void {
   /**
    * Execute a query
