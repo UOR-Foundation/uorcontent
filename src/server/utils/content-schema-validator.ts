@@ -5,7 +5,7 @@
  * It uses the Schema.org definitions from the git-submodule.
  */
 
-import Ajv from 'ajv';
+import Ajv, { ErrorObject, ValidateFunction } from 'ajv';
 import addFormats from 'ajv-formats';
 import { SchemaError } from '../types/errors';
 
@@ -14,7 +14,7 @@ import { SchemaError } from '../types/errors';
  */
 export interface ValidationResult {
   valid: boolean;
-  errors?: any[];
+  errors?: ErrorObject[];
 }
 
 /**
@@ -25,7 +25,7 @@ export interface ValidationResult {
 export class ContentSchemaValidator {
   private static instance: ContentSchemaValidator;
   private ajv: Ajv;
-  private validators: Map<string, any>;
+  private validators: Map<string, ValidateFunction>;
   private initialized: boolean;
 
   /**
@@ -98,8 +98,9 @@ export class ContentSchemaValidator {
       }
       
       this.initialized = true;
-    } catch (error: any) {
-      throw new SchemaError(`Failed to initialize content schema validator: ${error.message}`);
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      throw new SchemaError(`Failed to initialize content schema validator: ${errorMessage}`);
     }
   }
 
@@ -112,7 +113,7 @@ export class ContentSchemaValidator {
    */
   public async validateContent(
     contentType: string,
-    data: any
+    data: Record<string, unknown>
   ): Promise<ValidationResult> {
     if (!this.initialized) {
       await this.initialize();
@@ -129,7 +130,7 @@ export class ContentSchemaValidator {
 
     return {
       valid,
-      errors: valid ? undefined : validator.errors
+      errors: valid ? undefined : validator.errors || []
     };
   }
 }
