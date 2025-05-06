@@ -23,7 +23,7 @@ export const errorHandler = (
   error: Error,
   req: Request,
   res: Response,
-  next: NextFunction
+  _next: NextFunction
 ): void => {
   console.error(`Error processing request: ${error.message}`, {
     path: req.path,

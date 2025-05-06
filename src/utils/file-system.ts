@@ -5,7 +5,6 @@
 
 import fs from 'fs/promises';
 import path from 'path';
-import { UORContentItem } from '../models';
 
 /**
  * Error types for file system operations
@@ -71,11 +70,14 @@ export class NodeFileSystem implements FileSystem {
   async readFile(filePath: string): Promise<string> {
     try {
       return await fs.readFile(filePath, 'utf-8');
-    } catch (error) {
-      if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-        throw new FileNotFoundError(filePath, error as Error);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+          throw new FileNotFoundError(filePath, error);
+        }
+        throw new FileReadError(filePath, error);
       }
-      throw new FileReadError(filePath, error as Error);
+      throw new FileReadError(filePath, new Error(String(error)));
     }
   }
 
@@ -86,11 +88,14 @@ export class NodeFileSystem implements FileSystem {
     try {
       const content = await this.readFile(filePath);
       return JSON.parse(content) as T;
-    } catch (error) {
+    } catch (error: unknown) {
       if (error instanceof FileSystemError) {
         throw error;
       }
-      throw new FileReadError(filePath, error as Error);
+      if (error instanceof Error) {
+        throw new FileReadError(filePath, error);
+      }
+      throw new FileReadError(filePath, new Error(String(error)));
     }
   }
 
@@ -105,8 +110,11 @@ export class NodeFileSystem implements FileSystem {
       await fs.writeFile(tempPath, content, 'utf-8');
       
       await fs.rename(tempPath, filePath);
-    } catch (error) {
-      throw new FileWriteError(filePath, error as Error);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        throw new FileWriteError(filePath, error);
+      }
+      throw new FileWriteError(filePath, new Error(String(error)));
     }
   }
 
@@ -117,11 +125,14 @@ export class NodeFileSystem implements FileSystem {
     try {
       const jsonContent = JSON.stringify(content, null, 2);
       await this.writeFile(filePath, jsonContent);
-    } catch (error) {
+    } catch (error: unknown) {
       if (error instanceof FileSystemError) {
         throw error;
       }
-      throw new FileWriteError(filePath, error as Error);
+      if (error instanceof Error) {
+        throw new FileWriteError(filePath, error);
+      }
+      throw new FileWriteError(filePath, new Error(String(error)));
     }
   }
 
@@ -143,8 +154,11 @@ export class NodeFileSystem implements FileSystem {
   async createDirectory(dirPath: string): Promise<void> {
     try {
       await fs.mkdir(dirPath, { recursive: true });
-    } catch (error) {
-      throw new DirectoryError(dirPath, error as Error);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        throw new DirectoryError(dirPath, error);
+      }
+      throw new DirectoryError(dirPath, new Error(String(error)));
     }
   }
 
@@ -154,8 +168,11 @@ export class NodeFileSystem implements FileSystem {
   async listDirectory(dirPath: string): Promise<string[]> {
     try {
       return await fs.readdir(dirPath);
-    } catch (error) {
-      throw new DirectoryError(dirPath, error as Error);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        throw new DirectoryError(dirPath, error);
+      }
+      throw new DirectoryError(dirPath, new Error(String(error)));
     }
   }
 
@@ -165,11 +182,14 @@ export class NodeFileSystem implements FileSystem {
   async deleteFile(filePath: string): Promise<void> {
     try {
       await fs.unlink(filePath);
-    } catch (error) {
-      if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+    } catch (error: unknown) {
+      if (error instanceof Error && (error as NodeJS.ErrnoException).code === 'ENOENT') {
         return;
       }
-      throw new FileWriteError(filePath, error as Error);
+      if (error instanceof Error) {
+        throw new FileWriteError(filePath, error);
+      }
+      throw new FileWriteError(filePath, new Error(String(error)));
     }
   }
 
@@ -179,8 +199,11 @@ export class NodeFileSystem implements FileSystem {
   async deleteDirectory(dirPath: string, recursive = false): Promise<void> {
     try {
       await fs.rm(dirPath, { recursive, force: true });
-    } catch (error) {
-      throw new DirectoryError(dirPath, error as Error);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        throw new DirectoryError(dirPath, error);
+      }
+      throw new DirectoryError(dirPath, new Error(String(error)));
     }
   }
 }
@@ -257,8 +280,11 @@ export class MockFileSystem implements FileSystem {
     const content = await this.readFile(filePath);
     try {
       return JSON.parse(content) as T;
-    } catch (error) {
-      throw new FileReadError(filePath, error as Error);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        throw new FileReadError(filePath, error);
+      }
+      throw new FileReadError(filePath, new Error(String(error)));
     }
   }
 

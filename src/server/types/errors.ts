@@ -22,9 +22,9 @@ export class MCPError extends Error {
  * Used when request or content validation fails
  */
 export class ValidationError extends MCPError {
-  public details: any[];
+  public details: Record<string, unknown>[];
 
-  constructor(message: string, details: any[] = []) {
+  constructor(message: string, details: Record<string, unknown>[] = []) {
     super(message);
     this.details = details;
   }

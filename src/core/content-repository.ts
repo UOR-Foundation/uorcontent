@@ -286,7 +286,7 @@ export class ContentRepository {
    */
   private async updateMasterIndex(): Promise<void> {
     const types = ['concept', 'predicate', 'resource', 'topic'];
-    const indices: Array<Record<string, unknown>> = [];
+    const indices: Array<{ itemListElement: Array<{ item: UORContentItem }> }> = [];
 
     for (const type of types) {
       const indexPath = path.join(this.contentDir, `${type}s-index.json`);
@@ -304,7 +304,7 @@ export class ContentRepository {
       'itemListElement': Array<{
         '@type': string;
         'position': number;
-        'item': any;
+        'item': UORContentItem;
       }>;
     } = {
       '@context': 'https://schema.org',
