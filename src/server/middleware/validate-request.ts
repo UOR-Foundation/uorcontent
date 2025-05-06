@@ -41,7 +41,7 @@ export const validateRequest = async (
     if (!validationResult.valid) {
       throw new ValidationError(
         'Invalid request',
-        validationResult.errors || []
+        (validationResult.errors || []).map(error => error as unknown as Record<string, unknown>)
       );
     }
 

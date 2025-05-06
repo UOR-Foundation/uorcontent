@@ -45,7 +45,7 @@ export const validateContent = async (
     if (!validationResult.valid) {
       throw new ValidationError(
         `Invalid ${contentType} content`,
-        validationResult.errors || []
+        (validationResult.errors || []).map(error => error as unknown as Record<string, unknown>)
       );
     }
 
