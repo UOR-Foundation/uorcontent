@@ -5,7 +5,7 @@
  * It handles the business logic for topic operations.
  */
 
-import { FileSystem, NodeFileSystem } from '../utils/file-system';
+import { NodeFileSystem } from '../utils/file-system';
 import { ContentRepository } from '../core/content-repository';
 import { Topic } from '../models/types';
 

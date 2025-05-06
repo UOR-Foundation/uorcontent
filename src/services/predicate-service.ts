@@ -5,7 +5,7 @@
  * It handles the business logic for predicate operations.
  */
 
-import { FileSystem, NodeFileSystem } from '../utils/file-system';
+import { NodeFileSystem } from '../utils/file-system';
 import { ContentRepository } from '../core/content-repository';
 import { Predicate } from '../models/types';
 
