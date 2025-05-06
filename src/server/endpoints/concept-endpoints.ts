@@ -7,7 +7,6 @@
 
 import { Request, Response } from 'express';
 import { ConceptManager } from '../../managers/concept-manager';
-import { Concept } from '../../models/types';
 import { SchemaValidator } from '../../utils/schema-validation';
 
 /**

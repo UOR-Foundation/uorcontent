@@ -105,21 +105,22 @@ export class InMemoryQueryProvider<T extends UORContentItem> implements QueryPro
       for (const [key, value] of Object.entries(criteria)) {
         if (key.includes('.')) {
           const parts = key.split('.');
-          let current: any = item;
+          let current: unknown = item;
           
           for (let i = 0; i < parts.length - 1; i++) {
-            if (current[parts[i]] === undefined) {
+            if (typeof current !== 'object' || current === null || !(parts[i] in (current as Record<string, unknown>))) {
               return false;
             }
-            current = current[parts[i]];
+            current = (current as Record<string, unknown>)[parts[i]];
           }
           
           const finalProp = parts[parts.length - 1];
-          if (current[finalProp] !== value) {
+          if (typeof current !== 'object' || current === null || 
+              !((current as Record<string, unknown>)[finalProp] === value)) {
             return false;
           }
         } else {
-          if ((item as any)[key] !== value) {
+          if (!(key in item) || (item as Record<string, unknown>)[key] !== value) {
             return false;
           }
         }
@@ -147,15 +148,15 @@ export class InMemoryQueryProvider<T extends UORContentItem> implements QueryPro
       }
       
       if (item['@type'] === 'DefinedTerm') {
-        const concept = item as any;
+        const concept = item as Record<string, unknown>;
         
-        if (concept.termCode && concept.termCode.toLowerCase().includes(lowerQuery)) {
+        if (typeof concept.termCode === 'string' && concept.termCode.toLowerCase().includes(lowerQuery)) {
           return true;
         }
         
         if (concept.mathExpression && Array.isArray(concept.mathExpression)) {
           for (const expr of concept.mathExpression) {
-            if (expr.toLowerCase().includes(lowerQuery)) {
+            if (typeof expr === 'string' && expr.toLowerCase().includes(lowerQuery)) {
               return true;
             }
           }
@@ -207,12 +208,21 @@ export class InMemoryQueryProvider<T extends UORContentItem> implements QueryPro
     return [...items].sort((a, b) => {
       if (field.includes('.')) {
         const parts = field.split('.');
-        let valueA: any = a;
-        let valueB: any = b;
+        let valueA: unknown = a;
+        let valueB: unknown = b;
         
         for (const part of parts) {
-          valueA = valueA?.[part];
-          valueB = valueB?.[part];
+          if (typeof valueA === 'object' && valueA !== null) {
+            valueA = (valueA as Record<string, unknown>)[part];
+          } else {
+            valueA = undefined;
+          }
+          
+          if (typeof valueB === 'object' && valueB !== null) {
+            valueB = (valueB as Record<string, unknown>)[part];
+          } else {
+            valueB = undefined;
+          }
         }
         
         if (valueA === undefined && valueB === undefined) return 0;
@@ -223,8 +233,20 @@ export class InMemoryQueryProvider<T extends UORContentItem> implements QueryPro
           ? this.compareValues(valueA, valueB)
           : this.compareValues(valueB, valueA);
       } else {
-        const valueA = (a as any)[field];
-        const valueB = (b as any)[field];
+        let valueA: unknown;
+        let valueB: unknown;
+        
+        if (typeof a === 'object' && a !== null && field in a) {
+          valueA = (a as Record<string, unknown>)[field];
+        } else {
+          valueA = undefined;
+        }
+        
+        if (typeof b === 'object' && b !== null && field in b) {
+          valueB = (b as Record<string, unknown>)[field];
+        } else {
+          valueB = undefined;
+        }
         
         if (valueA === undefined && valueB === undefined) return 0;
         if (valueA === undefined) return direction === 'asc' ? -1 : 1;

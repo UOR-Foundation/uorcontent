@@ -421,6 +421,7 @@ export class IndexManager {
               fileIds.add(item['@id']);
             }
           } catch (error) {
+            console.error(`Error processing item: ${error instanceof Error ? error.message : String(error)}`);
           }
         }
       }
