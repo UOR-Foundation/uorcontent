@@ -129,7 +129,7 @@ export function registerQueryEndpoints(
     }
     
     try {
-      const queryOptions: any = {
+      const queryOptions: Record<string, unknown> = {
         pagination: options
       };
       
@@ -170,7 +170,7 @@ export function registerQueryEndpoints(
     }
     
     try {
-      const queryOptions: any = {
+      const queryOptions: Record<string, unknown> = {
         sort: options
       };
       
