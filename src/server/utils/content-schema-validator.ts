@@ -73,9 +73,6 @@ export class ContentSchemaValidator {
     }
 
     try {
-      const fs = require('fs');
-      const path = require('path');
-      
       const contentTypes = ['concept', 'predicate', 'resource', 'topic'];
       
       for (const contentType of contentTypes) {
