@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": ["src/core/*"],
+      "@models/*": ["src/models/*"],
+      "@utils/*": ["src/utils/*"],
+      "@managers/*": ["src/managers/*"],
+      "@services/*": ["src/services/*"],
+      "@server/*": ["src/server/*"],
+      "@cli/*": ["src/cli/*"],
+      "@mcp-schema/*": ["submodules/mcp-schema/src/*"],
+      "@schema-org/*": ["templates/schemaorg/*"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
