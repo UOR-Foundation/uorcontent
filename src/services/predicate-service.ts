@@ -5,7 +5,7 @@
  * It handles the business logic for predicate operations.
  */
 
-import { FileSystem, NodeFileSystem } from '../utils/file-system';
+import { NodeFileSystem } from '../utils/file-system';
 import { ContentRepository } from '../core/content-repository';
 import { Predicate } from '../models/types';
 
@@ -33,7 +33,7 @@ export class PredicateService {
   public async getAllPredicates(
     page: number,
     limit: number
-  ): Promise<any> {
+  ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
     const items = await this.repository.getAllContent('predicate');
@@ -70,7 +70,7 @@ export class PredicateService {
    * @param predicateData - Predicate data
    * @returns Created predicate item
    */
-  public async createPredicate(predicateData: any): Promise<Predicate> {
+  public async createPredicate(predicateData: Predicate): Promise<Predicate> {
     return this.repository.createContent(predicateData) as Promise<Predicate>;
   }
 
@@ -83,7 +83,7 @@ export class PredicateService {
    */
   public async updatePredicate(
     id: string,
-    predicateData: any
+    predicateData: Partial<Predicate>
   ): Promise<Predicate | null> {
     return this.repository.updateContent(id, predicateData) as Promise<Predicate | null>;
   }

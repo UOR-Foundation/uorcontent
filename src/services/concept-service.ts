@@ -5,7 +5,7 @@
  * It handles the business logic for concept operations.
  */
 
-import { FileSystem, NodeFileSystem } from '../utils/file-system';
+import { NodeFileSystem } from '../utils/file-system';
 import { ContentRepository } from '../core/content-repository';
 import { Concept } from '../models/types';
 
@@ -33,7 +33,7 @@ export class ConceptService {
   public async getAllConcepts(
     page: number,
     limit: number
-  ): Promise<any> {
+  ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
     const items = await this.repository.getAllContent('concept');
@@ -70,7 +70,7 @@ export class ConceptService {
    * @param conceptData - Concept data
    * @returns Created concept item
    */
-  public async createConcept(conceptData: any): Promise<Concept> {
+  public async createConcept(conceptData: Concept): Promise<Concept> {
     return this.repository.createContent(conceptData) as Promise<Concept>;
   }
 
@@ -83,7 +83,7 @@ export class ConceptService {
    */
   public async updateConcept(
     id: string,
-    conceptData: any
+    conceptData: Partial<Concept>
   ): Promise<Concept | null> {
     return this.repository.updateContent(id, conceptData) as Promise<Concept | null>;
   }

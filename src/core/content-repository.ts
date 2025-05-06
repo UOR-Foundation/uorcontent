@@ -42,7 +42,7 @@ export class ContentRepository {
     const indexContent = await this.fileSystem.readFile(indexPath);
     const index = JSON.parse(indexContent);
 
-    return index.itemListElement.map((item: any) => item.item);
+    return index.itemListElement.map((item: { item: UORContentItem }) => item.item);
   }
 
   /**
@@ -56,7 +56,7 @@ export class ContentRepository {
     const indexContent = await this.fileSystem.readFile(indexPath);
     const index = JSON.parse(indexContent);
 
-    return index.itemListElement.map((item: any) => item.item);
+    return index.itemListElement.map((item: { item: UORContentItem }) => item.item);
   }
 
   /**
@@ -106,7 +106,7 @@ export class ContentRepository {
    * @param contentData - Content data
    * @returns Created content item
    */
-  public async createContent(contentData: any): Promise<UORContentItem> {
+  public async createContent(contentData: UORContentItem): Promise<UORContentItem> {
     let type: string;
     if (isConcept(contentData)) {
       type = 'concept';
@@ -153,7 +153,7 @@ export class ContentRepository {
    */
   public async updateContent(
     id: string,
-    contentData: any
+    contentData: Partial<UORContentItem>
   ): Promise<UORContentItem | null> {
     const existingContent = await this.getContentById(id);
     if (!existingContent) {
@@ -219,13 +219,13 @@ export class ContentRepository {
    * @param type - Content type
    * @param content - Content item
    */
-  private async updateIndex(type: string, content: any): Promise<void> {
+  private async updateIndex(type: string, content: UORContentItem): Promise<void> {
     const indexPath = path.join(this.contentDir, `${type}s-index.json`);
     const indexContent = await this.fileSystem.readFile(indexPath);
     const index = JSON.parse(indexContent);
 
     const itemIndex = index.itemListElement.findIndex(
-      (item: any) => item.item['@id'] === content['@id']
+      (item: { item: { '@id': string } }) => item.item['@id'] === content['@id']
     );
 
     if (itemIndex >= 0) {
@@ -260,13 +260,13 @@ export class ContentRepository {
     const index = JSON.parse(indexContent);
 
     const itemIndex = index.itemListElement.findIndex(
-      (item: any) => item.item['@id'] === id
+      (item: { item: { '@id': string } }) => item.item['@id'] === id
     );
 
     if (itemIndex >= 0) {
       index.itemListElement.splice(itemIndex, 1);
 
-      index.itemListElement.forEach((item: any, i: number) => {
+      index.itemListElement.forEach((item: { position: number }, i: number) => {
         item.position = i + 1;
       });
 
@@ -286,7 +286,7 @@ export class ContentRepository {
    */
   private async updateMasterIndex(): Promise<void> {
     const types = ['concept', 'predicate', 'resource', 'topic'];
-    const indices: any[] = [];
+    const indices: Array<{ itemListElement: Array<{ item: UORContentItem }> }> = [];
 
     for (const type of types) {
       const indexPath = path.join(this.contentDir, `${type}s-index.json`);
@@ -304,7 +304,7 @@ export class ContentRepository {
       'itemListElement': Array<{
         '@type': string;
         'position': number;
-        'item': any;
+        'item': UORContentItem;
       }>;
     } = {
       '@context': 'https://schema.org',

@@ -5,7 +5,7 @@
  * It handles the business logic for search operations.
  */
 
-import { FileSystem, NodeFileSystem } from '../utils/file-system';
+import { NodeFileSystem } from '../utils/file-system';
 import { ContentRepository } from '../core/content-repository';
 import { UORContentItem } from '../models/types';
 
@@ -35,7 +35,7 @@ export class SearchService {
     query: string,
     page: number,
     limit: number
-  ): Promise<any> {
+  ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
     const allItems = await this.repository.getAllContent();
@@ -70,10 +70,10 @@ export class SearchService {
   public async advancedSearch(
     query: string,
     types: string[],
-    properties: Record<string, any>,
+    properties: Record<string, unknown>,
     page: number,
     limit: number
-  ): Promise<any> {
+  ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
     let items: UORContentItem[] = [];
@@ -123,7 +123,7 @@ export class SearchService {
     query: string,
     page: number,
     limit: number
-  ): Promise<any> {
+  ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
     const items = await this.repository.getAllContent(type);
@@ -159,7 +159,7 @@ export class SearchService {
     value: string,
     page: number,
     limit: number
-  ): Promise<any> {
+  ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
     const allItems = await this.repository.getAllContent();
@@ -212,7 +212,7 @@ export class SearchService {
    */
   private filterItemsByProperties(
     items: UORContentItem[],
-    properties: Record<string, any>
+    properties: Record<string, unknown>
   ): UORContentItem[] {
     return items.filter(item => {
       for (const [key, value] of Object.entries(properties)) {
@@ -242,16 +242,20 @@ export class SearchService {
    * @param path - Property path
    * @returns Property value
    */
-  private getNestedProperty(obj: any, path: string): any {
+  private getNestedProperty(obj: UORContentItem, path: string): unknown {
     const parts = path.split('.');
-    let current = obj;
+    let current: unknown = obj;
     
     for (const part of parts) {
       if (current === null || current === undefined) {
         return undefined;
       }
       
-      current = current[part];
+      if (typeof current === 'object' && current !== null) {
+        current = (current as Record<string, unknown>)[part];
+      } else {
+        return undefined;
+      }
     }
     
     return current;
