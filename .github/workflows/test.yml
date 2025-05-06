@@ -30,8 +30,10 @@ jobs:
     - name: Build with strict type checking
       run: npx tsc --noEmit --strict
     
-    - name: Lint
-      run: npm run lint
+    - name: Lint and auto-format
+      run: |
+        npm run lint -- --fix || true
+        npm run lint -- --max-warnings=0
     
     - name: Run tests
       run: npm test
