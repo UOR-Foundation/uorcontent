@@ -58,7 +58,7 @@ export class AjvSchemaValidator implements SchemaValidator {
   private validators: Map<string, ValidateFunction> = new Map();
   private partialValidators: Map<string, ValidateFunction> = new Map();
   
-  constructor(schemas: Record<string, any>) {
+  constructor(schemas: Record<string, Record<string, unknown>>) {
     this.ajv = new Ajv({
       allErrors: true,
       strict: false,
@@ -77,7 +77,7 @@ export class AjvSchemaValidator implements SchemaValidator {
   /**
    * Compile validators for all schemas
    */
-  private compileValidators(schemas: Record<string, any>): void {
+  private compileValidators(schemas: Record<string, Record<string, unknown>>): void {
     for (const [name, schema] of Object.entries(schemas)) {
       try {
         const validator = this.ajv.compile(schema);
@@ -95,7 +95,7 @@ export class AjvSchemaValidator implements SchemaValidator {
   /**
    * Create a partial schema for updates
    */
-  private createPartialSchema(schema: any): any {
+  private createPartialSchema(schema: Record<string, unknown>): Record<string, unknown> {
     const partialSchema = JSON.parse(JSON.stringify(schema));
     
     if (partialSchema.properties) {
@@ -264,7 +264,7 @@ export class SchemaLoader {
   /**
    * Load schemas from OpenAPI specification
    */
-  async loadSchemas(): Promise<Record<string, any>> {
+  async loadSchemas(): Promise<Record<string, Record<string, unknown>>> {
     try {
       return {
         'DefinedTerm': {

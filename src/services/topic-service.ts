@@ -33,7 +33,7 @@ export class TopicService {
   public async getAllTopics(
     page: number,
     limit: number
-  ): Promise<any> {
+  ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
     const items = await this.repository.getAllContent('topic');
@@ -70,7 +70,7 @@ export class TopicService {
    * @param topicData - Topic data
    * @returns Created topic item
    */
-  public async createTopic(topicData: any): Promise<Topic> {
+  public async createTopic(topicData: Topic): Promise<Topic> {
     return this.repository.createContent(topicData) as Promise<Topic>;
   }
 
@@ -83,7 +83,7 @@ export class TopicService {
    */
   public async updateTopic(
     id: string,
-    topicData: any
+    topicData: Partial<Topic>
   ): Promise<Topic | null> {
     return this.repository.updateContent(id, topicData) as Promise<Topic | null>;
   }

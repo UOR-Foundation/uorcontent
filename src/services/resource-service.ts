@@ -33,7 +33,7 @@ export class ResourceService {
   public async getAllResources(
     page: number,
     limit: number
-  ): Promise<any> {
+  ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
     const items = await this.repository.getAllContent('resource');
@@ -70,7 +70,7 @@ export class ResourceService {
    * @param resourceData - Resource data
    * @returns Created resource item
    */
-  public async createResource(resourceData: any): Promise<Resource> {
+  public async createResource(resourceData: Resource): Promise<Resource> {
     return this.repository.createContent(resourceData) as Promise<Resource>;
   }
 
@@ -83,7 +83,7 @@ export class ResourceService {
    */
   public async updateResource(
     id: string,
-    resourceData: any
+    resourceData: Partial<Resource>
   ): Promise<Resource | null> {
     return this.repository.updateContent(id, resourceData) as Promise<Resource | null>;
   }
