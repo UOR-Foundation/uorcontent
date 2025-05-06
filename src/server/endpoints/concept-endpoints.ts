@@ -47,7 +47,7 @@ export function registerConceptEndpoints(
         error: {
           code: 500,
           message: 'Failed to create concept',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
@@ -86,7 +86,7 @@ export function registerConceptEndpoints(
         error: {
           code: 500,
           message: 'Failed to read concept',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
@@ -141,7 +141,7 @@ export function registerConceptEndpoints(
       
       return { result: updatedConcept };
     } catch (error) {
-      if (error.message.includes('was modified by another process')) {
+      if (error instanceof Error && error.message.includes('was modified by another process')) {
         return {
           error: {
             code: 409,
@@ -155,7 +155,7 @@ export function registerConceptEndpoints(
         error: {
           code: 500,
           message: 'Failed to update concept',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
@@ -194,7 +194,7 @@ export function registerConceptEndpoints(
         error: {
           code: 500,
           message: 'Failed to delete concept',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
@@ -214,7 +214,7 @@ export function registerConceptEndpoints(
         error: {
           code: 500,
           message: 'Failed to list concepts',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
@@ -256,7 +256,7 @@ export function registerConceptEndpoints(
         error: {
           code: 500,
           message: 'Failed to batch create concepts',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }

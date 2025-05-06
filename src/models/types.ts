@@ -1,4 +1,4 @@
-u/**
+/**
  * Type definitions for UOR Framework content models
  * Based on schema.org templates in the UOR Framework
  */

@@ -44,7 +44,7 @@ export function registerIndexEndpoints(
         error: {
           code: 500,
           message: 'Failed to generate index',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
@@ -82,7 +82,7 @@ export function registerIndexEndpoints(
         error: {
           code: 500,
           message: 'Failed to update index',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
@@ -111,7 +111,7 @@ export function registerIndexEndpoints(
         error: {
           code: 500,
           message: 'Failed to validate index',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
@@ -140,7 +140,7 @@ export function registerIndexEndpoints(
         error: {
           code: 500,
           message: 'Failed to repair index',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
@@ -178,7 +178,7 @@ export function registerIndexEndpoints(
         error: {
           code: 500,
           message: 'Failed to query index',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
@@ -198,7 +198,7 @@ export function registerIndexEndpoints(
         error: {
           code: 500,
           message: 'Failed to invalidate index cache',
-          data: error.message
+          data: error instanceof Error ? error.message : String(error)
         }
       };
     }
