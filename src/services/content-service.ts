@@ -5,7 +5,7 @@
  * It handles the business logic for content operations.
  */
 
-import { FileSystem } from '../utils/file-system';
+import { NodeFileSystem } from '../utils/file-system';
 import { ContentRepository } from '../core/content-repository';
 import { UORContentItem } from '../models/types';
 
@@ -19,7 +19,7 @@ export class ContentService {
    * Create a new content service
    */
   constructor() {
-    const fileSystem = new FileSystem();
+    const fileSystem = new NodeFileSystem();
     this.repository = new ContentRepository(fileSystem);
   }
 

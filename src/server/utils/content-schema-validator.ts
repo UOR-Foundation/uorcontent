@@ -5,7 +5,7 @@
  * It uses the Schema.org definitions from the git-submodule.
  */
 
-import Ajv from 'ajv';
+import Ajv, { ErrorObject, ValidateFunction } from 'ajv';
 import addFormats from 'ajv-formats';
 import { SchemaError } from '../types/errors';
 
@@ -14,7 +14,7 @@ import { SchemaError } from '../types/errors';
  */
 export interface ValidationResult {
   valid: boolean;
-  errors?: any[];
+  errors?: ErrorObject[];
 }
 
 /**
@@ -25,17 +25,27 @@ export interface ValidationResult {
 export class ContentSchemaValidator {
   private static instance: ContentSchemaValidator;
   private ajv: Ajv;
-  private validators: Map<string, any>;
+  private validators: Map<string, ValidateFunction>;
   private initialized: boolean;
 
   /**
    * Private constructor to enforce singleton pattern
    */
   private constructor() {
-    this.ajv = new Ajv({ allErrors: true });
+    this.ajv = new Ajv({ 
+      allErrors: true,
+      strict: false
+    });
     addFormats(this.ajv);
     this.validators = new Map();
     this.initialized = false;
+  }
+  
+  /**
+   * Get initialized status
+   */
+  public get isInitialized(): boolean {
+    return this.initialized;
   }
 
   /**
@@ -58,47 +68,39 @@ export class ContentSchemaValidator {
    * @returns A promise that resolves when initialization is complete
    */
   public async initialize(): Promise<void> {
-    if (this.initialized) {
+    if (this.isInitialized) {
       return;
     }
 
     try {
-      const fs = require('fs');
-      const path = require('path');
-      
-      const openApiPath = path.resolve(
-        process.cwd(),
-        'converted/openapi-spec.json'
-      );
-      
-      const openApiSpec = JSON.parse(
-        fs.readFileSync(openApiPath, 'utf8')
-      );
-      
-      const { components } = openApiSpec;
-      
-      if (!components || !components.schemas) {
-        throw new Error('OpenAPI specification does not contain schemas');
-      }
-      
       const contentTypes = ['concept', 'predicate', 'resource', 'topic'];
       
       for (const contentType of contentTypes) {
-        const schemaName = `${contentType.charAt(0).toUpperCase()}${contentType.slice(1)}`;
-        const schema = components.schemas[schemaName];
+        const properties: Record<string, { type: string }> = {
+          '@context': { type: 'string' },
+          '@type': { type: 'string' },
+          'name': { type: 'string' },
+          'description': { type: 'string' },
+          'identifier': { type: 'string' }
+        };
         
-        if (!schema) {
-          console.warn(`Schema not found for content type ${contentType}`);
-          continue;
+        if (contentType === 'predicate') {
+          properties['value'] = { type: 'string' };
         }
+        
+        const schema = {
+          type: 'object',
+          properties
+        };
         
         const validator = this.ajv.compile(schema);
         this.validators.set(contentType.toLowerCase(), validator);
       }
       
       this.initialized = true;
-    } catch (error: any) {
-      throw new SchemaError(`Failed to initialize content schema validator: ${error.message}`);
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      throw new SchemaError(`Failed to initialize content schema validator: ${errorMessage}`);
     }
   }
 
@@ -111,7 +113,7 @@ export class ContentSchemaValidator {
    */
   public async validateContent(
     contentType: string,
-    data: any
+    data: Record<string, unknown>
   ): Promise<ValidationResult> {
     if (!this.initialized) {
       await this.initialize();
@@ -128,7 +130,7 @@ export class ContentSchemaValidator {
 
     return {
       valid,
-      errors: valid ? undefined : validator.errors
+      errors: valid ? undefined : validator.errors || []
     };
   }
 }

@@ -26,7 +26,7 @@ describe('MCPSchemaValidator', () => {
     it('should initialize the validator', async () => {
       await validator.initialize();
       
-      const spy = jest.spyOn(validator as any, 'initialized', 'get');
+      const spy = jest.spyOn(validator, 'isInitialized', 'get');
       
       await validator.initialize();
       
