@@ -35,7 +35,7 @@ export class ContentService {
     page: number,
     limit: number,
     type?: string
-  ): Promise<any> {
+  ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
     const items = await this.repository.getAllContent(type);
@@ -72,7 +72,7 @@ export class ContentService {
    * @param contentData - Content data
    * @returns Created content item
    */
-  public async createContent(contentData: any): Promise<UORContentItem> {
+  public async createContent(contentData: UORContentItem): Promise<UORContentItem> {
     return this.repository.createContent(contentData);
   }
 
@@ -85,7 +85,7 @@ export class ContentService {
    */
   public async updateContent(
     id: string,
-    contentData: any
+    contentData: Partial<UORContentItem>
   ): Promise<UORContentItem | null> {
     return this.repository.updateContent(id, contentData);
   }
