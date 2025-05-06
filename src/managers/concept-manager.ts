@@ -186,8 +186,8 @@ export class ConceptManager {
     try {
       const filePath = this.getConceptPath(id);
       return await this.fileSystem.readJsonFile<Concept>(filePath);
-    } catch (error) {
-      if (error.name === 'FileNotFoundError') {
+    } catch (error: unknown) {
+      if (error instanceof Error && error.name === 'FileNotFoundError') {
         return null;
       }
       throw error;
@@ -226,7 +226,7 @@ export class ConceptManager {
 
     this.emitEvent(
       ConceptEventType.UPDATED, 
-      updated['@id'], 
+      updated['@id'] || '', 
       updated
     );
 
@@ -250,7 +250,7 @@ export class ConceptManager {
 
     this.emitEvent(
       ConceptEventType.DELETED, 
-      existing['@id'], 
+      existing['@id'] || '', 
       existing
     );
 

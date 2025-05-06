@@ -401,8 +401,8 @@ export class IndexManager {
               result.missingItems.push(item['@id']);
               result.valid = false;
             }
-          } catch (error) {
-            result.errors.push(`Error reading file ${file}: ${error.message}`);
+          } catch (error: unknown) {
+            result.errors.push(`Error reading file ${file}: ${error instanceof Error ? error.message : String(error)}`);
             result.valid = false;
           }
         }
@@ -447,8 +447,8 @@ export class IndexManager {
         );
         result.valid = false;
       }
-    } catch (error) {
-      result.errors.push(`Error validating index: ${error.message}`);
+    } catch (error: unknown) {
+      result.errors.push(`Error validating index: ${error instanceof Error ? error.message : String(error)}`);
       result.valid = false;
     }
     

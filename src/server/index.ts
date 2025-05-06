@@ -18,6 +18,8 @@ import { predicateRoutes } from './routes/predicate-routes';
 import { resourceRoutes } from './routes/resource-routes';
 import { topicRoutes } from './routes/topic-routes';
 import { searchRoutes } from './routes/search-routes';
+import { queryRoutes } from './routes/query-routes';
+import { indexRoutes } from './routes/index-routes';
 
 /**
  * MCP Server class
@@ -75,6 +77,8 @@ export class MCPServer {
     this.app.use('/api/resources', resourceRoutes);
     this.app.use('/api/topics', topicRoutes);
     this.app.use('/api/search', searchRoutes);
+    this.app.use('/api/query', queryRoutes);
+    this.app.use('/api/index', indexRoutes);
     
     this.app.use(errorHandler);
   }

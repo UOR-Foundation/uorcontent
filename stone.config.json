@@ -1,0 +1,96 @@
+{
+  "repository": "UOR-Foundation/uorcontent",
+  "roles": {
+    "pm": {
+      "enabled": true,
+      "label": "stone-pm",
+      "description": "Product Manager role for creating Gherkin specifications"
+    },
+    "qa": {
+      "enabled": true,
+      "label": "stone-qa",
+      "description": "QA role for developing test suites"
+    },
+    "feature": {
+      "enabled": true,
+      "label": "stone-feature",
+      "description": "Feature role for implementing code"
+    },
+    "auditor": {
+      "enabled": true,
+      "label": "stone-auditor",
+      "description": "Auditor role for verifying implementation quality"
+    },
+    "actions": {
+      "enabled": true,
+      "label": "stone-actions",
+      "description": "Actions role for CI/CD pipeline setup"
+    }
+  },
+  "workflow": {
+    "stages": [
+      "specification",
+      "testing",
+      "implementation",
+      "verification",
+      "deployment"
+    ],
+    "transitions": {
+      "specification": {
+        "next": "testing",
+        "role": "pm"
+      },
+      "testing": {
+        "next": "implementation",
+        "role": "qa"
+      },
+      "implementation": {
+        "next": "verification",
+        "role": "feature"
+      },
+      "verification": {
+        "next": "deployment",
+        "role": "auditor"
+      },
+      "deployment": {
+        "next": "completed",
+        "role": "actions"
+      }
+    }
+  },
+  "issues": {
+    "5": {
+      "title": "Concept Manager Implementation",
+      "stage": "verification",
+      "roles": {
+        "pm": "completed",
+        "qa": "completed",
+        "feature": "completed",
+        "auditor": "in_progress",
+        "actions": "pending"
+      }
+    },
+    "6": {
+      "title": "Query Operations with pluggable providers",
+      "stage": "verification",
+      "roles": {
+        "pm": "completed",
+        "qa": "completed",
+        "feature": "completed",
+        "auditor": "in_progress",
+        "actions": "pending"
+      }
+    },
+    "7": {
+      "title": "Index Management with incremental updates",
+      "stage": "verification",
+      "roles": {
+        "pm": "completed",
+        "qa": "completed",
+        "feature": "completed",
+        "auditor": "in_progress",
+        "actions": "pending"
+      }
+    }
+  }
+}
