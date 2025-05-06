@@ -18,15 +18,15 @@ import { SchemaValidator } from '../../utils/schema-validation';
  * @param validator - Schema validator instance
  */
 export function registerQueryEndpoints(
-  server: any,
+  server: {addMethod: (name: string, handler: (params: unknown) => Promise<unknown>) => void},
   queryService: QueryService<UORContentItem>,
-  validator: SchemaValidator
+  _validator: SchemaValidator
 ): void {
   /**
    * Execute a query
    */
-  server.addMethod('query.execute', async (params: any, req: Request, res: Response) => {
-    const { options, provider } = params;
+  server.addMethod('query.execute', async (params: unknown) => {
+    const { options, provider } = params as { options: unknown; provider?: string };
     
     if (!options) {
       return {
@@ -54,8 +54,8 @@ export function registerQueryEndpoints(
   /**
    * Filter content
    */
-  server.addMethod('query.filter', async (params: any, req: Request, res: Response) => {
-    const { criteria, provider } = params;
+  server.addMethod('query.filter', async (params: unknown) => {
+    const { criteria, provider } = params as { criteria: unknown; provider?: string };
     
     if (!criteria) {
       return {
@@ -67,7 +67,7 @@ export function registerQueryEndpoints(
     }
     
     try {
-      const result = await queryService.execute({ filter: criteria }, provider);
+      const result = await queryService.execute({ filter: criteria as Record<string, unknown> }, provider);
       return { result };
     } catch (error: unknown) {
       return {
@@ -83,8 +83,8 @@ export function registerQueryEndpoints(
   /**
    * Search content
    */
-  server.addMethod('query.search', async (params: any, req: Request, res: Response) => {
-    const { query, provider } = params;
+  server.addMethod('query.search', async (params: unknown) => {
+    const { query, provider } = params as { query: string; provider?: string };
     
     if (!query) {
       return {
@@ -112,8 +112,12 @@ export function registerQueryEndpoints(
   /**
    * Paginate content
    */
-  server.addMethod('query.paginate', async (params: any, req: Request, res: Response) => {
-    const { options, filter, provider } = params;
+  server.addMethod('query.paginate', async (params: unknown) => {
+    const { options, filter, provider } = params as { 
+      options: unknown; 
+      filter?: Record<string, unknown>; 
+      provider?: string 
+    };
     
     if (!options) {
       return {
@@ -149,8 +153,12 @@ export function registerQueryEndpoints(
   /**
    * Sort content
    */
-  server.addMethod('query.sort', async (params: any, req: Request, res: Response) => {
-    const { options, filter, provider } = params;
+  server.addMethod('query.sort', async (params: unknown) => {
+    const { options, filter, provider } = params as { 
+      options: unknown; 
+      filter?: Record<string, unknown>; 
+      provider?: string 
+    };
     
     if (!options) {
       return {

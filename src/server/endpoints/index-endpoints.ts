@@ -8,6 +8,7 @@
 import { Request, Response } from 'express';
 import { IndexManager } from '../../index-management/index-manager';
 import { SchemaValidator } from '../../utils/schema-validation';
+import { UORContentItem } from '../../models/types';
 
 /**
  * Register index endpoints with the MCP server
@@ -17,15 +18,15 @@ import { SchemaValidator } from '../../utils/schema-validation';
  * @param validator - Schema validator instance
  */
 export function registerIndexEndpoints(
-  server: any,
+  server: {addMethod: (name: string, handler: (params: unknown) => Promise<unknown>) => void},
   indexManager: IndexManager,
-  validator: SchemaValidator
+  _validator: SchemaValidator
 ): void {
   /**
    * Generate index for content type
    */
-  server.addMethod('index.generate', async (params: any, req: Request, res: Response) => {
-    const { contentType } = params;
+  server.addMethod('index.generate', async (params: unknown) => {
+    const { contentType } = params as { contentType: string };
     
     if (!contentType) {
       return {
@@ -53,8 +54,8 @@ export function registerIndexEndpoints(
   /**
    * Update index with a single item
    */
-  server.addMethod('index.update', async (params: any, req: Request, res: Response) => {
-    const { contentType, id, item } = params;
+  server.addMethod('index.update', async (params: unknown) => {
+    const { contentType, id, item } = params as { contentType: string; id: string; item: unknown };
     
     if (!contentType) {
       return {
@@ -75,7 +76,7 @@ export function registerIndexEndpoints(
     }
     
     try {
-      await indexManager.updateIndex(contentType, id, item);
+      await indexManager.updateIndex(contentType, id, item as unknown as UORContentItem);
       return { result: { success: true } };
     } catch (error) {
       return {
@@ -91,8 +92,8 @@ export function registerIndexEndpoints(
   /**
    * Validate index for content type
    */
-  server.addMethod('index.validate', async (params: any, req: Request, res: Response) => {
-    const { contentType } = params;
+  server.addMethod('index.validate', async (params: unknown) => {
+    const { contentType } = params as { contentType: string };
     
     if (!contentType) {
       return {
@@ -120,8 +121,8 @@ export function registerIndexEndpoints(
   /**
    * Repair index for content type
    */
-  server.addMethod('index.repair', async (params: any, req: Request, res: Response) => {
-    const { contentType } = params;
+  server.addMethod('index.repair', async (params: unknown) => {
+    const { contentType } = params as { contentType: string };
     
     if (!contentType) {
       return {
@@ -149,8 +150,8 @@ export function registerIndexEndpoints(
   /**
    * Query index
    */
-  server.addMethod('index.query', async (params: any, req: Request, res: Response) => {
-    const { contentType, query } = params;
+  server.addMethod('index.query', async (params: unknown) => {
+    const { contentType, query } = params as { contentType: string; query: unknown };
     
     if (!contentType) {
       return {
@@ -187,8 +188,8 @@ export function registerIndexEndpoints(
   /**
    * Invalidate index cache
    */
-  server.addMethod('index.invalidateCache', async (params: any, req: Request, res: Response) => {
-    const { contentType } = params;
+  server.addMethod('index.invalidateCache', async (params: unknown) => {
+    const { contentType } = params as { contentType?: string };
     
     try {
       indexManager.invalidateCache(contentType);
