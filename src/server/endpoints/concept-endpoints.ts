@@ -5,7 +5,6 @@
  * Provides JSON-RPC methods for CRUD operations on concepts.
  */
 
-import { Request, Response } from 'express';
 import { ConceptManager } from '../../managers/concept-manager';
 import { SchemaValidator } from '../../utils/schema-validation';
 
@@ -17,17 +16,17 @@ import { SchemaValidator } from '../../utils/schema-validation';
  * @param validator - Schema validator instance
  */
 export function registerConceptEndpoints(
-  server: any,
+  server: {addMethod: (name: string, handler: (params: unknown) => Promise<unknown>) => void},
   conceptManager: ConceptManager,
   validator: SchemaValidator
 ): void {
   /**
    * Create a new concept
    */
-  server.addMethod('concept.create', async (params: any, req: Request, res: Response) => {
-    const { concept } = params;
+  server.addMethod('concept.create', async (params: unknown) => {
+    const { concept } = params as { concept: Record<string, unknown> };
     
-    const validationResult = validator.validateConcept(concept);
+    const validationResult = validator.validateConcept(concept as any);
     if (!validationResult.valid) {
       return {
         error: {
@@ -39,7 +38,7 @@ export function registerConceptEndpoints(
     }
     
     try {
-      const createdConcept = await conceptManager.create(concept);
+      const createdConcept = await conceptManager.create(concept as any);
       return { result: createdConcept };
     } catch (error) {
       return {
@@ -55,8 +54,8 @@ export function registerConceptEndpoints(
   /**
    * Read a concept by ID
    */
-  server.addMethod('concept.read', async (params: any, req: Request, res: Response) => {
-    const { id } = params;
+  server.addMethod('concept.read', async (params: unknown) => {
+    const { id } = params as { id: string };
     
     if (!id) {
       return {
@@ -94,8 +93,8 @@ export function registerConceptEndpoints(
   /**
    * Update a concept
    */
-  server.addMethod('concept.update', async (params: any, req: Request, res: Response) => {
-    const { id, updates, version } = params;
+  server.addMethod('concept.update', async (params: unknown) => {
+    const { id, updates, version } = params as { id: string; updates: Record<string, unknown>; version?: string };
     
     if (!id) {
       return {
@@ -127,7 +126,7 @@ export function registerConceptEndpoints(
     }
     
     try {
-      const updatedConcept = await conceptManager.update(id, updates, version);
+      const updatedConcept = await conceptManager.update(id, updates as any, version);
       
       if (!updatedConcept) {
         return {
@@ -163,8 +162,8 @@ export function registerConceptEndpoints(
   /**
    * Delete a concept
    */
-  server.addMethod('concept.delete', async (params: any, req: Request, res: Response) => {
-    const { id } = params;
+  server.addMethod('concept.delete', async (params: unknown) => {
+    const { id } = params as { id: string };
     
     if (!id) {
       return {
@@ -202,8 +201,8 @@ export function registerConceptEndpoints(
   /**
    * List concepts with optional filtering
    */
-  server.addMethod('concept.list', async (params: any, req: Request, res: Response) => {
-    const { filter } = params;
+  server.addMethod('concept.list', async (params: unknown) => {
+    const { filter } = params as { filter?: Record<string, unknown> };
     
     try {
       const concepts = await conceptManager.list(filter);
@@ -222,8 +221,8 @@ export function registerConceptEndpoints(
   /**
    * Batch create concepts
    */
-  server.addMethod('concept.batchCreate', async (params: any, req: Request, res: Response) => {
-    const { concepts } = params;
+  server.addMethod('concept.batchCreate', async (params: unknown) => {
+    const { concepts } = params as { concepts: unknown[] };
     
     if (!Array.isArray(concepts)) {
       return {
@@ -235,7 +234,7 @@ export function registerConceptEndpoints(
     }
     
     for (let i = 0; i < concepts.length; i++) {
-      const validationResult = validator.validateConcept(concepts[i]);
+      const validationResult = validator.validateConcept(concepts[i] as any);
       if (!validationResult.valid) {
         return {
           error: {
@@ -248,7 +247,7 @@ export function registerConceptEndpoints(
     }
     
     try {
-      const createdConcepts = await conceptManager.batchCreate(concepts);
+      const createdConcepts = await conceptManager.batchCreate(concepts as any);
       return { result: createdConcepts };
     } catch (error) {
       return {

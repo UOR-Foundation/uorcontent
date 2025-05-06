@@ -5,7 +5,6 @@
  * Provides JSON-RPC methods for filtering, searching, and paginating content.
  */
 
-import { Request, Response } from 'express';
 import { QueryService } from '../../query/query-service';
 import { UORContentItem } from '../../models/types';
 import { SchemaValidator } from '../../utils/schema-validation';

@@ -5,7 +5,6 @@
  * Provides JSON-RPC methods for index generation, updates, validation, and queries.
  */
 
-import { Request, Response } from 'express';
 import { IndexManager } from '../../index-management/index-manager';
 import { SchemaValidator } from '../../utils/schema-validation';
 import { UORContentItem } from '../../models/types';
