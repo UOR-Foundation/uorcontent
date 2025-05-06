@@ -9,7 +9,6 @@
 
 import { IndexManager } from '../index-management/index-manager';
 import { NodeFileSystem } from '../utils/file-system';
-import { SchemaValidator } from '../utils/schema-validation';
 import { ContentRepository } from '../core/content-repository';
 import { UORContentItem } from '../models/types';
 

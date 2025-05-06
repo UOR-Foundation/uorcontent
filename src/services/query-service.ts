@@ -80,7 +80,7 @@ export class QueryService {
     filter?: FilterCriteria,
     provider?: string
   ): Promise<Record<string, unknown>> {
-    const queryOptions: any = {
+    const queryOptions: Record<string, unknown> = {
       pagination: options
     };
     
@@ -111,7 +111,7 @@ export class QueryService {
     filter?: FilterCriteria,
     provider?: string
   ): Promise<Record<string, unknown>> {
-    const queryOptions: any = {
+    const queryOptions: Record<string, unknown> = {
       sort: options
     };
     
@@ -141,7 +141,7 @@ export class QueryService {
     sort?: SortOptions,
     provider?: string
   ): Promise<Record<string, unknown>> {
-    const queryOptions: any = {};
+    const queryOptions: Record<string, unknown> = {};
     
     if (filter) {
       queryOptions.filter = filter;
