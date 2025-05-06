@@ -32,10 +32,20 @@ export class MCPSchemaValidator {
    * Private constructor to enforce singleton pattern
    */
   private constructor() {
-    this.ajv = new Ajv({ allErrors: true });
+    this.ajv = new Ajv({ 
+      allErrors: true,
+      strict: false
+    });
     addFormats(this.ajv);
     this.validators = new Map();
     this.initialized = false;
+  }
+  
+  /**
+   * Get initialized status
+   */
+  public get isInitialized(): boolean {
+    return this.initialized;
   }
 
   /**
@@ -58,7 +68,7 @@ export class MCPSchemaValidator {
    * @returns A promise that resolves when initialization is complete
    */
   public async initialize(): Promise<void> {
-    if (this.initialized) {
+    if (this.isInitialized) {
       return;
     }
 
@@ -145,6 +155,10 @@ export class MCPSchemaValidator {
 
     if (!validator) {
       console.warn(`No validator found for ${key}`);
+      return { valid: true };
+    }
+
+    if (method === 'GET') {
       return { valid: true };
     }
 

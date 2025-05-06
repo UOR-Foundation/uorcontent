@@ -295,7 +295,18 @@ export class ContentRepository {
       indices.push(index);
     }
 
-    const masterIndex = {
+    const masterIndex: {
+      '@context': string;
+      '@type': string;
+      'name': string;
+      'description': string;
+      'numberOfItems': number;
+      'itemListElement': Array<{
+        '@type': string;
+        'position': number;
+        'item': any;
+      }>;
+    } = {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
       'name': 'UOR Content Index',
