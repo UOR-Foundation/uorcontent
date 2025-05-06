@@ -1,3 +1,6 @@
 [submodule "templates/schemaorg"]
 	path = templates/schemaorg
 	url = https://github.com/schemaorg/schemaorg.git
+[submodule "modelcontextprotocol"]
+	path = modelcontextprotocol
+	url = https://github.com/modelcontextprotocol/modelcontextprotocol.git
