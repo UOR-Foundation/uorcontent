@@ -9,6 +9,7 @@ import { QueryEngine } from '../query/query-engine';
 import { ValidationEngine } from '../validation/validation-engine';
 import { ImportExportService } from '../import-export/import-export-service';
 import { ContentType, ContentItem, ValidationOptions, ImportOptions, ExportOptions } from '../types';
+import { UORContentItem } from '../models/types';
 import * as readline from 'readline';
 import * as fs from 'fs';
 
@@ -85,8 +86,8 @@ export class CLIInterface {
             return;
           }
           
-          const result = await this.repository.createContent(contentType, data);
-          console.log(`Created ${contentType} with ID: ${result.id}`);
+          const result = await this.repository.createContent(contentType, data as UORContentItem);
+          console.log(`Created ${contentType} with ID: ${result['@id']}`);
           console.log(JSON.stringify(result, null, 2));
         } catch (error) {
           console.error(`Error creating content: ${(error as Error).message}`);
@@ -132,7 +133,7 @@ export class CLIInterface {
             return;
           }
           
-          const result = await this.repository.updateContent(contentType, id, data);
+          const result = await this.repository.updateContent(contentType, id, data as UORContentItem);
           console.log(`Updated ${contentType} with ID: ${id}`);
           console.log(JSON.stringify(result, null, 2));
         } catch (error) {
@@ -308,7 +309,7 @@ export class CLIInterface {
               return;
             }
             
-            content = item;
+            content = item as unknown as ContentItem;
           } else {
             const data = await this.getContentData(options);
             
