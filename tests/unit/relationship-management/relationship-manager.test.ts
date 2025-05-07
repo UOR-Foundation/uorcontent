@@ -124,7 +124,15 @@ describe('RelationshipManager', () => {
     it('should create a relationship with valid data', async () => {
       const sourceId = 'UOR-C-001-test-concept';
       const targetId = 'UOR-R-001-test-resource';
-      const predicateData: string = 'UOR-P-001-test-predicate';
+      const predicateData: Omit<Predicate, '@id'> = {
+        '@context': 'https://schema.org',
+        '@type': 'PropertyValue',
+        name: 'Test Predicate',
+        value: 'test-value',
+        propertyID: 'test-property',
+        subjectOf: { '@id': sourceId },
+        targetCollection: [targetId]
+      };
       
       const result = await relationshipManager.createRelationship(
         sourceId,
