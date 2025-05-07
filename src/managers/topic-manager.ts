@@ -299,6 +299,10 @@ export class TopicManager {
     const files = await this.fileSystem.listDirectory(topicsDir);
     
     const topics: Topic[] = [];
+    if (!files || !Array.isArray(files)) {
+      return topics;
+    }
+    
     for (const file of files) {
       if (file.endsWith('.json') && file.startsWith('UOR-T-')) {
         try {
