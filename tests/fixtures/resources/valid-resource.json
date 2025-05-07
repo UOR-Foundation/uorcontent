@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "urn:uor:resource:test-resource",
+  "name": "Test Resource",
+  "description": "A test resource for unit testing",
+  "url": "https://example.com/test-resource",
+  "author": "Test Author",
+  "datePublished": "2025-01-01",
+  "keywords": ["test", "resource", "unit testing"]
+}
