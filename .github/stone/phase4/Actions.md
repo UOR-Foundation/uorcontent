@@ -45,6 +45,8 @@ jobs:
     
     - name: Lint
       run: npm run lint
+      # Ensure build fails if any linting issues are detected
+      continue-on-error: false
       
     - name: Type check
       run: npm run type-check
@@ -179,9 +181,12 @@ jobs:
   ],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "error",
-    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "no-console": ["warn", { "allow": ["warn", "error"] }]
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-unused-expressions": "error",
+    "no-var": "error",
+    "prefer-const": "error"
   }
 }
 ```
@@ -305,6 +310,8 @@ jobs:
     
     - name: Lint
       run: npm run lint
+      # Ensure build fails if any linting issues are detected
+      continue-on-error: false
       
     - name: Type check
       run: npm run type-check
