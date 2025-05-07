@@ -6,21 +6,23 @@
  */
 
 import { NodeFileSystem } from '../utils/file-system';
-import { ContentRepository } from '../core/content-repository';
+import { SchemaValidatorAdapter } from '../utils/schema-validator-adapter';
+import { ResourceManager } from '../managers/resource-manager';
 import { Resource } from '../models/types';
 
 /**
  * Resource service
  */
 export class ResourceService {
-  private repository: ContentRepository;
+  private resourceManager: ResourceManager;
 
   /**
    * Create a new resource service
    */
   constructor() {
     const fileSystem = new NodeFileSystem();
-    this.repository = new ContentRepository(fileSystem);
+    const validator = SchemaValidatorAdapter.createWithSingleton();
+    this.resourceManager = new ResourceManager(fileSystem, validator);
   }
 
   /**
@@ -36,7 +38,7 @@ export class ResourceService {
   ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
-    const items = await this.repository.getAllContent('resource');
+    const items = await this.resourceManager.list();
     
     const paginatedItems = items.slice(skip, skip + limit);
     
@@ -61,7 +63,7 @@ export class ResourceService {
    * @returns Resource item or null if not found
    */
   public async getResourceById(id: string): Promise<Resource | null> {
-    return this.repository.getContentById(id) as Promise<Resource | null>;
+    return this.resourceManager.read(id);
   }
 
   /**
@@ -71,21 +73,26 @@ export class ResourceService {
    * @returns Created resource item
    */
   public async createResource(resourceData: Resource): Promise<Resource> {
-    return this.repository.createContent(resourceData) as Promise<Resource>;
+    return this.resourceManager.create(resourceData);
   }
 
   /**
    * Update resource by ID
    * 
    * @param id - Resource ID
-   * @param resourceData - Resource data
+   * @param resourceData - Partial resource data
    * @returns Updated resource item or null if not found
    */
   public async updateResource(
     id: string,
     resourceData: Partial<Resource>
   ): Promise<Resource | null> {
-    return this.repository.updateContent(id, resourceData) as Promise<Resource | null>;
+    const partialResource = {
+      ...resourceData,
+      '@type': 'CreativeWork'
+    } as import('../models/types').PartialResource;
+    
+    return this.resourceManager.update(id, partialResource);
   }
 
   /**
@@ -95,6 +102,6 @@ export class ResourceService {
    * @returns True if resource was deleted, false if not found
    */
   public async deleteResource(id: string): Promise<boolean> {
-    return this.repository.deleteContent(id);
+    return this.resourceManager.delete(id);
   }
 }

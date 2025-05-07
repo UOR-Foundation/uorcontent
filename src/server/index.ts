@@ -20,6 +20,7 @@ import { topicRoutes } from './routes/topic-routes';
 import { searchRoutes } from './routes/search-routes';
 import { queryRoutes } from './routes/query-routes';
 import { indexRoutes } from './routes/index-routes';
+import { relationshipRoutes } from './routes/relationship-routes';
 
 /**
  * MCP Server class
@@ -79,6 +80,7 @@ export class MCPServer {
     this.app.use('/api/search', searchRoutes);
     this.app.use('/api/query', queryRoutes);
     this.app.use('/api/index', indexRoutes);
+    this.app.use('/api/relationships', relationshipRoutes);
     
     this.app.use(errorHandler);
   }

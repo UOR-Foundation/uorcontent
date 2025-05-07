@@ -506,6 +506,46 @@ export class RelationshipManager {
    */
   async validateGraph(): Promise<ValidationResult> {
     const errors: string[] = [];
+    
+    // Build graph to get the complete picture of relationships
+    const graph = await this.buildGraph();
+    
+    // Check for circular references in the graph
+    const visited = new Set<string>();
+    const recursionStack = new Set<string>();
+    
+    const checkForCircularReferences = (nodeId: string, path: string[] = []): boolean => {
+      if (recursionStack.has(nodeId)) {
+        errors.push(`Circular reference detected: ${path.join(' -> ')} -> ${nodeId}`);
+        return true;
+      }
+      
+      if (visited.has(nodeId)) {
+        return false;
+      }
+      
+      visited.add(nodeId);
+      recursionStack.add(nodeId);
+      
+      const outgoingEdges = graph.edges.filter(edge => edge.source === nodeId);
+      let hasCircular = false;
+      
+      for (const edge of outgoingEdges) {
+        if (checkForCircularReferences(edge.target, [...path, nodeId])) {
+          hasCircular = true;
+        }
+      }
+      
+      recursionStack.delete(nodeId);
+      return hasCircular;
+    };
+    
+    for (const node of graph.nodes) {
+      if (!visited.has(node.id)) {
+        checkForCircularReferences(node.id);
+      }
+    }
+    
     const predicates = await this.predicateManager.list();
 
     for (const predicate of predicates) {

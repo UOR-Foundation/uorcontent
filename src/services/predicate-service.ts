@@ -6,21 +6,23 @@
  */
 
 import { NodeFileSystem } from '../utils/file-system';
-import { ContentRepository } from '../core/content-repository';
+import { SchemaValidatorAdapter } from '../utils/schema-validator-adapter';
+import { PredicateManager } from '../managers/predicate-manager';
 import { Predicate } from '../models/types';
 
 /**
  * Predicate service
  */
 export class PredicateService {
-  private repository: ContentRepository;
+  private predicateManager: PredicateManager;
 
   /**
    * Create a new predicate service
    */
   constructor() {
     const fileSystem = new NodeFileSystem();
-    this.repository = new ContentRepository(fileSystem);
+    const validator = SchemaValidatorAdapter.createWithSingleton();
+    this.predicateManager = new PredicateManager(fileSystem, validator);
   }
 
   /**
@@ -36,7 +38,7 @@ export class PredicateService {
   ): Promise<Record<string, unknown>> {
     const skip = (page - 1) * limit;
 
-    const items = await this.repository.getAllContent('predicate');
+    const items = await this.predicateManager.list();
     
     const paginatedItems = items.slice(skip, skip + limit);
     
@@ -61,7 +63,7 @@ export class PredicateService {
    * @returns Predicate item or null if not found
    */
   public async getPredicateById(id: string): Promise<Predicate | null> {
-    return this.repository.getContentById(id) as Promise<Predicate | null>;
+    return this.predicateManager.read(id);
   }
 
   /**
@@ -71,21 +73,26 @@ export class PredicateService {
    * @returns Created predicate item
    */
   public async createPredicate(predicateData: Predicate): Promise<Predicate> {
-    return this.repository.createContent(predicateData) as Promise<Predicate>;
+    return this.predicateManager.create(predicateData);
   }
 
   /**
    * Update predicate by ID
    * 
    * @param id - Predicate ID
-   * @param predicateData - Predicate data
+   * @param predicateData - Partial predicate data
    * @returns Updated predicate item or null if not found
    */
   public async updatePredicate(
     id: string,
     predicateData: Partial<Predicate>
   ): Promise<Predicate | null> {
-    return this.repository.updateContent(id, predicateData) as Promise<Predicate | null>;
+    const partialPredicate = {
+      ...predicateData,
+      '@type': 'PropertyValue'
+    } as import('../models/types').PartialPredicate;
+    
+    return this.predicateManager.update(id, partialPredicate);
   }
 
   /**
@@ -95,6 +102,6 @@ export class PredicateService {
    * @returns True if predicate was deleted, false if not found
    */
   public async deletePredicate(id: string): Promise<boolean> {
-    return this.repository.deleteContent(id);
+    return this.predicateManager.delete(id);
   }
 }
