@@ -11,6 +11,41 @@ import { TopicManager } from './topic-manager';
 import { PredicateManager } from './predicate-manager';
 import { RelationshipManager } from '../relationship-management/relationship-manager';
 
+declare module './concept-manager' {
+  interface ConceptManager {
+    count(): Promise<number>;
+    validateIndex(): Promise<boolean>;
+  }
+}
+
+declare module './resource-manager' {
+  interface ResourceManager {
+    count(): Promise<number>;
+    validateIndex(): Promise<boolean>;
+  }
+}
+
+declare module './topic-manager' {
+  interface TopicManager {
+    count(): Promise<number>;
+    validateIndex(): Promise<boolean>;
+  }
+}
+
+declare module './predicate-manager' {
+  interface PredicateManager {
+    count(): Promise<number>;
+    validateIndex(): Promise<boolean>;
+  }
+}
+
+declare module '../relationship-management/relationship-manager' {
+  interface RelationshipManager {
+    count(): Promise<number>;
+    validateIndex(): Promise<boolean>;
+  }
+}
+
 /**
  * Add count method to ConceptManager
  */
@@ -105,4 +140,18 @@ PredicateManager.prototype.validateIndex = async function(): Promise<boolean> {
 RelationshipManager.prototype.count = async function(): Promise<number> {
   const relationships = await this.listRelationships();
   return relationships.length;
+};
+
+/**
+ * Add validateIndex method to RelationshipManager
+ */
+RelationshipManager.prototype.validateIndex = async function(): Promise<boolean> {
+  try {
+    const relationships = await this.listRelationships();
+    const ids = relationships.map(relationship => relationship.id);
+    const uniqueIds = new Set(ids);
+    return ids.length === uniqueIds.size;
+  } catch (error) {
+    return false;
+  }
 };

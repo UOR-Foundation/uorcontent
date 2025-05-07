@@ -1,9 +1,10 @@
 import { ContentIdentifier, ContentItem, ValidationResult } from '../types';
+import { UORContentItem } from '../models/types';
 
 /**
  * Base manager interface for all content types
  */
-export interface BaseManager<T extends ContentItem> {
+export interface BaseManager<T extends UORContentItem> {
   /**
    * Creates a new content item
    * @param content Content item data
@@ -17,6 +18,13 @@ export interface BaseManager<T extends ContentItem> {
    * @returns Content item or null if not found
    */
   get(id: ContentIdentifier): Promise<T | null>;
+  
+  /**
+   * Alias for get method
+   * @param id Content item ID
+   * @returns Content item or null if not found
+   */
+  read?(id: ContentIdentifier): Promise<T | null>;
 
   /**
    * Updates a content item
@@ -44,18 +52,18 @@ export interface BaseManager<T extends ContentItem> {
    * Counts content items
    * @returns Number of content items
    */
-  count(): Promise<number>;
+  count?(): Promise<number>;
 
   /**
    * Validates a content item
    * @param content Content item data
    * @returns Validation result
    */
-  validate(content: T): Promise<ValidationResult>;
+  validate?(content: T): Promise<ValidationResult>;
 
   /**
    * Validates the index for this content type
    * @returns True if index is valid, false otherwise
    */
-  validateIndex(): Promise<boolean>;
+  validateIndex?(): Promise<boolean>;
 }

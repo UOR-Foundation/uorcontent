@@ -8,15 +8,28 @@ export type ContentType = 'concept' | 'resource' | 'topic' | 'predicate' | 'rela
  */
 export type ContentIdentifier = string;
 
+import { UORContentItem } from './models/types';
+
 /**
  * Base content item interface
+ * Compatible with UORContentItem from models/types.ts
  */
 export interface ContentItem {
-  id?: ContentIdentifier;
+  '@id'?: ContentIdentifier;
+  '@type'?: string;
+  '@context'?: string;
   name?: string;
   description?: string;
   [key: string]: unknown;
 }
+
+/**
+ * Type mapping for content item properties
+ */
+export const ContentItemPropertyMap = {
+  id: '@id',
+  type: '@type'
+};
 
 /**
  * Repository statistics interface
@@ -62,7 +75,7 @@ export interface QueryOptions {
  * Search result interface
  */
 export interface SearchResult {
-  item: ContentItem;
+  item: UORContentItem;
   type: ContentType;
   score: number;
   highlights?: Record<string, string[]>;
@@ -85,7 +98,7 @@ export interface ValidationResult {
   errors?: ValidationError[];
   warnings?: ValidationError[];
   repaired?: Array<{
-    item: ContentItem;
+    item: UORContentItem;
     fixes: string[];
   }>;
 }
@@ -125,7 +138,7 @@ export interface ImportResult {
   imported: number;
   failed: number;
   errors?: Array<{
-    item: ContentItem;
+    item: UORContentItem;
     error: string;
   }>;
 }

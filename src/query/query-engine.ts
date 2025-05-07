@@ -4,6 +4,7 @@
  */
 
 import { ContentType, ContentItem, SearchResult } from '../types';
+import { UORContentItem } from '../models/types';
 import { ContentRepository } from '../repository/content-repository';
 
 /**
@@ -80,7 +81,7 @@ export class QueryEngine {
     const limit = options.limit || 50;
     const offset = options.offset || 0;
     
-    const allItems: Array<{ item: ContentItem; type: ContentType }> = [];
+    const allItems: Array<{ item: UORContentItem; type: ContentType }> = [];
     
     for (const type of contentTypes) {
       const items = await this.repository.listContent(type, {
@@ -130,9 +131,9 @@ export class QueryEngine {
    * @returns Filtered and scored items
    */
   private applyFullTextSearch(
-    items: Array<{ item: ContentItem; type: ContentType }>,
+    items: Array<{ item: UORContentItem; type: ContentType }>,
     query: string
-  ): Array<{ item: ContentItem; type: ContentType; score?: number }> {
+  ): Array<{ item: UORContentItem; type: ContentType; score?: number }> {
     const queryTokens = this.tokenizer(query);
     
     if (queryTokens.length === 0) {
@@ -171,9 +172,9 @@ export class QueryEngine {
    * @returns Filtered and scored items
    */
   private applySemanticSearch(
-    items: Array<{ item: ContentItem; type: ContentType; score?: number }>,
+    items: Array<{ item: UORContentItem; type: ContentType; score?: number }>,
     query: string
-  ): Array<{ item: ContentItem; type: ContentType; score?: number }> {
+  ): Array<{ item: UORContentItem; type: ContentType; score?: number }> {
     
     const queryTokens = this.tokenizer(query);
     const synonyms: Record<string, string[]> = {
@@ -225,7 +226,7 @@ export class QueryEngine {
    * @returns Facet results
    */
   private calculateFacets(
-    items: Array<{ item: ContentItem; type: ContentType; score?: number }>,
+    items: Array<{ item: UORContentItem; type: ContentType; score?: number }>,
     facetFields: string[]
   ): FacetResult[] {
     const facets: FacetResult[] = [];
@@ -258,7 +259,7 @@ export class QueryEngine {
    * @param sort Sort options
    */
   private applySorting(
-    items: Array<{ item: ContentItem; type: ContentType; score?: number }>,
+    items: Array<{ item: UORContentItem; type: ContentType; score?: number }>,
     sort: { field: string; direction: 'asc' | 'desc' }
   ): void {
     items.sort((a, b) => {
@@ -281,7 +282,7 @@ export class QueryEngine {
    * @returns Highlights by field
    */
   private generateHighlights(
-    item: ContentItem,
+    item: UORContentItem,
     query?: string
   ): Record<string, string[]> | undefined {
     if (!query) {
@@ -316,14 +317,14 @@ export class QueryEngine {
    * @param item Content item
    * @returns Text representation
    */
-  private getItemText(item: ContentItem): string {
+  private getItemText(item: UORContentItem): string {
     const textParts: string[] = [];
     
     for (const [, value] of Object.entries(item)) {
       if (typeof value === 'string') {
         textParts.push(value);
       } else if (typeof value === 'object' && value !== null) {
-        const nestedText = this.getItemText(value as ContentItem);
+        const nestedText = this.getItemText(value as UORContentItem);
         if (nestedText) {
           textParts.push(nestedText);
         }
@@ -339,7 +340,7 @@ export class QueryEngine {
    * @param field Field name (supports dot notation for nested fields)
    * @returns Field value
    */
-  private getFieldValue(item: ContentItem, field: string): unknown {
+  private getFieldValue(item: UORContentItem, field: string): unknown {
     const parts = field.split('.');
     let value: unknown = item;
     
