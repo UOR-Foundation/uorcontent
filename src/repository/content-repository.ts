@@ -30,7 +30,7 @@ export class ContentRepository {
   private predicateManager: PredicateManager;
   private relationshipManager: RelationshipManager;
   private eventEmitter: EventEmitter;
-  private transactionInProgress: boolean = false;
+  private transactionInProgress = false;
   private transactionChanges: Map<string, UORContentItem[]> = new Map();
 
   /**
@@ -342,13 +342,13 @@ export class ContentRepository {
       const concepts = await (manager as ConceptManager).list(conceptFilter);
       result = concepts as unknown as UORContentItem[];
     } else if (contentType === 'resource') {
-      const resources = await (manager as ResourceManager).list(options.filter as any);
+      const resources = await (manager as ResourceManager).list(options.filter as Record<string, unknown>);
       result = resources as unknown as UORContentItem[];
     } else if (contentType === 'topic') {
-      const topics = await (manager as TopicManager).list(options.filter as any);
+      const topics = await (manager as TopicManager).list(options.filter as Record<string, unknown>);
       result = topics as unknown as UORContentItem[];
     } else if (contentType === 'predicate') {
-      const predicates = await (manager as PredicateManager).list(options.filter as any);
+      const predicates = await (manager as PredicateManager).list(options.filter as Record<string, unknown>);
       result = predicates as unknown as UORContentItem[];
     }
 
@@ -378,12 +378,12 @@ export class ContentRepository {
    * @returns Result of the transaction
    * @throws Error if no transaction is in progress
    */
-  public async commitTransaction(): Promise<{ success: boolean; results: any[] }> {
+  public async commitTransaction(): Promise<{ success: boolean; results: Array<{ operation: string; type: ContentType; id?: string; result: unknown }> }> {
     if (!this.transactionInProgress) {
       throw new Error('No transaction in progress');
     }
 
-    const results: any[] = [];
+    const results: Array<{ operation: string; type: ContentType; id?: string; result: unknown }> = [];
     let success = true;
 
     try {
@@ -518,7 +518,7 @@ export class ContentRepository {
    * @param event Event name
    * @param listener Event listener function
    */
-  public on(event: string, listener: (...args: any[]) => void): void {
+  public on(event: string, listener: (...args: unknown[]) => void): void {
     this.eventEmitter.on(event, listener);
   }
 
@@ -527,7 +527,7 @@ export class ContentRepository {
    * @param event Event name
    * @param listener Event listener function
    */
-  public off(event: string, listener: (...args: any[]) => void): void {
+  public off(event: string, listener: (...args: unknown[]) => void): void {
     this.eventEmitter.off(event, listener);
   }
 
@@ -608,7 +608,7 @@ export class ContentRepository {
       for (const { name, manager } of indexChecks) {
         try {
           const items = await manager.list();
-          const ids = items.map((item: any) => item['@id'] || item.id);
+          const ids = items.map((item: UORContentItem) => item['@id'] || (item as unknown as { id?: string }).id);
           const uniqueIds = new Set(ids);
           const indexValid = ids.length === uniqueIds.size;
           

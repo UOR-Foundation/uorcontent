@@ -3,7 +3,7 @@
  * Implements Issue #13
  */
 
-import { ContentType, ContentItem, SearchResult } from '../types';
+import { ContentType, SearchResult } from '../types';
 import { UORContentItem } from '../models/types';
 import { ContentRepository } from '../repository/content-repository';
 

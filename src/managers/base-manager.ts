@@ -1,4 +1,4 @@
-import { ContentIdentifier, ContentItem, ValidationResult } from '../types';
+import { ContentIdentifier, ValidationResult } from '../types';
 import { UORContentItem } from '../models/types';
 
 /**
