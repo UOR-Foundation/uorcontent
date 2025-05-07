@@ -139,7 +139,18 @@ export class RelationshipManager {
       if (!existingPredicate) {
         throw new Error(`Predicate ${predicateId} not found`);
       }
-      predicate = existingPredicate;
+      
+      const newPredicate: Predicate = {
+        ...existingPredicate,
+        '@context': 'https://schema.org',
+        '@type': 'PropertyValue',
+        subjectOf: {
+          '@id': this.getFullId(sourceId)
+        },
+        targetCollection: [this.getFullId(targetId)]
+      };
+      
+      predicate = await this.predicateManager.create(newPredicate);
     } else {
       const newPredicate: Predicate = {
         ...predicateId,
@@ -507,14 +518,13 @@ export class RelationshipManager {
   async validateGraph(): Promise<ValidationResult> {
     const errors: string[] = [];
     
-    // Build graph to get the complete picture of relationships
     const graph = await this.buildGraph();
     
     // Check for circular references in the graph
     const visited = new Set<string>();
     const recursionStack = new Set<string>();
     
-    const checkForCircularReferences = (nodeId: string, path: string[] = []): boolean => {
+    const checkForCycles = (nodeId: string, path: string[] = []): boolean => {
       if (recursionStack.has(nodeId)) {
         errors.push(`Circular reference detected: ${path.join(' -> ')} -> ${nodeId}`);
         return true;
@@ -528,24 +538,24 @@ export class RelationshipManager {
       recursionStack.add(nodeId);
       
       const outgoingEdges = graph.edges.filter(edge => edge.source === nodeId);
-      let hasCircular = false;
-      
       for (const edge of outgoingEdges) {
-        if (checkForCircularReferences(edge.target, [...path, nodeId])) {
-          hasCircular = true;
+        const newPath = [...path, nodeId];
+        if (checkForCycles(edge.target, newPath)) {
+          return true;
         }
       }
       
       recursionStack.delete(nodeId);
-      return hasCircular;
+      return false;
     };
     
     for (const node of graph.nodes) {
       if (!visited.has(node.id)) {
-        checkForCircularReferences(node.id);
+        checkForCycles(node.id);
       }
     }
     
+    // Validate node existence and relationships
     const predicates = await this.predicateManager.list();
 
     for (const predicate of predicates) {
