@@ -102,7 +102,9 @@ describe('ContentRepository', () => {
       
       const result = await repository.getContentById('urn:uor:concept:nonexistent');
       
-      expect(mockFileSystem.readFile).toHaveBeenCalled();
+      expect(mockFileSystem.readFile).toHaveBeenCalledWith(
+        path.join(testEnv.contentDir, 'concepts', 'UOR-C-nonexistent.json')
+      );
       expect(result).toBeNull();
     });
   });
@@ -127,7 +129,7 @@ describe('ContentRepository', () => {
       const result = await repository.createContent(mockContent);
       
       expect(mockFileSystem.writeFile).toHaveBeenCalledWith(
-        expect.stringContaining('UOR-C-concept.json'),
+        expect.stringContaining('uors/UOR-U-concept.json'),
         expect.any(String)
       );
       expect(updateIndexSpy).toHaveBeenCalled();
@@ -167,7 +169,7 @@ describe('ContentRepository', () => {
       const result = await repository.updateContent('urn:uor:concept:test', updateData);
       
       expect(mockFileSystem.writeFile).toHaveBeenCalledWith(
-        expect.stringContaining('UOR-C-concept.json'),
+        expect.stringContaining('uors/UOR-U-concept.json'),
         expect.any(String)
       );
       expect(updateIndexSpy).toHaveBeenCalled();
@@ -201,7 +203,7 @@ describe('ContentRepository', () => {
       const result = await repository.deleteContent('urn:uor:concept:test');
       
       expect(mockFileSystem.deleteFile).toHaveBeenCalledWith(
-        expect.stringContaining('UOR-C-test.json')
+        expect.stringContaining('uors/UOR-U-concept.json')
       );
       expect(removeFromIndexSpy).toHaveBeenCalled();
       expect(result).toBe(true);
