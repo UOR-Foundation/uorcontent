@@ -4,6 +4,7 @@
  */
 
 import { ContentType, ContentItem, ImportOptions, ExportOptions, ImportResult, ExportResult } from '../types';
+import { UORContentItem } from '../models/types';
 import { ContentRepository } from '../repository/content-repository';
 import { ValidationEngine } from '../validation/validation-engine';
 import { promises as fs } from 'fs';
@@ -48,7 +49,11 @@ export class ImportExportService {
         imported: 0,
         failed: 1,
         errors: [{
-          item: {} as ContentItem,
+          item: {
+            '@context': 'https://schema.org',
+            '@type': 'Error',
+            'name': 'Error'
+          } as UORContentItem,
           error: `Failed to parse JSON: ${(error as Error).message}`
         }]
       };
@@ -80,7 +85,11 @@ export class ImportExportService {
             imported: 0,
             failed: 1,
             errors: [{
-              item: {} as ContentItem,
+              item: {
+            '@context': 'https://schema.org',
+            '@type': 'Error',
+            'name': 'Error'
+          } as UORContentItem,
               error: `Unsupported file format: ${extension}`
             }]
           };
@@ -91,7 +100,11 @@ export class ImportExportService {
         imported: 0,
         failed: 1,
         errors: [{
-          item: {} as ContentItem,
+          item: {
+            '@context': 'https://schema.org',
+            '@type': 'Error',
+            'name': 'Error'
+          } as UORContentItem,
           error: `Failed to read file: ${(error as Error).message}`
         }]
       };
@@ -126,7 +139,11 @@ export class ImportExportService {
         imported: 0,
         failed: 1,
         errors: [{
-          item: {} as ContentItem,
+          item: {
+            '@context': 'https://schema.org',
+            '@type': 'Error',
+            'name': 'Error'
+          } as UORContentItem,
           error: `Failed to parse Markdown: ${(error as Error).message}`
         }]
       };
@@ -253,16 +270,16 @@ export class ImportExportService {
             }
           }
           
-          const existingItem = await this.repository.readContent(contentType, item.id);
+          const existingItem = await this.repository.readContent(contentType, item['@id'] as string);
           
           if (existingItem) {
             if (options.updateExisting) {
-              await this.repository.updateContent(contentType, item.id, item);
+              await this.repository.updateContent(contentType, item['@id'] as string, item as unknown as UORContentItem);
             } else {
               throw new Error(`Item with ID ${item.id} already exists`);
             }
           } else {
-            await this.repository.createContent(contentType, item);
+            await this.repository.createContent(contentType, item as unknown as UORContentItem);
           }
           
           result.imported++;
@@ -270,7 +287,12 @@ export class ImportExportService {
           result.failed++;
           result.errors = result.errors || [];
           result.errors.push({
-            item,
+            item: {
+              '@context': 'https://schema.org',
+              '@type': item['@type'] || 'Error',
+              'name': item.name || 'Error Item',
+              ...item
+            } as unknown as UORContentItem,
             error: (error as Error).message
           });
         }

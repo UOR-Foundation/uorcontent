@@ -4,6 +4,7 @@
  */
 
 import { ContentType, ContentItem, ValidationResult, ValidationError } from '../types';
+import { UORContentItem, Concept, Resource, Topic, Predicate } from '../models/types';
 import { ContentRepository } from '../repository/content-repository';
 import { SchemaValidator, ValidationResult as SchemaValidationResult } from '../utils/schema-validation';
 
@@ -50,6 +51,63 @@ export class ValidationEngine {
   }
 
   /**
+   * Converts UORContentItem to ContentItem for validation purposes
+   * @param item UOR content item
+   * @returns ContentItem compatible with validation functions
+   */
+  private convertToValidationFormat(item: UORContentItem): ContentItem {
+    return {
+      ...item,
+      id: item['@id']
+    } as ContentItem;
+  }
+
+  /**
+   * Safely gets the ID of an item
+   * @param item Content item
+   * @returns ID string or "unknown"
+   */
+  private getItemId(item: UORContentItem): string {
+    return item['@id'] || 'unknown';
+  }
+
+  /**
+   * Gets sourceId property safely from relationship item
+   * @param relationship Relationship item
+   * @returns sourceId or undefined
+   */
+  private getSourceId(relationship: UORContentItem): string | undefined {
+    return (relationship as unknown as { sourceId?: string }).sourceId;
+  }
+
+  /**
+   * Gets sourceType property safely from relationship item
+   * @param relationship Relationship item
+   * @returns sourceType or undefined
+   */
+  private getSourceType(relationship: UORContentItem): string | undefined {
+    return (relationship as unknown as { sourceType?: string }).sourceType;
+  }
+
+  /**
+   * Gets targetId property safely from relationship item
+   * @param relationship Relationship item
+   * @returns targetId or undefined
+   */
+  private getTargetId(relationship: UORContentItem): string | undefined {
+    return (relationship as unknown as { targetId?: string }).targetId;
+  }
+
+  /**
+   * Gets targetType property safely from relationship item
+   * @param relationship Relationship item
+   * @returns targetType or undefined
+   */
+  private getTargetType(relationship: UORContentItem): string | undefined {
+    return (relationship as unknown as { targetType?: string }).targetType;
+  }
+
+  /**
    * Validates a content item
    * @param contentType Content type
    * @param content Content item
@@ -68,19 +126,19 @@ export class ValidationEngine {
     
     switch (contentType) {
       case 'concept':
-        schemaValidationResult = this.schemaValidator.validateConcept(content as any);
+        schemaValidationResult = this.schemaValidator.validateConcept(content as unknown as Concept);
         break;
       case 'resource':
-        schemaValidationResult = this.schemaValidator.validateResource(content as any);
+        schemaValidationResult = this.schemaValidator.validateResource(content as unknown as Resource);
         break;
       case 'topic':
-        schemaValidationResult = this.schemaValidator.validateTopic(content as any);
+        schemaValidationResult = this.schemaValidator.validateTopic(content as unknown as Topic);
         break;
       case 'predicate':
-        schemaValidationResult = this.schemaValidator.validatePredicate(content as any);
+        schemaValidationResult = this.schemaValidator.validatePredicate(content as unknown as Predicate);
         break;
       default:
-        schemaValidationResult = this.schemaValidator.validateContent(content as any);
+        schemaValidationResult = this.schemaValidator.validateContent(content as unknown as UORContentItem);
     }
     
     const schemaResult: ValidationResult = {
@@ -130,25 +188,25 @@ export class ValidationEngine {
     }> = [];
     
     for (const item of items) {
-      const itemResult = await this.validateItem(contentType, item, options);
+      const itemResult = await this.validateItem(contentType, this.convertToValidationFormat(item), options);
       
       if (!itemResult.valid && itemResult.errors) {
         for (const error of itemResult.errors) {
           if (error.code.startsWith('WARNING_')) {
             warnings.push({
               ...error,
-              path: `${item.id || 'unknown'}.${error.path}`
+              path: `${this.getItemId(item)}.${error.path}`
             });
           } else {
             errors.push({
               ...error,
-              path: `${item.id || 'unknown'}.${error.path}`
+              path: `${this.getItemId(item)}.${error.path}`
             });
           }
         }
         
         if (options.repairMode) {
-          const repairResult = await this.repairItem(contentType, item, itemResult.errors);
+          const repairResult = await this.repairItem(contentType, this.convertToValidationFormat(item), itemResult.errors);
           
           if (repairResult.repaired) {
             repaired.push({
@@ -157,14 +215,14 @@ export class ValidationEngine {
               repairs: repairResult.repairs
             });
             
-            await this.repository.updateContent(contentType, item.id as string, repairResult.item);
+            await this.repository.updateContent(contentType, this.getItemId(item), repairResult.item as unknown as UORContentItem);
           }
         }
       }
     }
     
     if (options.validateRelationships && contentType !== 'relationship') {
-      const relationshipErrors = await this.validateContentRelationships(contentType, items);
+      const relationshipErrors = await this.validateContentRelationships(contentType, items.map(item => this.convertToValidationFormat(item)));
       errors.push(...relationshipErrors);
     }
     
@@ -239,7 +297,7 @@ export class ValidationEngine {
     
     for (const error of errors) {
       switch (error.code) {
-        case 'MISSING_REQUIRED_FIELD':
+        case 'MISSING_REQUIRED_FIELD': {
           const fieldName = error.path.split('.').pop() || '';
           
           if (fieldName) {
@@ -254,8 +312,9 @@ export class ValidationEngine {
             }
           }
           break;
+        }
           
-        case 'INVALID_FORMAT':
+        case 'INVALID_FORMAT': {
           const pathParts = error.path.split('.');
           const field = pathParts[pathParts.length - 1];
           
@@ -268,8 +327,9 @@ export class ValidationEngine {
             }
           }
           break;
+        }
           
-        case 'DUPLICATE_ID':
+        case 'DUPLICATE_ID': {
           if (repairedItem.id) {
             const timestamp = Date.now();
             repairedItem.id = `${repairedItem.id}-${timestamp}`;
@@ -277,6 +337,7 @@ export class ValidationEngine {
             repaired = true;
           }
           break;
+        }
       }
     }
     
@@ -350,31 +411,31 @@ export class ValidationEngine {
     
     for (const relationship of relationships) {
       if (
-        (relationship.sourceId && relationship.sourceType === contentType) ||
-        (relationship.targetId && relationship.targetType === contentType)
+        (this.getSourceId(relationship) && this.getSourceType(relationship) === contentType) ||
+        (this.getTargetId(relationship) && this.getTargetType(relationship) === contentType)
       ) {
         const itemIds = items.map(item => item.id);
         
         if (
-          relationship.sourceType === contentType &&
-          relationship.sourceId &&
-          !itemIds.includes(relationship.sourceId)
+          this.getSourceType(relationship) === contentType &&
+          this.getSourceId(relationship) &&
+          this.getSourceId(relationship) && !itemIds.includes(this.getSourceId(relationship) || '')
         ) {
           errors.push({
-            path: `relationship.${relationship.id}.sourceId`,
-            message: `Relationship references non-existent ${contentType} with ID "${relationship.sourceId}"`,
+            path: `relationship.${this.getItemId(relationship)}.sourceId`,
+            message: `Relationship references non-existent ${contentType} with ID "${this.getSourceId(relationship)}"`,
             code: 'DANGLING_REFERENCE'
           });
         }
         
         if (
-          relationship.targetType === contentType &&
-          relationship.targetId &&
-          !itemIds.includes(relationship.targetId)
+          this.getTargetType(relationship) === contentType &&
+          this.getTargetId(relationship) &&
+          this.getTargetId(relationship) && !itemIds.includes(this.getTargetId(relationship) || '')
         ) {
           errors.push({
-            path: `relationship.${relationship.id}.targetId`,
-            message: `Relationship references non-existent ${contentType} with ID "${relationship.targetId}"`,
+            path: `relationship.${this.getItemId(relationship)}.targetId`,
+            message: `Relationship references non-existent ${contentType} with ID "${this.getTargetId(relationship)}"`,
             code: 'DANGLING_REFERENCE'
           });
         }
@@ -393,7 +454,7 @@ export class ValidationEngine {
     
     try {
       const relationships = await this.repository.listContent('relationship');
-      const graph = this.buildRelationshipGraph(relationships);
+      const graph = this.buildRelationshipGraph(relationships.map(r => this.convertToValidationFormat(r)));
       const cycles = this.detectCycles(graph);
       
       for (const cycle of cycles) {
