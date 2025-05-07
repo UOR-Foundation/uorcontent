@@ -2,16 +2,22 @@ import { ConceptManager } from '../managers/concept-manager';
 import { ResourceManager } from '../managers/resource-manager';
 import { TopicManager } from '../managers/topic-manager';
 import { PredicateManager } from '../managers/predicate-manager';
-import { RelationshipManager } from '../relationship-management/relationship-manager';
+import { RelationshipManager, RelationshipType } from '../relationship-management/relationship-manager';
 import { EventEmitter } from '../utils/events';
 import { 
+  UORContentItem,
+  Concept,
+  Resource,
+  Topic,
+  Predicate
+} from '../models/types';
+import { 
   ContentType, 
-  ContentItem, 
   ContentIdentifier, 
   RepositoryStatistics, 
   HealthStatus,
   TransactionOptions
-} from '../types';
+} from '../types.js';
 
 /**
  * Content Repository API providing a unified interface for all content types
@@ -25,7 +31,7 @@ export class ContentRepository {
   private relationshipManager: RelationshipManager;
   private eventEmitter: EventEmitter;
   private transactionInProgress: boolean = false;
-  private transactionChanges: Map<string, ContentItem[]> = new Map();
+  private transactionChanges: Map<string, UORContentItem[]> = new Map();
 
   /**
    * Creates a new ContentRepository instance
@@ -56,7 +62,7 @@ export class ContentRepository {
    * @returns Manager for the content type
    * @throws Error if content type is not supported
    */
-  private getManagerForType(contentType: ContentType): any {
+  private getManagerForType(contentType: ContentType): unknown {
     switch (contentType) {
       case 'concept':
         return this.conceptManager;
@@ -80,32 +86,54 @@ export class ContentRepository {
    * @returns Created content item
    * @throws Error if content type is not supported or content is invalid
    */
-  public async createContent(contentType: ContentType, content: ContentItem): Promise<ContentItem> {
+  public async createContent(contentType: ContentType, content: UORContentItem): Promise<UORContentItem> {
     const manager = this.getManagerForType(contentType);
-    let result: ContentItem;
+    let result: UORContentItem = {} as UORContentItem; // Initialize with empty object
 
     if (this.transactionInProgress) {
       if (!this.transactionChanges.has('create')) {
         this.transactionChanges.set('create', []);
       }
-      this.transactionChanges.get('create')?.push({ type: contentType, ...content });
-      result = content;
+      const contentWithType = { ...content };
+      this.transactionChanges.get('create')?.push(contentWithType);
+      result = contentWithType;
     } else {
       if (contentType === 'relationship') {
-        result = await manager.createRelationship(
-          content.subject,
-          content.predicate,
-          content.target,
-          content.metadata
+        const relationshipContent = content as unknown as {
+          sourceId: string;
+          predicateId: string;
+          targetId: string;
+        };
+        
+        const relationship = await (manager as RelationshipManager).createRelationship(
+          relationshipContent.sourceId,
+          relationshipContent.targetId,
+          relationshipContent.predicateId
         );
-      } else {
-        result = await manager.create(content);
+        
+        result = {
+          '@context': 'https://schema.org',
+          '@type': 'Relationship',
+          '@id': relationship.id,
+          'name': `Relationship ${relationship.id}`,
+          'sourceId': relationship.sourceId,
+          'predicateId': relationship.predicateId,
+          'targetId': relationship.targetId
+        } as unknown as UORContentItem;
+      } else if (contentType === 'concept') {
+        result = await (manager as ConceptManager).create(content as Concept);
+      } else if (contentType === 'resource') {
+        result = await (manager as ResourceManager).create(content as Resource);
+      } else if (contentType === 'topic') {
+        result = await (manager as TopicManager).create(content as Topic);
+      } else if (contentType === 'predicate') {
+        result = await (manager as PredicateManager).create(content as Predicate);
       }
 
-      this.eventEmitter.emit('content.created', { type: contentType, content: result });
+      this.eventEmitter.emit('content.created', { '@type': contentType, content: result });
     }
 
-    return result;
+    return result as UORContentItem;
   }
 
   /**
@@ -115,14 +143,35 @@ export class ContentRepository {
    * @returns Content item or null if not found
    * @throws Error if content type is not supported
    */
-  public async readContent(contentType: ContentType, id: ContentIdentifier): Promise<ContentItem | null> {
+  public async readContent(contentType: ContentType, id: ContentIdentifier): Promise<UORContentItem | null> {
     const manager = this.getManagerForType(contentType);
-    let result: ContentItem | null;
+    let result: UORContentItem | null;
 
     if (contentType === 'relationship') {
-      result = await manager.getRelationship(id);
+      const relationship = await (manager as RelationshipManager).getRelationship(id);
+      if (relationship) {
+        result = {
+          '@context': 'https://schema.org',
+          '@type': 'Relationship',
+          '@id': relationship.id,
+          'name': `Relationship ${relationship.id}`,
+          'sourceId': relationship.sourceId,
+          'predicateId': relationship.predicateId,
+          'targetId': relationship.targetId
+        } as unknown as UORContentItem;
+      } else {
+        result = null;
+      }
+    } else if (contentType === 'concept') {
+      result = await (manager as ConceptManager).read(id);
+    } else if (contentType === 'resource') {
+      result = await (manager as ResourceManager).read(id);
+    } else if (contentType === 'topic') {
+      result = await (manager as TopicManager).read(id);
+    } else if (contentType === 'predicate') {
+      result = await (manager as PredicateManager).read(id);
     } else {
-      result = await manager.get(id);
+      result = null;
     }
 
     if (result) {
@@ -143,32 +192,61 @@ export class ContentRepository {
   public async updateContent(
     contentType: ContentType, 
     id: ContentIdentifier, 
-    content: ContentItem
-  ): Promise<ContentItem> {
+    content: UORContentItem
+  ): Promise<UORContentItem> {
     const manager = this.getManagerForType(contentType);
-    let result: ContentItem;
+    let result: UORContentItem;
 
     if (this.transactionInProgress) {
       if (!this.transactionChanges.has('update')) {
         this.transactionChanges.set('update', []);
       }
+      const contentWithType = { ...content };
       this.transactionChanges.get('update')?.push({ 
-        type: contentType, 
-        id, 
-        ...content 
-      });
-      result = content;
+        '@id': id,
+        ...contentWithType,
+        '@type': contentType // Ensure @type is set correctly
+      } as unknown as UORContentItem);
+      result = contentWithType;
     } else {
       if (contentType === 'relationship') {
-        result = await manager.updateRelationship(
+        const relationshipContent = content as unknown as Partial<Omit<Predicate, '@id' | '@type' | 'subjectOf' | 'targetCollection'>>;
+        const relationship = await (manager as RelationshipManager).updateRelationship(
           id,
-          content.subject,
-          content.predicate,
-          content.target,
-          content.metadata
+          relationshipContent
         );
+        
+        if (relationship) {
+          result = {
+            '@context': 'https://schema.org',
+            '@type': 'Relationship',
+            '@id': relationship.id,
+            'name': `Relationship ${relationship.id}`,
+            'sourceId': relationship.sourceId,
+            'predicateId': relationship.predicateId,
+            'targetId': relationship.targetId
+          } as unknown as UORContentItem;
+        } else {
+          result = null as unknown as UORContentItem;
+        }
+      } else if (contentType === 'concept') {
+        const conceptContent = content as unknown as Concept;
+        const updatedConcept = await (manager as ConceptManager).update(id, conceptContent);
+        result = updatedConcept as UORContentItem;
+      } else if (contentType === 'resource') {
+        const resourceContent = content as unknown as Resource;
+        const updatedResource = await (manager as ResourceManager).update(id, resourceContent);
+        result = updatedResource as UORContentItem;
+      } else if (contentType === 'topic') {
+        const topicContent = content as unknown as Topic;
+        const updatedTopic = await (manager as TopicManager).update(id, topicContent);
+        result = updatedTopic as UORContentItem;
+      } else if (contentType === 'predicate') {
+        const predicateContent = content as unknown as Predicate;
+        const updatedPredicate = await (manager as PredicateManager).update(id, predicateContent);
+        result = updatedPredicate as UORContentItem;
       } else {
-        result = await manager.update(id, content);
+        result = null as unknown as UORContentItem;
       }
 
       this.eventEmitter.emit('content.updated', { 
@@ -190,22 +268,28 @@ export class ContentRepository {
    */
   public async deleteContent(contentType: ContentType, id: ContentIdentifier): Promise<boolean> {
     const manager = this.getManagerForType(contentType);
-    let result: boolean;
+    let result = false;
 
     if (this.transactionInProgress) {
       if (!this.transactionChanges.has('delete')) {
         this.transactionChanges.set('delete', []);
       }
       this.transactionChanges.get('delete')?.push({ 
-        type: contentType, 
-        id 
-      });
+        '@type': contentType, 
+        '@id': id 
+      } as unknown as UORContentItem);
       result = true;
     } else {
       if (contentType === 'relationship') {
-        result = await manager.deleteRelationship(id);
-      } else {
-        result = await manager.delete(id);
+        result = await (manager as RelationshipManager).deleteRelationship(id);
+      } else if (contentType === 'concept') {
+        result = await (manager as ConceptManager).delete(id);
+      } else if (contentType === 'resource') {
+        result = await (manager as ResourceManager).delete(id);
+      } else if (contentType === 'topic') {
+        result = await (manager as TopicManager).delete(id);
+      } else if (contentType === 'predicate') {
+        result = await (manager as PredicateManager).delete(id);
       }
 
       if (result) {
@@ -225,15 +309,47 @@ export class ContentRepository {
    */
   public async listContent(
     contentType: ContentType, 
-    options: { limit?: number; offset?: number; filter?: Record<string, any> } = {}
-  ): Promise<ContentItem[]> {
+    options: { limit?: number; offset?: number; filter?: Record<string, unknown> } = {}
+  ): Promise<UORContentItem[]> {
     const manager = this.getManagerForType(contentType);
-    let result: ContentItem[];
+    let result: UORContentItem[] = [];
 
     if (contentType === 'relationship') {
-      result = await manager.listRelationships(options);
-    } else {
-      result = await manager.list(options);
+      const relationshipFilter = options.filter ? {
+        sourceId: options.filter.sourceId as string,
+        targetId: options.filter.targetId as string,
+        type: options.filter.type as RelationshipType
+      } : undefined;
+      
+      const relationships = await (manager as RelationshipManager).listRelationships(relationshipFilter);
+      result = relationships.map(relationship => ({
+        '@context': 'https://schema.org',
+        '@type': 'Relationship',
+        '@id': relationship.id,
+        'name': `Relationship ${relationship.id}`,
+        'sourceId': relationship.sourceId,
+        'predicateId': relationship.predicateId,
+        'targetId': relationship.targetId
+      } as unknown as UORContentItem));
+    } else if (contentType === 'concept') {
+      const conceptFilter = options.filter ? {
+        name: options.filter.name as string,
+        termCode: options.filter.termCode as string,
+        inDefinedTermSet: options.filter.inDefinedTermSet as string,
+        properties: options.filter.properties as Record<string, unknown>
+      } : undefined;
+      
+      const concepts = await (manager as ConceptManager).list(conceptFilter);
+      result = concepts as unknown as UORContentItem[];
+    } else if (contentType === 'resource') {
+      const resources = await (manager as ResourceManager).list(options.filter as any);
+      result = resources as unknown as UORContentItem[];
+    } else if (contentType === 'topic') {
+      const topics = await (manager as TopicManager).list(options.filter as any);
+      result = topics as unknown as UORContentItem[];
+    } else if (contentType === 'predicate') {
+      const predicates = await (manager as PredicateManager).list(options.filter as any);
+      result = predicates as unknown as UORContentItem[];
     }
 
     this.eventEmitter.emit('content.listed', { type: contentType, count: result.length });
@@ -273,61 +389,98 @@ export class ContentRepository {
     try {
       if (this.transactionChanges.has('create')) {
         for (const item of this.transactionChanges.get('create') || []) {
-          const { type, ...content } = item;
+          const contentType = item['@type'] as ContentType;
           let result;
           
-          if (type === 'relationship') {
+          if (contentType === 'relationship') {
+            const relationshipContent = item as unknown as {
+              sourceId: string;
+              targetId: string;
+              predicateId: string;
+            };
+            
             result = await this.relationshipManager.createRelationship(
-              content.sourceId,
-              content.targetId,
-              content.predicateId
+              relationshipContent.sourceId,
+              relationshipContent.targetId,
+              relationshipContent.predicateId
             );
-          } else {
-            const manager = this.getManagerForType(type);
-            result = await manager.create(content);
+          } else if (contentType === 'concept') {
+            result = await (this.getManagerForType(contentType) as ConceptManager)
+              .create(item as unknown as Concept);
+          } else if (contentType === 'resource') {
+            result = await (this.getManagerForType(contentType) as ResourceManager)
+              .create(item as unknown as Resource);
+          } else if (contentType === 'topic') {
+            result = await (this.getManagerForType(contentType) as TopicManager)
+              .create(item as unknown as Topic);
+          } else if (contentType === 'predicate') {
+            result = await (this.getManagerForType(contentType) as PredicateManager)
+              .create(item as unknown as Predicate);
           }
           
-          results.push({ operation: 'create', type, result });
-          this.eventEmitter.emit('content.created', { type, content: result });
+          results.push({ operation: 'create', type: contentType, result });
+          this.eventEmitter.emit('content.created', { type: contentType, content: result });
         }
       }
 
       if (this.transactionChanges.has('update')) {
         for (const item of this.transactionChanges.get('update') || []) {
-          const { type, id, ...content } = item;
+          const contentType = item['@type'] as ContentType;
+          const contentId = item['@id'] as string;
           let result;
           
-          if (type === 'relationship') {
+          if (contentType === 'relationship') {
+            const relationshipContent = item as unknown as {
+              sourceId?: string;
+              targetId?: string;
+              predicateId?: string;
+            };
+            
             result = await this.relationshipManager.updateRelationship(
-              id,
-              content
+              contentId,
+              relationshipContent as unknown as Partial<Omit<Predicate, "@id" | "@type" | "subjectOf" | "targetCollection">>
             );
-          } else {
-            const manager = this.getManagerForType(type);
-            result = await manager.update(id, content);
+          } else if (contentType === 'concept') {
+            result = await (this.getManagerForType(contentType) as ConceptManager)
+              .update(contentId, item as unknown as Concept);
+          } else if (contentType === 'resource') {
+            result = await (this.getManagerForType(contentType) as ResourceManager)
+              .update(contentId, item as unknown as Resource);
+          } else if (contentType === 'topic') {
+            result = await (this.getManagerForType(contentType) as TopicManager)
+              .update(contentId, item as unknown as Topic);
+          } else if (contentType === 'predicate') {
+            result = await (this.getManagerForType(contentType) as PredicateManager)
+              .update(contentId, item as unknown as Predicate);
           }
           
-          results.push({ operation: 'update', type, id, result });
-          this.eventEmitter.emit('content.updated', { type, id, content: result });
+          results.push({ operation: 'update', type: contentType, id: contentId, result });
+          this.eventEmitter.emit('content.updated', { type: contentType, id: contentId, content: result });
         }
       }
 
       if (this.transactionChanges.has('delete')) {
         for (const item of this.transactionChanges.get('delete') || []) {
-          const { type, id } = item;
+          const contentType = item['@type'] as ContentType;
+          const contentId = item['@id'] as string;
           let result;
           
-          if (type === 'relationship') {
-            result = await this.relationshipManager.deleteRelationship(id);
-          } else {
-            const manager = this.getManagerForType(type);
-            result = await manager.delete(id);
+          if (contentType === 'relationship') {
+            result = await this.relationshipManager.deleteRelationship(contentId);
+          } else if (contentType === 'concept') {
+            result = await (this.getManagerForType(contentType) as ConceptManager).delete(contentId);
+          } else if (contentType === 'resource') {
+            result = await (this.getManagerForType(contentType) as ResourceManager).delete(contentId);
+          } else if (contentType === 'topic') {
+            result = await (this.getManagerForType(contentType) as TopicManager).delete(contentId);
+          } else if (contentType === 'predicate') {
+            result = await (this.getManagerForType(contentType) as PredicateManager).delete(contentId);
           }
           
-          results.push({ operation: 'delete', type, id, result });
+          results.push({ operation: 'delete', type: contentType, id: contentId, result });
           
           if (result) {
-            this.eventEmitter.emit('content.deleted', { type, id });
+            this.eventEmitter.emit('content.deleted', { type: contentType, id: contentId });
           }
         }
       }
@@ -485,7 +638,7 @@ export class ContentRepository {
     }
 
     const healthStatus: HealthStatus = {
-      status,
+      status: status as 'healthy' | 'degraded' | 'unhealthy',
       issues: issues.length > 0 ? issues : undefined,
       timestamp: new Date(),
       responseTime: Date.now() - startTime
