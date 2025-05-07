@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "name": "Test Predicate",
+  "description": "A test predicate for unit testing",
+  "identifier": "UOR-P-001-test-predicate",
+  "value": "test"
+}

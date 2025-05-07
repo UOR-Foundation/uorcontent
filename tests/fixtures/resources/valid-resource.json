@@ -1,0 +1,7 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Test Resource",
+  "description": "A test resource for unit testing",
+  "identifier": "UOR-R-001-test-resource"
+}

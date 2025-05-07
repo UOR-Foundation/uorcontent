@@ -91,6 +91,17 @@
         "auditor": "in_progress",
         "actions": "pending"
       }
+    },
+    "17": {
+      "title": "Comprehensive Testing Suite",
+      "stage": "specification",
+      "roles": {
+        "pm": "in_progress",
+        "qa": "pending",
+        "feature": "pending",
+        "auditor": "pending",
+        "actions": "pending"
+      }
     }
   }
 }
