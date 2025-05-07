@@ -11,7 +11,6 @@ import { ImportExportService } from '../import-export/import-export-service';
 import { ContentType, ContentItem, ValidationOptions, ImportOptions, ExportOptions } from '../types';
 import * as readline from 'readline';
 import * as fs from 'fs';
-import * as path from 'path';
 
 /**
  * CLI Interface
@@ -682,9 +681,9 @@ export class CLIInterface {
   /**
    * Parses command-line arguments and executes commands
    * @param args Command-line arguments
-   * @returns Promise that resolves when execution is complete
+   * @returns Promise that resolves with the Command object
    */
-  public async parse(args: string[]): Promise<void> {
+  public async parse(args: string[]): Promise<Command> {
     return this.program.parseAsync(args);
   }
 }

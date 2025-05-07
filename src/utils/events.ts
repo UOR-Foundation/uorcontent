@@ -4,14 +4,14 @@
  */
 
 export class EventEmitter {
-  private events: Map<string, Array<(...args: any[]) => void>> = new Map();
+  private events: Map<string, Array<(...args: unknown[]) => void>> = new Map();
 
   /**
    * Register an event listener
    * @param event Event name
    * @param listener Event listener function
    */
-  public on(event: string, listener: (...args: any[]) => void): void {
+  public on(event: string, listener: (...args: unknown[]) => void): void {
     if (!this.events.has(event)) {
       this.events.set(event, []);
     }
@@ -23,7 +23,7 @@ export class EventEmitter {
    * @param event Event name
    * @param listener Event listener function
    */
-  public off(event: string, listener: (...args: any[]) => void): void {
+  public off(event: string, listener: (...args: unknown[]) => void): void {
     const listeners = this.events.get(event);
     if (!listeners) return;
 
@@ -38,7 +38,7 @@ export class EventEmitter {
    * @param event Event name
    * @param args Event arguments
    */
-  public emit(event: string, ...args: any[]): void {
+  public emit(event: string, ...args: unknown[]): void {
     const listeners = this.events.get(event);
     if (!listeners) return;
 
@@ -56,8 +56,8 @@ export class EventEmitter {
    * @param event Event name
    * @param listener Event listener function
    */
-  public once(event: string, listener: (...args: any[]) => void): void {
-    const onceListener = (...args: any[]): void => {
+  public once(event: string, listener: (...args: unknown[]) => void): void {
+    const onceListener = (...args: unknown[]): void => {
       this.off(event, onceListener);
       listener(...args);
     };
@@ -81,7 +81,7 @@ export class EventEmitter {
    * @param event Event name
    * @returns Array of listeners
    */
-  public listeners(event: string): Array<(...args: any[]) => void> {
+  public listeners(event: string): Array<(...args: unknown[]) => void> {
     return this.events.get(event) || [];
   }
 }

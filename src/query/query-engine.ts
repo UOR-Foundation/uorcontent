@@ -11,7 +11,7 @@ import { ContentRepository } from '../repository/content-repository';
  */
 export interface QueryOptions {
   contentTypes?: ContentType[];
-  filter?: Record<string, any>;
+  filter?: Record<string, unknown>;
   fullText?: string;
   semanticQuery?: string;
   limit?: number;
@@ -319,7 +319,7 @@ export class QueryEngine {
   private getItemText(item: ContentItem): string {
     const textParts: string[] = [];
     
-    for (const [field, value] of Object.entries(item)) {
+    for (const [, value] of Object.entries(item)) {
       if (typeof value === 'string') {
         textParts.push(value);
       } else if (typeof value === 'object' && value !== null) {
@@ -339,16 +339,16 @@ export class QueryEngine {
    * @param field Field name (supports dot notation for nested fields)
    * @returns Field value
    */
-  private getFieldValue(item: ContentItem, field: string): any {
+  private getFieldValue(item: ContentItem, field: string): unknown {
     const parts = field.split('.');
-    let value: any = item;
+    let value: unknown = item;
     
     for (const part of parts) {
       if (value === undefined || value === null) {
         return undefined;
       }
       
-      value = value[part];
+      value = (value as Record<string, unknown>)[part];
     }
     
     return value;

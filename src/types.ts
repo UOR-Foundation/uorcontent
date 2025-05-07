@@ -15,7 +15,7 @@ export interface ContentItem {
   id?: ContentIdentifier;
   name?: string;
   description?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 /**
@@ -51,7 +51,7 @@ export interface TransactionOptions {
 export interface QueryOptions {
   limit?: number;
   offset?: number;
-  filter?: Record<string, any>;
+  filter?: Record<string, unknown>;
   sort?: {
     field: string;
     direction: 'asc' | 'desc';
@@ -114,7 +114,7 @@ export interface ImportOptions {
 export interface ExportOptions {
   format?: 'json' | 'markdown' | 'html';
   includeTypes?: ContentType[];
-  filter?: Record<string, any>;
+  filter?: Record<string, unknown>;
 }
 
 /**
@@ -136,5 +136,5 @@ export interface ImportResult {
 export interface ExportResult {
   success: boolean;
   exported: number;
-  data: string | Record<string, any>;
+  data: string | Record<string, unknown>;
 }

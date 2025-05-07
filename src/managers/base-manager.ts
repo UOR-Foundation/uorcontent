@@ -38,7 +38,7 @@ export interface BaseManager<T extends ContentItem> {
    * @param options List options (pagination, filtering)
    * @returns List of content items
    */
-  list(options?: { limit?: number; offset?: number; filter?: Record<string, any> }): Promise<T[]>;
+  list(options?: { limit?: number; offset?: number; filter?: Record<string, unknown> }): Promise<T[]>;
 
   /**
    * Counts content items

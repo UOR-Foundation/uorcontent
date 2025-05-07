@@ -34,7 +34,7 @@ export class ImportExportService {
    * @returns Import result
    */
   public async importFromJson(
-    json: string | Record<string, any>,
+    json: string | Record<string, unknown>,
     options: ImportOptions = {}
   ): Promise<ImportResult> {
     try {
