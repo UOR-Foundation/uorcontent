@@ -13,8 +13,6 @@ import { ResourceManager } from '../managers/resource-manager';
 import { TopicManager } from '../managers/topic-manager';
 import { 
   Predicate, 
-  Concept, 
-  Resource, 
   Topic, 
   UORContentItem, 
   PartialPredicate 
