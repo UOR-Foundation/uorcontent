@@ -32,7 +32,7 @@ jobs:
     
     - name: Lint and auto-format
       run: |
-        npm run lint -- --fix || true
+        npm run lint -- --fix
         npm run lint -- --max-warnings=0
     
     - name: Run tests
