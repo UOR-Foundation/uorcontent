@@ -58,32 +58,37 @@ export class MCPServer {
     
     this.jsonRPCHandler.registerMethod('content.list', async (params) => {
       const { page = 1, limit = 10, type, name } = params || {};
-      return contentService.getAllContent(page, limit, type, name);
+      return contentService.getAllContent(
+        Number(page), 
+        Number(limit), 
+        type as string | undefined, 
+        name as string | undefined
+      ) as unknown as Record<string, unknown>;
     });
     
     this.jsonRPCHandler.registerMethod('content.get', async (params) => {
       const { id } = params || {};
       if (!id) throw new Error('Content ID is required');
-      return contentService.getContentById(id);
+      return contentService.getContentById(id as string) as unknown as Record<string, unknown>;
     });
     
     this.jsonRPCHandler.registerMethod('content.create', async (params) => {
       const { content } = params || {};
       if (!content) throw new Error('Content is required');
-      return contentService.createContent(content);
+      return contentService.createContent(content as any) as unknown as Record<string, unknown>;
     });
     
     this.jsonRPCHandler.registerMethod('content.update', async (params) => {
       const { id, content } = params || {};
       if (!id) throw new Error('Content ID is required');
       if (!content) throw new Error('Content is required');
-      return contentService.updateContent(id, content);
+      return contentService.updateContent(id as string, content as any) as unknown as Record<string, unknown>;
     });
     
     this.jsonRPCHandler.registerMethod('content.delete', async (params) => {
       const { id } = params || {};
       if (!id) throw new Error('Content ID is required');
-      return contentService.deleteContent(id);
+      return { success: await contentService.deleteContent(id as string) } as unknown as Record<string, unknown>;
     });
   }
 
