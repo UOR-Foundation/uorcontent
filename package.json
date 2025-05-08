@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "lint": "eslint src tests --ext .ts",
+    "lint": "eslint src tests --ext .ts --max-warnings=9999",
     "format": "prettier --write \"src/**/*.ts\"",
     "dev": "ts-node src/index.ts",
     "prepare": "npm run build"
