@@ -73,62 +73,56 @@ export class MCPSchemaValidator {
     }
 
     try {
+      
       const requestSchema = {
         type: 'object',
         properties: {
-          '@context': { type: 'string' },
-          '@type': { type: 'string' },
-          '@id': { type: 'string' },
-          'name': { type: 'string' },
-          'description': { type: 'string' }
+          jsonrpc: { type: 'string', enum: ['2.0'] },
+          id: { type: ['string', 'number'] },
+          method: { type: 'string' },
+          params: { type: 'object', additionalProperties: true }
         },
-        additionalProperties: true
+        required: ['jsonrpc', 'id', 'method'],
+        additionalProperties: false
       };
-
-      const endpoints = [
-        { method: 'GET', path: '/api/content' },
-        { method: 'GET', path: '/api/content/:id' },
-        { method: 'POST', path: '/api/content' },
-        { method: 'PUT', path: '/api/content/:id' },
-        { method: 'PATCH', path: '/api/content/:id' },
-        { method: 'DELETE', path: '/api/content/:id' },
-        { method: 'GET', path: '/api/concepts' },
-        { method: 'GET', path: '/api/concepts/:id' },
-        { method: 'POST', path: '/api/concepts' },
-        { method: 'PUT', path: '/api/concepts/:id' },
-        { method: 'PATCH', path: '/api/concepts/:id' },
-        { method: 'DELETE', path: '/api/concepts/:id' },
-        { method: 'GET', path: '/api/predicates' },
-        { method: 'GET', path: '/api/predicates/:id' },
-        { method: 'POST', path: '/api/predicates' },
-        { method: 'PUT', path: '/api/predicates/:id' },
-        { method: 'PATCH', path: '/api/predicates/:id' },
-        { method: 'DELETE', path: '/api/predicates/:id' },
-        { method: 'GET', path: '/api/resources' },
-        { method: 'GET', path: '/api/resources/:id' },
-        { method: 'POST', path: '/api/resources' },
-        { method: 'PUT', path: '/api/resources/:id' },
-        { method: 'PATCH', path: '/api/resources/:id' },
-        { method: 'DELETE', path: '/api/resources/:id' },
-        { method: 'GET', path: '/api/topics' },
-        { method: 'GET', path: '/api/topics/:id' },
-        { method: 'POST', path: '/api/topics' },
-        { method: 'PUT', path: '/api/topics/:id' },
-        { method: 'PATCH', path: '/api/topics/:id' },
-        { method: 'DELETE', path: '/api/topics/:id' },
-        { method: 'GET', path: '/api/search' },
-        { method: 'GET', path: '/api/search/advanced' },
-        { method: 'GET', path: '/api/search/by-type/:type' },
-        { method: 'GET', path: '/api/search/by-property' }
-      ];
-
-      for (const endpoint of endpoints) {
-        const key = `${endpoint.method}:${endpoint.path}`;
-        const validator = this.ajv.compile(requestSchema);
-        this.validators.set(key, validator);
-      }
+      
+      const responseSchema = {
+        type: 'object',
+        properties: {
+          jsonrpc: { type: 'string', enum: ['2.0'] },
+          id: { type: ['string', 'number'] },
+          result: { type: 'object', additionalProperties: true }
+        },
+        required: ['jsonrpc', 'id', 'result'],
+        additionalProperties: false
+      };
+      
+      const errorSchema = {
+        type: 'object',
+        properties: {
+          jsonrpc: { type: 'string', enum: ['2.0'] },
+          id: { type: ['string', 'number'] },
+          error: {
+            type: 'object',
+            properties: {
+              code: { type: 'number' },
+              message: { type: 'string' },
+              data: { type: 'object', additionalProperties: true }
+            },
+            required: ['code', 'message'],
+            additionalProperties: false
+          }
+        },
+        required: ['jsonrpc', 'id', 'error'],
+        additionalProperties: false
+      };
+      
+      this.validators.set('request', this.ajv.compile(requestSchema));
+      this.validators.set('response', this.ajv.compile(responseSchema));
+      this.validators.set('error', this.ajv.compile(errorSchema));
 
       this.initialized = true;
+      console.log('MCP schema validator initialized with JSON-RPC validators');
     } catch (error: unknown) {
       const errorMessage = error instanceof Error ? error.message : String(error);
       throw new SchemaError(`Failed to initialize MCP schema validator: ${errorMessage}`);
@@ -152,44 +146,14 @@ export class MCPSchemaValidator {
       await this.initialize();
     }
 
-    let key = `${method}:${endpoint}`;
-    let validator = this.validators.get(key);
-
-    if (!validator) {
-      const endpointParts = endpoint.split('/').filter(Boolean);
-      
-      for (const [registeredKey, registeredValidator] of this.validators.entries()) {
-        const [registeredMethod, registeredPath] = registeredKey.split(':');
-        
-        if (registeredMethod !== method) continue;
-        
-        const registeredParts = registeredPath.split('/').filter(Boolean);
-        
-        if (registeredParts.length !== endpointParts.length) continue;
-        
-        let matches = true;
-        for (let i = 0; i < registeredParts.length; i++) {
-          if (registeredParts[i].startsWith(':') || registeredParts[i] === endpointParts[i]) {
-            continue;
-          }
-          matches = false;
-          break;
-        }
-        
-        if (matches) {
-          validator = registeredValidator;
-          key = registeredKey;
-          break;
-        }
-      }
-    }
-
-    if (!validator) {
-      console.warn(`No validator found for ${key}`);
+    if (method === 'GET') {
       return { valid: true };
     }
 
-    if (method === 'GET') {
+    const validator = this.validators.get('request');
+    
+    if (!validator) {
+      console.warn(`Request validator not found`);
       return { valid: true };
     }
 

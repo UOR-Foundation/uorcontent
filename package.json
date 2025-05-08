@@ -7,10 +7,15 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "lint": "eslint src tests --ext .ts --max-warnings=9999",
-    "format": "prettier --write \"src/**/*.ts\"",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src tests --ext .ts --max-warnings=0",
+    "lint:fix": "eslint src tests --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
     "dev": "ts-node src/index.ts",
     "prepare": "npm run build",
+    "stone": "stone",
+    "validate": "npm run lint && npm run test",
     "dev:frontend": "cd frontend && npm run dev",
     "build:frontend": "cd frontend && npm run build",
     "start:frontend": "cd frontend && npm run start"
