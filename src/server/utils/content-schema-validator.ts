@@ -98,7 +98,8 @@ export class ContentSchemaValidator {
         const schema = {
           type: 'object',
           properties,
-          additionalProperties: true
+          additionalProperties: true,
+          required: ['@context', '@type', 'name']
         };
         
         const validator = this.ajv.compile(schema);
