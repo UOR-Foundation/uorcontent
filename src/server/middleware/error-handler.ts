@@ -6,7 +6,7 @@
  * errors for debugging purposes.
  */
 
-import { Request, Response, NextFunction } from 'express';
+import { Request, Response } from 'express';
 import { ValidationError, NotFoundError, AuthorizationError } from '../types/errors';
 
 /**
