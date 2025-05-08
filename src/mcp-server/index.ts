@@ -5,12 +5,18 @@
  * for AI assistants to access UOR Framework content through the Model Context Protocol.
  */
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { Server } = require('@modelcontextprotocol/sdk/server');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { StdioServerTransport } = require('@modelcontextprotocol/sdk/server/stdio');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { StreamableHTTPServerTransport } = require('@modelcontextprotocol/sdk/server/streamableHttp');
+import { UORService } from './services/uor-service';
+import { UORResourceManager } from './services/resource-manager';
+import { UORToolsManager } from './services/tools-manager';
+import { MCPValidationService } from './services/validation-service';
+
+import * as mcpServer from '@modelcontextprotocol/sdk/server';
+import * as mcpStdio from '@modelcontextprotocol/sdk/server/stdio';
+import * as mcpHttp from '@modelcontextprotocol/sdk/server/streamableHttp';
+
+const Server = mcpServer.Server;
+const StdioServerTransport = mcpStdio.StdioServerTransport;
+const StreamableHTTPServerTransport = mcpHttp.StreamableHTTPServerTransport;
 
 const ListResourcesRequestSchema = { method: 'resources/list' };
 const ListResourceTemplatesRequestSchema = { method: 'resources/listTemplates' };
@@ -30,10 +36,6 @@ class McpError extends Error {
     this.name = 'McpError';
   }
 }
-import { UORService } from './services/uor-service';
-import { UORResourceManager } from './services/resource-manager';
-import { UORToolsManager } from './services/tools-manager';
-import { MCPValidationService } from './services/validation-service';
 
 /**
  * UOR MCP Server Configuration
@@ -78,7 +80,7 @@ export interface UORMCPServerConfig {
  * to interact with UOR concepts, predicates, topics, and resources.
  */
 export class UORMCPServer {
-  private server: ReturnType<typeof Server>;
+  private server: InstanceType<typeof Server>;
   private uorService: UORService;
   private resourceManager: UORResourceManager;
   private toolsManager: UORToolsManager;
@@ -146,9 +148,10 @@ export class UORMCPServer {
       }
     });
 
-    this.server.setRequestHandler(ReadResourceRequestSchema, async (request: { params: { uri: string } }): Promise<{ contents: unknown[] }> => {
+    this.server.setRequestHandler(ReadResourceRequestSchema, async (request: unknown): Promise<{ contents: unknown[] }> => {
       try {
-        const uri = request.params.uri;
+        const typedRequest = request as { params: { uri: string } };
+        const uri = typedRequest.params.uri;
         const valid = this.validationService.validateResourceUri(uri);
         
         if (!valid) {
@@ -181,19 +184,21 @@ export class UORMCPServer {
       }
     });
 
-    this.server.setRequestHandler(CallToolRequestSchema, async (request: { 
-      params: { 
-        name: string; 
-        arguments?: Record<string, unknown> 
-      } 
-    }): Promise<{ 
+    this.server.setRequestHandler(CallToolRequestSchema, async (request: unknown): Promise<{ 
       content: Array<{ type: string; text: string }>; 
       isError?: boolean 
     }> => {
       try {
+        const typedRequest = request as { 
+          params: { 
+            name: string; 
+            arguments?: Record<string, unknown> 
+          } 
+        };
+        
         const result = await this.toolsManager.callTool(
-          request.params.name, 
-          request.params.arguments || {}
+          typedRequest.params.name, 
+          typedRequest.params.arguments || {}
         );
         
         return {
@@ -260,7 +265,7 @@ export class UORMCPServer {
 /**
  * If this file is executed directly, start the server
  */
-if (require.main === module) {
+if (typeof require !== 'undefined' && require.main === module) {
   const server = new UORMCPServer();
   server.start().catch(console.error);
 }
