@@ -1,0 +1,46 @@
+{
+  "app": {
+    "title": "UOR Inhaltsverwaltung",
+    "description": "UOR Inhaltsverwaltungsclient zur Verwaltung von UOR-Inhalten"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "concepts": "Konzepte",
+    "predicates": "Prädikate",
+    "resources": "Ressourcen",
+    "topics": "Themen",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "logout": "Abmelden"
+  },
+  "actions": {
+    "create": "Erstellen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "sort": "Sortieren",
+    "import": "Importieren",
+    "export": "Exportieren"
+  },
+  "language": {
+    "en": "Englisch",
+    "es": "Spanisch",
+    "fr": "Französisch",
+    "de": "Deutsch",
+    "ar": "Arabisch"
+  },
+  "accessibility": {
+    "skipToContent": "Zum Hauptinhalt springen",
+    "darkMode": "Dunkelmodus umschalten",
+    "language": "Sprache ändern"
+  },
+  "errors": {
+    "general": "Ein Fehler ist aufgetreten",
+    "notFound": "Seite nicht gefunden",
+    "unauthorized": "Unbefugter Zugriff",
+    "offline": "Sie sind offline"
+  }
+}
