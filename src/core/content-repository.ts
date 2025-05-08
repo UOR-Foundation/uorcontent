@@ -221,8 +221,21 @@ export class ContentRepository {
    */
   private async updateIndex(type: string, content: UORContentItem): Promise<void> {
     const indexPath = path.join(this.contentDir, `${type}s-index.json`);
-    const indexContent = await this.fileSystem.readFile(indexPath);
-    const index = JSON.parse(indexContent);
+    let index;
+    
+    try {
+      const indexContent = await this.fileSystem.readFile(indexPath);
+      index = JSON.parse(indexContent);
+    } catch (error) {
+      index = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': `UOR ${type.charAt(0).toUpperCase() + type.slice(1)}s`,
+        'description': `Index of UOR ${type} items`,
+        'numberOfItems': 0,
+        'itemListElement': []
+      };
+    }
 
     const itemIndex = index.itemListElement.findIndex(
       (item: { item: { '@id': string } }) => item.item['@id'] === content['@id']
@@ -256,8 +269,14 @@ export class ContentRepository {
    */
   private async removeFromIndex(type: string, id: string): Promise<void> {
     const indexPath = path.join(this.contentDir, `${type}s-index.json`);
-    const indexContent = await this.fileSystem.readFile(indexPath);
-    const index = JSON.parse(indexContent);
+    let index;
+    
+    try {
+      const indexContent = await this.fileSystem.readFile(indexPath);
+      index = JSON.parse(indexContent);
+    } catch (error) {
+      return;
+    }
 
     const itemIndex = index.itemListElement.findIndex(
       (item: { item: { '@id': string } }) => item.item['@id'] === id
@@ -289,10 +308,16 @@ export class ContentRepository {
     const indices: Array<{ itemListElement: Array<{ item: UORContentItem }> }> = [];
 
     for (const type of types) {
-      const indexPath = path.join(this.contentDir, `${type}s-index.json`);
-      const indexContent = await this.fileSystem.readFile(indexPath);
-      const index = JSON.parse(indexContent);
-      indices.push(index);
+      try {
+        const indexPath = path.join(this.contentDir, `${type}s-index.json`);
+        const indexContent = await this.fileSystem.readFile(indexPath);
+        const index = JSON.parse(indexContent);
+        indices.push(index);
+      } catch (error) {
+        indices.push({
+          itemListElement: []
+        });
+      }
     }
 
     const masterIndex: {

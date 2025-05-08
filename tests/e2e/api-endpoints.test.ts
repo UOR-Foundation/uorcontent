@@ -19,8 +19,11 @@ describe('API Endpoints E2E Tests', () => {
     
     const mcpServer = new MCPServer(0);
     
-    const validator = await import('../../src/server/utils/mcp-schema-validator');
-    await validator.MCPSchemaValidator.getInstance().initialize();
+    const { MCPSchemaValidator } = require('../../src/server/utils/mcp-schema-validator');
+    const { ContentSchemaValidator } = require('../../src/server/utils/content-schema-validator');
+    
+    await MCPSchemaValidator.getInstance().initialize();
+    await ContentSchemaValidator.getInstance().initialize();
     
     server = mcpServer.getApp().listen(0);
   });

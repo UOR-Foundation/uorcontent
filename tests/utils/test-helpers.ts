@@ -21,12 +21,32 @@ export function setupTestEnvironment() {
     path.join(contentDir, 'concepts'),
     path.join(contentDir, 'predicates'),
     path.join(contentDir, 'resources'),
-    path.join(contentDir, 'topics'),
-    path.join(contentDir, 'indexes')
+    path.join(contentDir, 'topics')
   ];
   
   for (const dir of dirs) {
     fs.mkdirSync(dir, { recursive: true });
+  }
+  
+  const indexFiles = [
+    path.join(contentDir, 'index.json'),
+    path.join(contentDir, 'concepts-index.json'),
+    path.join(contentDir, 'predicates-index.json'),
+    path.join(contentDir, 'resources-index.json'),
+    path.join(contentDir, 'topics-index.json')
+  ];
+  
+  const emptyIndex = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'name': 'UOR Content Index',
+    'description': 'Index of UOR content',
+    'numberOfItems': 0,
+    'itemListElement': []
+  };
+  
+  for (const indexFile of indexFiles) {
+    fs.writeFileSync(indexFile, JSON.stringify(emptyIndex, null, 2), 'utf-8');
   }
   
   return {
