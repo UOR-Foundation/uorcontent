@@ -7,6 +7,7 @@
 import axios from 'axios';
 type AxiosInstance = ReturnType<typeof axios.create>;
 import { UORConcept, UORPredicate, UORTopic, UORResource } from '../../models/uor-types';
+import { logger } from '../utils/logger';
 
 interface ListResponse<T> {
   itemListElement?: Array<{item: T}>;
@@ -45,7 +46,7 @@ export class UORService {
       const response = await this.axiosInstance.get<ListResponse<UORConcept>>('/concepts');
       return response.data?.itemListElement?.map(item => item.item) || [];
     } catch (error) {
-      console.error('Error getting concepts:', error);
+      logger.error('Error getting concepts:', error);
       throw new Error('Failed to get concepts');
     }
   }
@@ -61,7 +62,7 @@ export class UORService {
       const response = await this.axiosInstance.get<UORConcept>(`/concepts/${id}`);
       return response.data as UORConcept;
     } catch (error) {
-      console.error('Error getting concept:', error);
+      logger.error('Error getting concept:', error);
       throw new Error(`Failed to get concept with ID ${id}`);
     }
   }
@@ -76,7 +77,7 @@ export class UORService {
       const response = await this.axiosInstance.get<ListResponse<UORPredicate>>('/predicates');
       return response.data?.itemListElement?.map(item => item.item) || [];
     } catch (error) {
-      console.error('Error getting predicates:', error);
+      logger.error('Error getting predicates:', error);
       throw new Error('Failed to get predicates');
     }
   }
@@ -92,7 +93,7 @@ export class UORService {
       const response = await this.axiosInstance.get<UORPredicate>(`/predicates/${id}`);
       return response.data as UORPredicate;
     } catch (error) {
-      console.error('Error getting predicate:', error);
+      logger.error('Error getting predicate:', error);
       throw new Error(`Failed to get predicate with ID ${id}`);
     }
   }
@@ -107,7 +108,7 @@ export class UORService {
       const response = await this.axiosInstance.get<ListResponse<UORTopic>>('/topics');
       return response.data?.itemListElement?.map(item => item.item) || [];
     } catch (error) {
-      console.error('Error getting topics:', error);
+      logger.error('Error getting topics:', error);
       throw new Error('Failed to get topics');
     }
   }
@@ -123,7 +124,7 @@ export class UORService {
       const response = await this.axiosInstance.get<UORTopic>(`/topics/${id}`);
       return response.data as UORTopic;
     } catch (error) {
-      console.error('Error getting topic:', error);
+      logger.error('Error getting topic:', error);
       throw new Error(`Failed to get topic with ID ${id}`);
     }
   }
@@ -138,7 +139,7 @@ export class UORService {
       const response = await this.axiosInstance.get<ListResponse<UORResource>>('/resources');
       return response.data?.itemListElement?.map(item => item.item) || [];
     } catch (error) {
-      console.error('Error getting resources:', error);
+      logger.error('Error getting resources:', error);
       throw new Error('Failed to get resources');
     }
   }
@@ -154,7 +155,7 @@ export class UORService {
       const response = await this.axiosInstance.get<UORResource>(`/resources/${id}`);
       return response.data as UORResource;
     } catch (error) {
-      console.error('Error getting resource:', error);
+      logger.error('Error getting resource:', error);
       throw new Error(`Failed to get resource with ID ${id}`);
     }
   }
@@ -178,7 +179,7 @@ export class UORService {
       });
       return response.data?.itemListElement?.map(item => item.item) || [];
     } catch (error) {
-      console.error('Error searching:', error);
+      logger.error('Error searching:', error);
       throw new Error('Failed to search');
     }
   }

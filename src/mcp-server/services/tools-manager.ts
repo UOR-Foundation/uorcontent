@@ -5,6 +5,7 @@
  */
 
 import { UORService } from './uor-service';
+import { logger } from '../utils/logger';
 
 interface Tool {
   name: string;
@@ -153,7 +154,7 @@ export class UORToolsManager {
           throw new Error(`Unknown tool: ${name}`);
       }
     } catch (error) {
-      console.error('Error calling tool:', error);
+      logger.error('Error calling tool:', error);
       throw new Error(`Failed to call tool: ${error instanceof Error ? error.message : String(error)}`);
     }
   }
@@ -176,7 +177,7 @@ export class UORToolsManager {
         ]
       };
     } catch (error) {
-      console.error('Error getting concept:', error);
+      logger.error('Error getting concept:', error);
       return {
         content: [
           {
@@ -207,7 +208,7 @@ export class UORToolsManager {
         ]
       };
     } catch (error) {
-      console.error('Error getting predicate:', error);
+      logger.error('Error getting predicate:', error);
       return {
         content: [
           {
@@ -238,7 +239,7 @@ export class UORToolsManager {
         ]
       };
     } catch (error) {
-      console.error('Error getting topic:', error);
+      logger.error('Error getting topic:', error);
       return {
         content: [
           {
@@ -270,7 +271,7 @@ export class UORToolsManager {
         ]
       };
     } catch (error) {
-      console.error('Error searching concepts:', error);
+      logger.error('Error searching concepts:', error);
       return {
         content: [
           {

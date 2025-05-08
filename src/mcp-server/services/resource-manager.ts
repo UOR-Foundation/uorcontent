@@ -5,6 +5,7 @@
  */
 
 import { UORService } from './uor-service';
+import { logger } from '../utils/logger';
 
 interface Resource {
   uri: string;
@@ -89,7 +90,7 @@ export class UORResourceManager {
       
       return mcpResources;
     } catch (error) {
-      console.error('Error listing resources:', error);
+      logger.error('Error listing resources:', error);
       throw new Error('Failed to list resources');
     }
   }
@@ -167,7 +168,7 @@ export class UORResourceManager {
         text: JSON.stringify(data, null, 2)
       }];
     } catch (error) {
-      console.error('Error reading resource:', error);
+      logger.error('Error reading resource:', error);
       throw new Error(`Failed to read resource: ${error instanceof Error ? error.message : String(error)}`);
     }
   }
