@@ -155,14 +155,31 @@ export class ContentRepository {
     const updatedContent = { ...existingContent, ...contentData };
 
     const idParts = id.split(':');
+    if (idParts.length < 3) {
+      return null;
+    }
+
     const type = idParts[1];
     const name = idParts[2];
 
-    const filePath = path.join(
-      this.contentDir,
-      `${type}s`,
-      `${id}.json`
-    );
+    const filePaths = [
+      path.join(this.contentDir, `${type}s`, `${id}.json`),
+      path.join(this.contentDir, `${type}s`, `UOR-${type.charAt(0).toUpperCase()}-${name}.json`),
+      path.join(this.contentDir, 'uors', `${id}.json`),
+      path.join(this.contentDir, 'uors', `UOR-U-${type}.json`)
+    ];
+    
+    let existingFilePath = null;
+    for (const filePath of filePaths) {
+      try {
+        await this.fileSystem.readFile(filePath);
+        existingFilePath = filePath;
+        break;
+      } catch (error) {
+      }
+    }
+
+    const filePath = existingFilePath || path.join(this.contentDir, `${type}s`, `${id}.json`);
 
     await this.fileSystem.writeFile(
       filePath,
@@ -187,14 +204,31 @@ export class ContentRepository {
     }
 
     const idParts = id.split(':');
+    if (idParts.length < 3) {
+      return false;
+    }
+
     const type = idParts[1];
     const name = idParts[2];
 
-    const filePath = path.join(
-      this.contentDir,
-      `${type}s`,
-      `${id}.json`
-    );
+    const filePaths = [
+      path.join(this.contentDir, `${type}s`, `${id}.json`),
+      path.join(this.contentDir, `${type}s`, `UOR-${type.charAt(0).toUpperCase()}-${name}.json`),
+      path.join(this.contentDir, 'uors', `${id}.json`),
+      path.join(this.contentDir, 'uors', `UOR-U-${type}.json`)
+    ];
+    
+    let existingFilePath = null;
+    for (const filePath of filePaths) {
+      try {
+        await this.fileSystem.readFile(filePath);
+        existingFilePath = filePath;
+        break;
+      } catch (error) {
+      }
+    }
+
+    const filePath = existingFilePath || path.join(this.contentDir, `${type}s`, `${id}.json`);
 
     await this.fileSystem.deleteFile(filePath);
 
