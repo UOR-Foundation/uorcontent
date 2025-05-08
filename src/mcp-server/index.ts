@@ -9,6 +9,7 @@ import { UORService } from './services/uor-service';
 import { UORResourceManager } from './services/resource-manager';
 import { UORToolsManager } from './services/tools-manager';
 import { MCPValidationService } from './services/validation-service';
+import { logger } from './utils/logger';
 
 import * as mcpServer from '@modelcontextprotocol/sdk/server';
 import * as mcpStdio from '@modelcontextprotocol/sdk/server/stdio';
@@ -117,7 +118,7 @@ export class UORMCPServer {
     this.setupResourceHandlers();
     this.setupToolHandlers();
     
-    this.server.onerror = (error: unknown) => console.error('[MCP Error]', error);
+    this.server.onerror = (error: unknown) => logger.error('[MCP Error]', error);
     process.on('SIGINT', async () => {
       await this.close();
       process.exit(0);
@@ -133,7 +134,7 @@ export class UORMCPServer {
         const resources = await this.resourceManager.listResources();
         return { resources };
       } catch (error) {
-        console.error('Error listing resources:', error);
+        logger.error('Error listing resources:', error);
         throw new McpError(ErrorCode.InternalError, 'Failed to list resources');
       }
     });
@@ -143,7 +144,7 @@ export class UORMCPServer {
         const resourceTemplates = await this.resourceManager.listResourceTemplates();
         return { resourceTemplates };
       } catch (error) {
-        console.error('Error listing resource templates:', error);
+        logger.error('Error listing resource templates:', error);
         throw new McpError(ErrorCode.InternalError, 'Failed to list resource templates');
       }
     });
@@ -161,7 +162,7 @@ export class UORMCPServer {
         const contents = await this.resourceManager.readResource(uri);
         return { contents };
       } catch (error) {
-        console.error('Error reading resource:', error);
+        logger.error('Error reading resource:', error);
         if (error instanceof McpError) {
           throw error;
         }
@@ -179,7 +180,7 @@ export class UORMCPServer {
         const tools = await this.toolsManager.listTools();
         return { tools };
       } catch (error) {
-        console.error('Error listing tools:', error);
+        logger.error('Error listing tools:', error);
         throw new McpError(ErrorCode.InternalError, 'Failed to list tools');
       }
     });
@@ -206,7 +207,7 @@ export class UORMCPServer {
           isError: result.isError
         };
       } catch (error) {
-        console.error('Error calling tool:', error);
+        logger.error('Error calling tool:', error);
         if (error instanceof McpError) {
           throw error;
         }
@@ -232,17 +233,17 @@ export class UORMCPServer {
       if (transport === 'stdio') {
         const stdioTransport = new StdioServerTransport();
         await this.server.connect(stdioTransport);
-        console.error('UOR MCP server running on stdio');
+        logger.info('UOR MCP server running on stdio');
       } else if (transport === 'http') {
         const port = config.port || 9000;
         const httpTransport = new StreamableHTTPServerTransport({ port });
         await this.server.connect(httpTransport);
-        console.error(`UOR MCP server running on http://localhost:${port}`);
+        logger.info(`UOR MCP server running on http://localhost:${port}`);
       } else {
         throw new Error(`Unsupported transport type: ${transport}`);
       }
     } catch (error) {
-      console.error('Failed to start MCP server:', error);
+      logger.error('Failed to start MCP server:', error);
       throw error;
     }
   }
@@ -256,7 +257,7 @@ export class UORMCPServer {
     try {
       await this.server.close();
     } catch (error) {
-      console.error('Error closing server:', error);
+      logger.error('Error closing server:', error);
       throw error;
     }
   }
@@ -267,5 +268,8 @@ export class UORMCPServer {
  */
 if (typeof require !== 'undefined' && require.main === module) {
   const server = new UORMCPServer();
-  server.start().catch(console.error);
+  server.start().catch((error) => {
+    logger.error('Failed to start server:', error);
+    process.exit(1);
+  });
 }
