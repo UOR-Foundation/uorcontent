@@ -53,7 +53,7 @@ export interface UORResource {
   /**
    * Additional properties
    */
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 /**
@@ -127,7 +127,7 @@ export interface UORTool {
     /**
      * Schema properties
      */
-    properties: Record<string, any>;
+    properties: Record<string, unknown>;
 
     /**
      * Required properties

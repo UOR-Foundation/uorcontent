@@ -5,8 +5,12 @@
  */
 
 import axios from 'axios';
-type AxiosInstance = any;
+type AxiosInstance = ReturnType<typeof axios.create>;
 import { UORConcept, UORPredicate, UORTopic, UORResource } from '../../models/uor-types';
+
+interface ListResponse<T> {
+  itemListElement?: Array<{item: T}>;
+}
 
 /**
  * UOR Service
@@ -38,8 +42,8 @@ export class UORService {
    */
   async getConcepts(): Promise<UORConcept[]> {
     try {
-      const response = await this.axiosInstance.get('/concepts');
-      return response.data?.itemListElement?.map((item: any) => item.item) || [];
+      const response = await this.axiosInstance.get<ListResponse<UORConcept>>('/concepts');
+      return response.data?.itemListElement?.map(item => item.item) || [];
     } catch (error) {
       console.error('Error getting concepts:', error);
       throw new Error('Failed to get concepts');
@@ -54,8 +58,8 @@ export class UORService {
    */
   async getConceptById(id: string): Promise<UORConcept> {
     try {
-      const response = await this.axiosInstance.get(`/concepts/${id}`);
-      return response.data;
+      const response = await this.axiosInstance.get<UORConcept>(`/concepts/${id}`);
+      return response.data as UORConcept;
     } catch (error) {
       console.error('Error getting concept:', error);
       throw new Error(`Failed to get concept with ID ${id}`);
@@ -69,8 +73,8 @@ export class UORService {
    */
   async getPredicates(): Promise<UORPredicate[]> {
     try {
-      const response = await this.axiosInstance.get('/predicates');
-      return response.data?.itemListElement?.map((item: any) => item.item) || [];
+      const response = await this.axiosInstance.get<ListResponse<UORPredicate>>('/predicates');
+      return response.data?.itemListElement?.map(item => item.item) || [];
     } catch (error) {
       console.error('Error getting predicates:', error);
       throw new Error('Failed to get predicates');
@@ -85,8 +89,8 @@ export class UORService {
    */
   async getPredicateById(id: string): Promise<UORPredicate> {
     try {
-      const response = await this.axiosInstance.get(`/predicates/${id}`);
-      return response.data;
+      const response = await this.axiosInstance.get<UORPredicate>(`/predicates/${id}`);
+      return response.data as UORPredicate;
     } catch (error) {
       console.error('Error getting predicate:', error);
       throw new Error(`Failed to get predicate with ID ${id}`);
@@ -100,8 +104,8 @@ export class UORService {
    */
   async getTopics(): Promise<UORTopic[]> {
     try {
-      const response = await this.axiosInstance.get('/topics');
-      return response.data?.itemListElement?.map((item: any) => item.item) || [];
+      const response = await this.axiosInstance.get<ListResponse<UORTopic>>('/topics');
+      return response.data?.itemListElement?.map(item => item.item) || [];
     } catch (error) {
       console.error('Error getting topics:', error);
       throw new Error('Failed to get topics');
@@ -116,8 +120,8 @@ export class UORService {
    */
   async getTopicById(id: string): Promise<UORTopic> {
     try {
-      const response = await this.axiosInstance.get(`/topics/${id}`);
-      return response.data;
+      const response = await this.axiosInstance.get<UORTopic>(`/topics/${id}`);
+      return response.data as UORTopic;
     } catch (error) {
       console.error('Error getting topic:', error);
       throw new Error(`Failed to get topic with ID ${id}`);
@@ -131,8 +135,8 @@ export class UORService {
    */
   async getResources(): Promise<UORResource[]> {
     try {
-      const response = await this.axiosInstance.get('/resources');
-      return response.data?.itemListElement?.map((item: any) => item.item) || [];
+      const response = await this.axiosInstance.get<ListResponse<UORResource>>('/resources');
+      return response.data?.itemListElement?.map(item => item.item) || [];
     } catch (error) {
       console.error('Error getting resources:', error);
       throw new Error('Failed to get resources');
@@ -147,8 +151,8 @@ export class UORService {
    */
   async getResourceById(id: string): Promise<UORResource> {
     try {
-      const response = await this.axiosInstance.get(`/resources/${id}`);
-      return response.data;
+      const response = await this.axiosInstance.get<UORResource>(`/resources/${id}`);
+      return response.data as UORResource;
     } catch (error) {
       console.error('Error getting resource:', error);
       throw new Error(`Failed to get resource with ID ${id}`);
@@ -163,16 +167,16 @@ export class UORService {
    * @param limit - Maximum number of results
    * @returns Search results
    */
-  async search(query: string, type?: string, limit?: number): Promise<any[]> {
+  async search(query: string, type?: string, limit?: number): Promise<unknown[]> {
     try {
-      const response = await this.axiosInstance.get('/search', {
+      const response = await this.axiosInstance.get<ListResponse<unknown>>('/search', {
         params: {
           q: query,
           type,
           limit
         }
       });
-      return response.data?.itemListElement?.map((item: any) => item.item) || [];
+      return response.data?.itemListElement?.map(item => item.item) || [];
     } catch (error) {
       console.error('Error searching:', error);
       throw new Error('Failed to search');

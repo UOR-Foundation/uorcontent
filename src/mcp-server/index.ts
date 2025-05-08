@@ -5,8 +5,11 @@
  * for AI assistants to access UOR Framework content through the Model Context Protocol.
  */
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { Server } = require('@modelcontextprotocol/sdk/server');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { StdioServerTransport } = require('@modelcontextprotocol/sdk/server/stdio');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { HttpServerTransport } = require('@modelcontextprotocol/sdk/server/http');
 
 const ListResourcesRequestSchema = { method: 'resources/list' };
@@ -14,10 +17,6 @@ const ListResourceTemplatesRequestSchema = { method: 'resources/listTemplates' }
 const ReadResourceRequestSchema = { method: 'resources/read' };
 const ListToolsRequestSchema = { method: 'tools/list' };
 const CallToolRequestSchema = { method: 'tools/call' };
-
-type RequestSchema = { method: string };
-type RequestHandler<T = Record<string, unknown>> = (request: T) => Promise<unknown>;
-type ServerTransport = unknown;
 
 enum ErrorCode {
   InternalError = 'internal_error',

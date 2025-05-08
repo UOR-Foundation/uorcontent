@@ -68,8 +68,8 @@ export class MCPValidationService {
    * @param args - Tool arguments
    * @returns Validation result
    */
-  validateToolArguments(name: string, args: Record<string, any>): ValidationResult {
-    let schema: Record<string, any>;
+  validateToolArguments(name: string, args: Record<string, unknown>): ValidationResult {
+    let schema: Record<string, unknown>;
     
     switch (name) {
       case 'get_concept_by_id':
