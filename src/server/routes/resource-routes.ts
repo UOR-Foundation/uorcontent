@@ -18,6 +18,7 @@ router.get('/:id', resourceController.getResourceById);
 router.post('/', validateContent, resourceController.createResource);
 
 router.put('/:id', validateContent, resourceController.updateResource);
+router.patch('/:id', validateContent, resourceController.updateResource);
 
 router.delete('/:id', resourceController.deleteResource);
 

@@ -18,6 +18,7 @@ router.get('/:id', conceptController.getConceptById);
 router.post('/', validateContent, conceptController.createConcept);
 
 router.put('/:id', validateContent, conceptController.updateConcept);
+router.patch('/:id', validateContent, conceptController.updateConcept);
 
 router.delete('/:id', conceptController.deleteConcept);
 
