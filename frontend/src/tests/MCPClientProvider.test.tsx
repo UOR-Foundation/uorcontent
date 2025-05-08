@@ -7,7 +7,7 @@ import { createMockMCPRequest, createMockMCPResponse, createMockMCPErrorResponse
 jest.mock('../api/client');
 const mockedMcpClient = mcpClient as jest.MockedFunction<typeof mcpClient>;
 
-function TestComponent() {
+function TestComponent(): React.ReactElement {
   const { loading, error, executeRequest, clearError } = useMCPClient();
   
   return (
@@ -16,7 +16,12 @@ function TestComponent() {
       {error && <div data-testid="error-message">{error}</div>}
       <button 
         data-testid="execute-request-button" 
-        onClick={() => executeRequest(createMockMCPRequest('testMethod', { test: 'data' }))}
+        onClick={async () => {
+          try {
+            await executeRequest(createMockMCPRequest('testMethod', { test: 'data' }));
+          } catch {
+          }
+        }}
       >
         Execute Request
       </button>
@@ -90,7 +95,8 @@ describe('MCPClientProvider', () => {
   });
 
   it('should handle network errors', async () => {
-    mockedMcpClient.mockRejectedValueOnce(new Error('Network Error'));
+    const networkError = new Error('Network Error');
+    mockedMcpClient.mockImplementationOnce(() => Promise.reject(networkError));
     
     render(
       <MCPClientProvider>
@@ -106,6 +112,8 @@ describe('MCPClientProvider', () => {
       expect(screen.getByTestId('loading-state')).toHaveTextContent('Not Loading');
     });
     
-    expect(screen.getByTestId('error-message')).toHaveTextContent('Request failed: Network Error');
+    await waitFor(() => {
+      expect(screen.getByTestId('error-message')).toHaveTextContent('Request failed: Network Error');
+    });
   });
 });

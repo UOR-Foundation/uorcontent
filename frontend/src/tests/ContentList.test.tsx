@@ -1,11 +1,17 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import ContentList from '../components/ContentList';
-import { mcpClient } from '../api/client';
-import { createMockMCPResponse } from '../utils/test-utils';
+import { useMCPClient } from '../components/MCPClientProvider';
 
-jest.mock('../api/client');
-const mockedMcpClient = mcpClient as jest.MockedFunction<typeof mcpClient>;
+jest.mock('../components/MCPClientProvider', () => {
+  const originalModule = jest.requireActual('../components/MCPClientProvider');
+  return {
+    ...originalModule,
+    useMCPClient: jest.fn(),
+  };
+});
+
+const mockedUseMCPClient = useMCPClient as jest.MockedFunction<typeof useMCPClient>;
 
 describe('ContentList Component', () => {
   beforeEach(() => {
@@ -13,7 +19,12 @@ describe('ContentList Component', () => {
   });
 
   it('should render loading state initially', () => {
-    mockedMcpClient.mockImplementation(() => new Promise(() => {})); // Never resolves
+    mockedUseMCPClient.mockReturnValue({
+      loading: true,
+      error: null,
+      executeRequest: jest.fn(),
+      clearError: jest.fn(),
+    });
 
     render(<ContentList contentType="concepts" title="Test Concepts" />);
 
@@ -27,9 +38,18 @@ describe('ContentList Component', () => {
       { id: 'test-2', name: 'Test Item 2', description: 'Description 2' },
     ];
 
-    mockedMcpClient.mockResolvedValueOnce(
-      createMockMCPResponse('test-id', mockItems)
-    );
+    const mockExecuteRequest = jest.fn().mockResolvedValue({
+      id: 'test-id',
+      result: mockItems,
+      jsonrpc: '2.0'
+    });
+
+    mockedUseMCPClient.mockReturnValue({
+      loading: false,
+      error: null,
+      executeRequest: mockExecuteRequest,
+      clearError: jest.fn(),
+    });
 
     render(<ContentList contentType="concepts" title="Test Concepts" />);
 
@@ -40,7 +60,7 @@ describe('ContentList Component', () => {
       expect(screen.getByText('Description 2')).toBeInTheDocument();
     });
 
-    expect(mockedMcpClient).toHaveBeenCalledWith({
+    expect(mockExecuteRequest).toHaveBeenCalledWith({
       id: expect.any(String),
       method: 'listConcepts',
       params: {},
@@ -49,13 +69,20 @@ describe('ContentList Component', () => {
   });
 
   it('should render error message when API request fails', async () => {
-    mockedMcpClient.mockResolvedValueOnce({
+    const mockExecuteRequest = jest.fn().mockResolvedValue({
       id: 'test-id',
       error: {
         code: 500,
         message: 'Internal Server Error',
       },
       jsonrpc: '2.0'
+    });
+
+    mockedUseMCPClient.mockReturnValue({
+      loading: false,
+      error: null,
+      executeRequest: mockExecuteRequest,
+      clearError: jest.fn(),
     });
 
     render(<ContentList contentType="predicates" title="Test Predicates" />);
@@ -66,9 +93,18 @@ describe('ContentList Component', () => {
   });
 
   it('should render empty state when no items are returned', async () => {
-    mockedMcpClient.mockResolvedValueOnce(
-      createMockMCPResponse('test-id', [])
-    );
+    const mockExecuteRequest = jest.fn().mockResolvedValue({
+      id: 'test-id',
+      result: [],
+      jsonrpc: '2.0'
+    });
+
+    mockedUseMCPClient.mockReturnValue({
+      loading: false,
+      error: null,
+      executeRequest: mockExecuteRequest,
+      clearError: jest.fn(),
+    });
 
     render(<ContentList contentType="resources" title="Test Resources" />);
 
