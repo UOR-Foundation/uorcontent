@@ -139,7 +139,13 @@ export class ConceptManager {
    * @returns Absolute file path
    */
   private getConceptPath(id: string): string {
-    return path.join(this.contentDir, 'concepts', `${id}.json`);
+    if (id.startsWith('urn:uor:concept:')) {
+      return path.join(this.contentDir, 'concepts', `${id}.json`);
+    } else if (id.startsWith('UOR-C-')) {
+      return path.join(this.contentDir, 'concepts', `${id}.json`);
+    } else {
+      return path.join(this.contentDir, 'concepts', `urn:uor:concept:${id}.json`);
+    }
   }
 
   /**
@@ -269,7 +275,7 @@ export class ConceptManager {
     
     const concepts: Concept[] = [];
     for (const file of files) {
-      if (file.endsWith('.json') && file.startsWith('UOR-C-')) {
+      if (file.endsWith('.json') && (file.startsWith('UOR-C-') || file.startsWith('urn:uor:concept:'))) {
         try {
           const concept = await this.fileSystem.readJsonFile<Concept>(
             path.join(conceptsDir, file)

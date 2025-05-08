@@ -29,7 +29,7 @@ export const validateRequest = async (
       return next();
     }
 
-    const endpoint = req.path.split('/').filter(Boolean).join('/');
+    const endpoint = req.path;
     
     const validator = MCPSchemaValidator.getInstance();
     const validationResult = await validator.validateRequest(

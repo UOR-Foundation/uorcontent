@@ -23,6 +23,6 @@ router.post('/:contentType/repair', indexController.repairIndex);
 
 router.post('/:contentType/query', indexController.queryIndex);
 
-router.post('/cache/invalidate/:contentType?', indexController.invalidateCache);
+router.post('/cache/invalidate/:contentType', indexController.invalidateCache);
 
 export const indexRoutes = router;

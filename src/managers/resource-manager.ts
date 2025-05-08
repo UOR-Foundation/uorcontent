@@ -142,7 +142,13 @@ export class ResourceManager {
    * @returns Absolute file path
    */
   private getResourcePath(id: string): string {
-    return path.join(this.contentDir, 'resources', `${id}.json`);
+    if (id.startsWith('urn:uor:resource:')) {
+      return path.join(this.contentDir, 'resources', `${id}.json`);
+    } else if (id.startsWith('UOR-R-')) {
+      return path.join(this.contentDir, 'resources', `${id}.json`);
+    } else {
+      return path.join(this.contentDir, 'resources', `urn:uor:resource:${id}.json`);
+    }
   }
 
   /**
@@ -272,7 +278,7 @@ export class ResourceManager {
     
     const resources: Resource[] = [];
     for (const file of files) {
-      if (file.endsWith('.json') && file.startsWith('UOR-R-')) {
+      if (file.endsWith('.json') && (file.startsWith('UOR-R-') || file.startsWith('urn:uor:resource:'))) {
         try {
           const resource = await this.fileSystem.readJsonFile<Resource>(
             path.join(resourcesDir, file)

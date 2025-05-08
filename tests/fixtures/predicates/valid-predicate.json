@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "PropertyValue",
+  "@id": "urn:uor:predicate:test-predicate",
+  "name": "Test Predicate",
+  "description": "A test predicate for unit testing",
+  "propertyID": "TEST-PROP-001",
+  "value": "Test Value",
+  "subjectOf": {
+    "@id": "urn:uor:concept:test-concept"
+  },
+  "targetCollection": [
+    "urn:uor:concept:target-concept-1",
+    "urn:uor:concept:target-concept-2"
+  ]
+}

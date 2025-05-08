@@ -84,13 +84,22 @@ export class ContentSchemaValidator {
           'identifier': { type: 'string' }
         };
         
-        if (contentType === 'predicate') {
+        // Add content type specific properties
+        if (contentType === 'concept') {
+          properties['termCode'] = { type: 'string' };
+        } else if (contentType === 'predicate') {
           properties['value'] = { type: 'string' };
+        } else if (contentType === 'resource') {
+          properties['url'] = { type: 'string' };
+        } else if (contentType === 'topic') {
+          properties['keywords'] = { type: 'array' } as { type: string; items?: { type: string } };
         }
         
         const schema = {
           type: 'object',
-          properties
+          properties,
+          additionalProperties: true,
+          required: ['@context', '@type', 'name']
         };
         
         const validator = this.ajv.compile(schema);
@@ -98,6 +107,7 @@ export class ContentSchemaValidator {
       }
       
       this.initialized = true;
+      console.log('Content schema validator initialized with validators for:', Array.from(this.validators.keys()));
     } catch (error: unknown) {
       const errorMessage = error instanceof Error ? error.message : String(error);
       throw new SchemaError(`Failed to initialize content schema validator: ${errorMessage}`);

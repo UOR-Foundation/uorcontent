@@ -104,17 +104,27 @@ export const resourceController = {
   ): Promise<void> => {
     try {
       const id = req.params.id;
+      console.log(`Updating resource with ID: ${id}`);
+      
+      const fullId = id.startsWith('urn:uor:resource:') ? id : `urn:uor:resource:${id}`;
+      console.log(`Using full ID: ${fullId}`);
+      
       const resourceData = req.body;
 
       const resourceService = new ResourceService();
-      const resource = await resourceService.updateResource(id, resourceData);
+      const resource = await resourceService.updateResource(fullId, resourceData);
 
       if (!resource) {
-        throw new NotFoundError(`Resource with ID ${id} not found`);
+        throw new NotFoundError(`Resource with ID ${fullId} not found`);
       }
 
       res.json(resource);
-    } catch (error) {
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error(`Error updating resource: ${error.message}`);
+      } else {
+        console.error('Unknown error updating resource');
+      }
       next(error);
     }
   },
@@ -133,16 +143,25 @@ export const resourceController = {
   ): Promise<void> => {
     try {
       const id = req.params.id;
+      console.log(`Deleting resource with ID: ${id}`);
+      
+      const fullId = id.startsWith('urn:uor:resource:') ? id : `urn:uor:resource:${id}`;
+      console.log(`Using full ID: ${fullId}`);
 
       const resourceService = new ResourceService();
-      const success = await resourceService.deleteResource(id);
+      const success = await resourceService.deleteResource(fullId);
 
       if (!success) {
-        throw new NotFoundError(`Resource with ID ${id} not found`);
+        throw new NotFoundError(`Resource with ID ${fullId} not found`);
       }
 
       res.status(204).end();
-    } catch (error) {
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error(`Error deleting resource: ${error.message}`);
+      } else {
+        console.error('Unknown error deleting resource');
+      }
       next(error);
     }
   }

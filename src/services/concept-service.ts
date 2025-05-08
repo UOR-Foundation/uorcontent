@@ -20,7 +20,8 @@ export class ConceptService {
    */
   constructor() {
     const fileSystem = new NodeFileSystem();
-    this.repository = new ContentRepository(fileSystem);
+    const contentDir = process.env.CONTENT_DIR || './content';
+    this.repository = new ContentRepository(fileSystem, contentDir);
   }
 
   /**

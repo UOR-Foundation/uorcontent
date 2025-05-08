@@ -22,7 +22,8 @@ export class ResourceService {
   constructor() {
     const fileSystem = new NodeFileSystem();
     const validator = SchemaValidatorAdapter.createWithSingleton();
-    this.resourceManager = new ResourceManager(fileSystem, validator);
+    const contentDir = process.env.CONTENT_DIR || './content';
+    this.resourceManager = new ResourceManager(fileSystem, validator, contentDir);
   }
 
   /**
