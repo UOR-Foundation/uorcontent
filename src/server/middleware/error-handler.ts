@@ -22,7 +22,8 @@ import { ValidationError, NotFoundError, AuthorizationError } from '../types/err
 export const errorHandler = (
   error: Error,
   req: Request,
-  res: Response
+  res: Response,
+  next: Function
 ): void => {
   console.error(`Error processing request: ${error.message}`, {
     path: req.path,
