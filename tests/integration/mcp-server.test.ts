@@ -117,9 +117,7 @@ describe('MCP Server Integration', () => {
       ]
     });
     
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment, @typescript-eslint/no-explicit-any
-    // @ts-ignore - Accessing private property for testing
-    server['server'].setRequestHandler.mockImplementation((schema: any) => {
+    (server as unknown as { server: { setRequestHandler: jest.Mock } }).server.setRequestHandler.mockImplementation((schema: Record<string, unknown>) => {
       if (schema.method === 'resources/list') {
         return mockHandler;
       }
@@ -165,9 +163,7 @@ describe('MCP Server Integration', () => {
       ]
     });
     
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment, @typescript-eslint/no-explicit-any
-    // @ts-ignore - Accessing private property for testing
-    server['server'].setRequestHandler.mockImplementation((schema: any) => {
+    (server as unknown as { server: { setRequestHandler: jest.Mock } }).server.setRequestHandler.mockImplementation((schema: Record<string, unknown>) => {
       if (schema.method === 'tools/list') {
         return mockHandler;
       }
