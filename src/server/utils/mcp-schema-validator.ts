@@ -75,18 +75,14 @@ export class MCPSchemaValidator {
     try {
       const requestSchema = {
         type: 'object',
-        required: ['jsonrpc', 'id', 'method'],
         properties: {
-          jsonrpc: { const: '2.0' },
-          id: { 
-            oneOf: [
-              { type: 'string' },
-              { type: 'number' }
-            ]
-          },
-          method: { type: 'string' },
-          params: { type: 'object' }
-        }
+          '@context': { type: 'string' },
+          '@type': { type: 'string' },
+          '@id': { type: 'string' },
+          'name': { type: 'string' },
+          'description': { type: 'string' }
+        },
+        additionalProperties: true
       };
 
       const endpoints = [
