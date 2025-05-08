@@ -13,7 +13,11 @@
     "prepare": "npm run build",
     "dev:frontend": "cd frontend && npm run dev",
     "build:frontend": "cd frontend && npm run build",
-    "start:frontend": "cd frontend && npm run start"
+    "start:frontend": "cd frontend && npm run start",
+    "start:mcp": "ts-node src/mcp-server/index.ts"
+  },
+  "bin": {
+    "uor-mcp-server": "dist/mcp-server/cli.js"
   },
   "keywords": [
     "uor",
@@ -43,8 +47,11 @@
     "typescript": "^5.0.3"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.1",
+    "@types/axios": "^0.9.36",
     "ajv": "^8.17.1",
     "ajv-formats": "^2.1.1",
+    "axios": "^1.9.0",
     "chalk": "^4.1.2",
     "commander": "^10.0.1",
     "cors": "^2.8.5",
