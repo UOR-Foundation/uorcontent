@@ -96,17 +96,6 @@ export class ContentRepository {
       console.log(`Scanning directory: ${typeDir}`);
       
       try {
-        try {
-          const dirExists = await this.fileSystem.directoryExists(typeDir);
-          if (!dirExists) {
-            console.log(`Directory does not exist: ${typeDir}`);
-            continue;
-          }
-        } catch (dirError) {
-          console.log(`Error checking directory: ${typeDir} - ${dirError instanceof Error ? dirError.message : 'Unknown error'}`);
-          continue;
-        }
-        
         let files;
         try {
           files = await this.fileSystem.listDirectory(typeDir);
