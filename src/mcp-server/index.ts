@@ -5,43 +5,19 @@
  * for AI assistants to access UOR Framework content through the Model Context Protocol.
  */
 
-interface ServerConfig {
-  name: string;
-  version: string;
-}
-
-interface ServerCapabilities {
-  capabilities: {
-    resources: {
-      read: boolean;
-      subscribe: boolean;
-    };
-    tools: Record<string, unknown>;
-  };
-}
-
-interface Server {
-  setRequestHandler: (schema: any, handler: Function) => void;
-  connect: (transport: any) => Promise<void>;
-  close: () => Promise<void>;
-  onerror: (error: unknown) => void;
-}
-
-interface StdioServerTransport {}
-
-interface HttpServerTransportOptions {
-  port: number;
-}
-
-interface HttpServerTransport {
-  new(options: HttpServerTransportOptions): HttpServerTransport;
-}
+const { Server } = require('@modelcontextprotocol/sdk/server');
+const { StdioServerTransport } = require('@modelcontextprotocol/sdk/server/stdio');
+const { HttpServerTransport } = require('@modelcontextprotocol/sdk/server/http');
 
 const ListResourcesRequestSchema = { method: 'resources/list' };
 const ListResourceTemplatesRequestSchema = { method: 'resources/listTemplates' };
 const ReadResourceRequestSchema = { method: 'resources/read' };
 const ListToolsRequestSchema = { method: 'tools/list' };
 const CallToolRequestSchema = { method: 'tools/call' };
+
+type RequestSchema = { method: string };
+type RequestHandler<T = Record<string, unknown>> = (request: T) => Promise<unknown>;
+type ServerTransport = unknown;
 
 enum ErrorCode {
   InternalError = 'internal_error',
@@ -55,10 +31,6 @@ class McpError extends Error {
     this.name = 'McpError';
   }
 }
-
-const { Server } = require('@modelcontextprotocol/sdk/server');
-const { StdioServerTransport } = require('@modelcontextprotocol/sdk/server/stdio');
-const { HttpServerTransport } = require('@modelcontextprotocol/sdk/server/http');
 import { UORService } from './services/uor-service';
 import { UORResourceManager } from './services/resource-manager';
 import { UORToolsManager } from './services/tools-manager';
@@ -107,7 +79,7 @@ export interface UORMCPServerConfig {
  * to interact with UOR concepts, predicates, topics, and resources.
  */
 export class UORMCPServer {
-  private server: Server;
+  private server: ReturnType<typeof Server>;
   private uorService: UORService;
   private resourceManager: UORResourceManager;
   private toolsManager: UORToolsManager;
@@ -154,7 +126,7 @@ export class UORMCPServer {
    * Set up resource handlers
    */
   private setupResourceHandlers(): void {
-    this.server.setRequestHandler(ListResourcesRequestSchema, async () => {
+    this.server.setRequestHandler(ListResourcesRequestSchema, async (): Promise<{ resources: unknown[] }> => {
       try {
         const resources = await this.resourceManager.listResources();
         return { resources };
@@ -164,7 +136,7 @@ export class UORMCPServer {
       }
     });
 
-    this.server.setRequestHandler(ListResourceTemplatesRequestSchema, async () => {
+    this.server.setRequestHandler(ListResourceTemplatesRequestSchema, async (): Promise<{ resourceTemplates: unknown[] }> => {
       try {
         const resourceTemplates = await this.resourceManager.listResourceTemplates();
         return { resourceTemplates };
@@ -174,7 +146,7 @@ export class UORMCPServer {
       }
     });
 
-    this.server.setRequestHandler(ReadResourceRequestSchema, async (request: { params: { uri: string } }) => {
+    this.server.setRequestHandler(ReadResourceRequestSchema, async (request: { params: { uri: string } }): Promise<{ contents: unknown[] }> => {
       try {
         const uri = request.params.uri;
         const valid = this.validationService.validateResourceUri(uri);
@@ -199,7 +171,7 @@ export class UORMCPServer {
    * Set up tool handlers
    */
   private setupToolHandlers(): void {
-    this.server.setRequestHandler(ListToolsRequestSchema, async () => {
+    this.server.setRequestHandler(ListToolsRequestSchema, async (): Promise<{ tools: unknown[] }> => {
       try {
         const tools = await this.toolsManager.listTools();
         return { tools };
@@ -209,7 +181,15 @@ export class UORMCPServer {
       }
     });
 
-    this.server.setRequestHandler(CallToolRequestSchema, async (request: { params: { name: string; arguments?: Record<string, any> } }) => {
+    this.server.setRequestHandler(CallToolRequestSchema, async (request: { 
+      params: { 
+        name: string; 
+        arguments?: Record<string, unknown> 
+      } 
+    }): Promise<{ 
+      content: Array<{ type: string; text: string }>; 
+      isError?: boolean 
+    }> => {
       try {
         const result = await this.toolsManager.callTool(
           request.params.name, 

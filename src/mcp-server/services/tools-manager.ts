@@ -11,7 +11,10 @@ interface Tool {
   description: string;
   inputSchema: {
     type: string;
-    properties: Record<string, any>;
+    properties: Record<string, {
+      type: string;
+      description?: string;
+    }>;
     required?: string[];
   };
 }
@@ -135,17 +138,17 @@ export class UORToolsManager {
    * @param args - Tool arguments
    * @returns Tool result
    */
-  async callTool(name: string, args: Record<string, any>): Promise<UORToolResult> {
+  async callTool(name: string, args: Record<string, unknown>): Promise<UORToolResult> {
     try {
       switch (name) {
         case 'get_concept_by_id':
-          return await this.getConceptById(args.id);
+          return await this.getConceptById(args.id as string);
         case 'get_predicate_by_id':
-          return await this.getPredicateById(args.id);
+          return await this.getPredicateById(args.id as string);
         case 'get_topic_by_id':
-          return await this.getTopicById(args.id);
+          return await this.getTopicById(args.id as string);
         case 'search_concepts':
-          return await this.searchConcepts(args.query, args.limit);
+          return await this.searchConcepts(args.query as string, args.limit as number | undefined);
         default:
           throw new Error(`Unknown tool: ${name}`);
       }

@@ -4,7 +4,8 @@
  * Service for interacting with the UOR API
  */
 
-import axios, { AxiosInstance } from 'axios';
+import axios from 'axios';
+type AxiosInstance = any;
 import { UORConcept, UORPredicate, UORTopic, UORResource } from '../../models/uor-types';
 
 /**

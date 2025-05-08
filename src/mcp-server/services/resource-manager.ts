@@ -142,7 +142,7 @@ export class UORResourceManager {
       }
 
       const [, type, id] = match;
-      let data: any;
+      let data: Record<string, unknown>;
 
       switch (type) {
         case 'concept':
