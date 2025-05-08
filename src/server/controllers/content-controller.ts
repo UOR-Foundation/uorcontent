@@ -9,6 +9,8 @@ import { Request, Response, NextFunction } from 'express';
 import { ContentService } from '../../services/content-service';
 import { UORContentItem } from '../../models/types';
 import { NotFoundError } from '../types/errors';
+import * as fs from 'fs';
+import * as path from 'path';
 
 /**
  * Content controller
@@ -37,11 +39,9 @@ export const contentController = {
       if (name) {
         console.log(`Direct name query${type ? ` for type ${type}` : ''}: ${name}`);
         
-        const fs = require('fs');
-        const path = require('path');
         const contentDir = process.env.CONTENT_DIR || 'converted';
         
-        let matchingItems: UORContentItem[] = [];
+        const matchingItems: UORContentItem[] = [];
         
         const typesToScan = type ? [type] : ['concept', 'resource', 'topic', 'predicate'];
         
@@ -92,7 +92,7 @@ export const contentController = {
       const result = await contentService.getAllContent(page, limit, type, name);
       
       if (result['@type'] === 'ItemList' && Array.isArray(result.itemListElement)) {
-        const items = result.itemListElement.map((listItem: any) => listItem.item);
+        const items = result.itemListElement.map((listItem: { item: UORContentItem }) => listItem.item);
         console.log(`Returning ${items.length} items from ItemList`);
         res.json(items);
       } else {

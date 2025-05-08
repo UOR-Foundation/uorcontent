@@ -70,7 +70,7 @@ export class ContentRepository {
       if (index['@type'] === 'ItemList' && Array.isArray(index.itemListElement)) {
         console.log(`Found ${index.itemListElement.length} items in index for type ${type}`);
         
-        const items = index.itemListElement.map((listItem: any) => listItem.item);
+        const items = index.itemListElement.map((listItem: { item: UORContentItem }) => listItem.item);
         console.log(`Extracted ${items.length} items from index`);
         
         items.slice(0, 3).forEach((item: UORContentItem) => {
@@ -238,7 +238,6 @@ export class ContentRepository {
     console.log(`Creating content with ID: ${contentData['@id']}`);
     const idParts = contentData['@id'].split(':');
     const name = idParts.length > 3 ? idParts[3] : '';
-    const idSuffix = name;
     
     // Create directory for content type
     const typeDir = path.join(this.contentDir, `${type}s`);
@@ -309,6 +308,7 @@ export class ContentRepository {
         existingFilePath = filePath;
         break;
       } catch (error) {
+        console.log(`File not found at ${filePath}: ${error instanceof Error ? error.message : 'Unknown error'}`);
       }
     }
 
@@ -358,6 +358,7 @@ export class ContentRepository {
         existingFilePath = filePath;
         break;
       } catch (error) {
+        console.log(`File not found at ${filePath}: ${error instanceof Error ? error.message : 'Unknown error'}`);
       }
     }
 

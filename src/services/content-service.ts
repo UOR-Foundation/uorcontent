@@ -8,6 +8,8 @@
 import { NodeFileSystem } from '../utils/file-system';
 import { ContentRepository } from '../core/content-repository';
 import { UORContentItem } from '../models/types';
+import * as fs from 'fs';
+import * as path from 'path';
 
 /**
  * Content service
@@ -55,13 +57,11 @@ export class ContentService {
     await this.refreshContent();
     
     const contentDir = process.env.CONTENT_DIR || 'converted';
-    const fs = require('fs');
-    const path = require('path');
     
     const conceptsDir = path.join(contentDir, 'concepts');
     console.log(`Scanning concepts directory: ${conceptsDir}`);
     
-    let matchingItems: UORContentItem[] = [];
+    const matchingItems: UORContentItem[] = [];
     
     try {
       if (fs.existsSync(conceptsDir)) {
