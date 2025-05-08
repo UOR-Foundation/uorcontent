@@ -12,7 +12,7 @@ export interface JSONRPCRequest {
   jsonrpc: '2.0';
   id: string | number;
   method: string;
-  params?: any;
+  params?: Record<string, unknown>;
 }
 
 /**
@@ -21,7 +21,7 @@ export interface JSONRPCRequest {
 export interface JSONRPCResponse {
   jsonrpc: '2.0';
   id: string | number;
-  result?: any;
+  result?: Record<string, unknown>;
   error?: JSONRPCError;
 }
 
@@ -31,13 +31,13 @@ export interface JSONRPCResponse {
 export interface JSONRPCError {
   code: number;
   message: string;
-  data?: any;
+  data?: Record<string, unknown>;
 }
 
 /**
  * JSON-RPC method handler type
  */
-export type MethodHandler = (params: any) => Promise<any>;
+export type MethodHandler = (params: Record<string, unknown>) => Promise<Record<string, unknown>>;
 
 /**
  * JSON-RPC Handler
@@ -113,7 +113,7 @@ export class JSONRPCHandler {
     id: string | number,
     code: number,
     message: string,
-    data?: any
+    data?: Record<string, unknown>
   ): JSONRPCResponse {
     const error: JSONRPCError = {
       code,
