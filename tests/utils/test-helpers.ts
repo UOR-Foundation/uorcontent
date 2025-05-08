@@ -21,7 +21,8 @@ export function setupTestEnvironment() {
     path.join(contentDir, 'concepts'),
     path.join(contentDir, 'predicates'),
     path.join(contentDir, 'resources'),
-    path.join(contentDir, 'topics')
+    path.join(contentDir, 'topics'),
+    path.join(contentDir, 'uors')
   ];
   
   for (const dir of dirs) {
