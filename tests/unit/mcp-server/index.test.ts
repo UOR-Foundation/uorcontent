@@ -19,22 +19,29 @@ jest.mock('../../../src/mcp-server/services/uor-service');
 jest.mock('../../../src/mcp-server/services/resource-manager');
 jest.mock('../../../src/mcp-server/services/tools-manager');
 jest.mock('../../../src/mcp-server/services/validation-service');
-jest.mock('@modelcontextprotocol/sdk/server', () => ({
-  Server: jest.fn().mockImplementation(() => ({
-    setRequestHandler: jest.fn(),
-    connect: jest.fn().mockResolvedValue(undefined),
-    close: jest.fn().mockResolvedValue(undefined),
-    onerror: jest.fn()
-  }))
-}));
 
-jest.mock('@modelcontextprotocol/sdk/server/stdio', () => ({
-  StdioServerTransport: jest.fn().mockImplementation(() => ({}))
-}));
+jest.mock('@modelcontextprotocol/sdk/server', () => {
+  return {
+    Server: jest.fn().mockImplementation(() => ({
+      setRequestHandler: jest.fn(),
+      connect: jest.fn().mockResolvedValue(undefined),
+      close: jest.fn().mockResolvedValue(undefined),
+      onerror: jest.fn()
+    }))
+  };
+});
 
-jest.mock('@modelcontextprotocol/sdk/server/http', () => ({
-  HttpServerTransport: jest.fn().mockImplementation(() => ({}))
-}));
+jest.mock('@modelcontextprotocol/sdk/server/stdio', () => {
+  return {
+    StdioServerTransport: jest.fn().mockImplementation(() => ({}))
+  };
+});
+
+jest.mock('@modelcontextprotocol/sdk/server/streamableHttp', () => {
+  return {
+    StreamableHTTPServerTransport: jest.fn().mockImplementation(() => ({}))
+  };
+});
 
 describe('UORMCPServer', () => {
   let server: UORMCPServer;

@@ -10,7 +10,7 @@ const { Server } = require('@modelcontextprotocol/sdk/server');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { StdioServerTransport } = require('@modelcontextprotocol/sdk/server/stdio');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { HttpServerTransport } = require('@modelcontextprotocol/sdk/server/http');
+const { StreamableHTTPServerTransport } = require('@modelcontextprotocol/sdk/server/streamableHttp');
 
 const ListResourcesRequestSchema = { method: 'resources/list' };
 const ListResourceTemplatesRequestSchema = { method: 'resources/listTemplates' };
@@ -225,7 +225,7 @@ export class UORMCPServer {
         console.error('UOR MCP server running on stdio');
       } else if (transport === 'http') {
         const port = config.port || 9000;
-        const httpTransport = new HttpServerTransport({ port });
+        const httpTransport = new StreamableHTTPServerTransport({ port });
         await this.server.connect(httpTransport);
         console.error(`UOR MCP server running on http://localhost:${port}`);
       } else {
