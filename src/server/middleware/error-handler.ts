@@ -6,7 +6,7 @@
  * errors for debugging purposes.
  */
 
-import { Request, Response } from 'express';
+import { Request, Response, NextFunction } from 'express';
 import { ValidationError, NotFoundError, AuthorizationError } from '../types/errors';
 
 /**
@@ -22,7 +22,8 @@ import { ValidationError, NotFoundError, AuthorizationError } from '../types/err
 export const errorHandler = (
   error: Error,
   req: Request,
-  res: Response
+  res: Response,
+  next: NextFunction
 ): void => {
   console.error(`Error processing request: ${error.message}`, {
     path: req.path,

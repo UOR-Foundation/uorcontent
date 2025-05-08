@@ -52,16 +52,26 @@ export const conceptController = {
   ): Promise<void> => {
     try {
       const id = req.params.id;
+      console.log(`Getting concept with ID: ${id}`);
+      
+      const fullId = id.startsWith('urn:uor:concept:') ? id : `urn:uor:concept:${id}`;
+      console.log(`Using full ID: ${fullId}`);
 
       const conceptService = new ConceptService();
-      const concept = await conceptService.getConceptById(id);
+      const concept = await conceptService.getConceptById(fullId);
 
       if (!concept) {
-        throw new NotFoundError(`Concept with ID ${id} not found`);
+        console.log(`Concept not found with ID: ${fullId}`);
+        throw new NotFoundError(`Concept with ID ${fullId} not found`);
       }
 
       res.json(concept);
-    } catch (error) {
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error(`Error getting concept: ${error.message}`);
+      } else {
+        console.error('Unknown error getting concept');
+      }
       next(error);
     }
   },
