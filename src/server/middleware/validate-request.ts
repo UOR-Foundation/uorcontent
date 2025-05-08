@@ -29,6 +29,10 @@ export const validateRequest = async (
       return next();
     }
 
+    if (!req.path.includes('/api/jsonrpc')) {
+      return next();
+    }
+
     const endpoint = req.path;
     
     const validator = MCPSchemaValidator.getInstance();

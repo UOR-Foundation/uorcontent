@@ -9,7 +9,8 @@ describe('JSONRPCHandler', () => {
 
   test('should register and handle methods', async () => {
     handler.registerMethod('test.method', async (params) => {
-      return { result: params.value * 2 };
+      const value = params.value as number;
+      return { result: value * 2 };
     });
 
     const request = {
