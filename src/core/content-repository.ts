@@ -74,28 +74,22 @@ export class ContentRepository {
     const type = idParts[1];
     const name = idParts[2];
 
-    let filePath: string;
-    try {
-      filePath = path.join(this.contentDir, `${type}s`, `${id}.json`);
-      const content = await this.fileSystem.readFile(filePath);
-      return JSON.parse(content) as UORContentItem;
-    } catch (error) {
+    const filePaths = [
+      path.join(this.contentDir, `${type}s`, `${id}.json`),
+      path.join(this.contentDir, `${type}s`, `UOR-${type.charAt(0).toUpperCase()}-${name}.json`),
+      path.join(this.contentDir, 'uors', `${id}.json`),
+      path.join(this.contentDir, 'uors', `UOR-U-${type}.json`)
+    ];
+    
+    for (const filePath of filePaths) {
       try {
-        const typeCode = type.charAt(0).toUpperCase();
-        filePath = path.join(this.contentDir, `${type}s`, `UOR-${typeCode}-${name}.json`);
         const content = await this.fileSystem.readFile(filePath);
         return JSON.parse(content) as UORContentItem;
-      } catch (innerError) {
-        return null;
+      } catch (error) {
       }
     }
-
-    try {
-      const content = await this.fileSystem.readFile(filePath);
-      return JSON.parse(content) as UORContentItem;
-    } catch (error) {
-      return null;
-    }
+    
+    return null;
   }
 
   /**
