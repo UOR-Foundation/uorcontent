@@ -5,18 +5,60 @@
  * for AI assistants to access UOR Framework content through the Model Context Protocol.
  */
 
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio';
-import { HttpServerTransport } from '@modelcontextprotocol/sdk/server/http';
-import {
-  CallToolRequestSchema,
-  ErrorCode,
-  ListResourcesRequestSchema,
-  ListResourceTemplatesRequestSchema,
-  ListToolsRequestSchema,
-  McpError,
-  ReadResourceRequestSchema,
-} from '@modelcontextprotocol/sdk/types';
+interface ServerConfig {
+  name: string;
+  version: string;
+}
+
+interface ServerCapabilities {
+  capabilities: {
+    resources: {
+      read: boolean;
+      subscribe: boolean;
+    };
+    tools: Record<string, unknown>;
+  };
+}
+
+interface Server {
+  setRequestHandler: (schema: any, handler: Function) => void;
+  connect: (transport: any) => Promise<void>;
+  close: () => Promise<void>;
+  onerror: (error: unknown) => void;
+}
+
+interface StdioServerTransport {}
+
+interface HttpServerTransportOptions {
+  port: number;
+}
+
+interface HttpServerTransport {
+  new(options: HttpServerTransportOptions): HttpServerTransport;
+}
+
+const ListResourcesRequestSchema = { method: 'resources/list' };
+const ListResourceTemplatesRequestSchema = { method: 'resources/listTemplates' };
+const ReadResourceRequestSchema = { method: 'resources/read' };
+const ListToolsRequestSchema = { method: 'tools/list' };
+const CallToolRequestSchema = { method: 'tools/call' };
+
+enum ErrorCode {
+  InternalError = 'internal_error',
+  InvalidParams = 'invalid_params',
+  NotFound = 'not_found'
+}
+
+class McpError extends Error {
+  constructor(public code: ErrorCode, message: string) {
+    super(message);
+    this.name = 'McpError';
+  }
+}
+
+const { Server } = require('@modelcontextprotocol/sdk/server');
+const { StdioServerTransport } = require('@modelcontextprotocol/sdk/server/stdio');
+const { HttpServerTransport } = require('@modelcontextprotocol/sdk/server/http');
 import { UORService } from './services/uor-service';
 import { UORResourceManager } from './services/resource-manager';
 import { UORToolsManager } from './services/tools-manager';
@@ -167,7 +209,7 @@ export class UORMCPServer {
       }
     });
 
-    this.server.setRequestHandler(CallToolRequestSchema, async (request) => {
+    this.server.setRequestHandler(CallToolRequestSchema, async (request: { params: { name: string; arguments?: Record<string, any> } }) => {
       try {
         const result = await this.toolsManager.callTool(
           request.params.name, 

@@ -5,7 +5,20 @@
  */
 
 import { UORService } from './uor-service';
-import { Resource, ResourceTemplate } from '@modelcontextprotocol/sdk/types';
+
+interface Resource {
+  uri: string;
+  name: string;
+  description?: string;
+  mimeType: string;
+}
+
+interface ResourceTemplate {
+  uriTemplate: string;
+  name: string;
+  description?: string;
+  mimeType: string;
+}
 
 /**
  * UOR Resource Manager

@@ -5,7 +5,16 @@
  */
 
 import { UORService } from './uor-service';
-import { Tool } from '@modelcontextprotocol/sdk/types';
+
+interface Tool {
+  name: string;
+  description: string;
+  inputSchema: {
+    type: string;
+    properties: Record<string, any>;
+    required?: string[];
+  };
+}
 
 /**
  * UOR Tool Result
