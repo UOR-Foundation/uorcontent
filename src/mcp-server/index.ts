@@ -84,6 +84,7 @@ export class UORMCPServer {
   private toolsManager: UORToolsManager;
   private validationService: MCPValidationService;
 
+
   /**
    * Create a new UOR MCP server
    * 
@@ -116,7 +117,7 @@ export class UORMCPServer {
     
     this.server.onerror = (error: unknown) => console.error('[MCP Error]', error);
     process.on('SIGINT', async () => {
-      await this.server.close();
+      await this.close();
       process.exit(0);
     });
   }
@@ -209,6 +210,10 @@ export class UORMCPServer {
     });
   }
 
+
+
+
+
   /**
    * Start the server
    * 
@@ -233,6 +238,20 @@ export class UORMCPServer {
       }
     } catch (error) {
       console.error('Failed to start MCP server:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Close the server
+   * 
+   * @returns A promise that resolves when the server is closed
+   */
+  async close(): Promise<void> {
+    try {
+      await this.server.close();
+    } catch (error) {
+      console.error('Error closing server:', error);
       throw error;
     }
   }

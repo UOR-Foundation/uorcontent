@@ -32,6 +32,80 @@ export class MCPValidationService {
       strict: false
     });
     addFormats(this.ajv);
+    this.initializeJSONRPCSchemas();
+  }
+
+  /**
+   * Initialize JSON-RPC schemas
+   */
+  private initializeJSONRPCSchemas(): void {
+    const requestSchema = {
+      type: 'object',
+      properties: {
+        jsonrpc: { type: 'string', enum: ['2.0'] },
+        id: { type: ['string', 'number'] },
+        method: { type: 'string' },
+        params: { type: 'object', additionalProperties: true }
+      },
+      required: ['jsonrpc', 'id', 'method'],
+      additionalProperties: false
+    };
+    
+    const responseSchema = {
+      type: 'object',
+      properties: {
+        jsonrpc: { type: 'string', enum: ['2.0'] },
+        id: { type: ['string', 'number'] },
+        result: { type: 'object', additionalProperties: true }
+      },
+      required: ['jsonrpc', 'id', 'result'],
+      additionalProperties: false
+    };
+    
+    const errorSchema = {
+      type: 'object',
+      properties: {
+        jsonrpc: { type: 'string', enum: ['2.0'] },
+        id: { type: ['string', 'number'] },
+        error: {
+          type: 'object',
+          properties: {
+            code: { type: 'number' },
+            message: { type: 'string' },
+            data: { type: 'object', additionalProperties: true }
+          },
+          required: ['code', 'message'],
+          additionalProperties: false
+        }
+      },
+      required: ['jsonrpc', 'id', 'error'],
+      additionalProperties: false
+    };
+    
+    this.ajv.addSchema(requestSchema, 'jsonrpc-request');
+    this.ajv.addSchema(responseSchema, 'jsonrpc-response');
+    this.ajv.addSchema(errorSchema, 'jsonrpc-error');
+  }
+
+  /**
+   * Validate a JSON-RPC request
+   * 
+   * @param data - JSON-RPC request data
+   * @returns Validation result
+   */
+  validateJSONRPC(data: unknown): ValidationResult {
+    const validate = this.ajv.getSchema('jsonrpc-request');
+    
+    if (!validate) {
+      return { valid: false, errors: [{ keyword: 'schema', message: 'JSON-RPC request schema not found' } as ErrorObject] };
+    }
+    
+    const valid = validate(data) as boolean;
+    
+    return {
+      valid,
+      errors: valid ? undefined : (validate.errors || [])
+    };
   }
 
   /**
