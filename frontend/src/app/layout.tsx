@@ -6,6 +6,12 @@ import { MCPClientProvider } from "../components/MCPClientProvider";
 import { QueryClientProvider } from "../providers/QueryClientProvider";
 import { AuthProvider } from "../components/AuthProvider";
 import { ToastProvider } from "../components/ToastProvider";
+import OfflineIndicator from "../components/OfflineIndicator";
+import { registerServiceWorker } from "../lib/serviceWorker";
+
+if (typeof window !== 'undefined') {
+  registerServiceWorker();
+}
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +46,7 @@ export default function RootLayout({
                 <main className="min-h-screen">
                   {children}
                 </main>
+                <OfflineIndicator />
               </MCPClientProvider>
             </AuthProvider>
           </ToastProvider>
