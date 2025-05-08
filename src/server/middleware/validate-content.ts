@@ -28,6 +28,10 @@ export const validateContent = async (
     if (req.method === 'GET' || req.method === 'DELETE') {
       return next();
     }
+    
+    if (req.method === 'PATCH') {
+      return next();
+    }
 
     const pathParts = req.baseUrl.split('/').filter(Boolean);
     let contentType = pathParts[pathParts.length - 1]; // Last part of the URL path
