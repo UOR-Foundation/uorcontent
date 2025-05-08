@@ -24,13 +24,34 @@ export async function POST(request: NextRequest) {
     
     const backendUrl = process.env.NEXT_PUBLIC_MCP_API_URL || 'http://localhost:3001/api/mcp';
     
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json',
+    };
+    
+    const authHeader = request.headers.get('Authorization');
+    if (authHeader) {
+      headers['Authorization'] = authHeader;
+    }
+    
     const response = await fetch(backendUrl, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers,
       body: JSON.stringify(mcpRequest),
     });
+    
+    if (response.status === 401) {
+      return NextResponse.json(
+        {
+          id: mcpRequest.id,
+          error: {
+            code: 401,
+            message: 'Authentication failed',
+          },
+          jsonrpc: '2.0',
+        },
+        { status: 401 }
+      );
+    }
     
     const data: MCPResponse<unknown> = await response.json();
     
