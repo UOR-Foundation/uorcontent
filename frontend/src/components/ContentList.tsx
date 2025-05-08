@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { mcpClient } from '../api/client';
-import { MCPResponse } from '../types/shared';
+import { useMCPClient } from './MCPClientProvider';
 
 interface ContentListProps {
   contentType: 'concepts' | 'predicates' | 'resources' | 'topics';
@@ -16,17 +15,18 @@ interface ContentItem {
 }
 
 export default function ContentList({ contentType, title }: ContentListProps) {
+  const { loading: mcpLoading, error: mcpError, executeRequest } = useMCPClient();
   const [items, setItems] = useState<ContentItem[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [localLoading, setLocalLoading] = useState(true);
+  const [localError, setLocalError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        setLoading(true);
-        setError(null);
+        setLocalLoading(true);
+        setLocalError(null);
         
-        const response = await mcpClient<ContentItem[]>({
+        const response = await executeRequest<ContentItem[]>({
           id: `list-${contentType}-${Date.now()}`,
           method: `list${contentType.charAt(0).toUpperCase() + contentType.slice(1)}`,
           params: {},
@@ -34,19 +34,22 @@ export default function ContentList({ contentType, title }: ContentListProps) {
         });
         
         if (response.error) {
-          setError(`Error fetching ${contentType}: ${response.error.message}`);
+          setLocalError(`Error fetching ${contentType}: ${response.error.message}`);
         } else if (response.result) {
           setItems(response.result);
         }
       } catch (err) {
-        setError(`Failed to fetch ${contentType}: ${err instanceof Error ? err.message : String(err)}`);
+        setLocalError(`Failed to fetch ${contentType}: ${err instanceof Error ? err.message : String(err)}`);
       } finally {
-        setLoading(false);
+        setLocalLoading(false);
       }
     };
     
     fetchItems();
-  }, [contentType]);
+  }, [contentType, executeRequest]);
+
+  const loading = localLoading || mcpLoading;
+  const error = localError || mcpError;
 
   if (loading) {
     return (

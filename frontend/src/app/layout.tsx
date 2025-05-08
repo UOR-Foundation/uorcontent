@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
+import { MCPClientProvider } from "../components/MCPClientProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,10 +29,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navigation />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <MCPClientProvider>
+          <Navigation />
+          <main className="min-h-screen">
+            {children}
+          </main>
+        </MCPClientProvider>
       </body>
     </html>
   );
