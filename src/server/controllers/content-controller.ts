@@ -7,6 +7,7 @@
 
 import { Request, Response, NextFunction } from 'express';
 import { ContentService } from '../../services/content-service';
+import { UORContentItem } from '../../models/types';
 import { NotFoundError } from '../types/errors';
 
 /**
@@ -31,21 +32,75 @@ export const contentController = {
       const type = req.query.type as string;
       const name = req.query.name as string;
 
-      const contentService = new ContentService();
-      const result = await contentService.getAllContent(page, limit, type);
-      
-      if (result['@type'] === 'ItemList' && Array.isArray(result.itemListElement)) {
-        let items = result.itemListElement.map((listItem: any) => listItem.item);
+      console.log(`Query parameters: page=${page}, limit=${limit}, type=${type}, name=${name}`);
+
+      if (name) {
+        console.log(`Direct name query${type ? ` for type ${type}` : ''}: ${name}`);
         
-        if (name) {
-          items = items.filter(item => item.name === name);
+        const fs = require('fs');
+        const path = require('path');
+        const contentDir = process.env.CONTENT_DIR || 'converted';
+        
+        let matchingItems: UORContentItem[] = [];
+        
+        const typesToScan = type ? [type] : ['concept', 'resource', 'topic', 'predicate'];
+        
+        for (const contentType of typesToScan) {
+          const typeDir = path.join(contentDir, `${contentType}s`);
+          console.log(`Scanning directory: ${typeDir}`);
+          
+          try {
+            if (fs.existsSync(typeDir)) {
+              const files = fs.readdirSync(typeDir);
+              console.log(`Found ${files.length} files in ${typeDir}`);
+              
+              for (const file of files) {
+                if (file.endsWith('.json')) {
+                  try {
+                    const filePath = path.join(typeDir, file);
+                    const content = fs.readFileSync(filePath, 'utf-8');
+                    const item = JSON.parse(content) as UORContentItem;
+                    
+                    if (item.name === name) {
+                      console.log(`DIRECT MATCH FOUND: ${item.name} (ID: ${item['@id']})`);
+                      matchingItems.push(item);
+                    }
+                  } catch (error) {
+                    console.error(`Error reading file ${file}: ${error instanceof Error ? error.message : 'Unknown error'}`);
+                  }
+                }
+              }
+            }
+          } catch (error) {
+            console.error(`Error scanning directory ${typeDir}: ${error instanceof Error ? error.message : 'Unknown error'}`);
+          }
         }
         
+        console.log(`Found ${matchingItems.length} items matching name "${name}"${type ? ` for type ${type}` : ''}`);
+        
+        matchingItems.forEach((item: UORContentItem) => {
+          console.log(`Match: ${item.name} (ID: ${item['@id']})`);
+        });
+        
+        res.json(matchingItems);
+        return;
+      }
+      
+      const contentService = new ContentService();
+      await contentService.refreshContent();
+      
+      const result = await contentService.getAllContent(page, limit, type, name);
+      
+      if (result['@type'] === 'ItemList' && Array.isArray(result.itemListElement)) {
+        const items = result.itemListElement.map((listItem: any) => listItem.item);
+        console.log(`Returning ${items.length} items from ItemList`);
         res.json(items);
       } else {
+        console.log(`Result is not an ItemList, returning directly`);
         res.json(result);
       }
     } catch (error) {
+      console.error(`Error in getAllContent: ${error instanceof Error ? error.message : 'Unknown error'}`);
       next(error);
     }
   },

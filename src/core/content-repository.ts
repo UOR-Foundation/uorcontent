@@ -38,11 +38,16 @@ export class ContentRepository {
       return this.getContentByType(type);
     }
 
-    const indexPath = path.join(this.contentDir, 'index.json');
-    const indexContent = await this.fileSystem.readFile(indexPath);
-    const index = JSON.parse(indexContent);
-
-    return index.itemListElement.map((item: { item: UORContentItem }) => item.item);
+    const types = ['concept', 'predicate', 'resource', 'topic'];
+    const allItems: UORContentItem[] = [];
+    
+    for (const contentType of types) {
+      const items = await this.getContentByType(contentType);
+      allItems.push(...items);
+    }
+    
+    console.log(`getAllContent: Found ${allItems.length} total items across all types`);
+    return allItems;
   }
 
   /**
@@ -52,11 +57,119 @@ export class ContentRepository {
    * @returns Array of content items
    */
   private async getContentByType(type: string): Promise<UORContentItem[]> {
+    console.log(`Getting content by type: ${type}`);
+    console.log(`Content directory: ${this.contentDir}`);
+    
     const indexPath = path.join(this.contentDir, `${type}s-index.json`);
-    const indexContent = await this.fileSystem.readFile(indexPath);
-    const index = JSON.parse(indexContent);
-
-    return index.itemListElement.map((item: { item: UORContentItem }) => item.item);
+    console.log(`Checking index file: ${indexPath}`);
+    
+    try {
+      const indexContent = await this.fileSystem.readFile(indexPath);
+      const index = JSON.parse(indexContent);
+      
+      if (index['@type'] === 'ItemList' && Array.isArray(index.itemListElement)) {
+        console.log(`Found ${index.itemListElement.length} items in index for type ${type}`);
+        
+        const items = index.itemListElement.map((listItem: any) => listItem.item);
+        console.log(`Extracted ${items.length} items from index`);
+        
+        items.slice(0, 3).forEach((item: UORContentItem) => {
+          console.log(`Index item: ${item.name} (ID: ${item['@id']})`);
+        });
+        
+        return items;
+      }
+    } catch (error) {
+      console.log(`Index file not found or invalid, falling back to directory scan: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
+    
+    const typeDirs = [
+      path.join(this.contentDir, `${type}s`),
+      path.join(this.contentDir, 'converted', `${type}s`),
+      path.join(this.contentDir, 'uors')
+    ];
+    
+    const items: UORContentItem[] = [];
+    const processedIds = new Set<string>(); // Track processed IDs to avoid duplicates
+    
+    for (const typeDir of typeDirs) {
+      console.log(`Scanning directory: ${typeDir}`);
+      
+      try {
+        try {
+          const dirExists = await this.fileSystem.directoryExists(typeDir);
+          if (!dirExists) {
+            console.log(`Directory does not exist: ${typeDir}`);
+            continue;
+          }
+        } catch (dirError) {
+          console.log(`Error checking directory: ${typeDir} - ${dirError instanceof Error ? dirError.message : 'Unknown error'}`);
+          continue;
+        }
+        
+        let files;
+        try {
+          files = await this.fileSystem.listDirectory(typeDir);
+          console.log(`Found ${files.length} files in ${typeDir}`);
+        } catch (listError) {
+          console.log(`Error listing directory: ${typeDir} - ${listError instanceof Error ? listError.message : 'Unknown error'}`);
+          continue;
+        }
+        
+        for (const file of files) {
+          if (file.endsWith('.json')) {
+            const isTypeFile = 
+              file.startsWith(`urn:uor:${type}:`) || 
+              file.startsWith(`UOR-${type.charAt(0).toUpperCase()}-`) ||
+              (typeDir.endsWith('uors') && file.includes(type)) ||
+              (typeDir.includes(`${type}s`)); // If it's in the type directory, it's likely of that type
+              
+            if (!isTypeFile) {
+              continue;
+            }
+            try {
+              const filePath = path.join(typeDir, file);
+              console.log(`Reading file: ${filePath}`);
+              const content = await this.fileSystem.readFile(filePath);
+              const item = JSON.parse(content) as UORContentItem;
+              
+              if (!item['@id']) {
+                console.log('Skipping item without ID');
+                continue;
+              }
+              
+              const itemId = item['@id'] as string;
+              
+              if (processedIds.has(itemId)) {
+                console.log(`Skipping duplicate item with ID: ${itemId}`);
+                continue;
+              }
+              
+              // Verify this is the correct content type
+              if (
+                (type === 'concept' && item['@type'] === 'DefinedTerm') ||
+                (type === 'predicate' && item['@type'] === 'PropertyValue') ||
+                (type === 'resource' && item['@type'] === 'CreativeWork') ||
+                (type === 'topic' && item['@type'] === 'CreativeWork')
+              ) {
+                console.log(`Parsed ${type} with ID: ${itemId} and name: ${item.name || 'unnamed'}`);
+                items.push(item);
+                processedIds.add(itemId);
+              } else {
+                console.log(`Skipping item with incorrect type: ${item['@type'] || 'unknown'}`);
+              }
+            } catch (error) {
+              console.error(`Error reading file ${file}: ${error instanceof Error ? error.message : 'Unknown error'}`);
+            }
+          }
+        }
+      } catch (error) {
+        console.error(`Error scanning directory ${typeDir}: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      }
+    }
+    
+    console.log(`Returning ${items.length} items of type ${type}`);
+    return items;
   }
 
   /**
@@ -66,29 +179,45 @@ export class ContentRepository {
    * @returns Content item or null if not found
    */
   public async getContentById(id: string): Promise<UORContentItem | null> {
+    console.log(`Getting content by ID: ${id}`);
+    console.log(`Content directory: ${this.contentDir}`);
+    
     const idParts = id.split(':');
     if (idParts.length < 3) {
+      console.log(`Invalid ID format: ${id}`);
       return null;
     }
 
-    const type = idParts[1];
-    const name = idParts[2];
+    const type = idParts.length > 2 ? idParts[2] : '';
+    const name = idParts.length > 3 ? idParts[3] : '';
+    console.log(`Type: ${type}, Name: ${name}`);
 
-    const filePaths = [
-      path.join(this.contentDir, `${type}s`, `${id}.json`),
-      path.join(this.contentDir, `${type}s`, `UOR-${type.charAt(0).toUpperCase()}-${name}.json`),
-      path.join(this.contentDir, 'uors', `${id}.json`),
-      path.join(this.contentDir, 'uors', `UOR-U-${type}.json`)
-    ];
+    const path1 = path.join(this.contentDir, `${type}s`, `${id}.json`);
+    const path2 = path.join(this.contentDir, `${type}s`, `UOR-${type.charAt(0).toUpperCase()}-${name}.json`);
+    const path3 = path.join(this.contentDir, 'uors', `${id}.json`);
+    const path4 = path.join(this.contentDir, 'uors', `UOR-U-${type}.json`);
     
-    for (const filePath of filePaths) {
+    console.log(`Path 1: ${path1}`);
+    console.log(`Path 2: ${path2}`);
+    console.log(`Path 3: ${path3}`);
+    console.log(`Path 4: ${path4}`);
+    
+    const allPaths = [path1, path2, path3, path4];
+    
+    console.log(`Trying file paths for ID ${id}:`);
+    console.log(`All paths to try: ${JSON.stringify(allPaths)}`);
+    for (const filePath of allPaths) {
+      console.log(`- Trying: ${filePath}`);
       try {
         const content = await this.fileSystem.readFile(filePath);
+        console.log(`Found content at: ${filePath}`);
         return JSON.parse(content) as UORContentItem;
       } catch (error) {
+        console.log(`  Not found at: ${filePath}`);
       }
     }
     
+    console.log(`Content not found for ID: ${id}`);
     return null;
   }
 
@@ -117,15 +246,30 @@ export class ContentRepository {
       contentData['@id'] = `urn:uor:${type}:${name}`;
     }
 
+    console.log(`Creating content with ID: ${contentData['@id']}`);
     const idParts = contentData['@id'].split(':');
-    const name = idParts[2];
+    const name = idParts.length > 3 ? idParts[3] : '';
+    const idSuffix = name;
+    
+    // Create directory for content type
+    const typeDir = path.join(this.contentDir, `${type}s`);
+    try {
+      await this.fileSystem.createDirectory(typeDir);
+      console.log(`Ensured type directory exists: ${typeDir}`);
+    } catch (error) {
+      console.log(`Directory already exists or error: ${typeDir}`);
+    }
     
     const filePath = path.join(
       this.contentDir,
       `${type}s`,
       `${contentData['@id']}.json`
     );
+    
+    console.log(`Creating content file at: ${filePath}`);
+    console.log(`Content data: ${JSON.stringify(contentData, null, 2)}`);
 
+    console.log(`Writing content to: ${filePath}`);
     await this.fileSystem.writeFile(
       filePath,
       JSON.stringify(contentData, null, 2)
@@ -159,8 +303,8 @@ export class ContentRepository {
       return null;
     }
 
-    const type = idParts[1];
-    const name = idParts[2];
+    const type = idParts.length > 2 ? idParts[2] : '';
+    const name = idParts.length > 3 ? idParts[3] : '';
 
     const filePaths = [
       path.join(this.contentDir, `${type}s`, `${id}.json`),
@@ -208,8 +352,8 @@ export class ContentRepository {
       return false;
     }
 
-    const type = idParts[1];
-    const name = idParts[2];
+    const type = idParts.length > 2 ? idParts[2] : '';
+    const name = idParts.length > 3 ? idParts[3] : '';
 
     const filePaths = [
       path.join(this.contentDir, `${type}s`, `${id}.json`),

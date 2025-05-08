@@ -47,7 +47,12 @@ export function setupTestEnvironment() {
   };
   
   for (const indexFile of indexFiles) {
-    fs.writeFileSync(indexFile, JSON.stringify(emptyIndex, null, 2), 'utf-8');
+    try {
+      fs.writeFileSync(indexFile, JSON.stringify(emptyIndex, null, 2), 'utf-8');
+      console.log(`Created index file: ${indexFile}`);
+    } catch (error) {
+      console.error(`Error creating index file ${indexFile}: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
   }
   
   return {

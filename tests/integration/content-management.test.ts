@@ -100,10 +100,15 @@ describe('Content Management Integration', () => {
       expect(topic['@id']).toBeDefined();
       
       fileSystem.readFile.mockResolvedValueOnce(JSON.stringify({
-        itemListElement: [
-          { item: { '@id': concept['@id'], name: concept.name } },
-          { item: { '@id': resource['@id'], name: resource.name } },
-          { item: { '@id': topic['@id'], name: topic.name } }
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': 'UOR Content',
+        'description': 'Index of UOR content items',
+        'numberOfItems': 3,
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'item': { '@id': concept['@id'], '@type': 'DefinedTerm', 'name': concept.name } },
+          { '@type': 'ListItem', 'position': 2, 'item': { '@id': resource['@id'], '@type': 'CreativeWork', 'name': resource.name } },
+          { '@type': 'ListItem', 'position': 3, 'item': { '@id': topic['@id'], '@type': 'CreativeWork', 'name': topic.name } }
         ]
       }));
       
@@ -120,9 +125,14 @@ describe('Content Management Integration', () => {
       expect(deleteResult).toBe(true);
       
       fileSystem.readFile.mockResolvedValueOnce(JSON.stringify({
-        itemListElement: [
-          { item: { '@id': resource['@id'], name: resource.name } },
-          { item: { '@id': topic['@id'], name: topic.name } }
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': 'UOR Content',
+        'description': 'Index of UOR content items',
+        'numberOfItems': 2,
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'item': { '@id': resource['@id'], '@type': 'CreativeWork', 'name': resource.name } },
+          { '@type': 'ListItem', 'position': 2, 'item': { '@id': topic['@id'], '@type': 'CreativeWork', 'name': topic.name } }
         ]
       }));
       
