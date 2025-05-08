@@ -11,9 +11,11 @@ import OfflineIndicator from "../components/OfflineIndicator";
 import { registerServiceWorker } from "../lib/serviceWorker";
 import SkipLink from "../components/SkipLink";
 import { useScreenReader } from "../hooks/useScreenReader";
+import { initAnalytics } from "../lib/analytics";
 
 if (typeof window !== 'undefined') {
   registerServiceWorker();
+  initAnalytics();
 }
 
 const geistSans = Geist({
