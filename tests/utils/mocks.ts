@@ -5,7 +5,7 @@
  */
 
 import { ValidationResult, ValidationError } from '../../src/utils/schema-validation';
-import { Concept, Predicate, Resource, Topic } from '../../src/models/types';
+
 
 /**
  * Create a mock file system for testing
@@ -48,17 +48,17 @@ export function createMockSchemaValidator() {
  * @returns Mock event emitter implementation
  */
 export function createMockEventEmitter() {
-  const listeners: Record<string, Function[]> = {};
+  const listeners: Record<string, Array<((...args: unknown[]) => void)>> = {};
   
   return {
-    addEventListener: jest.fn((event: string, listener: Function) => {
+    addEventListener: jest.fn((event: string, listener: (...args: unknown[]) => void) => {
       if (!listeners[event]) {
         listeners[event] = [];
       }
       listeners[event].push(listener);
     }),
     
-    removeEventListener: jest.fn((event: string, listener: Function) => {
+    removeEventListener: jest.fn((event: string, listener: (...args: unknown[]) => void) => {
       if (listeners[event]) {
         const index = listeners[event].indexOf(listener);
         if (index !== -1) {
@@ -67,7 +67,7 @@ export function createMockEventEmitter() {
       }
     }),
     
-    emit: jest.fn((event: string, ...args: any[]) => {
+    emit: jest.fn((event: string, ...args: unknown[]) => {
       if (listeners[event]) {
         for (const listener of listeners[event]) {
           listener(...args);
@@ -92,7 +92,7 @@ export function createMockRequest(options: {
   url?: string;
   params?: Record<string, string>;
   query?: Record<string, string>;
-  body?: any;
+  body?: unknown;
   headers?: Record<string, string>;
 }) {
   return {
@@ -114,7 +114,7 @@ export function createMockRequest(options: {
  * @returns Mock response object with jest functions
  */
 export function createMockResponse() {
-  const res: any = {
+  const res = {
     status: jest.fn().mockReturnThis(),
     json: jest.fn().mockReturnThis(),
     send: jest.fn().mockReturnThis(),

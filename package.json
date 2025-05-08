@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "lint": "eslint src --ext .ts",
+    "lint": "eslint src tests --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "dev": "ts-node src/index.ts",
     "prepare": "npm run build"
@@ -27,12 +27,14 @@
     "@types/helmet": "^0.0.48",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.19.97",
+    "@types/supertest": "^6.0.3",
     "@types/uuid": "^10.0.0",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "eslint": "^8.37.0",
     "jest": "^29.5.0",
     "prettier": "^2.8.7",
+    "supertest": "^7.1.0",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.3"

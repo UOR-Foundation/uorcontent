@@ -47,7 +47,7 @@ export function setupTestEnvironment() {
  * @param filePath - Path to the file to create
  * @param content - Content to write to the file
  */
-export function createTestFile(filePath: string, content: any) {
+export function createTestFile(filePath: string, content: unknown) {
   const dirPath = path.dirname(filePath);
   
   if (!fs.existsSync(dirPath)) {
@@ -57,7 +57,7 @@ export function createTestFile(filePath: string, content: any) {
   if (typeof content === 'object') {
     fs.writeFileSync(filePath, JSON.stringify(content, null, 2), 'utf-8');
   } else {
-    fs.writeFileSync(filePath, content, 'utf-8');
+    fs.writeFileSync(filePath, String(content), 'utf-8');
   }
 }
 
@@ -77,6 +77,6 @@ export function wait(ms: number): Promise<void> {
  * @param prefix - Prefix for the ID
  * @returns Random ID with the specified prefix
  */
-export function generateTestId(prefix: string = 'test'): string {
+export function generateTestId(prefix = 'test'): string {
   return `${prefix}-${Math.random().toString(36).substring(2, 10)}`;
 }

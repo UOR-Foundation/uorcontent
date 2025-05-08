@@ -4,38 +4,21 @@
  * This file contains end-to-end tests for the API endpoints of the UOR Content Management Client.
  */
 
-import * as request from 'supertest';
+import request from 'supertest';
 import { Server } from 'http';
 import { setupTestEnvironment } from '../utils/test-helpers';
 import { loadConceptFixture, loadResourceFixture } from '../utils/fixture-loader';
-import { createServer } from '../../src/server';
-import { FileSystem } from '../../src/utils/file-system';
-import { SchemaValidator } from '../../src/utils/schema-validation';
-import { ContentRepository } from '../../src/core/content-repository';
-import { ConceptManager } from '../../src/managers/concept-manager';
-import { ResourceManager } from '../../src/managers/resource-manager';
+import { MCPServer } from '../../src/server';
 
 describe('API Endpoints E2E Tests', () => {
   let server: Server;
   let testEnv: ReturnType<typeof setupTestEnvironment>;
-  let fileSystem: FileSystem;
-  let contentRepository: ContentRepository;
   
   beforeAll(async () => {
     testEnv = setupTestEnvironment();
-    fileSystem = new FileSystem();
-    const schemaValidator = new SchemaValidator();
     
-    contentRepository = new ContentRepository(fileSystem, testEnv.contentDir);
-    const conceptManager = new ConceptManager(fileSystem, schemaValidator, testEnv.contentDir);
-    const resourceManager = new ResourceManager(fileSystem, schemaValidator, testEnv.contentDir);
-    
-    server = await createServer({
-      contentRepository,
-      conceptManager,
-      resourceManager,
-      port: 0 // Use a random available port
-    });
+    const mcpServer = new MCPServer(0);
+    server = mcpServer.getApp().listen(0);
   });
   
   afterAll(async () => {
