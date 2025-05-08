@@ -3,12 +3,27 @@
  */
 
 import { UORMCPServer } from '../../src/mcp-server';
-import { Server } from '@modelcontextprotocol/sdk/server';
-import { HttpServerTransport } from '@modelcontextprotocol/sdk/server/http';
 import axios from 'axios';
 
-jest.mock('@modelcontextprotocol/sdk/server');
-jest.mock('@modelcontextprotocol/sdk/server/http');
+type Server = {
+  setRequestHandler: jest.Mock;
+  connect: jest.Mock;
+  close: jest.Mock;
+  onerror: jest.Mock;
+};
+
+jest.mock('@modelcontextprotocol/sdk/server', () => ({
+  Server: jest.fn().mockImplementation(() => ({
+    setRequestHandler: jest.fn(),
+    connect: jest.fn().mockResolvedValue(undefined),
+    close: jest.fn().mockResolvedValue(undefined),
+    onerror: jest.fn()
+  }))
+}));
+
+jest.mock('@modelcontextprotocol/sdk/server/http', () => ({
+  HttpServerTransport: jest.fn().mockImplementation(() => ({}))
+}));
 
 describe('MCP Server Integration', () => {
   let server: UORMCPServer;
