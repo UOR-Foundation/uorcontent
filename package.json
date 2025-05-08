@@ -10,7 +10,10 @@
     "lint": "eslint src tests --ext .ts --max-warnings=9999",
     "format": "prettier --write \"src/**/*.ts\"",
     "dev": "ts-node src/index.ts",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "start:frontend": "cd frontend && npm run start"
   },
   "keywords": [
     "uor",
