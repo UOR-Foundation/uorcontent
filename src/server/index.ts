@@ -15,6 +15,7 @@ import { validateRequest } from './middleware/validate-request';
 import { JSONRPCHandler } from './utils/json-rpc-handler';
 import { createJSONRPCMiddleware } from './middleware/json-rpc-middleware';
 import { ContentService } from '../services/content-service';
+import { UORContentItem } from '../models/types';
 import { contentRoutes } from './routes/content-routes';
 import { conceptRoutes } from './routes/concept-routes';
 import { predicateRoutes } from './routes/predicate-routes';
@@ -75,14 +76,14 @@ export class MCPServer {
     this.jsonRPCHandler.registerMethod('content.create', async (params) => {
       const { content } = params || {};
       if (!content) throw new Error('Content is required');
-      return contentService.createContent(content as any) as unknown as Record<string, unknown>;
+      return contentService.createContent(content as UORContentItem) as unknown as Record<string, unknown>;
     });
     
     this.jsonRPCHandler.registerMethod('content.update', async (params) => {
       const { id, content } = params || {};
       if (!id) throw new Error('Content ID is required');
       if (!content) throw new Error('Content is required');
-      return contentService.updateContent(id as string, content as any) as unknown as Record<string, unknown>;
+      return contentService.updateContent(id as string, content as Partial<UORContentItem>) as unknown as Record<string, unknown>;
     });
     
     this.jsonRPCHandler.registerMethod('content.delete', async (params) => {
