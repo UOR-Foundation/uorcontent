@@ -36,8 +36,33 @@ export interface JSONRPCError {
 
 /**
  * JSON-RPC method handler type
+ * 
+ * Generic type that allows for different return types
+ * while ensuring they can be converted to JSON-RPC responses
  */
-export type MethodHandler = (params: Record<string, unknown>) => Promise<Record<string, unknown>>;
+export type MethodHandler = (params: Record<string, unknown>) => Promise<unknown>;
+
+/**
+ * Helper function to convert any result to a Record<string, unknown>
+ * 
+ * @param result - Result from method handler
+ * @returns Result as Record<string, unknown>
+ */
+function ensureRecord(result: unknown): Record<string, unknown> {
+  if (result === null || result === undefined) {
+    return { value: null };
+  }
+  
+  if (typeof result === 'object' && result !== null) {
+    return result as Record<string, unknown>;
+  }
+  
+  if (typeof result === 'boolean' || typeof result === 'number' || typeof result === 'string') {
+    return { value: result };
+  }
+  
+  return { value: String(result) };
+}
 
 /**
  * JSON-RPC Handler
@@ -82,7 +107,8 @@ export class JSONRPCHandler {
         );
       }
       
-      const result = await handler(request.params || {});
+      const handlerResult = await handler(request.params || {});
+      const result = ensureRecord(handlerResult);
       
       return {
         jsonrpc: '2.0',
