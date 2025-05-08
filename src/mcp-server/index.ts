@@ -9,7 +9,7 @@ import { UORService } from './services/uor-service';
 import { UORResourceManager } from './services/resource-manager';
 import { UORToolsManager } from './services/tools-manager';
 import { MCPValidationService } from './services/validation-service';
-import { logger } from './utils/logger';
+import { logger } from '../mcp-server/utils/logger';
 
 import * as mcpServer from '@modelcontextprotocol/sdk/server';
 import * as mcpStdio from '@modelcontextprotocol/sdk/server/stdio';
