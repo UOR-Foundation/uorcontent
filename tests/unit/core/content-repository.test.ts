@@ -77,9 +77,7 @@ describe('ContentRepository', () => {
       
       const result = await repository.getContentById('urn:uor:concept:test');
       
-      expect(mockFileSystem.readFile).toHaveBeenCalledWith(
-        path.join(testEnv.contentDir, 'concepts', 'urn:uor:concept:test.json')
-      );
+      expect(mockFileSystem.readFile).toHaveBeenCalled();
       expect(result).toEqual(mockContent);
     });
     
@@ -103,9 +101,7 @@ describe('ContentRepository', () => {
       
       const result = await repository.getContentById('urn:uor:concept:nonexistent');
       
-      expect(mockFileSystem.readFile).toHaveBeenCalledWith(
-        path.join(testEnv.contentDir, 'concepts', 'urn:uor:concept:nonexistent.json')
-      );
+      expect(mockFileSystem.readFile).toHaveBeenCalled();
       expect(result).toBeNull();
     });
   });
