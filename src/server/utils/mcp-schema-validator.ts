@@ -151,8 +151,37 @@ export class MCPSchemaValidator {
       await this.initialize();
     }
 
-    const key = `${method}:${endpoint}`;
-    const validator = this.validators.get(key);
+    let key = `${method}:${endpoint}`;
+    let validator = this.validators.get(key);
+
+    if (!validator) {
+      const endpointParts = endpoint.split('/').filter(Boolean);
+      
+      for (const [registeredKey, registeredValidator] of this.validators.entries()) {
+        const [registeredMethod, registeredPath] = registeredKey.split(':');
+        
+        if (registeredMethod !== method) continue;
+        
+        const registeredParts = registeredPath.split('/').filter(Boolean);
+        
+        if (registeredParts.length !== endpointParts.length) continue;
+        
+        let matches = true;
+        for (let i = 0; i < registeredParts.length; i++) {
+          if (registeredParts[i].startsWith(':') || registeredParts[i] === endpointParts[i]) {
+            continue;
+          }
+          matches = false;
+          break;
+        }
+        
+        if (matches) {
+          validator = registeredValidator;
+          key = registeredKey;
+          break;
+        }
+      }
+    }
 
     if (!validator) {
       console.warn(`No validator found for ${key}`);

@@ -29,11 +29,11 @@ export const validateContent = async (
       return next();
     }
 
-    const pathParts = req.path.split('/').filter(Boolean);
-    let contentType = pathParts[0]; // e.g., 'concepts', 'predicates', etc.
+    const pathParts = req.baseUrl.split('/').filter(Boolean);
+    let contentType = pathParts[pathParts.length - 1]; // Last part of the URL path
     
     if (contentType.endsWith('s')) {
-      contentType = contentType.slice(0, -1);
+      contentType = contentType.slice(0, -1); // Remove trailing 's' to get singular form
     }
     
     const validator = ContentSchemaValidator.getInstance();
