@@ -1,0 +1,46 @@
+{
+  "app": {
+    "title": "إدارة محتوى UOR",
+    "description": "عميل إدارة محتوى UOR لإدارة محتوى UOR"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "concepts": "المفاهيم",
+    "predicates": "المسندات",
+    "resources": "الموارد",
+    "topics": "المواضيع",
+    "login": "تسجيل الدخول",
+    "register": "التسجيل",
+    "logout": "تسجيل الخروج"
+  },
+  "actions": {
+    "create": "إنشاء",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب",
+    "import": "استيراد",
+    "export": "تصدير"
+  },
+  "language": {
+    "en": "الإنجليزية",
+    "es": "الإسبانية",
+    "fr": "الفرنسية",
+    "de": "الألمانية",
+    "ar": "العربية"
+  },
+  "accessibility": {
+    "skipToContent": "تخطي إلى المحتوى الرئيسي",
+    "darkMode": "تبديل الوضع المظلم",
+    "language": "تغيير اللغة"
+  },
+  "errors": {
+    "general": "حدث خطأ",
+    "notFound": "الصفحة غير موجودة",
+    "unauthorized": "وصول غير مصرح به",
+    "offline": "أنت غير متصل بالإنترنت"
+  }
+}

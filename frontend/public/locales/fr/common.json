@@ -1,0 +1,46 @@
+{
+  "app": {
+    "title": "Gestion de Contenu UOR",
+    "description": "Client de Gestion de Contenu UOR pour gérer le contenu UOR"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "concepts": "Concepts",
+    "predicates": "Prédicats",
+    "resources": "Ressources",
+    "topics": "Sujets",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "logout": "Déconnexion"
+  },
+  "actions": {
+    "create": "Créer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "import": "Importer",
+    "export": "Exporter"
+  },
+  "language": {
+    "en": "Anglais",
+    "es": "Espagnol",
+    "fr": "Français",
+    "de": "Allemand",
+    "ar": "Arabe"
+  },
+  "accessibility": {
+    "skipToContent": "Passer au contenu principal",
+    "darkMode": "Basculer en mode sombre",
+    "language": "Changer de langue"
+  },
+  "errors": {
+    "general": "Une erreur s'est produite",
+    "notFound": "Page non trouvée",
+    "unauthorized": "Accès non autorisé",
+    "offline": "Vous êtes hors ligne"
+  }
+}

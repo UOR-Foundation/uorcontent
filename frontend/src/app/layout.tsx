@@ -6,6 +6,7 @@ import { MCPClientProvider } from "../components/MCPClientProvider";
 import { QueryClientProvider } from "../providers/QueryClientProvider";
 import { AuthProvider } from "../components/AuthProvider";
 import { ToastProvider } from "../components/ToastProvider";
+import { I18nProvider } from "../providers/I18nProvider";
 import OfflineIndicator from "../components/OfflineIndicator";
 import { registerServiceWorker } from "../lib/serviceWorker";
 import SkipLink from "../components/SkipLink";
@@ -44,21 +45,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <QueryClientProvider>
-          <ToastProvider>
-            <AuthProvider>
-              <MCPClientProvider>
-                <SkipLink targetId="main-content" />
-                <Navigation />
-                <main id="main-content" className="min-h-screen" tabIndex={-1}>
-                  {children}
-                </main>
-                <OfflineIndicator />
-                <ScreenReaderAnnouncers />
-              </MCPClientProvider>
-            </AuthProvider>
-          </ToastProvider>
-        </QueryClientProvider>
+        <I18nProvider>
+          <QueryClientProvider>
+            <ToastProvider>
+              <AuthProvider>
+                <MCPClientProvider>
+                  <SkipLink targetId="main-content" />
+                  <Navigation />
+                  <main id="main-content" className="min-h-screen" tabIndex={-1}>
+                    {children}
+                  </main>
+                  <OfflineIndicator />
+                  <ScreenReaderAnnouncers />
+                </MCPClientProvider>
+              </AuthProvider>
+            </ToastProvider>
+          </QueryClientProvider>
+        </I18nProvider>
       </body>
     </html>
   );
