@@ -17,6 +17,8 @@ describe('API Endpoints E2E Tests', () => {
   beforeAll(async () => {
     testEnv = setupTestEnvironment();
     
+    process.env.CONTENT_DIR = testEnv.contentDir;
+    
     const mcpServer = new MCPServer(0);
     
     const { MCPSchemaValidator } = require('../../src/server/utils/mcp-schema-validator');
