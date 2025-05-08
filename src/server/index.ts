@@ -12,6 +12,10 @@ import { rateLimit } from 'express-rate-limit';
 import { errorHandler } from './middleware/error-handler';
 import { requestLogger } from './middleware/request-logger';
 import { validateRequest } from './middleware/validate-request';
+import { JSONRPCHandler } from './utils/json-rpc-handler';
+import { createJSONRPCMiddleware } from './middleware/json-rpc-middleware';
+import { ContentService } from '../services/content-service';
+import { UORContentItem } from '../models/types';
 import { contentRoutes } from './routes/content-routes';
 import { conceptRoutes } from './routes/concept-routes';
 import { predicateRoutes } from './routes/predicate-routes';
@@ -31,6 +35,7 @@ import { relationshipRoutes } from './routes/relationship-routes';
 export class MCPServer {
   private app: express.Application;
   private port: number;
+  private jsonRPCHandler: JSONRPCHandler;
 
   /**
    * Create a new MCP server instance
@@ -40,8 +45,52 @@ export class MCPServer {
   constructor(port = 3000) {
     this.app = express();
     this.port = port;
+    this.jsonRPCHandler = new JSONRPCHandler();
+    this.registerJSONRPCMethods();
     this.configureMiddleware();
     this.configureRoutes();
+  }
+
+  /**
+   * Register JSON-RPC methods
+   */
+  private registerJSONRPCMethods(): void {
+    const contentService = new ContentService();
+    
+    this.jsonRPCHandler.registerMethod('content.list', async (params) => {
+      const { page = 1, limit = 10, type, name } = params || {};
+      return contentService.getAllContent(
+        Number(page), 
+        Number(limit), 
+        type as string | undefined, 
+        name as string | undefined
+      ) as unknown as Record<string, unknown>;
+    });
+    
+    this.jsonRPCHandler.registerMethod('content.get', async (params) => {
+      const { id } = params || {};
+      if (!id) throw new Error('Content ID is required');
+      return contentService.getContentById(id as string) as unknown as Record<string, unknown>;
+    });
+    
+    this.jsonRPCHandler.registerMethod('content.create', async (params) => {
+      const { content } = params || {};
+      if (!content) throw new Error('Content is required');
+      return contentService.createContent(content as UORContentItem) as unknown as Record<string, unknown>;
+    });
+    
+    this.jsonRPCHandler.registerMethod('content.update', async (params) => {
+      const { id, content } = params || {};
+      if (!id) throw new Error('Content ID is required');
+      if (!content) throw new Error('Content is required');
+      return contentService.updateContent(id as string, content as Partial<UORContentItem>) as unknown as Record<string, unknown>;
+    });
+    
+    this.jsonRPCHandler.registerMethod('content.delete', async (params) => {
+      const { id } = params || {};
+      if (!id) throw new Error('Content ID is required');
+      return { success: await contentService.deleteContent(id as string) } as unknown as Record<string, unknown>;
+    });
   }
 
   /**
@@ -65,6 +114,7 @@ export class MCPServer {
     this.app.use(express.json());
     
     this.app.use(requestLogger);
+    this.app.use('/api/jsonrpc', createJSONRPCMiddleware(this.jsonRPCHandler));
     this.app.use(validateRequest);
   }
 
