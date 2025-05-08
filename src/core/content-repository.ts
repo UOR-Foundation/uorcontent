@@ -236,8 +236,6 @@ export class ContentRepository {
     }
 
     console.log(`Creating content with ID: ${contentData['@id']}`);
-    const idParts = contentData['@id'].split(':');
-    const name = idParts.length > 3 ? idParts[3] : '';
     
     // Create directory for content type
     const typeDir = path.join(this.contentDir, `${type}s`);
