@@ -29,12 +29,18 @@ export const contentController = {
       const page = parseInt(req.query.page as string) || 1;
       const limit = parseInt(req.query.limit as string) || 20;
       const type = req.query.type as string;
+      const name = req.query.name as string;
 
       const contentService = new ContentService();
       const result = await contentService.getAllContent(page, limit, type);
       
       if (result['@type'] === 'ItemList' && Array.isArray(result.itemListElement)) {
-        const items = result.itemListElement.map((listItem: any) => listItem.item);
+        let items = result.itemListElement.map((listItem: any) => listItem.item);
+        
+        if (name) {
+          items = items.filter(item => item.name === name);
+        }
+        
         res.json(items);
       } else {
         res.json(result);

@@ -76,9 +76,7 @@ export class ContentRepository {
 
     const filePaths = [
       path.join(this.contentDir, `${type}s`, `${id}.json`),
-      path.join(this.contentDir, `${type}s`, `UOR-${type.charAt(0).toUpperCase()}-${name}.json`),
-      path.join(this.contentDir, 'uors', `${id}.json`),
-      path.join(this.contentDir, 'uors', `UOR-U-${type}.json`)
+      path.join(this.contentDir, `${type}s`, `UOR-${type.charAt(0).toUpperCase()}-${name}.json`)
     ];
     
     for (const filePath of filePaths) {
