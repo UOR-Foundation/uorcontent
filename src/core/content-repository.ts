@@ -75,21 +75,19 @@ export class ContentRepository {
     const name = idParts[2];
 
     let filePath: string;
-    switch (type) {
-      case 'concept':
-        filePath = path.join(this.contentDir, 'concepts', `UOR-C-${name}.json`);
-        break;
-      case 'predicate':
-        filePath = path.join(this.contentDir, 'predicates', `UOR-P-${name}.json`);
-        break;
-      case 'resource':
-        filePath = path.join(this.contentDir, 'resources', `UOR-R-${name}.json`);
-        break;
-      case 'topic':
-        filePath = path.join(this.contentDir, 'topics', `UOR-T-${name}.json`);
-        break;
-      default:
+    try {
+      filePath = path.join(this.contentDir, `${type}s`, `${id}.json`);
+      const content = await this.fileSystem.readFile(filePath);
+      return JSON.parse(content) as UORContentItem;
+    } catch (error) {
+      try {
+        const typeCode = type.charAt(0).toUpperCase();
+        filePath = path.join(this.contentDir, `${type}s`, `UOR-${typeCode}-${name}.json`);
+        const content = await this.fileSystem.readFile(filePath);
+        return JSON.parse(content) as UORContentItem;
+      } catch (innerError) {
         return null;
+      }
     }
 
     try {
@@ -127,11 +125,11 @@ export class ContentRepository {
 
     const idParts = contentData['@id'].split(':');
     const name = idParts[2];
-    const typeCode = type.charAt(0).toUpperCase();
+    
     const filePath = path.join(
       this.contentDir,
       `${type}s`,
-      `UOR-${typeCode}-${name}.json`
+      `${contentData['@id']}.json`
     );
 
     await this.fileSystem.writeFile(
@@ -166,11 +164,10 @@ export class ContentRepository {
     const type = idParts[1];
     const name = idParts[2];
 
-    const typeCode = type.charAt(0).toUpperCase();
     const filePath = path.join(
       this.contentDir,
       `${type}s`,
-      `UOR-${typeCode}-${name}.json`
+      `${id}.json`
     );
 
     await this.fileSystem.writeFile(
@@ -199,11 +196,10 @@ export class ContentRepository {
     const type = idParts[1];
     const name = idParts[2];
 
-    const typeCode = type.charAt(0).toUpperCase();
     const filePath = path.join(
       this.contentDir,
       `${type}s`,
-      `UOR-${typeCode}-${name}.json`
+      `${id}.json`
     );
 
     await this.fileSystem.deleteFile(filePath);
