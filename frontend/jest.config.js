@@ -5,9 +5,11 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
   transform: {
-    '^.+\\.tsx?$': ['ts-jest', {
+    '^.+\\.(ts|tsx)$': ['ts-jest', {
       tsconfig: 'tsconfig.json',
+      jsx: 'react-jsx',
     }],
   },
   setupFilesAfterEnv: ['<rootDir>/src/tests/setup.ts'],
+  testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'],
 };

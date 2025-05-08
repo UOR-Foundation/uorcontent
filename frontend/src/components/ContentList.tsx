@@ -52,7 +52,7 @@ export default function ContentList({ contentType, title }: ContentListProps) {
     return (
       <div className="p-4">
         <h2 className="text-xl font-semibold mb-4">{title}</h2>
-        <div className="animate-pulse">
+        <div className="animate-pulse" data-testid="loading-animation">
           <div className="h-4 bg-gray-200 rounded w-3/4 mb-2.5"></div>
           <div className="h-4 bg-gray-200 rounded w-full mb-2.5"></div>
           <div className="h-4 bg-gray-200 rounded w-5/6 mb-2.5"></div>
