@@ -32,8 +32,13 @@ export const contentController = {
 
       const contentService = new ContentService();
       const result = await contentService.getAllContent(page, limit, type);
-
-      res.json(result);
+      
+      if (result['@type'] === 'ItemList' && Array.isArray(result.itemListElement)) {
+        const items = result.itemListElement.map((listItem: any) => listItem.item);
+        res.json(items);
+      } else {
+        res.json(result);
+      }
     } catch (error) {
       next(error);
     }
