@@ -18,13 +18,29 @@ interface MCPResponse<T> {
   jsonrpc: string;
 }
 
-export async function POST(request: NextRequest) {
+/**
+ * API route handler for OPTIONS requests (CORS)
+ */
+export async function OPTIONS(): Promise<NextResponse> {
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    },
+  });
+}
+
+export async function POST(request: NextRequest): Promise<NextResponse> {
   try {
     const mcpRequest: MCPRequest = await request.json();
     
-    const backendUrl = process.env.NEXT_PUBLIC_MCP_API_URL || 'http://localhost:3001/api/mcp';
+    const backendUrl = process.env.VERCEL 
+      ? process.env.NEXT_PUBLIC_MCP_API_URL 
+      : process.env.NEXT_PUBLIC_MCP_API_URL || 'http://localhost:3001/api/mcp';
     
-    const headers: Record<string, string> = {
+    const headers: HeadersInit = {
       'Content-Type': 'application/json',
     };
     
@@ -33,7 +49,7 @@ export async function POST(request: NextRequest) {
       headers['Authorization'] = authHeader;
     }
     
-    const response = await fetch(backendUrl, {
+    const response = await fetch(backendUrl as string, {
       method: 'POST',
       headers,
       body: JSON.stringify(mcpRequest),
