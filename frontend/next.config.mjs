@@ -23,10 +23,10 @@ const nextConfig = {
   experimental: {
     forceSwcTransforms: true,
   },
-  // Temporarily disable ESLint during build to allow Vercel deployment
+  // Enable ESLint during build to enforce lint-checking
   eslint: {
-    // Skip ESLint during builds to prevent deployment failures
-    ignoreDuringBuilds: true,
+    // Run ESLint during build to fail if linting issues are detected
+    ignoreDuringBuilds: false,
     dirs: ['src'],
   },
   // Disable TypeScript checking during build to prevent build failures
