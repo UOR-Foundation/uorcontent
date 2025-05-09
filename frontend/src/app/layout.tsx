@@ -98,6 +98,8 @@ export default function RootLayout({
   );
 }
 
+'use client';
+
 function ScreenReaderAnnouncers() {
   const { ScreenReaderAnnouncer } = useScreenReader();
   return <ScreenReaderAnnouncer />;
