@@ -53,15 +53,5 @@
         "nodeVersion": "18.x"
       }
     }
-  ],
-  "routes": [
-    {
-      "src": "/api/mcp",
-      "dest": "/api/mcp"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
   ]
 }
