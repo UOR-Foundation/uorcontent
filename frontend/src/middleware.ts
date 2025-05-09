@@ -2,7 +2,8 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  const url = request.nextUrl.clone();
+  const { nextUrl, headers: requestHeaders, cookies } = request;
+  const url = nextUrl.clone();
   const response = NextResponse.next();
 
   response.headers.set('X-Content-Type-Options', 'nosniff');
@@ -17,7 +18,11 @@ export function middleware(request: NextRequest) {
   
   response.headers.set('Referrer-Policy', 'no-referrer');
 
-  console.log(`Middleware processing: ${url.pathname}`);
+  if (process.env.NODE_ENV !== 'production') {
+    console.log(`Middleware processing: ${url.pathname}`);
+    console.log(`Request method: ${request.method}`);
+    console.log(`User-Agent: ${requestHeaders.get('user-agent')}`);
+  }
 
   return response;
 }
