@@ -49,8 +49,19 @@
       "use": "@vercel/next",
       "config": {
         "maxLambdaSize": "15mb",
-        "memory": 4096
+        "memory": 4096,
+        "nodeVersion": "18.x"
       }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/mcp",
+      "dest": "/api/mcp"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
