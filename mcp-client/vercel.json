@@ -1,20 +1,17 @@
 {
   "version": 2,
-  "buildCommand": "NODE_OPTIONS='--max_old_space_size=4096' npm run build",
+  "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "node",
   "outputDirectory": "dist",
   "regions": ["iad1"],
-  "cleanUrls": true,
-  "trailingSlash": false,
   "github": {
     "silent": false,
     "autoJobCancelation": true
   },
   "env": {
-    "NODE_ENV": "production",
-    "NEXT_TELEMETRY_DISABLED": "1"
+    "NODE_ENV": "production"
   },
   "headers": [
     {
@@ -38,20 +35,9 @@
         },
         {
           "key": "Referrer-Policy",
-          "no-referrer": "no-referrer"
+          "value": "no-referrer"
         }
       ]
-    }
-  ],
-  "builds": [
-    {
-      "src": "dist/index.js",
-      "use": "@vercel/node",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "memory": 4096,
-        "nodeVersion": "18.x"
-      }
     }
   ]
 }
