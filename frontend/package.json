@@ -12,7 +12,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "validate": "npm run lint && npm run type-check && npm run test"
+    "validate": "npm run lint && npm run type-check && npm run test",
+    "export": "next build"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.4.2",
