@@ -10,7 +10,7 @@ import { I18nProvider } from "../providers/I18nProvider";
 import OfflineIndicator from "../components/OfflineIndicator";
 import { registerServiceWorker } from "../lib/serviceWorker";
 import SkipLink from "../components/SkipLink";
-import { useScreenReader } from "../hooks/useScreenReader";
+import { ScreenReaderAnnouncers } from "../components/ScreenReaderAnnouncers";
 import { initAnalytics } from "../lib/analytics";
 
 if (typeof window !== 'undefined') {
@@ -96,11 +96,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
-
-'use client';
-
-function ScreenReaderAnnouncers() {
-  const { ScreenReaderAnnouncer } = useScreenReader();
-  return <ScreenReaderAnnouncer />;
 }
