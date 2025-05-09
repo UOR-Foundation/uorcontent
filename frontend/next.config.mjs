@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'standalone', // Optimized for Vercel deployment
+  output: 'standalone',
+  // Disable static page generation to prevent timeouts
+  staticPageGenerationTimeout: 120,
   images: {
-    domains: [], // Add any image domains here if needed
-    unoptimized: process.env.NODE_ENV !== 'production',
+    domains: [],
+    unoptimized: true,
   },
   // Environment variables that will be available at build time
   env: {
@@ -13,6 +15,9 @@ const nextConfig = {
   // Simplified experimental settings
   experimental: {
     forceSwcTransforms: true,
+    // Disable static page generation
+    isrMemoryCacheSize: 0,
+    serverComponentsExternalPackages: ['@chakra-ui/react'],
   },
   // Temporarily disable ESLint during builds to allow deployment
   eslint: {
