@@ -2,14 +2,12 @@
 
 import React, { useState } from 'react';
 import { useAuth } from '../../components/AuthProvider';
-import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
 export default function LoginPage(): React.ReactElement {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const { login, isLoading, error } = useAuth();
-  const searchParams = useSearchParams();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
