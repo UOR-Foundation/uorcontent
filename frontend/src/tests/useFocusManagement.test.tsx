@@ -88,7 +88,6 @@ describe('useFocusManagement', () => {
     render(<TestComponent />);
     
     const firstButton = screen.getByTestId('first-button');
-    const thirdButton = screen.getByTestId('third-button');
     
     firstButton.focus();
     

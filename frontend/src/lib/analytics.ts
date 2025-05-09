@@ -116,9 +116,8 @@ export function trackEvent(event: AnalyticsEvent): void {
 /**
  * Track a page view
  * @param url - URL of the page
- * @param title - Title of the page
  */
-export function trackPageView(url: string, title: string): void {
+export function trackPageView(url: string): void {
   if (typeof window === 'undefined') return;
 
   sendToAnalytics({
@@ -139,11 +138,11 @@ export function initAnalytics(): void {
 
   initPerformanceMonitoring();
 
-  trackPageView(window.location.pathname, document.title);
+  trackPageView(window.location.pathname);
 
   if (typeof window !== 'undefined') {
     const handleRouteChange = (url: string) => {
-      trackPageView(url, document.title);
+      trackPageView(url);
     };
 
     window.addEventListener('popstate', () => {

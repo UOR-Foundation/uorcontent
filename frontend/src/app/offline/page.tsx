@@ -13,9 +13,9 @@ export default function OfflinePage(): React.ReactElement {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.172 16.172a4 4 0 015.656 0M12 13.5V12m0 0V10.5m0 1.5h1.5m-1.5 0h-1.5" />
           </svg>
         </div>
-        <h1 className="text-2xl font-bold">You're Offline</h1>
+        <h1 className="text-2xl font-bold">You&apos;re Offline</h1>
         <p className="text-gray-600">
-          It looks like you've lost your internet connection. Some features may be limited until you're back online.
+          It looks like you&apos;ve lost your internet connection. Some features may be limited until you&apos;re back online.
         </p>
         <p className="text-sm text-gray-500">
           You can still access previously viewed content in offline mode.
