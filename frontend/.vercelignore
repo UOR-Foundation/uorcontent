@@ -1,7 +1,4 @@
-# Vercel ignore file
-node_modules
+# Vercel build cache
+.vercel
 .next
-.git
-.github
-.vscode
-coverage
+node_modules
