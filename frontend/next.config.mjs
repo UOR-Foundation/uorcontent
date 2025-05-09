@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   output: 'standalone', // Optimized for Vercel deployment
   images: {
     domains: [], // Add any image domains here if needed
@@ -19,6 +18,10 @@ const nextConfig = {
         destination: process.env.NEXT_PUBLIC_MCP_API_URL || '/api/mcp',
       },
     ];
+  },
+  // Force SWC compiler to be used even with babel config
+  experimental: {
+    forceSwcTransforms: true,
   },
 };
 
