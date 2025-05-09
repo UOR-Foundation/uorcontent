@@ -2,9 +2,9 @@
 
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { mcpClient } from './client';
-import { MCPRequest, MCPResponse } from '../types/shared';
+import { MCPRequest } from '../types/shared';
 
-async function fetchFromMCP<T>(method: string, params: Record<string, any> = {}): Promise<T> {
+async function fetchFromMCP<T>(method: string, params: Record<string, unknown> | QueryParams = {}): Promise<T> {
   const request: MCPRequest = {
     id: `${method}-${Date.now()}`,
     method,
@@ -25,34 +25,34 @@ export interface Concept {
   id: string;
   name: string;
   description: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 export interface Predicate {
   id: string;
   name: string;
   description: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 export interface Resource {
   id: string;
   name: string;
   description: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 export interface Topic {
   id: string;
   name: string;
   description: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
-export interface QueryParams {
+export interface QueryParams extends Record<string, unknown> {
   limit?: number;
   offset?: number;
-  filter?: Record<string, any>;
+  filter?: Record<string, unknown>;
   sort?: string;
   order?: 'asc' | 'desc';
 }
