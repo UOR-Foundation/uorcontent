@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
 import { useRouter } from 'next/navigation';
 import { mcpClient } from '../api/client';
 import { useToast } from './ToastProvider';
@@ -31,18 +31,7 @@ export function AuthProvider({ children }: { children: ReactNode }): React.React
   const router = useRouter();
   const { showErrorToast } = useToast();
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const token = localStorage.getItem('auth_token');
-      if (token) {
-        validateToken(token);
-      } else {
-        setIsLoading(false);
-      }
-    }
-  }, []);
-
-  const validateToken = async (token: string) => {
+  const validateToken = useCallback(async (token: string) => {
     try {
       setIsLoading(true);
       const response = await mcpClient({
@@ -65,7 +54,18 @@ export function AuthProvider({ children }: { children: ReactNode }): React.React
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [setIsLoading, setUser, setError, showErrorToast]);
+  
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const token = localStorage.getItem('auth_token');
+      if (token) {
+        validateToken(token);
+      } else {
+        setIsLoading(false);
+      }
+    }
+  }, [validateToken, setIsLoading]);
 
   const login = async (username: string, password: string) => {
     try {

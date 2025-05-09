@@ -6,4 +6,5 @@ declare namespace JSX {
 }
 
 interface Window {
+  dataLayer?: unknown[];
 }

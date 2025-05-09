@@ -1,4 +1,3 @@
-import { Metric } from 'web-vitals';
 import { trackEvent, trackPageView, initAnalytics, initPerformanceMonitoring } from '../lib/analytics';
 
 jest.mock('web-vitals', () => ({
@@ -17,10 +16,20 @@ global.console = {
   error: jest.fn(),
 };
 
+interface PerformanceEntryList {
+  getEntries: () => Array<{
+    entryType: string;
+    name: string;
+    initiatorType?: string;
+    duration: number;
+    startTime?: number;
+  }>;
+}
+
 class MockPerformanceObserver {
-  callback: (list: any) => void;
+  callback: (list: PerformanceEntryList) => void;
   
-  constructor(callback: (list: any) => void) {
+  constructor(callback: (list: PerformanceEntryList) => void) {
     this.callback = callback;
   }
   
@@ -54,7 +63,6 @@ Object.defineProperty(window, 'PerformanceObserver', {
   writable: true,
 });
 
-const originalNodeEnv = process.env.NODE_ENV;
 Object.defineProperty(process.env, 'NODE_ENV', {
   value: 'development',
   configurable: true,
@@ -118,13 +126,12 @@ describe('Analytics Module', () => {
   
   describe('trackPageView', () => {
     it('should track a page view', () => {
-      trackPageView('/home', 'Home Page');
+      trackPageView('/home');
       
       expect(console.log).toHaveBeenCalledWith(
         'Page View:',
         {
           url: '/home',
-          title: 'Home Page',
         }
       );
       
@@ -143,7 +150,8 @@ describe('Analytics Module', () => {
   
   describe('initPerformanceMonitoring', () => {
     it('should initialize performance monitoring', () => {
-      const { onCLS, onFCP, onINP, onLCP, onTTFB } = require('web-vitals');
+      const webVitals = jest.requireActual('web-vitals');
+      const { onCLS, onFCP, onINP, onLCP, onTTFB } = webVitals;
       
       initPerformanceMonitoring();
       
@@ -209,7 +217,6 @@ describe('Analytics Module', () => {
         'Page View:',
         {
           url: '/test',
-          title: 'Test Page',
         }
       );
     });

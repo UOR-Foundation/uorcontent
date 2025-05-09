@@ -2,15 +2,12 @@
 
 import React, { useState } from 'react';
 import { useAuth } from '../../components/AuthProvider';
-import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
 export default function LoginPage(): React.ReactElement {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const { login, isLoading, error } = useAuth();
-  const searchParams = useSearchParams();
-  const redirect = searchParams?.get('redirect') || '/';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -70,7 +67,7 @@ export default function LoginPage(): React.ReactElement {
       </form>
       
       <p className="mt-4 text-center text-sm text-gray-600">
-        Don't have an account?{' '}
+        Don&apos;t have an account?{' '}
         <Link href="/register" className="font-medium text-indigo-600 hover:text-indigo-500">
           Register
         </Link>

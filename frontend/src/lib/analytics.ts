@@ -80,7 +80,11 @@ export function initPerformanceMonitoring(): void {
       });
       navigationObserver.observe({ entryTypes: ['navigation'] });
     } catch (e) {
-      console.error('Performance Observer error:', e);
+      if (process.env.NODE_ENV === 'development') {
+        document.dispatchEvent(new CustomEvent('performanceObserverError', { 
+          detail: { error: e instanceof Error ? e.message : 'Unknown error' } 
+        }));
+      }
     }
   }
 }
@@ -106,17 +110,14 @@ export function trackEvent(event: AnalyticsEvent): void {
     id: `${event.category}-${event.action}-${event.label || ''}`,
   });
 
-  if (process.env.NODE_ENV === 'development') {
-    console.log('Analytics Event:', event);
-  }
+  // In production, they are sent to the analytics service
 }
 
 /**
  * Track a page view
  * @param url - URL of the page
- * @param title - Title of the page
  */
-export function trackPageView(url: string, title: string): void {
+export function trackPageView(url: string): void {
   if (typeof window === 'undefined') return;
 
   sendToAnalytics({
@@ -125,9 +126,7 @@ export function trackPageView(url: string, title: string): void {
     id: url,
   });
 
-  if (process.env.NODE_ENV === 'development') {
-    console.log('Page View:', { url, title });
-  }
+  // In production, they are sent to the analytics service
 }
 
 /**
@@ -139,11 +138,11 @@ export function initAnalytics(): void {
 
   initPerformanceMonitoring();
 
-  trackPageView(window.location.pathname, document.title);
+  trackPageView(window.location.pathname);
 
   if (typeof window !== 'undefined') {
     const handleRouteChange = (url: string) => {
-      trackPageView(url, document.title);
+      trackPageView(url);
     };
 
     window.addEventListener('popstate', () => {
@@ -157,9 +156,7 @@ export function initAnalytics(): void {
  * @param metric - Metric to send
  */
 function sendToAnalytics(metric: Metric | { name: string; value: number; id: string }): void {
-  if (process.env.NODE_ENV === 'development') {
-    console.log('Performance Metric:', metric);
-  }
+  // In production, they are sent to the analytics service
 
   if (process.env.NEXT_PUBLIC_ANALYTICS_ENDPOINT) {
     fetch(process.env.NEXT_PUBLIC_ANALYTICS_ENDPOINT, {
@@ -175,7 +172,11 @@ function sendToAnalytics(metric: Metric | { name: string; value: number; id: str
       }),
       keepalive: true,
     }).catch((error) => {
-      console.error('Error sending analytics:', error);
+      if (process.env.NODE_ENV === 'development') {
+        document.dispatchEvent(new CustomEvent('analyticsError', { 
+          detail: { error: error instanceof Error ? error.message : 'Unknown error' } 
+        }));
+      }
     });
   }
 }

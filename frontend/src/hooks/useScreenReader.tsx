@@ -29,7 +29,7 @@ export function useScreenReader(): ScreenReaderHook {
 
     element.textContent = '';
     
-    element.offsetHeight;
+    void element.offsetHeight;
     
     element.textContent = message;
   };
