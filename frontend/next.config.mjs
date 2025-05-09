@@ -30,17 +30,9 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   // Set a timeout for static page generation to prevent build failures
   staticPageGenerationTimeout: 180,
-  // Skip static generation for problematic pages
-  exportPathMap: async function() {
-    return {
-      '/': { page: '/' },
-      // Skip problematic pages that cause timeouts
-      // '/concepts': { page: '/concepts' },
-      // '/predicates': { page: '/predicates' },
-      // '/login': { page: '/login' },
-      // '/offline': { page: '/offline' },
-    };
-  },
+  // Note: exportPathMap is not compatible with the app directory
+  // Use trailingSlash to ensure proper URL handling
+  trailingSlash: true,
 };
 
 export default nextConfig;
