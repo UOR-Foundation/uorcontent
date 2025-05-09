@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  const { nextUrl, headers: requestHeaders, cookies } = request;
+  const { nextUrl, headers: requestHeaders } = request;
   const url = nextUrl.clone();
   const response = NextResponse.next();
 
