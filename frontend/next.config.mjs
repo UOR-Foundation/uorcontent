@@ -13,6 +13,8 @@ const nextConfig = {
   // Simplified experimental settings
   experimental: {
     forceSwcTransforms: true,
+    // Disable app directory static generation for problematic pages
+    disableStaticGeneration: true,
   },
   // Temporarily disable ESLint during builds to allow deployment
   eslint: {
@@ -28,9 +30,8 @@ const nextConfig = {
   generateEtags: true,
   // Disable source maps in production to reduce bundle size
   productionBrowserSourceMaps: false,
-  // Set a timeout for static page generation to prevent build failures
-  staticPageGenerationTimeout: 180,
-  // Note: exportPathMap is not compatible with the app directory
+  // Increase timeout for static page generation to prevent build failures
+  staticPageGenerationTimeout: 300,
   // Use trailingSlash to ensure proper URL handling
   trailingSlash: true,
 };
