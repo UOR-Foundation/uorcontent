@@ -1,20 +1,13 @@
 {
   "version": 2,
-  "buildCommand": "NODE_OPTIONS='--max_old_space_size=4096' npm run build",
+  "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
   "outputDirectory": ".next",
   "regions": ["iad1"],
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "github": {
-    "silent": false,
-    "autoJobCancelation": true
-  },
   "env": {
-    "NEXT_PUBLIC_MCP_API_URL": "/api/mcp",
-    "NEXT_TELEMETRY_DISABLED": "1"
+    "NEXT_PUBLIC_MCP_API_URL": "/api/mcp"
   },
   "headers": [
     {
@@ -31,27 +24,8 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
-        },
-        {
-          "key": "Strict-Transport-Security",
-          "value": "max-age=31536000; includeSubDomains"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "no-referrer"
         }
       ]
-    }
-  ],
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "memory": 4096,
-        "nodeVersion": "18.x"
-      }
     }
   ]
 }

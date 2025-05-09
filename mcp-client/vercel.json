@@ -6,10 +6,6 @@
   "framework": "node",
   "outputDirectory": "dist",
   "regions": ["iad1"],
-  "github": {
-    "silent": false,
-    "autoJobCancelation": true
-  },
   "env": {
     "NODE_ENV": "production"
   },
@@ -28,14 +24,6 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
-        },
-        {
-          "key": "Strict-Transport-Security",
-          "value": "max-age=31536000; includeSubDomains"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "no-referrer"
         }
       ]
     }
@@ -43,10 +31,7 @@
   "builds": [
     {
       "src": "server.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["dist/**"]
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
