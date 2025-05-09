@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
+  const url = request.nextUrl.clone();
   const response = NextResponse.next();
 
   response.headers.set('X-Content-Type-Options', 'nosniff');
@@ -15,6 +16,8 @@ export function middleware(request: NextRequest) {
   );
   
   response.headers.set('Referrer-Policy', 'no-referrer');
+
+  console.log(`Middleware processing: ${url.pathname}`);
 
   return response;
 }
