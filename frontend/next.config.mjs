@@ -29,10 +29,10 @@ const nextConfig = {
     ignoreDuringBuilds: false,
     dirs: ['src'],
   },
-  // Disable TypeScript checking during build to prevent build failures
+  // Enable TypeScript checking during build to enforce type safety
   typescript: {
-    // Only run TypeScript checking on specific commands, not during build
-    ignoreBuildErrors: true,
+    // Run TypeScript checking during build to fail if type errors are detected
+    ignoreBuildErrors: false,
   },
 };
 
