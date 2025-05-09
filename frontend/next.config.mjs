@@ -23,10 +23,11 @@ const nextConfig = {
   experimental: {
     forceSwcTransforms: true,
   },
-  // Disable ESLint during build to prevent build failures
+  // Enable ESLint during build to enforce lint-checking
   eslint: {
-    // Only run ESLint on specific commands, not during build
-    ignoreDuringBuilds: true,
+    // Run ESLint during build to fail if linting issues are detected
+    ignoreDuringBuilds: false,
+    dirs: ['src'],
   },
   // Disable TypeScript checking during build to prevent build failures
   typescript: {

@@ -57,7 +57,6 @@ export async function POST(request: NextRequest) {
     
     return NextResponse.json(data);
   } catch (error) {
-    console.error('Error processing MCP request:', error);
     
     return NextResponse.json(
       {
@@ -65,6 +64,7 @@ export async function POST(request: NextRequest) {
         error: {
           code: 500,
           message: 'Internal Server Error',
+          data: error instanceof Error ? error.message : 'Unknown error',
         },
         jsonrpc: '2.0',
       },

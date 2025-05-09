@@ -6,6 +6,12 @@
   "framework": "nextjs",
   "outputDirectory": ".next",
   "regions": ["iad1"],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "github": {
+    "silent": false,
+    "autoJobCancelation": true
+  },
   "env": {
     "NEXT_PUBLIC_MCP_API_URL": "/api/mcp"
   },

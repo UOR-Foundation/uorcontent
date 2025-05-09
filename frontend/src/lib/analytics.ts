@@ -80,7 +80,11 @@ export function initPerformanceMonitoring(): void {
       });
       navigationObserver.observe({ entryTypes: ['navigation'] });
     } catch (e) {
-      console.error('Performance Observer error:', e);
+      if (process.env.NODE_ENV === 'development') {
+        document.dispatchEvent(new CustomEvent('performanceObserverError', { 
+          detail: { error: e instanceof Error ? e.message : 'Unknown error' } 
+        }));
+      }
     }
   }
 }
@@ -106,9 +110,7 @@ export function trackEvent(event: AnalyticsEvent): void {
     id: `${event.category}-${event.action}-${event.label || ''}`,
   });
 
-  if (process.env.NODE_ENV === 'development') {
-    console.log('Analytics Event:', event);
-  }
+  // In production, they are sent to the analytics service
 }
 
 /**
@@ -125,9 +127,7 @@ export function trackPageView(url: string, title: string): void {
     id: url,
   });
 
-  if (process.env.NODE_ENV === 'development') {
-    console.log('Page View:', { url, title });
-  }
+  // In production, they are sent to the analytics service
 }
 
 /**
@@ -157,9 +157,7 @@ export function initAnalytics(): void {
  * @param metric - Metric to send
  */
 function sendToAnalytics(metric: Metric | { name: string; value: number; id: string }): void {
-  if (process.env.NODE_ENV === 'development') {
-    console.log('Performance Metric:', metric);
-  }
+  // In production, they are sent to the analytics service
 
   if (process.env.NEXT_PUBLIC_ANALYTICS_ENDPOINT) {
     fetch(process.env.NEXT_PUBLIC_ANALYTICS_ENDPOINT, {
@@ -175,7 +173,11 @@ function sendToAnalytics(metric: Metric | { name: string; value: number; id: str
       }),
       keepalive: true,
     }).catch((error) => {
-      console.error('Error sending analytics:', error);
+      if (process.env.NODE_ENV === 'development') {
+        document.dispatchEvent(new CustomEvent('analyticsError', { 
+          detail: { error: error instanceof Error ? error.message : 'Unknown error' } 
+        }));
+      }
     });
   }
 }
