@@ -10,15 +10,7 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_MCP_API_URL: process.env.NEXT_PUBLIC_MCP_API_URL || '/api/mcp',
   },
-  // Add rewrites for API endpoints if needed
-  async rewrites() {
-    return [
-      {
-        source: '/api/mcp',
-        destination: process.env.NEXT_PUBLIC_MCP_API_URL || '/api/mcp',
-      },
-    ];
-  },
+  // Remove rewrites to avoid routing conflicts
   // Force SWC compiler to be used even with babel config
   experimental: {
     forceSwcTransforms: true,
