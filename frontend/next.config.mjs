@@ -29,6 +29,8 @@ const nextConfig = {
       logLevel: 'error',
       memoryLimit: 4096,
     },
+    // Disable server components for Vercel deployment
+    serverComponentsExternalPackages: [],
   },
   // Enable ESLint during build to enforce lint-checking
   eslint: {
@@ -43,6 +45,12 @@ const nextConfig = {
   },
   // Increase static page generation timeout for Vercel
   staticPageGenerationTimeout: 120,
+  // Optimize build for Vercel
+  poweredByHeader: false,
+  compress: true,
+  generateEtags: true,
+  // Disable source maps in production to reduce bundle size
+  productionBrowserSourceMaps: false,
 };
 
 export default nextConfig;
