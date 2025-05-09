@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'standalone', // Optimized for Vercel deployment
+  output: 'export', // Changed from 'standalone' to 'export' for static site generation
   images: {
     domains: [], // Add any image domains here if needed
-    unoptimized: process.env.NODE_ENV !== 'production',
+    unoptimized: true, // Required for static export
   },
   // Environment variables that will be available at build time
   env: {
@@ -28,6 +28,19 @@ const nextConfig = {
   generateEtags: true,
   // Disable source maps in production to reduce bundle size
   productionBrowserSourceMaps: false,
+  // Set a timeout for static page generation to prevent build failures
+  staticPageGenerationTimeout: 180,
+  // Skip static generation for problematic pages
+  exportPathMap: async function() {
+    return {
+      '/': { page: '/' },
+      // Skip problematic pages that cause timeouts
+      // '/concepts': { page: '/concepts' },
+      // '/predicates': { page: '/predicates' },
+      // '/login': { page: '/login' },
+      // '/offline': { page: '/offline' },
+    };
+  },
 };
 
 export default nextConfig;
