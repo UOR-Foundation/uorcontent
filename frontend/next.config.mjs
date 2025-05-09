@@ -22,6 +22,13 @@ const nextConfig = {
   // Force SWC compiler to be used even with babel config
   experimental: {
     forceSwcTransforms: true,
+    // Add memory optimization for build process
+    memoryLimit: 4096,
+    // Improve build performance
+    turbotrace: {
+      logLevel: 'error',
+      memoryLimit: 4096,
+    },
   },
   // Enable ESLint during build to enforce lint-checking
   eslint: {
@@ -34,6 +41,8 @@ const nextConfig = {
     // Run TypeScript checking during build to fail if type errors are detected
     ignoreBuildErrors: false,
   },
+  // Increase static page generation timeout for Vercel
+  staticPageGenerationTimeout: 120,
 };
 
 export default nextConfig;
