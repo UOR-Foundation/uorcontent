@@ -81,7 +81,8 @@ jobs:
       - name: Build with Next.js
         run: |
           cd frontend
-          ${{ steps.detect-package-manager.outputs.runner }} next build
+          # Set CI environment variable to enable strict TypeScript checking
+          CI=true ${{ steps.detect-package-manager.outputs.runner }} next build
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
