@@ -5,7 +5,7 @@
   # Build command for the Next.js application
   command = "npm run build"
   # Directory to deploy (Next.js static export)
-  publish = "out"
+  publish = "frontend/out"
 
 # Environment variables
 [build.environment]
