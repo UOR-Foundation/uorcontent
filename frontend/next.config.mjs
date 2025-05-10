@@ -30,7 +30,7 @@ const nextConfig = {
   // Optimize static generation with incremental mode
   experimental: {
     forceSwcTransforms: true,
-    incrementalCacheHandlerPath: require.resolve('./cache-handler.js'),
+    incrementalCacheHandlerPath: './cache-handler.js',
     isrMemoryCacheSize: 0, // Disable memory cache
   },
   // Note: exportPathMap is not compatible with the app directory
