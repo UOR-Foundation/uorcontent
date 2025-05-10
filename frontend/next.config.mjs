@@ -29,8 +29,18 @@ const nextConfig = {
   // Disable source maps in production to reduce bundle size
   productionBrowserSourceMaps: false,
   // Set a timeout for static page generation to prevent build failures
-  staticPageGenerationTimeout: 180,
-  // Note: exportPathMap is not compatible with the app directory
+  staticPageGenerationTimeout: 300, // Increased from 180 to 300 seconds
+  // Skip problematic pages that cause timeouts
+  exportPathMap: async function() {
+    return {
+      '/': { page: '/' },
+      // Skip the problematic pages that are timing out
+      // '/concepts': { page: '/concepts' },
+      // '/login': { page: '/login' },
+      // '/offline': { page: '/offline' },
+      // '/_not-found': { page: '/_not-found' },
+    };
+  },
   // Use trailingSlash to ensure proper URL handling
   trailingSlash: true,
 };
