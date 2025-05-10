@@ -6,6 +6,8 @@
   command = "npm run build"
   # Directory to deploy (Next.js static export)
   publish = "frontend/out"
+  # Functions directory
+  functions = "netlify/functions"
 
 # Environment variables
 [build.environment]
