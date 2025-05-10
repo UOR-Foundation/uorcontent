@@ -44,22 +44,26 @@ const nextConfig = {
     config.optimization.minimize = true;
     return config;
   },
-  // Selective static generation - exclude problematic pages
-  // This helps avoid timeouts during static generation
-  exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
-    // Start with the default path map
-    const pathMap = { ...defaultPathMap };
-    
-    // Remove problematic pages that cause timeouts
-    delete pathMap['/concepts'];
-    delete pathMap['/register'];
-    delete pathMap['/offline'];
-    delete pathMap['/_not-found'];
-    
-    // These pages will be generated client-side instead
-    console.log('Excluding problematic pages from static generation to prevent timeouts');
-    
-    return pathMap;
+  // Note: We're using the 'dynamic' export option in individual pages
+  // to exclude problematic pages from static generation instead of exportPathMap,
+  // which is not compatible with the app directory structure.
+  
+  // Additional optimizations for Netlify deployment
+  distDir: process.env.NETLIFY ? '.next' : '.next',
+  
+  // Configure headers for better caching and performance
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=3600, s-maxage=86400',
+          },
+        ],
+      },
+    ];
   },
 };
 
