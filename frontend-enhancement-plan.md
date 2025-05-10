@@ -1,6 +1,6 @@
 # UOR Content Frontend Enhancement Plan
 
-Following the Stone workflow for creating a best-in-class frontend for the UOR repository and deploying it to Vercel.
+Following the Stone workflow for creating a best-in-class frontend for the UOR repository.
 
 ## 1. Specification (PM Role)
 
@@ -9,7 +9,7 @@ Following the Stone workflow for creating a best-in-class frontend for the UOR r
 - Fix TypeScript errors and improve type safety
 - Enhance UI/UX with better loading states and error handling
 - Improve accessibility and performance
-- Deploy to Vercel for production hosting
+- Deploy for production hosting
 
 ### User Stories
 1. As a user, I want a modern and intuitive interface to manage UOR content
@@ -62,7 +62,7 @@ Following the Stone workflow for creating a best-in-class frontend for the UOR r
 4. **Optimized Performance**
    - Updated next.config.mjs with optimized settings
    - Configured SWC compiler for better performance
-   - Added standalone output for optimized Vercel deployment
+   - Added optimized output configuration for deployment
 
 5. **Improved Accessibility**
    - Fixed ScreenReaderAnnouncers component for proper client-side rendering
@@ -85,7 +85,7 @@ Following the Stone workflow for creating a best-in-class frontend for the UOR r
 3. **Performance Verification**
    - Optimized Next.js configuration for better performance
    - Configured SWC compiler for faster builds
-   - Set up proper Vercel deployment configuration
+   - Set up proper deployment configuration
 
 4. **Cross-browser Testing**
    - Tested in Chrome browser
@@ -95,31 +95,31 @@ Following the Stone workflow for creating a best-in-class frontend for the UOR r
 ## 5. Deployment (Actions Role)
 
 ### Deployment Implementation
-1. **Vercel Setup**
-   - Created vercel.json configuration file
+1. **Deployment Setup**
+   - Created deployment configuration
    - Configured build settings in next.config.mjs
    - Set up environment variables for MCP API
 
 2. **CI/CD Pipeline**
-   - Created deployment script (deploy-vercel.sh)
-   - Set up automatic deployments with Vercel integration
+   - Created deployment scripts
+   - Set up automatic deployment pipeline
    - Configured deployment previews for PRs
 
 3. **Security**
-   - Added security headers in vercel.json
+   - Added security headers in middleware.ts
    - Configured proper CORS settings
    - Implemented secure API communication
 
 4. **Documentation**
-   - Created comprehensive Vercel deployment guide (VERCEL-DEPLOYMENT.md)
+   - Created comprehensive deployment documentation
    - Updated frontend enhancement plan with implementation details
    - Documented troubleshooting steps for common issues
 
 ## Next Steps
 
-1. **Complete Vercel Deployment**
-   - Authenticate with Vercel account
-   - Deploy the frontend to Vercel
+1. **Complete Deployment**
+   - Set up deployment environment
+   - Deploy the frontend
    - Share the deployment URL
 
 2. **Further Enhancements**

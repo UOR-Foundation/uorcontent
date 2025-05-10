@@ -36,9 +36,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   try {
     const mcpRequest: MCPRequest = await request.json();
     
-    const backendUrl = process.env.VERCEL 
-      ? process.env.NEXT_PUBLIC_MCP_API_URL 
-      : process.env.NEXT_PUBLIC_MCP_API_URL || 'http://localhost:3001/api/mcp';
+    const backendUrl = process.env.NEXT_PUBLIC_MCP_API_URL || 'http://localhost:3001/api/mcp';
     
     const headers: HeadersInit = {
       'Content-Type': 'application/json',
