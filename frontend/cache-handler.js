@@ -54,4 +54,4 @@ class FileSystemCache {
   }
 }
 
-module.exports = () => new FileSystemCache();
+module.exports = FileSystemCache;
