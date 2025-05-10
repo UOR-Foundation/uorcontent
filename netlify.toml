@@ -1,0 +1,35 @@
+# Netlify configuration for UOR Content Repository
+[build]
+  # Base directory is the frontend directory
+  base = "frontend"
+  # Build command for the Next.js application
+  command = "npm run build"
+  # Directory to deploy (Next.js static export)
+  publish = "out"
+
+# Environment variables
+[build.environment]
+  # Set Node version
+  NODE_VERSION = "18"
+  # Set Next.js environment variables
+  NEXT_PUBLIC_MCP_API_URL = "/api/mcp"
+
+# Redirects and rewrites
+[[redirects]]
+  # Handle client-side routing for Next.js
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  # Only apply this redirect when the file doesn't exist
+  force = false
+
+# Headers for security and caching
+[[headers]]
+  # Define headers for all files
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'"
