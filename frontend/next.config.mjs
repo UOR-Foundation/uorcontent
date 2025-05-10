@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export', // Using export for static site generation
+  // Switch from static export to server-side rendering to avoid timeout issues
+  output: 'standalone',
   images: {
     domains: [], // Add any image domains here if needed
-    unoptimized: true, // Required for static export
+    // No need for unoptimized with server-side rendering
   },
   // Environment variables that will be available at build time
   env: {
