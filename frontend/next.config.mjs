@@ -28,8 +28,8 @@ const nextConfig = {
   generateEtags: true,
   // Disable source maps in production to reduce bundle size
   productionBrowserSourceMaps: false,
-  // Set a timeout for static page generation to prevent build failures
-  staticPageGenerationTimeout: 180,
+  // Increase timeout for static page generation to prevent build failures
+  staticPageGenerationTimeout: 600,
   // Note: exportPathMap is not compatible with the app directory
   // Use trailingSlash to ensure proper URL handling
   trailingSlash: true,
