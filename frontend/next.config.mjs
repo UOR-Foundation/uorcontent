@@ -27,12 +27,13 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   // Increase timeout for static page generation to prevent build failures
   staticPageGenerationTimeout: 1200,
-  // Optimize static generation with incremental mode
+  // Optimize static generation with cache handler
   experimental: {
     forceSwcTransforms: true,
-    incrementalCacheHandlerPath: './cache-handler.js',
-    isrMemoryCacheSize: 0, // Disable memory cache
   },
+  // Use stable cache handler API instead of experimental option
+  cacheHandler: './cache-handler.js',
+  cacheMaxMemorySize: 0, // Disable default in-memory caching
   // Note: exportPathMap is not compatible with the app directory
   // Use trailingSlash to ensure proper URL handling
   trailingSlash: true,
