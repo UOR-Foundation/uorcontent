@@ -1,7 +1,7 @@
 
-import fs from 'fs';
-import path from 'path';
-import { mkdir } from 'fs/promises';
+const fs = require('fs');
+const path = require('path');
+const { mkdir } = require('fs/promises');
 
 const CACHE_DIR = path.join(process.cwd(), '.next/cache/incremental');
 
@@ -54,4 +54,4 @@ class FileSystemCache {
   }
 }
 
-export default () => new FileSystemCache();
+module.exports = () => new FileSystemCache();
