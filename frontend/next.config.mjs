@@ -11,9 +11,6 @@ const nextConfig = {
     NEXT_PUBLIC_MCP_API_URL: process.env.NEXT_PUBLIC_MCP_API_URL || '/api/mcp',
   },
   // Simplified experimental settings
-  experimental: {
-    forceSwcTransforms: true,
-  },
   // Temporarily disable ESLint during builds to allow deployment
   eslint: {
     ignoreDuringBuilds: true,
@@ -29,7 +26,13 @@ const nextConfig = {
   // Disable source maps in production to reduce bundle size
   productionBrowserSourceMaps: false,
   // Increase timeout for static page generation to prevent build failures
-  staticPageGenerationTimeout: 600,
+  staticPageGenerationTimeout: 1200,
+  // Optimize static generation with incremental mode
+  experimental: {
+    forceSwcTransforms: true,
+    incrementalCacheHandlerPath: require.resolve('./cache-handler.js'),
+    isrMemoryCacheSize: 0, // Disable memory cache
+  },
   // Note: exportPathMap is not compatible with the app directory
   // Use trailingSlash to ensure proper URL handling
   trailingSlash: true,
