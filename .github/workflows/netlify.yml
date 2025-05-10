@@ -30,7 +30,8 @@ jobs:
       - name: Build frontend
         run: |
           cd frontend
-          npm run build
+          # Set CI environment variable to enable strict TypeScript checking
+          CI=true npm run build
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2

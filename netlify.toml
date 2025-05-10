@@ -2,10 +2,10 @@
 [build]
   # Base directory is the frontend directory
   base = "frontend"
-  # Build command for the Next.js application
+  # Build command for the Next.js application with server-side rendering
   command = "npm run build"
-  # Directory to deploy (Next.js static export)
-  publish = "frontend/out"
+  # Directory to deploy (Next.js standalone server)
+  publish = "frontend/.next/standalone"
   # Functions directory
   functions = "netlify/functions"
 

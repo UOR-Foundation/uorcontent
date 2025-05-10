@@ -1,5 +1,7 @@
 import ContentList from '../../components/ContentList';
 
+export const dynamic = 'force-dynamic';
+
 export default function ConceptsPage() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
