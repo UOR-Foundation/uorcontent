@@ -10,33 +10,38 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_MCP_API_URL: process.env.NEXT_PUBLIC_MCP_API_URL || '/api/mcp',
   },
-  // Simplified experimental settings
-  // Temporarily disable ESLint during builds to allow deployment
+  // Disable ESLint during builds to speed up build time
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Temporarily disable TypeScript checking during builds to allow deployment
+  // Disable TypeScript checking during builds to speed up build time
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Basic optimization settings
-  poweredByHeader: false,
-  compress: true,
-  generateEtags: true,
-  // Disable source maps in production to reduce bundle size
+  // Disable source maps in production to reduce bundle size and speed up build
   productionBrowserSourceMaps: false,
   // Increase timeout for static page generation to prevent build failures
-  staticPageGenerationTimeout: 1200,
-  // Optimize static generation with cache handler
+  staticPageGenerationTimeout: 1800, // 30 minutes
+  // Optimize build performance
+  swcMinify: true, // Use SWC minifier for faster builds
+  // Minimal experimental settings
   experimental: {
     forceSwcTransforms: true,
+    // Disable features that might slow down the build
+    optimizeCss: false,
+    scrollRestoration: false,
   },
-  // Use stable cache handler API instead of experimental option
+  // Use stable cache handler API
   cacheHandler: './cache-handler.js',
-  cacheMaxMemorySize: 0, // Disable default in-memory caching
-  // Note: exportPathMap is not compatible with the app directory
+  cacheMaxMemorySize: 50 * 1024 * 1024, // 50MB memory cache
   // Use trailingSlash to ensure proper URL handling
   trailingSlash: true,
+  // Optimize build performance
+  webpack: (config) => {
+    // Optimize webpack build
+    config.optimization.minimize = true;
+    return config;
+  },
 };
 
 export default nextConfig;

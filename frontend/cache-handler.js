@@ -3,7 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const { mkdir } = require('fs/promises');
 
+const memoryCache = new Map();
 const CACHE_DIR = path.join(process.cwd(), '.next/cache/incremental');
+const MEMORY_CACHE_SIZE = 100; // Limit memory cache size
 
 class FileSystemCache {
   constructor() {
@@ -13,12 +15,27 @@ class FileSystemCache {
   }
 
   async get(key) {
+    if (memoryCache.has(key)) {
+      return memoryCache.get(key);
+    }
+
     const filePath = this.getFilePath(key);
     try {
       if (fs.existsSync(filePath)) {
         const data = fs.readFileSync(filePath, 'utf8');
-        const { value, lastModified } = JSON.parse(data);
-        return { value, lastModified: new Date(lastModified) };
+        const result = JSON.parse(data);
+        
+        if (memoryCache.size < MEMORY_CACHE_SIZE) {
+          memoryCache.set(key, { 
+            value: result.value, 
+            lastModified: new Date(result.lastModified) 
+          });
+        }
+        
+        return { 
+          value: result.value, 
+          lastModified: new Date(result.lastModified) 
+        };
       }
     } catch (error) {
       console.error('Error reading from cache:', error);
@@ -27,6 +44,13 @@ class FileSystemCache {
   }
 
   async set(key, data, options = {}) {
+    if (memoryCache.size < MEMORY_CACHE_SIZE) {
+      memoryCache.set(key, { 
+        value: data, 
+        lastModified: new Date() 
+      });
+    }
+
     const filePath = this.getFilePath(key);
     try {
       const cacheData = {
